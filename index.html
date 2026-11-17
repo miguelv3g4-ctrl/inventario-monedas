@@ -21,6 +21,12 @@
   #portada form { display: flex; flex-direction: column; gap: 10px; }
   #portada input { flex: 1; margin: 0; font-size: 17px; padding: 10px 12px; text-align: center; }
   #portada button { font-size: 17px; padding: 8px 18px; }
+  #portada .conOjo { position: relative; display: flex; }
+  #portada .conOjo input { padding: 10px 48px; }
+  #portada #pOjo { position: absolute; right: 4px; top: 50%; transform: translateY(-50%); background: transparent; border: 0; padding: 6px 8px; color: var(--oro2); display: flex; align-items: center; }
+  #portada #pOjo:hover { color: var(--oro); background: transparent; }
+  #portada #pOjo svg { width: 22px; height: 22px; }
+  #portada .recordar { justify-content: center; font-size: 14px; color: var(--gris); }
   #pNota { min-height: 22px; margin-top: 10px; color: #ff9a8a; font-size: 14px; }
   #pNota.bien { color: var(--gris); }
 
@@ -141,7 +147,11 @@
     <div class="bajada">Monedas y billetes</div>
     <form id="pForm" autocomplete="on">
       <input type="text" id="pUsuario" placeholder="Usuario" autocomplete="username" aria-label="Usuario">
-      <input type="password" id="pClave" placeholder="Clave" autocomplete="current-password" aria-label="Clave">
+      <div class="conOjo">
+        <input type="password" id="pClave" placeholder="Clave" autocomplete="current-password" aria-label="Clave">
+        <button type="button" id="pOjo" title="Mostrar la clave" aria-label="Mostrar la clave" aria-pressed="false"></button>
+      </div>
+      <label class="linea recordar"><input type="checkbox" id="pRecordar" checked> Recordar el usuario en este equipo</label>
       <button class="fuerte" id="pEntrar">Entrar</button>
     </form>
     <div id="pNota"></div>
@@ -635,8 +645,19 @@
 
   // ---------- conectar
   let cargado = false;
+  // ojo para mostrar u ocultar la clave
+  const OJO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>';
+  const OJO_TACHADO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.6 5.1A10.8 10.8 0 0 1 12 5c6.4 0 10 7 10 7a17.7 17.7 0 0 1-3.2 4.2M6.6 6.6C3.7 8.4 2 12 2 12s3.6 7 10 7a9.7 9.7 0 0 0 5.4-1.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/><path d="M2 2l20 20"/></svg>';
+  function ponerOjo(ver) {
+    $('pClave').type = ver ? 'text' : 'password'; $('pOjo').innerHTML = ver ? OJO_TACHADO : OJO;
+    $('pOjo').title = ver ? 'Ocultar la clave' : 'Mostrar la clave'; $('pOjo').setAttribute('aria-label', $('pOjo').title); $('pOjo').setAttribute('aria-pressed', String(ver));
+  }
+  ponerOjo(false);
+  $('pOjo').onclick = () => { ponerOjo($('pClave').type === 'password'); $('pClave').focus(); };
+  // usuario recordado en este equipo
+  try { const u = localStorage.getItem('usuarioInventario'); if (u) $('pUsuario').value = u; } catch (e) {}
   function mostrarPortada(nota) {
-    $('pNota').textContent = nota || ''; $('pNota').className = ''; $('pClave').value = '';
+    $('pNota').textContent = nota || ''; $('pNota').className = ''; $('pClave').value = ''; ponerOjo(false);
     $('portada').classList.add('abierta'); setTimeout(() => ($('pUsuario').value ? $('pClave') : $('pUsuario')).focus(), 50);
   }
   const abrirConexion = () => mostrarPortada();
@@ -656,7 +677,8 @@
       const r = await fetch(API + '/entrar', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ usuario, clave }) });
       if (!r.ok) throw await error(r);
       ses = await r.json(); try { localStorage.setItem('sesionInventario', JSON.stringify(ses)); } catch (e) {}
-      $('pClave').value = ''; nota.textContent = 'Cargando el inventario…';
+      try { if ($('pRecordar').checked) localStorage.setItem('usuarioInventario', usuario); else localStorage.removeItem('usuarioInventario'); } catch (e) {}
+      $('pClave').value = ''; ponerOjo(false); nota.textContent = 'Cargando el inventario…';
       if (!cargado) await cargar();
       $('portada').classList.remove('abierta'); nota.textContent = '';
     } catch (e) { nota.className = ''; nota.textContent = e.message === 'Failed to fetch' ? 'No hay conexión con el servidor.' : e.message; }
