@@ -11,6 +11,19 @@
   html, body { margin: 0; height: 100%; background: #000; color: var(--oro); font-family: Calibri, "Segoe UI", Arial, sans-serif; }
   body { display: flex; flex-direction: column; }
 
+  /* pantalla de entrada */
+  #portada { position: fixed; inset: 0; z-index: 50; background: radial-gradient(ellipse at center, #1c170c 0%, #000 70%); display: none; align-items: center; justify-content: center; padding: 20px; overflow: auto; }
+  #portada.abierta { display: flex; }
+  #portada .caja { width: min(440px, 100%); text-align: center; }
+  #portada .sello { width: 100%; max-width: 400px; display: block; margin: 0 auto 6px; }
+  #portada h1 { font: 22px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 6px 0 2px; letter-spacing: .03em; }
+  #portada .bajada { color: var(--oro2); font-size: 15px; margin-bottom: 22px; }
+  #portada form { display: flex; gap: 8px; }
+  #portada input { flex: 1; margin: 0; font-size: 17px; padding: 10px 12px; text-align: center; }
+  #portada button { font-size: 17px; padding: 8px 18px; }
+  #pNota { min-height: 22px; margin-top: 10px; color: #ff9a8a; font-size: 14px; }
+  #pNota.bien { color: var(--gris); }
+
   /* barra superior */
   #barra { flex: none; display: flex; align-items: center; gap: 14px; padding: 6px 12px; background: var(--panel); border-bottom: 1px solid var(--linea); font-size: 14px; flex-wrap: wrap; }
   #barra .dato { color: var(--gris); white-space: nowrap; }
@@ -121,6 +134,19 @@
 </style>
 </head>
 <body>
+<div id="portada" class="abierta">
+  <div class="caja">
+    <img class="sello" src="img/image19.png" alt="Pertenece a Familia Vega Godínez">
+    <h1>Inventario de la colección</h1>
+    <div class="bajada">Monedas y billetes</div>
+    <form id="pForm" autocomplete="on">
+      <input type="text" name="usuario" value="inventario" autocomplete="username" hidden>
+      <input type="password" id="pClave" placeholder="Clave" autocomplete="current-password" aria-label="Clave">
+      <button class="fuerte" id="pEntrar">Entrar</button>
+    </form>
+    <div id="pNota"></div>
+  </div>
+</div>
 <div id="aviso"></div>
 <div id="barra">
   <span class="modo"><button id="mValor">Valor de la colección</button><button id="mCompra">Inventario (compra)</button></span>
@@ -133,7 +159,7 @@
   <span id="estado"></span>
   <button id="bOtras">Otras piezas</button>
   <button id="bLista">Lista y totales</button>
-  <button id="bConectar">Entrar para editar</button>
+  <button id="bConectar">Salir</button>
   <button id="zMenos" title="Alejar">−</button>
   <button id="zAjustar" title="Ajustar al ancho de la ventana">Ajustar</button>
   <button id="zMas" title="Acercar">+</button>
@@ -233,21 +259,6 @@
   </div>
 </div>
 
-<!-- entrar con la clave -->
-<div class="velo" id="vCon">
-  <div class="ventana" role="dialog" aria-modal="true" style="width:min(460px,100%)">
-    <h2>Entrar para editar</h2>
-    <p class="ayuda">Cualquiera con el link puede <b>ver</b> el inventario. Para cambiar datos y fotos escribe tu clave. Este equipo queda conectado por 30 días.</p>
-    <label>Clave<input type="password" id="cClave" autocomplete="current-password"></label>
-    <div class="pie">
-      <span class="nota" id="cNota"></span>
-      <button id="cSalir">Salir</button>
-      <button id="cCancelar">Cancelar</button>
-      <button id="cGuardar" class="fuerte">Entrar</button>
-    </div>
-  </div>
-</div>
-
 <!-- lista -->
 <div class="velo" id="vLista">
   <div class="ventana" role="dialog" aria-modal="true">
@@ -328,7 +339,7 @@
       headers: Object.assign({ Authorization: 'Bearer ' + ses.sesion }, cuerpo && !esBlob ? { 'Content-Type': 'application/json' } : {}, extra || {}),
       body: cuerpo ? (esBlob ? cuerpo : JSON.stringify(cuerpo)) : undefined
     });
-    if (r.status === 401) { ses = { sesion: '', vence: 0 }; try { localStorage.removeItem('sesionInventario'); } catch (e) {} pintarTodo(); }
+    if (r.status === 401) { ses = { sesion: '', vence: 0 }; try { localStorage.removeItem('sesionInventario'); } catch (e) {} mostrarPortada('La sesión venció. Escribe la clave otra vez.'); }
     return r;
   }
   async function error(r, que) { let m = ''; try { m = (await r.json()).error || ''; } catch (e) {} return new Error(m || ('El servidor respondió ' + r.status + (que ? ' ' + que : '') + '.')); }
@@ -458,7 +469,7 @@
     totales();
     $('mValor').classList.toggle('activo', modo === 'valor'); $('mCompra').classList.toggle('activo', modo === 'compra');
     document.body.classList.toggle('puedeEditar', conectado());
-    $('bConectar').textContent = conectado() ? 'Editando ✓' : 'Entrar para editar';
+    
   }
   function ponerModo(m) { modo = m; try { localStorage.setItem('modoInventario', m); } catch (e) {} pintarTodo(); }
   $('mValor').onclick = () => ponerModo('valor'); $('mCompra').onclick = () => ponerModo('compra');
@@ -623,26 +634,37 @@
   };
 
   // ---------- conectar
-  function abrirConexion() {
-    $('cClave').value = ''; $('cNota').textContent = '';
-    $('cSalir').style.display = conectado() ? '' : 'none'; $('vCon').classList.add('abierta'); setTimeout(() => $('cClave').focus(), 50);
+  let cargado = false;
+  function mostrarPortada(nota) {
+    $('pNota').textContent = nota || ''; $('pNota').className = ''; $('pClave').value = '';
+    $('portada').classList.add('abierta'); setTimeout(() => $('pClave').focus(), 50);
   }
-  $('bConectar').onclick = abrirConexion;
-  $('cCancelar').onclick = () => $('vCon').classList.remove('abierta');
-  $('cSalir').onclick = () => { ses = { sesion: '', vence: 0 }; try { localStorage.removeItem('sesionInventario'); } catch (e) {} $('vCon').classList.remove('abierta'); pintarTodo(); };
-  $('cClave').addEventListener('keydown', e => { if (e.key === 'Enter') $('cGuardar').click(); });
-  $('cGuardar').onclick = async () => {
-    const clave = $('cClave').value; if (!clave) { $('cNota').textContent = 'Escribe la clave.'; return; }
-    $('cNota').textContent = 'Revisando…'; $('cGuardar').disabled = true;
+  const abrirConexion = () => mostrarPortada();
+  async function cargar() {
+    const rem = await leerRemoto();
+    datos = { piezas: rem.datos.piezas || {}, sueltas: rem.datos.sueltas || {}, otras: rem.datos.otras || [] }; sha = rem.sha;
+    armarBase(); cargado = true; pintarTodo();
+    if (actual && $('vFicha').classList.contains('abierta')) pintarFicha();
+  }
+  $('pForm').addEventListener('submit', async e => {
+    e.preventDefault();
+    const clave = $('pClave').value, nota = $('pNota');
+    if (!clave) { nota.textContent = 'Escribe la clave.'; return; }
+    nota.className = 'bien'; nota.textContent = 'Revisando…'; $('pEntrar').disabled = true;
     try {
       const r = await fetch(API + '/entrar', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ clave }) });
       if (!r.ok) throw await error(r);
       ses = await r.json(); try { localStorage.setItem('sesionInventario', JSON.stringify(ses)); } catch (e) {}
-      $('cClave').value = '';
-      const rem = await leerRemoto(); datos = { piezas: rem.datos.piezas || {}, sueltas: rem.datos.sueltas || {}, otras: rem.datos.otras || [] }; sha = rem.sha; armarBase();
-      $('vCon').classList.remove('abierta'); pintarTodo(); if (actual && $('vFicha').classList.contains('abierta')) pintarFicha();
-    } catch (e) { $('cNota').textContent = e.message === 'Failed to fetch' ? 'No hay conexión con el servidor.' : e.message; }
-    $('cGuardar').disabled = false;
+      $('pClave').value = ''; nota.textContent = 'Cargando el inventario…';
+      if (!cargado) await cargar();
+      $('portada').classList.remove('abierta'); nota.textContent = '';
+    } catch (e) { nota.className = ''; nota.textContent = e.message === 'Failed to fetch' ? 'No hay conexión con el servidor.' : e.message; }
+    $('pEntrar').disabled = false;
+  });
+  $('bConectar').onclick = () => {
+    if (sucias.size && !confirm('Hay cambios que todavía no se guardan. ¿Salir de todos modos?')) return;
+    ses = { sesion: '', vence: 0 }; try { localStorage.removeItem('sesionInventario'); } catch (e) {}
+    location.reload();
   };
 
   // ---------- lista
@@ -718,7 +740,6 @@
   document.addEventListener('keydown', e => {
     if (e.key !== 'Escape') return;
     if ($('grande').style.display === 'flex') $('grande').style.display = 'none';
-    else if ($('vCon').classList.contains('abierta')) $('vCon').classList.remove('abierta');
     else if ($('vForm').classList.contains('abierta')) { if (!$('fCancelar').disabled) cerrarForm(false); }
     else if ($('vFicha').classList.contains('abierta')) cerrarFicha();
     else if ($('vOtras').classList.contains('abierta')) $('vOtras').classList.remove('abierta');
@@ -726,19 +747,13 @@
   });
   window.addEventListener('beforeunload', e => { if (sucias.size || $('estado').textContent === 'Sin guardar') { e.preventDefault(); e.returnValue = ''; } });
 
-  // ---------- arranque
+  // ---------- arranque: sin sesion se muestra la pantalla de entrada; con sesion se carga directo
   (async function () {
     pintarTodo();
-    try {
-      let d = {};
-      if (conectado()) { const rem = await leerRemoto(); d = rem.datos; sha = rem.sha; }
-      else if (location.protocol !== 'file:') { const r = await fetch('datos.json?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) d = await r.json(); }
-      datos = { piezas: d.piezas || {}, sueltas: d.sueltas || {}, otras: d.otras || [] };
-      armarBase();
-    } catch (e) {
-      aviso('No se pudieron leer los datos guardados (' + e.message + '). Se muestra la hoja sin precios ni fotos.');
-    }
-    pintarTodo();
+    if (!conectado()) { mostrarPortada(); return; }
+    $('pNota').className = 'bien'; $('pNota').textContent = 'Cargando el inventario…';
+    try { await cargar(); $('portada').classList.remove('abierta'); $('pNota').textContent = ''; }
+    catch (e) { if (conectado()) mostrarPortada('No se pudo cargar el inventario: ' + e.message); }
   })();
 })();
 </script>
