@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Inventario de monedas</title>
+<style>
+  :root { --oro: #ffd966; --oro2: #bf9000; --gris: #bfbfbf; --panel: #141312; --linea: #3a3222; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: #000; color: var(--oro); font-family: Calibri, "Segoe UI", Arial, sans-serif; }
+  body { display: flex; flex-direction: column; }
+
+  /* barra superior */
+  #barra { flex: none; display: flex; align-items: center; gap: 14px; padding: 6px 12px; background: var(--panel); border-bottom: 1px solid var(--linea); font-size: 14px; flex-wrap: wrap; }
+  #barra .dato { color: var(--gris); white-space: nowrap; }
+  #barra .dato b { color: var(--oro); font-size: 15px; margin-left: 4px; font-variant-numeric: tabular-nums; }
+  #barra .sep { flex: 1; }
+  button { font: inherit; color: var(--oro); background: #221e14; border: 1px solid var(--oro2); border-radius: 4px; padding: 4px 10px; cursor: pointer; }
+  button:hover { background: #3a3018; }
+  button:disabled { opacity: .5; cursor: default; }
+  button.fuerte { background: var(--oro); color: #1a1505; border-color: var(--oro); font-weight: bold; }
+  .modo { display: inline-flex; border: 1px solid var(--oro2); border-radius: 4px; overflow: hidden; }
+  .modo button { border: 0; border-radius: 0; background: transparent; color: var(--gris); }
+  .modo button.activo { background: var(--oro); color: #1a1505; font-weight: bold; }
+  #estado { color: var(--gris); font-size: 12px; text-align: right; }
+  #aviso { display: none; background: #5a1a10; color: #fff; padding: 8px 14px; font-size: 14px; }
+
+  /* la hoja, tal cual el Excel */
+  #area { flex: 1; overflow: auto; }
+  #hoja { position: relative; }
+  .c { position: absolute; display: flex; padding: 0 2px; white-space: nowrap; line-height: 1.15; }
+  .c.wr { white-space: pre-line; overflow: hidden; }
+  .c span { display: block; }
+  .im { position: absolute; overflow: hidden; pointer-events: none; }
+  .im img { position: absolute; display: block; }
+  .elipse { position: absolute; background: #fff; border-radius: 50%; }
+  .ck { position: absolute; width: 13px; height: 13px; background: #fff; border: 1px solid #333; z-index: 4; }
+  .puedeEditar .ck { cursor: pointer; }
+  .ck.on::after { content: ""; position: absolute; left: 3.5px; top: 0.5px; width: 3px; height: 7px; border: solid #000; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+  .pz { position: absolute; cursor: pointer; z-index: 3; border-radius: 2px; }
+  .pz:hover, .pz:focus-visible { background: rgba(255, 217, 102, .18); outline: 1px solid var(--oro); }
+  .pz i { position: absolute; right: 3px; top: 50%; width: 7px; height: 7px; margin-top: -4px; border-radius: 50%; display: none; }
+  .pz.con i { display: block; background: #58d07a; }
+  .pz.vendida i { display: block; background: #ff5a4a; }
+
+  /* ventanas */
+  .velo { position: fixed; inset: 0; background: rgba(0, 0, 0, .78); display: none; align-items: flex-start; justify-content: center; padding: 20px 10px; overflow: auto; z-index: 20; }
+  .velo.abierta { display: flex; }
+  .ventana { background: var(--panel); border: 2px solid var(--oro); border-radius: 6px; width: min(820px, 100%); padding: 16px 20px 20px; box-shadow: 0 10px 40px #000; }
+  .ventana h2 { margin: 0; font: 21px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); }
+  .sub { color: var(--oro2); margin: 4px 0 2px; font-size: 16px; }
+  .col { color: var(--gris); font-size: 13px; }
+  .cab { display: flex; gap: 10px; align-items: flex-start; }
+  .cab > div:first-child { flex: 1; }
+  h3 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--oro2); margin: 18px 0 8px; border-bottom: 1px solid var(--linea); padding-bottom: 4px; }
+  .campos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px 14px; }
+  label { display: block; font-size: 13px; color: var(--gris); }
+  input[type=text], input[type=password], input[type=date], textarea { width: 100%; margin-top: 3px; font: inherit; font-size: 15px; color: #fff; background: #0b0a09; border: 1px solid var(--linea); border-radius: 4px; padding: 6px 8px; color-scheme: dark; }
+  input:focus, textarea:focus { outline: none; border-color: var(--oro); }
+  textarea { min-height: 60px; resize: vertical; }
+  .linea { display: flex; align-items: center; gap: 8px; font-size: 15px; color: var(--oro); cursor: pointer; }
+  .linea input { width: 16px; height: 16px; accent-color: var(--oro); }
+  .pie { display: flex; gap: 10px; justify-content: flex-end; margin-top: 18px; align-items: center; }
+  .pie .nota { flex: 1; color: var(--gris); font-size: 13px; }
+
+  /* ficha de consulta */
+  .pest { display: flex; gap: 0; margin-top: 14px; border-bottom: 1px solid var(--oro2); }
+  .pest button { border: 1px solid transparent; border-bottom: 0; border-radius: 4px 4px 0 0; background: transparent; color: var(--gris); padding: 7px 14px; }
+  .pest button.activo { background: var(--oro); color: #1a1505; font-weight: bold; }
+  #vCuerpo { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 18px; margin-top: 14px; }
+  #vFoto { background: #000; border: 1px solid var(--linea); border-radius: 4px; aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; color: #6b6250; font-size: 14px; text-align: center; overflow: hidden; }
+  #vFoto img { width: 100%; height: 100%; object-fit: contain; cursor: zoom-in; }
+  #vMinis { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+  #vMinis img { width: 54px; height: 54px; object-fit: cover; border: 1px solid var(--linea); border-radius: 3px; cursor: pointer; }
+  #vMinis img.activa { border-color: var(--oro); }
+  .rotulo { color: var(--gris); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; }
+  #vPrecio { font-size: 34px; color: var(--oro); font-weight: bold; font-variant-numeric: tabular-nums; line-height: 1.1; margin: 2px 0 8px; }
+  #vPrecio.vacio { color: #6b6250; font-size: 20px; font-weight: normal; }
+  #vDetalle div { color: #e8e2d0; font-size: 14px; margin: 3px 0; }
+  #vDetalle div span { color: var(--gris); }
+  #vEstado { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--linea); font-size: 14px; color: #e8e2d0; white-space: pre-line; }
+  .vend { color: #ff8a7a; } .inv { color: #7fe09a; } .no { color: #888; }
+
+  /* fotos en el formulario */
+  .fotos { display: flex; flex-wrap: wrap; gap: 10px; }
+  .foto { position: relative; width: 120px; height: 120px; border: 1px solid var(--linea); border-radius: 4px; overflow: hidden; background: #000; }
+  .foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .foto button { position: absolute; top: 3px; right: 3px; padding: 0 6px; line-height: 20px; border-radius: 50%; background: rgba(0, 0, 0, .75); }
+  .soltar { width: 120px; height: 120px; border: 1px dashed var(--oro2); border-radius: 4px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 13px; color: var(--oro2); cursor: pointer; padding: 8px; }
+  .soltar.encima { background: #2a2412; border-style: solid; }
+  #grande { position: fixed; inset: 0; background: rgba(0, 0, 0, .94); display: none; align-items: center; justify-content: center; z-index: 40; cursor: zoom-out; }
+  #grande img { max-width: 96vw; max-height: 96vh; }
+
+  /* lista */
+  #vLista .ventana { width: min(1150px, 100%); }
+  .filtros { display: flex; gap: 16px; align-items: center; margin: 12px 0; flex-wrap: wrap; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 5px 8px; border-bottom: 1px solid var(--linea); color: #e8e2d0; }
+  th { color: var(--oro2); font-weight: normal; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; position: sticky; top: 0; background: var(--panel); }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tbody tr { cursor: pointer; }
+  tbody tr:hover { background: #221e14; }
+  .tabla { max-height: 62vh; overflow: auto; border: 1px solid var(--linea); border-radius: 4px; }
+  tfoot td { color: var(--oro); font-weight: bold; position: sticky; bottom: 0; background: var(--panel); }
+  .ayuda { color: var(--gris); font-size: 14px; line-height: 1.45; }
+  .ayuda a { color: var(--oro); }
+  .ayuda ol { padding-left: 20px; margin: 8px 0; }
+  @media (max-width: 680px) { .campos { grid-template-columns: 1fr; } #vCuerpo { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div id="aviso"></div>
+<div id="barra">
+  <span class="modo"><button id="mValor">Valor de la colección</button><button id="mCompra">Inventario (compra)</button></span>
+  <span class="dato">Piezas<b id="tPiezas">–</b></span>
+  <span class="dato">Valor actual<b id="tVal">–</b></span>
+  <span class="dato">Invertido<b id="tInv">–</b></span>
+  <span class="dato">Vendido<b id="tVen">–</b></span>
+  <span class="dato">Ganancia en ventas<b id="tGan">–</b></span>
+  <span class="sep"></span>
+  <span id="estado"></span>
+  <button id="bLista">Lista y totales</button>
+  <button id="bConectar">Conectar para editar</button>
+  <button id="zMenos" title="Alejar">−</button>
+  <button id="zAjustar" title="Ajustar al ancho de la ventana">Ajustar</button>
+  <button id="zMas" title="Acercar">+</button>
+</div>
+<div id="area"><div id="hoja"></div></div>
+
+<!-- ficha de consulta -->
+<div class="velo" id="vFicha">
+  <div class="ventana" role="dialog" aria-modal="true">
+    <div class="cab">
+      <div>
+        <h2 id="vMoneda"></h2>
+        <div class="sub" id="vSub"></div>
+        <div class="col" id="vCol"></div>
+      </div>
+      <button id="vEditar" class="fuerte">Poner datos y fotos</button>
+      <button id="vCerrar">Cerrar</button>
+    </div>
+    <div class="pest"><button id="pValor">Valor de la colección</button><button id="pCompra">Inventario (compra)</button></div>
+    <div id="vCuerpo">
+      <div><div id="vFoto"></div><div id="vMinis"></div></div>
+      <div>
+        <div class="rotulo" id="vRotulo"></div>
+        <div id="vPrecio"></div>
+        <div id="vDetalle"></div>
+        <div id="vEstado"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- pantalla de captura -->
+<div class="velo" id="vForm">
+  <div class="ventana" role="dialog" aria-modal="true">
+    <div class="cab">
+      <div>
+        <h2 id="fMoneda"></h2>
+        <div class="sub" id="fSub"></div>
+      </div>
+    </div>
+    <label class="linea" style="margin-top:12px"><input type="checkbox" id="fTengo"> La tengo en la colección</label>
+
+    <h3>Valor de la colección: la pieza y su valor actual</h3>
+    <div class="fotos" id="fotosPieza"></div>
+    <div class="campos" style="margin-top:10px">
+      <label>Valor actual de la moneda (₡)<input type="text" inputmode="decimal" id="fValor" placeholder="0"></label>
+      <label>Fecha de ese valor<input type="date" id="fFechaValor"></label>
+      <label>De dónde saqué el valor<input type="text" id="fFuenteValor"></label>
+    </div>
+
+    <h3>Inventario: cómo la compré</h3>
+    <div class="fotos" id="fotosCompra"></div>
+    <div class="campos" style="margin-top:10px">
+      <label>Precio al que la compré (₡)<input type="text" inputmode="decimal" id="fCosto" placeholder="0"></label>
+      <label>Fecha de compra<input type="date" id="fFechaCompra"></label>
+      <label>Dónde o a quién la compré<input type="text" id="fOrigen"></label>
+    </div>
+
+    <h3>Venta</h3>
+    <label class="linea"><input type="checkbox" id="fVendida"> Ya la vendí</label>
+    <div class="campos" style="margin-top:10px">
+      <label>Precio de venta (₡)<input type="text" inputmode="decimal" id="fPrecio" placeholder="0"></label>
+      <label>Fecha de venta<input type="date" id="fFechaVenta"></label>
+      <label>A quién se la vendí<input type="text" id="fComprador"></label>
+    </div>
+
+    <h3>Notas</h3>
+    <textarea id="fNotas" placeholder="Estado, certificado, observaciones…"></textarea>
+    <input type="file" id="fArchivo" accept="image/*" multiple hidden>
+    <div class="pie">
+      <span class="nota" id="fNota"></span>
+      <button id="fCancelar">Cancelar</button>
+      <button id="fGuardar" class="fuerte">Guardar</button>
+    </div>
+  </div>
+</div>
+
+<!-- conectar con GitHub -->
+<div class="velo" id="vCon">
+  <div class="ventana" role="dialog" aria-modal="true" style="width:min(620px,100%)">
+    <h2>Conectar para editar</h2>
+    <div class="ayuda">
+      <p>Cualquiera con el link puede <b>ver</b> el inventario. Para <b>poner datos y fotos</b> hace falta una llave de GitHub, que se guarda solo en este navegador.</p>
+      <ol>
+        <li>Abre <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com → Settings → Fine-grained tokens → Generate new token</a>.</li>
+        <li>En <i>Repository access</i> elige <i>Only select repositories</i> y marca solo el repositorio del inventario.</li>
+        <li>En <i>Permissions → Repository → Contents</i> pon <i>Read and write</i>. Genera la llave y pégala aquí.</li>
+      </ol>
+    </div>
+    <div class="campos" style="grid-template-columns:1fr 1fr">
+      <label>Usuario de GitHub<input type="text" id="cDueno" autocomplete="off"></label>
+      <label>Repositorio<input type="text" id="cRepo" autocomplete="off"></label>
+    </div>
+    <label style="margin-top:10px">Llave (token)<input type="password" id="cToken" autocomplete="off" placeholder="github_pat_…"></label>
+    <div class="pie">
+      <span class="nota" id="cNota"></span>
+      <button id="cSalir">Desconectar</button>
+      <button id="cCancelar">Cancelar</button>
+      <button id="cGuardar" class="fuerte">Conectar</button>
+    </div>
+  </div>
+</div>
+
+<!-- lista -->
+<div class="velo" id="vLista">
+  <div class="ventana" role="dialog" aria-modal="true">
+    <div class="cab">
+      <div><h2>Lista y totales</h2></div>
+      <button id="lCsv">Descargar para Excel</button>
+      <button id="lCerrar">Cerrar</button>
+    </div>
+    <div class="filtros">
+      <label class="linea"><input type="radio" name="fl" value="tengo" checked> Las que tengo</label>
+      <label class="linea"><input type="radio" name="fl" value="vendidas"> Vendidas</label>
+      <label class="linea"><input type="radio" name="fl" value="todas"> Todas</label>
+    </div>
+    <div class="tabla"><table>
+      <thead><tr><th>Colección</th><th>Moneda</th><th>Pieza</th><th>Estado</th><th class="n">Fotos</th><th class="n">Valor actual</th><th class="n">Costo</th><th class="n">Venta</th><th class="n">Ganancia</th></tr></thead>
+      <tbody id="lCuerpo"></tbody>
+      <tfoot><tr><td colspan="5" id="lCuenta"></td><td class="n" id="lValor"></td><td class="n" id="lCosto"></td><td class="n" id="lVenta"></td><td class="n" id="lGan"></td></tr></tfoot>
+    </table></div>
+  </div>
+</div>
+<div id="grande"><img alt=""></div>
+
+<script src="hoja.js"></script>
+<script>
+(function () {
+  'use strict';
+  const H = window.HOJA, $ = id => document.getElementById(id);
+  const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt !== undefined) e.textContent = txt; return e; };
+  let datos = { piezas: {}, sueltas: {} };
+  let modo = 'valor'; // 'valor' = valor de la coleccion, 'compra' = inventario
+  try { if (localStorage.getItem('modoInventario') === 'compra') modo = 'compra'; } catch (e) {}
+
+  // ---------- dinero y fechas
+  const fmt = n => '₡' + Math.round(n).toLocaleString('es-CR');
+  const conSigno = n => (n < 0 ? '−' : '') + fmt(Math.abs(n));
+  const num = s => { // acepta 25000, 25.000, 25,000.50, ₡25 000
+    s = String(s || '').replace(/[₡\s]/g, ''); if (!s) return 0;
+    if (/^\d{1,3}([.,]\d{3})+$/.test(s)) s = s.replace(/[.,]/g, '');
+    else if (s.includes(',') && s.includes('.')) s = s.lastIndexOf(',') > s.lastIndexOf('.') ? s.replace(/\./g, '').replace(',', '.') : s.replace(/,/g, '');
+    else s = s.replace(',', '.');
+    const n = parseFloat(s); return isFinite(n) && n > 0 ? n : 0;
+  };
+  const fecha = f => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(f || ''); return m ? m[3] + '/' + m[2] + '/' + m[1] : ''; };
+  const hoy = () => new Date().toLocaleDateString('sv-SE');
+
+  // ---------- datos de cada pieza
+  const base = Object.fromEntries(H.piezas.map(p => [p.id, p]));
+  const reg = id => datos.piezas[id] || {};
+  const tengo = id => { const r = reg(id); return r.tengo !== undefined ? !!r.tengo : !!(base[id].ck && base[id].ck.on); };
+  const fotosDe = (id, grupo) => reg(id)[grupo] || [];
+  const nFotos = id => fotosDe(id, 'fotos').length + fotosDe(id, 'fotosCompra').length;
+  const nombrePieza = p => p.tipo === 'Estuche' ? 'Estuche ' + (p.serie ? p.serie + ' / ' + p.tiraje : '(sin serie)') : 'Acrílico ' + p.calidad;
+  function limpiar(r) {
+    for (const k of Object.keys(r)) if (r[k] === '' || r[k] === 0 || r[k] === undefined || (r[k] === false && k !== 'tengo') || (Array.isArray(r[k]) && !r[k].length)) delete r[k];
+    return r;
+  }
+
+  // ---------- GitHub: de aqui se leen y aqui se guardan los datos
+  let cfg = { dueno: '', repo: '', token: '' };
+  try { cfg = Object.assign(cfg, JSON.parse(localStorage.getItem('githubInventario') || '{}')); } catch (e) {}
+  if (!cfg.dueno && /\.github\.io$/.test(location.hostname)) { cfg.dueno = location.hostname.split('.')[0]; cfg.repo = location.pathname.split('/')[1] || ''; }
+  const conectado = () => !!(cfg.token && cfg.dueno && cfg.repo);
+  let sha = null; const sucias = new Set(); const locales = {}; // locales: fotos recien subidas (nombre -> blob url)
+
+  function api(metodo, ruta, cuerpo, crudo) {
+    return fetch('https://api.github.com/repos/' + encodeURIComponent(cfg.dueno) + '/' + encodeURIComponent(cfg.repo) + '/contents/' + ruta, {
+      method: metodo, cache: 'no-store',
+      headers: { Authorization: 'Bearer ' + cfg.token, Accept: crudo ? 'application/vnd.github.raw' : 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' },
+      body: cuerpo ? JSON.stringify(cuerpo) : undefined
+    });
+  }
+  const b64texto = t => { const b = new TextEncoder().encode(t); let s = ''; for (let i = 0; i < b.length; i += 8192) s += String.fromCharCode.apply(null, b.subarray(i, i + 8192)); return btoa(s); };
+  const textoB64 = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, '')), c => c.charCodeAt(0)));
+  const b64blob = blob => new Promise((ok, mal) => { const l = new FileReader(); l.onload = () => ok(String(l.result).split(',')[1]); l.onerror = mal; l.readAsDataURL(blob); });
+
+  async function leerRemoto() { // con llave: lo mas reciente, directo del repositorio
+    const r = await api('GET', 'datos.json');
+    if (r.status === 404) return { datos: {}, sha: null };
+    if (!r.ok) throw new Error('GitHub respondió ' + r.status);
+    const j = await r.json();
+    return { datos: JSON.parse(textoB64(j.content) || '{}'), sha: j.sha };
+  }
+  let cola = Promise.resolve();
+  function guardarDatos(mensaje) { // un guardado a la vez
+    const p = cola.then(() => guardarAhora(mensaje)); cola = p.catch(() => {}); return p;
+  }
+  async function guardarAhora(mensaje) {
+    estado('Guardando…');
+    for (let intento = 0; intento < 2; intento++) {
+      const cuerpo = { message: mensaje, content: b64texto(JSON.stringify(datos, null, 1)) }; if (sha) cuerpo.sha = sha;
+      const r = await api('PUT', 'datos.json', cuerpo);
+      if (r.ok) { sha = (await r.json()).content.sha; sucias.clear(); estado('Guardado'); aviso(''); return; }
+      if ((r.status === 409 || r.status === 422) && intento === 0) {
+        // alguien guardo desde otro equipo: se toma lo suyo y encima lo que se cambio aqui
+        const rem = await leerRemoto(), mios = datos;
+        datos = { piezas: rem.datos.piezas || {}, sueltas: Object.assign({}, rem.datos.sueltas, mios.sueltas) };
+        for (const id of sucias) { if (mios.piezas[id]) datos.piezas[id] = mios.piezas[id]; else delete datos.piezas[id]; }
+        sha = rem.sha; continue;
+      }
+      estado('Sin guardar');
+      throw new Error(r.status === 401 || r.status === 403 ? 'La llave no sirve o no tiene permiso de escritura (' + r.status + ').' : 'GitHub respondió ' + r.status + '.');
+    }
+  }
+  function estado(t) { $('estado').textContent = t; }
+  function aviso(t) { const a = $('aviso'); a.textContent = t; a.style.display = t ? 'block' : 'none'; }
+
+  // direccion de una foto: la recien subida, o la publicada; si aun no esta publicada se pide al repositorio
+  function ponerFoto(img, nombre) {
+    if (locales[nombre]) { img.src = locales[nombre]; return; }
+    img.onerror = async () => {
+      img.onerror = null; if (!conectado()) return;
+      try { const r = await api('GET', 'fotos/' + nombre, null, true); if (r.ok) { locales[nombre] = URL.createObjectURL(await r.blob()); img.src = locales[nombre]; } } catch (e) {}
+    };
+    img.src = 'fotos/' + nombre;
+  }
+
+  // ---------- dibujar la hoja
+  const hoja = $('hoja');
+  hoja.style.width = H.ancho + 'px'; hoja.style.height = H.alto + 'px'; hoja.style.background = H.fondo;
+  const JUST = { left: 'flex-start', center: 'center', right: 'flex-end' }, ALIN = { top: 'flex-start', center: 'center', bottom: 'flex-end' };
+  const frag = document.createDocumentFragment();
+  for (const c of H.celdas) {
+    const d = el('div', 'c' + (c.wr ? ' wr' : ''));
+    d.style.cssText = `left:${c.x}px;top:${c.y}px;width:${c.w}px;height:${c.h}px;` +
+      (c.bg ? `background:${c.bg};` : '') + (c.bl ? `border-left:${c.bl};` : '') + (c.bt ? `border-top:${c.bt};` : '') + (c.br ? `border-right:${c.br};` : '') + (c.bb ? `border-bottom:${c.bb};` : '');
+    if (c.v !== undefined) {
+      d.style.justifyContent = JUST[c.ha] || 'flex-start'; d.style.alignItems = ALIN[c.va] || 'flex-end';
+      d.style.textAlign = c.ha || 'left'; d.style.fontSize = (c.fs * 4 / 3).toFixed(1) + 'px'; d.style.color = c.c || '#000';
+      if (c.b) d.style.fontWeight = 'bold'; if (c.i) d.style.fontStyle = 'italic';
+      if (c.fn) d.style.fontFamily = `"${c.fn}", Copperplate, Georgia, serif`;
+      d.appendChild(el('span', '', c.v));
+    }
+    frag.appendChild(d);
+  }
+  for (const p of H.imagenes) {
+    if (p.elipse) { const e = el('div', 'elipse'); e.style.cssText = `left:${p.x}px;top:${p.y}px;width:${p.w}px;height:${p.h}px`; frag.appendChild(e); continue; }
+    const d = el('div', 'im'); d.style.cssText = `left:${p.x}px;top:${p.y}px;width:${p.w}px;height:${p.h}px`;
+    const l = p.cl || 0, t = p.ct || 0, r = p.cr || 0, b = p.cb || 0, w = p.w / (1 - l - r), h = p.h / (1 - t - b);
+    const im = el('img'); im.src = 'img/' + p.f; im.alt = ''; im.draggable = false;
+    im.style.cssText = `left:${-l * w}px;top:${-t * h}px;width:${w}px;height:${h}px` + (p.negroTransparente ? ';mix-blend-mode:lighten' : '');
+    d.appendChild(im); frag.appendChild(d);
+  }
+  const zonas = {}, casillas = {};
+  let relojCasillas = null;
+  function guardarCasillas() { clearTimeout(relojCasillas); estado('Sin guardar'); relojCasillas = setTimeout(() => guardarDatos('Casillas del inventario').catch(e => aviso('No se pudo guardar: ' + e.message)), 2500); }
+  for (const p of H.piezas) {
+    const z = el('div', 'pz'); z.style.cssText = `left:${p.x}px;top:${p.y}px;width:${p.w}px;height:${p.h}px`;
+    z.tabIndex = 0; z.setAttribute('role', 'button'); z.appendChild(el('i'));
+    z.addEventListener('click', () => abrirFicha(p.id));
+    z.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrirFicha(p.id); } });
+    zonas[p.id] = z; frag.appendChild(z);
+    if (p.ck) {
+      const k = el('div', 'ck'); k.style.cssText = `left:${p.ck.x + 3}px;top:${p.ck.y + 3}px`;
+      k.addEventListener('click', () => {
+        if (!conectado()) return;
+        datos.piezas[p.id] = limpiar(Object.assign({}, datos.piezas[p.id], { tengo: !tengo(p.id) })); sucias.add(p.id);
+        pintarPieza(p.id); totales(); guardarCasillas();
+      });
+      casillas[p.id] = k; frag.appendChild(k);
+    }
+  }
+  H.casillasSueltas.forEach((s, i) => {
+    const k = el('div', 'ck'); k.style.cssText = `left:${s.x + 3}px;top:${s.y + 3}px`;
+    const marcado = () => datos.sueltas && datos.sueltas[i] !== undefined ? datos.sueltas[i] : s.on;
+    k.pintar = () => k.classList.toggle('on', !!marcado());
+    k.addEventListener('click', () => { if (!conectado()) return; datos.sueltas = datos.sueltas || {}; datos.sueltas[i] = !marcado(); k.pintar(); guardarCasillas(); });
+    casillas['suelta' + i] = k; frag.appendChild(k);
+  });
+  hoja.appendChild(frag);
+
+  function pintarPieza(id) {
+    const p = base[id], r = reg(id), z = zonas[id];
+    const tiene = modo === 'valor' ? !!(r.valor || fotosDe(id, 'fotos').length) : !!(r.costo || fotosDe(id, 'fotosCompra').length);
+    z.classList.toggle('con', tiene && !r.vendida);
+    z.classList.toggle('vendida', !!r.vendida);
+    let t = p.moneda + ' · ' + nombrePieza(p);
+    if (r.valor) t += '\nValor actual: ' + fmt(r.valor);
+    if (r.costo) t += '\nLa compré en: ' + fmt(r.costo);
+    if (r.vendida) t += '\nVendida' + (r.precioVenta ? ' en ' + fmt(r.precioVenta) : '');
+    z.title = t;
+    if (casillas[id]) casillas[id].classList.toggle('on', tengo(id));
+  }
+  function totales() {
+    let n = 0, inv = 0, ven = 0, gan = 0, val = 0;
+    for (const p of H.piezas) {
+      const r = reg(p.id);
+      if (tengo(p.id) && !r.vendida) { n++; val += r.valor || 0; }
+      inv += r.costo || 0;
+      if (r.vendida) { ven += r.precioVenta || 0; gan += (r.precioVenta || 0) - (r.costo || 0); }
+    }
+    $('tPiezas').textContent = n; $('tInv').textContent = fmt(inv); $('tVal').textContent = fmt(val); $('tVen').textContent = fmt(ven); $('tGan').textContent = conSigno(gan);
+    if ($('vLista').classList.contains('abierta')) pintarLista();
+  }
+  function pintarTodo() {
+    for (const p of H.piezas) pintarPieza(p.id);
+    for (const k in casillas) if (casillas[k].pintar) casillas[k].pintar();
+    totales();
+    $('mValor').classList.toggle('activo', modo === 'valor'); $('mCompra').classList.toggle('activo', modo === 'compra');
+    document.body.classList.toggle('puedeEditar', conectado());
+    $('bConectar').textContent = conectado() ? 'Conectado' : 'Conectar para editar';
+  }
+  function ponerModo(m) { modo = m; try { localStorage.setItem('modoInventario', m); } catch (e) {} pintarTodo(); }
+  $('mValor').onclick = () => ponerModo('valor'); $('mCompra').onclick = () => ponerModo('compra');
+
+  // ---------- zoom
+  let zoom = 0.8;
+  try { zoom = parseFloat(localStorage.getItem('zoomInventario')) || 0.8; } catch (e) {}
+  function ponerZoom(z) { zoom = Math.min(2, Math.max(0.3, z)); hoja.style.zoom = zoom; try { localStorage.setItem('zoomInventario', zoom); } catch (e) {} }
+  $('zMas').onclick = () => ponerZoom(zoom + 0.1); $('zMenos').onclick = () => ponerZoom(zoom - 0.1);
+  $('zAjustar').onclick = () => ponerZoom(($('area').clientWidth - 4) / H.ancho);
+  ponerZoom(zoom);
+
+  // ---------- ficha de consulta (lo que se ve al dar clic a una pieza)
+  let actual = null, pestana = 'valor';
+  function abrirFicha(id) {
+    actual = id; pestana = modo; const p = base[id];
+    $('vMoneda').textContent = p.moneda;
+    $('vSub').textContent = nombrePieza(p) + (p.anio ? ' · Emisión ' + p.anio : '');
+    $('vCol').textContent = p.coleccion;
+    pintarFicha(); $('vFicha').classList.add('abierta'); $('vFicha').scrollTop = 0;
+  }
+  function renglon(caja, rotulo, valor) { if (!valor) return; const d = el('div'); d.append(el('span', '', rotulo + ': '), valor); caja.appendChild(d); }
+  function pintarFicha() {
+    const id = actual, r = reg(id), esValor = pestana === 'valor';
+    $('pValor').classList.toggle('activo', esValor); $('pCompra').classList.toggle('activo', !esValor);
+    const fotos = fotosDe(id, esValor ? 'fotos' : 'fotosCompra'), caja = $('vFoto'), minis = $('vMinis');
+    caja.textContent = ''; minis.textContent = '';
+    if (!fotos.length) caja.textContent = esValor ? 'Sin foto de la pieza todavía' : 'Sin foto de inventario todavía';
+    else {
+      const grande = el('img'); grande.alt = 'Foto de la pieza'; caja.appendChild(grande);
+      grande.onclick = () => { $('grande').firstElementChild.src = grande.src; $('grande').style.display = 'flex'; };
+      const ver = i => { ponerFoto(grande, fotos[i]); [...minis.children].forEach((m, j) => m.classList.toggle('activa', i === j)); };
+      if (fotos.length > 1) fotos.forEach((n, i) => { const m = el('img'); m.alt = 'Foto ' + (i + 1); ponerFoto(m, n); m.onclick = () => ver(i); minis.appendChild(m); });
+      ver(0);
+    }
+    const monto = esValor ? r.valor : r.costo;
+    $('vRotulo').textContent = esValor ? 'Valor actual de la moneda' : 'Precio al que la compré';
+    $('vPrecio').textContent = monto ? fmt(monto) : 'Sin precio todavía'; $('vPrecio').classList.toggle('vacio', !monto);
+    const det = $('vDetalle'); det.textContent = '';
+    if (esValor) { renglon(det, 'Fecha del valor', fecha(r.fechaValor)); renglon(det, 'Fuente', r.fuenteValor); if (r.valor && r.costo) renglon(det, 'Frente a lo que costó', conSigno(r.valor - r.costo)); }
+    else { renglon(det, 'Fecha de compra', fecha(r.fechaCompra)); renglon(det, 'Comprada a', r.origen); if (r.valor && r.costo) renglon(det, 'Valor actual', fmt(r.valor)); }
+    const est = $('vEstado'); est.textContent = '';
+    if (r.vendida) {
+      est.appendChild(el('span', 'vend', 'Vendida' + (r.precioVenta ? ' en ' + fmt(r.precioVenta) : '') + (r.fechaVenta ? ' el ' + fecha(r.fechaVenta) : '') + (r.comprador ? ' a ' + r.comprador : '')));
+      if (r.precioVenta && r.costo) est.append('\n' + (r.precioVenta >= r.costo ? 'Ganancia: ' : 'Pérdida: ') + fmt(Math.abs(r.precioVenta - r.costo)));
+    } else est.appendChild(tengo(id) ? el('span', 'inv', 'En la colección') : el('span', 'no', 'No la tengo'));
+    if (r.notas) est.append('\n\n' + r.notas);
+    $('vEditar').textContent = nFotos(id) || r.valor || r.costo ? 'Cambiar datos y fotos' : 'Poner datos y fotos';
+  }
+  $('pValor').onclick = () => { pestana = 'valor'; pintarFicha(); }; $('pCompra').onclick = () => { pestana = 'compra'; pintarFicha(); };
+  const cerrarFicha = () => { $('vFicha').classList.remove('abierta'); };
+  $('vCerrar').onclick = cerrarFicha;
+  $('vFicha').addEventListener('mousedown', e => { if (e.target === $('vFicha')) cerrarFicha(); });
+  $('vEditar').onclick = () => { if (conectado()) abrirForm(); else abrirConexion(); };
+  $('grande').onclick = () => { $('grande').style.display = 'none'; };
+
+  // ---------- pantalla de captura
+  const campos = { fValor: 'valor', fFechaValor: 'fechaValor', fFuenteValor: 'fuenteValor', fCosto: 'costo', fFechaCompra: 'fechaCompra', fOrigen: 'origen', fPrecio: 'precioVenta', fFechaVenta: 'fechaVenta', fComprador: 'comprador', fNotas: 'notas' };
+  const esDinero = k => k === 'costo' || k === 'precioVenta' || k === 'valor';
+  const GRUPOS = { fotos: 'fotosPieza', fotosCompra: 'fotosCompra' };
+  let borrador = null, grupoActivo = 'fotos';
+  function abrirForm() {
+    const id = actual, p = base[id], r = reg(id);
+    borrador = { fotos: fotosDe(id, 'fotos').map(n => ({ nombre: n })), fotosCompra: fotosDe(id, 'fotosCompra').map(n => ({ nombre: n })), quitadas: [] };
+    grupoActivo = pestana === 'compra' ? 'fotosCompra' : 'fotos';
+    $('fMoneda').textContent = p.moneda; $('fSub').textContent = nombrePieza(p) + (p.anio ? ' · Emisión ' + p.anio : '');
+    $('fTengo').checked = tengo(id); $('fVendida').checked = !!r.vendida;
+    for (const f in campos) { const v = r[campos[f]]; $(f).value = v === undefined ? '' : esDinero(campos[f]) ? Math.round(v).toLocaleString('es-CR') : v; }
+    $('fNota').textContent = ''; $('fGuardar').disabled = false; $('fCancelar').disabled = false;
+    for (const g in GRUPOS) pintarGrupo(g);
+    $('vForm').classList.add('abierta'); $('vForm').scrollTop = 0;
+  }
+  function cerrarForm() { for (const g in GRUPOS) for (const f of borrador[g]) if (f.url && !f.nombre) URL.revokeObjectURL(f.url); borrador = null; $('vForm').classList.remove('abierta'); }
+  function pintarGrupo(grupo) {
+    const caja = $(GRUPOS[grupo]); caja.textContent = '';
+    borrador[grupo].forEach((f, i) => {
+      const d = el('div', 'foto'), im = el('img'); im.alt = 'Foto'; if (f.url) im.src = f.url; else ponerFoto(im, f.nombre);
+      const x = el('button', '', '×'); x.title = 'Quitar esta foto';
+      x.onclick = () => { if (f.nombre) borrador.quitadas.push(f.nombre); borrador[grupo].splice(i, 1); pintarGrupo(grupo); };
+      d.append(im, x); caja.appendChild(d);
+    });
+    const s = el('div', 'soltar', grupo === 'fotos' ? '+ Foto de la pieza (clic, arrastrar o pegar)' : '+ Foto de inventario (clic, arrastrar o pegar)');
+    s.onclick = () => { grupoActivo = grupo; $('fArchivo').click(); };
+    s.onmouseenter = () => { grupoActivo = grupo; };
+    s.ondragover = e => { e.preventDefault(); s.classList.add('encima'); };
+    s.ondragleave = () => s.classList.remove('encima');
+    s.ondrop = e => { e.preventDefault(); s.classList.remove('encima'); agregar(e.dataTransfer.files, grupo); };
+    caja.appendChild(s);
+  }
+  $('fArchivo').addEventListener('change', e => { agregar(e.target.files, grupoActivo); e.target.value = ''; });
+  document.addEventListener('paste', e => { if (borrador && e.clipboardData && e.clipboardData.files.length) { e.preventDefault(); agregar(e.clipboardData.files, grupoActivo); } });
+  function achicar(archivo) { // maximo 1600 px para que no pese
+    return new Promise((ok, mal) => {
+      const url = URL.createObjectURL(archivo), im = new Image();
+      im.onload = () => {
+        const k = Math.min(1, 1600 / Math.max(im.width, im.height)), c = document.createElement('canvas');
+        c.width = Math.round(im.width * k); c.height = Math.round(im.height * k);
+        const g = c.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height); g.drawImage(im, 0, 0, c.width, c.height);
+        URL.revokeObjectURL(url); c.toBlob(b => b ? ok(b) : mal(new Error('imagen')), 'image/jpeg', 0.85);
+      };
+      im.onerror = () => { URL.revokeObjectURL(url); mal(new Error('imagen')); };
+      im.src = url;
+    });
+  }
+  async function agregar(lista, grupo) {
+    for (const a of [...lista].filter(a => a.type.startsWith('image/'))) {
+      try { const blob = await achicar(a); if (!borrador) return; borrador[grupo].push({ blob, url: URL.createObjectURL(blob) }); pintarGrupo(grupo); }
+      catch (e) { $('fNota').textContent = 'No se pudo leer una de las imágenes.'; }
+    }
+  }
+  for (const f in campos) if (esDinero(campos[f])) $(f).addEventListener('blur', () => { const n = num($(f).value); $(f).value = n ? Math.round(n).toLocaleString('es-CR') : ''; });
+  $('fVendida').addEventListener('change', () => { if ($('fVendida').checked && !$('fFechaVenta').value) $('fFechaVenta').value = hoy(); });
+  $('fCancelar').onclick = cerrarForm;
+  $('fGuardar').onclick = async () => {
+    const id = actual, p = base[id], nota = $('fNota');
+    $('fGuardar').disabled = true; $('fCancelar').disabled = true;
+    try {
+      // 1. subir las fotos nuevas
+      const nuevas = [].concat(...Object.keys(GRUPOS).map(g => borrador[g].filter(f => !f.nombre)));
+      for (let i = 0; i < nuevas.length; i++) {
+        nota.textContent = 'Subiendo foto ' + (i + 1) + ' de ' + nuevas.length + '…';
+        const f = nuevas[i], nombre = id + '-' + Date.now() + '-' + Math.random().toString(36).slice(2, 7) + '.jpg';
+        const r = await api('PUT', 'fotos/' + nombre, { message: 'Foto de ' + p.moneda + ' (' + nombrePieza(p) + ')', content: await b64blob(f.blob) });
+        if (!r.ok) throw new Error(r.status === 401 || r.status === 403 ? 'La llave no sirve o no tiene permiso de escritura.' : 'GitHub respondió ' + r.status + ' al subir la foto.');
+        f.nombre = nombre; locales[nombre] = f.url;
+      }
+      // 2. guardar los datos
+      nota.textContent = 'Guardando datos…';
+      const r = { tengo: $('fTengo').checked, vendida: $('fVendida').checked, fotos: borrador.fotos.map(f => f.nombre), fotosCompra: borrador.fotosCompra.map(f => f.nombre) };
+      for (const f in campos) r[campos[f]] = esDinero(campos[f]) ? num($(f).value) : $(f).value.trim();
+      datos.piezas[id] = limpiar(r); sucias.add(id);
+      await guardarDatos('Datos de ' + p.moneda + ' (' + nombrePieza(p) + ')');
+      // 3. quitar del repositorio las fotos que se quitaron (si falla no pasa nada)
+      for (const nombre of borrador.quitadas) {
+        try { const m = await api('GET', 'fotos/' + nombre); if (m.ok) await api('DELETE', 'fotos/' + nombre, { message: 'Quitar foto', sha: (await m.json()).sha }); } catch (e) {}
+      }
+      cerrarForm(); pintarPieza(id); totales(); pintarFicha();
+    } catch (e) {
+      nota.textContent = 'No se guardó: ' + e.message; $('fGuardar').disabled = false; $('fCancelar').disabled = false;
+    }
+  };
+
+  // ---------- conectar
+  function abrirConexion() {
+    $('cDueno').value = cfg.dueno; $('cRepo').value = cfg.repo; $('cToken').value = cfg.token; $('cNota').textContent = '';
+    $('cSalir').style.display = cfg.token ? '' : 'none'; $('vCon').classList.add('abierta');
+  }
+  $('bConectar').onclick = abrirConexion;
+  $('cCancelar').onclick = () => $('vCon').classList.remove('abierta');
+  $('cSalir').onclick = () => { cfg.token = ''; try { localStorage.setItem('githubInventario', JSON.stringify(cfg)); } catch (e) {} $('vCon').classList.remove('abierta'); pintarTodo(); };
+  $('cGuardar').onclick = async () => {
+    const prueba = { dueno: $('cDueno').value.trim(), repo: $('cRepo').value.trim(), token: $('cToken').value.trim() };
+    if (!prueba.dueno || !prueba.repo || !prueba.token) { $('cNota').textContent = 'Faltan datos.'; return; }
+    $('cNota').textContent = 'Probando…';
+    try {
+      const r = await fetch('https://api.github.com/repos/' + encodeURIComponent(prueba.dueno) + '/' + encodeURIComponent(prueba.repo), { headers: { Authorization: 'Bearer ' + prueba.token, Accept: 'application/vnd.github+json' } });
+      if (!r.ok) throw new Error(r.status === 401 ? 'La llave no es válida.' : r.status === 404 ? 'No se encontró ese repositorio con esa llave.' : 'GitHub respondió ' + r.status + '.');
+      const j = await r.json(); if (j.permissions && !j.permissions.push) throw new Error('La llave no tiene permiso de escritura (Contents: Read and write).');
+      cfg = prueba; try { localStorage.setItem('githubInventario', JSON.stringify(cfg)); } catch (e) {}
+      const rem = await leerRemoto(); datos = { piezas: rem.datos.piezas || {}, sueltas: rem.datos.sueltas || {} }; sha = rem.sha;
+      $('vCon').classList.remove('abierta'); pintarTodo(); if (actual && $('vFicha').classList.contains('abierta')) pintarFicha();
+    } catch (e) { $('cNota').textContent = e.message; }
+  };
+
+  // ---------- lista
+  function filasLista() {
+    const f = document.querySelector('input[name=fl]:checked').value;
+    return H.piezas.filter(p => { const r = reg(p.id); return f === 'todas' || (f === 'vendidas' ? r.vendida : tengo(p.id) && !r.vendida); });
+  }
+  function pintarLista() {
+    const cuerpo = $('lCuerpo'); cuerpo.textContent = ''; let c = 0, v = 0, g = 0, va = 0; const filas = filasLista();
+    for (const p of filas) {
+      const r = reg(p.id), tr = el('tr');
+      const est = r.vendida ? ['Vendida', 'vend'] : tengo(p.id) ? ['En la colección', 'inv'] : ['No la tengo', 'no'];
+      const gan = r.vendida ? (r.precioVenta || 0) - (r.costo || 0) : null;
+      [[p.coleccion], [p.moneda], [nombrePieza(p)], est, [nFotos(p.id) || '', 'n'], [r.valor ? fmt(r.valor) : '', 'n'], [r.costo ? fmt(r.costo) : '', 'n'], [r.vendida && r.precioVenta ? fmt(r.precioVenta) : '', 'n'], [gan === null ? '' : conSigno(gan), 'n']]
+        .forEach(([t, cls]) => tr.appendChild(el('td', cls, t)));
+      tr.onclick = () => { $('vLista').classList.remove('abierta'); abrirFicha(p.id); };
+      cuerpo.appendChild(tr);
+      c += r.costo || 0; if (!r.vendida) va += r.valor || 0; if (r.vendida) { v += r.precioVenta || 0; g += gan; }
+    }
+    $('lCuenta').textContent = filas.length + ' piezas'; $('lValor').textContent = fmt(va); $('lCosto').textContent = fmt(c); $('lVenta').textContent = fmt(v); $('lGan').textContent = conSigno(g);
+  }
+  $('bLista').onclick = () => { $('vLista').classList.add('abierta'); pintarLista(); };
+  $('lCerrar').onclick = () => $('vLista').classList.remove('abierta');
+  $('vLista').addEventListener('mousedown', e => { if (e.target === $('vLista')) $('vLista').classList.remove('abierta'); });
+  document.querySelectorAll('input[name=fl]').forEach(r => r.addEventListener('change', pintarLista));
+  $('lCsv').onclick = () => {
+    const q = s => '"' + String(s === undefined ? '' : s).replace(/"/g, '""') + '"';
+    const lineas = [['Colección', 'Moneda', 'Año', 'Tipo', 'Serie o calidad', 'Tiraje', 'La tengo', 'Vendida', 'Valor actual', 'Costo', 'Fecha compra', 'Comprada a', 'Precio venta', 'Fecha venta', 'Vendida a', 'Ganancia', 'Fotos', 'Notas'].map(q).join(';')];
+    for (const p of H.piezas) {
+      const r = reg(p.id);
+      lineas.push([p.coleccion, p.moneda, p.anio, p.tipo, p.serie || p.calidad || '', p.tiraje || '', tengo(p.id) ? 'Sí' : 'No', r.vendida ? 'Sí' : 'No', r.valor || '', r.costo || '', r.fechaCompra, r.origen, r.precioVenta || '', r.fechaVenta, r.comprador, r.vendida ? (r.precioVenta || 0) - (r.costo || 0) : '', nFotos(p.id), r.notas].map(q).join(';'));
+    }
+    const a = el('a'); a.href = URL.createObjectURL(new Blob(['﻿' + lineas.join('\r\n')], { type: 'text/csv' }));
+    a.download = 'inventario-monedas-' + hoy() + '.csv'; a.click(); URL.revokeObjectURL(a.href);
+  };
+
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    if ($('grande').style.display === 'flex') $('grande').style.display = 'none';
+    else if ($('vCon').classList.contains('abierta')) $('vCon').classList.remove('abierta');
+    else if ($('vForm').classList.contains('abierta')) { if (!$('fCancelar').disabled) cerrarForm(); }
+    else if ($('vFicha').classList.contains('abierta')) cerrarFicha();
+    else $('vLista').classList.remove('abierta');
+  });
+  window.addEventListener('beforeunload', e => { if (sucias.size || $('estado').textContent === 'Sin guardar') { e.preventDefault(); e.returnValue = ''; } });
+
+  // ---------- arranque
+  (async function () {
+    pintarTodo();
+    try {
+      let d = {};
+      if (conectado()) { const rem = await leerRemoto(); d = rem.datos; sha = rem.sha; }
+      else if (location.protocol !== 'file:') { const r = await fetch('datos.json?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) d = await r.json(); }
+      datos = { piezas: d.piezas || {}, sueltas: d.sueltas || {} };
+    } catch (e) {
+      aviso('No se pudieron leer los datos guardados (' + e.message + '). Se muestra la hoja sin precios ni fotos.');
+    }
+    pintarTodo();
+  })();
+})();
+</script>
+</body>
+</html>
