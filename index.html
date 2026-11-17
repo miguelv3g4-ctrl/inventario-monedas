@@ -228,7 +228,7 @@
     </div>
     <div class="campos" id="fSerieCaja" style="margin-top:12px">
       <label>Número de serie<input type="text" inputmode="numeric" id="fSerie" placeholder="Ej. 0128"></label>
-      <label>Tiraje<input type="text" id="fTiraje" disabled></label>
+      <label>Tiraje (unidades emitidas)<input type="text" inputmode="numeric" id="fTiraje" placeholder="Ej. 7000"></label>
     </div>
     <div class="campos" id="fOtra" style="margin-top:12px">
       <label>Nombre<input type="text" id="fNombre"></label>
@@ -334,7 +334,8 @@
   const nFotos = id => new Set(fotosDe(id, 'fotos').concat(fotosDe(id, 'fotosCompra'))).size;
   // serie de un estuche: la que se puso en la ficha, o la que traia la hoja
   const serieDe = id => (reg(id).serie || (base[id] && base[id].serie) || '');
-  const nombrePieza = p => p.otra ? p.coleccion + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '') : p.tipo === 'Estuche' ? 'Estuche ' + (serieDe(p.id) ? serieDe(p.id) + ' / ' + p.tiraje : '(sin serie)') : 'Acrílico ' + p.calidad;
+  const tirajeDe = id => (reg(id).tiraje || (base[id] && base[id].tiraje) || '');
+  const nombrePieza = p => p.otra ? p.coleccion + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '') : p.tipo === 'Estuche' ? 'Estuche ' + (serieDe(p.id) || '(sin serie)') + (tirajeDe(p.id) ? ' / ' + tirajeDe(p.id) : '') : 'Acrílico ' + p.calidad;
   const fotoEnUso = nombre => Object.values(datos.piezas).some(r => (r.fotos || []).includes(nombre) || (r.fotosCompra || []).includes(nombre));
   function limpiar(r) {
     for (const k of Object.keys(r)) if (r[k] === '' || r[k] === 0 || r[k] === undefined || (r[k] === false && k !== 'tengo') || (Array.isArray(r[k]) && !r[k].length)) delete r[k];
@@ -459,22 +460,28 @@
   // la celda de la serie esta a la derecha de "Estuche" (ej. C10 -> D10); si estaba vacia se crea
   const colN = s => [...s].reduce((n, ch) => n * 26 + ch.charCodeAt(0) - 64, 0);
   const colL = n => { let s = ''; while (n) { s = String.fromCharCode(65 + (n - 1) % 26) + s; n = Math.floor((n - 1) / 26); } return s; };
-  function celdaSerie(id) {
-    const m = /^([A-Z]+)(\d+)$/.exec(id), ref = colL(colN(m[1]) + 1) + m[2];
+  // desp: 1 = celda de la serie (entre "Estuche" y "/"), 3 = celda del tiraje (despues de "/")
+  function celdaEn(id, desp) {
+    const m = /^([A-Z]+)(d+)$/.exec(id), ref = colL(colN(m[1]) + desp) + m[2];
     if (celdas[ref] && celdas[ref].d.firstChild) return celdas[ref].d.firstChild;
     const est = celdas[id], barra = celdas[colL(colN(m[1]) + 2) + m[2]];
     if (!est || !barra) return null;
-    const c = est.c, x = c.x + c.w, d = el('div', 'c');
-    d.style.cssText = `left:${x}px;top:${c.y}px;width:${barra.c.x - x}px;height:${c.h}px;justify-content:flex-start;align-items:${ALIN[c.va] || 'flex-end'};font-size:${(c.fs * 4 / 3).toFixed(1)}px;color:${c.c || '#000'}`;
-    const s = el('span'); d.appendChild(s); hoja.appendChild(d);
+    const c = est.c, x = desp === 1 ? c.x + c.w : barra.c.x + barra.c.w;
+    const w = desp === 1 ? barra.c.x - x : Math.max(40, base[id].x + base[id].w - x);
+    const d = el('div', 'c');
+    d.style.cssText = `left:${x}px;top:${c.y}px;width:${w}px;height:${c.h}px;justify-content:flex-start;align-items:${ALIN[c.va] || 'flex-end'};font-size:${(c.fs * 4 / 3).toFixed(1)}px;color:${c.c || '#000'}`;
+    const sp = el('span'); d.appendChild(sp); hoja.appendChild(d);
     celdas[ref] = { c: Object.assign({}, c, { ref, x }), d };
-    return s;
+    return sp;
   }
 
   function pintarPieza(id) {
     const p = base[id], r = reg(id), z = zonas[id];
     if (!z) return; // las "otras piezas" no estan en la hoja
-    if (p.tipo === 'Estuche' && (r.serie || p.serie)) { const s = celdaSerie(id); if (s) s.textContent = serieDe(id); }
+    if (p.tipo === 'Estuche') {
+      if (r.serie || p.serie) { const c = celdaEn(id, 1); if (c) c.textContent = serieDe(id); }
+      if (r.tiraje || p.tiraje) { const c = celdaEn(id, 3); if (c) c.textContent = tirajeDe(id); }
+    }
     const tiene = modo === 'valor' ? !!(r.valor || fotosDe(id, 'fotos').length) : !!(r.costo || fotosDe(id, 'fotosCompra').length);
     z.classList.toggle('con', tiene && !r.vendida);
     z.classList.toggle('vendida', !!r.vendida);
@@ -572,7 +579,7 @@
     $('fOtra').style.display = p.otra ? '' : 'none';
     const esEstuche = !p.otra && p.tipo === 'Estuche';
     $('fSerieCaja').style.display = esEstuche ? '' : 'none';
-    if (esEstuche) { $('fSerie').value = serieDe(id); $('fTiraje').value = p.tiraje || ''; }
+    if (esEstuche) { $('fSerie').value = serieDe(id); $('fTiraje').value = tirajeDe(id); }
     if (p.otra) {
       const o = datos.otras.find(x => x.id === id) || {};
       $('fNombre').value = o.nombre || ''; $('fCategoria').value = o.categoria || ''; $('fCantidad').value = r.cantidad || 1;
@@ -650,11 +657,12 @@
       // 2. guardar los datos
       nota.textContent = 'Guardando datos…';
       const ant = reg(id);
-      const r = { tengo: $('fTengo').checked, vendida: $('fVendida').checked, producto: ant.producto, cantidad: ant.cantidad, serie: ant.serie, fotos: borrador.fotos.map(f => f.nombre), fotosCompra: borrador.fotosCompra.map(f => f.nombre) };
+      const r = { tengo: $('fTengo').checked, vendida: $('fVendida').checked, producto: ant.producto, cantidad: ant.cantidad, serie: ant.serie, tiraje: ant.tiraje, fotos: borrador.fotos.map(f => f.nombre), fotosCompra: borrador.fotosCompra.map(f => f.nombre) };
       for (const f in campos) r[campos[f]] = esDinero(campos[f]) ? num($(f).value) : $(f).value.trim();
       if (!p.otra && p.tipo === 'Estuche') {
         // solo se guarda si es distinta de la que traia la hoja
         const s = $('fSerie').value.trim(); r.serie = s && s !== (p.serie || '') ? s : undefined;
+        const t = $('fTiraje').value.trim(); r.tiraje = t && t !== (p.tiraje || '') ? t : undefined;
       }
       if (p.otra) {
         const o = datos.otras.find(x => x.id === id);
@@ -749,7 +757,7 @@
     const lineas = [['Colección', 'Moneda', 'Año', 'Tipo', 'Serie o calidad', 'Tiraje', 'Cantidad', 'La tengo', 'Vendida', 'Valor actual (unidad)', 'Costo (unidad)', 'Fecha compra', 'Comprada a', 'Precio venta', 'Fecha venta', 'Vendida a', 'Ganancia', 'Fotos', 'Notas'].map(q).join(';')];
     for (const p of todas()) {
       const r = reg(p.id);
-      lineas.push([p.coleccion, p.moneda, p.anio, p.tipo, serieDe(p.id) || p.calidad || '', p.tiraje || '', cant(p.id), tengo(p.id) ? 'Sí' : 'No', r.vendida ? 'Sí' : 'No', r.valor || '', r.costo || '', r.fechaCompra, r.origen, r.precioVenta || '', r.fechaVenta, r.comprador, r.vendida ? (r.precioVenta || 0) - (r.costo || 0) * cant(p.id) : '', nFotos(p.id), r.notas].map(q).join(';'));
+      lineas.push([p.coleccion, p.moneda, p.anio, p.tipo, serieDe(p.id) || p.calidad || '', tirajeDe(p.id), cant(p.id), tengo(p.id) ? 'Sí' : 'No', r.vendida ? 'Sí' : 'No', r.valor || '', r.costo || '', r.fechaCompra, r.origen, r.precioVenta || '', r.fechaVenta, r.comprador, r.vendida ? (r.precioVenta || 0) - (r.costo || 0) * cant(p.id) : '', nFotos(p.id), r.notas].map(q).join(';'));
     }
     const a = el('a'); a.href = URL.createObjectURL(new Blob(['﻿' + lineas.join('\r\n')], { type: 'text/csv' }));
     a.download = 'inventario-monedas-' + hoy() + '.csv'; a.click(); URL.revokeObjectURL(a.href);
