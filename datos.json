@@ -665,8 +665,6 @@
   "H9": {
    "tengo": true,
    "producto": "175 años fundación de la República. Serie 0236 y 0237/ 4000",
-   "valor": 300000,
-   "costo": 300000,
    "fotos": [
     "175-anos-fundacion-de-la-republica-serie-0236-y-02.jpg",
     "175-anos-fundacion-de-la-republica-serie-0236-y-02-2.jpg",
@@ -677,6 +675,9 @@
     "175-anos-fundacion-de-la-republica-serie-0236-y-02-2.jpg",
     "175-anos-fundacion-de-la-republica-serie-0236-y-02-3.jpg"
    ],
+   "valor": 300000,
+   "fechaValor": "2026-11-17",
+   "costo": 20000,
    "notas": "Código: Conmemorativa #2\nMoneda conmemorativa, en estuche. Serie(s) 0236 y 0237 de un tiraje de 4000. Producto: 175 años fundación de la República. Serie 0236 y 0237/ 4000. Categoría: Hitos Históricos Estuche. Código: Conmemorativa #2. Precio de venta: ₡300 000. Disponibles: 2."
   },
   "H10": {
