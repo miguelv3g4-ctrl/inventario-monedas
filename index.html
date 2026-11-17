@@ -462,7 +462,7 @@
   const colL = n => { let s = ''; while (n) { s = String.fromCharCode(65 + (n - 1) % 26) + s; n = Math.floor((n - 1) / 26); } return s; };
   // desp: 1 = celda de la serie (entre "Estuche" y "/"), 3 = celda del tiraje (despues de "/")
   function celdaEn(id, desp) {
-    const m = /^([A-Z]+)(d+)$/.exec(id), ref = colL(colN(m[1]) + desp) + m[2];
+    const m = /^([A-Z]+)(\d+)$/.exec(id), ref = colL(colN(m[1]) + desp) + m[2];
     if (celdas[ref] && celdas[ref].d.firstChild) return celdas[ref].d.firstChild;
     const est = celdas[id], barra = celdas[colL(colN(m[1]) + 2) + m[2]];
     if (!est || !barra) return null;
