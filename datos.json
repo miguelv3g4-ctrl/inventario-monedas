@@ -1451,6 +1451,13 @@
    "costo": 10000,
    "fechaCompra": "2026-11-03",
    "origen": "museo"
+  },
+  "AC34": {
+   "tengo": true,
+   "valor": 35000,
+   "fechaValor": "2026-11-17",
+   "costo": 10000,
+   "fechaCompra": "2026-11-03"
   }
  },
  "sueltas": {},
