@@ -1443,6 +1443,14 @@
    "costo": 10000,
    "fechaCompra": "2026-11-03",
    "origen": "museo"
+  },
+  "X34": {
+   "tengo": true,
+   "valor": 35000,
+   "fechaValor": "2026-11-17",
+   "costo": 10000,
+   "fechaCompra": "2026-11-03",
+   "origen": "museo"
   }
  },
  "sueltas": {},
