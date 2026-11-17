@@ -1389,6 +1389,14 @@
    "costo": 10000,
    "fechaCompra": "2026-11-03",
    "origen": "museo"
+  },
+  "AC16": {
+   "tengo": true,
+   "valor": 18000,
+   "fechaValor": "2026-11-17",
+   "costo": 10000,
+   "fechaCompra": "2026-11-03",
+   "origen": "museo"
   }
  },
  "sueltas": {},
