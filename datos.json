@@ -1,1 +1,1528 @@
-{"piezas":{},"sueltas":{}}
+{
+ "piezas": {
+  "AR17": {
+   "tengo": true,
+   "producto": "Fauna Cangrejo. Presentación Acrílico moneda versión MS",
+   "valor": 7000,
+   "costo": 40000,
+   "fotos": [
+    "fauna-cangrejo-presentacion-acrilico-moneda-versio.jpg"
+   ],
+   "fotosCompra": [
+    "fauna-cangrejo-presentacion-acrilico-moneda-versio.jpg"
+   ],
+   "notas": "Código: Fauna Acrilico MS\nMoneda conmemorativa, en presentación acrílica, versión MS (mint state). Producto: Fauna Cangrejo. Presentación Acrílico moneda versión MS. Categoría: Acrílicos MS. Código: Fauna Acrilico MS. Precio de venta: ₡7 000. Disponibles: 1."
+  },
+  "AM17": {
+   "tengo": true,
+   "producto": "Fauna Lagartija Acrilico moneda MS",
+   "valor": 7000,
+   "costo": 7000,
+   "fotos": [
+    "fauna-lagartija-acrilico-moneda-ms.jpg"
+   ],
+   "fotosCompra": [
+    "fauna-lagartija-acrilico-moneda-ms.jpg"
+   ],
+   "notas": "Código: Fauna Acrilico moneda BU\nMoneda conmemorativa, en presentación acrílica, versión MS (mint state). Producto: Fauna Lagartija Acrilico moneda MS. Categoría: Acrílicos MS. Código: Fauna Acrilico moneda BU. Precio de venta: ₡7 000. Disponibles: 1."
+  },
+  "X17": {
+   "tengo": true,
+   "producto": "Fauna Mariposa Acrilico moneda MS",
+   "valor": 7000,
+   "costo": 7000,
+   "fotos": [
+    "fauna-mariposa-acrilico-moneda-ms.jpg"
+   ],
+   "fotosCompra": [
+    "fauna-mariposa-acrilico-moneda-ms.jpg"
+   ],
+   "notas": "Código: Fauna Acrilico moneda MS\nMoneda conmemorativa, en presentación acrílica, versión MS (mint state). Producto: Fauna Mariposa Acrilico moneda MS. Categoría: Acrílicos MS. Código: Fauna Acrilico moneda MS. Precio de venta: ₡7 000. Disponibles: 1."
+  },
+  "AC17": {
+   "tengo": true,
+   "producto": "Fauna Rana Acrílico moneda MS",
+   "valor": 7000,
+   "costo": 7000,
+   "fotos": [
+    "fauna-rana-acrilico-moneda-ms.jpg"
+   ],
+   "fotosCompra": [
+    "fauna-rana-acrilico-moneda-ms.jpg"
+   ],
+   "notas": "Código: Fauna Acrilico moneda MS.\nMoneda conmemorativa, en presentación acrílica, versión MS (mint state). Producto: Fauna Rana Acrílico moneda MS. Categoría: Acrílicos MS. Código: Fauna Acrilico moneda MS.. Precio de venta: ₡7 000. Disponibles: 1."
+  },
+  "M35": {
+   "tengo": true,
+   "producto": "Provincia Guanacaste moneda MS",
+   "valor": 7000,
+   "costo": 7000,
+   "fotos": [
+    "provincia-guanacaste-moneda-ms.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-guanacaste-moneda-ms.jpg"
+   ],
+   "notas": "Código: Guanacaste Acrílico MS\nMoneda conmemorativa, en presentación acrílica, versión MS (mint state). Producto: Provincia Guanacaste moneda MS. Categoría: Acrílicos MS. Código: Guanacaste Acrílico MS. Precio de venta: ₡7 000. Disponibles: 1."
+  },
+  "C35": {
+   "tengo": true,
+   "producto": "Provincia Limón Acrílico moneda MS",
+   "valor": 7000,
+   "costo": 7000,
+   "fotos": [
+    "provincia-limon-acrilico-moneda-ms.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-limon-acrilico-moneda-ms.jpg"
+   ],
+   "notas": "Código: Limón Acrílico MS\nMoneda conmemorativa, en presentación acrílica, versión MS (mint state). Producto: Provincia Limón Acrílico moneda MS. Categoría: Acrílicos MS. Código: Limón Acrílico MS. Precio de venta: ₡7 000. Disponibles: 1."
+  },
+  "H35": {
+   "tengo": true,
+   "producto": "Provincia Puntarenas Acrílico moneda MS",
+   "valor": 7000,
+   "costo": 7000,
+   "fotos": [
+    "provincia-puntarenas-acrilico-moneda-ms.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-puntarenas-acrilico-moneda-ms.jpg"
+   ],
+   "notas": "Código: Puntarenas Acrílico MS\nMoneda conmemorativa, en presentación acrílica, versión MS (mint state). Producto: Provincia Puntarenas Acrílico moneda MS. Categoría: Acrílicos MS. Código: Puntarenas Acrílico MS. Precio de venta: ₡7 000. Disponibles: 1."
+  },
+  "O-d3b64175": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 35000,
+   "costo": 60000,
+   "fotos": [
+    "10-colones-1979-serie-c-4025777.jpg",
+    "10-colones-1979-serie-c-4025777-2.jpg"
+   ],
+   "fotosCompra": [
+    "10-colones-1979-serie-c-4025777.jpg",
+    "10-colones-1979-serie-c-4025777-2.jpg"
+   ],
+   "notas": "Código: 10 colones. Serie C\nBillete de 10 colones, año 1979. Serie C 4025777. Producto: 10 colones 1979. Serie C 4025777. Categoría: Billetes. Código: 10 colones. Serie C. Precio de venta: ₡35 000. Disponibles: 1."
+  },
+  "O-f10361ec": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 70000,
+   "costo": 70000,
+   "fotos": [
+    "100-colones-1954-serie-g-765483.jpg",
+    "100-colones-1954-serie-g-765483-2.jpg"
+   ],
+   "fotosCompra": [
+    "100-colones-1954-serie-g-765483.jpg",
+    "100-colones-1954-serie-g-765483-2.jpg"
+   ],
+   "notas": "Código: 100 colones. serie G\nBillete de 100 colones, año 1954. Serie G 765483. Producto: 100 colones 1954. Serie G 765483. Categoría: Billetes. Código: 100 colones. serie G. Precio de venta: ₡70 000. Disponibles: 1."
+  },
+  "O-120c952c": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 45000,
+   "costo": 45000,
+   "fotos": [
+    "100-colones-1963-serie-c-1215808.jpg",
+    "100-colones-1963-serie-c-1215808-2.jpg"
+   ],
+   "fotosCompra": [
+    "100-colones-1963-serie-c-1215808.jpg",
+    "100-colones-1963-serie-c-1215808-2.jpg"
+   ],
+   "notas": "Código: 100 colones serie C\nBillete de 100 colones, año 1963. Serie C 1215808. Producto: 100 colones 1963. Serie C 1215808. Categoría: Billetes. Código: 100 colones serie C. Precio de venta: ₡45 000. Disponibles: 1."
+  },
+  "O-fddcb77a": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "100-colones-1976-serie-d-8301240.jpg",
+    "100-colones-1976-serie-d-8301240-2.jpg"
+   ],
+   "fotosCompra": [
+    "100-colones-1976-serie-d-8301240.jpg",
+    "100-colones-1976-serie-d-8301240-2.jpg"
+   ],
+   "notas": "Código: 100 colones serie D\nBillete de 100 colones, año 1976. Serie D 8301240. Producto: 100 colones 1976. Serie D 8301240. Categoría: Billetes. Código: 100 colones serie D. Precio de venta: ₡25 000. Disponibles: 1."
+  },
+  "O-291535b1": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 7000,
+   "costo": 7000,
+   "fotos": [
+    "5-colones-1978-serie-d-28358769.jpg",
+    "5-colones-1978-serie-d-28358769-2.jpg"
+   ],
+   "fotosCompra": [
+    "5-colones-1978-serie-d-28358769.jpg",
+    "5-colones-1978-serie-d-28358769-2.jpg"
+   ],
+   "notas": "Código: 5 colones 79. Serie D\nBillete de 5 colones, año 1978. Serie D 28358769. Producto: 5 colones 1978. Serie D 28358769. Categoría: Billetes. Código: 5 colones 79. Serie D. Precio de venta: ₡7 000. Disponibles: 1."
+  },
+  "O-639a9436": {
+   "tengo": true,
+   "cantidad": 2,
+   "fotos": [
+    "5-colones-1983-regalo-de-mi-madre-invaluable.jpg",
+    "5-colones-1983-regalo-de-mi-madre-invaluable-2.jpg"
+   ],
+   "fotosCompra": [
+    "5-colones-1983-regalo-de-mi-madre-invaluable.jpg",
+    "5-colones-1983-regalo-de-mi-madre-invaluable-2.jpg"
+   ],
+   "notas": "Código: Regalo de mi madre, invaluable\nBillete de 5 colones, año 1983. Producto: 5 colones 1983*Regalo de mi madre, invaluable *. Categoría: Billetes. Código: Regalo de mi madre, invaluable. Precio de venta: ₡0. Disponibles: 2."
+  },
+  "O-ca77fb08": {
+   "tengo": true,
+   "cantidad": 2,
+   "valor": 35000,
+   "costo": 17500,
+   "fotos": [
+    "5-colones-1989-fecha-gringa-escasa-serie-d-5951802.jpg",
+    "5-colones-1989-fecha-gringa-escasa-serie-d-5951802-2.jpg"
+   ],
+   "fotosCompra": [
+    "5-colones-1989-fecha-gringa-escasa-serie-d-5951802.jpg",
+    "5-colones-1989-fecha-gringa-escasa-serie-d-5951802-2.jpg"
+   ],
+   "notas": "Código: Serie escasa. Fecha gringa 5 colones serie D\nBillete de 5 colones, año 1989. Serie D 59518020 y D 59556125. Producto: 5 colones 1989. Fecha gringa escasa. Serie D 59518020 y D 59556125. Categoría: Billetes. Código: Serie escasa. Fecha gringa 5 colones serie D. Precio de venta: ₡35 000. Disponibles: 2."
+  },
+  "O-0a355c1d": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 7000,
+   "costo": 7000,
+   "fotos": [
+    "5-colones-1989-serie-d-55458956.jpg",
+    "5-colones-1989-serie-d-55458956-2.jpg"
+   ],
+   "fotosCompra": [
+    "5-colones-1989-serie-d-55458956.jpg",
+    "5-colones-1989-serie-d-55458956-2.jpg"
+   ],
+   "notas": "Código: 5 colones 89, serie D\nBillete de 5 colones, año 1989. Serie D 55458956. Producto: 5 colones 1989. Serie D 55458956. Categoría: Billetes. Código: 5 colones 89, serie D. Precio de venta: ₡7 000. Disponibles: 1."
+  },
+  "O-9c868f3a": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 7000,
+   "costo": 7000,
+   "fotos": [
+    "5-colones-1990-serie-d-62166133.jpg",
+    "5-colones-1990-serie-d-62166133-2.jpg"
+   ],
+   "fotosCompra": [
+    "5-colones-1990-serie-d-62166133.jpg",
+    "5-colones-1990-serie-d-62166133-2.jpg"
+   ],
+   "notas": "Código: 5 colones 90. Serie D\nBillete de 5 colones, año 1990. Serie D 62166133. Producto: 5 colones 1990. Serie D 62166133. Categoría: Billetes. Código: 5 colones 90. Serie D. Precio de venta: ₡7 000. Disponibles: 1."
+  },
+  "O-ac12e42d": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 70000,
+   "costo": 70000,
+   "fotos": [
+    "5-colones-serie-a-serie-721080.jpg",
+    "5-colones-serie-a-serie-721080-2.jpg"
+   ],
+   "fotosCompra": [
+    "5-colones-serie-a-serie-721080.jpg",
+    "5-colones-serie-a-serie-721080-2.jpg"
+   ],
+   "notas": "Código: 5 colones Serie A\nBillete de 5 colones. Serie A. Serie 721080. Producto: 5 colones serie A. Serie 721080. Categoría: Billetes. Código: 5 colones Serie A. Precio de venta: ₡70 000. Disponibles: 1."
+  },
+  "O-6640c50d": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "5-colones-serie-c-4661488.jpg",
+    "5-colones-serie-c-4661488-2.jpg"
+   ],
+   "fotosCompra": [
+    "5-colones-serie-c-4661488.jpg",
+    "5-colones-serie-c-4661488-2.jpg"
+   ],
+   "notas": "Código: 5 colones serie c\nBillete de 5 colones. Serie C 4661488. Producto: 5 colones Serie C 4661488. Categoría: Billetes. Código: 5 colones serie c. Precio de venta: ₡20 000. Disponibles: 1."
+  },
+  "O-87cce76e": {
+   "tengo": true,
+   "cantidad": 5,
+   "valor": 40000,
+   "costo": 8000,
+   "fotos": [
+    "5-colones-series-consecutivas-varias-1989-serie-d.jpg",
+    "5-colones-series-consecutivas-varias-1989-serie-d-2.jpg"
+   ],
+   "fotosCompra": [
+    "5-colones-series-consecutivas-varias-1989-serie-d.jpg",
+    "5-colones-series-consecutivas-varias-1989-serie-d-2.jpg"
+   ],
+   "notas": "Código: 5 colones Series consecutivas varias\nBillete de 5 colones, año 1989. Serie consecutivas varias 1989 Serie D. Producto: 5 colones Series consecutivas varias 1989 Serie D. Categoría: Billetes. Código: 5 colones Series consecutivas varias. Precio de venta: ₡40 000. Disponibles: 5."
+  },
+  "O-c39bde15": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 50000,
+   "costo": 50000,
+   "fotos": [
+    "5-colones-xx-aniversario-banco-central-serie-d-142.jpg",
+    "5-colones-xx-aniversario-banco-central-serie-d-142-2.jpg"
+   ],
+   "fotosCompra": [
+    "5-colones-xx-aniversario-banco-central-serie-d-142.jpg",
+    "5-colones-xx-aniversario-banco-central-serie-d-142-2.jpg"
+   ],
+   "notas": "Código: XX aniversario banco central\nBillete de 5 colones. Serie D 14220392. Producto: 5 colones XX Aniversario Banco Central. Serie D 14220392. Categoría: Billetes. Código: XX aniversario banco central. Precio de venta: ₡50 000. Disponibles: 1."
+  },
+  "O-9b939ff5": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 200000,
+   "costo": 20000,
+   "fotos": [
+    "coleccion-completa-10-colones-serie-d-con-variante.jpg",
+    "coleccion-completa-10-colones-serie-d-con-variante-2.jpg",
+    "coleccion-completa-10-colones-serie-d-con-variante-3.jpg"
+   ],
+   "fotosCompra": [
+    "coleccion-completa-10-colones-serie-d-con-variante.jpg",
+    "coleccion-completa-10-colones-serie-d-con-variante-2.jpg",
+    "coleccion-completa-10-colones-serie-d-con-variante-3.jpg"
+   ],
+   "notas": "Código: Colección completa fechas y variantes 10 colones serie D\nBillete de 10 colones. Serie D con variantes. Producto: Colección completa 10 colones serie D con variantes. Categoría: Billetes. Código: Colección completa fechas y variantes 10 colones serie D. Precio de venta: ₡200 000. Disponibles: 1."
+  },
+  "O-bfeb6e5b": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 350000,
+   "costo": 350000,
+   "fotos": [
+    "dos-colones-1939-serie-c-921300.jpg",
+    "dos-colones-1939-serie-c-921300-2.jpg"
+   ],
+   "fotosCompra": [
+    "dos-colones-1939-serie-c-921300.jpg",
+    "dos-colones-1939-serie-c-921300-2.jpg"
+   ],
+   "notas": "Código: Billete raro 5 líneas resello frontal\nBillete de Dos colones, año 1939. Serie C 921300. Producto: Dos colones 1939. Serie C 921300. Categoría: Billetes. Código: Billete raro 5 líneas resello frontal. Precio de venta: ₡350 000. Disponibles: 1."
+  },
+  "O-c53edf9e": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 35000,
+   "costo": 35000,
+   "fotos": [
+    "dos-colones-con-resello-serie-f-1955730.jpg",
+    "dos-colones-con-resello-serie-f-1955730-2.jpg"
+   ],
+   "fotosCompra": [
+    "dos-colones-con-resello-serie-f-1955730.jpg",
+    "dos-colones-con-resello-serie-f-1955730-2.jpg"
+   ],
+   "notas": "Código: 2 colones resello\nBillete de Dos colones. Serie F 1955730. Producto: Dos colones con resello. Serie F 1955730. Categoría: Billetes. Código: 2 colones resello. Precio de venta: ₡35 000. Disponibles: 1."
+  },
+  "O-25d5a209": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 60000,
+   "costo": 60000,
+   "fotos": [
+    "dos-colones-serie-f-1344066.jpg",
+    "dos-colones-serie-f-1344066-2.jpg"
+   ],
+   "fotosCompra": [
+    "dos-colones-serie-f-1344066.jpg",
+    "dos-colones-serie-f-1344066-2.jpg"
+   ],
+   "notas": "Código: 2 colones sin resello\nBillete de Dos colones. Serie F 1344066. Producto: Dos colones. Serie F 1344066. Categoría: Billetes. Código: 2 colones sin resello. Precio de venta: ₡60 000. Disponibles: 1."
+  },
+  "O-51a96a29": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 55000,
+   "costo": 55000,
+   "fotos": [
+    "coleccionador-fauna-ms.jpg",
+    "coleccionador-fauna-ms-2.jpg"
+   ],
+   "fotosCompra": [
+    "coleccionador-fauna-ms.jpg",
+    "coleccionador-fauna-ms-2.jpg"
+   ],
+   "notas": "Código: Colecciónador Fauna MS\nColeccionador, versión MS (mint state). Producto: Colecciónador Fauna MS. Categoría: Coleccionadores. Código: Colecciónador Fauna MS. Precio de venta: ₡55 000. Disponibles: 1."
+  },
+  "O-2a01cc85": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 250000,
+   "costo": 250000,
+   "fotos": [
+    "coleccionador-fauna-proof.jpg",
+    "coleccionador-fauna-proof-2.jpg"
+   ],
+   "fotosCompra": [
+    "coleccionador-fauna-proof.jpg",
+    "coleccionador-fauna-proof-2.jpg"
+   ],
+   "notas": "Código: Colecciónador Fauna PROOF\nColeccionador, versión PROOF. Producto: Coleccionador Fauna PROOF. Categoría: Coleccionadores. Código: Colecciónador Fauna PROOF. Precio de venta: ₡250 000. Disponibles: 1."
+  },
+  "O-1b8787e2": {
+   "tengo": true,
+   "cantidad": 2,
+   "valor": 260000,
+   "costo": 130000,
+   "fotos": [
+    "100-colones-plata-version-proof-y-mate.jpg",
+    "100-colones-plata-version-proof-y-mate-2.jpg"
+   ],
+   "fotosCompra": [
+    "100-colones-plata-version-proof-y-mate.jpg",
+    "100-colones-plata-version-proof-y-mate-2.jpg"
+   ],
+   "notas": "Código: Conmemorativas plata pollitos\nMoneda conmemorativa de 100 colones, versión PROOF, mate. Producto: 100 colones plata. Versión PROOF y mate. Categoría: Conmemorativas de plata. Código: Conmemorativas plata pollitos. Precio de venta: ₡260 000. Disponibles: 2."
+  },
+  "AM14": {
+   "tengo": true,
+   "producto": "Lagartija Acrilico PROOF",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "lagartija-acrilico-proof.jpg"
+   ],
+   "fotosCompra": [
+    "lagartija-acrilico-proof.jpg"
+   ],
+   "notas": "Código: Lagartija Acrilico PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Lagartija Acrilico PROOF. Categoría: Fauna acrilico. Código: Lagartija Acrilico PROOF. Precio de venta: ₡25 000. Disponibles: 1."
+  },
+  "X14": {
+   "tengo": true,
+   "producto": "Mariposa Acrilico PROOF",
+   "valor": 110000,
+   "costo": 110000,
+   "fotos": [
+    "mariposa-acrilico-proof.jpg"
+   ],
+   "fotosCompra": [
+    "mariposa-acrilico-proof.jpg"
+   ],
+   "notas": "Código: Fauna Mariposa PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Mariposa Acrilico PROOF. Categoría: Fauna acrilico. Código: Fauna Mariposa PROOF. Precio de venta: ₡110 000. Disponibles: 1."
+  },
+  "AC14": {
+   "tengo": true,
+   "producto": "Rana Acrílico PROOF",
+   "valor": 50000,
+   "costo": 50000,
+   "fotos": [
+    "rana-acrilico-proof.jpg"
+   ],
+   "fotosCompra": [
+    "rana-acrilico-proof.jpg"
+   ],
+   "notas": "Código: Rana Acrílico PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Rana Acrílico PROOF. Categoría: Fauna acrilico. Código: Rana Acrílico PROOF. Precio de venta: ₡50 000. Disponibles: 1."
+  },
+  "AH16": {
+   "tengo": true,
+   "producto": "Tortuga acrílico moneda BU",
+   "valor": 35000,
+   "costo": 35000,
+   "fotos": [
+    "tortuga-acrilico-moneda-bu.jpg"
+   ],
+   "fotosCompra": [
+    "tortuga-acrilico-moneda-bu.jpg"
+   ],
+   "notas": "Código: Acrílico moneda BU\nMoneda conmemorativa, en presentación acrílica, versión BU (brillante sin circular). Producto: Tortuga acrílico moneda BU. Categoría: Fauna acrilico. Código: Acrílico moneda BU. Precio de venta: ₡35 000. Disponibles: 1."
+  },
+  "AH14": {
+   "tengo": true,
+   "producto": "Tortuga Acrílico PROOF",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "tortuga-acrilico-proof.jpg"
+   ],
+   "fotosCompra": [
+    "tortuga-acrilico-proof.jpg"
+   ],
+   "notas": "Código: Tortuga Acrílico PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Tortuga Acrílico PROOF. Categoría: Fauna acrilico. Código: Tortuga Acrílico PROOF. Precio de venta: ₡25 000. Disponibles: 1."
+  },
+  "AR10": {
+   "tengo": true,
+   "producto": "Cangrejo Marinera. Serie 6476/7000",
+   "valor": 35000,
+   "costo": 35000,
+   "fotos": [
+    "cangrejo-marinera-serie-6476-7000.jpg",
+    "cangrejo-marinera-serie-6476-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "cangrejo-marinera-serie-6476-7000.jpg",
+    "cangrejo-marinera-serie-6476-7000-2.jpg"
+   ],
+   "notas": "Código: Fauna #5. Serie especial serie alta\nMoneda conmemorativa, en estuche. Serie(s) 6476 de un tiraje de 7000. Producto: Cangrejo Marinera. Serie 6476/7000. Categoría: Fauna estuche. Código: Fauna #5. Serie especial serie alta. Precio de venta: ₡35 000. Disponibles: 1."
+  },
+  "AR9": {
+   "tengo": true,
+   "producto": "Cangrejo Marinera.Serie 1743/7000",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "cangrejo-marinera-serie-1743-7000.jpg",
+    "cangrejo-marinera-serie-1743-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "cangrejo-marinera-serie-1743-7000.jpg",
+    "cangrejo-marinera-serie-1743-7000-2.jpg"
+   ],
+   "notas": "Código: Fauna #5\nMoneda conmemorativa, en estuche. Serie(s) 1743 de un tiraje de 7000. Producto: Cangrejo Marinera.Serie 1743/7000. Categoría: Fauna estuche. Código: Fauna #5. Precio de venta: ₡25 000. Disponibles: 1."
+  },
+  "AW9": {
+   "tengo": true,
+   "producto": "Conejo de monte. Series 3556 y 4045/7000",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "conejo-de-monte-series-3556-y-4045-7000.jpg",
+    "conejo-de-monte-series-3556-y-4045-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "conejo-de-monte-series-3556-y-4045-7000.jpg",
+    "conejo-de-monte-series-3556-y-4045-7000-2.jpg"
+   ],
+   "notas": "Código: Fauna #6\nMoneda conmemorativa, en estuche. Serie(s) 3556 y 4045 de un tiraje de 7000. Producto: Conejo de monte. Series 3556 y 4045/7000. Categoría: Fauna estuche. Código: Fauna #6. Precio de venta: ₡25 000. Disponibles: 2."
+  },
+  "AW10": {
+   "tengo": true,
+   "producto": "Conejo de monte. Series 3556 y 4045/7000",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "conejo-de-monte-series-3556-y-4045-7000.jpg",
+    "conejo-de-monte-series-3556-y-4045-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "conejo-de-monte-series-3556-y-4045-7000.jpg",
+    "conejo-de-monte-series-3556-y-4045-7000-2.jpg"
+   ],
+   "notas": "Código: Fauna #6\nMoneda conmemorativa, en estuche. Serie(s) 3556 y 4045 de un tiraje de 7000. Producto: Conejo de monte. Series 3556 y 4045/7000. Categoría: Fauna estuche. Código: Fauna #6. Precio de venta: ₡25 000. Disponibles: 2."
+  },
+  "AM9": {
+   "tengo": true,
+   "producto": "Lagartija. Serie 3349 y 3378",
+   "valor": 70000,
+   "costo": 35000,
+   "fotos": [
+    "lagartija-serie-3349-y-3378.jpg",
+    "lagartija-serie-3349-y-3378-2.jpg"
+   ],
+   "fotosCompra": [
+    "lagartija-serie-3349-y-3378.jpg",
+    "lagartija-serie-3349-y-3378-2.jpg"
+   ],
+   "notas": "Código: Fauna #4\nMoneda conmemorativa, en estuche. Serie 3349 y 3378. Producto: Lagartija. Serie 3349 y 3378. Categoría: Fauna estuche. Código: Fauna #4. Precio de venta: ₡70 000. Disponibles: 2."
+  },
+  "AM10": {
+   "tengo": true,
+   "producto": "Lagartija. Serie 3349 y 3378",
+   "valor": 70000,
+   "costo": 35000,
+   "fotos": [
+    "lagartija-serie-3349-y-3378.jpg",
+    "lagartija-serie-3349-y-3378-2.jpg"
+   ],
+   "fotosCompra": [
+    "lagartija-serie-3349-y-3378.jpg",
+    "lagartija-serie-3349-y-3378-2.jpg"
+   ],
+   "notas": "Código: Fauna #4\nMoneda conmemorativa, en estuche. Serie 3349 y 3378. Producto: Lagartija. Serie 3349 y 3378. Categoría: Fauna estuche. Código: Fauna #4. Precio de venta: ₡70 000. Disponibles: 2."
+  },
+  "X9": {
+   "tengo": true,
+   "producto": "Mariposa Morpho. Series 0367 y 0368/7000",
+   "valor": 240000,
+   "costo": 120000,
+   "fotos": [
+    "mariposa-morpho-series-0367-y-0368-7000.jpg",
+    "mariposa-morpho-series-0367-y-0368-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "mariposa-morpho-series-0367-y-0368-7000.jpg",
+    "mariposa-morpho-series-0367-y-0368-7000-2.jpg"
+   ],
+   "notas": "Código: Fauna #1. Series especiales consecutivos\nMoneda conmemorativa, en estuche. Serie(s) 0367 y 0368 de un tiraje de 7000. Producto: Mariposa Morpho. Series 0367 y 0368/7000. Categoría: Fauna estuche. Código: Fauna #1. Series especiales consecutivos. Precio de venta: ₡240 000. Disponibles: 2."
+  },
+  "X10": {
+   "tengo": true,
+   "producto": "Mariposa Morpho. Series 0367 y 0368/7000",
+   "valor": 240000,
+   "costo": 120000,
+   "fotos": [
+    "mariposa-morpho-series-0367-y-0368-7000.jpg",
+    "mariposa-morpho-series-0367-y-0368-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "mariposa-morpho-series-0367-y-0368-7000.jpg",
+    "mariposa-morpho-series-0367-y-0368-7000-2.jpg"
+   ],
+   "notas": "Código: Fauna #1. Series especiales consecutivos\nMoneda conmemorativa, en estuche. Serie(s) 0367 y 0368 de un tiraje de 7000. Producto: Mariposa Morpho. Series 0367 y 0368/7000. Categoría: Fauna estuche. Código: Fauna #1. Series especiales consecutivos. Precio de venta: ₡240 000. Disponibles: 2."
+  },
+  "AC9": {
+   "tengo": true,
+   "producto": "Rana Calzonuda. Series 3706 y 3710/7000",
+   "valor": 110000,
+   "costo": 55000,
+   "fotos": [
+    "rana-calzonuda-series-3706-y-3710-7000.jpg",
+    "rana-calzonuda-series-3706-y-3710-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "rana-calzonuda-series-3706-y-3710-7000.jpg",
+    "rana-calzonuda-series-3706-y-3710-7000-2.jpg"
+   ],
+   "notas": "Código: Fauna #2\nMoneda conmemorativa, en estuche. Serie(s) 3706 y 3710 de un tiraje de 7000. Producto: Rana Calzonuda. Series 3706 y 3710/7000. Categoría: Fauna estuche. Código: Fauna #2. Precio de venta: ₡110 000. Disponibles: 2."
+  },
+  "AC10": {
+   "tengo": true,
+   "producto": "Rana Calzonuda. Series 3706 y 3710/7000",
+   "valor": 110000,
+   "costo": 55000,
+   "fotos": [
+    "rana-calzonuda-series-3706-y-3710-7000.jpg",
+    "rana-calzonuda-series-3706-y-3710-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "rana-calzonuda-series-3706-y-3710-7000.jpg",
+    "rana-calzonuda-series-3706-y-3710-7000-2.jpg"
+   ],
+   "notas": "Código: Fauna #2\nMoneda conmemorativa, en estuche. Serie(s) 3706 y 3710 de un tiraje de 7000. Producto: Rana Calzonuda. Series 3706 y 3710/7000. Categoría: Fauna estuche. Código: Fauna #2. Precio de venta: ₡110 000. Disponibles: 2."
+  },
+  "AH9": {
+   "tengo": true,
+   "producto": "Tortuga Carey. Series 5621 y 5622/ 7000",
+   "valor": 40000,
+   "costo": 40000,
+   "fotos": [
+    "tortuga-carey-series-5621-y-5622-7000.jpg",
+    "tortuga-carey-series-5621-y-5622-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "tortuga-carey-series-5621-y-5622-7000.jpg",
+    "tortuga-carey-series-5621-y-5622-7000-2.jpg"
+   ],
+   "notas": "Código: Fauna #3. Serie especial consecutivos\nMoneda conmemorativa, en estuche. Serie(s) 5621 y 5622 de un tiraje de 7000. Producto: Tortuga Carey. Series 5621 y 5622/ 7000. Categoría: Fauna estuche. Código: Fauna #3. Serie especial consecutivos. Precio de venta: ₡40 000. Disponibles: 2."
+  },
+  "AH10": {
+   "tengo": true,
+   "producto": "Tortuga Carey. Series 5621 y 5622/ 7000",
+   "valor": 40000,
+   "costo": 40000,
+   "fotos": [
+    "tortuga-carey-series-5621-y-5622-7000.jpg",
+    "tortuga-carey-series-5621-y-5622-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "tortuga-carey-series-5621-y-5622-7000.jpg",
+    "tortuga-carey-series-5621-y-5622-7000-2.jpg"
+   ],
+   "notas": "Código: Fauna #3. Serie especial consecutivos\nMoneda conmemorativa, en estuche. Serie(s) 5621 y 5622 de un tiraje de 7000. Producto: Tortuga Carey. Series 5621 y 5622/ 7000. Categoría: Fauna estuche. Código: Fauna #3. Serie especial consecutivos. Precio de venta: ₡40 000. Disponibles: 2."
+  },
+  "M14": {
+   "tengo": true,
+   "producto": "Abolición Ejército Acrílico PROOF",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "abolicion-ejercito-acrilico-proof.jpg"
+   ],
+   "fotosCompra": [
+    "abolicion-ejercito-acrilico-proof.jpg"
+   ],
+   "notas": "Código: Abolición Acrílico PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Abolición Ejército Acrílico PROOF. Categoría: Hitos Historicos Acrilico. Código: Abolición Acrílico PROOF. Precio de venta: ₡25 000. Disponibles: 1."
+  },
+  "R14": {
+   "tengo": true,
+   "producto": "Anexion Guanacaste Acrílico PROOF",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "anexion-guanacaste-acrilico-proof.jpg"
+   ],
+   "fotosCompra": [
+    "anexion-guanacaste-acrilico-proof.jpg"
+   ],
+   "notas": "Código: Anexion Acrílico PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Anexion Guanacaste Acrílico PROOF. Categoría: Hitos Historicos Acrilico. Código: Anexion Acrílico PROOF. Precio de venta: ₡25 000. Disponibles: 1."
+  },
+  "H9": {
+   "tengo": true,
+   "producto": "175 años fundación de la República. Serie 0236 y 0237/ 4000",
+   "valor": 300000,
+   "costo": 300000,
+   "fotos": [
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02.jpg",
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02-2.jpg",
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02-3.jpg"
+   ],
+   "fotosCompra": [
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02.jpg",
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02-2.jpg",
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02-3.jpg"
+   ],
+   "notas": "Código: Conmemorativa #2\nMoneda conmemorativa, en estuche. Serie(s) 0236 y 0237 de un tiraje de 4000. Producto: 175 años fundación de la República. Serie 0236 y 0237/ 4000. Categoría: Hitos Históricos Estuche. Código: Conmemorativa #2. Precio de venta: ₡300 000. Disponibles: 2."
+  },
+  "H10": {
+   "tengo": true,
+   "producto": "175 años fundación de la República. Serie 0236 y 0237/ 4000",
+   "valor": 300000,
+   "costo": 300000,
+   "fotos": [
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02.jpg",
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02-2.jpg",
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02-3.jpg"
+   ],
+   "fotosCompra": [
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02.jpg",
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02-2.jpg",
+    "175-anos-fundacion-de-la-republica-serie-0236-y-02-3.jpg"
+   ],
+   "notas": "Código: Conmemorativa #2\nMoneda conmemorativa, en estuche. Serie(s) 0236 y 0237 de un tiraje de 4000. Producto: 175 años fundación de la República. Serie 0236 y 0237/ 4000. Categoría: Hitos Históricos Estuche. Código: Conmemorativa #2. Precio de venta: ₡300 000. Disponibles: 2."
+  },
+  "R9": {
+   "tengo": true,
+   "producto": "200 años anexion Guanacaste.Series 12220,12221",
+   "valor": 100000,
+   "costo": 50000,
+   "fotos": [
+    "200-anos-anexion-guanacaste-series-12220-12221.jpg",
+    "200-anos-anexion-guanacaste-series-12220-12221-2.jpg"
+   ],
+   "fotosCompra": [
+    "200-anos-anexion-guanacaste-series-12220-12221.jpg",
+    "200-anos-anexion-guanacaste-series-12220-12221-2.jpg"
+   ],
+   "notas": "Código: Conmemorativa #4. Series especiales Radar y consecutiva\nMoneda conmemorativa, en estuche. Serie 12220,12221. Producto: 200 años anexion Guanacaste.Series 12220,12221. Categoría: Hitos Históricos Estuche. Código: Conmemorativa #4. Series especiales Radar y consecutiva. Precio de venta: ₡100 000. Disponibles: 2."
+  },
+  "R10": {
+   "tengo": true,
+   "producto": "200 años anexion Guanacaste.Series 12220,12221",
+   "valor": 100000,
+   "costo": 50000,
+   "fotos": [
+    "200-anos-anexion-guanacaste-series-12220-12221.jpg",
+    "200-anos-anexion-guanacaste-series-12220-12221-2.jpg"
+   ],
+   "fotosCompra": [
+    "200-anos-anexion-guanacaste-series-12220-12221.jpg",
+    "200-anos-anexion-guanacaste-series-12220-12221-2.jpg"
+   ],
+   "notas": "Código: Conmemorativa #4. Series especiales Radar y consecutiva\nMoneda conmemorativa, en estuche. Serie 12220,12221. Producto: 200 años anexion Guanacaste.Series 12220,12221. Categoría: Hitos Históricos Estuche. Código: Conmemorativa #4. Series especiales Radar y consecutiva. Precio de venta: ₡100 000. Disponibles: 2."
+  },
+  "R11": {
+   "tengo": true,
+   "producto": "200 años anexion Guanacaste.Series 12220,12221,13000",
+   "valor": 40000,
+   "costo": 40000,
+   "fotos": [
+    "200-anos-anexion-guanacaste-series-12220-12221-130.jpg",
+    "200-anos-anexion-guanacaste-series-12220-12221-130-2.jpg"
+   ],
+   "fotosCompra": [
+    "200-anos-anexion-guanacaste-series-12220-12221-130.jpg",
+    "200-anos-anexion-guanacaste-series-12220-12221-130-2.jpg"
+   ],
+   "notas": "Código: Conmemorativa #4 serie 13000\nMoneda conmemorativa, en estuche. Serie 12220,12221,13000. Producto: 200 años anexion Guanacaste.Series 12220,12221,13000. Categoría: Hitos Históricos Estuche. Código: Conmemorativa #4 serie 13000. Precio de venta: ₡40 000. Disponibles: 1."
+  },
+  "C9": {
+   "tengo": true,
+   "producto": "200 años de independencia.Serie 0128/5000",
+   "valor": 350000,
+   "costo": 350000,
+   "fotos": [
+    "200-anos-de-independencia-serie-0128-5000.jpg",
+    "200-anos-de-independencia-serie-0128-5000-2.jpg"
+   ],
+   "fotosCompra": [
+    "200-anos-de-independencia-serie-0128-5000.jpg",
+    "200-anos-de-independencia-serie-0128-5000-2.jpg"
+   ],
+   "notas": "Código: Conmemorativa #1\nMoneda conmemorativa, en estuche. Serie(s) 0128 de un tiraje de 5000. Producto: 200 años de independencia.Serie 0128/5000. Categoría: Hitos Históricos Estuche. Código: Conmemorativa #1. Precio de venta: ₡350 000. Disponibles: 1."
+  },
+  "M9": {
+   "tengo": true,
+   "producto": "75 años abolición del ejército. Serie 1020 y 1002/5600",
+   "valor": 50000,
+   "costo": 50000,
+   "fotos": [
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5.jpg",
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5-2.jpg",
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5-3.jpg"
+   ],
+   "fotosCompra": [
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5.jpg",
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5-2.jpg",
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5-3.jpg"
+   ],
+   "notas": "Código: Conmemorativa #3\nMoneda conmemorativa, en estuche. Serie(s) 1020 y 1002 de un tiraje de 5600. Producto: 75 años abolición del ejército. Serie 1020 y 1002/5600. Categoría: Hitos Históricos Estuche. Código: Conmemorativa #3. Precio de venta: ₡50 000. Disponibles: 2."
+  },
+  "M10": {
+   "tengo": true,
+   "producto": "75 años abolición del ejército. Serie 1020 y 1002/5600",
+   "valor": 50000,
+   "costo": 50000,
+   "fotos": [
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5.jpg",
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5-2.jpg",
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5-3.jpg"
+   ],
+   "fotosCompra": [
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5.jpg",
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5-2.jpg",
+    "75-anos-abolicion-del-ejercito-serie-1020-y-1002-5-3.jpg"
+   ],
+   "notas": "Código: Conmemorativa #3\nMoneda conmemorativa, en estuche. Serie(s) 1020 y 1002 de un tiraje de 5600. Producto: 75 años abolición del ejército. Serie 1020 y 1002/5600. Categoría: Hitos Históricos Estuche. Código: Conmemorativa #3. Precio de venta: ₡50 000. Disponibles: 2."
+  },
+  "C47": {
+   "tengo": true,
+   "producto": "Swing criollo PROOF",
+   "valor": 15000,
+   "costo": 15000,
+   "fotos": [
+    "swing-criollo-proof.jpg"
+   ],
+   "fotosCompra": [
+    "swing-criollo-proof.jpg"
+   ],
+   "notas": "Código: Swing Acrílico PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Swing criollo PROOF. Categoría: Patrimonio cultural acrilico. Código: Swing Acrílico PROOF. Precio de venta: ₡15 000. Disponibles: 3."
+  },
+  "C48": {
+   "tengo": true,
+   "producto": "Swing criollo PROOF",
+   "valor": 15000,
+   "costo": 15000,
+   "fotos": [
+    "swing-criollo-proof.jpg"
+   ],
+   "fotosCompra": [
+    "swing-criollo-proof.jpg"
+   ],
+   "notas": "Código: Swing Acrílico PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Swing criollo PROOF. Categoría: Patrimonio cultural acrilico. Código: Swing Acrílico PROOF. Precio de venta: ₡15 000. Disponibles: 3."
+  },
+  "C49": {
+   "tengo": true,
+   "producto": "Swing criollo PROOF",
+   "valor": 15000,
+   "costo": 15000,
+   "fotos": [
+    "swing-criollo-proof.jpg"
+   ],
+   "fotosCompra": [
+    "swing-criollo-proof.jpg"
+   ],
+   "notas": "Código: Swing Acrílico PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Swing criollo PROOF. Categoría: Patrimonio cultural acrilico. Código: Swing Acrílico PROOF. Precio de venta: ₡15 000. Disponibles: 3."
+  },
+  "C44": {
+   "tengo": true,
+   "producto": "Swing criollo. Serie 6445/7000",
+   "valor": 35000,
+   "costo": 35000,
+   "fotos": [
+    "swing-criollo-serie-6445-7000.jpg",
+    "swing-criollo-serie-6445-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "swing-criollo-serie-6445-7000.jpg",
+    "swing-criollo-serie-6445-7000-2.jpg"
+   ],
+   "notas": "Código: Cultural inmaterial #1. Serie especial serie Alta\nMoneda conmemorativa, en estuche. Serie(s) 6445 de un tiraje de 7000. Producto: Swing criollo. Serie 6445/7000. Categoría: Patrimonio cultural estuche. Código: Cultural inmaterial #1. Serie especial serie Alta. Precio de venta: ₡35 000. Disponibles: 1."
+  },
+  "C42": {
+   "tengo": true,
+   "producto": "Swing criollo. Series 1527 y 1858/7000",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "swing-criollo-series-1527-y-1858-7000.jpg",
+    "swing-criollo-series-1527-y-1858-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "swing-criollo-series-1527-y-1858-7000.jpg",
+    "swing-criollo-series-1527-y-1858-7000-2.jpg"
+   ],
+   "notas": "Código: Cultural inmaterial #1\nMoneda conmemorativa, en estuche. Serie(s) 1527 y 1858 de un tiraje de 7000. Producto: Swing criollo. Series 1527 y 1858/7000. Categoría: Patrimonio cultural estuche. Código: Cultural inmaterial #1. Precio de venta: ₡25 000. Disponibles: 2."
+  },
+  "C43": {
+   "tengo": true,
+   "producto": "Swing criollo. Series 1527 y 1858/7000",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "swing-criollo-series-1527-y-1858-7000.jpg",
+    "swing-criollo-series-1527-y-1858-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "swing-criollo-series-1527-y-1858-7000.jpg",
+    "swing-criollo-series-1527-y-1858-7000-2.jpg"
+   ],
+   "notas": "Código: Cultural inmaterial #1\nMoneda conmemorativa, en estuche. Serie(s) 1527 y 1858 de un tiraje de 7000. Producto: Swing criollo. Series 1527 y 1858/7000. Categoría: Patrimonio cultural estuche. Código: Cultural inmaterial #1. Precio de venta: ₡25 000. Disponibles: 2."
+  },
+  "AH25": {
+   "tengo": true,
+   "producto": "Estuche provincia San Jose. Serie 5703/7000",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "estuche-provincia-san-jose-serie-5703-7000.jpg",
+    "estuche-provincia-san-jose-serie-5703-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "estuche-provincia-san-jose-serie-5703-7000.jpg",
+    "estuche-provincia-san-jose-serie-5703-7000-2.jpg"
+   ],
+   "notas": "Código: Teatro Estuche\nMoneda conmemorativa, en estuche. Serie(s) 5703 de un tiraje de 7000. Producto: Estuche provincia San Jose. Serie 5703/7000. Categoría: Provincias estuche. Código: Teatro Estuche. Precio de venta: ₡25 000. Disponibles: 1."
+  },
+  "AC25": {
+   "tengo": true,
+   "producto": "Provincia Alajuela. Serie 0558/7000",
+   "valor": 30000,
+   "costo": 30000,
+   "fotos": [
+    "provincia-alajuela-serie-0558-7000.jpg",
+    "provincia-alajuela-serie-0558-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-alajuela-serie-0558-7000.jpg",
+    "provincia-alajuela-serie-0558-7000-2.jpg"
+   ],
+   "notas": "Código: Provincias #6. Serie especial, serie baja\nMoneda conmemorativa, en estuche. Serie(s) 0558 de un tiraje de 7000. Producto: Provincia Alajuela. Serie 0558/7000. Categoría: Provincias estuche. Código: Provincias #6. Serie especial, serie baja. Precio de venta: ₡30 000. Disponibles: 1."
+  },
+  "X26": {
+   "tengo": true,
+   "producto": "Provincia Cartago serie 4493/7000",
+   "valor": 35000,
+   "costo": 35000,
+   "fotos": [
+    "provincia-cartago-serie-4493-7000.jpg",
+    "provincia-cartago-serie-4493-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-cartago-serie-4493-7000.jpg",
+    "provincia-cartago-serie-4493-7000-2.jpg"
+   ],
+   "notas": "Código: Cartago Basílica\nMoneda conmemorativa, en estuche. Serie(s) 4493 de un tiraje de 7000. Producto: Provincia Cartago serie 4493/7000. Categoría: Provincias estuche. Código: Cartago Basílica. Precio de venta: ₡35 000. Disponibles: 1."
+  },
+  "X25": {
+   "tengo": true,
+   "producto": "Provincia Cartago. Serie 2036/7000",
+   "valor": 35000,
+   "costo": 35000,
+   "fotos": [
+    "provincia-cartago-serie-2036-7000.jpg",
+    "provincia-cartago-serie-2036-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-cartago-serie-2036-7000.jpg",
+    "provincia-cartago-serie-2036-7000-2.jpg"
+   ],
+   "notas": "Código: Cartago. Basílica\nMoneda conmemorativa, en estuche. Serie(s) 2036 de un tiraje de 7000. Producto: Provincia Cartago. Serie 2036/7000. Categoría: Provincias estuche. Código: Cartago. Basílica. Precio de venta: ₡35 000. Disponibles: 1."
+  },
+  "H25": {
+   "tengo": true,
+   "producto": "Provincia de Puntarenas. Series 1105 y 3696/7000",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "provincia-de-puntarenas-series-1105-y-3696-7000.jpg",
+    "provincia-de-puntarenas-series-1105-y-3696-7000-2.jpg",
+    "provincia-de-puntarenas-series-1105-y-3696-7000-3.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-de-puntarenas-series-1105-y-3696-7000.jpg",
+    "provincia-de-puntarenas-series-1105-y-3696-7000-2.jpg",
+    "provincia-de-puntarenas-series-1105-y-3696-7000-3.jpg"
+   ],
+   "notas": "Código: Provincias #2\nMoneda conmemorativa, en estuche. Serie(s) 1105 y 3696 de un tiraje de 7000. Producto: Provincia de Puntarenas. Series 1105 y 3696/7000. Categoría: Provincias estuche. Código: Provincias #2. Precio de venta: ₡25 000. Disponibles: 2."
+  },
+  "H26": {
+   "tengo": true,
+   "producto": "Provincia de Puntarenas. Series 1105 y 3696/7000",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "provincia-de-puntarenas-series-1105-y-3696-7000.jpg",
+    "provincia-de-puntarenas-series-1105-y-3696-7000-2.jpg",
+    "provincia-de-puntarenas-series-1105-y-3696-7000-3.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-de-puntarenas-series-1105-y-3696-7000.jpg",
+    "provincia-de-puntarenas-series-1105-y-3696-7000-2.jpg",
+    "provincia-de-puntarenas-series-1105-y-3696-7000-3.jpg"
+   ],
+   "notas": "Código: Provincias #2\nMoneda conmemorativa, en estuche. Serie(s) 1105 y 3696 de un tiraje de 7000. Producto: Provincia de Puntarenas. Series 1105 y 3696/7000. Categoría: Provincias estuche. Código: Provincias #2. Precio de venta: ₡25 000. Disponibles: 2."
+  },
+  "M25": {
+   "tengo": true,
+   "producto": "Provincia Guanacaste. Serie 1214/7000",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "provincia-guanacaste-serie-1214-7000.jpg",
+    "provincia-guanacaste-serie-1214-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-guanacaste-serie-1214-7000.jpg",
+    "provincia-guanacaste-serie-1214-7000-2.jpg"
+   ],
+   "notas": "Código: Provincias #3.\nMoneda conmemorativa, en estuche. Serie(s) 1214 de un tiraje de 7000. Producto: Provincia Guanacaste. Serie 1214/7000. Categoría: Provincias estuche. Código: Provincias #3.. Precio de venta: ₡25 000. Disponibles: 1."
+  },
+  "M26": {
+   "tengo": true,
+   "producto": "Provincia Guanacaste. Serie 6265/7000",
+   "valor": 30000,
+   "costo": 30000,
+   "fotos": [
+    "provincia-guanacaste-serie-6265-7000.jpg",
+    "provincia-guanacaste-serie-6265-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-guanacaste-serie-6265-7000.jpg",
+    "provincia-guanacaste-serie-6265-7000-2.jpg"
+   ],
+   "notas": "Código: Provincias #4. Serie especial serie alta\nMoneda conmemorativa, en estuche. Serie(s) 6265 de un tiraje de 7000. Producto: Provincia Guanacaste. Serie 6265/7000. Categoría: Provincias estuche. Código: Provincias #4. Serie especial serie alta. Precio de venta: ₡30 000. Disponibles: 1."
+  },
+  "R25": {
+   "tengo": true,
+   "producto": "Provincia Heredia. Serie 2074/7000",
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "provincia-heredia-serie-2074-7000.jpg",
+    "provincia-heredia-serie-2074-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-heredia-serie-2074-7000.jpg",
+    "provincia-heredia-serie-2074-7000-2.jpg"
+   ],
+   "notas": "Código: Provincias #4\nMoneda conmemorativa, en estuche. Serie(s) 2074 de un tiraje de 7000. Producto: Provincia Heredia. Serie 2074/7000. Categoría: Provincias estuche. Código: Provincias #4. Precio de venta: ₡25 000. Disponibles: 1."
+  },
+  "C25": {
+   "tengo": true,
+   "producto": "Provincia Limón. Serie 0880",
+   "valor": 35000,
+   "costo": 35000,
+   "fotos": [
+    "provincia-limon-serie-0880.jpg",
+    "provincia-limon-serie-0880-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-limon-serie-0880.jpg",
+    "provincia-limon-serie-0880-2.jpg"
+   ],
+   "notas": "Código: Provincias #1. Serie especial Serie baja y Radar\nMoneda conmemorativa, en estuche. Serie 0880. Producto: Provincia Limón. Serie 0880. Categoría: Provincias estuche. Código: Provincias #1. Serie especial Serie baja y Radar. Precio de venta: ₡35 000. Disponibles: 1."
+  },
+  "C26": {
+   "tengo": true,
+   "producto": "Provincia Limón. Serie 0885/7000",
+   "valor": 30000,
+   "costo": 30000,
+   "fotos": [
+    "provincia-limon-serie-0885-7000.jpg",
+    "provincia-limon-serie-0885-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-limon-serie-0885-7000.jpg",
+    "provincia-limon-serie-0885-7000-2.jpg"
+   ],
+   "notas": "Código: Provincia #1. Serie especial serie baja\nMoneda conmemorativa, en estuche. Serie(s) 0885 de un tiraje de 7000. Producto: Provincia Limón. Serie 0885/7000. Categoría: Provincias estuche. Código: Provincia #1. Serie especial serie baja. Precio de venta: ₡30 000. Disponibles: 1."
+  },
+  "C27": {
+   "tengo": true,
+   "producto": "Provincia Limón. Series 5677 y 5678/7000",
+   "valor": 70000,
+   "costo": 35000,
+   "fotos": [
+    "provincia-limon-series-5677-y-5678-7000.jpg",
+    "provincia-limon-series-5677-y-5678-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-limon-series-5677-y-5678-7000.jpg",
+    "provincia-limon-series-5677-y-5678-7000-2.jpg"
+   ],
+   "notas": "Código: Provincias #1. Series especiales serie Radar y consecutivos\nMoneda conmemorativa, en estuche. Serie(s) 5677 y 5678 de un tiraje de 7000. Producto: Provincia Limón. Series 5677 y 5678/7000. Categoría: Provincias estuche. Código: Provincias #1. Series especiales serie Radar y consecutivos. Precio de venta: ₡70 000. Disponibles: 2."
+  },
+  "C28": {
+   "tengo": true,
+   "producto": "Provincia Limón. Series 5677 y 5678/7000",
+   "valor": 70000,
+   "costo": 35000,
+   "fotos": [
+    "provincia-limon-series-5677-y-5678-7000.jpg",
+    "provincia-limon-series-5677-y-5678-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-limon-series-5677-y-5678-7000.jpg",
+    "provincia-limon-series-5677-y-5678-7000-2.jpg"
+   ],
+   "notas": "Código: Provincias #1. Series especiales serie Radar y consecutivos\nMoneda conmemorativa, en estuche. Serie(s) 5677 y 5678 de un tiraje de 7000. Producto: Provincia Limón. Series 5677 y 5678/7000. Categoría: Provincias estuche. Código: Provincias #1. Series especiales serie Radar y consecutivos. Precio de venta: ₡70 000. Disponibles: 2."
+  },
+  "H27": {
+   "tengo": true,
+   "producto": "Provincia Puntarenas. Serie 6576/7000",
+   "valor": 30000,
+   "costo": 30000,
+   "fotos": [
+    "provincia-puntarenas-serie-6576-7000.jpg",
+    "provincia-puntarenas-serie-6576-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-puntarenas-serie-6576-7000.jpg",
+    "provincia-puntarenas-serie-6576-7000-2.jpg"
+   ],
+   "notas": "Código: Provincias #2. Serie especial, serie alta\nMoneda conmemorativa, en estuche. Serie(s) 6576 de un tiraje de 7000. Producto: Provincia Puntarenas. Serie 6576/7000. Categoría: Provincias estuche. Código: Provincias #2. Serie especial, serie alta. Precio de venta: ₡30 000. Disponibles: 1."
+  },
+  "AH31": {
+   "tengo": true,
+   "producto": "Acrílico Provincia San José",
+   "valor": 18000,
+   "costo": 18000,
+   "fotos": [
+    "acrilico-provincia-san-jose.jpg"
+   ],
+   "fotosCompra": [
+    "acrilico-provincia-san-jose.jpg"
+   ],
+   "notas": "Código: Acrílico Teatro\nMoneda conmemorativa, en presentación acrílica. Producto: Acrílico Provincia San José. Categoría: Provincias Presentación en Acrílico. Código: Acrílico Teatro. Precio de venta: ₡18 000. Disponibles: 1."
+  },
+  "AC31": {
+   "tengo": true,
+   "producto": "Provincia Alajuela. Volcán Arenal",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-alajuela-volcan-arenal.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-alajuela-volcan-arenal.jpg"
+   ],
+   "notas": "Código: Provincias #6. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia Alajuela. Volcán Arenal. Categoría: Provincias Presentación en Acrílico. Código: Provincias #6. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "AC32": {
+   "tengo": true,
+   "producto": "Provincia Alajuela. Volcán Arenal",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-alajuela-volcan-arenal.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-alajuela-volcan-arenal.jpg"
+   ],
+   "notas": "Código: Provincias #6. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia Alajuela. Volcán Arenal. Categoría: Provincias Presentación en Acrílico. Código: Provincias #6. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "X31": {
+   "tengo": true,
+   "producto": "Provincia Cartago. Basílica de los Angeles",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-cartago-basilica-de-los-angeles.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-cartago-basilica-de-los-angeles.jpg"
+   ],
+   "notas": "Código: Provincias #5. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia Cartago. Basílica de los Angeles. Categoría: Provincias Presentación en Acrílico. Código: Provincias #5. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "X32": {
+   "tengo": true,
+   "producto": "Provincia Cartago. Basílica de los Angeles",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-cartago-basilica-de-los-angeles.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-cartago-basilica-de-los-angeles.jpg"
+   ],
+   "notas": "Código: Provincias #5. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia Cartago. Basílica de los Angeles. Categoría: Provincias Presentación en Acrílico. Código: Provincias #5. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "M31": {
+   "tengo": true,
+   "producto": "Provincia de Guanacaste. Casona",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-de-guanacaste-casona.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-de-guanacaste-casona.jpg"
+   ],
+   "notas": "Código: Província #3. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia de Guanacaste. Casona. Categoría: Provincias Presentación en Acrílico. Código: Província #3. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "M32": {
+   "tengo": true,
+   "producto": "Provincia de Guanacaste. Casona",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-de-guanacaste-casona.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-de-guanacaste-casona.jpg"
+   ],
+   "notas": "Código: Província #3. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia de Guanacaste. Casona. Categoría: Provincias Presentación en Acrílico. Código: Província #3. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "C31": {
+   "tengo": true,
+   "producto": "Provincia de limón. Playa Manzanillo",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-de-limon-playa-manzanillo.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-de-limon-playa-manzanillo.jpg"
+   ],
+   "notas": "Código: Província #1. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia de limón. Playa Manzanillo. Categoría: Provincias Presentación en Acrílico. Código: Província #1. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "C32": {
+   "tengo": true,
+   "producto": "Provincia de limón. Playa Manzanillo",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-de-limon-playa-manzanillo.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-de-limon-playa-manzanillo.jpg"
+   ],
+   "notas": "Código: Província #1. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia de limón. Playa Manzanillo. Categoría: Provincias Presentación en Acrílico. Código: Província #1. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "R31": {
+   "tengo": true,
+   "producto": "Provincia Heredia. Fortin",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-heredia-fortin.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-heredia-fortin.jpg"
+   ],
+   "notas": "Código: Provincia #4. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia Heredia. Fortin. Categoría: Provincias Presentación en Acrílico. Código: Provincia #4. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "R32": {
+   "tengo": true,
+   "producto": "Provincia Heredia. Fortin",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-heredia-fortin.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-heredia-fortin.jpg"
+   ],
+   "notas": "Código: Provincia #4. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia Heredia. Fortin. Categoría: Provincias Presentación en Acrílico. Código: Provincia #4. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "H31": {
+   "tengo": true,
+   "producto": "Provincia Puntarenas. Faro",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-puntarenas-faro.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-puntarenas-faro.jpg"
+   ],
+   "notas": "Código: Provincia #2. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia Puntarenas. Faro. Categoría: Provincias Presentación en Acrílico. Código: Provincia #2. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "H32": {
+   "tengo": true,
+   "producto": "Provincia Puntarenas. Faro",
+   "valor": 20000,
+   "costo": 20000,
+   "fotos": [
+    "provincia-puntarenas-faro.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-puntarenas-faro.jpg"
+   ],
+   "notas": "Código: Provincia #2. Presentación Acrílico\nMoneda conmemorativa, en presentación acrílica. Producto: Provincia Puntarenas. Faro. Categoría: Provincias Presentación en Acrílico. Código: Provincia #2. Presentación Acrílico. Precio de venta: ₡20 000. Disponibles: 2."
+  },
+  "O-c1202898": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 500,
+   "costo": 500,
+   "fotos": [
+    "fantasia-5-colones.jpg",
+    "fantasia-5-colones-2.jpg"
+   ],
+   "fotosCompra": [
+    "fantasia-5-colones.jpg",
+    "fantasia-5-colones-2.jpg"
+   ],
+   "notas": "Código: Fantasia 5 colones\nRéplica de 5 colones. Producto: Fantasia 5 colones. Categoría: Replicas. Código: Fantasia 5 colones. Precio de venta: ₡500. Disponibles: 1."
+  },
+  "O-64f6659a": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 30000,
+   "costo": 30000,
+   "fotos": [
+    "guaria-replica.jpg",
+    "guaria-replica-2.jpg"
+   ],
+   "fotosCompra": [
+    "guaria-replica.jpg",
+    "guaria-replica-2.jpg"
+   ],
+   "notas": "Código: Réplicas baño oro y plata\nRéplica. Producto: Guaria Replica. Categoría: Replicas. Código: Réplicas baño oro y plata. Precio de venta: ₡30 000. Disponibles: 1."
+  },
+  "O-c8392cc9": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 30000,
+   "costo": 25000,
+   "fotos": [
+    "jaguar-replica.jpg",
+    "jaguar-replica-2.jpg"
+   ],
+   "fotosCompra": [
+    "jaguar-replica.jpg",
+    "jaguar-replica-2.jpg"
+   ],
+   "notas": "Código: Réplicas con baño de plata y oro\nRéplica. Producto: Jaguar replica. Categoría: Replicas. Código: Réplicas con baño de plata y oro. Precio de venta: ₡30 000. Disponibles: 1."
+  },
+  "O-8b94fe57": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 30000,
+   "costo": 30000,
+   "fotos": [
+    "oso-hormiguero-replica.jpg",
+    "oso-hormiguero-replica-2.jpg"
+   ],
+   "fotosCompra": [
+    "oso-hormiguero-replica.jpg",
+    "oso-hormiguero-replica-2.jpg"
+   ],
+   "notas": "Código: Réplicas baño oro y plata.\nRéplica. Producto: Oso hormiguero replica. Categoría: Replicas. Código: Réplicas baño oro y plata.. Precio de venta: ₡30 000. Disponibles: 1."
+  },
+  "O-8b56f948": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 600000,
+   "costo": 600000,
+   "fotos": [
+    "set-acrilico-proof-y-bu.jpg",
+    "set-acrilico-proof-y-bu-2.jpg",
+    "set-acrilico-proof-y-bu-3.jpg"
+   ],
+   "fotosCompra": [
+    "set-acrilico-proof-y-bu.jpg",
+    "set-acrilico-proof-y-bu-2.jpg",
+    "set-acrilico-proof-y-bu-3.jpg"
+   ],
+   "notas": "Código: Set fauna PROOF y BU\nSet, en presentación acrílica, versión PROOF, BU (brillante sin circular). Producto: Set Acrílico PROOF y BU. Categoría: Set Acrílicos PROOF y BU. Código: Set fauna PROOF y BU. Precio de venta: ₡600 000. Disponibles: 1."
+  },
+  "O-788b93d2": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 1195000,
+   "costo": 1195000,
+   "fotos": [
+    "set-hitos-historicos-proof-bu-y-3-acrilico-monedam.jpg",
+    "set-hitos-historicos-proof-bu-y-3-acrilico-monedam-2.jpg",
+    "set-hitos-historicos-proof-bu-y-3-acrilico-monedam-3.jpg"
+   ],
+   "fotosCompra": [
+    "set-hitos-historicos-proof-bu-y-3-acrilico-monedam.jpg",
+    "set-hitos-historicos-proof-bu-y-3-acrilico-monedam-2.jpg",
+    "set-hitos-historicos-proof-bu-y-3-acrilico-monedam-3.jpg"
+   ],
+   "notas": "Código: Set Hitos Históricos\nSet, en presentación acrílica, versión PROOF, MS (mint state), BU (brillante sin circular). Producto: Set Hitos Históricos PROOF, BU y 3 acrílico monedaMs. Categoría: Set Acrílicos PROOF y BU. Código: Set Hitos Históricos. Precio de venta: ₡1 195 000. Disponibles: 1."
+  },
+  "O-74a0cea4": {
+   "tengo": true,
+   "cantidad": 1,
+   "valor": 7000,
+   "costo": 7000,
+   "fotos": [
+    "5-colones-1981-serie-d-37485492.jpg",
+    "5-colones-1981-serie-d-37485492-2.jpg"
+   ],
+   "fotosCompra": [
+    "5-colones-1981-serie-d-37485492.jpg",
+    "5-colones-1981-serie-d-37485492-2.jpg"
+   ],
+   "notas": "Código: 5 colones 81 Serie D\nMoneda conmemorativa de 5 colones, año 1981. Serie D 37485492. Producto: 5 colones 1981. Serie D 37485492. Categoría: Sin categoria. Código: 5 colones 81 Serie D. Precio de venta: ₡7 000. Disponibles: 1."
+  },
+  "O-cb800b24": {
+   "tengo": true,
+   "cantidad": 2,
+   "valor": 25000,
+   "costo": 25000,
+   "fotos": [
+    "provincia-cartago-series-2036-y-4493-7000.jpg",
+    "provincia-cartago-series-2036-y-4493-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "provincia-cartago-series-2036-y-4493-7000.jpg",
+    "provincia-cartago-series-2036-y-4493-7000-2.jpg"
+   ],
+   "notas": "Código: Provincias #5\nMoneda conmemorativa. Serie(s) 2036 y 4493 de un tiraje de 7000. Producto: Provincia Cartago. Series 2036 y 4493/7000. Categoría: Sin categoria. Código: Provincias #5. Precio de venta: ₡25 000. Disponibles: 2."
+  }
+ },
+ "sueltas": {},
+ "otras": [
+  {
+   "id": "O-d3b64175",
+   "nombre": "10 colones 1979. Serie C 4025777",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-f10361ec",
+   "nombre": "100 colones 1954. Serie G 765483",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-120c952c",
+   "nombre": "100 colones 1963. Serie C 1215808",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-fddcb77a",
+   "nombre": "100 colones 1976. Serie D 8301240",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-291535b1",
+   "nombre": "5 colones 1978. Serie D 28358769",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-639a9436",
+   "nombre": "5 colones 1983*Regalo de mi madre, invaluable *",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-ca77fb08",
+   "nombre": "5 colones 1989. Fecha gringa escasa. Serie D 59518020 y D 59556125",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-0a355c1d",
+   "nombre": "5 colones 1989. Serie D 55458956",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-9c868f3a",
+   "nombre": "5 colones 1990. Serie D 62166133",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-ac12e42d",
+   "nombre": "5 colones serie A. Serie 721080",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-6640c50d",
+   "nombre": "5 colones Serie C 4661488",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-87cce76e",
+   "nombre": "5 colones Series consecutivas varias 1989 Serie D",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-c39bde15",
+   "nombre": "5 colones XX Aniversario Banco Central. Serie D 14220392",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-9b939ff5",
+   "nombre": "Colección completa 10 colones serie D con variantes",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-bfeb6e5b",
+   "nombre": "Dos colones 1939. Serie C 921300",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-c53edf9e",
+   "nombre": "Dos colones con resello. Serie F 1955730",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-25d5a209",
+   "nombre": "Dos colones. Serie F 1344066",
+   "categoria": "Billetes"
+  },
+  {
+   "id": "O-51a96a29",
+   "nombre": "Colecciónador Fauna MS",
+   "categoria": "Coleccionadores"
+  },
+  {
+   "id": "O-2a01cc85",
+   "nombre": "Coleccionador Fauna PROOF",
+   "categoria": "Coleccionadores"
+  },
+  {
+   "id": "O-1b8787e2",
+   "nombre": "100 colones plata. Versión PROOF y mate",
+   "categoria": "Conmemorativas de plata"
+  },
+  {
+   "id": "O-c1202898",
+   "nombre": "Fantasia 5 colones",
+   "categoria": "Replicas"
+  },
+  {
+   "id": "O-64f6659a",
+   "nombre": "Guaria Replica",
+   "categoria": "Replicas"
+  },
+  {
+   "id": "O-c8392cc9",
+   "nombre": "Jaguar replica",
+   "categoria": "Replicas"
+  },
+  {
+   "id": "O-8b94fe57",
+   "nombre": "Oso hormiguero replica",
+   "categoria": "Replicas"
+  },
+  {
+   "id": "O-8b56f948",
+   "nombre": "Set Acrílico PROOF y BU",
+   "categoria": "Set Acrílicos PROOF y BU"
+  },
+  {
+   "id": "O-788b93d2",
+   "nombre": "Set Hitos Históricos PROOF, BU y 3 acrílico monedaMs",
+   "categoria": "Set Acrílicos PROOF y BU"
+  },
+  {
+   "id": "O-74a0cea4",
+   "nombre": "5 colones 1981. Serie D 37485492",
+   "categoria": "Sin categoria"
+  },
+  {
+   "id": "O-cb800b24",
+   "nombre": "Provincia Cartago. Series 2036 y 4493/7000",
+   "categoria": "Sin categoria"
+  }
+ ]
+}

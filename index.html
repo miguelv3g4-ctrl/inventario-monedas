@@ -103,6 +103,17 @@
   tbody tr:hover { background: #221e14; }
   .tabla { max-height: 62vh; overflow: auto; border: 1px solid var(--linea); border-radius: 4px; }
   tfoot td { color: var(--oro); font-weight: bold; position: sticky; bottom: 0; background: var(--panel); }
+  /* otras piezas */
+  #vOtras .ventana { width: min(1150px, 100%); }
+  #oGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; margin-top: 12px; }
+  .tarjeta { background: #0b0a09; border: 1px solid var(--linea); border-radius: 6px; overflow: hidden; cursor: pointer; display: flex; flex-direction: column; }
+  .tarjeta:hover, .tarjeta:focus-visible { border-color: var(--oro); outline: none; }
+  .tarjeta .ph { aspect-ratio: 4 / 3; background: #000; display: flex; align-items: center; justify-content: center; color: #6b6250; font-size: 13px; }
+  .tarjeta .ph img { width: 100%; height: 100%; object-fit: cover; }
+  .tarjeta .tx { padding: 8px 10px; font-size: 14px; color: #e8e2d0; display: flex; flex-direction: column; gap: 3px; }
+  .tarjeta .tx b { color: var(--oro); font-weight: normal; }
+  .tarjeta .tx small { color: var(--gris); font-size: 12px; }
+  select { font: inherit; font-size: 14px; color: #fff; background: #0b0a09; border: 1px solid var(--linea); border-radius: 4px; padding: 5px 8px; color-scheme: dark; }
   .ayuda { color: var(--gris); font-size: 14px; line-height: 1.45; }
   .ayuda a { color: var(--oro); }
   .ayuda ol { padding-left: 20px; margin: 8px 0; }
@@ -120,6 +131,7 @@
   <span class="dato">Ganancia en ventas<b id="tGan">–</b></span>
   <span class="sep"></span>
   <span id="estado"></span>
+  <button id="bOtras">Otras piezas</button>
   <button id="bLista">Lista y totales</button>
   <button id="bConectar">Conectar para editar</button>
   <button id="zMenos" title="Alejar">−</button>
@@ -127,6 +139,22 @@
   <button id="zMas" title="Acercar">+</button>
 </div>
 <div id="area"><div id="hoja"></div></div>
+
+<!-- otras piezas: billetes, sets, replicas... -->
+<div class="velo" id="vOtras">
+  <div class="ventana" role="dialog" aria-modal="true">
+    <div class="cab">
+      <div><h2>Otras piezas</h2><div class="col">Billetes, sets, coleccionadores, réplicas y todo lo que no está en la hoja.</div></div>
+      <button id="oNueva" class="fuerte">Agregar pieza</button>
+      <button id="oCerrar">Cerrar</button>
+    </div>
+    <div class="filtros">
+      <label>Categoría <select id="oCat"></select></label>
+      <span class="col" id="oCuenta"></span>
+    </div>
+    <div id="oGrid"></div>
+  </div>
+</div>
 
 <!-- ficha de consulta -->
 <div class="velo" id="vFicha">
@@ -162,6 +190,12 @@
         <div class="sub" id="fSub"></div>
       </div>
     </div>
+    <div class="campos" id="fOtra" style="margin-top:12px">
+      <label>Nombre<input type="text" id="fNombre"></label>
+      <label>Categoría<input type="text" id="fCategoria" list="listaCategorias"></label>
+      <label>Cantidad<input type="text" inputmode="numeric" id="fCantidad" placeholder="1"></label>
+    </div>
+    <datalist id="listaCategorias"></datalist>
     <label class="linea" style="margin-top:12px"><input type="checkbox" id="fTengo"> La tengo en la colección</label>
 
     <h3>Valor de la colección: la pieza y su valor actual</h3>
@@ -253,7 +287,7 @@
   'use strict';
   const H = window.HOJA, $ = id => document.getElementById(id);
   const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt !== undefined) e.textContent = txt; return e; };
-  let datos = { piezas: {}, sueltas: {} };
+  let datos = { piezas: {}, sueltas: {}, otras: [] };
   let modo = 'valor'; // 'valor' = valor de la coleccion, 'compra' = inventario
   try { if (localStorage.getItem('modoInventario') === 'compra') modo = 'compra'; } catch (e) {}
 
@@ -271,12 +305,21 @@
   const hoy = () => new Date().toLocaleDateString('sv-SE');
 
   // ---------- datos de cada pieza
-  const base = Object.fromEntries(H.piezas.map(p => [p.id, p]));
+  // base: las piezas de la hoja y las "otras piezas" (billetes, sets...) guardadas en datos.otras
+  let base = {};
+  function armarBase() {
+    base = Object.fromEntries(H.piezas.map(p => [p.id, p]));
+    for (const o of datos.otras || []) base[o.id] = { id: o.id, otra: true, moneda: o.nombre || '(sin nombre)', coleccion: o.categoria || 'Sin categoría', tipo: 'Otra' };
+  }
+  armarBase();
+  const todas = () => Object.values(base);
   const reg = id => datos.piezas[id] || {};
-  const tengo = id => { const r = reg(id); return r.tengo !== undefined ? !!r.tengo : !!(base[id].ck && base[id].ck.on); };
+  const tengo = id => { const r = reg(id); return r.tengo !== undefined ? !!r.tengo : !!(base[id] && base[id].ck && base[id].ck.on); };
+  const cant = id => reg(id).cantidad || 1;
   const fotosDe = (id, grupo) => reg(id)[grupo] || [];
-  const nFotos = id => fotosDe(id, 'fotos').length + fotosDe(id, 'fotosCompra').length;
-  const nombrePieza = p => p.tipo === 'Estuche' ? 'Estuche ' + (p.serie ? p.serie + ' / ' + p.tiraje : '(sin serie)') : 'Acrílico ' + p.calidad;
+  const nFotos = id => new Set(fotosDe(id, 'fotos').concat(fotosDe(id, 'fotosCompra'))).size;
+  const nombrePieza = p => p.otra ? p.coleccion + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '') : p.tipo === 'Estuche' ? 'Estuche ' + (p.serie ? p.serie + ' / ' + p.tiraje : '(sin serie)') : 'Acrílico ' + p.calidad;
+  const fotoEnUso = nombre => Object.values(datos.piezas).some(r => (r.fotos || []).includes(nombre) || (r.fotosCompra || []).includes(nombre));
   function limpiar(r) {
     for (const k of Object.keys(r)) if (r[k] === '' || r[k] === 0 || r[k] === undefined || (r[k] === false && k !== 'tengo') || (Array.isArray(r[k]) && !r[k].length)) delete r[k];
     return r;
@@ -320,9 +363,11 @@
       if ((r.status === 409 || r.status === 422) && intento === 0) {
         // alguien guardo desde otro equipo: se toma lo suyo y encima lo que se cambio aqui
         const rem = await leerRemoto(), mios = datos;
-        datos = { piezas: rem.datos.piezas || {}, sueltas: Object.assign({}, rem.datos.sueltas, mios.sueltas) };
+        const otras = (rem.datos.otras || []).slice();
+        for (const o of mios.otras || []) { const i = otras.findIndex(x => x.id === o.id); if (i < 0) otras.push(o); else if (sucias.has(o.id)) otras[i] = o; }
+        datos = { piezas: rem.datos.piezas || {}, sueltas: Object.assign({}, rem.datos.sueltas, mios.sueltas), otras };
         for (const id of sucias) { if (mios.piezas[id]) datos.piezas[id] = mios.piezas[id]; else delete datos.piezas[id]; }
-        sha = rem.sha; continue;
+        sha = rem.sha; armarBase(); continue;
       }
       estado('Sin guardar');
       throw new Error(r.status === 401 || r.status === 403 ? 'La llave no sirve o no tiene permiso de escritura (' + r.status + ').' : 'GitHub respondió ' + r.status + '.');
@@ -397,6 +442,7 @@
 
   function pintarPieza(id) {
     const p = base[id], r = reg(id), z = zonas[id];
+    if (!z) return; // las "otras piezas" no estan en la hoja
     const tiene = modo === 'valor' ? !!(r.valor || fotosDe(id, 'fotos').length) : !!(r.costo || fotosDe(id, 'fotosCompra').length);
     z.classList.toggle('con', tiene && !r.vendida);
     z.classList.toggle('vendida', !!r.vendida);
@@ -409,14 +455,15 @@
   }
   function totales() {
     let n = 0, inv = 0, ven = 0, gan = 0, val = 0;
-    for (const p of H.piezas) {
-      const r = reg(p.id);
-      if (tengo(p.id) && !r.vendida) { n++; val += r.valor || 0; }
-      inv += r.costo || 0;
-      if (r.vendida) { ven += r.precioVenta || 0; gan += (r.precioVenta || 0) - (r.costo || 0); }
+    for (const p of todas()) {
+      const r = reg(p.id), q = cant(p.id);
+      if (tengo(p.id) && !r.vendida) { n += q; val += (r.valor || 0) * q; }
+      inv += (r.costo || 0) * q;
+      if (r.vendida) { ven += r.precioVenta || 0; gan += (r.precioVenta || 0) - (r.costo || 0) * q; }
     }
     $('tPiezas').textContent = n; $('tInv').textContent = fmt(inv); $('tVal').textContent = fmt(val); $('tVen').textContent = fmt(ven); $('tGan').textContent = conSigno(gan);
     if ($('vLista').classList.contains('abierta')) pintarLista();
+    if ($('vOtras').classList.contains('abierta')) pintarOtras();
   }
   function pintarTodo() {
     for (const p of H.piezas) pintarPieza(p.id);
@@ -471,6 +518,8 @@
       est.appendChild(el('span', 'vend', 'Vendida' + (r.precioVenta ? ' en ' + fmt(r.precioVenta) : '') + (r.fechaVenta ? ' el ' + fecha(r.fechaVenta) : '') + (r.comprador ? ' a ' + r.comprador : '')));
       if (r.precioVenta && r.costo) est.append('\n' + (r.precioVenta >= r.costo ? 'Ganancia: ' : 'Pérdida: ') + fmt(Math.abs(r.precioVenta - r.costo)));
     } else est.appendChild(tengo(id) ? el('span', 'inv', 'En la colección') : el('span', 'no', 'No la tengo'));
+    if (cant(id) > 1 && (r.valor || r.costo)) est.append('\nPrecios por unidad · ' + cant(id) + ' unidades');
+    if (r.producto) est.append('\n\nProducto: ' + r.producto);
     if (r.notas) est.append('\n\n' + r.notas);
     $('vEditar').textContent = nFotos(id) || r.valor || r.costo ? 'Cambiar datos y fotos' : 'Poner datos y fotos';
   }
@@ -485,9 +534,16 @@
   const campos = { fValor: 'valor', fFechaValor: 'fechaValor', fFuenteValor: 'fuenteValor', fCosto: 'costo', fFechaCompra: 'fechaCompra', fOrigen: 'origen', fPrecio: 'precioVenta', fFechaVenta: 'fechaVenta', fComprador: 'comprador', fNotas: 'notas' };
   const esDinero = k => k === 'costo' || k === 'precioVenta' || k === 'valor';
   const GRUPOS = { fotos: 'fotosPieza', fotosCompra: 'fotosCompra' };
-  let borrador = null, grupoActivo = 'fotos';
+  let borrador = null, grupoActivo = 'fotos', nueva = false;
   function abrirForm() {
     const id = actual, p = base[id], r = reg(id);
+    $('fOtra').style.display = p.otra ? '' : 'none';
+    if (p.otra) {
+      const o = datos.otras.find(x => x.id === id) || {};
+      $('fNombre').value = o.nombre || ''; $('fCategoria').value = o.categoria || ''; $('fCantidad').value = r.cantidad || 1;
+      const dl = $('listaCategorias'); dl.textContent = '';
+      for (const c of [...new Set(datos.otras.map(x => x.categoria).filter(Boolean))].sort()) { const op = el('option'); op.value = c; dl.appendChild(op); }
+    }
     borrador = { fotos: fotosDe(id, 'fotos').map(n => ({ nombre: n })), fotosCompra: fotosDe(id, 'fotosCompra').map(n => ({ nombre: n })), quitadas: [] };
     grupoActivo = pestana === 'compra' ? 'fotosCompra' : 'fotos';
     $('fMoneda').textContent = p.moneda; $('fSub').textContent = nombrePieza(p) + (p.anio ? ' · Emisión ' + p.anio : '');
@@ -497,7 +553,12 @@
     for (const g in GRUPOS) pintarGrupo(g);
     $('vForm').classList.add('abierta'); $('vForm').scrollTop = 0;
   }
-  function cerrarForm() { for (const g in GRUPOS) for (const f of borrador[g]) if (f.url && !f.nombre) URL.revokeObjectURL(f.url); borrador = null; $('vForm').classList.remove('abierta'); }
+  function cerrarForm(guardado) {
+    for (const g in GRUPOS) for (const f of borrador[g]) if (f.url && !f.nombre) URL.revokeObjectURL(f.url);
+    borrador = null; $('vForm').classList.remove('abierta');
+    if (nueva && !guardado) { datos.otras = datos.otras.filter(o => o.id !== actual); armarBase(); $('vFicha').classList.remove('abierta'); }
+    nueva = false;
+  }
   function pintarGrupo(grupo) {
     const caja = $(GRUPOS[grupo]); caja.textContent = '';
     borrador[grupo].forEach((f, i) => {
@@ -537,7 +598,7 @@
   }
   for (const f in campos) if (esDinero(campos[f])) $(f).addEventListener('blur', () => { const n = num($(f).value); $(f).value = n ? Math.round(n).toLocaleString('es-CR') : ''; });
   $('fVendida').addEventListener('change', () => { if ($('fVendida').checked && !$('fFechaVenta').value) $('fFechaVenta').value = hoy(); });
-  $('fCancelar').onclick = cerrarForm;
+  $('fCancelar').onclick = () => cerrarForm(false);
   $('fGuardar').onclick = async () => {
     const id = actual, p = base[id], nota = $('fNota');
     $('fGuardar').disabled = true; $('fCancelar').disabled = true;
@@ -553,15 +614,22 @@
       }
       // 2. guardar los datos
       nota.textContent = 'Guardando datos…';
-      const r = { tengo: $('fTengo').checked, vendida: $('fVendida').checked, fotos: borrador.fotos.map(f => f.nombre), fotosCompra: borrador.fotosCompra.map(f => f.nombre) };
+      const ant = reg(id);
+      const r = { tengo: $('fTengo').checked, vendida: $('fVendida').checked, producto: ant.producto, cantidad: ant.cantidad, fotos: borrador.fotos.map(f => f.nombre), fotosCompra: borrador.fotosCompra.map(f => f.nombre) };
       for (const f in campos) r[campos[f]] = esDinero(campos[f]) ? num($(f).value) : $(f).value.trim();
+      if (p.otra) {
+        const o = datos.otras.find(x => x.id === id);
+        o.nombre = $('fNombre').value.trim() || 'Pieza sin nombre'; o.categoria = $('fCategoria').value.trim() || 'Sin categoría';
+        const q = Math.round(num($('fCantidad').value)); r.cantidad = q > 1 ? q : undefined;
+        armarBase();
+      }
       datos.piezas[id] = limpiar(r); sucias.add(id);
-      await guardarDatos('Datos de ' + p.moneda + ' (' + nombrePieza(p) + ')');
-      // 3. quitar del repositorio las fotos que se quitaron (si falla no pasa nada)
-      for (const nombre of borrador.quitadas) {
+      await guardarDatos('Datos de ' + base[id].moneda + ' (' + nombrePieza(base[id]) + ')');
+      // 3. quitar del repositorio las fotos que se quitaron y ya no usa ninguna otra pieza (si falla no pasa nada)
+      for (const nombre of borrador.quitadas.filter(n => !fotoEnUso(n))) {
         try { const m = await api('GET', 'fotos/' + nombre); if (m.ok) await api('DELETE', 'fotos/' + nombre, { message: 'Quitar foto', sha: (await m.json()).sha }); } catch (e) {}
       }
-      cerrarForm(); pintarPieza(id); totales(); pintarFicha();
+      cerrarForm(true); pintarPieza(id); totales(); abrirFicha(id);
     } catch (e) {
       nota.textContent = 'No se guardó: ' + e.message; $('fGuardar').disabled = false; $('fCancelar').disabled = false;
     }
@@ -584,7 +652,7 @@
       if (!r.ok) throw new Error(r.status === 401 ? 'La llave no es válida.' : r.status === 404 ? 'No se encontró ese repositorio con esa llave.' : 'GitHub respondió ' + r.status + '.');
       const j = await r.json(); if (j.permissions && !j.permissions.push) throw new Error('La llave no tiene permiso de escritura (Contents: Read and write).');
       cfg = prueba; try { localStorage.setItem('githubInventario', JSON.stringify(cfg)); } catch (e) {}
-      const rem = await leerRemoto(); datos = { piezas: rem.datos.piezas || {}, sueltas: rem.datos.sueltas || {} }; sha = rem.sha;
+      const rem = await leerRemoto(); datos = { piezas: rem.datos.piezas || {}, sueltas: rem.datos.sueltas || {}, otras: rem.datos.otras || [] }; sha = rem.sha; armarBase();
       $('vCon').classList.remove('abierta'); pintarTodo(); if (actual && $('vFicha').classList.contains('abierta')) pintarFicha();
     } catch (e) { $('cNota').textContent = e.message; }
   };
@@ -592,19 +660,19 @@
   // ---------- lista
   function filasLista() {
     const f = document.querySelector('input[name=fl]:checked').value;
-    return H.piezas.filter(p => { const r = reg(p.id); return f === 'todas' || (f === 'vendidas' ? r.vendida : tengo(p.id) && !r.vendida); });
+    return todas().filter(p => { const r = reg(p.id); return f === 'todas' || (f === 'vendidas' ? r.vendida : tengo(p.id) && !r.vendida); });
   }
   function pintarLista() {
     const cuerpo = $('lCuerpo'); cuerpo.textContent = ''; let c = 0, v = 0, g = 0, va = 0; const filas = filasLista();
     for (const p of filas) {
       const r = reg(p.id), tr = el('tr');
       const est = r.vendida ? ['Vendida', 'vend'] : tengo(p.id) ? ['En la colección', 'inv'] : ['No la tengo', 'no'];
-      const gan = r.vendida ? (r.precioVenta || 0) - (r.costo || 0) : null;
-      [[p.coleccion], [p.moneda], [nombrePieza(p)], est, [nFotos(p.id) || '', 'n'], [r.valor ? fmt(r.valor) : '', 'n'], [r.costo ? fmt(r.costo) : '', 'n'], [r.vendida && r.precioVenta ? fmt(r.precioVenta) : '', 'n'], [gan === null ? '' : conSigno(gan), 'n']]
+      const q = cant(p.id), gan = r.vendida ? (r.precioVenta || 0) - (r.costo || 0) * q : null;
+      [[p.coleccion], [p.moneda], [nombrePieza(p)], est, [nFotos(p.id) || '', 'n'], [r.valor ? fmt(r.valor * q) : '', 'n'], [r.costo ? fmt(r.costo * q) : '', 'n'], [r.vendida && r.precioVenta ? fmt(r.precioVenta) : '', 'n'], [gan === null ? '' : conSigno(gan), 'n']]
         .forEach(([t, cls]) => tr.appendChild(el('td', cls, t)));
       tr.onclick = () => { $('vLista').classList.remove('abierta'); abrirFicha(p.id); };
       cuerpo.appendChild(tr);
-      c += r.costo || 0; if (!r.vendida) va += r.valor || 0; if (r.vendida) { v += r.precioVenta || 0; g += gan; }
+      c += (r.costo || 0) * q; if (!r.vendida) va += (r.valor || 0) * q; if (r.vendida) { v += r.precioVenta || 0; g += gan; }
     }
     $('lCuenta').textContent = filas.length + ' piezas'; $('lValor').textContent = fmt(va); $('lCosto').textContent = fmt(c); $('lVenta').textContent = fmt(v); $('lGan').textContent = conSigno(g);
   }
@@ -614,21 +682,58 @@
   document.querySelectorAll('input[name=fl]').forEach(r => r.addEventListener('change', pintarLista));
   $('lCsv').onclick = () => {
     const q = s => '"' + String(s === undefined ? '' : s).replace(/"/g, '""') + '"';
-    const lineas = [['Colección', 'Moneda', 'Año', 'Tipo', 'Serie o calidad', 'Tiraje', 'La tengo', 'Vendida', 'Valor actual', 'Costo', 'Fecha compra', 'Comprada a', 'Precio venta', 'Fecha venta', 'Vendida a', 'Ganancia', 'Fotos', 'Notas'].map(q).join(';')];
-    for (const p of H.piezas) {
+    const lineas = [['Colección', 'Moneda', 'Año', 'Tipo', 'Serie o calidad', 'Tiraje', 'Cantidad', 'La tengo', 'Vendida', 'Valor actual (unidad)', 'Costo (unidad)', 'Fecha compra', 'Comprada a', 'Precio venta', 'Fecha venta', 'Vendida a', 'Ganancia', 'Fotos', 'Notas'].map(q).join(';')];
+    for (const p of todas()) {
       const r = reg(p.id);
-      lineas.push([p.coleccion, p.moneda, p.anio, p.tipo, p.serie || p.calidad || '', p.tiraje || '', tengo(p.id) ? 'Sí' : 'No', r.vendida ? 'Sí' : 'No', r.valor || '', r.costo || '', r.fechaCompra, r.origen, r.precioVenta || '', r.fechaVenta, r.comprador, r.vendida ? (r.precioVenta || 0) - (r.costo || 0) : '', nFotos(p.id), r.notas].map(q).join(';'));
+      lineas.push([p.coleccion, p.moneda, p.anio, p.tipo, p.serie || p.calidad || '', p.tiraje || '', cant(p.id), tengo(p.id) ? 'Sí' : 'No', r.vendida ? 'Sí' : 'No', r.valor || '', r.costo || '', r.fechaCompra, r.origen, r.precioVenta || '', r.fechaVenta, r.comprador, r.vendida ? (r.precioVenta || 0) - (r.costo || 0) * cant(p.id) : '', nFotos(p.id), r.notas].map(q).join(';'));
     }
     const a = el('a'); a.href = URL.createObjectURL(new Blob(['﻿' + lineas.join('\r\n')], { type: 'text/csv' }));
     a.download = 'inventario-monedas-' + hoy() + '.csv'; a.click(); URL.revokeObjectURL(a.href);
+  };
+
+  // ---------- otras piezas
+  function pintarOtras() {
+    const sel = $('oCat'), elegida = sel.value, cats = [...new Set(todas().filter(p => p.otra).map(p => p.coleccion))].sort();
+    sel.textContent = ''; sel.appendChild(el('option', '', 'Todas'));
+    for (const c of cats) { const o = el('option', '', c); o.value = c; sel.appendChild(o); }
+    sel.value = cats.includes(elegida) ? elegida : '';
+    if (sel.value === '') sel.selectedIndex = 0;
+    const lista = todas().filter(p => p.otra && (!sel.value || p.coleccion === sel.value)).sort((a, b) => a.coleccion.localeCompare(b.coleccion) || a.moneda.localeCompare(b.moneda));
+    const g = $('oGrid'); g.textContent = '';
+    for (const p of lista) {
+      const r = reg(p.id), t = el('div', 'tarjeta'), ph = el('div', 'ph'), f = fotosDe(p.id, 'fotos')[0] || fotosDe(p.id, 'fotosCompra')[0];
+      t.tabIndex = 0; t.setAttribute('role', 'button');
+      if (f) { const im = el('img'); im.alt = ''; im.loading = 'lazy'; ponerFoto(im, f); ph.appendChild(im); } else ph.textContent = 'Sin foto';
+      const tx = el('div', 'tx');
+      tx.append(el('span', '', p.moneda), el('small', '', p.coleccion + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '')));
+      const precio = el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : r.valor ? fmt(r.valor) + (cant(p.id) > 1 ? ' c/u' : '') : 'Sin precio');
+      tx.appendChild(precio);
+      t.append(ph, tx);
+      t.onclick = () => abrirFicha(p.id);
+      t.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrirFicha(p.id); } };
+      g.appendChild(t);
+    }
+    $('oCuenta').textContent = lista.length + ' piezas';
+  }
+  $('bOtras').onclick = () => { $('vOtras').classList.add('abierta'); pintarOtras(); };
+  $('oCerrar').onclick = () => $('vOtras').classList.remove('abierta');
+  $('vOtras').addEventListener('mousedown', e => { if (e.target === $('vOtras')) $('vOtras').classList.remove('abierta'); });
+  $('oCat').addEventListener('change', pintarOtras);
+  $('oNueva').onclick = () => {
+    if (!conectado()) { abrirConexion(); return; }
+    const id = 'O-' + Date.now().toString(36);
+    datos.otras = datos.otras || []; datos.otras.push({ id, nombre: '', categoria: $('oCat').value || '' });
+    datos.piezas[id] = { tengo: true }; sucias.add(id);
+    armarBase(); actual = id; pestana = 'valor'; nueva = true; abrirForm();
   };
 
   document.addEventListener('keydown', e => {
     if (e.key !== 'Escape') return;
     if ($('grande').style.display === 'flex') $('grande').style.display = 'none';
     else if ($('vCon').classList.contains('abierta')) $('vCon').classList.remove('abierta');
-    else if ($('vForm').classList.contains('abierta')) { if (!$('fCancelar').disabled) cerrarForm(); }
+    else if ($('vForm').classList.contains('abierta')) { if (!$('fCancelar').disabled) cerrarForm(false); }
     else if ($('vFicha').classList.contains('abierta')) cerrarFicha();
+    else if ($('vOtras').classList.contains('abierta')) $('vOtras').classList.remove('abierta');
     else $('vLista').classList.remove('abierta');
   });
   window.addEventListener('beforeunload', e => { if (sucias.size || $('estado').textContent === 'Sin guardar') { e.preventDefault(); e.returnValue = ''; } });
@@ -640,7 +745,8 @@
       let d = {};
       if (conectado()) { const rem = await leerRemoto(); d = rem.datos; sha = rem.sha; }
       else if (location.protocol !== 'file:') { const r = await fetch('datos.json?t=' + Date.now(), { cache: 'no-store' }); if (r.ok) d = await r.json(); }
-      datos = { piezas: d.piezas || {}, sueltas: d.sueltas || {} };
+      datos = { piezas: d.piezas || {}, sueltas: d.sueltas || {}, otras: d.otras || [] };
+      armarBase();
     } catch (e) {
       aviso('No se pudieron leer los datos guardados (' + e.message + '). Se muestra la hoja sin precios ni fotos.');
     }
