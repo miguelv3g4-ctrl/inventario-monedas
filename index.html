@@ -133,7 +133,7 @@
   <span id="estado"></span>
   <button id="bOtras">Otras piezas</button>
   <button id="bLista">Lista y totales</button>
-  <button id="bConectar">Conectar para editar</button>
+  <button id="bConectar">Entrar para editar</button>
   <button id="zMenos" title="Alejar">−</button>
   <button id="zAjustar" title="Ajustar al ancho de la ventana">Ajustar</button>
   <button id="zMas" title="Acercar">+</button>
@@ -233,28 +233,17 @@
   </div>
 </div>
 
-<!-- conectar con GitHub -->
+<!-- entrar con la clave -->
 <div class="velo" id="vCon">
-  <div class="ventana" role="dialog" aria-modal="true" style="width:min(620px,100%)">
-    <h2>Conectar para editar</h2>
-    <div class="ayuda">
-      <p>Cualquiera con el link puede <b>ver</b> el inventario. Para <b>poner datos y fotos</b> hace falta una llave de GitHub, que se guarda solo en este navegador.</p>
-      <ol>
-        <li>Abre <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com → Settings → Fine-grained tokens → Generate new token</a>.</li>
-        <li>En <i>Repository access</i> elige <i>Only select repositories</i> y marca solo el repositorio del inventario.</li>
-        <li>En <i>Permissions → Repository → Contents</i> pon <i>Read and write</i>. Genera la llave y pégala aquí.</li>
-      </ol>
-    </div>
-    <div class="campos" style="grid-template-columns:1fr 1fr">
-      <label>Usuario de GitHub<input type="text" id="cDueno" autocomplete="off"></label>
-      <label>Repositorio<input type="text" id="cRepo" autocomplete="off"></label>
-    </div>
-    <label style="margin-top:10px">Llave (token)<input type="password" id="cToken" autocomplete="off" placeholder="github_pat_…"></label>
+  <div class="ventana" role="dialog" aria-modal="true" style="width:min(460px,100%)">
+    <h2>Entrar para editar</h2>
+    <p class="ayuda">Cualquiera con el link puede <b>ver</b> el inventario. Para cambiar datos y fotos escribe tu clave. Este equipo queda conectado por 30 días.</p>
+    <label>Clave<input type="password" id="cClave" autocomplete="current-password"></label>
     <div class="pie">
       <span class="nota" id="cNota"></span>
-      <button id="cSalir">Desconectar</button>
+      <button id="cSalir">Salir</button>
       <button id="cCancelar">Cancelar</button>
-      <button id="cGuardar" class="fuerte">Conectar</button>
+      <button id="cGuardar" class="fuerte">Entrar</button>
     </div>
   </div>
 </div>
@@ -325,30 +314,29 @@
     return r;
   }
 
-  // ---------- GitHub: de aqui se leen y aqui se guardan los datos
-  let cfg = { dueno: '', repo: '', token: '' };
-  try { cfg = Object.assign(cfg, JSON.parse(localStorage.getItem('githubInventario') || '{}')); } catch (e) {}
-  if (!cfg.dueno && /\.github\.io$/.test(location.hostname)) { cfg.dueno = location.hostname.split('.')[0]; cfg.repo = location.pathname.split('/')[1] || ''; }
-  const conectado = () => !!(cfg.token && cfg.dueno && cfg.repo);
+  // ---------- guardar: la pagina habla con un Worker de Cloudflare (con clave) y el Worker guarda en GitHub
+  const API = 'https://inventario-monedas-api.immd-academy.workers.dev';
+  let ses = { sesion: '', vence: 0 };
+  try { ses = Object.assign(ses, JSON.parse(localStorage.getItem('sesionInventario') || '{}')); } catch (e) {}
+  const conectado = () => !!(ses.sesion && ses.vence > Date.now());
   let sha = null; const sucias = new Set(); const locales = {}; // locales: fotos recien subidas (nombre -> blob url)
 
-  function api(metodo, ruta, cuerpo, crudo) {
-    return fetch('https://api.github.com/repos/' + encodeURIComponent(cfg.dueno) + '/' + encodeURIComponent(cfg.repo) + '/contents/' + ruta, {
+  async function api(metodo, ruta, cuerpo, extra) {
+    const esBlob = cuerpo instanceof Blob;
+    const r = await fetch(API + ruta, {
       method: metodo, cache: 'no-store',
-      headers: { Authorization: 'Bearer ' + cfg.token, Accept: crudo ? 'application/vnd.github.raw' : 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28' },
-      body: cuerpo ? JSON.stringify(cuerpo) : undefined
+      headers: Object.assign({ Authorization: 'Bearer ' + ses.sesion }, cuerpo && !esBlob ? { 'Content-Type': 'application/json' } : {}, extra || {}),
+      body: cuerpo ? (esBlob ? cuerpo : JSON.stringify(cuerpo)) : undefined
     });
+    if (r.status === 401) { ses = { sesion: '', vence: 0 }; try { localStorage.removeItem('sesionInventario'); } catch (e) {} pintarTodo(); }
+    return r;
   }
-  const b64texto = t => { const b = new TextEncoder().encode(t); let s = ''; for (let i = 0; i < b.length; i += 8192) s += String.fromCharCode.apply(null, b.subarray(i, i + 8192)); return btoa(s); };
-  const textoB64 = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, '')), c => c.charCodeAt(0)));
-  const b64blob = blob => new Promise((ok, mal) => { const l = new FileReader(); l.onload = () => ok(String(l.result).split(',')[1]); l.onerror = mal; l.readAsDataURL(blob); });
+  async function error(r, que) { let m = ''; try { m = (await r.json()).error || ''; } catch (e) {} return new Error(m || ('El servidor respondió ' + r.status + (que ? ' ' + que : '') + '.')); }
 
-  async function leerRemoto() { // con llave: lo mas reciente, directo del repositorio
-    const r = await api('GET', 'datos.json');
-    if (r.status === 404) return { datos: {}, sha: null };
-    if (!r.ok) throw new Error('GitHub respondió ' + r.status);
-    const j = await r.json();
-    return { datos: JSON.parse(textoB64(j.content) || '{}'), sha: j.sha };
+  async function leerRemoto() { // lo mas reciente, directo del repositorio
+    const r = await api('GET', '/datos');
+    if (!r.ok) throw await error(r);
+    return r.json();
   }
   let cola = Promise.resolve();
   function guardarDatos(mensaje) { // un guardado a la vez
@@ -357,10 +345,9 @@
   async function guardarAhora(mensaje) {
     estado('Guardando…');
     for (let intento = 0; intento < 2; intento++) {
-      const cuerpo = { message: mensaje, content: b64texto(JSON.stringify(datos, null, 1)) }; if (sha) cuerpo.sha = sha;
-      const r = await api('PUT', 'datos.json', cuerpo);
-      if (r.ok) { sha = (await r.json()).content.sha; sucias.clear(); estado('Guardado'); aviso(''); return; }
-      if ((r.status === 409 || r.status === 422) && intento === 0) {
+      const r = await api('PUT', '/datos', { contenido: JSON.stringify(datos, null, 1), sha, mensaje });
+      if (r.ok) { sha = (await r.json()).sha; sucias.clear(); estado('Guardado'); aviso(''); return; }
+      if (r.status === 409 && intento === 0) {
         // alguien guardo desde otro equipo: se toma lo suyo y encima lo que se cambio aqui
         const rem = await leerRemoto(), mios = datos;
         const otras = (rem.datos.otras || []).slice();
@@ -370,7 +357,7 @@
         sha = rem.sha; armarBase(); continue;
       }
       estado('Sin guardar');
-      throw new Error(r.status === 401 || r.status === 403 ? 'La llave no sirve o no tiene permiso de escritura (' + r.status + ').' : 'GitHub respondió ' + r.status + '.');
+      throw await error(r);
     }
   }
   function estado(t) { $('estado').textContent = t; }
@@ -381,7 +368,7 @@
     if (locales[nombre]) { img.src = locales[nombre]; return; }
     img.onerror = async () => {
       img.onerror = null; if (!conectado()) return;
-      try { const r = await api('GET', 'fotos/' + nombre, null, true); if (r.ok) { locales[nombre] = URL.createObjectURL(await r.blob()); img.src = locales[nombre]; } } catch (e) {}
+      try { const r = await api('GET', '/fotos/' + nombre); if (r.ok) { locales[nombre] = URL.createObjectURL(await r.blob()); img.src = locales[nombre]; } } catch (e) {}
     };
     img.src = 'fotos/' + nombre;
   }
@@ -471,7 +458,7 @@
     totales();
     $('mValor').classList.toggle('activo', modo === 'valor'); $('mCompra').classList.toggle('activo', modo === 'compra');
     document.body.classList.toggle('puedeEditar', conectado());
-    $('bConectar').textContent = conectado() ? 'Conectado' : 'Conectar para editar';
+    $('bConectar').textContent = conectado() ? 'Editando ✓' : 'Entrar para editar';
   }
   function ponerModo(m) { modo = m; try { localStorage.setItem('modoInventario', m); } catch (e) {} pintarTodo(); }
   $('mValor').onclick = () => ponerModo('valor'); $('mCompra').onclick = () => ponerModo('compra');
@@ -608,8 +595,8 @@
       for (let i = 0; i < nuevas.length; i++) {
         nota.textContent = 'Subiendo foto ' + (i + 1) + ' de ' + nuevas.length + '…';
         const f = nuevas[i], nombre = id + '-' + Date.now() + '-' + Math.random().toString(36).slice(2, 7) + '.jpg';
-        const r = await api('PUT', 'fotos/' + nombre, { message: 'Foto de ' + p.moneda + ' (' + nombrePieza(p) + ')', content: await b64blob(f.blob) });
-        if (!r.ok) throw new Error(r.status === 401 || r.status === 403 ? 'La llave no sirve o no tiene permiso de escritura.' : 'GitHub respondió ' + r.status + ' al subir la foto.');
+        const r = await api('PUT', '/fotos/' + nombre, f.blob, { 'Content-Type': 'image/jpeg', 'X-Mensaje': encodeURIComponent('Foto de ' + p.moneda) });
+        if (!r.ok) throw await error(r, 'al subir la foto');
         f.nombre = nombre; locales[nombre] = f.url;
       }
       // 2. guardar los datos
@@ -627,7 +614,7 @@
       await guardarDatos('Datos de ' + base[id].moneda + ' (' + nombrePieza(base[id]) + ')');
       // 3. quitar del repositorio las fotos que se quitaron y ya no usa ninguna otra pieza (si falla no pasa nada)
       for (const nombre of borrador.quitadas.filter(n => !fotoEnUso(n))) {
-        try { const m = await api('GET', 'fotos/' + nombre); if (m.ok) await api('DELETE', 'fotos/' + nombre, { message: 'Quitar foto', sha: (await m.json()).sha }); } catch (e) {}
+        try { await api('DELETE', '/fotos/' + nombre); } catch (e) {}
       }
       cerrarForm(true); pintarPieza(id); totales(); abrirFicha(id);
     } catch (e) {
@@ -637,24 +624,25 @@
 
   // ---------- conectar
   function abrirConexion() {
-    $('cDueno').value = cfg.dueno; $('cRepo').value = cfg.repo; $('cToken').value = cfg.token; $('cNota').textContent = '';
-    $('cSalir').style.display = cfg.token ? '' : 'none'; $('vCon').classList.add('abierta');
+    $('cClave').value = ''; $('cNota').textContent = '';
+    $('cSalir').style.display = conectado() ? '' : 'none'; $('vCon').classList.add('abierta'); setTimeout(() => $('cClave').focus(), 50);
   }
   $('bConectar').onclick = abrirConexion;
   $('cCancelar').onclick = () => $('vCon').classList.remove('abierta');
-  $('cSalir').onclick = () => { cfg.token = ''; try { localStorage.setItem('githubInventario', JSON.stringify(cfg)); } catch (e) {} $('vCon').classList.remove('abierta'); pintarTodo(); };
+  $('cSalir').onclick = () => { ses = { sesion: '', vence: 0 }; try { localStorage.removeItem('sesionInventario'); } catch (e) {} $('vCon').classList.remove('abierta'); pintarTodo(); };
+  $('cClave').addEventListener('keydown', e => { if (e.key === 'Enter') $('cGuardar').click(); });
   $('cGuardar').onclick = async () => {
-    const prueba = { dueno: $('cDueno').value.trim(), repo: $('cRepo').value.trim(), token: $('cToken').value.trim() };
-    if (!prueba.dueno || !prueba.repo || !prueba.token) { $('cNota').textContent = 'Faltan datos.'; return; }
-    $('cNota').textContent = 'Probando…';
+    const clave = $('cClave').value; if (!clave) { $('cNota').textContent = 'Escribe la clave.'; return; }
+    $('cNota').textContent = 'Revisando…'; $('cGuardar').disabled = true;
     try {
-      const r = await fetch('https://api.github.com/repos/' + encodeURIComponent(prueba.dueno) + '/' + encodeURIComponent(prueba.repo), { headers: { Authorization: 'Bearer ' + prueba.token, Accept: 'application/vnd.github+json' } });
-      if (!r.ok) throw new Error(r.status === 401 ? 'La llave no es válida.' : r.status === 404 ? 'No se encontró ese repositorio con esa llave.' : 'GitHub respondió ' + r.status + '.');
-      const j = await r.json(); if (j.permissions && !j.permissions.push) throw new Error('La llave no tiene permiso de escritura (Contents: Read and write).');
-      cfg = prueba; try { localStorage.setItem('githubInventario', JSON.stringify(cfg)); } catch (e) {}
+      const r = await fetch(API + '/entrar', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ clave }) });
+      if (!r.ok) throw await error(r);
+      ses = await r.json(); try { localStorage.setItem('sesionInventario', JSON.stringify(ses)); } catch (e) {}
+      $('cClave').value = '';
       const rem = await leerRemoto(); datos = { piezas: rem.datos.piezas || {}, sueltas: rem.datos.sueltas || {}, otras: rem.datos.otras || [] }; sha = rem.sha; armarBase();
       $('vCon').classList.remove('abierta'); pintarTodo(); if (actual && $('vFicha').classList.contains('abierta')) pintarFicha();
-    } catch (e) { $('cNota').textContent = e.message; }
+    } catch (e) { $('cNota').textContent = e.message === 'Failed to fetch' ? 'No hay conexión con el servidor.' : e.message; }
+    $('cGuardar').disabled = false;
   };
 
   // ---------- lista
