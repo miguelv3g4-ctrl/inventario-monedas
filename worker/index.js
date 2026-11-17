@@ -41,7 +41,7 @@ function github(env, metodo, ruta, cuerpo, crudo) {
   return fetch('https://api.github.com/repos/' + REPO + '/contents/' + ruta, {
     method: metodo,
     headers: {
-      Authorization: 'Bearer ' + env.GITHUB_TOKEN, 'User-Agent': 'inventario-monedas-worker',
+      Authorization: 'Bearer ' + String(env.GITHUB_TOKEN).trim(), 'User-Agent': 'inventario-monedas-worker',
       Accept: crudo ? 'application/vnd.github.raw' : 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28',
       ...(cuerpo ? { 'Content-Type': 'application/json' } : {})
     },
@@ -96,6 +96,11 @@ export default {
       if (ruta === '/datos' && req.method === 'GET') {
         const r = await github(env, 'GET', 'datos.json');
         if (r.status === 404) return json({ datos: {}, sha: null });
+        if (r.status === 401) {
+          // pista sin mostrar la llave: tipo y largo de lo que se guardo en Cloudflare
+          const t = String(env.GITHUB_TOKEN).trim(), tipo = /^github_pat_/.test(t) ? 'github_pat_' : /^gh[po]_/.test(t) ? t.slice(0, 4) : 'otro formato';
+          return json({ error: 'GitHub no acepta la llave guardada en Cloudflare (tipo: ' + tipo + ', ' + t.length + ' caracteres). Revisa que sea el token completo y vigente.' }, 502);
+        }
         if (!r.ok) return json({ error: 'GitHub respondió ' + r.status }, 502);
         const j = await r.json();
         return json({ datos: JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(j.content.replace(/\s/g, '')), c => c.charCodeAt(0))) || '{}'), sha: j.sha });
