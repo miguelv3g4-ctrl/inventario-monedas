@@ -18,7 +18,7 @@
   #portada .sello { width: 100%; max-width: 400px; display: block; margin: 0 auto 6px; }
   #portada h1 { font: 22px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 6px 0 2px; letter-spacing: .03em; }
   #portada .bajada { color: var(--oro2); font-size: 15px; margin-bottom: 22px; }
-  #portada form { display: flex; gap: 8px; }
+  #portada form { display: flex; flex-direction: column; gap: 10px; }
   #portada input { flex: 1; margin: 0; font-size: 17px; padding: 10px 12px; text-align: center; }
   #portada button { font-size: 17px; padding: 8px 18px; }
   #pNota { min-height: 22px; margin-top: 10px; color: #ff9a8a; font-size: 14px; }
@@ -140,7 +140,7 @@
     <h1>Inventario de la colección</h1>
     <div class="bajada">Monedas y billetes</div>
     <form id="pForm" autocomplete="on">
-      <input type="text" name="usuario" value="inventario" autocomplete="username" hidden>
+      <input type="text" id="pUsuario" placeholder="Usuario" autocomplete="username" aria-label="Usuario">
       <input type="password" id="pClave" placeholder="Clave" autocomplete="current-password" aria-label="Clave">
       <button class="fuerte" id="pEntrar">Entrar</button>
     </form>
@@ -637,22 +637,23 @@
   let cargado = false;
   function mostrarPortada(nota) {
     $('pNota').textContent = nota || ''; $('pNota').className = ''; $('pClave').value = '';
-    $('portada').classList.add('abierta'); setTimeout(() => $('pClave').focus(), 50);
+    $('portada').classList.add('abierta'); setTimeout(() => ($('pUsuario').value ? $('pClave') : $('pUsuario')).focus(), 50);
   }
   const abrirConexion = () => mostrarPortada();
   async function cargar() {
     const rem = await leerRemoto();
     datos = { piezas: rem.datos.piezas || {}, sueltas: rem.datos.sueltas || {}, otras: rem.datos.otras || [] }; sha = rem.sha;
     armarBase(); cargado = true; pintarTodo();
+    aviso(rem.soloVer ? 'Por ahora solo se puede ver: falta conectar GitHub en Cloudflare para poder guardar cambios.' : '');
     if (actual && $('vFicha').classList.contains('abierta')) pintarFicha();
   }
   $('pForm').addEventListener('submit', async e => {
     e.preventDefault();
-    const clave = $('pClave').value, nota = $('pNota');
-    if (!clave) { nota.textContent = 'Escribe la clave.'; return; }
+    const usuario = $('pUsuario').value.trim(), clave = $('pClave').value, nota = $('pNota');
+    if (!usuario || !clave) { nota.textContent = 'Escribe el usuario y la clave.'; return; }
     nota.className = 'bien'; nota.textContent = 'Revisando…'; $('pEntrar').disabled = true;
     try {
-      const r = await fetch(API + '/entrar', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ clave }) });
+      const r = await fetch(API + '/entrar', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ usuario, clave }) });
       if (!r.ok) throw await error(r);
       ses = await r.json(); try { localStorage.setItem('sesionInventario', JSON.stringify(ses)); } catch (e) {}
       $('pClave').value = ''; nota.textContent = 'Cargando el inventario…';

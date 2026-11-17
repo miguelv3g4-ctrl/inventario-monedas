@@ -3,7 +3,8 @@
 // repositorio de GitHub con su propia llave, asi Miguel no necesita el token de GitHub.
 //
 // Secretos (se ponen con `wrangler secret put NOMBRE`, nunca van en el codigo):
-//   CLAVE         la clave para editar
+//   USUARIO       el usuario para entrar
+//   CLAVE         la clave para entrar
 //   GITHUB_TOKEN  llave de GitHub con permiso de escritura en el repositorio
 //   FIRMA         texto al azar para firmar las sesiones
 
@@ -63,19 +64,22 @@ export default {
     const json = (obj, status = 200) => new Response(JSON.stringify(obj), { status, headers: { ...cors, 'Content-Type': 'application/json; charset=utf-8' } });
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors });
     if (origen && !ORIGENES.includes(origen)) return json({ error: 'origen no permitido' }, 403);
-    if (!env.CLAVE || !env.GITHUB_TOKEN || !env.FIRMA) return json({ error: 'Falta configurar el Worker (secretos).' }, 503);
+    if (!env.CLAVE || !env.FIRMA) return json({ error: 'Falta configurar el Worker (secretos).' }, 503);
 
     const url = new URL(req.url), ruta = url.pathname;
     try {
       if (ruta === '/entrar' && req.method === 'POST') {
         const ip = req.headers.get('CF-Connecting-IP') || '?', f = fallos.get(ip) || { n: 0, t: 0 };
         if (f.n >= 5 && Date.now() - f.t < 15 * 60e3) return json({ error: 'Demasiados intentos. Espera 15 minutos.' }, 429);
-        const { clave } = await req.json().catch(() => ({}));
-        const ok = typeof clave === 'string' && iguales(await hmac(env.FIRMA, clave), await hmac(env.FIRMA, env.CLAVE));
+        const { usuario, clave } = await req.json().catch(() => ({}));
+        // el usuario no distingue mayusculas, tildes ni espacios de mas; la clave si es exacta
+        const norm = t => String(t || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+        const usuarioOk = !env.USUARIO || norm(usuario) === norm(env.USUARIO);
+        const ok = typeof clave === 'string' && iguales(await hmac(env.FIRMA, clave), await hmac(env.FIRMA, env.CLAVE)) && usuarioOk;
         if (!ok) {
           fallos.set(ip, { n: Date.now() - f.t < 15 * 60e3 ? f.n + 1 : 1, t: Date.now() });
           await new Promise(r => setTimeout(r, 800));
-          return json({ error: 'Clave incorrecta.' }, 401);
+          return json({ error: 'Usuario o clave incorrectos.' }, 401);
         }
         fallos.delete(ip);
         return json(await crearSesion(env));
@@ -83,6 +87,12 @@ export default {
 
       if (!(await sesionValida(env, req))) return json({ error: 'Sesión vencida. Vuelve a entrar con la clave.' }, 401);
 
+      if (ruta === '/datos' && req.method === 'GET' && !env.GITHUB_TOKEN) {
+        // sin llave de GitHub todavia: se lee la copia publica (solo para ver)
+        const r = await fetch('https://raw.githubusercontent.com/' + REPO + '/main/datos.json?t=' + Date.now(), { headers: { 'User-Agent': 'inventario-monedas-worker' } });
+        return json({ datos: r.ok ? await r.json() : {}, sha: null, soloVer: true });
+      }
+      if (!env.GITHUB_TOKEN) return json({ error: 'Falta conectar GitHub en Cloudflare (GITHUB_TOKEN). Por ahora solo se puede ver.' }, 503);
       if (ruta === '/datos' && req.method === 'GET') {
         const r = await github(env, 'GET', 'datos.json');
         if (r.status === 404) return json({ datos: {}, sha: null });
