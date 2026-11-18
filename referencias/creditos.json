@@ -202,7 +202,7 @@
    "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
   },
   "referencias/hoja-calipso.jpg": {
-   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+   "fuente": "Imagen enviada por Miguel (versión proof, a color)"
   },
   "referencias/hoja-cimarrona.jpg": {
    "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
@@ -212,6 +212,18 @@
   },
   "referencias/hoja-ceramica-chorotega.jpg": {
    "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/calipso-proof.jpg": {
+   "fuente": "Imagen enviada por Miguel (versión proof, a color)"
+  },
+  "referencias/calipso-ms.jpg": {
+   "fuente": "Imagen enviada por Miguel (versión MS)"
+  },
+  "referencias/swing-criollo-ms.jpg": {
+   "fuente": "Imagen enviada por Miguel (versión MS)"
+  },
+  "referencias/swing-criollo-proof.jpg": {
+   "fuente": "Imagen enviada por Miguel (versión proof, a color)"
   }
  }
 }
