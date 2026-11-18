@@ -164,6 +164,11 @@
   .tarjeta .tx { padding: 8px 10px; font-size: 14px; color: #e8e2d0; display: flex; flex-direction: column; gap: 3px; }
   .tarjeta .tx b { color: var(--oro); font-weight: normal; }
   .tarjeta .tx small { color: var(--gris); font-size: 12px; }
+  .tarjeta { position: relative; }
+  .tarjeta .tengo { position: absolute; top: 6px; left: 6px; display: flex; align-items: center; gap: 6px; background: rgba(0, 0, 0, .78); border: 1px solid var(--linea); border-radius: 4px; padding: 3px 8px 3px 5px; font-size: 13px; color: var(--oro); cursor: pointer; z-index: 1; }
+  .tarjeta .tengo input { width: 16px; height: 16px; margin: 0; accent-color: var(--oro); cursor: pointer; }
+  .tarjeta.falta .ph, .tarjeta.falta .tx span, .tarjeta.falta .tx b { opacity: .45; }
+  .tarjeta.falta .tengo { color: #ff9a8a; }
   select { font: inherit; font-size: 14px; color: #fff; background: #0b0a09; border: 1px solid var(--linea); border-radius: 4px; padding: 5px 8px; color-scheme: dark; }
   .ayuda { color: var(--gris); font-size: 14px; line-height: 1.45; }
   .ayuda a { color: var(--oro); }
@@ -219,6 +224,7 @@
     <h2 id="sTitulo"></h2>
     <div class="filtros">
       <label>Categoría <select id="sCat"></select></label>
+      <label>Ver <select id="sEstado"><option value="">Todas</option><option value="tengo">Las que tengo</option><option value="falta">Las que me faltan</option></select></label>
       <span class="col" id="sCuenta"></span>
     </div>
     <div id="sGrid"></div>
@@ -974,6 +980,18 @@
       const precio = el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : r.valor ? fmt(r.valor) + (cant(p.id) > 1 ? ' c/u' : '') : 'Sin precio');
       tx.appendChild(precio);
       t.append(ph, tx);
+      // casilla "La tengo": doble control de lo que falta conseguir; se marca cuando se consigue
+      const tiene = tengo(p.id), lab = el('label', 'tengo'), ck = el('input');
+      ck.type = 'checkbox'; ck.checked = tiene; ck.setAttribute('aria-label', 'La tengo');
+      lab.append(ck, tiene ? 'La tengo' : 'Me falta');
+      t.classList.toggle('falta', !tiene);
+      lab.onclick = e => e.stopPropagation();
+      ck.onchange = () => {
+        if (!conectado()) { ck.checked = tiene; abrirConexion(); return; }
+        datos.piezas[p.id] = limpiar(Object.assign({}, datos.piezas[p.id], { tengo: ck.checked })); sucias.add(p.id);
+        totales(); guardarCasillas();
+      };
+      t.appendChild(lab);
       t.onclick = () => abrirFicha(p.id);
       t.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrirFicha(p.id); } };
       return t;
@@ -1020,14 +1038,17 @@
     for (const c of cats) { const o = el('option', '', c); o.value = c; sel.appendChild(o); }
     sel.value = cats.includes(elegida) ? elegida : ''; if (sel.value === '') sel.selectedIndex = 0;
     sel.parentNode.style.display = cats.length > 1 ? '' : 'none';
-    const lista = todasSec.filter(p => !sel.value || p.coleccion === sel.value).sort((a, b) => ordenCat(a.coleccion, b.coleccion) || a.moneda.localeCompare(b.moneda, 'es', { numeric: true }));
+    const est = $('sEstado').value, deCat = todasSec.filter(p => !sel.value || p.coleccion === sel.value);
+    const lista = deCat.filter(p => !est || (est === 'tengo') === tengo(p.id)).sort((a, b) => ordenCat(a.coleccion, b.coleccion) || a.moneda.localeCompare(b.moneda, 'es', { numeric: true }));
     const g = $('sGrid'); g.textContent = '';
     for (const p of lista) g.appendChild(tarjeta(p));
-    $('sCuenta').textContent = lista.length + (lista.length === 1 ? ' pieza' : ' piezas');
+    const lasTengo = deCat.filter(p => tengo(p.id)).length;
+    $('sCuenta').textContent = lista.length + (lista.length === 1 ? ' pieza' : ' piezas') + ' · tengo ' + lasTengo + ' de ' + deCat.length + ' · me faltan ' + (deCat.length - lasTengo);
     $('sVacia').style.display = todasSec.length ? 'none' : 'block';
     const t = sumas(todasSec); $('sPiezas').textContent = t.n; $('sVal').textContent = fmt(t.val); $('sInv').textContent = fmt(t.inv);
   }
   $('sCat').addEventListener('change', pintarSeccion);
+  $('sEstado').addEventListener('change', pintarSeccion);
   $('sNueva').onclick = () => nuevaPieza(seccionActual, $('sCat').value);
   $('sMenu').onclick = $('bMenu').onclick = () => { location.hash = '#menu'; };
   $('mLista').onclick = () => $('bLista').click();
