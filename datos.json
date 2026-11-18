@@ -3425,9 +3425,7 @@
    "fechaCompra": "2026-06-01",
    "origen": "reventa",
    "fechaVenta": "2026-11-18",
-   "notas": "Las monedas son proof color de los acrilicos que vendio el banco\nValor actual provisional: costo + 40 %.",
-   "valor": 70000,
-   "valorEstimado": true
+   "notas": "Las monedas son proof color de los acrilicos que vendio el banco"
   },
   "O-msacfccd037": {
    "tengo": false,
@@ -3528,274 +3526,205 @@
    ],
    "costo": 10000,
    "fechaCompra": "2026-10-28",
-   "origen": "museo",
-   "valor": 14000,
-   "valorEstimado": true,
-   "notas": "Valor actual provisional: costo + 40 %."
+   "origen": "museo"
   },
   "AM11": {
    "fechaCompra": "2025-08-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12110,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "C14": {
    "fechaCompra": "2021-09-01",
    "costo": 25000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 35000,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "H14": {
    "fechaCompra": "2023-08-01",
    "costo": 12000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 16800,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AR14": {
    "fechaCompra": "2025-10-22",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12110,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AW14": {
    "fechaCompra": "2025-11-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12110,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "H15": {
    "fechaCompra": "2023-08-01",
    "costo": 12000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 16800,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "M15": {
    "fechaCompra": "2023-12-04",
    "costo": 9950,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 13930,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "R15": {
    "fechaCompra": "2024-07-26",
    "costo": 9950,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 13930,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "X15": {
    "fechaCompra": "2024-11-12",
    "costo": 9082,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12715,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AC15": {
    "fechaCompra": "2025-02-24",
    "costo": 9000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12600,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AH15": {
    "fechaCompra": "2025-05-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12110,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AM15": {
    "fechaCompra": "2025-08-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12110,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AR15": {
    "fechaCompra": "2025-10-22",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12110,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AW15": {
    "fechaCompra": "2025-11-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12110,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "C16": {
    "fechaCompra": "2021-09-01",
    "costo": 25000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 35000,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "H16": {
    "fechaCompra": "2023-08-01",
    "costo": 12000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 16800,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "C17": {
    "fechaCompra": "2021-09-01",
    "costo": 25000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 35000,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "H17": {
    "fechaCompra": "2023-08-01",
    "costo": 12000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 16800,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "M17": {
    "fechaCompra": "2023-12-04",
    "costo": 9950,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 13930,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "R17": {
    "fechaCompra": "2024-07-26",
    "costo": 9950,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 13930,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AH17": {
    "fechaCompra": "2025-05-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12110,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AW17": {
    "fechaCompra": "2025-11-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12110,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "R26": {
    "fechaCompra": "2026-02-25",
    "costo": 9100,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12740,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "X27": {
    "fechaCompra": "2026-03-25",
    "costo": 9050,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12670,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AC26": {
    "fechaCompra": "2026-04-22",
    "costo": 8500,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 11900,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AH26": {
    "fechaCompra": "2026-05-20",
    "costo": 8400,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 11760,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AH32": {
    "fechaCompra": "2026-05-20",
    "costo": 8400,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 11760,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AC33": {
    "fechaCompra": "2026-04-22",
    "costo": 8500,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 11900,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "M34": {
    "fechaCompra": "2025-09-24",
    "costo": 9050,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12670,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "R35": {
    "fechaCompra": "2026-02-25",
    "costo": 9100,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12740,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "X35": {
    "fechaCompra": "2026-03-25",
    "costo": 9050,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 12670,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AC35": {
    "fechaCompra": "2026-04-22",
    "costo": 8500,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 11900,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "AH35": {
    "fechaCompra": "2026-05-20",
    "costo": 8400,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
-   "origen": "Banco Central de Costa Rica (emisión)",
-   "valor": 11760,
-   "valorEstimado": true
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "origen": "Banco Central de Costa Rica (emisión)"
   }
  },
  "sueltas": {},
