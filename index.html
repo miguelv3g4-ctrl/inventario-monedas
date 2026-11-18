@@ -448,6 +448,16 @@
   let CREDITOS = { hoja: {}, imagenes: {} };
   const refDe = id => { const p = base[id]; return p ? (p.otra ? p.ref : CREDITOS.hoja[p.moneda]) || '' : ''; };
   fetch('referencias/creditos.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(j => { if (j) { CREDITOS = Object.assign({ hoja: {}, imagenes: {} }, j); if ($('seccion').classList.contains('abierta')) pintarSeccion(); if (actual && $('vFicha').classList.contains('abierta')) pintarFicha(); } }).catch(() => {});
+  // referencias privadas ("privado:archivo.jpg"): se piden al Worker con la sesion y se guardan en memoria
+  const pendientesRef = {};
+  function ponerRef(img, rf) {
+    if (!rf.startsWith('privado:')) { img.src = rf; return; }
+    const k = rf.slice(8);
+    if (locales['p:' + k]) { img.src = locales['p:' + k]; return; }
+    if (!conectado()) return;
+    pendientesRef[k] = pendientesRef[k] || api('GET', '/privado/' + k).then(r => r.ok ? r.blob() : null).then(b => { if (b) locales['p:' + k] = URL.createObjectURL(b); return locales['p:' + k]; }).catch(() => null);
+    pendientesRef[k].then(u => { if (u) img.src = u; else delete pendientesRef[k]; });
+  }
   const buscarEnInternet = p => 'https://www.google.com/search?tbm=isch&q=' + encodeURIComponent('Costa Rica ' + p.moneda + (p.tipo === 'Estuche' || p.tipo === 'Acrílico' ? ' ' + p.tipo : ''));
   const reg = id => datos.piezas[id] || {};
   const esEstucheHoja = id => !!(base[id] && !base[id].otra && base[id].tipo === 'Estuche');
@@ -767,9 +777,9 @@
     caja.textContent = ''; minis.textContent = '';
     const rf = refDe(id), info = $('vRefInfo'); info.textContent = '';
     if (!fotos.length && rf) {
-      const im = el('img'); im.alt = 'Imagen de referencia'; im.src = rf; im.onclick = () => verGrande(rf);
+      const im = el('img'); im.alt = 'Imagen de referencia'; ponerRef(im, rf); im.onclick = () => im.src && verGrande(im.src);
       caja.append(im, el('span', 'marcaRef', 'Imagen de referencia · falta tu foto'));
-      const c = CREDITOS.imagenes[rf] || {};
+      const c = rf.startsWith('privado:') ? { fuente: 'captura de catálogo de tu Excel de monedas (privada: solo se ve con tu clave)' } : CREDITOS.imagenes[rf] || {};
       info.append(c.fuente === 'Wikimedia Commons' ? 'Referencia de Wikimedia Commons' + (c.autor ? ' · ' + c.autor : '') + (c.licencia ? ' · ' + c.licencia : '') + ' · ' : (c.fuente ? 'Referencia: ' + c.fuente + ' · ' : ''));
       if (c.pagina) { const a = el('a', '', 'ver origen'); a.href = c.pagina; a.target = '_blank'; a.rel = 'noopener'; info.append(a, ' · '); }
     }
@@ -1072,7 +1082,7 @@
       t.tabIndex = 0; t.setAttribute('role', 'button');
       const rf = refDe(p.id);
       if (f) { const im = el('img'); im.alt = ''; im.loading = 'lazy'; ponerFoto(im, f); ph.appendChild(im); }
-      else if (rf) { const im = el('img', 'ref'); im.alt = 'Imagen de referencia'; im.loading = 'lazy'; im.src = rf; ph.append(im, el('span', 'marcaRef', 'Referencia · falta mi foto')); }
+      else if (rf) { const im = el('img', 'ref'); im.alt = 'Imagen de referencia'; im.loading = 'lazy'; ponerRef(im, rf); ph.append(im, el('span', 'marcaRef', 'Referencia · falta mi foto')); }
       else ph.textContent = 'Sin foto';
       const tx = el('div', 'tx');
       tx.append(el('span', '', p.moneda), el('small', '', p.coleccion + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '')));

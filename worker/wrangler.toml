@@ -2,3 +2,7 @@ name = "inventario-monedas-api"
 main = "index.js"
 compatibility_date = "2025-06-01"
 workers_dev = true
+
+[[kv_namespaces]]
+binding = "INVENTARIO_PRIVADO"
+id = "6b00a3c8734c451ba75bdc34a41fb64a"

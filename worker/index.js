@@ -87,6 +87,15 @@ export default {
 
       if (!(await sesionValida(env, req))) return json({ error: 'Sesión vencida. Vuelve a entrar con la clave.' }, 401);
 
+      // imagenes privadas (capturas de catalogo): solo con sesion, nunca en el repositorio publico
+      const mp = /^\/privado\/([A-Za-z0-9_-]{1,80}\.jpg)$/.exec(ruta);
+      if (mp && req.method === 'GET') {
+        if (!env.INVENTARIO_PRIVADO) return json({ error: 'Falta el almacén privado.' }, 503);
+        const img = await env.INVENTARIO_PRIVADO.get(mp[1], 'arrayBuffer');
+        if (!img) return json({ error: 'No existe' }, 404);
+        return new Response(img, { headers: { ...cors, 'Content-Type': 'image/jpeg', 'Cache-Control': 'private, max-age=86400' } });
+      }
+
       if (ruta === '/datos' && req.method === 'GET' && !env.GITHUB_TOKEN) {
         // sin llave de GitHub todavia: se lee la copia publica (solo para ver)
         const r = await fetch('https://raw.githubusercontent.com/' + REPO + '/main/datos.json?t=' + Date.now(), { headers: { 'User-Agent': 'inventario-monedas-worker' } });
