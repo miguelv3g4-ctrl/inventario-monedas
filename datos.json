@@ -2795,6 +2795,21 @@
   "O-x977278c81": {
    "tengo": false,
    "notas": "Sin número de serie en el Excel (no la tengo o falta anotarla).\nFuente: Excel billetes costa rica, hoja \"20 colones\"."
+  },
+  "O-mwm5exrk": {
+   "tengo": false,
+   "vendida": true,
+   "fotosCompra": [
+    "O-mwm5exrk-1795008313606-1yqv8.jpg",
+    "O-mwm5exrk-1795008315504-vcbev.jpg"
+   ],
+   "fechaValor": "2026-11-18",
+   "fuenteValor": "mercado numismatico",
+   "costo": 50000,
+   "fechaCompra": "2026-06-01",
+   "origen": "reventa",
+   "fechaVenta": "2026-11-18",
+   "notas": "Las monedas son proof color de los acrilicos que vendio el banco"
   }
  },
  "sueltas": {},
@@ -4910,6 +4925,12 @@
    "nombre": "20 colones serie Z · 28 de junio de 1983",
    "categoria": "20 colones serie Z",
    "seccion": "billetes"
+  },
+  {
+   "id": "O-mwm5exrk",
+   "nombre": "coleccionador fauna proof",
+   "categoria": "Todas",
+   "seccion": "museo-bccr"
   }
  ]
 }
