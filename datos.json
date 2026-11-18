@@ -2902,6 +2902,15 @@
   "O-ms9d34b39ce": {
    "tengo": false,
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 202X."
+  },
+  "O-mwm6detr": {
+   "tengo": true,
+   "fotosCompra": [
+    "O-mwm6detr-1795009669168-wlgli.jpg"
+   ],
+   "costo": 10000,
+   "fechaCompra": "2026-10-28",
+   "origen": "museo"
   }
  },
  "sueltas": {},
@@ -5301,6 +5310,12 @@
    "categoria": "Patrimonio Cultural Inmaterial",
    "seccion": "ms-sueltas",
    "ref": "referencias/hoja-ceramica-chorotega.jpg"
+  },
+  {
+   "id": "O-mwm6detr",
+   "nombre": "coleccionador hitos historicos MS",
+   "categoria": "Todas",
+   "seccion": "museo-bccr"
   }
  ]
 }
