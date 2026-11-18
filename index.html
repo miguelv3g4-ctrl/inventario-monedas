@@ -31,7 +31,7 @@
   #pNota.bien { color: var(--gris); }
 
   /* series especiales (tabla automatica) */
-  #especiales { position: absolute; overflow-y: auto; z-index: 5; border: 1px solid var(--oro); background: #000; }
+  #especiales { position: absolute; z-index: 5; border: 1px solid var(--oro); background: #000; }
   #especiales table { width: 100%; border-collapse: collapse; font-size: 15px; font-weight: bold; }
   #especiales th, #especiales td { color: var(--gris); border: 1px solid var(--oro); padding: 1px 6px; height: 20px; line-height: 1.15; }
   #especiales th { background: #000; text-align: center; position: sticky; top: 0; z-index: 1; font-size: 16px; }
@@ -480,7 +480,7 @@
       const k = celdas[ref].c; celdas[ref].d.style.display = 'none';
       x1 = Math.min(x1, k.x); y1 = Math.min(y1, k.y); x2 = Math.max(x2, k.x + k.w); y2 = Math.max(y2, k.y + k.h);
     }
-    cajaEsp.style.cssText = `left:${x1}px;top:${y1}px;width:${x2 - x1}px;height:${y2 - y1}px`;
+    cajaEsp.style.cssText = `left:${x1}px;top:${y1}px;width:${x2 - x1}px;min-height:${y2 - y1}px`;
     hoja.appendChild(cajaEsp);
   })();
   const COLOR_COLECCION = { 'Hitos de la Historia': '#203864', 'Fauna de los Ecosistemas': '#385724', 'Lugares Emblematicos de las Provincias de Costa Rica': '#806000', 'Patrimonio Cultural Inmaterial': '#843c0b' };
@@ -539,6 +539,8 @@
     }
     if (!filas.length) { const tr = el('tr'), td = el('td', 'vacia', 'Todavía no hay series especiales.'); td.colSpan = 3; tr.appendChild(td); tb.appendChild(tr); }
     t.appendChild(tb); cajaEsp.textContent = ''; cajaEsp.appendChild(t);
+    // la tabla se ve completa: si crece mas que el espacio del Excel, la hoja se alarga hacia abajo
+    hoja.style.height = Math.max(H.alto, cajaEsp.offsetTop + cajaEsp.offsetHeight + 12) + 'px';
   }
 
   // la celda de la serie esta a la derecha de "Estuche" (ej. C10 -> D10); si estaba vacia se crea
