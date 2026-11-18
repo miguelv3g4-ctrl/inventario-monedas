@@ -57,6 +57,7 @@
   .boton-seccion:hover, .boton-seccion:focus-visible { border-color: var(--oro); background: linear-gradient(180deg, #2a2213, #0b0a09); outline: none; }
   .boton-seccion .nom { font: 17px "Copperplate Gothic Bold", Copperplate, Georgia, serif; line-height: 1.25; }
   .boton-seccion .num { color: var(--gris); font-size: 14px; margin-top: auto; }
+  .boton-seccion .desc { color: var(--oro2); font-size: 13px; line-height: 1.3; }
   .boton-seccion .num b { color: var(--oro); font-weight: normal; }
   #seccion .cuerpo { max-width: 1250px; margin: 0 auto; padding: 14px 16px 40px; }
   #seccion h2 { font: 22px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 0; }
@@ -392,6 +393,7 @@
   const SECCIONES = [
     { id: 'conmemorativas', nombre: 'Monedas conmemorativas nuevo cono monetario' },
     { id: 'billetes', nombre: 'Billetes Costa Rica' },
+    { id: 'antano', nombre: 'Colecciones de antaño', desc: 'Escudos, reales, centavos, céntimos y los primeros colones antes de los dorados' },
     { id: 'cono-1995-2021', nombre: 'Cono monetario 1995 a 2021' },
     { id: 'plata', nombre: 'Monedas conmemorativas plata' },
     { id: 'replicas', nombre: 'Conmemorativas réplicas' },
@@ -996,7 +998,7 @@
     const caja = $('mBotones'); caja.textContent = '';
     for (const sc of SECCIONES) {
       const t = sumas(deSeccion(sc.id)), b = el('button', 'boton-seccion');
-      b.append(el('span', 'nom', sc.nombre));
+      b.append(el('span', 'nom', sc.nombre)); if (sc.desc) b.append(el('span', 'desc', sc.desc));
       const num = el('span', 'num'); num.append(t.n + (t.n === 1 ? ' pieza' : ' piezas'));
       if (t.val) { num.append(' · '); num.appendChild(el('b', '', fmt(t.val))); }
       b.appendChild(num);
