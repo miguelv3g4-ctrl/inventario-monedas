@@ -71,8 +71,6 @@
   .pz { position: absolute; cursor: pointer; z-index: 3; border-radius: 2px; }
   .pz:hover, .pz:focus-visible { background: rgba(255, 217, 102, .18); outline: 1px solid var(--oro); }
   .pz i { position: absolute; right: 3px; top: 50%; width: 7px; height: 7px; margin-top: -4px; border-radius: 50%; display: none; }
-  .pz.con i { display: block; background: #58d07a; }
-  .pz.vendida i { display: block; background: #ff5a4a; }
 
   /* ventanas */
   .velo { position: fixed; inset: 0; background: rgba(0, 0, 0, .78); display: none; align-items: flex-start; justify-content: center; padding: 20px 10px; overflow: auto; z-index: 20; }
@@ -449,7 +447,7 @@
   function guardarCasillas() { clearTimeout(relojCasillas); estado('Sin guardar'); relojCasillas = setTimeout(() => guardarDatos('Casillas del inventario').catch(e => aviso('No se pudo guardar: ' + e.message)), 2500); }
   for (const p of H.piezas) {
     const z = el('div', 'pz'); z.style.cssText = `left:${p.x}px;top:${p.y}px;width:${p.w}px;height:${p.h}px`;
-    z.tabIndex = 0; z.setAttribute('role', 'button'); z.appendChild(el('i'));
+    z.tabIndex = 0; z.setAttribute('role', 'button');
     z.addEventListener('click', () => abrirFicha(p.id));
     z.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrirFicha(p.id); } });
     zonas[p.id] = z; frag.appendChild(z);
