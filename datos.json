@@ -1473,142 +1473,170 @@
   {
    "id": "O-d3b64175",
    "nombre": "10 colones 1979. Serie C 4025777",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-f10361ec",
    "nombre": "100 colones 1954. Serie G 765483",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-120c952c",
    "nombre": "100 colones 1963. Serie C 1215808",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-fddcb77a",
    "nombre": "100 colones 1976. Serie D 8301240",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-291535b1",
    "nombre": "5 colones 1978. Serie D 28358769",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-639a9436",
    "nombre": "5 colones 1983*Regalo de mi madre, invaluable *",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-ca77fb08",
    "nombre": "5 colones 1989. Fecha gringa escasa. Serie D 59518020 y D 59556125",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-0a355c1d",
    "nombre": "5 colones 1989. Serie D 55458956",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-9c868f3a",
    "nombre": "5 colones 1990. Serie D 62166133",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-ac12e42d",
    "nombre": "5 colones serie A. Serie 721080",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-6640c50d",
    "nombre": "5 colones Serie C 4661488",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-87cce76e",
    "nombre": "5 colones Series consecutivas varias 1989 Serie D",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-c39bde15",
    "nombre": "5 colones XX Aniversario Banco Central. Serie D 14220392",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-9b939ff5",
    "nombre": "Colección completa 10 colones serie D con variantes",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-bfeb6e5b",
    "nombre": "Dos colones 1939. Serie C 921300",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-c53edf9e",
    "nombre": "Dos colones con resello. Serie F 1955730",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-25d5a209",
    "nombre": "Dos colones. Serie F 1344066",
-   "categoria": "Billetes"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-51a96a29",
    "nombre": "Colecciónador Fauna MS",
-   "categoria": "Coleccionadores"
+   "categoria": "Coleccionadores",
+   "seccion": "coleccionadores-acrilicos"
   },
   {
    "id": "O-2a01cc85",
    "nombre": "Coleccionador Fauna PROOF",
-   "categoria": "Coleccionadores"
+   "categoria": "Coleccionadores",
+   "seccion": "coleccionadores-acrilicos"
   },
   {
    "id": "O-1b8787e2",
    "nombre": "100 colones plata. Versión PROOF y mate",
-   "categoria": "Conmemorativas de plata"
+   "categoria": "Conmemorativas de plata",
+   "seccion": "plata"
   },
   {
    "id": "O-c1202898",
    "nombre": "Fantasia 5 colones",
-   "categoria": "Replicas"
+   "categoria": "Replicas",
+   "seccion": "replicas"
   },
   {
    "id": "O-64f6659a",
    "nombre": "Guaria Replica",
-   "categoria": "Replicas"
+   "categoria": "Replicas",
+   "seccion": "replicas"
   },
   {
    "id": "O-c8392cc9",
    "nombre": "Jaguar replica",
-   "categoria": "Replicas"
+   "categoria": "Replicas",
+   "seccion": "replicas"
   },
   {
    "id": "O-8b94fe57",
    "nombre": "Oso hormiguero replica",
-   "categoria": "Replicas"
+   "categoria": "Replicas",
+   "seccion": "replicas"
   },
   {
    "id": "O-8b56f948",
    "nombre": "Set Acrílico PROOF y BU",
-   "categoria": "Set Acrílicos PROOF y BU"
+   "categoria": "Set Acrílicos PROOF y BU",
+   "seccion": "coleccionadores-acrilicos"
   },
   {
    "id": "O-788b93d2",
    "nombre": "Set Hitos Históricos PROOF, BU y 3 acrílico monedaMs",
-   "categoria": "Set Acrílicos PROOF y BU"
+   "categoria": "Set Acrílicos PROOF y BU",
+   "seccion": "coleccionadores-acrilicos"
   },
   {
    "id": "O-74a0cea4",
    "nombre": "5 colones 1981. Serie D 37485492",
-   "categoria": "Sin categoria"
+   "categoria": "Billetes",
+   "seccion": "billetes"
   },
   {
    "id": "O-cb800b24",
    "nombre": "Provincia Cartago. Series 2036 y 4493/7000",
-   "categoria": "Sin categoria"
+   "categoria": "Sin categoria",
+   "seccion": "conmemorativas"
   }
  ]
 }

@@ -41,6 +41,28 @@
   #especiales td.ser a:hover { color: var(--oro); text-decoration: underline; }
   #especiales .vacia { text-align: center; font-weight: normal; padding: 10px; }
 
+  /* menu principal y pantallas de seccion */
+  .capa { position: fixed; inset: 0; z-index: 12; background: radial-gradient(ellipse at top, #1c170c 0%, #000 65%); overflow: auto; display: none; }
+  .capa.abierta { display: block; }
+  #seccion { z-index: 14; background: #000; }
+  #menu .arriba, #seccion .arriba { display: flex; align-items: center; gap: 12px; padding: 8px 14px; background: var(--panel); border-bottom: 1px solid var(--linea); flex-wrap: wrap; position: sticky; top: 0; z-index: 2; }
+  .arriba .sep { flex: 1; }
+  .arriba .dato { color: var(--gris); font-size: 14px; white-space: nowrap; }
+  .arriba .dato b { color: var(--oro); font-size: 15px; margin-left: 4px; font-variant-numeric: tabular-nums; }
+  #menu .centro { max-width: 1100px; margin: 0 auto; padding: 18px 16px 40px; text-align: center; }
+  #menu .sello { width: min(300px, 70vw); display: block; margin: 0 auto; }
+  #menu h1 { font: 24px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 6px 0 22px; }
+  #mBotones { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; text-align: left; }
+  .boton-seccion { background: linear-gradient(180deg, #1d1810, #0b0a09); border: 1px solid var(--oro2); border-radius: 8px; padding: 16px 16px 14px; cursor: pointer; color: var(--oro); font: inherit; text-align: left; display: flex; flex-direction: column; gap: 8px; min-height: 108px; }
+  .boton-seccion:hover, .boton-seccion:focus-visible { border-color: var(--oro); background: linear-gradient(180deg, #2a2213, #0b0a09); outline: none; }
+  .boton-seccion .nom { font: 17px "Copperplate Gothic Bold", Copperplate, Georgia, serif; line-height: 1.25; }
+  .boton-seccion .num { color: var(--gris); font-size: 14px; margin-top: auto; }
+  .boton-seccion .num b { color: var(--oro); font-weight: normal; }
+  #seccion .cuerpo { max-width: 1250px; margin: 0 auto; padding: 14px 16px 40px; }
+  #seccion h2 { font: 22px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 0; }
+  #sGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; margin-top: 12px; }
+  #sVacia { color: var(--gris); text-align: center; padding: 40px 10px; font-size: 16px; display: none; }
+
   /* barra superior */
   #barra { flex: none; display: flex; align-items: center; gap: 14px; padding: 6px 12px; background: var(--panel); border-bottom: 1px solid var(--linea); font-size: 14px; flex-wrap: wrap; }
   #barra .dato { color: var(--gris); white-space: nowrap; }
@@ -167,7 +189,44 @@
   </div>
 </div>
 <div id="aviso"></div>
+<div class="capa" id="menu">
+  <div class="arriba">
+    <span class="dato">Toda la colección: piezas<b id="mPiezas">–</b></span>
+    <span class="dato">Valor actual<b id="mVal">–</b></span>
+    <span class="dato">Invertido<b id="mInv">–</b></span>
+    <span class="sep"></span>
+    <button id="mLista">Lista y totales</button>
+    <button id="mSalir">Salir</button>
+  </div>
+  <div class="centro">
+    <img class="sello" src="img/image19.png" alt="Pertenece a Familia Vega Godínez">
+    <h1>Inventario de la colección</h1>
+    <div id="mBotones"></div>
+  </div>
+</div>
+
+<div class="capa" id="seccion">
+  <div class="arriba">
+    <button id="sMenu">← Menú</button>
+    <span class="dato">Piezas<b id="sPiezas">–</b></span>
+    <span class="dato">Valor actual<b id="sVal">–</b></span>
+    <span class="dato">Invertido<b id="sInv">–</b></span>
+    <span class="sep"></span>
+    <button id="sNueva" class="fuerte">Agregar pieza</button>
+  </div>
+  <div class="cuerpo">
+    <h2 id="sTitulo"></h2>
+    <div class="filtros">
+      <label>Categoría <select id="sCat"></select></label>
+      <span class="col" id="sCuenta"></span>
+    </div>
+    <div id="sGrid"></div>
+    <div id="sVacia">Todavía no hay piezas en esta sección. Usa <b>Agregar pieza</b> para poner la primera.</div>
+  </div>
+</div>
+
 <div id="barra">
+  <button id="bMenu">← Menú</button>
   <span class="modo"><button id="mValor">Valor de la colección</button><button id="mCompra">Inventario (compra)</button></span>
   <span class="dato">Piezas<b id="tPiezas">–</b></span>
   <span class="dato">Valor actual<b id="tVal">–</b></span>
@@ -330,9 +389,19 @@
   // ---------- datos de cada pieza
   // base: las piezas de la hoja y las "otras piezas" (billetes, sets...) guardadas en datos.otras
   let base = {};
+  const SECCIONES = [
+    { id: 'conmemorativas', nombre: 'Monedas conmemorativas nuevo cono monetario' },
+    { id: 'billetes', nombre: 'Billetes Costa Rica' },
+    { id: 'cono-1995-2021', nombre: 'Cono monetario 1995 a 2021' },
+    { id: 'plata', nombre: 'Monedas conmemorativas plata' },
+    { id: 'replicas', nombre: 'Conmemorativas réplicas' },
+    { id: 'coleccionadores-acrilicos', nombre: 'Coleccionadores acrílicos' },
+    { id: 'museo-bccr', nombre: 'Coleccionadores Museo Banco Central' },
+    { id: 'ms-sueltas', nombre: 'Monedas MS sueltas' }
+  ];
   function armarBase() {
-    base = Object.fromEntries(H.piezas.map(p => [p.id, p]));
-    for (const o of datos.otras || []) base[o.id] = { id: o.id, otra: true, moneda: o.nombre || '(sin nombre)', coleccion: o.categoria || 'Sin categoría', tipo: 'Otra' };
+    base = Object.fromEntries(H.piezas.map(p => [p.id, Object.assign(p, { seccion: 'conmemorativas' })]));
+    for (const o of datos.otras || []) base[o.id] = { id: o.id, otra: true, seccion: o.seccion || 'conmemorativas', moneda: o.nombre || '(sin nombre)', coleccion: o.categoria || 'Sin categoría', tipo: 'Otra' };
   }
   armarBase();
   const todas = () => Object.values(base);
@@ -594,9 +663,15 @@
     if (casillas[id]) casillas[id].classList.toggle('on', tengo(id));
     if (!sinColocar) colocarCasillas([id]);
   }
+  function sumas(lista) {
+    let n = 0, inv = 0, val = 0;
+    for (const p of lista) { const r = reg(p.id), q = cant(p.id); if (tengo(p.id) && !r.vendida) { n += q; val += (r.valor || 0) * q; } inv += (r.costo || 0) * q; }
+    return { n, inv, val };
+  }
+  const deSeccion = id => todas().filter(p => p.seccion === id);
   function totales() {
     let n = 0, inv = 0, ven = 0, gan = 0, val = 0;
-    for (const p of todas()) {
+    for (const p of deSeccion('conmemorativas')) {
       const r = reg(p.id), q = cant(p.id);
       if (tengo(p.id) && !r.vendida) { n += q; val += (r.valor || 0) * q; }
       inv += (r.costo || 0) * q;
@@ -606,6 +681,8 @@
     if ($('vLista').classList.contains('abierta')) pintarLista();
     if ($('vOtras').classList.contains('abierta')) pintarOtras();
     pintarEspeciales();
+    if ($('menu').classList.contains('abierta')) pintarMenu();
+    if ($('seccion').classList.contains('abierta')) pintarSeccion();
   }
   function pintarTodo() {
     for (const p of H.piezas) pintarPieza(p.id, true);
@@ -690,7 +767,7 @@
       const o = datos.otras.find(x => x.id === id) || {};
       $('fNombre').value = o.nombre || ''; $('fCategoria').value = o.categoria || ''; $('fCantidad').value = r.cantidad || 1;
       const dl = $('listaCategorias'); dl.textContent = '';
-      for (const c of [...new Set(datos.otras.map(x => x.categoria).filter(Boolean))].sort()) { const op = el('option'); op.value = c; dl.appendChild(op); }
+      for (const c of [...new Set(datos.otras.filter(x => (x.seccion || 'conmemorativas') === (p.seccion || 'conmemorativas')).map(x => x.categoria).filter(Boolean))].sort()) { const op = el('option'); op.value = c; dl.appendChild(op); }
     }
     borrador = { fotos: fotosDe(id, 'fotos').map(n => ({ nombre: n })), fotosCompra: fotosDe(id, 'fotosCompra').map(n => ({ nombre: n })), quitadas: [] };
     grupoActivo = pestana === 'compra' ? 'fotosCompra' : 'fotos';
@@ -829,7 +906,7 @@
       try { if ($('pRecordar').checked) localStorage.setItem('usuarioInventario', usuario); else localStorage.removeItem('usuarioInventario'); } catch (e) {}
       $('pClave').value = ''; ponerOjo(false); nota.textContent = 'Cargando el inventario…';
       if (!cargado) await cargar();
-      $('portada').classList.remove('abierta'); nota.textContent = '';
+      $('portada').classList.remove('abierta'); nota.textContent = ''; irA();
     } catch (e) { nota.className = ''; nota.textContent = e.message === 'Failed to fetch' ? 'No hay conexión con el servidor.' : e.message; }
     $('pEntrar').disabled = false;
   });
@@ -875,14 +952,18 @@
 
   // ---------- otras piezas
   function pintarOtras() {
-    const sel = $('oCat'), elegida = sel.value, cats = [...new Set(todas().filter(p => p.otra).map(p => p.coleccion))].sort();
+    const sel = $('oCat'), elegida = sel.value, cats = [...new Set(todas().filter(p => p.otra && p.seccion === 'conmemorativas').map(p => p.coleccion))].sort();
     sel.textContent = ''; sel.appendChild(el('option', '', 'Todas'));
     for (const c of cats) { const o = el('option', '', c); o.value = c; sel.appendChild(o); }
     sel.value = cats.includes(elegida) ? elegida : '';
     if (sel.value === '') sel.selectedIndex = 0;
-    const lista = todas().filter(p => p.otra && (!sel.value || p.coleccion === sel.value)).sort((a, b) => a.coleccion.localeCompare(b.coleccion) || a.moneda.localeCompare(b.moneda));
+    const lista = todas().filter(p => p.otra && p.seccion === 'conmemorativas' && (!sel.value || p.coleccion === sel.value)).sort((a, b) => a.coleccion.localeCompare(b.coleccion) || a.moneda.localeCompare(b.moneda));
     const g = $('oGrid'); g.textContent = '';
-    for (const p of lista) {
+    for (const p of lista) g.appendChild(tarjeta(p));
+    $('oCuenta').textContent = lista.length + ' piezas';
+  }
+  function tarjeta(p) {
+    {
       const r = reg(p.id), t = el('div', 'tarjeta'), ph = el('div', 'ph'), f = fotosDe(p.id, 'fotos')[0] || fotosDe(p.id, 'fotosCompra')[0];
       t.tabIndex = 0; t.setAttribute('role', 'button');
       if (f) { const im = el('img'); im.alt = ''; im.loading = 'lazy'; ponerFoto(im, f); ph.appendChild(im); } else ph.textContent = 'Sin foto';
@@ -893,21 +974,71 @@
       t.append(ph, tx);
       t.onclick = () => abrirFicha(p.id);
       t.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrirFicha(p.id); } };
-      g.appendChild(t);
+      return t;
     }
-    $('oCuenta').textContent = lista.length + ' piezas';
   }
   $('bOtras').onclick = () => { $('vOtras').classList.add('abierta'); pintarOtras(); };
   $('oCerrar').onclick = () => $('vOtras').classList.remove('abierta');
   $('vOtras').addEventListener('mousedown', e => { if (e.target === $('vOtras')) $('vOtras').classList.remove('abierta'); });
   $('oCat').addEventListener('change', pintarOtras);
-  $('oNueva').onclick = () => {
+  function nuevaPieza(seccion, categoria) {
     if (!conectado()) { abrirConexion(); return; }
     const id = 'O-' + Date.now().toString(36);
-    datos.otras = datos.otras || []; datos.otras.push({ id, nombre: '', categoria: $('oCat').value || '' });
+    datos.otras = datos.otras || []; datos.otras.push({ id, nombre: '', categoria: categoria || '', seccion });
     datos.piezas[id] = { tengo: true }; sucias.add(id);
     armarBase(); actual = id; pestana = 'valor'; nueva = true; abrirForm();
-  };
+  }
+  $('oNueva').onclick = () => nuevaPieza('conmemorativas', $('oCat').value);
+
+  // ---------- menu principal y secciones (se navega con #menu, #conmemorativas, #s/<seccion>)
+  let seccionActual = null;
+  function pintarMenu() {
+    const caja = $('mBotones'); caja.textContent = '';
+    for (const sc of SECCIONES) {
+      const t = sumas(deSeccion(sc.id)), b = el('button', 'boton-seccion');
+      b.append(el('span', 'nom', sc.nombre));
+      const num = el('span', 'num'); num.append(t.n + (t.n === 1 ? ' pieza' : ' piezas'));
+      if (t.val) { num.append(' · '); num.appendChild(el('b', '', fmt(t.val))); }
+      b.appendChild(num);
+      b.onclick = () => { location.hash = sc.id === 'conmemorativas' ? '#conmemorativas' : '#s/' + sc.id; };
+      caja.appendChild(b);
+    }
+    const t = sumas(todas());
+    $('mPiezas').textContent = t.n; $('mVal').textContent = fmt(t.val); $('mInv').textContent = fmt(t.inv);
+  }
+  function pintarSeccion() {
+    const sc = SECCIONES.find(x => x.id === seccionActual); if (!sc) return;
+    $('sTitulo').textContent = sc.nombre;
+    const todasSec = deSeccion(sc.id), sel = $('sCat'), elegida = sel.value;
+    const cats = [...new Set(todasSec.map(p => p.coleccion))].sort();
+    sel.textContent = ''; sel.appendChild(el('option', '', 'Todas'));
+    for (const c of cats) { const o = el('option', '', c); o.value = c; sel.appendChild(o); }
+    sel.value = cats.includes(elegida) ? elegida : ''; if (sel.value === '') sel.selectedIndex = 0;
+    sel.parentNode.style.display = cats.length > 1 ? '' : 'none';
+    const lista = todasSec.filter(p => !sel.value || p.coleccion === sel.value).sort((a, b) => a.coleccion.localeCompare(b.coleccion) || a.moneda.localeCompare(b.moneda));
+    const g = $('sGrid'); g.textContent = '';
+    for (const p of lista) g.appendChild(tarjeta(p));
+    $('sCuenta').textContent = lista.length + (lista.length === 1 ? ' pieza' : ' piezas');
+    $('sVacia').style.display = todasSec.length ? 'none' : 'block';
+    const t = sumas(todasSec); $('sPiezas').textContent = t.n; $('sVal').textContent = fmt(t.val); $('sInv').textContent = fmt(t.inv);
+  }
+  $('sCat').addEventListener('change', pintarSeccion);
+  $('sNueva').onclick = () => nuevaPieza(seccionActual, $('sCat').value);
+  $('sMenu').onclick = $('bMenu').onclick = () => { location.hash = '#menu'; };
+  $('mLista').onclick = () => $('bLista').click();
+  $('mSalir').onclick = () => $('bConectar').click();
+  function irA() {
+    const h = location.hash;
+    let m = /^#s\/([\w-]+)$/.exec(h);
+    const sc = m && SECCIONES.find(x => x.id === m[1]);
+    $('menu').classList.toggle('abierta', !sc && h !== '#conmemorativas');
+    $('seccion').classList.toggle('abierta', !!sc);
+    seccionActual = sc ? sc.id : null;
+    if (sc) { $('sCat').value = ''; pintarSeccion(); $('seccion').scrollTop = 0; }
+    else if (h !== '#conmemorativas') pintarMenu();
+    document.title = sc ? sc.nombre : h === '#conmemorativas' ? SECCIONES[0].nombre : 'Inventario de la colección';
+  }
+  window.addEventListener('hashchange', irA);
 
   document.addEventListener('keydown', e => {
     if (e.key !== 'Escape') return;
@@ -924,7 +1055,7 @@
     pintarTodo();
     if (!conectado()) { mostrarPortada(); return; }
     $('pNota').className = 'bien'; $('pNota').textContent = 'Cargando el inventario…';
-    try { await cargar(); $('portada').classList.remove('abierta'); $('pNota').textContent = ''; }
+    try { await cargar(); $('portada').classList.remove('abierta'); $('pNota').textContent = ''; irA(); }
     catch (e) { if (conectado()) mostrarPortada('No se pudo cargar el inventario: ' + e.message); }
   })();
 })();
