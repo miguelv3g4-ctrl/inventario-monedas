@@ -961,7 +961,7 @@
   // ---------- otras piezas
   function pintarOtras() {
     const sel = $('oCat'), elegida = sel.value, cats = [...new Set(todas().filter(p => p.otra && p.seccion === 'conmemorativas').map(p => p.coleccion))].sort();
-    sel.textContent = ''; sel.appendChild(el('option', '', 'Todas'));
+    sel.textContent = ''; { const t0 = el('option', '', 'Todas'); t0.value = ''; sel.appendChild(t0); } // valor vacio = sin filtro
     for (const c of cats) { const o = el('option', '', c); o.value = c; sel.appendChild(o); }
     sel.value = cats.includes(elegida) ? elegida : '';
     if (sel.value === '') sel.selectedIndex = 0;
@@ -1034,7 +1034,7 @@
     const valorCat = c => { const m = /^(¼|[\d.]+)/.exec(c); if (!m) return 1e9; const n = m[1] === '¼' ? 0.25 : parseFloat(m[1].replace(/\./g, '')); return /centavo|c[ée]ntimo/i.test(c) ? n / 100 : n; };
     const ordenCat = (a, b) => valorCat(a) - valorCat(b) || a.localeCompare(b);
     const cats = [...new Set(todasSec.map(p => p.coleccion))].sort(ordenCat);
-    sel.textContent = ''; sel.appendChild(el('option', '', 'Todas'));
+    sel.textContent = ''; { const t0 = el('option', '', 'Todas'); t0.value = ''; sel.appendChild(t0); } // valor vacio = sin filtro
     for (const c of cats) { const o = el('option', '', c); o.value = c; sel.appendChild(o); }
     sel.value = cats.includes(elegida) ? elegida : ''; if (sel.value === '') sel.selectedIndex = 0;
     sel.parentNode.style.display = cats.length > 1 ? '' : 'none';
