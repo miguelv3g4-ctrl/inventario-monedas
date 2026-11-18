@@ -140,8 +140,15 @@
   .foto button { position: absolute; top: 3px; right: 3px; padding: 0 6px; line-height: 20px; border-radius: 50%; background: rgba(0, 0, 0, .75); }
   .soltar { width: 120px; height: 120px; border: 1px dashed var(--oro2); border-radius: 4px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 13px; color: var(--oro2); cursor: pointer; padding: 8px; }
   .soltar.encima { background: #2a2412; border-style: solid; }
-  #grande { position: fixed; inset: 0; background: rgba(0, 0, 0, .94); display: none; align-items: center; justify-content: center; z-index: 40; cursor: zoom-out; }
-  #grande img { max-width: 96vw; max-height: 96vh; }
+  #grande { position: fixed; inset: 0; background: rgba(0, 0, 0, .96); display: none; flex-direction: column; z-index: 40; }
+  #gBarra { flex: none; display: flex; gap: 8px; align-items: center; justify-content: center; flex-wrap: wrap; padding: 8px; background: rgba(20, 19, 18, .95); border-bottom: 1px solid var(--linea); }
+  #gBarra button { min-width: 40px; font-size: 15px; }
+  #gZoom { color: var(--gris); min-width: 52px; text-align: center; font-variant-numeric: tabular-nums; }
+  #gBarra .ayuda-visor { color: #8a8170; font-size: 12px; margin-left: 8px; }
+  #gLienzo { flex: 1; position: relative; overflow: hidden; cursor: grab; touch-action: none; }
+  #gLienzo.arrastrando { cursor: grabbing; }
+  #gImg { position: absolute; left: 50%; top: 50%; max-width: none; max-height: none; transform-origin: center center; user-select: none; -webkit-user-drag: none; }
+  @media (max-width: 640px) { #gBarra .ayuda-visor { display: none; } }
 
   /* lista */
   #vLista .ventana { width: min(1150px, 100%); }
@@ -368,7 +375,19 @@
     </table></div>
   </div>
 </div>
-<div id="grande"><img alt=""></div>
+<div id="grande" role="dialog" aria-modal="true" aria-label="Foto en grande">
+  <div id="gBarra">
+    <button data-a="izq" title="Girar a la izquierda">⟲ Girar</button>
+    <button data-a="der" title="Girar a la derecha">Girar ⟳</button>
+    <button data-a="menos" title="Alejar">−</button>
+    <span id="gZoom">100%</span>
+    <button data-a="mas" title="Acercar">+</button>
+    <button data-a="ajustar" title="Ver la foto completa">Ajustar</button>
+    <button data-a="cerrar" class="fuerte" title="Cerrar (Esc)">Cerrar ✕</button>
+    <span class="ayuda-visor">Rueda del mouse: zoom · arrastrar: mover · doble clic: acercar</span>
+  </div>
+  <div id="gLienzo"><img id="gImg" alt="Foto de la pieza" draggable="false"></div>
+</div>
 
 <script src="hoja.js"></script>
 <script>
@@ -732,7 +751,7 @@
     if (!fotos.length) caja.textContent = esValor ? 'Sin foto de la pieza todavía' : 'Sin foto de inventario todavía';
     else {
       const grande = el('img'); grande.alt = 'Foto de la pieza'; caja.appendChild(grande);
-      grande.onclick = () => { $('grande').firstElementChild.src = grande.src; $('grande').style.display = 'flex'; };
+      grande.onclick = () => verGrande(grande.src);
       const ver = i => { ponerFoto(grande, fotos[i]); [...minis.children].forEach((m, j) => m.classList.toggle('activa', i === j)); };
       if (fotos.length > 1) fotos.forEach((n, i) => { const m = el('img'); m.alt = 'Foto ' + (i + 1); ponerFoto(m, n); m.onclick = () => ver(i); minis.appendChild(m); });
       ver(0);
@@ -758,7 +777,58 @@
   $('vCerrar').onclick = cerrarFicha;
   $('vFicha').addEventListener('mousedown', e => { if (e.target === $('vFicha')) cerrarFicha(); });
   $('vEditar').onclick = () => { if (conectado()) abrirForm(); else abrirConexion(); };
-  $('grande').onclick = () => { $('grande').style.display = 'none'; };
+  // ---------- visor de fotos: girar, zoom (hasta 10x), mover arrastrando, rueda del mouse y pellizco
+  const visor = { giro: 0, zoom: 1, x: 0, y: 0, base: 1 };
+  const MAX_ZOOM = 10, MIN_ZOOM = 0.2;
+  function aplicarVisor() {
+    $('gImg').style.transform = `translate(-50%, -50%) translate(${visor.x}px, ${visor.y}px) rotate(${visor.giro}deg) scale(${visor.base * visor.zoom})`;
+    $('gZoom').textContent = Math.round(visor.zoom * 100) + '%';
+  }
+  function ajustarVisor() { // la foto completa cabe en pantalla, segun como este girada
+    const im = $('gImg'), L = $('gLienzo'), w = im.naturalWidth || 1, h = im.naturalHeight || 1, de = visor.giro % 180 !== 0;
+    visor.base = Math.min((L.clientWidth - 20) / (de ? h : w), (L.clientHeight - 20) / (de ? w : h), 1.5);
+    visor.zoom = 1; visor.x = 0; visor.y = 0; aplicarVisor();
+  }
+  function zoomEn(nuevo, cx, cy) { // acercar manteniendo quieto el punto (cx, cy) del lienzo
+    nuevo = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, nuevo));
+    const L = $('gLienzo').getBoundingClientRect(), px = (cx === undefined ? L.width / 2 : cx) - L.width / 2, py = (cy === undefined ? L.height / 2 : cy) - L.height / 2;
+    const k = nuevo / visor.zoom; visor.x = px - (px - visor.x) * k; visor.y = py - (py - visor.y) * k; visor.zoom = nuevo; aplicarVisor();
+  }
+  function verGrande(src) {
+    const im = $('gImg'); visor.giro = 0;
+    im.onload = ajustarVisor; im.src = src;
+    $('grande').style.display = 'flex';
+    if (im.complete && im.naturalWidth) ajustarVisor();
+  }
+  const cerrarVisor = () => { $('grande').style.display = 'none'; };
+  $('gBarra').addEventListener('click', e => {
+    const a = e.target.closest('button') && e.target.closest('button').dataset.a; if (!a) return;
+    if (a === 'izq' || a === 'der') { visor.giro += a === 'der' ? 90 : -90; const z = visor.zoom; ajustarVisor(); if (z !== 1) zoomEn(z); }
+    else if (a === 'mas') zoomEn(visor.zoom * 1.5);
+    else if (a === 'menos') zoomEn(visor.zoom / 1.5);
+    else if (a === 'ajustar') ajustarVisor();
+    else if (a === 'cerrar') cerrarVisor();
+  });
+  $('gLienzo').addEventListener('wheel', e => { e.preventDefault(); const L = $('gLienzo').getBoundingClientRect(); zoomEn(visor.zoom * (e.deltaY < 0 ? 1.2 : 1 / 1.2), e.clientX - L.left, e.clientY - L.top); }, { passive: false });
+  $('gLienzo').addEventListener('dblclick', e => { const L = $('gLienzo').getBoundingClientRect(); if (visor.zoom >= 3) ajustarVisor(); else zoomEn(visor.zoom * 2.5, e.clientX - L.left, e.clientY - L.top); });
+  // arrastrar con mouse o dedo; con dos dedos, pellizco para zoom
+  const dedos = new Map(); let pellizco = null;
+  $('gLienzo').addEventListener('pointerdown', e => { $('gLienzo').setPointerCapture(e.pointerId); dedos.set(e.pointerId, { x: e.clientX, y: e.clientY }); $('gLienzo').classList.add('arrastrando'); if (dedos.size === 2) { const [a, b] = [...dedos.values()]; pellizco = { d: Math.hypot(a.x - b.x, a.y - b.y), z: visor.zoom }; } });
+  $('gLienzo').addEventListener('pointermove', e => {
+    const antes = dedos.get(e.pointerId); if (!antes) return;
+    const ahora = { x: e.clientX, y: e.clientY }; dedos.set(e.pointerId, ahora);
+    if (dedos.size === 2 && pellizco) { const [a, b] = [...dedos.values()], L = $('gLienzo').getBoundingClientRect(); zoomEn(pellizco.z * Math.hypot(a.x - b.x, a.y - b.y) / pellizco.d, (a.x + b.x) / 2 - L.left, (a.y + b.y) / 2 - L.top); }
+    else if (dedos.size === 1) { visor.x += ahora.x - antes.x; visor.y += ahora.y - antes.y; aplicarVisor(); }
+  });
+  const soltar = e => { dedos.delete(e.pointerId); if (dedos.size < 2) pellizco = null; if (!dedos.size) $('gLienzo').classList.remove('arrastrando'); };
+  $('gLienzo').addEventListener('pointerup', soltar); $('gLienzo').addEventListener('pointercancel', soltar);
+  document.addEventListener('keydown', e => {
+    if ($('grande').style.display !== 'flex') return;
+    if (e.key === '+' || e.key === '=') zoomEn(visor.zoom * 1.5);
+    else if (e.key === '-') zoomEn(visor.zoom / 1.5);
+    else if (e.key === 'r' || e.key === 'R') { visor.giro += 90; ajustarVisor(); }
+  });
+  window.addEventListener('resize', () => { if ($('grande').style.display === 'flex') ajustarVisor(); });
 
   // ---------- pantalla de captura
   const campos = { fValor: 'valor', fFechaValor: 'fechaValor', fFuenteValor: 'fuenteValor', fCosto: 'costo', fFechaCompra: 'fechaCompra', fOrigen: 'origen', fPrecio: 'precioVenta', fFechaVenta: 'fechaVenta', fComprador: 'comprador', fNotas: 'notas' };
