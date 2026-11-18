@@ -2797,7 +2797,7 @@
    "notas": "Sin número de serie en el Excel (no la tengo o falta anotarla).\nFuente: Excel billetes costa rica, hoja \"20 colones\"."
   },
   "O-mwm5exrk": {
-   "tengo": false,
+   "tengo": true,
    "vendida": true,
    "fotosCompra": [
     "O-mwm5exrk-1795008313606-1yqv8.jpg",
