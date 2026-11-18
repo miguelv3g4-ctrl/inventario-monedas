@@ -67,6 +67,10 @@
   .boton-seccion .num b { color: var(--oro); font-weight: normal; }
   #seccion .cuerpo { max-width: 1250px; margin: 0 auto; padding: 14px 16px 40px; }
   #seccion h2 { font: 22px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 0; }
+  #sGrid .nivel { grid-column: 1 / -1; display: flex; align-items: baseline; gap: 10px; margin: 14px 0 0; padding: 6px 2px; border-bottom: 1px solid var(--oro2); }
+  #sGrid .nivel:first-child { margin-top: 0; }
+  #sGrid .nivel b { font: 18px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); font-weight: normal; }
+  #sGrid .nivel span { color: var(--gris); font-size: 14px; }
   #sGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; margin-top: 12px; }
   #sVacia { color: var(--gris); text-align: center; padding: 40px 10px; font-size: 16px; display: none; }
 
@@ -1159,7 +1163,19 @@
     const est = $('sEstado').value, deCat = todasSec.filter(p => !sel.value || p.coleccion === sel.value);
     const lista = deCat.filter(p => !est || (est === 'tengo') === tengo(p.id)).sort((a, b) => ordenCat(a.coleccion, b.coleccion) || a.moneda.localeCompare(b.moneda, 'es', { numeric: true }));
     const g = $('sGrid'); g.textContent = '';
-    for (const p of lista) g.appendChild(tarjeta(p));
+    if (sc.id === 'ms-sueltas') {
+      // por niveles: 500 (Hitos), 50 (Fauna), 100 (Patrimonio) y al final 25 (Provincias); dentro, en el orden de emision de la hoja
+      const NIVELES = [['Hitos de la Historia', '500 colones'], ['Fauna de los Ecosistemas', '50 colones'], ['Patrimonio Cultural Inmaterial', '100 colones'], ['Lugares Emblematicos de las Provincias de Costa Rica', '25 colones']];
+      const ordenHoja = p => { const i = H.piezas.findIndex(x => p.moneda.startsWith(x.moneda)); return i < 0 ? 1e9 : i; };
+      const columnaHoja = p => { const x = H.piezas.find(x => p.moneda.startsWith(x.moneda)); return x ? x.x : 1e9; };
+      const otrasCols = lista.filter(p => !NIVELES.some(n => n[0] === p.coleccion));
+      for (const [col, denom] of NIVELES.concat(otrasCols.length ? [['', '']] : [])) {
+        const grupo = col ? lista.filter(p => p.coleccion === col) : otrasCols;
+        if (!grupo.length) continue;
+        const t = el('div', 'nivel'); t.append(el('b', '', col ? denom : 'Otras'), el('span', '', (col || '') + ' · ' + grupo.length + (grupo.length === 1 ? ' moneda' : ' monedas'))); g.appendChild(t);
+        for (const p of grupo.sort((a, b) => columnaHoja(a) - columnaHoja(b) || ordenHoja(a) - ordenHoja(b))) g.appendChild(tarjeta(p));
+      }
+    } else for (const p of lista) g.appendChild(tarjeta(p));
     const lasTengo = deCat.filter(p => tengo(p.id)).length;
     $('sCuenta').textContent = lista.length + (lista.length === 1 ? ' pieza' : ' piezas') + ' · tengo ' + lasTengo + ' de ' + deCat.length + ' · me faltan ' + (deCat.length - lasTengo);
     $('sVacia').style.display = todasSec.length ? 'none' : 'block';
