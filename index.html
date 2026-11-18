@@ -1154,7 +1154,7 @@
     if (location.protocol === 'file:' || sucias.size || $('vForm').classList.contains('abierta')) return;
     try {
       const t = await (await fetch('index.html?v=' + Date.now(), { cache: 'no-store' })).text();
-      const i = t.lastIndexOf('<script>'), j = t.lastIndexOf('</script>');
+      const i = t.lastIndexOf('<' + 'script>'), j = t.lastIndexOf('<' + '/script>'); // partido para no cerrar este script
       if (i < 0 || j < i) return;
       if (huella(t.slice(i + 8, j)) !== huellaActual) { aviso('Hay una versión nueva de la página. Actualizando…'); setTimeout(() => location.reload(), 800); }
     } catch (e) {}
