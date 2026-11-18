@@ -70,7 +70,7 @@
   .ck.on::after { content: ""; position: absolute; left: 3.5px; top: 0.5px; width: 3px; height: 7px; border: solid #000; border-width: 0 2px 2px 0; transform: rotate(45deg); }
   .pz { position: absolute; cursor: pointer; z-index: 3; border-radius: 2px; }
   .pz:hover, .pz:focus-visible { background: rgba(255, 217, 102, .18); outline: 1px solid var(--oro); }
-  .pz i { position: absolute; left: -13px; top: 50%; width: 7px; height: 7px; margin-top: -4px; border-radius: 50%; display: none; }
+  .pz i { position: absolute; right: 3px; top: 50%; width: 7px; height: 7px; margin-top: -4px; border-radius: 50%; display: none; }
   .pz.con i { display: block; background: #58d07a; }
   .pz.vendida i { display: block; background: #ff5a4a; }
 
@@ -339,7 +339,11 @@
   armarBase();
   const todas = () => Object.values(base);
   const reg = id => datos.piezas[id] || {};
-  const tengo = id => { const r = reg(id); return r.tengo !== undefined ? !!r.tengo : !!(base[id] && base[id].ck && base[id].ck.on); };
+  const esEstucheHoja = id => !!(base[id] && !base[id].otra && base[id].tipo === 'Estuche');
+  const tengo = id => {
+    if (esEstucheHoja(id)) return !!serieDe(id); // un estuche cuenta como "lo tengo" solo si ya tiene serie
+    const r = reg(id); return r.tengo !== undefined ? !!r.tengo : !!(base[id] && base[id].ck && base[id].ck.on);
+  };
   const cant = id => reg(id).cantidad || 1;
   const fotosDe = (id, grupo) => reg(id)[grupo] || [];
   const nFotos = id => new Set(fotosDe(id, 'fotos').concat(fotosDe(id, 'fotosCompra'))).size;
@@ -452,10 +456,12 @@
     if (p.ck) {
       const k = el('div', 'ck'); k.style.cssText = `left:${p.ck.x + 3}px;top:${p.ck.y + 3}px`;
       k.addEventListener('click', () => {
+        if (p.tipo === 'Estuche') { k.title = ''; abrirFicha(p.id); return; }
         if (!conectado()) return;
         datos.piezas[p.id] = limpiar(Object.assign({}, datos.piezas[p.id], { tengo: !tengo(p.id) })); sucias.add(p.id);
         pintarPieza(p.id); totales(); guardarCasillas();
       });
+      if (p.tipo === 'Estuche') k.title = 'Se marca sola cuando el estuche tiene serie';
       casillas[p.id] = k; frag.appendChild(k);
     }
   }
@@ -563,10 +569,9 @@
 
   function medirCasilla(id) {
     const p = base[id], m = /^([A-Z]+)(\d+)$/.exec(id);
-    const ultima = celdas[colL(colN(m[1]) + (p.tipo === 'Estuche' ? 3 : 1)) + m[2]] || celdas[id];
-    const sp = ultima && ultima.d.firstChild;
-    if (!sp || !sp.textContent.trim()) return null;
-    return { x: ultima.c.x + sp.offsetLeft + sp.offsetWidth + 6, y: ultima.c.y + sp.offsetTop + sp.offsetHeight / 2 - 7.5 };
+    const palabra = celdas[id], sp = palabra && palabra.d.firstChild;
+    if (!sp || !sp.textContent.trim() || !m) return null;
+    return { x: palabra.c.x + sp.offsetLeft - 19, y: palabra.c.y + sp.offsetTop + sp.offsetHeight / 2 - 7.5 };
   }
   function colocarCasillas(ids) {
     const pos = ids.map(id => casillas[id] ? medirCasilla(id) : null); // primero medir todo, luego mover
@@ -693,6 +698,8 @@
     grupoActivo = pestana === 'compra' ? 'fotosCompra' : 'fotos';
     $('fMoneda').textContent = p.moneda; $('fSub').textContent = nombrePieza(p) + (p.anio ? ' · Emisión ' + p.anio : '');
     $('fTengo').checked = tengo(id); $('fVendida').checked = !!r.vendida;
+    $('fTengo').disabled = esEstucheHoja(id);
+    $('fTengo').parentNode.title = esEstucheHoja(id) ? 'En los estuches se marca sola cuando tienen número de serie' : '';
     for (const f in campos) { const v = r[campos[f]]; $(f).value = v === undefined ? '' : esDinero(campos[f]) ? Math.round(v).toLocaleString('es-CR') : v; }
     $('fNota').textContent = ''; $('fGuardar').disabled = false; $('fCancelar').disabled = false;
     for (const g in GRUPOS) pintarGrupo(g);
@@ -742,7 +749,7 @@
     }
   }
   for (const f in campos) if (esDinero(campos[f])) $(f).addEventListener('blur', () => { const n = num($(f).value); $(f).value = n ? Math.round(n).toLocaleString('es-CR') : ''; });
-  const marcarTengo = () => { if (!$('fVendida').checked) $('fTengo').checked = true; };
+  const marcarTengo = () => { if (esEstucheHoja(actual)) { $('fTengo').checked = !!$('fSerie').value.trim(); return; } if (!$('fVendida').checked) $('fTengo').checked = true; };
   for (const f of ['fValor', 'fCosto', 'fSerie', 'fTiraje', 'fFechaCompra', 'fOrigen', 'fFechaValor', 'fFuenteValor']) $(f).addEventListener('input', marcarTengo);
   $('fVendida').addEventListener('change', () => { if ($('fVendida').checked && !$('fFechaVenta').value) $('fFechaVenta').value = hoy(); });
   $('fCancelar').onclick = () => cerrarForm(false);
@@ -762,7 +769,7 @@
       // 2. guardar los datos
       nota.textContent = 'Guardando datos…';
       const ant = reg(id);
-      const r = { tengo: $('fTengo').checked, vendida: $('fVendida').checked, producto: ant.producto, cantidad: ant.cantidad, serie: ant.serie, tiraje: ant.tiraje, fotos: borrador.fotos.map(f => f.nombre), fotosCompra: borrador.fotosCompra.map(f => f.nombre) };
+      const r = { tengo: esEstucheHoja(id) ? undefined : $('fTengo').checked, vendida: $('fVendida').checked, producto: ant.producto, cantidad: ant.cantidad, serie: ant.serie, tiraje: ant.tiraje, fotos: borrador.fotos.map(f => f.nombre), fotosCompra: borrador.fotosCompra.map(f => f.nombre) };
       for (const f in campos) r[campos[f]] = esDinero(campos[f]) ? num($(f).value) : $(f).value.trim();
       if (!p.otra && p.tipo === 'Estuche') {
         // solo se guarda si es distinta de la que traia la hoja
