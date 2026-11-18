@@ -30,6 +30,17 @@
   #pNota { min-height: 22px; margin-top: 10px; color: #ff9a8a; font-size: 14px; }
   #pNota.bien { color: var(--gris); }
 
+  /* series especiales (tabla automatica) */
+  #especiales { position: absolute; overflow-y: auto; z-index: 5; border: 1px solid var(--oro); background: #000; }
+  #especiales table { width: 100%; border-collapse: collapse; font-size: 15px; font-weight: bold; }
+  #especiales th, #especiales td { color: var(--gris); border: 1px solid var(--oro); padding: 1px 6px; height: 20px; line-height: 1.15; }
+  #especiales th { background: #000; text-align: center; position: sticky; top: 0; z-index: 1; font-size: 16px; }
+  #especiales td.mon { font-weight: normal; }
+  #especiales td.ser { text-align: center; white-space: nowrap; }
+  #especiales td.ser a { color: var(--gris); text-decoration: none; cursor: pointer; margin: 0 3px; }
+  #especiales td.ser a:hover { color: var(--oro); text-decoration: underline; }
+  #especiales .vacia { text-align: center; font-weight: normal; padding: 10px; }
+
   /* barra superior */
   #barra { flex: none; display: flex; align-items: center; gap: 14px; padding: 6px 12px; background: var(--panel); border-bottom: 1px solid var(--linea); font-size: 14px; flex-wrap: wrap; }
   #barra .dato { color: var(--gris); white-space: nowrap; }
@@ -457,6 +468,79 @@
   });
   hoja.appendChild(frag);
 
+  // ---------- series especiales: la tabla se arma sola con las series de los estuches
+  // area de la tabla vieja del Excel (columnas AH..BB, filas 39..51): se esconde y se pone la automatica
+  const colNum = s => [...s].reduce((n, ch) => n * 26 + ch.charCodeAt(0) - 64, 0);
+  const cajaEsp = el('div'); cajaEsp.id = 'especiales';
+  (function () {
+    let x1 = 1e9, y1 = 1e9, x2 = 0, y2 = 0;
+    for (const ref in celdas) {
+      const m = /^([A-Z]+)(\d+)$/.exec(ref), c = colNum(m[1]), f = +m[2];
+      if (c < colNum('AH') || c > colNum('BB') || f < 39 || f > 51) continue;
+      const k = celdas[ref].c; celdas[ref].d.style.display = 'none';
+      x1 = Math.min(x1, k.x); y1 = Math.min(y1, k.y); x2 = Math.max(x2, k.x + k.w); y2 = Math.max(y2, k.y + k.h);
+    }
+    cajaEsp.style.cssText = `left:${x1}px;top:${y1}px;width:${x2 - x1}px;height:${y2 - y1}px`;
+    hoja.appendChild(cajaEsp);
+  })();
+  const COLOR_COLECCION = { 'Hitos de la Historia': '#203864', 'Fauna de los Ecosistemas': '#385724', 'Lugares Emblematicos de las Provincias de Costa Rica': '#806000', 'Patrimonio Cultural Inmaterial': '#843c0b' };
+  const ORDEN_COLECCION = Object.keys(COLOR_COLECCION);
+  // reglas: baja (< 1000), alta (dentro de las ultimas 1000 del tiraje), radar (igual al reves),
+  // escalera (todos los digitos seguidos, tantos digitos como el tiraje), consecutivas (n y n+1 de la misma moneda)
+  function etiquetasDe(serie, tiraje) {
+    const n = parseInt(serie, 10), t = parseInt(tiraje, 10), e = [];
+    if (!(n >= 0)) return e;
+    const dig = String(tiraje || '').replace(/\D/g, '').length || serie.length;
+    const s = String(serie).replace(/\D/g, '').padStart(dig, '0');
+    if (n < 1000) e.push('baja');
+    if (t && n > t - 1000 && n <= t) e.push('alta');
+    if (s.length >= 3 && s === [...s].reverse().join('')) e.push('radar');
+    const d = [...s].map(Number);
+    if (s.length === dig && d.length >= 3 && (d.every((x, i) => !i || x === d[i - 1] + 1) || d.every((x, i) => !i || x === d[i - 1] - 1))) e.push('escalera');
+    return e;
+  }
+  const NOMBRE_ETIQUETA = { baja: ['Serie baja', 'Series bajas'], alta: ['Serie alta', 'Series altas'], radar: ['Serie radar', 'Series radar'], escalera: ['Serie escalera', 'Series escalera'], consecutiva: ['Series consecutivas', 'Series consecutivas'] };
+  function seriesEspeciales() {
+    const est = H.piezas.filter(p => p.tipo === 'Estuche' && serieDe(p.id) && tengo(p.id) && !reg(p.id).vendida)
+      .map(p => ({ id: p.id, moneda: p.moneda, coleccion: p.coleccion, x: p.x, serie: serieDe(p.id), n: parseInt(serieDe(p.id), 10), e: etiquetasDe(serieDe(p.id), tirajeDe(p.id)) }));
+    for (const a of est) if (est.some(b => b !== a && b.moneda === a.moneda && Math.abs(b.n - a.n) === 1)) a.e.push('consecutiva');
+    const filas = [], porMoneda = {};
+    for (const a of est.filter(a => a.e.length)) (porMoneda[a.moneda] = porMoneda[a.moneda] || []).push(a);
+    const monedas = Object.keys(porMoneda).sort((m1, m2) => {
+      const a = porMoneda[m1][0], b = porMoneda[m2][0];
+      return ORDEN_COLECCION.indexOf(a.coleccion) - ORDEN_COLECCION.indexOf(b.coleccion) || a.x - b.x;
+    });
+    // por moneda: una fila por etiqueta con todas sus series; si dos etiquetas tienen las mismas series, van juntas
+    for (const m of monedas) {
+      const lista = porMoneda[m].sort((x, y) => x.n - y.n), porSeries = {};
+      for (const e of ['consecutiva', 'baja', 'alta', 'radar', 'escalera']) {
+        const g = lista.filter(a => a.e.includes(e)); if (!g.length) continue;
+        const k = g.map(a => a.id).join(','); (porSeries[k] = porSeries[k] || { g, e: [] }).e.push(e);
+      }
+      for (const k in porSeries) {
+        const { g, e } = porSeries[k];
+        filas.push({ moneda: m, coleccion: g[0].coleccion, series: g, detalle: e.map(x => NOMBRE_ETIQUETA[x][g.length > 1 ? 1 : 0]).join(' · ') });
+      }
+    }
+    return filas;
+  }
+  function pintarEspeciales() {
+    const filas = seriesEspeciales(), t = el('table');
+    const cab = el('tr'); ['Sub categorías', 'Series', 'Detalle'].forEach(x => cab.appendChild(el('th', '', x)));
+    const thead = el('thead'); thead.appendChild(cab); t.appendChild(thead);
+    const tb = el('tbody');
+    let anterior = '';
+    for (const f of filas) {
+      const tr = el('tr'); tr.style.background = COLOR_COLECCION[f.coleccion] || '#222';
+      tr.appendChild(el('td', 'mon', f.moneda === anterior ? '' : f.moneda)); anterior = f.moneda;
+      const tdS = el('td', 'ser');
+      for (const a of f.series) { const l = el('a', '', a.serie); l.title = 'Abrir la ficha de este estuche'; l.onclick = () => abrirFicha(a.id); tdS.appendChild(l); }
+      tr.appendChild(tdS); tr.appendChild(el('td', '', f.detalle)); tb.appendChild(tr);
+    }
+    if (!filas.length) { const tr = el('tr'), td = el('td', 'vacia', 'Todavía no hay series especiales.'); td.colSpan = 3; tr.appendChild(td); tb.appendChild(tr); }
+    t.appendChild(tb); cajaEsp.textContent = ''; cajaEsp.appendChild(t);
+  }
+
   // la celda de la serie esta a la derecha de "Estuche" (ej. C10 -> D10); si estaba vacia se crea
   const colN = s => [...s].reduce((n, ch) => n * 26 + ch.charCodeAt(0) - 64, 0);
   const colL = n => { let s = ''; while (n) { s = String.fromCharCode(65 + (n - 1) % 26) + s; n = Math.floor((n - 1) / 26); } return s; };
@@ -516,6 +600,7 @@
     $('tPiezas').textContent = n; $('tInv').textContent = fmt(inv); $('tVal').textContent = fmt(val); $('tVen').textContent = fmt(ven); $('tGan').textContent = conSigno(gan);
     if ($('vLista').classList.contains('abierta')) pintarLista();
     if ($('vOtras').classList.contains('abierta')) pintarOtras();
+    pintarEspeciales();
   }
   function pintarTodo() {
     for (const p of H.piezas) pintarPieza(p.id, true);
