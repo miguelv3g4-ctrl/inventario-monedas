@@ -1116,7 +1116,10 @@
     for (const sc of SECCIONES) {
       const t = sumas(deSeccion(sc.id)), b = el('button', 'boton-seccion');
       b.append(el('span', 'nom', sc.nombre)); if (sc.desc) b.append(el('span', 'desc', sc.desc));
-      if (sc.fondo) b.style.background = `linear-gradient(180deg, rgba(10,8,4,.55), rgba(10,8,4,.9) 70%), url("${sc.fondo}")`;
+      // MS sueltas: si ya hay foto propia de la Mariposa MS (circulacion normal), el boton usa esa
+      let fondo = sc.fondo;
+      if (sc.id === 'ms-sueltas') { const m = deSeccion('ms-sueltas').find(p => /^Mariposa/i.test(p.moneda)), f = m && (fotosDe(m.id, 'fotos')[0] || fotosDe(m.id, 'fotosCompra')[0]); if (f) fondo = locales[f] || 'fotos/' + f; }
+      if (fondo) b.style.background = `linear-gradient(180deg, rgba(10,8,4,.55), rgba(10,8,4,.9) 70%), url("${fondo}")`;
       const num = el('span', 'num'); num.append(t.n + (t.n === 1 ? ' pieza' : ' piezas'));
       if (t.val) { num.append(' · '); num.appendChild(el('b', '', fmt(t.val))); }
       b.appendChild(num);
