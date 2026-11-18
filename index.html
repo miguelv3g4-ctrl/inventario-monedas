@@ -59,7 +59,7 @@
   .ck.on::after { content: ""; position: absolute; left: 3.5px; top: 0.5px; width: 3px; height: 7px; border: solid #000; border-width: 0 2px 2px 0; transform: rotate(45deg); }
   .pz { position: absolute; cursor: pointer; z-index: 3; border-radius: 2px; }
   .pz:hover, .pz:focus-visible { background: rgba(255, 217, 102, .18); outline: 1px solid var(--oro); }
-  .pz i { position: absolute; right: 3px; top: 50%; width: 7px; height: 7px; margin-top: -4px; border-radius: 50%; display: none; }
+  .pz i { position: absolute; left: -13px; top: 50%; width: 7px; height: 7px; margin-top: -4px; border-radius: 50%; display: none; }
   .pz.con i { display: block; background: #58d07a; }
   .pz.vendida i { display: block; background: #ff5a4a; }
 
@@ -475,7 +475,19 @@
     return sp;
   }
 
-  function pintarPieza(id) {
+  function medirCasilla(id) {
+    const p = base[id], m = /^([A-Z]+)(\d+)$/.exec(id);
+    const ultima = celdas[colL(colN(m[1]) + (p.tipo === 'Estuche' ? 3 : 1)) + m[2]] || celdas[id];
+    const sp = ultima && ultima.d.firstChild;
+    if (!sp || !sp.textContent.trim()) return null;
+    return { x: ultima.c.x + sp.offsetLeft + sp.offsetWidth + 6, y: ultima.c.y + sp.offsetTop + sp.offsetHeight / 2 - 7.5 };
+  }
+  function colocarCasillas(ids) {
+    const pos = ids.map(id => casillas[id] ? medirCasilla(id) : null); // primero medir todo, luego mover
+    ids.forEach((id, i) => { if (pos[i]) { casillas[id].style.left = pos[i].x + 'px'; casillas[id].style.top = pos[i].y + 'px'; } });
+  }
+
+  function pintarPieza(id, sinColocar) {
     const p = base[id], r = reg(id), z = zonas[id];
     if (!z) return; // las "otras piezas" no estan en la hoja
     if (p.tipo === 'Estuche') {
@@ -491,6 +503,7 @@
     if (r.vendida) t += '\nVendida' + (r.precioVenta ? ' en ' + fmt(r.precioVenta) : '');
     z.title = t;
     if (casillas[id]) casillas[id].classList.toggle('on', tengo(id));
+    if (!sinColocar) colocarCasillas([id]);
   }
   function totales() {
     let n = 0, inv = 0, ven = 0, gan = 0, val = 0;
@@ -505,7 +518,8 @@
     if ($('vOtras').classList.contains('abierta')) pintarOtras();
   }
   function pintarTodo() {
-    for (const p of H.piezas) pintarPieza(p.id);
+    for (const p of H.piezas) pintarPieza(p.id, true);
+    colocarCasillas(H.piezas.map(p => p.id));
     for (const k in casillas) if (casillas[k].pintar) casillas[k].pintar();
     totales();
     $('mValor').classList.toggle('activo', modo === 'valor'); $('mCompra').classList.toggle('activo', modo === 'compra');
@@ -514,6 +528,8 @@
   }
   function ponerModo(m) { modo = m; try { localStorage.setItem('modoInventario', m); } catch (e) {} pintarTodo(); }
   $('mValor').onclick = () => ponerModo('valor'); $('mCompra').onclick = () => ponerModo('compra');
+
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => colocarCasillas(H.piezas.map(p => p.id)));
 
   // ---------- zoom
   let zoom = 0.8;
@@ -634,11 +650,13 @@
   }
   async function agregar(lista, grupo) {
     for (const a of [...lista].filter(a => a.type.startsWith('image/'))) {
-      try { const blob = await achicar(a); if (!borrador) return; borrador[grupo].push({ blob, url: URL.createObjectURL(blob) }); pintarGrupo(grupo); }
+      try { const blob = await achicar(a); if (!borrador) return; borrador[grupo].push({ blob, url: URL.createObjectURL(blob) }); pintarGrupo(grupo); marcarTengo(); }
       catch (e) { $('fNota').textContent = 'No se pudo leer una de las imágenes.'; }
     }
   }
   for (const f in campos) if (esDinero(campos[f])) $(f).addEventListener('blur', () => { const n = num($(f).value); $(f).value = n ? Math.round(n).toLocaleString('es-CR') : ''; });
+  const marcarTengo = () => { if (!$('fVendida').checked) $('fTengo').checked = true; };
+  for (const f of ['fValor', 'fCosto', 'fSerie', 'fTiraje', 'fFechaCompra', 'fOrigen', 'fFechaValor', 'fFuenteValor']) $(f).addEventListener('input', marcarTengo);
   $('fVendida').addEventListener('change', () => { if ($('fVendida').checked && !$('fFechaVenta').value) $('fFechaVenta').value = hoy(); });
   $('fCancelar').onclick = () => cerrarForm(false);
   $('fGuardar').onclick = async () => {
