@@ -1620,28 +1620,32 @@
    "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 145"
   },
   "O-xc9390bfc0": {
    "tengo": false,
    "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 145"
   },
   "O-x9ce4b4b70": {
    "tengo": false,
    "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 145"
   },
   "O-x2be4f4499": {
    "tengo": false,
    "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 145"
   },
   "O-xe851380f9": {
    "tengo": false,
@@ -1669,140 +1673,160 @@
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 151"
   },
   "O-x259014684": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 151"
   },
   "O-x63c69a828": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 151"
   },
   "O-x67a29eb8e": {
    "tengo": false,
    "notas": "Material: Bronce · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 169"
   },
   "O-xd8457527a": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 151"
   },
   "O-x9bc0d15da": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 151"
   },
   "O-x585474041": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 151"
   },
   "O-xb8bc35bde": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 151"
   },
   "O-xf7ba06e9b": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 178"
   },
   "O-xf2e01c902": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 179"
   },
   "O-x80946433b": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 179"
   },
   "O-x91db8b50f": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 179"
   },
   "O-x40c414f10": {
    "tengo": true,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 179"
   },
   "O-x1ca9dd607": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184A"
   },
   "O-x9dcbdff87": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184A"
   },
   "O-xe3d47d8e0": {
    "tengo": true,
    "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184.1a"
   },
   "O-x5acb39897": {
    "tengo": true,
    "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184.1a"
   },
   "O-x58dfa2f51": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184.1"
   },
   "O-x15d4420cd": {
    "tengo": true,
    "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184.1a"
   },
   "O-x5a5f0dfd0": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184.1"
   },
   "O-x15e385cd4": {
    "tengo": true,
@@ -1810,7 +1834,8 @@
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184.2"
   },
   "O-x1e8fa5618": {
    "tengo": true,
@@ -1818,7 +1843,8 @@
    "notas": "Material: Cobre-níquel · Peso: 1,02 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184.3"
   },
   "O-xb543d373e": {
    "tengo": true,
@@ -1826,7 +1852,8 @@
    "notas": "Material: Cobre-níquel · Peso: 1,02 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184.3"
   },
   "O-xc51d3a03e": {
    "tengo": true,
@@ -1834,14 +1861,16 @@
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184.3"
   },
   "O-xc8e07e657": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184.2"
   },
   "O-xdb6ad18f5": {
    "tengo": true,
@@ -1849,119 +1878,136 @@
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 184.3a"
   },
   "O-x0dd39db09": {
    "tengo": false,
    "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 146"
   },
   "O-x122bd88e1": {
    "tengo": false,
    "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 146"
   },
   "O-xcf60cf766": {
    "tengo": false,
    "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 146"
   },
   "O-x3b6dc64b2": {
    "tengo": false,
    "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 146"
   },
   "O-xb402c067e": {
    "tengo": false,
    "notas": "Material: Plata (0,500) · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 148"
   },
   "O-x26a905aee": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 152"
   },
   "O-x92c19e6f8": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 152"
   },
   "O-xb16bfbae6": {
    "tengo": true,
    "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 152"
   },
   "O-xf2c633f9a": {
    "tengo": false,
    "notas": "Material: Bronce · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 170"
   },
   "O-xf50ceb0b7": {
    "tengo": true,
    "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 174"
   },
   "O-x69fd1edf2": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 174"
   },
   "O-x2e49f64bd": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 180"
   },
   "O-x22b6dee50": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 180"
   },
   "O-x05f454d6e": {
    "tengo": true,
    "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 180"
   },
   "O-x423988bbf": {
    "tengo": true,
    "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 180"
   },
   "O-xfb8bde918": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 185.1"
   },
   "O-xcf8b0e40e": {
    "tengo": true,
@@ -1969,7 +2015,8 @@
    "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 185.1a"
   },
   "O-xc3d7fba09": {
    "tengo": true,
@@ -1977,7 +2024,8 @@
    "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 185.1a"
   },
   "O-x22cea2e08": {
    "tengo": true,
@@ -1985,7 +2033,8 @@
    "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 185.1a"
   },
   "O-x929b5dfa3": {
    "tengo": true,
@@ -1993,7 +2042,8 @@
    "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 185.2"
   },
   "O-x1606e6042": {
    "tengo": true,
@@ -2001,7 +2051,8 @@
    "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 185.2"
   },
   "O-x305516372": {
    "tengo": true,
@@ -2009,7 +2060,8 @@
    "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 185.2"
   },
   "O-x7bf3b5c37": {
    "tengo": true,
@@ -2017,7 +2069,8 @@
    "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 5\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 185.2"
   },
   "O-xd066553eb": {
    "tengo": true,
@@ -2025,7 +2078,8 @@
    "notas": "Material: Acero bañado en níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 17\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 185.2b"
   },
   "O-xbe0d3afec": {
    "tengo": true,
@@ -2033,98 +2087,112 @@
    "notas": "Material: Aluminio · Peso: 0,60 g · Diámetro: 18,00 mm · Canto: Liso\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 185.2a"
   },
   "O-x4cfb888e8": {
    "tengo": true,
    "notas": "Material: Plata (0,625) · Peso: 3,45 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 168"
   },
   "O-x672ef19a2": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 3,45 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 171"
   },
   "O-x09ee32428": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 3,33 g · Diámetro: 23,00 mm · Canto: Liso con inscripción\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 175"
   },
   "O-x60dd36046": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 181"
   },
   "O-x71768fc80": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 181"
   },
   "O-xfe54a68f0": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 181a"
   },
   "O-xc9db761fe": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 181"
   },
   "O-x3b37ebb6e": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 3,33 g · Diámetro: 23,00 mm · Canto: Liso con inscripción\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 175"
   },
   "O-x33b9ffe7b": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 188.1"
   },
   "O-x873813965": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 188.1"
   },
   "O-x87cb49299": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 3,38 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 188.2"
   },
   "O-xccdcad173": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 188.1"
   },
   "O-x17a69bd37": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 188.1"
   },
   "O-xae37c1a00": {
    "tengo": true,
@@ -2132,14 +2200,16 @@
    "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 188.1"
   },
   "O-x483025dee": {
    "tengo": true,
    "notas": "Material: Acero bañado en níquel · Peso: 3,19 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 188.1a"
   },
   "O-x7f3059237": {
    "tengo": true,
@@ -2147,7 +2217,8 @@
    "notas": "Material: Aluminio · Peso: 1,10 g · Diámetro: 23,00 mm · Canto: Liso\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 188.1b"
   },
   "O-x8d45ec313": {
    "tengo": true,
@@ -2155,14 +2226,16 @@
    "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 188.3"
   },
   "O-x8211325fe": {
    "tengo": true,
    "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 188.3"
   },
   "O-x66c01a2b8": {
    "tengo": true,
@@ -2170,126 +2243,144 @@
    "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 188.3"
   },
   "O-xea71ba3dd": {
    "tengo": false,
    "notas": "Material: Plata · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 143"
   },
   "O-xc3148346f": {
    "tengo": false,
    "notas": "Material: Plata · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 143"
   },
   "O-x158225232": {
    "tengo": false,
    "notas": "Material: Plata · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 143"
   },
   "O-xb580f96cc": {
    "tengo": false,
    "notas": "Material: Plata · Peso: 6,25 g · Diámetro: 25,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 158"
   },
   "O-x507cade4f": {
    "tengo": false,
    "notas": "Material: Plata · Peso: 6,30 g · Diámetro: 25,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 159"
   },
   "O-xe084069b3": {
    "tengo": false,
    "notas": "Material: Plata · Diámetro: 25,00 mm · Canto: Estriado\nVariante: Resellada en moneda de 25 céntimos 1889 / resellada en moneda de 1892 / resellada en moneda de 1893\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 159.1"
   },
   "O-xb1d723843": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 6,25 g · Diámetro: 25,02 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 172"
   },
   "O-xdee55ae78": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 6,10 g · Diámetro: 25,00 mm · Canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 176"
   },
   "O-x6ecf97344": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 6,10 g · Diámetro: 25,00 mm · Canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 176"
   },
   "O-x298f9978e": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 7,00 g · Diámetro: 26,00 mm · Canto: no tiene\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 5000,
    "valor": 7000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 182"
   },
   "O-xeb403d2e8": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: 7 estrellas - B.C.C.R. - alineación medalla\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 189.1"
   },
   "O-xa5ccc1c22": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 189.3"
   },
   "O-x37b2aafbf": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 189.3"
   },
   "O-x201edf229": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 189.2"
   },
   "O-xdea505670": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Fecha pequeña\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 189.2"
   },
   "O-x72b788c96": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Fecha grande\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 189.2"
   },
   "O-x1184f6c99": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 189.3"
   },
   "O-x19ce19ac9": {
    "tengo": true,
@@ -2297,261 +2388,320 @@
    "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 189.3"
   },
   "O-x65ebe4a8c": {
    "tengo": true,
    "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 209.1"
   },
   "O-xef3acce12": {
    "tengo": true,
    "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 209.1"
   },
   "O-x915a849cd": {
    "tengo": true,
    "notas": "Material: Acero inoxidable · Peso: 2,20 g · Diámetro: 18,95 mm · Canto: Liso\nVariante: Barco pequeño letras de la cinta en relieve\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 209.2"
   },
   "O-xfbc18a8dd": {
    "tengo": true,
    "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "km": "KM# 209.1"
   },
   "O-xaf16fb498": {
    "tengo": false,
-   "notas": "Material: Plata · Peso: 12,50 g · Diámetro: 32,00 mm · Canto: Estriado\nVariante: Resellada en moneda de 50 céntimos 1880 / Resellada en moneda de 50 céntimos 1885 / Resellada en moneda de 50 céntimos 1886 / Resellada en moneda de 50 céntimos 1887 / Resellada en moneda de 50 céntimos 1890\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Plata · Peso: 12,50 g · Diámetro: 32,00 mm · Canto: Estriado\nVariante: Resellada en moneda de 50 céntimos 1880 / Resellada en moneda de 50 céntimos 1885 / Resellada en moneda de 50 céntimos 1886 / Resellada en moneda de 50 céntimos 1887 / Resellada en moneda de 50 céntimos 1890\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 163"
   },
   "O-x84d6461b9": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 173"
   },
   "O-xa36bf0bf4": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 177"
   },
   "O-x805ea6f62": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 177"
   },
   "O-x96359cf4e": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 8,66 g · Diámetro: 29,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Acero inoxidable · Peso: 8,66 g · Diámetro: 29,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 186.1"
   },
   "O-xd89a99eed": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 186.1a"
   },
   "O-x5f892cf31": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 10,22 g · Diámetro: 29,00 mm · Canto: BCCR BCCR\nVariante: 7 estrellas en el escudo. Barco pequeño.\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 10,22 g · Diámetro: 29,00 mm · Canto: BCCR BCCR\nVariante: 7 estrellas en el escudo. Barco pequeño.\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 186.2"
   },
   "O-x87a884449": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Cobre-níquel · Peso: 10,22 g · Diámetro: 29,00 mm · Canto: BCCR BCCR\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 10,22 g · Diámetro: 29,00 mm · Canto: BCCR BCCR\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 186.2"
   },
   "O-x5f1dafc47": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 10,22 g · Diámetro: 29,00 mm · Canto: BCCR BCCR\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 10,22 g · Diámetro: 29,00 mm · Canto: BCCR BCCR\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 186.2"
   },
   "O-xd8c67776d": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 9,74 g · Diámetro: 29,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nVariante: Barco grande\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 9,74 g · Diámetro: 29,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nVariante: Barco grande\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 186.3"
   },
   "O-x0ee8c9203": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 10,22 g · Diámetro: 29,00 mm · Canto: BCCR BCCR\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 10,22 g · Diámetro: 29,00 mm · Canto: BCCR BCCR\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 186.2"
   },
   "O-x86ea4d9ba": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 9,74 g · Diámetro: 29,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nVariante: Barco grande\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 9,74 g · Diámetro: 29,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nVariante: Barco grande\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 186.3"
   },
   "O-x0965286c9": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Liso con inscripción liso con letras\nVariante: 7 estrellas - barco pequeño - letras cinta relieve\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Liso con inscripción liso con letras\nVariante: 7 estrellas - barco pequeño - letras cinta relieve\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 186.4"
   },
   "O-x43d5cd4fa": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Barco pequeño\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Barco pequeño\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 186.4"
   },
   "O-xc93062cd0": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 10,22 g · Diámetro: 29,00 mm · Canto: BCCR BCCR\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Cobre-níquel · Peso: 10,22 g · Diámetro: 29,00 mm · Canto: BCCR BCCR\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 186.2"
   },
   "O-x1ad793dad": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R. grandes - Barco grande - Letras de la cinta incusas\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R. grandes - Barco grande - Letras de la cinta incusas\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 210.1"
   },
   "O-x25f569fc3": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R. grandes - Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R. grandes - Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 210.1"
   },
   "O-x7276031e9": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R. grandes - Barco grande - Letras de la cinta incusas\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R. grandes - Barco grande - Letras de la cinta incusas\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 210.1"
   },
   "O-x36a873a9a": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 210.1"
   },
   "O-xc3cc41333": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 210.1"
   },
   "O-xed65f5cf9": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R. grandes - Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R. grandes - Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 210.1"
   },
   "O-xdab5e83ad": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 210.2"
   },
   "O-x693bae8aa": {
    "tengo": true,
    "cantidad": 3,
-   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Acero inoxidable · Peso: 3,20 g · Diámetro: 21,00 mm · Canto: Liso\nVariante: B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 210.2"
   },
   "O-x0085cc125": {
    "tengo": true,
    "cantidad": 3,
-   "notas": "Material: Latón · Peso: 2,78 g · Diámetro: 15,00 mm · Canto: Estriado segmentado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"colon\"."
+   "notas": "Material: Latón · Peso: 2,78 g · Diámetro: 15,00 mm · Canto: Estriado segmentado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "km": "KM# 233"
   },
   "O-x41e23a1e6": {
    "tengo": false,
-   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 139"
   },
   "O-xb9d19fb61": {
    "tengo": false,
-   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 139"
   },
   "O-x4bf5a47e1": {
    "tengo": false,
-   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 139"
   },
   "O-xad736ec69": {
    "tengo": false,
-   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 139"
   },
   "O-x0c52adf69": {
    "tengo": false,
-   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 139"
   },
   "O-xba99eb867": {
    "tengo": false,
-   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 139"
   },
   "O-x3094422ca": {
    "tengo": false,
-   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 139"
   },
   "O-xc393f4c32": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Cobre-níquel · Peso: 15,00 g · Diámetro: 32,00 mm\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Cobre-níquel · Peso: 15,00 g · Diámetro: 32,00 mm\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 183"
   },
   "O-x36fbef0bd": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 12,00 g · Diámetro: 32,00 mm · Canto: Liso con inscripción liso con letras\nVariante: 5 estrellas - barco pequeño - letras cinta relieve\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Acero inoxidable · Peso: 12,00 g · Diámetro: 32,00 mm · Canto: Liso con inscripción liso con letras\nVariante: 5 estrellas - barco pequeño - letras cinta relieve\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 187.1"
   },
   "O-x04086328c": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 14,00 g · Diámetro: 32,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Cobre-níquel · Peso: 14,00 g · Diámetro: 32,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 187.1a"
   },
   "O-x31944087c": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 14,00 g · Diámetro: 32,00 mm · Canto: BCCR-BCCR-BCCR-BCCR BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Cobre-níquel · Peso: 14,00 g · Diámetro: 32,00 mm · Canto: BCCR-BCCR-BCCR-BCCR BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 187.2"
   },
   "O-xe773b84d3": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 14,00 g · Diámetro: 32,00 mm · Canto: BCCR-BCCR-BCCR-BCCR BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Cobre-níquel · Peso: 14,00 g · Diámetro: 32,00 mm · Canto: BCCR-BCCR-BCCR-BCCR BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 187.2"
   },
   "O-x1df2927ed": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 14,00 g · Diámetro: 32,00 mm · Canto: BCCR-BCCR-BCCR-BCCR BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Cobre-níquel · Peso: 14,00 g · Diámetro: 32,00 mm · Canto: BCCR-BCCR-BCCR-BCCR BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 187.2"
   },
   "O-x1b53c3b9e": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 14,00 g · Diámetro: 32,00 mm · Canto: BCCR-BCCR-BCCR-BCCR BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Cobre-níquel · Peso: 14,00 g · Diámetro: 32,00 mm · Canto: BCCR-BCCR-BCCR-BCCR BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 187.2"
   },
   "O-x397d78ae6": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Acero inoxidable · Peso: 4,25 g · Diámetro: 23,10 mm · Canto: Liso\nVariante: 7 estrellas - barco grande - letras cinta grabadas\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Acero inoxidable · Peso: 4,25 g · Diámetro: 23,10 mm · Canto: Liso\nVariante: 7 estrellas - barco grande - letras cinta grabadas\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 211.1"
   },
   "O-xd472064ed": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 4,25 g · Diámetro: 23,10 mm · Canto: Liso\nVariante: Barco grande\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Acero inoxidable · Peso: 4,25 g · Diámetro: 23,10 mm · Canto: Liso\nVariante: Barco grande\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 211.1"
   },
   "O-x016780748": {
    "tengo": true,
    "cantidad": 3,
-   "notas": "Material: Acero inoxidable · Peso: 4,25 g · Diámetro: 23,10 mm · Canto: Liso\nVariante: 7 estrellas - barco pequeño - letras cinta relieve\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"2 colones\"."
+   "notas": "Material: Acero inoxidable · Peso: 4,25 g · Diámetro: 23,10 mm · Canto: Liso\nVariante: 7 estrellas - barco pequeño - letras cinta relieve\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
+   "km": "KM# 211.2"
   },
   "O-x9cc5a1850": {
    "tengo": true,
-   "notas": "Material: Níquel · Peso: 12,10 g · Diámetro: 29,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Níquel · Peso: 12,10 g · Diámetro: 29,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 203"
   },
   "O-x778ff88f8": {
    "tengo": false,
-   "notas": "Material: Acero inoxidable · Peso: 7,25 g · Diámetro: 25,90 mm · Canto: Estriado\nVariante: Barco pequeño-Letras cinta relieve\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Acero inoxidable · Peso: 7,25 g · Diámetro: 25,90 mm · Canto: Estriado\nVariante: Barco pequeño-Letras cinta relieve\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 214.1"
   },
   "O-x33a303652": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 7,25 g · Diámetro: 25,90 mm · Canto: Estriado\nVariante: 7 estrellas - barco grande - letras cinta grabadas\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Acero inoxidable · Peso: 7,25 g · Diámetro: 25,90 mm · Canto: Estriado\nVariante: 7 estrellas - barco grande - letras cinta grabadas\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 214.2"
   },
   "O-xce08bf122": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 7,25 g · Diámetro: 25,90 mm · Canto: Estriado\nVariante: Barco pequeño-Letras cinta relieve\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Acero inoxidable · Peso: 7,25 g · Diámetro: 25,90 mm · Canto: Estriado\nVariante: Barco pequeño-Letras cinta relieve\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 214.1"
   },
   "O-x69f348fad": {
    "tengo": true,
-   "notas": "Material: Acero bañado en níquel · Peso: 7,25 g · Diámetro: 25,90 mm · Canto: Estriado\nVariante: 7 estrellas - barco pequeño - letras cinta grabadas\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Acero bañado en níquel · Peso: 7,25 g · Diámetro: 25,90 mm · Canto: Estriado\nVariante: 7 estrellas - barco pequeño - letras cinta grabadas\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 214.3"
   },
   "O-x150f54e4a": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 4,03 g · Diámetro: 21,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 4,03 g · Diámetro: 21,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 227"
   },
   "O-xd20f2c5d2": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 227a"
   },
   "O-xd7c4d06a4": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras grandes - Volcanes sin humo\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras grandes - Volcanes sin humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 227.1a"
   },
   "O-x109cb7dca": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras gruesas - Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras gruesas - Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 227.2a"
   },
   "O-x7567e6ed2": {
    "tengo": true,
-   "notas": "Material: Aluminio · Peso: 0,90 g · Diámetro: 21,44 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Aluminio · Peso: 0,90 g · Diámetro: 21,44 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 227b"
   },
   "O-xead7a029a": {
    "tengo": true,
-   "notas": "Material: Aluminio · Peso: 0,90 g · Diámetro: 21,44 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Aluminio · Peso: 0,90 g · Diámetro: 21,44 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 227b"
   },
   "O-xce0766872": {
    "tengo": true,
-   "notas": "Material: Aluminio · Peso: 0,90 g · Diámetro: 21,44 mm · Canto: Liso\nVariante: Fecha pequeña - Nuevo diseño del escudo\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Aluminio · Peso: 0,90 g · Diámetro: 21,44 mm · Canto: Liso\nVariante: Fecha pequeña - Nuevo diseño del escudo\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 227b"
   },
   "O-x561dfed7f": {
    "tengo": true,
-   "notas": "Material: Aluminio · Peso: 0,90 g · Diámetro: 21,44 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
+   "notas": "Material: Aluminio · Peso: 0,90 g · Diámetro: 21,44 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
+   "km": "KM# 227b"
   },
   "O-xea6d56c8d": {
    "tengo": true,
@@ -2611,45 +2761,55 @@
   },
   "O-x39370c2df": {
    "tengo": true,
-   "notas": "Material: Níquel · Peso: 20,10 g · Diámetro: 36,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"20 colones\"."
+   "notas": "Material: Níquel · Peso: 20,10 g · Diámetro: 36,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"20 colones\".",
+   "km": "KM# 205"
   },
   "O-x6d2f5097c": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Acero inoxidable · Peso: 9,80 g · Diámetro: 31,25 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"20 colones\"."
+   "notas": "Material: Acero inoxidable · Peso: 9,80 g · Diámetro: 31,25 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"20 colones\".",
+   "km": "KM# 216.1"
   },
   "O-xc70db8054": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Acero inoxidable · Peso: 9,70 g · Diámetro: 31,25 mm · Canto: Estriado\nVariante: Letras de la cinta incusas\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"20 colones\"."
+   "notas": "Material: Acero inoxidable · Peso: 9,70 g · Diámetro: 31,25 mm · Canto: Estriado\nVariante: Letras de la cinta incusas\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"20 colones\".",
+   "km": "KM# 216.2"
   },
   "O-x98f975ad2": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 9,70 g · Diámetro: 31,25 mm · Canto: Estriado\nVariante: Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"20 colones\"."
+   "notas": "Material: Acero inoxidable · Peso: 9,70 g · Diámetro: 31,25 mm · Canto: Estriado\nVariante: Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"20 colones\".",
+   "km": "KM# 216.3"
   },
   "O-x1562341e0": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"25 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"25 colones\".",
+   "km": "KM# 229"
   },
   "O-xb2a0db2d6": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"25 colones\"."
+   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"25 colones\".",
+   "km": "KM# 229a"
   },
   "O-xd4802a3a4": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"25 colones\"."
+   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"25 colones\".",
+   "km": "KM# 229a"
   },
   "O-x847ed7e7c": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\"."
+   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\".",
+   "km": "KM# 229b"
   },
   "O-xa8ced4273": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\".",
+   "km": "KM# 229c"
   },
   "O-x19b5a2c7f": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\".",
+   "km": "KM# 229c"
   },
   "O-x6b8c69a51": {
    "tengo": true,
@@ -2657,47 +2817,58 @@
   },
   "O-x003714af8": {
    "tengo": false,
-   "notas": "Material: Plata · Peso: 28,28 g · Diámetro: 38,60 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 colones\"."
+   "notas": "Material: Plata · Peso: 28,28 g · Diámetro: 38,60 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
+   "km": "KM# 200a"
   },
   "O-xbec1cd63b": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nVariante: Letras grandes\nFuente: Excel monedas costa rica, hoja \"50 colones\"."
+   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nVariante: Letras grandes\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
+   "km": "KM# 231"
   },
   "O-x1d00c2792": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nVariante: letras pequeñas\nFuente: Excel monedas costa rica, hoja \"50 colones\"."
+   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nVariante: letras pequeñas\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
+   "km": "KM# 231.1"
   },
   "O-xeb9bba39d": {
    "tengo": true,
-   "notas": "Material: Aluminio-bronce · Peso: 7,92 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\"."
+   "notas": "Material: Aluminio-bronce · Peso: 7,92 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
+   "km": "KM# 231.1a"
   },
   "O-x97e4c2697": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
+   "km": "KM# 231.1b"
   },
   "O-x0357cfcad": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
+   "km": "KM# 231.1b"
   },
   "O-x4ff6ed81f": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
+   "km": "KM# 231.1b"
   },
   "O-xead69f4e3": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
+   "km": "KM# 231.1b"
   },
   "O-x6907c6691": {
    "tengo": false,
-   "notas": "Material: Plata (0,500) · Peso: 31,65 g · Diámetro: 42,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
+   "notas": "Material: Plata (0,500) · Peso: 31,65 g · Diámetro: 42,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 201"
   },
   "O-x322208290": {
    "tengo": false,
-   "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
+   "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 206"
   },
   "O-x41fa83d24": {
    "tengo": true,
-   "notas": "Material: Níquel · Peso: 22,68 g · Diámetro: 37,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
+   "notas": "Material: Níquel · Peso: 22,68 g · Diámetro: 37,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 224"
   },
   "O-xc0213beb3": {
    "tengo": true,
@@ -2705,64 +2876,79 @@
   },
   "O-x55e57c564": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
+   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 230a"
   },
   "O-x6ddfa1ed1": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
+   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 230a"
   },
   "O-xd662fda1c": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nVariante: Letras grandes - no magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
+   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nVariante: Letras grandes - no magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 230.1a"
   },
   "O-x0250cf030": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
+   "notas": "Material: Latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 240"
   },
   "O-x9074baa28": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 240a"
   },
   "O-xdf61763bf": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 240a"
   },
   "O-x51beaee62": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 240a"
   },
   "O-xc36b26f4f": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 240a"
   },
   "O-xe27fb207b": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Latón · Peso: 9,80 g · Diámetro: 31,50 mm · Canto: Liso\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"500 colones\"."
+   "notas": "Material: Latón · Peso: 9,80 g · Diámetro: 31,50 mm · Canto: Liso\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "km": "KM# 236"
   },
   "O-x367dc9a8d": {
    "tengo": true,
-   "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Números gruesos - no magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\"."
+   "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Números gruesos - no magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "km": "KM# 239.1"
   },
   "O-x7a50c185a": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: No magnética - muy rara\nFuente: Excel monedas costa rica, hoja \"500 colones\"."
+   "notas": "Material: Latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: No magnética - muy rara\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "km": "KM# 239.2"
   },
   "O-x23d1289ee": {
    "tengo": true,
-   "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"500 colones\"."
+   "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "km": "KM# 239.1"
   },
   "O-x4ffdc79ec": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "km": "KM# 239.1a"
   },
   "O-x69eae3145": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: No magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: No magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "km": "KM# 239.1a"
   },
   "O-x39afa064d": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\"."
+   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "km": "KM# 239.1a"
   },
   "O-x04c24733d": {
    "tengo": true,
@@ -2774,11 +2960,13 @@
   },
   "O-x2678c4f97": {
    "tengo": true,
-   "notas": "Material: Oro (0,900) · Peso: 33,44 g · Diámetro: 33,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"1500 colones\"."
+   "notas": "Material: Oro (0,900) · Peso: 33,44 g · Diámetro: 33,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"1500 colones\".",
+   "km": "KM# 202"
   },
   "O-xe41776751": {
    "tengo": false,
-   "notas": "Está en la hoja \"me faltan\".\nFuente: Excel monedas costa rica."
+   "notas": "Está en la hoja \"me faltan\".\nFuente: Excel monedas costa rica.",
+   "km": "KM# 239.2"
   },
   "O-x903a1aa01": {
    "tengo": false,

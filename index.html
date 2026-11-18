@@ -329,6 +329,7 @@
       <label>Nombre<input type="text" id="fNombre"></label>
       <label>Categoría<input type="text" id="fCategoria" list="listaCategorias"></label>
       <label>Cantidad<input type="text" inputmode="numeric" id="fCantidad" placeholder="1"></label>
+      <label>Número KM (catálogo)<input type="text" id="fKm" placeholder="Ej. KM# 145"></label>
     </div>
     <datalist id="listaCategorias"></datalist>
     <label class="linea" style="margin-top:12px"><input type="checkbox" id="fTengo"> La tengo en la colección</label>
@@ -796,6 +797,7 @@
     $('vRotulo').textContent = esValor ? 'Valor actual de la moneda' : 'Precio al que la compré';
     $('vPrecio').textContent = monto ? fmt(monto) : 'Sin precio todavía'; $('vPrecio').classList.toggle('vacio', !monto);
     const det = $('vDetalle'); det.textContent = '';
+    renglon(det, 'Catálogo', r.km);
     if (esValor) { renglon(det, 'Fecha del valor', fecha(r.fechaValor)); renglon(det, 'Fuente', r.fuenteValor); if (r.valor && r.costo) renglon(det, 'Frente a lo que costó', conSigno(r.valor - r.costo)); }
     else { renglon(det, 'Fecha de compra', fecha(r.fechaCompra)); renglon(det, 'Comprada a', r.origen); if (r.valor && r.costo) renglon(det, 'Valor actual', fmt(r.valor)); }
     const est = $('vEstado'); est.textContent = '';
@@ -867,7 +869,7 @@
   window.addEventListener('resize', () => { if ($('grande').style.display === 'flex') ajustarVisor(); });
 
   // ---------- pantalla de captura
-  const campos = { fValor: 'valor', fFechaValor: 'fechaValor', fFuenteValor: 'fuenteValor', fCosto: 'costo', fFechaCompra: 'fechaCompra', fOrigen: 'origen', fPrecio: 'precioVenta', fFechaVenta: 'fechaVenta', fComprador: 'comprador', fNotas: 'notas' };
+  const campos = { fKm: 'km', fValor: 'valor', fFechaValor: 'fechaValor', fFuenteValor: 'fuenteValor', fCosto: 'costo', fFechaCompra: 'fechaCompra', fOrigen: 'origen', fPrecio: 'precioVenta', fFechaVenta: 'fechaVenta', fComprador: 'comprador', fNotas: 'notas' };
   const esDinero = k => k === 'costo' || k === 'precioVenta' || k === 'valor';
   const GRUPOS = { fotos: 'fotosPieza', fotosCompra: 'fotosCompra' };
   let borrador = null, grupoActivo = 'fotos', nueva = false;
@@ -1055,10 +1057,10 @@
   document.querySelectorAll('input[name=fl]').forEach(r => r.addEventListener('change', pintarLista));
   $('lCsv').onclick = () => {
     const q = s => '"' + String(s === undefined ? '' : s).replace(/"/g, '""') + '"';
-    const lineas = [['Colección', 'Moneda', 'Año', 'Tipo', 'Serie o calidad', 'Tiraje', 'Cantidad', 'La tengo', 'Vendida', 'Valor actual (unidad)', 'Costo (unidad)', 'Fecha compra', 'Comprada a', 'Precio venta', 'Fecha venta', 'Vendida a', 'Ganancia', 'Fotos', 'Notas'].map(q).join(';')];
+    const lineas = [['Colección', 'Moneda', 'Año', 'Tipo', 'Serie o calidad', 'Tiraje', 'Cantidad', 'KM', 'La tengo', 'Vendida', 'Valor actual (unidad)', 'Costo (unidad)', 'Fecha compra', 'Comprada a', 'Precio venta', 'Fecha venta', 'Vendida a', 'Ganancia', 'Fotos', 'Notas'].map(q).join(';')];
     for (const p of todas()) {
       const r = reg(p.id);
-      lineas.push([p.coleccion, p.moneda, p.anio, p.tipo, serieDe(p.id) || p.calidad || '', tirajeDe(p.id), cant(p.id), tengo(p.id) ? 'Sí' : 'No', r.vendida ? 'Sí' : 'No', r.valor || '', r.costo || '', r.fechaCompra, r.origen, r.precioVenta || '', r.fechaVenta, r.comprador, r.vendida ? (r.precioVenta || 0) - (r.costo || 0) * cant(p.id) : '', nFotos(p.id), r.notas].map(q).join(';'));
+      lineas.push([p.coleccion, p.moneda, p.anio, p.tipo, serieDe(p.id) || p.calidad || '', tirajeDe(p.id), cant(p.id), r.km || '', tengo(p.id) ? 'Sí' : 'No', r.vendida ? 'Sí' : 'No', r.valor || '', r.costo || '', r.fechaCompra, r.origen, r.precioVenta || '', r.fechaVenta, r.comprador, r.vendida ? (r.precioVenta || 0) - (r.costo || 0) * cant(p.id) : '', nFotos(p.id), r.notas].map(q).join(';'));
     }
     const a = el('a'); a.href = URL.createObjectURL(new Blob(['﻿' + lineas.join('\r\n')], { type: 'text/csv' }));
     a.download = 'inventario-monedas-' + hoy() + '.csv'; a.click(); URL.revokeObjectURL(a.href);
@@ -1085,7 +1087,7 @@
       else if (rf) { const im = el('img', 'ref'); im.alt = 'Imagen de referencia'; im.loading = 'lazy'; ponerRef(im, rf); ph.append(im, el('span', 'marcaRef', 'Referencia · falta mi foto')); }
       else ph.textContent = 'Sin foto';
       const tx = el('div', 'tx');
-      tx.append(el('span', '', p.moneda), el('small', '', p.coleccion + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '')));
+      tx.append(el('span', '', p.moneda), el('small', '', p.coleccion + (reg(p.id).km ? ' · ' + reg(p.id).km : '') + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '')));
       const precio = el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : r.valor ? fmt(r.valor) + (cant(p.id) > 1 ? ' c/u' : '') : 'Sin precio');
       tx.appendChild(precio);
       t.append(ph, tx);
