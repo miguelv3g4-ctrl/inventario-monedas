@@ -139,6 +139,10 @@
   #vRefInfo { color: #8a8170; font-size: 12px; margin-top: 6px; line-height: 1.4; }
   #vRefInfo a { color: var(--oro2); }
   #vMinis { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
+  #vMinis img { position: relative; }
+  #vMinis span.mini { display: inline-block; position: relative; width: 54px; height: 54px; overflow: hidden; border: 1px solid var(--linea); border-radius: 3px; cursor: pointer; }
+  #vMinis span.mini.activa { border-color: var(--oro); }
+  #vMinis span.mini img { border: 0; }
   #vMinis img { width: 54px; height: 54px; object-fit: cover; border: 1px solid var(--linea); border-radius: 3px; cursor: pointer; }
   #vMinis img.activa { border-color: var(--oro); }
   .rotulo { color: var(--gris); font-size: 13px; text-transform: uppercase; letter-spacing: .06em; }
@@ -183,6 +187,7 @@
   .tarjeta { background: #0b0a09; border: 1px solid var(--linea); border-radius: 6px; overflow: hidden; cursor: pointer; display: flex; flex-direction: column; }
   .tarjeta:hover, .tarjeta:focus-visible { border-color: var(--oro); outline: none; }
   .tarjeta .ph { aspect-ratio: 4 / 3; background: #000; display: flex; align-items: center; justify-content: center; color: #6b6250; font-size: 13px; }
+  .tarjeta .ph { overflow: hidden; }
   .tarjeta .ph img { width: 100%; height: 100%; object-fit: cover; }
   .tarjeta .tx { padding: 8px 10px; font-size: 14px; color: #e8e2d0; display: flex; flex-direction: column; gap: 3px; }
   .tarjeta .tx b { color: var(--oro); font-weight: normal; }
@@ -413,7 +418,7 @@
   'use strict';
   const H = window.HOJA, $ = id => document.getElementById(id);
   const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt !== undefined) e.textContent = txt; return e; };
-  let datos = { piezas: {}, sueltas: {}, otras: [] };
+  let datos = { piezas: {}, sueltas: {}, otras: [], giros: {} };
   let modo = 'valor'; // 'valor' = valor de la coleccion, 'compra' = inventario
   try { if (localStorage.getItem('modoInventario') === 'compra') modo = 'compra'; } catch (e) {}
 
@@ -521,7 +526,7 @@
         const rem = await leerRemoto(), mios = datos;
         const otras = (rem.datos.otras || []).slice();
         for (const o of mios.otras || []) { const i = otras.findIndex(x => x.id === o.id); if (i < 0) otras.push(o); else if (sucias.has(o.id)) otras[i] = o; }
-        datos = { piezas: rem.datos.piezas || {}, sueltas: Object.assign({}, rem.datos.sueltas, mios.sueltas), otras };
+        datos = { piezas: rem.datos.piezas || {}, sueltas: Object.assign({}, rem.datos.sueltas, mios.sueltas), otras, giros: Object.assign({}, rem.datos.giros, mios.giros) };
         for (const id of sucias) { if (mios.piezas[id]) datos.piezas[id] = mios.piezas[id]; else delete datos.piezas[id]; }
         sha = rem.sha; armarBase(); continue;
       }
@@ -782,7 +787,7 @@
     caja.textContent = ''; minis.textContent = '';
     const rf = refDe(id), info = $('vRefInfo'); info.textContent = '';
     if (!fotos.length && rf) {
-      const im = el('img'); im.alt = 'Imagen de referencia'; ponerRef(im, rf); im.onclick = () => im.src && verGrande(im.src);
+      const im = el('img'); im.alt = 'Imagen de referencia'; ponerRef(im, rf); aplicarGiro(im, rf, 4 / 3); im.onclick = () => im.src && verGrande(im.src, rf);
       caja.append(im, el('span', 'marcaRef', 'Imagen de referencia · falta tu foto'));
       const c = rf.startsWith('privado:') ? { fuente: 'captura de catálogo de tu Excel de monedas (privada: solo se ve con tu clave)' } : CREDITOS.imagenes[rf] || {};
       info.append(c.fuente === 'Wikimedia Commons' ? 'Referencia de Wikimedia Commons' + (c.autor ? ' · ' + c.autor : '') + (c.licencia ? ' · ' + c.licencia : '') + ' · ' : (c.fuente ? 'Referencia: ' + c.fuente + ' · ' : ''));
@@ -792,9 +797,10 @@
     if (!fotos.length && !rf) caja.textContent = esValor ? 'Sin foto de la pieza todavía' : 'Sin foto de inventario todavía';
     else if (fotos.length) {
       const grande = el('img'); grande.alt = 'Foto de la pieza'; caja.appendChild(grande);
-      grande.onclick = () => verGrande(grande.src);
-      const ver = i => { ponerFoto(grande, fotos[i]); [...minis.children].forEach((m, j) => m.classList.toggle('activa', i === j)); };
-      if (fotos.length > 1) fotos.forEach((n, i) => { const m = el('img'); m.alt = 'Foto ' + (i + 1); ponerFoto(m, n); m.onclick = () => ver(i); minis.appendChild(m); });
+      let vista = 0;
+      grande.onclick = () => verGrande(grande.src, fotos[vista]);
+      const ver = i => { vista = i; ponerFoto(grande, fotos[i]); aplicarGiro(grande, fotos[i], 4 / 3); [...minis.children].forEach((m, j) => m.classList.toggle('activa', i === j)); };
+      if (fotos.length > 1) fotos.forEach((n, i) => { const c = el('span', 'mini'), m = el('img'); m.alt = 'Foto ' + (i + 1); ponerFoto(m, n); aplicarGiro(m, n, 1); c.appendChild(m); c.onclick = () => ver(i); minis.appendChild(c); });
       ver(0);
     }
     const monto = esValor ? r.valor : r.costo;
@@ -836,8 +842,32 @@
     const L = $('gLienzo').getBoundingClientRect(), px = (cx === undefined ? L.width / 2 : cx) - L.width / 2, py = (cy === undefined ? L.height / 2 : cy) - L.height / 2;
     const k = nuevo / visor.zoom; visor.x = px - (px - visor.x) * k; visor.y = py - (py - visor.y) * k; visor.zoom = nuevo; aplicarVisor();
   }
-  function verGrande(src) {
-    const im = $('gImg'); visor.giro = 0;
+  // ---------- giro guardado de cada foto (regla: al girar en el visor queda girada en toda la app)
+  const giroDe = clave => ((((datos.giros || {})[clave] || 0) % 360) + 360) % 360;
+  function aplicarGiro(img, clave, r) {
+    const g = giroDe(clave);
+    img.style.position = ''; img.style.left = ''; img.style.top = ''; img.style.width = ''; img.style.height = ''; img.style.transform = '';
+    if (!g) return;
+    if (g === 180) { img.style.transform = 'rotate(180deg)'; return; }
+    // de costado: la imagen se dimensiona al reves y se gira en el centro de su caja
+    img.style.position = 'absolute'; img.style.left = '50%'; img.style.top = '50%';
+    img.style.width = (100 / r) + '%'; img.style.height = (100 * r) + '%';
+    img.style.transform = 'translate(-50%, -50%) rotate(' + g + 'deg)';
+  }
+  let relojGiro = null;
+  function guardarGiro(clave, grados) {
+    if (!clave || !conectado()) return;
+    datos.giros = datos.giros || {}; const g = ((grados % 360) + 360) % 360;
+    if (g) datos.giros[clave] = g; else delete datos.giros[clave];
+    clearTimeout(relojGiro); estado('Sin guardar');
+    relojGiro = setTimeout(() => guardarDatos('Giro de foto').catch(e => aviso('No se pudo guardar el giro: ' + e.message)), 1500);
+    // se ve girada de una vez en la ficha y en las tarjetas
+    if (actual && $('vFicha').classList.contains('abierta')) pintarFicha();
+    if ($('seccion').classList.contains('abierta')) pintarSeccion();
+    if ($('vOtras').classList.contains('abierta')) pintarOtras();
+  }
+  function verGrande(src, clave) {
+    const im = $('gImg'); visor.clave = clave || ''; visor.giro = giroDe(visor.clave);
     im.onload = ajustarVisor; im.src = src;
     $('grande').style.display = 'flex';
     if (im.complete && im.naturalWidth) ajustarVisor();
@@ -845,7 +875,7 @@
   const cerrarVisor = () => { $('grande').style.display = 'none'; };
   $('gBarra').addEventListener('click', e => {
     const a = e.target.closest('button') && e.target.closest('button').dataset.a; if (!a) return;
-    if (a === 'izq' || a === 'der') { visor.giro += a === 'der' ? 90 : -90; const z = visor.zoom; ajustarVisor(); if (z !== 1) zoomEn(z); }
+    if (a === 'izq' || a === 'der') { visor.giro += a === 'der' ? 90 : -90; const z = visor.zoom; ajustarVisor(); if (z !== 1) zoomEn(z); guardarGiro(visor.clave, visor.giro); }
     else if (a === 'mas') zoomEn(visor.zoom * 1.5);
     else if (a === 'menos') zoomEn(visor.zoom / 1.5);
     else if (a === 'ajustar') ajustarVisor();
@@ -868,7 +898,7 @@
     if ($('grande').style.display !== 'flex') return;
     if (e.key === '+' || e.key === '=') zoomEn(visor.zoom * 1.5);
     else if (e.key === '-') zoomEn(visor.zoom / 1.5);
-    else if (e.key === 'r' || e.key === 'R') { visor.giro += 90; ajustarVisor(); }
+    else if (e.key === 'r' || e.key === 'R') { visor.giro += 90; ajustarVisor(); guardarGiro(visor.clave, visor.giro); }
   });
   window.addEventListener('resize', () => { if ($('grande').style.display === 'flex') ajustarVisor(); });
 
@@ -1009,7 +1039,7 @@
   const abrirConexion = () => mostrarPortada();
   async function cargar() {
     const rem = await leerRemoto();
-    datos = { piezas: rem.datos.piezas || {}, sueltas: rem.datos.sueltas || {}, otras: rem.datos.otras || [] }; sha = rem.sha;
+    datos = { piezas: rem.datos.piezas || {}, sueltas: rem.datos.sueltas || {}, otras: rem.datos.otras || [], giros: rem.datos.giros || {} }; sha = rem.sha;
     armarBase(); cargado = true; pintarTodo();
     aviso(rem.soloVer ? 'Por ahora solo se puede ver: falta conectar GitHub en Cloudflare para poder guardar cambios.' : '');
     if (actual && $('vFicha').classList.contains('abierta')) pintarFicha();
@@ -1087,8 +1117,8 @@
       const r = reg(p.id), t = el('div', 'tarjeta'), ph = el('div', 'ph'), f = fotosDe(p.id, 'fotos')[0] || fotosDe(p.id, 'fotosCompra')[0];
       t.tabIndex = 0; t.setAttribute('role', 'button');
       const rf = refDe(p.id);
-      if (f) { const im = el('img'); im.alt = ''; im.loading = 'lazy'; ponerFoto(im, f); ph.appendChild(im); }
-      else if (rf) { const im = el('img', 'ref'); im.alt = 'Imagen de referencia'; im.loading = 'lazy'; ponerRef(im, rf); ph.append(im, el('span', 'marcaRef', 'Referencia · falta mi foto')); }
+      if (f) { const im = el('img'); im.alt = ''; im.loading = 'lazy'; ponerFoto(im, f); aplicarGiro(im, f, 4 / 3); ph.appendChild(im); }
+      else if (rf) { const im = el('img', 'ref'); im.alt = 'Imagen de referencia'; im.loading = 'lazy'; ponerRef(im, rf); aplicarGiro(im, rf, 4 / 3); ph.append(im, el('span', 'marcaRef', 'Referencia · falta mi foto')); }
       else ph.textContent = 'Sin foto';
       const tx = el('div', 'tx');
       tx.append(el('span', '', p.moneda), el('small', '', p.coleccion + (reg(p.id).km ? ' · ' + reg(p.id).km : '') + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '')));
