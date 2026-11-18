@@ -1,0 +1,217 @@
+{
+ "hoja": {
+  "200 años de Independencia": "referencias/hoja-200-anos-de-independencia.jpg",
+  "175 años de Fundacion de la Republica": "referencias/hoja-175-anos-de-fundacion-de-la-republica.jpg",
+  "75 años de Abolicion del Ejercito": "referencias/hoja-75-anos-de-abolicion-del-ejercito.jpg",
+  "200 años de Anexion del Partido de Nicoya": "referencias/hoja-200-anos-de-anexion-del-partido-de-nicoya.jpg",
+  "Mariposa Amorfo": "referencias/hoja-mariposa-amorfo.jpg",
+  "Rana Calzonuda": "referencias/hoja-rana-calzonuda.jpg",
+  "Tortuga Carey": "referencias/hoja-tortuga-carey.jpg",
+  "Lagartija o Anolis": "referencias/hoja-lagartija-o-anolis.jpg",
+  "Cangrejo Marinera": "referencias/hoja-cangrejo-marinera.jpg",
+  "Conejo de Monte": "referencias/hoja-conejo-de-monte.jpg",
+  "Provincia de Limon": "referencias/hoja-provincia-de-limon.jpg",
+  "Provincia de Puntarenas": "referencias/hoja-provincia-de-puntarenas.jpg",
+  "Provincia de Guanacaste": "referencias/hoja-provincia-de-guanacaste.jpg",
+  "Provincia de Heredia": "referencias/hoja-provincia-de-heredia.jpg",
+  "Provincia de Cartago": "referencias/hoja-provincia-de-cartago.jpg",
+  "Provincia de Alajuela": "referencias/hoja-provincia-de-alajuela.jpg",
+  "Provincia de San Jose": "referencias/hoja-provincia-de-san-jose.jpg",
+  "Swing Criollo": "referencias/hoja-swing-criollo.jpg",
+  "Boyero": "referencias/hoja-boyero.jpg",
+  "Calipso": "referencias/hoja-calipso.jpg",
+  "Cimarrona": "referencias/hoja-cimarrona.jpg",
+  "Toros Tope": "referencias/hoja-toros-tope.jpg",
+  "Ceramica Chorotega": "referencias/hoja-ceramica-chorotega.jpg"
+ },
+ "imagenes": {
+  "referencias/billete-10-colones-serie-d.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Billete 10 colones serie D",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Billete_10_colones_serie_D.png",
+   "autor": "Banco Central de Costa Rica",
+   "licencia": "Public domain"
+  },
+  "referencias/billete-10-colones-serie-c.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Billete 10 colones serie C",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Billete_10_colones_serie_C.png",
+   "autor": "Banco Central de Costa Rica",
+   "licencia": "Public domain"
+  },
+  "referencias/billete-20-colones-serie-c.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Billete 20 colones, serie C",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Billete_20_colones,_serie_C.png",
+   "autor": "Banco Central de Costa Rica",
+   "licencia": "Public domain"
+  },
+  "referencias/billete-20-colones-serie-z.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Billete 20 colones, serie Z",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Billete_20_colones,_serie_Z.png",
+   "autor": "Banco Central de Costa Rica",
+   "licencia": "Public domain"
+  },
+  "referencias/billete-100-colones-serie-g.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Billete 100 colones serie G",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Billete_100_colones_serie_G.png",
+   "autor": "Banco Central de Costa Rica",
+   "licencia": "Public domain"
+  },
+  "referencias/billete-100-colones-serie-d.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Billete 100 colones serie D",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Billete_100_colones_serie_D.png",
+   "autor": "Banco Central de Costa Rica",
+   "licencia": "Public domain"
+  },
+  "referencias/billete-5-colones-1968-1992.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Billete 5 colones 1968-1992",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Billete_5_colones_1968-1992.jpg",
+   "autor": "Banco Central de Costa Rica",
+   "licencia": "Public domain"
+  },
+  "referencias/billete-2-colones-serie-c.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Billete 2 colones BNCR C",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Billete_2_colones_BNCR_C.png",
+   "autor": "Banco Nacional de Costa Rica",
+   "licencia": "Public domain"
+  },
+  "referencias/billete-2-colones-serie-f.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Billete 2 colones BNCR F 1946",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Billete_2_colones_BNCR_F_1946.png",
+   "autor": "Banco Nacional de Costa Rica",
+   "licencia": "Public domain"
+  },
+  "referencias/moneda-5-centavos-1892.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Monnaie - Costa-Rica, République, 5 centavos, 1892 - btv1b113467929 (1 of 2)",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Monnaie_-_Costa-Rica,_R%C3%A9publique,_5_centavos,_1892_-_btv1b113467929_(1_of_2).jpg",
+   "autor": "",
+   "licencia": "Public domain"
+  },
+  "referencias/moneda-25-centavos-1887.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Monnaie - Costa-Rica, République, 25 centavos, 1887 - btv1b11346791v (1 of 2)",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Monnaie_-_Costa-Rica,_R%C3%A9publique,_25_centavos,_1887_-_btv1b11346791v_(1_of_2).jpg",
+   "autor": "",
+   "licencia": "Public domain"
+  },
+  "referencias/moneda-25-centavos-1875.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Monnaie - Costa-Rica, République, 25 centavos, 1875 - btv1b11346790d (1 of 2)",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Monnaie_-_Costa-Rica,_R%C3%A9publique,_25_centavos,_1875_-_btv1b11346790d_(1_of_2).jpg",
+   "autor": "",
+   "licencia": "Public domain"
+  },
+  "referencias/moneda-50-centavos-1890.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Monnaie - Costa-Rica, République, 50 centavos, 1890 - btv1b113467891 (1 of 2)",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Monnaie_-_Costa-Rica,_R%C3%A9publique,_50_centavos,_1890_-_btv1b113467891_(1_of_2).jpg",
+   "autor": "",
+   "licencia": "Public domain"
+  },
+  "referencias/moneda-2-colones-oro-1900.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Monnaie - Costa-Rica, République, 2 colones, 1900 - btv1b11346788k (1 of 2)",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Monnaie_-_Costa-Rica,_R%C3%A9publique,_2_colones,_1900_-_btv1b11346788k_(1_of_2).jpg",
+   "autor": "",
+   "licencia": "Public domain"
+  },
+  "referencias/moneda-25-centavos-1889.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Moneda de Costa Rica, data del año 1889 Veinticinco Centavos",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Moneda_de_Costa_Rica,_data_del_a%C3%B1o_1889_Veinticinco_Centavos.jpg",
+   "autor": "Josecv82",
+   "licencia": "CC BY 4.0"
+  },
+  "referencias/moneda-plata-1889.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "MONEDAS DE COSTA RICA",
+   "pagina": "https://commons.wikimedia.org/wiki/File:MONEDAS_DE_COSTA_RICA.jpg",
+   "autor": "Josecv82",
+   "licencia": "CC BY-SA 4.0"
+  },
+  "referencias/museo-numismatico-bccr.jpg": {
+   "fuente": "Wikimedia Commons",
+   "titulo": "Real. Museo Numismático. Costa Rica",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Real._Museo_Numism%C3%A1tico._Costa_Rica.JPG",
+   "autor": "Rodtico21",
+   "licencia": "CC BY-SA 4.0"
+  },
+  "referencias/hoja-200-anos-de-independencia.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-175-anos-de-fundacion-de-la-republica.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-75-anos-de-abolicion-del-ejercito.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-200-anos-de-anexion-del-partido-de-nicoya.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-mariposa-amorfo.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-rana-calzonuda.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-tortuga-carey.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-lagartija-o-anolis.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-cangrejo-marinera.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-conejo-de-monte.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-provincia-de-limon.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-provincia-de-puntarenas.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-provincia-de-guanacaste.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-provincia-de-heredia.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-provincia-de-cartago.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-provincia-de-alajuela.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-provincia-de-san-jose.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-swing-criollo.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-boyero.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-calipso.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-cimarrona.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-toros-tope.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  },
+  "referencias/hoja-ceramica-chorotega.jpg": {
+   "fuente": "Hoja \"IMAGEN INVENTARIO\" del Excel de monedas conmemorativas"
+  }
+ }
+}

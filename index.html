@@ -58,6 +58,7 @@
   #mTotal .monto { color: var(--oro); font: 40px "Copperplate Gothic Bold", Copperplate, Georgia, serif; font-variant-numeric: tabular-nums; margin: 4px 0 6px; line-height: 1.1; }
   #mTotal .det { color: var(--gris); font-size: 14px; }
   #mTotal .det b { color: var(--oro); font-weight: normal; }
+  .boton-seccion { background-size: cover !important; background-position: center !important; text-shadow: 0 1px 3px #000, 0 0 8px #000; }
   .boton-seccion { background: linear-gradient(180deg, #1d1810, #0b0a09); border: 1px solid var(--oro2); border-radius: 8px; padding: 16px 16px 14px; cursor: pointer; color: var(--oro); font: inherit; text-align: left; display: flex; flex-direction: column; gap: 8px; min-height: 108px; }
   .boton-seccion:hover, .boton-seccion:focus-visible { border-color: var(--oro); background: linear-gradient(180deg, #2a2213, #0b0a09); outline: none; }
   .boton-seccion .nom { font: 17px "Copperplate Gothic Bold", Copperplate, Georgia, serif; line-height: 1.25; }
@@ -127,6 +128,12 @@
   #vCuerpo { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 18px; margin-top: 14px; }
   #vFoto { background: #000; border: 1px solid var(--linea); border-radius: 4px; aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; color: #6b6250; font-size: 14px; text-align: center; overflow: hidden; }
   #vFoto img { width: 100%; height: 100%; object-fit: contain; cursor: zoom-in; }
+  #vFoto { position: relative; }
+  #vFoto .marcaRef, .tarjeta .marcaRef { position: absolute; left: 6px; bottom: 6px; background: rgba(0, 0, 0, .8); color: #ffcf7a; border: 1px solid #8a6a2a; border-radius: 4px; padding: 2px 7px; font-size: 12px; pointer-events: none; }
+  .tarjeta .ph { position: relative; }
+  .tarjeta .ph img.ref { opacity: .8; filter: saturate(.85); }
+  #vRefInfo { color: #8a8170; font-size: 12px; margin-top: 6px; line-height: 1.4; }
+  #vRefInfo a { color: var(--oro2); }
   #vMinis { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
   #vMinis img { width: 54px; height: 54px; object-fit: cover; border: 1px solid var(--linea); border-radius: 3px; cursor: pointer; }
   #vMinis img.activa { border-color: var(--oro); }
@@ -294,7 +301,7 @@
     </div>
     <div class="pest"><button id="pValor">Valor de la colección</button><button id="pCompra">Inventario (compra)</button></div>
     <div id="vCuerpo">
-      <div><div id="vFoto"></div><div id="vMinis"></div></div>
+      <div><div id="vFoto"></div><div id="vMinis"></div><div id="vRefInfo"></div></div>
       <div>
         <div class="rotulo" id="vRotulo"></div>
         <div id="vPrecio"></div>
@@ -422,22 +429,26 @@
   // base: las piezas de la hoja y las "otras piezas" (billetes, sets...) guardadas en datos.otras
   let base = {};
   const SECCIONES = [
-    { id: 'conmemorativas', nombre: 'Monedas conmemorativas nuevo cono monetario' },
-    { id: 'billetes', nombre: 'Billetes Costa Rica' },
-    { id: 'antano', nombre: 'Colecciones de antaño', desc: 'Escudos, reales, centavos, céntimos y los primeros colones antes de los dorados' },
-    { id: 'cono-1995-2021', nombre: 'Cono monetario 1995 a 2021' },
-    { id: 'plata', nombre: 'Monedas conmemorativas plata' },
-    { id: 'replicas', nombre: 'Conmemorativas réplicas' },
-    { id: 'coleccionadores-acrilicos', nombre: 'Coleccionadores acrílicos' },
-    { id: 'museo-bccr', nombre: 'Coleccionadores Museo Banco Central' },
-    { id: 'ms-sueltas', nombre: 'Monedas MS sueltas' }
+    { id: 'conmemorativas', nombre: 'Monedas conmemorativas nuevo cono monetario', fondo: 'referencias/hoja-200-anos-de-independencia.jpg' },
+    { id: 'billetes', nombre: 'Billetes Costa Rica', fondo: 'referencias/billete-20-colones-serie-c.jpg' },
+    { id: 'antano', nombre: 'Colecciones de antaño', desc: 'Escudos, reales, centavos, céntimos y los primeros colones antes de los dorados', fondo: 'referencias/moneda-25-centavos-1887.jpg' },
+    { id: 'cono-1995-2021', nombre: 'Cono monetario 1995 a 2021', fondo: 'referencias/hoja-provincia-de-limon.jpg' },
+    { id: 'plata', nombre: 'Monedas conmemorativas plata', fondo: 'referencias/moneda-plata-1889.jpg' },
+    { id: 'replicas', nombre: 'Conmemorativas réplicas', fondo: 'fotos/guaria-replica.jpg' },
+    { id: 'coleccionadores-acrilicos', nombre: 'Coleccionadores acrílicos', fondo: 'fotos/set-acrilico-proof-y-bu.jpg' },
+    { id: 'museo-bccr', nombre: 'Coleccionadores Museo Banco Central', fondo: 'referencias/museo-numismatico-bccr.jpg' },
+    { id: 'ms-sueltas', nombre: 'Monedas MS sueltas', fondo: 'referencias/hoja-mariposa-amorfo.jpg' }
   ];
   function armarBase() {
     base = Object.fromEntries(H.piezas.map(p => [p.id, Object.assign(p, { seccion: 'conmemorativas' })]));
-    for (const o of datos.otras || []) base[o.id] = { id: o.id, otra: true, seccion: o.seccion || 'conmemorativas', moneda: o.nombre || '(sin nombre)', coleccion: o.categoria || 'Sin categoría', tipo: 'Otra' };
+    for (const o of datos.otras || []) base[o.id] = { id: o.id, otra: true, ref: o.ref, seccion: o.seccion || 'conmemorativas', moneda: o.nombre || '(sin nombre)', coleccion: o.categoria || 'Sin categoría', tipo: 'Otra' };
   }
   armarBase();
   const todas = () => Object.values(base);
+  let CREDITOS = { hoja: {}, imagenes: {} };
+  const refDe = id => { const p = base[id]; return p ? (p.otra ? p.ref : CREDITOS.hoja[p.moneda]) || '' : ''; };
+  fetch('referencias/creditos.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).then(j => { if (j) { CREDITOS = Object.assign({ hoja: {}, imagenes: {} }, j); if ($('seccion').classList.contains('abierta')) pintarSeccion(); if (actual && $('vFicha').classList.contains('abierta')) pintarFicha(); } }).catch(() => {});
+  const buscarEnInternet = p => 'https://www.google.com/search?tbm=isch&q=' + encodeURIComponent('Costa Rica ' + p.moneda + (p.tipo === 'Estuche' || p.tipo === 'Acrílico' ? ' ' + p.tipo : ''));
   const reg = id => datos.piezas[id] || {};
   const esEstucheHoja = id => !!(base[id] && !base[id].otra && base[id].tipo === 'Estuche');
   const tengo = id => {
@@ -754,8 +765,17 @@
     $('pValor').classList.toggle('activo', esValor); $('pCompra').classList.toggle('activo', !esValor);
     const fotos = fotosDe(id, esValor ? 'fotos' : 'fotosCompra'), caja = $('vFoto'), minis = $('vMinis');
     caja.textContent = ''; minis.textContent = '';
-    if (!fotos.length) caja.textContent = esValor ? 'Sin foto de la pieza todavía' : 'Sin foto de inventario todavía';
-    else {
+    const rf = refDe(id), info = $('vRefInfo'); info.textContent = '';
+    if (!fotos.length && rf) {
+      const im = el('img'); im.alt = 'Imagen de referencia'; im.src = rf; im.onclick = () => verGrande(rf);
+      caja.append(im, el('span', 'marcaRef', 'Imagen de referencia · falta tu foto'));
+      const c = CREDITOS.imagenes[rf] || {};
+      info.append(c.fuente === 'Wikimedia Commons' ? 'Referencia de Wikimedia Commons' + (c.autor ? ' · ' + c.autor : '') + (c.licencia ? ' · ' + c.licencia : '') + ' · ' : (c.fuente ? 'Referencia: ' + c.fuente + ' · ' : ''));
+      if (c.pagina) { const a = el('a', '', 'ver origen'); a.href = c.pagina; a.target = '_blank'; a.rel = 'noopener'; info.append(a, ' · '); }
+    }
+    if (!fotos.length) { const a = el('a', '', 'Buscar fotos de esta pieza en internet'); a.href = buscarEnInternet(base[id]); a.target = '_blank'; a.rel = 'noopener'; info.appendChild(a); }
+    if (!fotos.length && !rf) caja.textContent = esValor ? 'Sin foto de la pieza todavía' : 'Sin foto de inventario todavía';
+    else if (fotos.length) {
       const grande = el('img'); grande.alt = 'Foto de la pieza'; caja.appendChild(grande);
       grande.onclick = () => verGrande(grande.src);
       const ver = i => { ponerFoto(grande, fotos[i]); [...minis.children].forEach((m, j) => m.classList.toggle('activa', i === j)); };
@@ -1050,7 +1070,10 @@
     {
       const r = reg(p.id), t = el('div', 'tarjeta'), ph = el('div', 'ph'), f = fotosDe(p.id, 'fotos')[0] || fotosDe(p.id, 'fotosCompra')[0];
       t.tabIndex = 0; t.setAttribute('role', 'button');
-      if (f) { const im = el('img'); im.alt = ''; im.loading = 'lazy'; ponerFoto(im, f); ph.appendChild(im); } else ph.textContent = 'Sin foto';
+      const rf = refDe(p.id);
+      if (f) { const im = el('img'); im.alt = ''; im.loading = 'lazy'; ponerFoto(im, f); ph.appendChild(im); }
+      else if (rf) { const im = el('img', 'ref'); im.alt = 'Imagen de referencia'; im.loading = 'lazy'; im.src = rf; ph.append(im, el('span', 'marcaRef', 'Referencia · falta mi foto')); }
+      else ph.textContent = 'Sin foto';
       const tx = el('div', 'tx');
       tx.append(el('span', '', p.moneda), el('small', '', p.coleccion + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '')));
       const precio = el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : r.valor ? fmt(r.valor) + (cant(p.id) > 1 ? ' c/u' : '') : 'Sin precio');
@@ -1093,6 +1116,7 @@
     for (const sc of SECCIONES) {
       const t = sumas(deSeccion(sc.id)), b = el('button', 'boton-seccion');
       b.append(el('span', 'nom', sc.nombre)); if (sc.desc) b.append(el('span', 'desc', sc.desc));
+      if (sc.fondo) b.style.background = `linear-gradient(180deg, rgba(10,8,4,.55), rgba(10,8,4,.9) 70%), url("${sc.fondo}")`;
       const num = el('span', 'num'); num.append(t.n + (t.n === 1 ? ' pieza' : ' piezas'));
       if (t.val) { num.append(' · '); num.appendChild(el('b', '', fmt(t.val))); }
       b.appendChild(num);

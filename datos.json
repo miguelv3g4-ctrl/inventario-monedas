@@ -2810,6 +2810,98 @@
    "origen": "reventa",
    "fechaVenta": "2026-11-18",
    "notas": "Las monedas son proof color de los acrilicos que vendio el banco"
+  },
+  "O-msacfccd037": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021."
+  },
+  "O-msda0cba6d9": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021."
+  },
+  "O-ms88823228f": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2022."
+  },
+  "O-msf0ffcd327": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2025."
+  },
+  "O-ms6183d92ac": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2023."
+  },
+  "O-msf62912f9d": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2024."
+  },
+  "O-ms08faf0114": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2024."
+  },
+  "O-ms1a3921216": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2025."
+  },
+  "O-ms22038ce3c": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2025."
+  },
+  "O-msaeda5474f": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2026."
+  },
+  "O-msea88dec85": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025."
+  },
+  "O-ms9537cf5bb": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025."
+  },
+  "O-msc6fe145c6": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025."
+  },
+  "O-ms30382c443": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025."
+  },
+  "O-ms1be002f96": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026."
+  },
+  "O-ms9e11d4fc2": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026."
+  },
+  "O-ms6fe432eb2": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026."
+  },
+  "O-msde9df0025": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 2025."
+  },
+  "O-ms3b4bcc9d9": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 2026."
+  },
+  "O-ms7126281ad": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 202X."
+  },
+  "O-ms7128eb503": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 202X."
+  },
+  "O-ms8d6e3a65f": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 202X."
+  },
+  "O-ms9d34b39ce": {
+   "tengo": false,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 202X."
   }
  },
  "sueltas": {},
@@ -2818,13 +2910,15 @@
    "id": "O-d3b64175",
    "nombre": "10 colones 1979. Serie C 4025777",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-c.jpg"
   },
   {
    "id": "O-f10361ec",
    "nombre": "100 colones 1954. Serie G 765483",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-100-colones-serie-g.jpg"
   },
   {
    "id": "O-120c952c",
@@ -2836,37 +2930,43 @@
    "id": "O-fddcb77a",
    "nombre": "100 colones 1976. Serie D 8301240",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-100-colones-serie-d.jpg"
   },
   {
    "id": "O-291535b1",
    "nombre": "5 colones 1978. Serie D 28358769",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-5-colones-1968-1992.jpg"
   },
   {
    "id": "O-639a9436",
    "nombre": "5 colones 1983*Regalo de mi madre, invaluable *",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-5-colones-1968-1992.jpg"
   },
   {
    "id": "O-ca77fb08",
    "nombre": "5 colones 1989. Fecha gringa escasa. Serie D 59518020 y D 59556125",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-5-colones-1968-1992.jpg"
   },
   {
    "id": "O-0a355c1d",
    "nombre": "5 colones 1989. Serie D 55458956",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-5-colones-1968-1992.jpg"
   },
   {
    "id": "O-9c868f3a",
    "nombre": "5 colones 1990. Serie D 62166133",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-5-colones-1968-1992.jpg"
   },
   {
    "id": "O-ac12e42d",
@@ -2884,7 +2984,8 @@
    "id": "O-87cce76e",
    "nombre": "5 colones Series consecutivas varias 1989 Serie D",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-5-colones-1968-1992.jpg"
   },
   {
    "id": "O-c39bde15",
@@ -2896,25 +2997,29 @@
    "id": "O-9b939ff5",
    "nombre": "Colección completa 10 colones serie D con variantes",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-bfeb6e5b",
    "nombre": "Dos colones 1939. Serie C 921300",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-2-colones-serie-c.jpg"
   },
   {
    "id": "O-c53edf9e",
    "nombre": "Dos colones con resello. Serie F 1955730",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-2-colones-serie-f.jpg"
   },
   {
    "id": "O-25d5a209",
    "nombre": "Dos colones. Serie F 1344066",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-2-colones-serie-f.jpg"
   },
   {
    "id": "O-51a96a29",
@@ -2974,7 +3079,8 @@
    "id": "O-74a0cea4",
    "nombre": "5 colones 1981. Serie D 37485492",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-5-colones-1968-1992.jpg"
   },
   {
    "id": "O-cb800b24",
@@ -3724,43 +3830,50 @@
    "id": "O-x41e23a1e6",
    "nombre": "2 colones 1900",
    "categoria": "2 colones",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
   },
   {
    "id": "O-xb9d19fb61",
    "nombre": "2 colones 1915",
    "categoria": "2 colones",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
   },
   {
    "id": "O-x4bf5a47e1",
    "nombre": "2 colones 1916",
    "categoria": "2 colones",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
   },
   {
    "id": "O-xad736ec69",
    "nombre": "2 colones 1921",
    "categoria": "2 colones",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
   },
   {
    "id": "O-x0c52adf69",
    "nombre": "2 colones 1922",
    "categoria": "2 colones",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
   },
   {
    "id": "O-xba99eb867",
    "nombre": "2 colones 1926",
    "categoria": "2 colones",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
   },
   {
    "id": "O-x3094422ca",
    "nombre": "2 colones 1928",
    "categoria": "2 colones",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
   },
   {
    "id": "O-xc393f4c32",
@@ -4276,85 +4389,99 @@
    "id": "O-xed1002040",
    "nombre": "5 centavos 1865",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-xd10a5095e",
    "nombre": "5 centavos 1868",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-xefa3a31e0",
    "nombre": "5 centavos 1870",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-x0c0f6da94",
    "nombre": "5 centavos 1871",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-x981998a95",
    "nombre": "5 centavos 1872",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-xf29b3e962",
    "nombre": "5 centavos 1872 · ensayos en metal blanco",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-x54d0eadcb",
    "nombre": "5 centavos 1875",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-x579d6fb16",
    "nombre": "5 centavos 1885",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-x7656eee09",
    "nombre": "5 centavos 1886",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-x00a26e295",
    "nombre": "5 centavos 1887",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-xfbcf86b5f",
    "nombre": "5 centavos 1889",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-xb903ac08e",
    "nombre": "5 centavos 1889 · Proof",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-x9a3268c79",
    "nombre": "5 centavos 1890",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-xfde480533",
    "nombre": "5 centavos 1892",
    "categoria": "5 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-5-centavos-1892.jpg"
   },
   {
    "id": "O-x122553906",
@@ -4438,499 +4565,742 @@
    "id": "O-xa5f1883b5",
    "nombre": "25 centavos 1864 · nuemros pequeños",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-xe4f26576a",
    "nombre": "25 centavos 1864 · numeros grandes",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-x1a6760e2e",
    "nombre": "25 centavos 1865",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-x50c709336",
    "nombre": "25 centavos 1875",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1875.jpg"
   },
   {
    "id": "O-x2561fd32e",
    "nombre": "25 centavos 1886 · GW-9Ds",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-xa747aa459",
    "nombre": "25 centavos 1886 · 9Ds-GW",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-x43a40c16c",
    "nombre": "25 centavos 1886 · 9Ds-GW microletra C debajo del escudo",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-xfc97ea550",
    "nombre": "25 centavos 1887 · GW-9Ds microletra CB debajo del escudo",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-x3a5a52068",
    "nombre": "25 centavos 1887 · 9Ds-GW microletra C debajo del escudo",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-x630ee3d25",
    "nombre": "25 centavos 1887 · 9Ds-GW microletra CB debajo del escudo",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-x363d6a360",
    "nombre": "25 centavos 1889",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1889.jpg"
   },
   {
    "id": "O-xe42753b8d",
    "nombre": "25 centavos 1889 · Proof",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1889.jpg"
   },
   {
    "id": "O-xd824c07da",
    "nombre": "25 centavos 1889 · ensayo octagonal del reverso en plomo",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1889.jpg"
   },
   {
    "id": "O-x85fa3bc88",
    "nombre": "25 centavos 1890",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-x1eac818a3",
    "nombre": "25 centavos 1892",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-x32b16035a",
    "nombre": "25 centavos 1893",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-xc68c47c19",
    "nombre": "25 centavos 1893 · Pruebas en cobre, bronce y plata",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-x0de94f948",
    "nombre": "25 centavos 1893 · tipo medalla o eje vertical",
    "categoria": "25 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-x9d354d99e",
    "nombre": "50 centavos 1865",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-xcf793dd98",
    "nombre": "50 centavos 1866",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-x94870324b",
    "nombre": "50 centavos 1867",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-xa0cc7adc9",
    "nombre": "50 centavos 1870",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-x973b98277",
    "nombre": "50 centavos 1872",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-xd374888f5",
    "nombre": "50 centavos 1875",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-xb997f5c30",
    "nombre": "50 centavos 1875 · tipo medalla o eje vertical",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-x282e75903",
    "nombre": "50 centavos 1885",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-xc3f0b1ece",
    "nombre": "50 centavos 1886",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-x45a09aff2",
    "nombre": "50 centavos 1887",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-xa911d1b1d",
    "nombre": "50 centavos 1890",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-x738184247",
    "nombre": "50 centavos 1889 · ensayos en plomo",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-x58dae5f57",
    "nombre": "50 centavos 1889 · pruebas en bronce y cobre Fecha no aparece el 89",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-x64aafd8a4",
    "nombre": "50 centavos 1889 · ensayo octagonal del reverso en plomo",
    "categoria": "50 centavos",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "referencias/moneda-50-centavos-1890.jpg"
   },
   {
    "id": "O-x885f202b7",
    "nombre": "10 colones serie D · 06/09/1972",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xff3a96c8c",
    "nombre": "10 colones serie D · 18/10/1973",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x71be4cb8b",
    "nombre": "10 colones serie D · 12/06/1974",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xa206f238c",
    "nombre": "10 colones serie D · 09/06/1975",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xa56b8126a",
    "nombre": "10 colones serie D · 04/05/1976",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xb93d98d35",
    "nombre": "10 colones serie D · 26/04/1977",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x6283d1757",
    "nombre": "10 colones serie D · 13/03/1978",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x7ca97f991",
    "nombre": "10 colones serie D · 16/10/1978",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x576bd5e4c",
    "nombre": "10 colones serie D · 15/02/1979 · fecha pequeña",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xafb9a5c34",
    "nombre": "10 colones serie D · 15/02/1979 · fecha grande",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x9b61e52aa",
    "nombre": "10 colones serie D · 05/10/1976 · fecha gringa",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xa6fbe134c",
    "nombre": "10 colones serie D · 04/06/1979 · fecha gringa",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x6134dcf6c",
    "nombre": "10 colones serie D · 04/10/1979 · fecha gringa",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x2c8a9870f",
    "nombre": "10 colones serie D · 15/10/1979 · fecha gringa",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xfc353688a",
    "nombre": "10 colones serie D · 18/03/1980",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x1d3a8b608",
    "nombre": "10 colones serie D · 12/03/1981 · fecha grande",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xeadd04555",
    "nombre": "10 colones serie D · 12/03/1981 · fecha pequeña",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x58ca08f77",
    "nombre": "10 colones serie D · 12/03/1981 · fecha corrida hacia arriba",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xbb502c427",
    "nombre": "10 colones serie D · 24/12/1981",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x8c49892bf",
    "nombre": "10 colones serie D · 04/10/1982",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x82b9e8ac4",
    "nombre": "10 colones serie D · 07/04/1983",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xa7527d897",
    "nombre": "10 colones serie D · 28/08/1984",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xedb802424",
    "nombre": "10 colones serie D · 21/08/1985",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x548eec141",
    "nombre": "10 colones serie D · 05/10/1985",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x5a77b4af3",
    "nombre": "10 colones serie D · 18/02/1987 · consecutivos",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x49d5ec145",
    "nombre": "10 colones serie D · 18/02/1987 · serie parcial repetidor",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xc22547a02",
    "nombre": "10 colones serie D · 02/04/1986",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-xbd8e016e8",
    "nombre": "10 colones serie D · 02/04/1986 · error de impresión de fecha",
    "categoria": "10 colones serie D",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-10-colones-serie-d.jpg"
   },
   {
    "id": "O-x8bae38ff6",
    "nombre": "20 colones serie C · 10 de julio de 1972",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x4be3c8c6a",
    "nombre": "20 colones serie C · 06 de setiembre de 1972",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-xee3b77f00",
    "nombre": "20 colones serie C · 13 de noviembre de 1972",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x446455062",
    "nombre": "20 colones serie C · 13 diciembre de 1972",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-xa4526e29e",
    "nombre": "20 colones serie C · 11 de julio de 1973",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-xc2ce44303",
    "nombre": "20 colones serie C · 12 junio de 1974",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-xeb6ea6afb",
    "nombre": "20 colones serie C · 09 de junio de 1975",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x32f62183b",
    "nombre": "20 colones serie C · 04 de mayo de 1976",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x493d8c93d",
    "nombre": "20 colones serie C · 26 de abril de 1977",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-xe547adf2f",
    "nombre": "20 colones serie C · 01 junio de 1978",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-xd78528316",
    "nombre": "20 colones serie C · 30/04/1979 · fecha gringa",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x5da28fa97",
    "nombre": "20 colones serie C · 30 de agosto de 1979",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-xa5242e9f0",
    "nombre": "20 colones serie C · 18 de marzo de 1980",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x37f3c289d",
    "nombre": "20 colones serie C · 28 de agosto 1980",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x2c41dae7c",
    "nombre": "20 colones serie C · 02 de abril de 1981",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x70cb01b09",
    "nombre": "20 colones serie C · 2 de diciembre de 1981",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x3ceb017f7",
    "nombre": "20 colones serie C · 24 de diciembre de 1981",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x9db08e815",
    "nombre": "20 colones serie C · 18 de mayo de 1982",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-xd48eb5006",
    "nombre": "20 colones serie C · 08 de julio de 1982",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-xd1ef0b5bb",
    "nombre": "20 colones serie C · 04 noviembre de 1982",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x947325c3c",
    "nombre": "20 colones serie C · 07 de abril de 1983",
    "categoria": "20 colones serie C",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-c.jpg"
   },
   {
    "id": "O-x977278c81",
    "nombre": "20 colones serie Z · 28 de junio de 1983",
    "categoria": "20 colones serie Z",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "referencias/billete-20-colones-serie-z.jpg"
   },
   {
    "id": "O-mwm5exrk",
    "nombre": "coleccionador fauna proof",
    "categoria": "Todas",
    "seccion": "museo-bccr"
+  },
+  {
+   "id": "O-msacfccd037",
+   "nombre": "200 años de Independencia · moneda MS suelta",
+   "categoria": "Hitos de la Historia",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-200-anos-de-independencia.jpg"
+  },
+  {
+   "id": "O-msda0cba6d9",
+   "nombre": "175 años de Fundacion de la Republica · moneda MS suelta",
+   "categoria": "Hitos de la Historia",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-175-anos-de-fundacion-de-la-republica.jpg"
+  },
+  {
+   "id": "O-ms88823228f",
+   "nombre": "75 años de Abolicion del Ejercito · moneda MS suelta",
+   "categoria": "Hitos de la Historia",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-75-anos-de-abolicion-del-ejercito.jpg"
+  },
+  {
+   "id": "O-msf0ffcd327",
+   "nombre": "200 años de Anexion del Partido de Nicoya · moneda MS suelta",
+   "categoria": "Hitos de la Historia",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-200-anos-de-anexion-del-partido-de-nicoya.jpg"
+  },
+  {
+   "id": "O-ms6183d92ac",
+   "nombre": "Mariposa Amorfo · moneda MS suelta",
+   "categoria": "Fauna de los Ecosistemas",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-mariposa-amorfo.jpg"
+  },
+  {
+   "id": "O-msf62912f9d",
+   "nombre": "Rana Calzonuda · moneda MS suelta",
+   "categoria": "Fauna de los Ecosistemas",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-rana-calzonuda.jpg"
+  },
+  {
+   "id": "O-ms08faf0114",
+   "nombre": "Tortuga Carey · moneda MS suelta",
+   "categoria": "Fauna de los Ecosistemas",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-tortuga-carey.jpg"
+  },
+  {
+   "id": "O-ms1a3921216",
+   "nombre": "Lagartija o Anolis · moneda MS suelta",
+   "categoria": "Fauna de los Ecosistemas",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-lagartija-o-anolis.jpg"
+  },
+  {
+   "id": "O-ms22038ce3c",
+   "nombre": "Cangrejo Marinera · moneda MS suelta",
+   "categoria": "Fauna de los Ecosistemas",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-cangrejo-marinera.jpg"
+  },
+  {
+   "id": "O-msaeda5474f",
+   "nombre": "Conejo de Monte · moneda MS suelta",
+   "categoria": "Fauna de los Ecosistemas",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-conejo-de-monte.jpg"
+  },
+  {
+   "id": "O-msea88dec85",
+   "nombre": "Provincia de Limon · moneda MS suelta",
+   "categoria": "Lugares Emblematicos de las Provincias de Costa Rica",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-provincia-de-limon.jpg"
+  },
+  {
+   "id": "O-ms9537cf5bb",
+   "nombre": "Provincia de Puntarenas · moneda MS suelta",
+   "categoria": "Lugares Emblematicos de las Provincias de Costa Rica",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-provincia-de-puntarenas.jpg"
+  },
+  {
+   "id": "O-msc6fe145c6",
+   "nombre": "Provincia de Guanacaste · moneda MS suelta",
+   "categoria": "Lugares Emblematicos de las Provincias de Costa Rica",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-provincia-de-guanacaste.jpg"
+  },
+  {
+   "id": "O-ms30382c443",
+   "nombre": "Provincia de Heredia · moneda MS suelta",
+   "categoria": "Lugares Emblematicos de las Provincias de Costa Rica",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-provincia-de-heredia.jpg"
+  },
+  {
+   "id": "O-ms1be002f96",
+   "nombre": "Provincia de Cartago · moneda MS suelta",
+   "categoria": "Lugares Emblematicos de las Provincias de Costa Rica",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-provincia-de-cartago.jpg"
+  },
+  {
+   "id": "O-ms9e11d4fc2",
+   "nombre": "Provincia de Alajuela · moneda MS suelta",
+   "categoria": "Lugares Emblematicos de las Provincias de Costa Rica",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-provincia-de-alajuela.jpg"
+  },
+  {
+   "id": "O-ms6fe432eb2",
+   "nombre": "Provincia de San Jose · moneda MS suelta",
+   "categoria": "Lugares Emblematicos de las Provincias de Costa Rica",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-provincia-de-san-jose.jpg"
+  },
+  {
+   "id": "O-msde9df0025",
+   "nombre": "Swing Criollo · moneda MS suelta",
+   "categoria": "Patrimonio Cultural Inmaterial",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-swing-criollo.jpg"
+  },
+  {
+   "id": "O-ms3b4bcc9d9",
+   "nombre": "Boyero · moneda MS suelta",
+   "categoria": "Patrimonio Cultural Inmaterial",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-boyero.jpg"
+  },
+  {
+   "id": "O-ms7126281ad",
+   "nombre": "Calipso · moneda MS suelta",
+   "categoria": "Patrimonio Cultural Inmaterial",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-calipso.jpg"
+  },
+  {
+   "id": "O-ms7128eb503",
+   "nombre": "Cimarrona · moneda MS suelta",
+   "categoria": "Patrimonio Cultural Inmaterial",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-cimarrona.jpg"
+  },
+  {
+   "id": "O-ms8d6e3a65f",
+   "nombre": "Toros Tope · moneda MS suelta",
+   "categoria": "Patrimonio Cultural Inmaterial",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-toros-tope.jpg"
+  },
+  {
+   "id": "O-ms9d34b39ce",
+   "nombre": "Ceramica Chorotega · moneda MS suelta",
+   "categoria": "Patrimonio Cultural Inmaterial",
+   "seccion": "ms-sueltas",
+   "ref": "referencias/hoja-ceramica-chorotega.jpg"
   }
  ]
 }
