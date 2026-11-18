@@ -1012,12 +1012,15 @@
     const sc = SECCIONES.find(x => x.id === seccionActual); if (!sc) return;
     $('sTitulo').textContent = sc.nombre;
     const todasSec = deSeccion(sc.id), sel = $('sCat'), elegida = sel.value;
-    const cats = [...new Set(todasSec.map(p => p.coleccion))].sort();
+    // orden por valor de la denominacion (¼ centavo ... 1500 colones) y luego por nombre/año
+    const valorCat = c => { const m = /^(¼|[\d.]+)/.exec(c); if (!m) return 1e9; const n = m[1] === '¼' ? 0.25 : parseFloat(m[1].replace(/\./g, '')); return /centavo|c[ée]ntimo/i.test(c) ? n / 100 : n; };
+    const ordenCat = (a, b) => valorCat(a) - valorCat(b) || a.localeCompare(b);
+    const cats = [...new Set(todasSec.map(p => p.coleccion))].sort(ordenCat);
     sel.textContent = ''; sel.appendChild(el('option', '', 'Todas'));
     for (const c of cats) { const o = el('option', '', c); o.value = c; sel.appendChild(o); }
     sel.value = cats.includes(elegida) ? elegida : ''; if (sel.value === '') sel.selectedIndex = 0;
     sel.parentNode.style.display = cats.length > 1 ? '' : 'none';
-    const lista = todasSec.filter(p => !sel.value || p.coleccion === sel.value).sort((a, b) => a.coleccion.localeCompare(b.coleccion) || a.moneda.localeCompare(b.moneda));
+    const lista = todasSec.filter(p => !sel.value || p.coleccion === sel.value).sort((a, b) => ordenCat(a.coleccion, b.coleccion) || a.moneda.localeCompare(b.moneda, 'es', { numeric: true }));
     const g = $('sGrid'); g.textContent = '';
     for (const p of lista) g.appendChild(tarjeta(p));
     $('sCuenta').textContent = lista.length + (lista.length === 1 ? ' pieza' : ' piezas');
