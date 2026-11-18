@@ -1617,517 +1617,715 @@
   },
   "O-xf0a1ca1eb": {
    "tengo": false,
-   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xc9390bfc0": {
    "tengo": false,
-   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x9ce4b4b70": {
    "tengo": false,
-   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x2be4f4499": {
    "tengo": false,
-   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xe851380f9": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xbfc96e95d": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x9bcc64a7b": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xc48e91c0a": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x259014684": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x63c69a828": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x67a29eb8e": {
    "tengo": false,
-   "notas": "Material: Bronce · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Bronce · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xd8457527a": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x9bc0d15da": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x585474041": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xb8bc35bde": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xf7ba06e9b": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xf2e01c902": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x80946433b": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x91db8b50f": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x40c414f10": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 14,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x1ca9dd607": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x9dcbdff87": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 5000
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xe3d47d8e0": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x5acb39897": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x58dfa2f51": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x15d4420cd": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x5a5f0dfd0": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x15e385cd4": {
    "tengo": true,
    "cantidad": 3,
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x1e8fa5618": {
    "tengo": true,
    "cantidad": 3,
-   "notas": "Material: Cobre-níquel · Peso: 1,02 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 1,02 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xb543d373e": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Cobre-níquel · Peso: 1,02 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 1,02 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xc51d3a03e": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xc8e07e657": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xdb6ad18f5": {
    "tengo": true,
    "cantidad": 3,
-   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".",
-   "costo": 3500
+   "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x0dd39db09": {
    "tengo": false,
-   "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x122bd88e1": {
    "tengo": false,
-   "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xcf60cf766": {
    "tengo": false,
-   "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x3b6dc64b2": {
    "tengo": false,
-   "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata · Peso: 2,00 g · Diámetro: 17,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xb402c067e": {
    "tengo": false,
-   "notas": "Material: Plata (0,500) · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata (0,500) · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x26a905aee": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x92c19e6f8": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xb16bfbae6": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xf2c633f9a": {
    "tengo": false,
-   "notas": "Material: Bronce · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Bronce · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xf50ceb0b7": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x69fd1edf2": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x2e49f64bd": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x22b6dee50": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x05f454d6e": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x423988bbf": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xfb8bde918": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 5000
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xcf8b0e40e": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xc3d7fba09": {
    "tengo": true,
    "cantidad": 3,
-   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x22cea2e08": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x929b5dfa3": {
    "tengo": true,
    "cantidad": 4,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x1606e6042": {
    "tengo": true,
    "cantidad": 3,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x305516372": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x7bf3b5c37": {
    "tengo": true,
    "cantidad": 6,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 5\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 5\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xd066553eb": {
    "tengo": true,
    "cantidad": 18,
-   "notas": "Material: Acero bañado en níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 17\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero bañado en níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 17\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xbe0d3afec": {
    "tengo": true,
    "cantidad": 4,
-   "notas": "Material: Aluminio · Peso: 0,60 g · Diámetro: 18,00 mm · Canto: Liso\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"10 centimos\".",
-   "costo": 3500
+   "notas": "Material: Aluminio · Peso: 0,60 g · Diámetro: 18,00 mm · Canto: Liso\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x4cfb888e8": {
    "tengo": true,
-   "notas": "Material: Plata (0,625) · Peso: 3,45 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata (0,625) · Peso: 3,45 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x672ef19a2": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,45 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 5000
+   "notas": "Material: Cobre-níquel · Peso: 3,45 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x09ee32428": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 3,33 g · Diámetro: 23,00 mm · Canto: Liso con inscripción\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 5000
+   "notas": "Material: Cobre-níquel · Peso: 3,33 g · Diámetro: 23,00 mm · Canto: Liso con inscripción\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x60dd36046": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x71768fc80": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xfe54a68f0": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xc9db761fe": {
    "tengo": false,
-   "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 5000
+   "notas": "Material: Latón · Peso: 3,50 g · Diámetro: 23,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x3b37ebb6e": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,33 g · Diámetro: 23,00 mm · Canto: Liso con inscripción\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 5000
+   "notas": "Material: Cobre-níquel · Peso: 3,33 g · Diámetro: 23,00 mm · Canto: Liso con inscripción\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x33b9ffe7b": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x873813965": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x87cb49299": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,38 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 3,38 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xccdcad173": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x17a69bd37": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xae37c1a00": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x483025dee": {
    "tengo": true,
-   "notas": "Material: Acero bañado en níquel · Peso: 3,19 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero bañado en níquel · Peso: 3,19 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x7f3059237": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Aluminio · Peso: 1,10 g · Diámetro: 23,00 mm · Canto: Liso\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 3500
+   "notas": "Material: Aluminio · Peso: 1,10 g · Diámetro: 23,00 mm · Canto: Liso\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x8d45ec313": {
    "tengo": true,
    "cantidad": 4,
-   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 3500
+   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x8211325fe": {
    "tengo": true,
-   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 3500
+   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x66c01a2b8": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".",
-   "costo": 3500
+   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xea71ba3dd": {
    "tengo": false,
-   "notas": "Material: Plata · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xc3148346f": {
    "tengo": false,
-   "notas": "Material: Plata · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x158225232": {
    "tengo": false,
-   "notas": "Material: Plata · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata · Peso: 10,00 g · Diámetro: 29,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xb580f96cc": {
    "tengo": false,
-   "notas": "Material: Plata · Peso: 6,25 g · Diámetro: 25,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata · Peso: 6,25 g · Diámetro: 25,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x507cade4f": {
    "tengo": false,
-   "notas": "Material: Plata · Peso: 6,30 g · Diámetro: 25,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata · Peso: 6,30 g · Diámetro: 25,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xe084069b3": {
    "tengo": false,
-   "notas": "Material: Plata · Diámetro: 25,00 mm · Canto: Estriado\nVariante: Resellada en moneda de 25 céntimos 1889 / resellada en moneda de 1892 / resellada en moneda de 1893\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 5000
+   "notas": "Material: Plata · Diámetro: 25,00 mm · Canto: Estriado\nVariante: Resellada en moneda de 25 céntimos 1889 / resellada en moneda de 1892 / resellada en moneda de 1893\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xb1d723843": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 6,25 g · Diámetro: 25,02 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 5000
+   "notas": "Material: Cobre-níquel · Peso: 6,25 g · Diámetro: 25,02 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xdee55ae78": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 6,10 g · Diámetro: 25,00 mm · Canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 5000
+   "notas": "Material: Cobre-níquel · Peso: 6,10 g · Diámetro: 25,00 mm · Canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x6ecf97344": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 6,10 g · Diámetro: 25,00 mm · Canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 5000
+   "notas": "Material: Cobre-níquel · Peso: 6,10 g · Diámetro: 25,00 mm · Canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-x298f9978e": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 7,00 g · Diámetro: 26,00 mm · Canto: no tiene\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 5000
+   "notas": "Material: Cobre-níquel · Peso: 7,00 g · Diámetro: 26,00 mm · Canto: no tiene\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 5000,
+   "valor": 7000,
+   "valorEstimado": true
   },
   "O-xeb403d2e8": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: 7 estrellas - B.C.C.R. - alineación medalla\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: 7 estrellas - B.C.C.R. - alineación medalla\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xa5ccc1c22": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x37b2aafbf": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x201edf229": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xdea505670": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Fecha pequeña\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Fecha pequeña\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x72b788c96": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Fecha grande\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Fecha grande\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x1184f6c99": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x19ce19ac9": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x65ebe4a8c": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xef3acce12": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-x915a849cd": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 2,20 g · Diámetro: 18,95 mm · Canto: Liso\nVariante: Barco pequeño letras de la cinta en relieve\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero inoxidable · Peso: 2,20 g · Diámetro: 18,95 mm · Canto: Liso\nVariante: Barco pequeño letras de la cinta en relieve\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xfbc18a8dd": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".",
-   "costo": 3500
+   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true
   },
   "O-xaf16fb498": {
    "tengo": false,
@@ -2584,33 +2782,45 @@
   },
   "O-x903a1aa01": {
    "tengo": false,
-   "notas": "Material: Cobre Niquel · Peso: 3.8 · Diámetro: 20mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: Cobre Niquel · Peso: 3.8 · Diámetro: 20mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x2a2b56013": {
    "tengo": false,
-   "notas": "Material: Cobre Niquel · Peso: 3.8 · Diámetro: 20mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: Cobre Niquel · Peso: 3.8 · Diámetro: 20mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x9c1f9f746": {
    "tengo": false,
-   "notas": "Material: Cobre Niquel · Peso: 3.8 · Diámetro: 20mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: Cobre Niquel · Peso: 3.8 · Diámetro: 20mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x972bb7612": {
    "tengo": false,
-   "notas": "Material: Cobre Niquel · Peso: 3.8 · Diámetro: 20mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: Cobre Niquel · Peso: 3.8 · Diámetro: 20mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xa5dfea8bb": {
    "tengo": false,
-   "notas": "Material: Cobre Niquel · Peso: 3.8 · Diámetro: 20mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: Cobre Niquel · Peso: 3.8 · Diámetro: 20mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xefc64ffa6": {
    "tengo": false,
-   "notas": "Material: Cobre Niquel · Peso: 0.8 · Diámetro: 12,5mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: Cobre Niquel · Peso: 0.8 · Diámetro: 12,5mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xed1002040": {
    "tengo": false,
@@ -2656,38 +2866,52 @@
   },
   "O-x579d6fb16": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x7656eee09": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nVariante: microletra C debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nVariante: microletra C debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x00a26e295": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nVariante: microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nVariante: microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xfbcf86b5f": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 1.2 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 1.2 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xb903ac08e": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 1.2 · Diámetro: 15mm\nVariante: Proof\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 1.2 · Diámetro: 15mm\nVariante: Proof\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x9a3268c79": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 1.2 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 1.2 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xfde480533": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 1.2 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 1.2 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x122553906": {
    "tengo": false,
@@ -2727,38 +2951,52 @@
   },
   "O-x6d548f835": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x350c492e0": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nVariante: microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nVariante: microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xdfb74d609": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nVariante: microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nVariante: microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x1338f502a": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x57e5bfbfa": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nVariante: Proof\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nVariante: Proof\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x70cf42be8": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xc9d18facf": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 2.5 · Diámetro: 18mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xa5f1883b5": {
    "tengo": false,
@@ -2786,73 +3024,101 @@
   },
   "O-x2561fd32e": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: GW-9Ds\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: GW-9Ds\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xa747aa459": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: 9Ds-GW\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: 9Ds-GW\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x43a40c16c": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: 9Ds-GW microletra C debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: 9Ds-GW microletra C debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xfc97ea550": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: GW-9Ds microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: GW-9Ds microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x3a5a52068": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: 9Ds-GW microletra C debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: 9Ds-GW microletra C debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x630ee3d25": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: 9Ds-GW microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nVariante: 9Ds-GW microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x363d6a360": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xe42753b8d": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nVariante: Proof\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nVariante: Proof\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xd824c07da": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nVariante: ensayo octagonal del reverso en plomo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nVariante: ensayo octagonal del reverso en plomo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x85fa3bc88": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x1eac818a3": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x32b16035a": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xc68c47c19": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nVariante: Pruebas en cobre, bronce y plata\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nVariante: Pruebas en cobre, bronce y plata\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x0de94f948": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nVariante: tipo medalla o eje vertical\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 6.3 · Diámetro: 25 mm\nVariante: tipo medalla o eje vertical\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x9d354d99e": {
    "tengo": false,
@@ -2898,38 +3164,52 @@
   },
   "O-x282e75903": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xc3f0b1ece": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nVariante: microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nVariante: microletra CB debajo del escudo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x45a09aff2": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-xa911d1b1d": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nVariante: microletra CB debajo del escudo / Variate N y S invertidas en la palabra centavos\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nVariante: microletra CB debajo del escudo / Variate N y S invertidas en la palabra centavos\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x738184247": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nVariante: ensayos en plomo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nVariante: ensayos en plomo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x58dae5f57": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nVariante: pruebas en bronce y cobre Fecha no aparece el 89\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nVariante: pruebas en bronce y cobre Fecha no aparece el 89\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x64aafd8a4": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nVariante: ensayo octagonal del reverso en plomo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".",
-   "costo": 30000
+   "notas": "Material: 0.750 Plata · Peso: 12.5 · Diámetro: 31mm\nVariante: ensayo octagonal del reverso en plomo\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
+   "costo": 30000,
+   "valor": 42000,
+   "valorEstimado": true
   },
   "O-x885f202b7": {
    "tengo": true,
@@ -3145,7 +3425,9 @@
    "fechaCompra": "2026-06-01",
    "origen": "reventa",
    "fechaVenta": "2026-11-18",
-   "notas": "Las monedas son proof color de los acrilicos que vendio el banco"
+   "notas": "Las monedas son proof color de los acrilicos que vendio el banco\nValor actual provisional: costo + 40 %.",
+   "valor": 70000,
+   "valorEstimado": true
   },
   "O-msacfccd037": {
    "tengo": false,
@@ -3246,205 +3528,274 @@
    ],
    "costo": 10000,
    "fechaCompra": "2026-10-28",
-   "origen": "museo"
+   "origen": "museo",
+   "valor": 14000,
+   "valorEstimado": true,
+   "notas": "Valor actual provisional: costo + 40 %."
   },
   "AM11": {
    "fechaCompra": "2025-08-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12110,
+   "valorEstimado": true
   },
   "C14": {
    "fechaCompra": "2021-09-01",
    "costo": 25000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 35000,
+   "valorEstimado": true
   },
   "H14": {
    "fechaCompra": "2023-08-01",
    "costo": 12000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 16800,
+   "valorEstimado": true
   },
   "AR14": {
    "fechaCompra": "2025-10-22",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12110,
+   "valorEstimado": true
   },
   "AW14": {
    "fechaCompra": "2025-11-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12110,
+   "valorEstimado": true
   },
   "H15": {
    "fechaCompra": "2023-08-01",
    "costo": 12000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 16800,
+   "valorEstimado": true
   },
   "M15": {
    "fechaCompra": "2023-12-04",
    "costo": 9950,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 13930,
+   "valorEstimado": true
   },
   "R15": {
    "fechaCompra": "2024-07-26",
    "costo": 9950,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 13930,
+   "valorEstimado": true
   },
   "X15": {
    "fechaCompra": "2024-11-12",
    "costo": 9082,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12715,
+   "valorEstimado": true
   },
   "AC15": {
    "fechaCompra": "2025-02-24",
    "costo": 9000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12600,
+   "valorEstimado": true
   },
   "AH15": {
    "fechaCompra": "2025-05-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12110,
+   "valorEstimado": true
   },
   "AM15": {
    "fechaCompra": "2025-08-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12110,
+   "valorEstimado": true
   },
   "AR15": {
    "fechaCompra": "2025-10-22",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12110,
+   "valorEstimado": true
   },
   "AW15": {
    "fechaCompra": "2025-11-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12110,
+   "valorEstimado": true
   },
   "C16": {
    "fechaCompra": "2021-09-01",
    "costo": 25000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 35000,
+   "valorEstimado": true
   },
   "H16": {
    "fechaCompra": "2023-08-01",
    "costo": 12000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 16800,
+   "valorEstimado": true
   },
   "C17": {
    "fechaCompra": "2021-09-01",
    "costo": 25000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 35000,
+   "valorEstimado": true
   },
   "H17": {
    "fechaCompra": "2023-08-01",
    "costo": 12000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 16800,
+   "valorEstimado": true
   },
   "M17": {
    "fechaCompra": "2023-12-04",
    "costo": 9950,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 13930,
+   "valorEstimado": true
   },
   "R17": {
    "fechaCompra": "2024-07-26",
    "costo": 9950,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 13930,
+   "valorEstimado": true
   },
   "AH17": {
    "fechaCompra": "2025-05-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12110,
+   "valorEstimado": true
   },
   "AW17": {
    "fechaCompra": "2025-11-26",
    "costo": 8650,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12110,
+   "valorEstimado": true
   },
   "R26": {
    "fechaCompra": "2026-02-25",
    "costo": 9100,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12740,
+   "valorEstimado": true
   },
   "X27": {
    "fechaCompra": "2026-03-25",
    "costo": 9050,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12670,
+   "valorEstimado": true
   },
   "AC26": {
    "fechaCompra": "2026-04-22",
    "costo": 8500,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 11900,
+   "valorEstimado": true
   },
   "AH26": {
    "fechaCompra": "2026-05-20",
    "costo": 8400,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 11760,
+   "valorEstimado": true
   },
   "AH32": {
    "fechaCompra": "2026-05-20",
    "costo": 8400,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 11760,
+   "valorEstimado": true
   },
   "AC33": {
    "fechaCompra": "2026-04-22",
    "costo": 8500,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 11900,
+   "valorEstimado": true
   },
   "M34": {
    "fechaCompra": "2025-09-24",
    "costo": 9050,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12670,
+   "valorEstimado": true
   },
   "R35": {
    "fechaCompra": "2026-02-25",
    "costo": 9100,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12740,
+   "valorEstimado": true
   },
   "X35": {
    "fechaCompra": "2026-03-25",
    "costo": 9050,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 12670,
+   "valorEstimado": true
   },
   "AC35": {
    "fechaCompra": "2026-04-22",
    "costo": 8500,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 11900,
+   "valorEstimado": true
   },
   "AH35": {
    "fechaCompra": "2026-05-20",
    "costo": 8400,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor actual provisional: costo + 40 %.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "valor": 11760,
+   "valorEstimado": true
   }
  },
  "sueltas": {},
