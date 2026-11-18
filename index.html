@@ -1146,6 +1146,23 @@
   });
   window.addEventListener('beforeunload', e => { if (sucias.size || $('estado').textContent === 'Sin guardar') { e.preventDefault(); e.returnValue = ''; } });
 
+  // ---------- version nueva: si en GitHub hay una pagina mas reciente que la abierta, se recarga sola
+  // (compara el codigo de esta pagina con el publicado; asi nunca queda una version vieja guardada)
+  const huella = t => { let h = 5381; for (let i = 0; i < t.length; i++) h = ((h << 5) + h + t.charCodeAt(i)) | 0; return h; };
+  const huellaActual = (() => { const sc = document.scripts[document.scripts.length - 1]; return sc ? huella(sc.textContent) : 0; })();
+  async function revisarVersion() {
+    if (location.protocol === 'file:' || sucias.size || $('vForm').classList.contains('abierta')) return;
+    try {
+      const t = await (await fetch('index.html?v=' + Date.now(), { cache: 'no-store' })).text();
+      const i = t.lastIndexOf('<script>'), j = t.lastIndexOf('</script>');
+      if (i < 0 || j < i) return;
+      if (huella(t.slice(i + 8, j)) !== huellaActual) { aviso('Hay una versión nueva de la página. Actualizando…'); setTimeout(() => location.reload(), 800); }
+    } catch (e) {}
+  }
+  setTimeout(revisarVersion, 3000);
+  setInterval(revisarVersion, 5 * 60e3);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) revisarVersion(); });
+
   // ---------- arranque: sin sesion se muestra la pantalla de entrada; con sesion se carga directo
   (async function () {
     pintarTodo();
