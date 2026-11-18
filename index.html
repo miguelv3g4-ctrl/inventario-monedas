@@ -53,6 +53,11 @@
   #menu .sello { width: min(300px, 70vw); display: block; margin: 0 auto; }
   #menu h1 { font: 24px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 6px 0 22px; }
   #mBotones { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; text-align: left; }
+  #mTotal { margin: -8px auto 26px; padding: 14px 18px 12px; max-width: 520px; border: 1px solid var(--oro2); border-radius: 10px; background: linear-gradient(180deg, #221b0c, #0b0a09); }
+  #mTotal .rot { color: var(--oro2); font-size: 14px; letter-spacing: .08em; text-transform: uppercase; }
+  #mTotal .monto { color: var(--oro); font: 40px "Copperplate Gothic Bold", Copperplate, Georgia, serif; font-variant-numeric: tabular-nums; margin: 4px 0 6px; line-height: 1.1; }
+  #mTotal .det { color: var(--gris); font-size: 14px; }
+  #mTotal .det b { color: var(--oro); font-weight: normal; }
   .boton-seccion { background: linear-gradient(180deg, #1d1810, #0b0a09); border: 1px solid var(--oro2); border-radius: 8px; padding: 16px 16px 14px; cursor: pointer; color: var(--oro); font: inherit; text-align: left; display: flex; flex-direction: column; gap: 8px; min-height: 108px; }
   .boton-seccion:hover, .boton-seccion:focus-visible { border-color: var(--oro); background: linear-gradient(180deg, #2a2213, #0b0a09); outline: none; }
   .boton-seccion .nom { font: 17px "Copperplate Gothic Bold", Copperplate, Georgia, serif; line-height: 1.25; }
@@ -214,6 +219,7 @@
   <div class="centro">
     <img class="sello" src="img/image19.png" alt="Pertenece a Familia Vega Godínez">
     <h1>Inventario de la colección</h1>
+    <div id="mTotal"><div class="rot">Valor total de la colección</div><div class="monto" id="mTotalMonto">–</div><div class="det" id="mTotalDet"></div></div>
     <div id="mBotones"></div>
   </div>
 </div>
@@ -1095,6 +1101,9 @@
     }
     const t = sumas(todas());
     $('mPiezas').textContent = t.n; $('mVal').textContent = fmt(t.val); $('mInv').textContent = fmt(t.inv);
+    $('mTotalMonto').textContent = fmt(t.val);
+    const det = $('mTotalDet'); det.textContent = ''; det.append(t.n + (t.n === 1 ? ' pieza' : ' piezas') + ' · invertido '); det.appendChild(el('b', '', fmt(t.inv)));
+    if (t.val && t.inv) { det.append(' · diferencia '); det.appendChild(el('b', '', conSigno(t.val - t.inv))); }
   }
   function pintarSeccion() {
     const sc = SECCIONES.find(x => x.id === seccionActual); if (!sc) return;
