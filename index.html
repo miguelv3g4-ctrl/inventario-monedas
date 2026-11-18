@@ -1163,16 +1163,20 @@
     const est = $('sEstado').value, deCat = todasSec.filter(p => !sel.value || p.coleccion === sel.value);
     const lista = deCat.filter(p => !est || (est === 'tengo') === tengo(p.id)).sort((a, b) => ordenCat(a.coleccion, b.coleccion) || a.moneda.localeCompare(b.moneda, 'es', { numeric: true }));
     const g = $('sGrid'); g.textContent = '';
-    if (sc.id === 'ms-sueltas') {
+    if (sc.id === 'ms-sueltas' || sc.id === 'museo-bccr') {
       // por niveles: 500 (Hitos), 50 (Fauna), 100 (Patrimonio) y al final 25 (Provincias); dentro, en el orden de emision de la hoja
       const NIVELES = [['Hitos de la Historia', '500 colones'], ['Fauna de los Ecosistemas', '50 colones'], ['Patrimonio Cultural Inmaterial', '100 colones'], ['Lugares Emblematicos de las Provincias de Costa Rica', '25 colones']];
       const ordenHoja = p => { const i = H.piezas.findIndex(x => p.moneda.startsWith(x.moneda)); return i < 0 ? 1e9 : i; };
       const columnaHoja = p => { const x = H.piezas.find(x => p.moneda.startsWith(x.moneda)); return x ? x.x : 1e9; };
-      const otrasCols = lista.filter(p => !NIVELES.some(n => n[0] === p.coleccion));
+      // el nivel sale de la coleccion; si no coincide, de la tematica escrita en el nombre (hitos, fauna, patrimonio, provincia)
+      const CLAVES = [/hito|independ|abolic|anexi|fundaci/i, /fauna|mariposa|rana|tortuga|lagartija|cangrejo|conejo/i, /patrimonio|cultural|swing|boyero|calipso|cimarrona|tope|ceramica|cerámica/i, /provincia|lugares|emblem/i];
+      const nivelDe = p => { const i = NIVELES.findIndex(n => n[0] === p.coleccion); if (i >= 0) return i; const t = p.moneda + ' ' + p.coleccion; return CLAVES.findIndex(re => re.test(t)); };
+      const otrasCols = lista.filter(p => nivelDe(p) < 0);
       for (const [col, denom] of NIVELES.concat(otrasCols.length ? [['', '']] : [])) {
-        const grupo = col ? lista.filter(p => p.coleccion === col) : otrasCols;
+        const grupo = col ? lista.filter(p => nivelDe(p) === NIVELES.findIndex(n => n[0] === col)) : otrasCols;
         if (!grupo.length) continue;
-        const t = el('div', 'nivel'); t.append(el('b', '', col ? denom : 'Otras'), el('span', '', (col || '') + ' · ' + grupo.length + (grupo.length === 1 ? ' moneda' : ' monedas'))); g.appendChild(t);
+        const uno = sc.id === 'museo-bccr' ? ' pieza' : ' moneda', varios = sc.id === 'museo-bccr' ? ' piezas' : ' monedas';
+        const t = el('div', 'nivel'); t.append(el('b', '', col ? denom : 'Otras'), el('span', '', (col || '') + ' · ' + grupo.length + (grupo.length === 1 ? uno : varios))); g.appendChild(t);
         for (const p of grupo.sort((a, b) => columnaHoja(a) - columnaHoja(b) || ordenHoja(a) - ordenHoja(b))) g.appendChild(tarjeta(p));
       }
     } else for (const p of lista) g.appendChild(tarjeta(p));
