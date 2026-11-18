@@ -743,10 +743,7 @@
    "notas": "Código: Conmemorativa #4 serie 13000\nMoneda conmemorativa, en estuche. Serie 12220,12221,13000. Producto: 200 años anexion Guanacaste.Series 12220,12221,13000. Categoría: Hitos Históricos Estuche. Código: Conmemorativa #4 serie 13000. Precio de venta: ₡40 000. Disponibles: 1."
   },
   "C9": {
-   "tengo": true,
    "producto": "200 años de independencia.Serie 0128/5000",
-   "valor": 350000,
-   "costo": 350000,
    "fotos": [
     "200-anos-de-independencia-serie-0128-5000.jpg",
     "200-anos-de-independencia-serie-0128-5000-2.jpg"
@@ -755,6 +752,9 @@
     "200-anos-de-independencia-serie-0128-5000.jpg",
     "200-anos-de-independencia-serie-0128-5000-2.jpg"
    ],
+   "valor": 350000,
+   "fechaValor": "2026-11-18",
+   "costo": 350000,
    "notas": "Código: Conmemorativa #1\nMoneda conmemorativa, en estuche. Serie(s) 0128 de un tiraje de 5000. Producto: 200 años de independencia.Serie 0128/5000. Categoría: Hitos Históricos Estuche. Código: Conmemorativa #1. Precio de venta: ₡350 000. Disponibles: 1."
   },
   "M9": {
