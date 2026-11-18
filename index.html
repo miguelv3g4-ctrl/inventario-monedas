@@ -709,7 +709,7 @@
   }
   function sumas(lista) {
     let n = 0, inv = 0, val = 0;
-    for (const p of lista) { const r = reg(p.id), q = cant(p.id); if (tengo(p.id) && !r.vendida) { n += q; val += (r.valor || 0) * q; } inv += (r.costo || 0) * q; }
+    for (const p of lista) { const r = reg(p.id), q = cant(p.id); if (tengo(p.id) && !r.vendida) { n += q; val += (r.valor || 0) * q; } if (tengo(p.id) || r.vendida) inv += (r.costo || 0) * q; } // invertido: solo lo que se tiene o se vendio
     return { n, inv, val };
   }
   const deSeccion = id => todas().filter(p => p.seccion === id);
@@ -718,7 +718,7 @@
     for (const p of deSeccion('conmemorativas')) {
       const r = reg(p.id), q = cant(p.id);
       if (tengo(p.id) && !r.vendida) { n += q; val += (r.valor || 0) * q; }
-      inv += (r.costo || 0) * q;
+      if (tengo(p.id) || r.vendida) inv += (r.costo || 0) * q; // las que faltan no cuentan como invertido
       if (r.vendida) { ven += r.precioVenta || 0; gan += (r.precioVenta || 0) - (r.costo || 0) * q; }
     }
     $('tPiezas').textContent = n; $('tInv').textContent = fmt(inv); $('tVal').textContent = fmt(val); $('tVen').textContent = fmt(ven); $('tGan').textContent = conSigno(gan);
