@@ -529,10 +529,10 @@
     const cab = el('tr'); ['Sub categorías', 'Series', 'Detalle'].forEach(x => cab.appendChild(el('th', '', x)));
     const thead = el('thead'); thead.appendChild(cab); t.appendChild(thead);
     const tb = el('tbody');
-    let anterior = '';
+
     for (const f of filas) {
       const tr = el('tr'); tr.style.background = COLOR_COLECCION[f.coleccion] || '#222';
-      tr.appendChild(el('td', 'mon', f.moneda === anterior ? '' : f.moneda)); anterior = f.moneda;
+      tr.appendChild(el('td', 'mon', f.moneda)); // cada fila dice a que moneda pertenece
       const tdS = el('td', 'ser');
       for (const a of f.series) { const l = el('a', '', a.serie); l.title = 'Abrir la ficha de este estuche'; l.onclick = () => abrirFicha(a.id); tdS.appendChild(l); }
       tr.appendChild(tdS); tr.appendChild(el('td', '', f.detalle)); tb.appendChild(tr);
