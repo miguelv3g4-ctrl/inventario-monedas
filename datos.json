@@ -393,8 +393,6 @@
   "O-1b8787e2": {
    "tengo": true,
    "cantidad": 2,
-   "valor": 260000,
-   "costo": 130000,
    "fotos": [
     "100-colones-plata-version-proof-y-mate.jpg",
     "100-colones-plata-version-proof-y-mate-2.jpg"
@@ -403,6 +401,10 @@
     "100-colones-plata-version-proof-y-mate.jpg",
     "100-colones-plata-version-proof-y-mate-2.jpg"
    ],
+   "valor": 180000,
+   "fechaValor": "2026-11-18",
+   "costo": 120000,
+   "fechaCompra": "2022-09-01",
    "notas": "Código: Conmemorativas plata pollitos\nMoneda conmemorativa de 100 colones, versión PROOF, mate. Producto: 100 colones plata. Versión PROOF y mate. Categoría: Conmemorativas de plata. Código: Conmemorativas plata pollitos. Precio de venta: ₡260 000. Disponibles: 2."
   },
   "AM14": {
