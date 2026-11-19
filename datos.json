@@ -2678,8 +2678,11 @@
   },
   "O-xd20f2c5d2": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
-   "km": "KM# 227a"
+   "fotosCompra": [
+    "O-xd20f2c5d2-1795117846459-oal6g.jpg"
+   ],
+   "km": "KM# 227a",
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
   },
   "O-xd7c4d06a4": {
    "tengo": true,
