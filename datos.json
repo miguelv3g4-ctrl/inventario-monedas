@@ -3732,10 +3732,13 @@
    "origen": "Banco Central de Costa Rica (emisión)"
   },
   "C14": {
-   "fechaCompra": "2021-09-01",
+   "tengo": true,
+   "fechaValor": "2026-11-18",
+   "fuenteValor": "mercado numismatico",
    "costo": 25000,
-   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "fechaCompra": "2021-09-01",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día)."
   },
   "H14": {
    "fechaCompra": "2023-08-01",
