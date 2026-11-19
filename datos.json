@@ -2805,8 +2805,11 @@
   },
   "O-xa8ced4273": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\".",
-   "km": "KM# 229c"
+   "fotosCompra": [
+    "O-xa8ced4273-1795054667879-naqah.jpg"
+   ],
+   "km": "KM# 229c",
+   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\"."
   },
   "O-x19b5a2c7f": {
    "tengo": true,
