@@ -2694,8 +2694,11 @@
   },
   "O-x109cb7dca": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras gruesas - Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
-   "km": "KM# 227.2a"
+   "fotosCompra": [
+    "O-x109cb7dca-1795128431868-6snco.jpg"
+   ],
+   "km": "KM# 227.2a",
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras gruesas - Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
   },
   "O-x7567e6ed2": {
    "tengo": true,
