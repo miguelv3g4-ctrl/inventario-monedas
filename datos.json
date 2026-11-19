@@ -2549,8 +2549,11 @@
   "O-x0085cc125": {
    "tengo": true,
    "cantidad": 3,
-   "notas": "Material: Latón · Peso: 2,78 g · Diámetro: 15,00 mm · Canto: Estriado segmentado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"colon\".",
-   "km": "KM# 233"
+   "fotosCompra": [
+    "O-x0085cc125-1795096208723-poebe.jpg"
+   ],
+   "km": "KM# 233",
+   "notas": "Material: Latón · Peso: 2,78 g · Diámetro: 15,00 mm · Canto: Estriado segmentado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"colon\"."
   },
   "O-x41e23a1e6": {
    "tengo": false,
