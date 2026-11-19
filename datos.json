@@ -3762,7 +3762,8 @@
    "fechaCompra": "2023-08-01",
    "costo": 12000,
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "tengo": false
   },
   "M15": {
    "fechaCompra": "2023-12-04",
