@@ -2710,8 +2710,11 @@
   },
   "O-xead7a029a": {
    "tengo": true,
-   "notas": "Material: Aluminio · Peso: 0,90 g · Diámetro: 21,44 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
-   "km": "KM# 227b"
+   "fotosCompra": [
+    "O-xead7a029a-1795203475325-zs89z.jpg"
+   ],
+   "km": "KM# 227b",
+   "notas": "Material: Aluminio · Peso: 0,90 g · Diámetro: 21,44 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
   },
   "O-xce0766872": {
    "tengo": true,
