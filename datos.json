@@ -2717,80 +2717,75 @@
   },
   "O-x33b9ffe7b": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nPrecio revendedor",
+   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 188.1",
    "fo": "FO# 7111",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-7111-25-centimos",
    "fotosCompra": [
     "privado:km-KM188-1.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x873813965": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nPrecio revendedor",
+   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 188.1",
    "fo": "FO# 7111",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-7111-25-centimos",
    "fotosCompra": [
     "privado:km-KM188-1.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x87cb49299": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,38 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nPrecio revendedor",
+   "notas": "Material: Cobre-níquel · Peso: 3,38 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 188.2",
    "fo": "FO# 11427",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-11427-25-centimos",
    "fotosCompra": [
     "privado:km-KM188-2.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-xccdcad173": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nPrecio revendedor",
+   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 188.1",
    "fo": "FO# 7111",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-7111-25-centimos",
    "fotosCompra": [
     "privado:km-KM188-1.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x17a69bd37": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nPrecio revendedor",
+   "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 188.1",
    "fo": "FO# 7111",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-7111-25-centimos",
    "fotosCompra": [
     "privado:km-KM188-1.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-xae37c1a00": {
    "tengo": true,
    "cantidad": 2,
    "notas": "Material: Cobre-níquel · Peso: 3,46 g · Diámetro: 23,00 mm · Canto: Liso con inscripción BCCR-BCCR-BCCR-BCCR\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nPrecio revendedor",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 500,
    "km": "KM# 188.1",
    "fo": "FO# 7111",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-7111-25-centimos",
@@ -2802,76 +2797,71 @@
   },
   "O-x483025dee": {
    "tengo": true,
-   "notas": "Material: Acero bañado en níquel · Peso: 3,19 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nPrecio revendedor",
+   "notas": "Material: Acero bañado en níquel · Peso: 3,19 g · Diámetro: 23,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 188.1a",
    "fo": "FO# 11426",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-11426-25-centimos",
    "fotosCompra": [
     "privado:km-KM188-1a.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x7f3059237": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Aluminio · Peso: 1,10 g · Diámetro: 23,00 mm · Canto: Liso\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nPrecio revendedor",
+   "notas": "Material: Aluminio · Peso: 1,10 g · Diámetro: 23,00 mm · Canto: Liso\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 188.1b",
    "fo": "FO# 7112",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-7112-25-centimos",
    "fotosCompra": [
     "privado:km-KM188-1b.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x8d45ec313": {
    "tengo": true,
    "cantidad": 4,
-   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nPrecio revendedor",
+   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 188.3",
    "fo": "FO# 5205",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-5205-25-centimos",
    "fotosCompra": [
     "privado:km-KM188-3.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x8211325fe": {
    "tengo": true,
-   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nPrecio revendedor",
+   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 188.3",
    "fo": "FO# 5205",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-5205-25-centimos",
    "fotosCompra": [
     "privado:km-KM188-3.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x66c01a2b8": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nPrecio revendedor",
+   "notas": "Material: Aluminio · Peso: 1,05 g · Diámetro: 17,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"25 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 188.3",
    "fo": "FO# 5205",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-5205-25-centimos",
    "fotosCompra": [
     "privado:km-KM188-3.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-xea71ba3dd": {
    "tengo": false,
@@ -3005,23 +2995,22 @@
   },
   "O-xeb403d2e8": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: 7 estrellas - B.C.C.R. - alineación medalla\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
+   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: 7 estrellas - B.C.C.R. - alineación medalla\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 189.1",
    "fo": "FO# 11428",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-11428-50-centimos",
    "fotosCompra": [
     "privado:km-KM189-1.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-xa5ccc1c22": {
    "tengo": false,
    "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 500,
    "km": "KM# 189.3",
    "fo": "FO# 6469",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-6469-50-centimos",
@@ -3033,80 +3022,75 @@
   },
   "O-x37b2aafbf": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
+   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 189.3",
    "fo": "FO# 6469",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-6469-50-centimos",
    "fotosCompra": [
     "privado:km-KM189-3.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x201edf229": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
+   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 189.2",
    "fo": "FO# 10241",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-10241-50-centimos",
    "fotosCompra": [
     "privado:km-KM189-2.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-xdea505670": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Fecha pequeña\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
+   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Fecha pequeña\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 189.2",
    "fo": "FO# 10241",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-10241-50-centimos",
    "fotosCompra": [
     "privado:km-KM189-2.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x72b788c96": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Fecha grande\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
+   "notas": "Material: Cobre-níquel · Peso: 7,01 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nVariante: Fecha grande\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 189.2",
    "fo": "FO# 10241",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-10241-50-centimos",
    "fotosCompra": [
     "privado:km-KM189-2.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x1184f6c99": {
    "tengo": true,
-   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
+   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 189.3",
    "fo": "FO# 6469",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-6469-50-centimos",
    "fotosCompra": [
     "privado:km-KM189-3.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x19ce19ac9": {
    "tengo": true,
    "cantidad": 2,
    "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 500,
    "km": "KM# 189.3",
    "fo": "FO# 6469",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-6469-50-centimos",
@@ -3118,59 +3102,55 @@
   },
   "O-x65ebe4a8c": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
+   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 209.1",
    "fo": "FO# 6827",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-6827-50-centimos",
    "fotosCompra": [
     "privado:km-KM209-1.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-xef3acce12": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
+   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 209.1",
    "fo": "FO# 6827",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-6827-50-centimos",
    "fotosCompra": [
     "privado:km-KM209-1.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-x915a849cd": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 2,20 g · Diámetro: 18,95 mm · Canto: Liso\nVariante: Barco pequeño letras de la cinta en relieve\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
+   "notas": "Material: Acero inoxidable · Peso: 2,20 g · Diámetro: 18,95 mm · Canto: Liso\nVariante: Barco pequeño letras de la cinta en relieve\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 209.2",
    "fo": "FO# 6828",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-6828-50-centimos",
    "fotosCompra": [
     "privado:km-KM209-2.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-xfbc18a8dd": {
    "tengo": true,
-   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
+   "notas": "Material: Acero inoxidable · Peso: 2,18 g · Diámetro: 19,11 mm · Canto: Liso\nVariante: Barco grande - Letras de la cinta incusas\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
-   "valor": 1000,
+   "valor": 4900,
+   "valorEstimado": true,
    "km": "KM# 209.1",
    "fo": "FO# 6827",
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-6827-50-centimos",
    "fotosCompra": [
     "privado:km-KM209-1.jpg"
-   ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   ]
   },
   "O-xaf16fb498": {
    "tengo": false,
