@@ -3741,7 +3741,7 @@
    "fuenteValor": "Precio revendedor"
   },
   "O-x003714af8": {
-   "tengo": false,
+   "tengo": true,
    "notas": "Material: Plata · Peso: 28,28 g · Diámetro: 38,60 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
    "km": "KM# 200a",
    "fo": "FO# 15937",
