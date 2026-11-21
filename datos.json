@@ -994,10 +994,7 @@
    "origen": "Banco Central de Costa Rica (emisión)"
   },
   "C42": {
-   "tengo": true,
    "producto": "Swing criollo. Series 1527 y 1858/7000",
-   "valor": 39500,
-   "costo": 9000,
    "fotos": [
     "swing-criollo-series-1527-y-1858-7000.jpg",
     "swing-criollo-series-1527-y-1858-7000-2.jpg"
@@ -1006,11 +1003,13 @@
     "swing-criollo-series-1527-y-1858-7000.jpg",
     "swing-criollo-series-1527-y-1858-7000-2.jpg"
    ],
-   "notas": "Código: Cultural inmaterial #1\nMoneda conmemorativa, en estuche. Serie(s) 1527 y 1858 de un tiraje de 7000. Producto: Swing criollo. Series 1527 y 1858/7000. Categoría: Patrimonio cultural estuche. Código: Cultural inmaterial #1. Precio de venta: ₡25 000. Disponibles: 2.\nCosto registrado antes del PDF: ₡25 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nPrecio revendedor",
+   "valor": 25000,
+   "fechaValor": "2026-11-21",
+   "fuenteValor": "Precio revendedor",
+   "costo": 9000,
    "fechaCompra": "2025-07-23",
    "origen": "Banco Central de Costa Rica (emisión)",
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "notas": "Código: Cultural inmaterial #1\nMoneda conmemorativa, en estuche. Serie(s) 1527 y 1858 de un tiraje de 7000. Producto: Swing criollo. Series 1527 y 1858/7000. Categoría: Patrimonio cultural estuche. Código: Cultural inmaterial #1. Precio de venta: ₡25 000. Disponibles: 2.\nCosto registrado antes del PDF: ₡25 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nPrecio revendedor"
   },
   "C43": {
    "tengo": true,
