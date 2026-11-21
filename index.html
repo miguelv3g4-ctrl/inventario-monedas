@@ -447,7 +447,7 @@
     { id: 'replicas', nombre: 'Conmemorativas réplicas', fondo: 'fotos/guaria-replica.jpg' },
     { id: 'coleccionadores-acrilicos', nombre: 'Coleccionadores acrílicos', fondo: 'fotos/set-acrilico-proof-y-bu.jpg' },
     { id: 'museo-bccr', nombre: 'Coleccionadores Museo Banco Central', fondo: 'fotos/coleccionador-fauna-ms.jpg' },
-    { id: 'ms-sueltas', nombre: 'Monedas MS sueltas', fondo: 'referencias/hoja-mariposa-amorfo.jpg' }
+    { id: 'ms-sueltas', nombre: 'Monedas MS sueltas', fondo: 'referencias/calipso-ms.jpg' }
   ];
   function armarBase() {
     base = Object.fromEntries(H.piezas.map(p => [p.id, Object.assign(p, { seccion: 'conmemorativas' })]));
@@ -1181,8 +1181,15 @@
       b.append(el('span', 'nom', sc.nombre)); if (sc.desc) b.append(el('span', 'desc', sc.desc));
       // MS sueltas: si ya hay foto propia de la Mariposa MS (circulacion normal), el boton usa esa
       let fondo = sc.fondo;
-      if (sc.id === 'ms-sueltas') { const m = deSeccion('ms-sueltas').find(p => /^Mariposa/i.test(p.moneda)), f = m && (fotosDe(m.id, 'fotos')[0] || fotosDe(m.id, 'fotosCompra')[0]); if (f) fondo = locales[f] || 'fotos/' + f; }
-      if (fondo) b.style.background = `linear-gradient(180deg, rgba(10,8,4,.55), rgba(10,8,4,.9) 70%), url("${fondo}")`;
+      const conFondo = u => { b.style.background = `linear-gradient(180deg, rgba(10,8,4,.55), rgba(10,8,4,.9) 70%), url("${u}")`; };
+      if (sc.id === 'ms-sueltas') {
+        // MS (sin color): la foto propia de la Mariposa MS; si no hay, la Mariposa de circulacion del catalogo (privada); mientras carga, la Calipso MS
+        const m = deSeccion('ms-sueltas').find(p => /^Mariposa/i.test(p.moneda)), propia = m && fotosDe(m.id, 'fotos')[0];
+        const otra = propia || (m && fotosDe(m.id, 'fotosCompra')[0]) || 'privado:km-KM249.jpg';
+        if (/^privado:/.test(otra)) { const im = new Image(); im.onload = () => conFondo(im.src); ponerRef(im, otra); }
+        else fondo = locales[otra] || 'fotos/' + otra;
+      }
+      if (fondo) conFondo(fondo);
       const num = el('span', 'num'); num.append(t.n + (t.n === 1 ? ' pieza' : ' piezas'));
       if (t.val) { num.append(' · '); num.appendChild(el('b', '', fmt(t.val))); }
       b.appendChild(num);
