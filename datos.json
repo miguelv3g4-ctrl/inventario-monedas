@@ -5623,7 +5623,9 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 245",
-   "fo": "FO# 29516"
+   "fo": "FO# 29516",
+   "valor": 30000,
+   "fechaValor": "2026-11-21"
   },
   "C14": {
    "tengo": true,
@@ -5643,7 +5645,9 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 242",
-   "fo": "FO# 21280"
+   "fo": "FO# 21280",
+   "valor": 250000,
+   "fechaValor": "2026-11-21"
   },
   "AR14": {
    "fechaCompra": "2025-10-22",
@@ -5651,7 +5655,9 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 247",
-   "fo": "FO# 29572"
+   "fo": "FO# 29572",
+   "valor": 20000,
+   "fechaValor": "2026-11-21"
   },
   "AW14": {
    "fechaCompra": "2025-11-26",
@@ -5659,7 +5665,9 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 248",
-   "fo": "FO# 29744"
+   "fo": "FO# 29744",
+   "valor": 20000,
+   "fechaValor": "2026-11-21"
   },
   "H15": {
    "fechaCompra": "2023-08-01",
@@ -5676,14 +5684,18 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 243",
-   "fo": "FO# 21442"
+   "fo": "FO# 21442",
+   "valor": 25000,
+   "fechaValor": "2026-11-21"
   },
   "R15": {
    "fechaCompra": "2024-07-26",
    "costo": 9950,
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
-   "fo": "FO# 26714"
+   "fo": "FO# 26714",
+   "valor": 25000,
+   "fechaValor": "2026-11-21"
   },
   "X15": {
    "fechaCompra": "2024-11-12",
@@ -5691,7 +5703,9 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 249",
-   "fo": "FO# 27599"
+   "fo": "FO# 27599",
+   "valor": 130000,
+   "fechaValor": "2026-11-21"
   },
   "AC15": {
    "fechaCompra": "2025-02-24",
@@ -5699,7 +5713,9 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 244",
-   "fo": "FO# 28967"
+   "fo": "FO# 28967",
+   "valor": 40000,
+   "fechaValor": "2026-11-21"
   },
   "AH15": {
    "fechaCompra": "2025-05-26",
@@ -5707,7 +5723,9 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 246",
-   "fo": "FO# 29429"
+   "fo": "FO# 29429",
+   "valor": 30000,
+   "fechaValor": "2026-11-21"
   },
   "AM15": {
    "fechaCompra": "2025-08-26",
@@ -5715,7 +5733,9 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 245",
-   "fo": "FO# 29516"
+   "fo": "FO# 29516",
+   "valor": 20000,
+   "fechaValor": "2026-11-21"
   },
   "AR15": {
    "fechaCompra": "2025-10-22",
@@ -5723,7 +5743,9 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 247",
-   "fo": "FO# 29572"
+   "fo": "FO# 29572",
+   "valor": 20000,
+   "fechaValor": "2026-11-21"
   },
   "AW15": {
    "fechaCompra": "2025-11-26",
@@ -5731,7 +5753,9 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 248",
-   "fo": "FO# 29744"
+   "fo": "FO# 29744",
+   "valor": 20000,
+   "fechaValor": "2026-11-21"
   },
   "C16": {
    "tengo": true,
@@ -5751,7 +5775,9 @@
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: agosto 2023 (el PDF no da el día).",
    "origen": "Banco Central de Costa Rica (emisión)",
    "km": "KM# 242",
-   "fo": "FO# 21280"
+   "fo": "FO# 21280",
+   "valor": 100000,
+   "fechaValor": "2026-11-21"
   },
   "C17": {
    "fechaCompra": "2021-09-01",
@@ -5852,14 +5878,18 @@
    "costo": 8400,
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
-   "fo": "FO# 30097"
+   "fo": "FO# 30097",
+   "valor": 25000,
+   "fechaValor": "2026-11-21"
   },
   "AH32": {
    "fechaCompra": "2026-05-20",
    "costo": 8400,
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
-   "fo": "FO# 30097"
+   "fo": "FO# 30097",
+   "valor": 25000,
+   "fechaValor": "2026-11-21"
   },
   "AC33": {
    "fechaCompra": "2026-04-22",
@@ -5875,7 +5905,9 @@
    "costo": 9050,
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "origen": "Banco Central de Costa Rica (emisión)",
-   "fo": "FO# 29745"
+   "fo": "FO# 29745",
+   "valor": 40000,
+   "fechaValor": "2026-11-21"
   },
   "R35": {
    "fechaCompra": "2026-02-25",
