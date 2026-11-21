@@ -5198,19 +5198,17 @@
   "O-msda0cba6d9": {
    "tengo": true,
    "cantidad": 11,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor",
-   "km": "KM# 242",
-   "fo": "FO# 21280",
-   "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-21280-500-colones-175-aniversario-de-la-fundacion-de-la-republica",
+   "fotos": [
+    "ms-175-fundacion.jpg"
+   ],
    "fotosCompra": [
     "privado:km-KM242.jpg"
    ],
+   "km": "KM# 242",
    "valor": 1500,
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
-   "fotos": [
-    "ms-175-fundacion.jpg"
-   ]
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor"
   },
   "O-ms88823228f": {
    "tengo": true,
