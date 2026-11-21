@@ -96,6 +96,28 @@ export default {
         return new Response(img, { headers: { ...cors, 'Content-Type': 'image/jpeg', 'Cache-Control': 'private, max-age=86400' } });
       }
 
+      // PDF del testamento (el firmado o el borrador): solo en el almacen privado, con sesion
+      if (ruta === '/testamento-pdf' || ruta === '/testamento-pdf/info') {
+        if (!env.INVENTARIO_PRIVADO) return json({ error: 'Falta el almacén privado.' }, 503);
+        if (ruta === '/testamento-pdf/info' && req.method === 'GET') {
+          const { value, metadata } = await env.INVENTARIO_PRIVADO.getWithMetadata('testamento-pdf', 'arrayBuffer');
+          return json(value ? { existe: true, fecha: (metadata || {}).fecha || null, bytes: value.byteLength } : { existe: false });
+        }
+        if (ruta === '/testamento-pdf' && req.method === 'GET') {
+          const pdf = await env.INVENTARIO_PRIVADO.get('testamento-pdf', 'arrayBuffer');
+          if (!pdf) return json({ error: 'No hay PDF guardado' }, 404);
+          return new Response(pdf, { headers: { ...cors, 'Content-Type': 'application/pdf', 'Cache-Control': 'private, no-store' } });
+        }
+        if (ruta === '/testamento-pdf' && req.method === 'PUT') {
+          const bytes = new Uint8Array(await req.arrayBuffer());
+          if (!bytes.length || bytes.length > 8 * 1024 * 1024) return json({ error: 'PDF vacío o demasiado grande (máximo 8 MB).' }, 413);
+          if (String.fromCharCode(...bytes.subarray(0, 4)) !== '%PDF') return json({ error: 'Solo se aceptan archivos PDF.' }, 400);
+          await env.INVENTARIO_PRIVADO.put('testamento-pdf', bytes, { metadata: { fecha: Date.now() } });
+          return json({ ok: true });
+        }
+        return json({ error: 'No existe' }, 404);
+      }
+
       // datos personales del testamento: solo en el almacen privado, con sesion; nunca en el repositorio publico
       if (ruta === '/testamento' && (req.method === 'GET' || req.method === 'PUT')) {
         if (!env.INVENTARIO_PRIVADO) return json({ error: 'Falta el almacén privado.' }, 503);

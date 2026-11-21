@@ -451,6 +451,9 @@
     <div class="cab noimprimir">
       <div><h2>Testamento</h2></div>
       <button id="tImprimir" class="fuerte">Imprimir / Guardar PDF</button>
+      <button id="tVerPdf">Ver PDF guardado</button>
+      <button id="tSubirPdf">Guardar un PDF</button>
+      <input type="file" id="tArchivo" accept="application/pdf" hidden>
       <button id="tCerrar">Cerrar</button>
     </div>
     <div class="aviso-t noimprimir">
@@ -459,6 +462,17 @@
     <div id="tCampos" class="noimprimir"></div>
     <div class="aviso-t noimprimir" id="tNotas"></div>
     <div id="tHoja"></div>
+  </div>
+</div>
+<div class="velo" id="vPdf">
+  <div class="ventana" role="dialog" aria-modal="true" aria-label="Testamento guardado" style="width:min(980px,100%)">
+    <div class="cab">
+      <div><h2>Testamento guardado</h2><div id="pInfo" style="color:var(--gris);font-size:13px;margin-top:2px"></div></div>
+      <button id="pImprimir" class="fuerte">Imprimir</button>
+      <button id="pBajar">Descargar</button>
+      <button id="pCerrar">Cerrar</button>
+    </div>
+    <iframe id="pMarco" title="PDF del testamento" style="width:100%;height:76vh;border:0;background:#fff;margin-top:10px;border-radius:4px"></iframe>
   </div>
 </div>
 <div id="grande" role="dialog" aria-modal="true" aria-label="Foto en grande">
@@ -1522,6 +1536,34 @@
   }
   $('mTestamento').onclick = async () => { await cargarT(); armarCamposTestamento(); pintarTestamento(); $('vTestamento').classList.add('abierta'); };
   $('tCerrar').onclick = () => $('vTestamento').classList.remove('abierta');
+  // PDF guardado en el almacen privado (con sesion): se sube desde aqui y se ve, imprime o descarga con el boton
+  let pdfUrl = '';
+  $('tVerPdf').onclick = async () => {
+    try {
+      const r = await api('GET', '/testamento-pdf');
+      if (r.status === 404) { alert('Todavía no hay un PDF guardado. Usa "Guardar un PDF" para subir el testamento.'); return; }
+      if (!r.ok) { alert('No se pudo abrir el PDF guardado (' + r.status + ').'); return; }
+      const b = await r.blob(); if (pdfUrl) URL.revokeObjectURL(pdfUrl);
+      pdfUrl = URL.createObjectURL(new Blob([b], { type: 'application/pdf' })); $('pMarco').src = pdfUrl;
+      $('pInfo').textContent = '';
+      api('GET', '/testamento-pdf/info').then(x => x.json()).then(j => { if (j && j.fecha) $('pInfo').textContent = 'Guardado el ' + new Date(j.fecha).toLocaleString('es-CR'); }).catch(() => {});
+      $('vPdf').classList.add('abierta');
+    } catch (e) { alert('No se pudo abrir el PDF guardado: ' + (e.message || e)); }
+  };
+  $('tSubirPdf').onclick = () => $('tArchivo').click();
+  $('tArchivo').onchange = async () => {
+    const f = $('tArchivo').files[0]; $('tArchivo').value = ''; if (!f) return;
+    if (!/.pdf$/i.test(f.name) && f.type !== 'application/pdf') { alert('Elige un archivo PDF.'); return; }
+    if (!confirm('¿Guardar "' + f.name + '" como el testamento? Reemplaza el PDF guardado antes.')) return;
+    try {
+      const r = await api('PUT', '/testamento-pdf', f);
+      if (r.ok) alert('PDF guardado en tu almacén privado. Ya puedes verlo con "Ver PDF guardado".');
+      else { let m = ''; try { m = (await r.json()).error; } catch (e) {} alert('No se pudo guardar: ' + (m || r.status)); }
+    } catch (e) { alert('No se pudo guardar: ' + (e.message || e)); }
+  };
+  $('pImprimir').onclick = () => { try { $('pMarco').contentWindow.focus(); $('pMarco').contentWindow.print(); } catch (e) { alert('No se pudo imprimir desde aquí. Usa Descargar y imprime el archivo.'); } };
+  $('pBajar').onclick = () => { if (!pdfUrl) return; const a = document.createElement('a'); a.href = pdfUrl; a.download = 'testamento.pdf'; document.body.appendChild(a); a.click(); a.remove(); };
+  $('pCerrar').onclick = () => { $('vPdf').classList.remove('abierta'); $('pMarco').src = 'about:blank'; };
   $('tImprimir').onclick = () => { pintarTestamento(); window.print(); };
   function irA() {
     const h = location.hash;
