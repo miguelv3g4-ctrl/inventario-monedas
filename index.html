@@ -835,7 +835,7 @@
     const esMS = base[id].seccion === 'ms-sueltas';
     const monto = esValor ? (esMS ? valorU(base[id]) : r.valor) : r.costo;
     $('vRotulo').textContent = esValor ? (esMS ? 'Precio por pieza' : 'Valor actual de la moneda') : 'Precio al que la compré';
-    $('vPrecio').textContent = monto ? fmt(monto) : 'Sin precio todavía'; $('vPrecio').classList.toggle('vacio', !monto);
+    $('vPrecio').textContent = monto ? fmt(monto) : r.enColeccion ? 'Ver valor en colección completa' : 'Sin precio todavía'; $('vPrecio').classList.toggle('vacio', !monto);
     const det = $('vDetalle'); det.textContent = '';
     if (esMS) { const q = tengo(id) ? cant(id) : 0; renglon(det, 'Cantidad', q + (q === 1 ? ' pieza' : ' piezas')); if (monto) renglon(det, 'Total', q + ' × ' + fmt(monto) + ' = ' + fmt(monto * q)); }
     renglon(det, 'Catálogo', [r.km, r.fo].filter(Boolean).join(' · '));
@@ -1188,7 +1188,7 @@
         tx.appendChild(el('small', 'msCant', 'Cantidad: ' + q + (q === 1 ? ' pieza' : ' piezas')));
         tx.appendChild(el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : u ? q + ' × ' + fmt(u) + ' = ' + fmt(u * q) : 'Sin precio'));
       } else {
-      const precio = el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : r.valor ? fmt(r.valor) + (cant(p.id) > 1 ? ' c/u' : '') : 'Sin precio');
+      const precio = el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : r.valor ? fmt(r.valor) + (cant(p.id) > 1 ? ' c/u' : '') : r.enColeccion ? 'Ver valor en colección completa' : 'Sin precio');
       tx.appendChild(precio);
       }
       // fotos de la pieza: flechas en la tarjeta para pasarlas, y al tocar la foto se abre el visor con todas
