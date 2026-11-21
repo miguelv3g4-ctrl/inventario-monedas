@@ -311,9 +311,7 @@
   },
   "O-9b939ff5": {
    "tengo": true,
-   "cantidad": 1,
-   "valor": 200000,
-   "costo": 20000,
+   "vendida": true,
    "fotos": [
     "coleccion-completa-10-colones-serie-d-con-variante.jpg",
     "coleccion-completa-10-colones-serie-d-con-variante-2.jpg",
@@ -324,6 +322,11 @@
     "coleccion-completa-10-colones-serie-d-con-variante-2.jpg",
     "coleccion-completa-10-colones-serie-d-con-variante-3.jpg"
    ],
+   "valor": 550000,
+   "costo": 20000,
+   "fechaCompra": "2020-02-21",
+   "origen": "reventa",
+   "fechaVenta": "2026-11-21",
    "notas": "Código: Colección completa fechas y variantes 10 colones serie D\nBillete de 10 colones. Serie D con variantes. Producto: Colección completa 10 colones serie D con variantes. Categoría: Billetes. Código: Colección completa fechas y variantes 10 colones serie D. Precio de venta: ₡200 000. Disponibles: 1."
   },
   "O-bfeb6e5b": {
