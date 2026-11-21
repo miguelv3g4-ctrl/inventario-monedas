@@ -4782,9 +4782,7 @@
    "valorEstimado": true,
    "km": "KM# 127.1",
    "fo": "FO# 11452",
-   "fotosCompra": [
-    "privado:anio-O-x2561fd32e-0.jpg"
-   ]
+   "fotosCompra": []
   },
   "O-xa747aa459": {
    "tengo": false,
@@ -4794,9 +4792,7 @@
    "valorEstimado": true,
    "km": "KM# 127.1",
    "fo": "FO# 11452",
-   "fotosCompra": [
-    "privado:anio-O-xa747aa459-0.jpg"
-   ]
+   "fotosCompra": []
   },
   "O-x43a40c16c": {
    "tengo": false,
@@ -4806,9 +4802,7 @@
    "valorEstimado": true,
    "km": "KM# 127.1",
    "fo": "FO# 11452",
-   "fotosCompra": [
-    "privado:anio-O-x43a40c16c-0.jpg"
-   ]
+   "fotosCompra": []
   },
   "O-xfc97ea550": {
    "tengo": false,
@@ -7923,21 +7917,21 @@
    "nombre": "25 centavos 1886 · GW-9Ds",
    "categoria": "25 centavos",
    "seccion": "antano",
-   "ref": "privado:anio-O-x2561fd32e-0.jpg"
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-xa747aa459",
    "nombre": "25 centavos 1886 · 9Ds-GW",
    "categoria": "25 centavos",
    "seccion": "antano",
-   "ref": "privado:anio-O-xa747aa459-0.jpg"
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-x43a40c16c",
    "nombre": "25 centavos 1886 · 9Ds-GW microletra C debajo del escudo",
    "categoria": "25 centavos",
    "seccion": "antano",
-   "ref": "privado:anio-O-x43a40c16c-0.jpg"
+   "ref": "referencias/moneda-25-centavos-1887.jpg"
   },
   {
    "id": "O-xfc97ea550",
