@@ -4131,11 +4131,12 @@
   },
   "O-x322208290": {
    "tengo": true,
-   "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Canto: Estriado · Acabado PROOF · Tiraje: 5 000\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
    "km": "KM# 206",
    "fo": "FO# 11432",
    "fotosCompra": [
-    "privado:km-KM206.jpg"
+    "privado:nino1979-proof-aves.jpg",
+    "privado:nino1979-proof-escudo.jpg"
    ],
    "valor": 62000,
    "costo": 62000
@@ -5942,6 +5943,18 @@
    ],
    "valor": 90000,
    "costo": 90000
+  },
+  "O-x322208290m": {
+   "tengo": true,
+   "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Canto: Estriado · Acabado normal (sin brillo espejo) · Tiraje: 9 500\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 206",
+   "fo": "FO# 11432",
+   "fotosCompra": [
+    "privado:nino1979-normal-aves.jpg",
+    "privado:nino1979-normal-escudo.jpg"
+   ],
+   "valor": 62000,
+   "costo": 62000
   }
  },
  "sueltas": {},
@@ -7413,10 +7426,17 @@
   },
   {
    "id": "O-x322208290",
-   "nombre": "100 colones (Año Internacional del Niño) 1979",
+   "nombre": "100 colones (Año Internacional del Niño) 1979 · versión PROOF",
    "categoria": "100 colones",
    "seccion": "antano",
-   "ref": "privado:cat-92.jpg"
+   "ref": "privado:nino1979-proof-aves.jpg"
+  },
+  {
+   "id": "O-x322208290m",
+   "nombre": "100 colones (Año Internacional del Niño) 1979 · versión normal",
+   "categoria": "100 colones",
+   "seccion": "antano",
+   "ref": "privado:nino1979-normal-aves.jpg"
   },
   {
    "id": "O-x41fa83d24",
