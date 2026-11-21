@@ -1643,7 +1643,9 @@
     "provincia-cartago-series-2036-y-4493-7000.jpg",
     "provincia-cartago-series-2036-y-4493-7000-2.jpg"
    ],
-   "notas": "Código: Provincias #5\nMoneda conmemorativa. Serie(s) 2036 y 4493 de un tiraje de 7000. Producto: Provincia Cartago. Series 2036 y 4493/7000. Categoría: Sin categoria. Código: Provincias #5. Precio de venta: ₡25 000. Disponibles: 2."
+   "notas": "Código: Provincias #5\nMoneda conmemorativa. Serie(s) 2036 y 4493 de un tiraje de 7000. Producto: Provincia Cartago. Series 2036 y 4493/7000. Categoría: Sin categoria. Código: Provincias #5. Precio de venta: ₡25 000. Disponibles: 2.",
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "fechaCompra": "2026-10-15"
   },
   "X16": {
    "tengo": true,
@@ -5305,7 +5307,8 @@
    "origen": "Banco Central de Costa Rica (emisión)",
    "notas": "Fecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina); fecha: setiembre 2021 (el PDF no da el día).",
    "km": "KM# 241",
-   "fo": "FO# 20094"
+   "fo": "FO# 20094",
+   "valor": 300000
   },
   "H14": {
    "fechaCompra": "2023-08-01",
@@ -5641,7 +5644,9 @@
     "calipso-acrilico-proof.jpg"
    ],
    "notas": "Moneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Calipso limonense PROOF.",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "costo": 18000,
+   "fechaCompra": "2026-11-14"
   },
   "O-mwm5exrk": {
    "tengo": true,
