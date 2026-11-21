@@ -869,7 +869,7 @@
   function pintarFicha() {
     const id = actual, r = reg(id), esValor = pestana === 'valor';
     $('pValor').classList.toggle('activo', esValor); $('pCompra').classList.toggle('activo', !esValor);
-    const fotos = fotosDe(id, esValor ? 'fotos' : 'fotosCompra'), caja = $('vFoto'), minis = $('vMinis');
+    const fotos = [...new Set(esValor ? fotosDe(id, 'fotos').concat(fotosDe(id, 'fotosCompra')) : fotosDe(id, 'fotosCompra').concat(fotosDe(id, 'fotos')))], caja = $('vFoto'), minis = $('vMinis'); // todas las fotos: las de la pestaña primero y luego las otras
     caja.textContent = ''; minis.textContent = '';
     const rf = refDe(id), info = $('vRefInfo'); info.textContent = '';
     if (!fotos.length && rf) {
@@ -1256,9 +1256,9 @@
       tx.appendChild(precio);
       }
       // fotos de la pieza: flechas en la tarjeta para pasarlas, y al tocar la foto se abre el visor con todas
-      const lista = [...new Set([...fotosDe(p.id, 'fotos'), ...(fotosDe(p.id, 'fotos').length ? [] : fotosDe(p.id, 'fotosCompra'))])].filter(n => !/^privado:/.test(n));
+      const lista = [...new Set([...fotosDe(p.id, 'fotos'), ...fotosDe(p.id, 'fotosCompra')])]; // todas: primero las de mi coleccion y luego las de donde la compre
       if (lista.length) {
-        let k = Math.max(0, lista.indexOf(f)), cuenta = null;
+        let k = 0, cuenta = null;
         const mostrar = () => { const im = ph.querySelector('img'); if (!im) return; im.removeAttribute('src'); ponerFoto(im, lista[k]); aplicarGiro(im, lista[k], 4 / 3); if (cuenta) cuenta.textContent = (k + 1) + ' / ' + lista.length; };
         if (lista.length > 1) {
           cuenta = el('span', 'cuenta', (k + 1) + ' / ' + lista.length);
