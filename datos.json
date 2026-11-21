@@ -1528,7 +1528,8 @@
     "fantasia-5-colones.jpg",
     "fantasia-5-colones-2.jpg"
    ],
-   "notas": "Código: Fantasia 5 colones\nRéplica de 5 colones. Producto: Fantasia 5 colones. Categoría: Replicas. Código: Fantasia 5 colones. Precio de venta: ₡500. Disponibles: 1."
+   "notas": "Código: Fantasia 5 colones\nRéplica de 5 colones. Producto: Fantasia 5 colones. Categoría: Replicas. Código: Fantasia 5 colones. Precio de venta: ₡500. Disponibles: 1.",
+   "origen": "reventa"
   },
   "O-64f6659a": {
    "tengo": true,
@@ -1543,7 +1544,8 @@
     "guaria-replica.jpg",
     "guaria-replica-2.jpg"
    ],
-   "notas": "Código: Réplicas baño oro y plata\nRéplica. Producto: Guaria Replica. Categoría: Replicas. Código: Réplicas baño oro y plata. Precio de venta: ₡30 000. Disponibles: 1."
+   "notas": "Código: Réplicas baño oro y plata\nRéplica. Producto: Guaria Replica. Categoría: Replicas. Código: Réplicas baño oro y plata. Precio de venta: ₡30 000. Disponibles: 1.",
+   "origen": "reventa"
   },
   "O-c8392cc9": {
    "tengo": true,
@@ -1558,7 +1560,8 @@
     "jaguar-replica.jpg",
     "jaguar-replica-2.jpg"
    ],
-   "notas": "Código: Réplicas con baño de plata y oro\nRéplica. Producto: Jaguar replica. Categoría: Replicas. Código: Réplicas con baño de plata y oro. Precio de venta: ₡30 000. Disponibles: 1."
+   "notas": "Código: Réplicas con baño de plata y oro\nRéplica. Producto: Jaguar replica. Categoría: Replicas. Código: Réplicas con baño de plata y oro. Precio de venta: ₡30 000. Disponibles: 1.",
+   "origen": "reventa"
   },
   "O-8b94fe57": {
    "tengo": true,
@@ -1573,7 +1576,8 @@
     "oso-hormiguero-replica.jpg",
     "oso-hormiguero-replica-2.jpg"
    ],
-   "notas": "Código: Réplicas baño oro y plata.\nRéplica. Producto: Oso hormiguero replica. Categoría: Replicas. Código: Réplicas baño oro y plata.. Precio de venta: ₡30 000. Disponibles: 1."
+   "notas": "Código: Réplicas baño oro y plata.\nRéplica. Producto: Oso hormiguero replica. Categoría: Replicas. Código: Réplicas baño oro y plata.. Precio de venta: ₡30 000. Disponibles: 1.",
+   "origen": "reventa"
   },
   "O-8b56f948": {
    "tengo": true,
@@ -1590,7 +1594,8 @@
     "set-acrilico-proof-y-bu-2.jpg",
     "set-acrilico-proof-y-bu-3.jpg"
    ],
-   "notas": "Código: Set fauna PROOF y BU\nSet, en presentación acrílica, versión PROOF, BU (brillante sin circular). Producto: Set Acrílico PROOF y BU. Categoría: Set Acrílicos PROOF y BU. Código: Set fauna PROOF y BU. Precio de venta: ₡600 000. Disponibles: 1."
+   "notas": "Código: Set fauna PROOF y BU\nSet, en presentación acrílica, versión PROOF, BU (brillante sin circular). Producto: Set Acrílico PROOF y BU. Categoría: Set Acrílicos PROOF y BU. Código: Set fauna PROOF y BU. Precio de venta: ₡600 000. Disponibles: 1.",
+   "origen": "museo"
   },
   "O-788b93d2": {
    "tengo": true,
@@ -1607,7 +1612,8 @@
     "set-hitos-historicos-proof-bu-y-3-acrilico-monedam-2.jpg",
     "set-hitos-historicos-proof-bu-y-3-acrilico-monedam-3.jpg"
    ],
-   "notas": "Código: Set Hitos Históricos\nSet, en presentación acrílica, versión PROOF, MS (mint state), BU (brillante sin circular). Producto: Set Hitos Históricos PROOF, BU y 3 acrílico monedaMs. Categoría: Set Acrílicos PROOF y BU. Código: Set Hitos Históricos. Precio de venta: ₡1 195 000. Disponibles: 1."
+   "notas": "Código: Set Hitos Históricos\nSet, en presentación acrílica, versión PROOF, MS (mint state), BU (brillante sin circular). Producto: Set Hitos Históricos PROOF, BU y 3 acrílico monedaMs. Categoría: Set Acrílicos PROOF y BU. Código: Set Hitos Históricos. Precio de venta: ₡1 195 000. Disponibles: 1.",
+   "origen": "museo"
   },
   "O-74a0cea4": {
    "tengo": true,
@@ -3006,7 +3012,9 @@
    "fo": "FO# 13645",
    "fotosCompra": [
     "privado:km-KM173.jpg"
-   ]
+   ],
+   "valor": 750,
+   "origen": "reventa"
   },
   "O-xa36bf0bf4": {
    "tengo": true,
@@ -3015,7 +3023,9 @@
    "fo": "FO# 12992",
    "fotosCompra": [
     "privado:km-KM177.jpg"
-   ]
+   ],
+   "valor": 750,
+   "origen": "reventa"
   },
   "O-x805ea6f62": {
    "tengo": true,
@@ -3024,7 +3034,9 @@
    "fo": "FO# 12992",
    "fotosCompra": [
     "privado:km-KM177.jpg"
-   ]
+   ],
+   "valor": 750,
+   "origen": "reventa"
   },
   "O-x96359cf4e": {
    "tengo": true,
@@ -3033,7 +3045,9 @@
    "fo": "FO# 8725",
    "fotosCompra": [
     "privado:km-KM186-1.jpg"
-   ]
+   ],
+   "valor": 750,
+   "origen": "reventa"
   },
   "O-xd89a99eed": {
    "tengo": true,
@@ -3042,7 +3056,9 @@
    "fo": "FO# 11423",
    "fotosCompra": [
     "privado:km-KM186-1a.jpg"
-   ]
+   ],
+   "valor": 750,
+   "origen": "reventa"
   },
   "O-x5f892cf31": {
    "tengo": true,
@@ -3054,7 +3070,8 @@
    ],
    "valor": 750,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "origen": "reventa"
   },
   "O-x87a884449": {
    "tengo": true,
@@ -3067,7 +3084,8 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "origen": "reventa"
   },
   "O-x5f1dafc47": {
    "tengo": true,
@@ -3076,7 +3094,9 @@
    "fo": "FO# 7230",
    "fotosCompra": [
     "privado:km-KM186-2.jpg"
-   ]
+   ],
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-xd8c67776d": {
    "tengo": true,
@@ -3085,7 +3105,9 @@
    "fo": "FO# 11422",
    "fotosCompra": [
     "privado:km-KM186-3.jpg"
-   ]
+   ],
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-x0ee8c9203": {
    "tengo": true,
@@ -3094,7 +3116,9 @@
    "fo": "FO# 7230",
    "fotosCompra": [
     "privado:km-KM186-2.jpg"
-   ]
+   ],
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-x86ea4d9ba": {
    "tengo": true,
@@ -3106,7 +3130,8 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "origen": "reventa"
   },
   "O-x0965286c9": {
    "tengo": true,
@@ -3118,7 +3143,8 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "origen": "reventa"
   },
   "O-x43d5cd4fa": {
    "tengo": true,
@@ -3130,7 +3156,8 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "origen": "reventa"
   },
   "O-xc93062cd0": {
    "tengo": true,
@@ -3142,7 +3169,8 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "origen": "reventa"
   },
   "O-x1ad793dad": {
    "tengo": true,
@@ -3152,7 +3180,9 @@
    "fo": "FO# 2699",
    "fotosCompra": [
     "privado:km-KM210-1.jpg"
-   ]
+   ],
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-x25f569fc3": {
    "tengo": true,
@@ -3161,7 +3191,9 @@
    "fo": "FO# 2699",
    "fotosCompra": [
     "privado:km-KM210-1.jpg"
-   ]
+   ],
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-x7276031e9": {
    "tengo": true,
@@ -3171,7 +3203,9 @@
    "fo": "FO# 2699",
    "fotosCompra": [
     "privado:km-KM210-1.jpg"
-   ]
+   ],
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-x36a873a9a": {
    "tengo": true,
@@ -3180,7 +3214,9 @@
    "fo": "FO# 2699",
    "fotosCompra": [
     "privado:km-KM210-1.jpg"
-   ]
+   ],
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-xc3cc41333": {
    "tengo": true,
@@ -3190,7 +3226,9 @@
    "fo": "FO# 2699",
    "fotosCompra": [
     "privado:km-KM210-1.jpg"
-   ]
+   ],
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-xed65f5cf9": {
    "tengo": true,
@@ -3199,7 +3237,9 @@
    "fo": "FO# 2699",
    "fotosCompra": [
     "privado:km-KM210-1.jpg"
-   ]
+   ],
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-xdab5e83ad": {
    "tengo": true,
@@ -3209,7 +3249,9 @@
    "fo": "FO# 3027",
    "fotosCompra": [
     "privado:km-KM210-2.jpg"
-   ]
+   ],
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-x693bae8aa": {
    "tengo": true,
@@ -3219,7 +3261,9 @@
    "fo": "FO# 3027",
    "fotosCompra": [
     "privado:km-KM210-2.jpg"
-   ]
+   ],
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-x0085cc125": {
    "tengo": true,
@@ -3230,7 +3274,9 @@
    ],
    "km": "KM# 233",
    "notas": "Material: Latón · Peso: 2,78 g · Diámetro: 15,00 mm · Canto: Estriado segmentado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"colon\".",
-   "fo": "FO# 2696"
+   "fo": "FO# 2696",
+   "valor": 500,
+   "origen": "reventa"
   },
   "O-x41e23a1e6": {
    "tengo": false,
@@ -4863,7 +4909,9 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-200-independencia.jpg"
-   ]
+   ],
+   "costo": 1500,
+   "origen": "museo"
   },
   "O-msda0cba6d9": {
    "tengo": true,
@@ -4878,7 +4926,9 @@
    "valor": 1500,
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor",
+   "costo": 1500,
+   "origen": "museo"
   },
   "O-ms88823228f": {
    "tengo": true,
@@ -4894,7 +4944,9 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-75-abolicion.jpg"
-   ]
+   ],
+   "costo": 1500,
+   "origen": "museo"
   },
   "O-msf0ffcd327": {
    "tengo": true,
@@ -4906,7 +4958,10 @@
    ],
    "fotos": [
     "ms-200-anexion.jpg"
-   ]
+   ],
+   "valor": 1500,
+   "costo": 1500,
+   "origen": "museo"
   },
   "O-ms6183d92ac": {
    "tengo": true,
@@ -4921,7 +4976,8 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-mariposa.jpg"
-   ]
+   ],
+   "costo": 150
   },
   "O-msf62912f9d": {
    "tengo": true,
@@ -4936,7 +4992,8 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-rana.jpg"
-   ]
+   ],
+   "costo": 150
   },
   "O-ms08faf0114": {
    "tengo": true,
@@ -4951,7 +5008,8 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-tortuga.jpg"
-   ]
+   ],
+   "costo": 150
   },
   "O-ms1a3921216": {
    "tengo": true,
@@ -4963,7 +5021,8 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "costo": 150
   },
   "O-ms22038ce3c": {
    "tengo": true,
@@ -4978,7 +5037,8 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-cangrejo.jpg"
-   ]
+   ],
+   "costo": 150
   },
   "O-msaeda5474f": {
    "tengo": true,
@@ -4993,7 +5053,8 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-conejo.jpg"
-   ]
+   ],
+   "costo": 150
   },
   "O-msea88dec85": {
    "tengo": true,
@@ -5007,7 +5068,8 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-limon.jpg"
-   ]
+   ],
+   "costo": 150
   },
   "O-ms9537cf5bb": {
    "tengo": true,
@@ -5021,7 +5083,8 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-puntarenas.jpg"
-   ]
+   ],
+   "costo": 500
   },
   "O-msc6fe145c6": {
    "tengo": true,
@@ -5035,7 +5098,8 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-guanacaste.jpg"
-   ]
+   ],
+   "costo": 150
   },
   "O-ms30382c443": {
    "tengo": true,
@@ -5049,7 +5113,8 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-heredia.jpg"
-   ]
+   ],
+   "costo": 500
   },
   "O-ms1be002f96": {
    "tengo": true,
@@ -5063,7 +5128,8 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-cartago.jpg"
-   ]
+   ],
+   "costo": 150
   },
   "O-ms9e11d4fc2": {
    "tengo": true,
@@ -5076,7 +5142,8 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-alajuela.jpg"
-   ]
+   ],
+   "costo": 200
   },
   "O-ms6fe432eb2": {
    "tengo": true,
@@ -5090,11 +5157,15 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-san-jose.jpg"
-   ]
+   ],
+   "costo": 145
   },
   "O-msde9df0025": {
    "tengo": true,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 2025."
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 2025.",
+   "valor": 25000,
+   "costo": 12000,
+   "origen": "Banco Central de Costa Rica (emisión)"
   },
   "O-ms3b4bcc9d9": {
    "tengo": false,
@@ -5462,7 +5533,9 @@
     "estuche-calipso-serie-6218-7000-2.jpg"
    ],
    "notas": "Código: Cultural inmaterial. Serie especial serie Alta\nMoneda conmemorativa, en estuche. Serie(s) 6218 de un tiraje de 7000. Producto: Calipso limonense. Serie 6218/7000. Categoría: Patrimonio cultural estuche. Serie especial serie Alta.",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "costo": 18000,
+   "fechaCompra": "2026-11-14"
   },
   "M47": {
    "tengo": true,
