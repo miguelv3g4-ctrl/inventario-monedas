@@ -639,10 +639,7 @@
    "notas": "Código: Fauna #1. Series especiales consecutivos\nMoneda conmemorativa, en estuche. Serie(s) 0367 y 0368 de un tiraje de 7000. Producto: Mariposa Morpho. Series 0367 y 0368/7000. Categoría: Fauna estuche. Código: Fauna #1. Series especiales consecutivos. Precio de venta: ₡240 000. Disponibles: 2.\nCosto registrado antes del PDF: ₡120 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor como pareja consecutiva (Mariposa 0367 y 0368): ₡240 000 la pareja, ₡120 000 cada estuche."
   },
   "X10": {
-   "tengo": true,
    "producto": "Mariposa Morpho. Series 0367 y 0368/7000",
-   "valor": 120000,
-   "costo": 8353,
    "fotos": [
     "mariposa-morpho-series-0367-y-0368-7000.jpg",
     "mariposa-morpho-series-0367-y-0368-7000-2.jpg"
@@ -651,11 +648,13 @@
     "mariposa-morpho-series-0367-y-0368-7000.jpg",
     "mariposa-morpho-series-0367-y-0368-7000-2.jpg"
    ],
-   "notas": "Código: Fauna #1. Series especiales consecutivos\nMoneda conmemorativa, en estuche. Serie(s) 0367 y 0368 de un tiraje de 7000. Producto: Mariposa Morpho. Series 0367 y 0368/7000. Categoría: Fauna estuche. Código: Fauna #1. Series especiales consecutivos. Precio de venta: ₡240 000. Disponibles: 2.\nCosto registrado antes del PDF: ₡120 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor como pareja consecutiva (Mariposa 0367 y 0368): ₡240 000 la pareja, ₡120 000 cada estuche.",
+   "km": "KM# 249",
+   "valor": 150000,
+   "fechaValor": "2026-11-21",
+   "costo": 8353,
    "fechaCompra": "2024-11-12",
    "origen": "Banco Central de Costa Rica (emisión)",
-   "km": "KM# 249",
-   "fo": "FO# 27599"
+   "notas": "Código: Fauna #1. Series especiales consecutivos\nMoneda conmemorativa, en estuche. Serie(s) 0367 y 0368 de un tiraje de 7000. Producto: Mariposa Morpho. Series 0367 y 0368/7000. Categoría: Fauna estuche. Código: Fauna #1. Series especiales consecutivos. Precio de venta: ₡240 000. Disponibles: 2.\nCosto registrado antes del PDF: ₡120 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nValor como pareja consecutiva (Mariposa 0367 y 0368): ₡240 000 la pareja, ₡120 000 cada estuche."
   },
   "AC9": {
    "tengo": true,
