@@ -3563,7 +3563,9 @@
    "fo": "FO# 8542",
    "fotosCompra": [
     "privado:km-KM203.jpg"
-   ]
+   ],
+   "valor": 1200,
+   "costo": 1200
   },
   "O-x778ff88f8": {
    "tengo": true,
@@ -3572,7 +3574,9 @@
    "fo": "FO# 4105",
    "fotosCompra": [
     "privado:km-KM214-1.jpg"
-   ]
+   ],
+   "valor": 1000,
+   "costo": 1000
   },
   "O-x33a303652": {
    "tengo": true,
@@ -3581,7 +3585,9 @@
    "fo": "FO# 375",
    "fotosCompra": [
     "privado:km-KM214-2.jpg"
-   ]
+   ],
+   "valor": 1000,
+   "costo": 1000
   },
   "O-xce08bf122": {
    "tengo": true,
@@ -3590,7 +3596,9 @@
    "fo": "FO# 4105",
    "fotosCompra": [
     "privado:km-KM214-1.jpg"
-   ]
+   ],
+   "valor": 1000,
+   "costo": 1000
   },
   "O-x69f348fad": {
    "tengo": true,
@@ -3599,7 +3607,9 @@
    "fo": "FO# 3026",
    "fotosCompra": [
     "privado:km-KM214-3.jpg"
-   ]
+   ],
+   "valor": 1000,
+   "costo": 1000
   },
   "O-x150f54e4a": {
    "tengo": true,
@@ -3714,7 +3724,9 @@
    "fo": "FO# 7961",
    "fotosCompra": [
     "privado:km-KM204.jpg"
-   ]
+   ],
+   "valor": 1200,
+   "costo": 1200
   },
   "O-xe6bbd7df4": {
    "tengo": true,
@@ -3723,7 +3735,9 @@
    "fo": "FO# 371",
    "fotosCompra": [
     "privado:km-KM215-1.jpg"
-   ]
+   ],
+   "valor": 1000,
+   "costo": 1000
   },
   "O-x68b5fe4d2": {
    "tengo": true,
@@ -3732,7 +3746,9 @@
    "fo": "FO# 372",
    "fotosCompra": [
     "privado:km-KM215-2.jpg"
-   ]
+   ],
+   "valor": 1000,
+   "costo": 1000
   },
   "O-xfff679a1f": {
    "tengo": true,
@@ -3741,7 +3757,9 @@
    "fo": "FO# 371",
    "fotosCompra": [
     "privado:km-KM215-1.jpg"
-   ]
+   ],
+   "valor": 1000,
+   "costo": 1000
   },
   "O-xc3fc2b519": {
    "tengo": true,
@@ -3885,7 +3903,9 @@
    "fo": "FO# 3503",
    "fotosCompra": [
     "privado:km-KM216-1.jpg"
-   ]
+   ],
+   "valor": 1000,
+   "costo": 1000
   },
   "O-xc70db8054": {
    "tengo": true,
@@ -3895,7 +3915,9 @@
    "fo": "FO# 370",
    "fotosCompra": [
     "privado:km-KM216-2.jpg"
-   ]
+   ],
+   "valor": 1000,
+   "costo": 1000
   },
   "O-x98f975ad2": {
    "tengo": true,
@@ -3904,7 +3926,9 @@
    "fo": "FO# 11429",
    "fotosCompra": [
     "privado:km-KM216-3.jpg"
-   ]
+   ],
+   "valor": 1000,
+   "costo": 1000
   },
   "O-x1562341e0": {
    "tengo": true,
@@ -4005,7 +4029,9 @@
    "fo": "FO# 15937",
    "fotosCompra": [
     "privado:km-KM200a.jpg"
-   ]
+   ],
+   "valor": 90000,
+   "costo": 90000
   },
   "O-xbec1cd63b": {
    "tengo": true,
@@ -4100,7 +4126,9 @@
    "fo": "FO# 15942",
    "fotosCompra": [
     "privado:km-KM201.jpg"
-   ]
+   ],
+   "valor": 90000,
+   "costo": 90000
   },
   "O-x322208290": {
    "tengo": true,
@@ -4109,7 +4137,9 @@
    "fo": "FO# 11432",
    "fotosCompra": [
     "privado:km-KM206.jpg"
-   ]
+   ],
+   "valor": 62000,
+   "costo": 62000
   },
   "O-x41fa83d24": {
    "tengo": true,
@@ -4118,7 +4148,9 @@
    "fo": "FO# 8726",
    "fotosCompra": [
     "privado:km-KM224.jpg"
-   ]
+   ],
+   "valor": 50000,
+   "costo": 50000
   },
   "O-xc0213beb3": {
    "tengo": true,
@@ -4246,7 +4278,9 @@
    "fo": "FO# 5720",
    "fotosCompra": [
     "privado:km-KM239-1.jpg"
-   ]
+   ],
+   "valor": 1000,
+   "costo": 1000
   },
   "O-x7a50c185a": {
    "tengo": true,
@@ -4255,7 +4289,9 @@
    "fo": "FO# 15039",
    "fotosCompra": [
     "privado:km-KM239-2.jpg"
-   ]
+   ],
+   "valor": 15000,
+   "costo": 60000
   },
   "O-x23d1289ee": {
    "tengo": true,
@@ -4265,7 +4301,8 @@
    "fotosCompra": [
     "privado:km-KM239-1.jpg"
    ],
-   "valor": 1000
+   "valor": 1000,
+   "costo": 1000
   },
   "O-x4ffdc79ec": {
    "tengo": true,
@@ -4275,7 +4312,8 @@
    "fotosCompra": [
     "privado:km-KM239-1a.jpg"
    ],
-   "valor": 1000
+   "valor": 1000,
+   "costo": 1000
   },
   "O-x69eae3145": {
    "tengo": true,
@@ -4285,7 +4323,8 @@
    "fotosCompra": [
     "privado:km-KM239-1a.jpg"
    ],
-   "valor": 1000
+   "valor": 1000,
+   "costo": 1000
   },
   "O-x39afa064d": {
    "tengo": true,
@@ -4295,12 +4334,14 @@
    "fotosCompra": [
     "privado:km-KM239-1a.jpg"
    ],
-   "valor": 1000
+   "valor": 1000,
+   "costo": 1000
   },
   "O-xc3c372a07": {
    "tengo": true,
    "notas": "\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
-   "valor": 1500
+   "valor": 1500,
+   "costo": 1500
   },
   "O-x2678c4f97": {
    "tengo": false,
@@ -5120,12 +5161,16 @@
   "O-xe547adf2f": {
    "tengo": true,
    "notas": "Serie: C11072004\nFuente: Excel billetes costa rica, hoja \"20 colones\".",
-   "origen": "reventa"
+   "origen": "reventa",
+   "valor": 20000,
+   "costo": 20000
   },
   "O-xd78528316": {
    "tengo": true,
    "notas": "Serie: C11776060\nFuente: Excel billetes costa rica, hoja \"20 colones\".",
-   "origen": "reventa"
+   "origen": "reventa",
+   "valor": 35000,
+   "costo": 35000
   },
   "O-x5da28fa97": {
    "tengo": false,
@@ -5142,12 +5187,16 @@
   "O-x2c41dae7c": {
    "tengo": true,
    "notas": "Serie: C17358434\nFuente: Excel billetes costa rica, hoja \"20 colones\".",
-   "origen": "reventa"
+   "origen": "reventa",
+   "valor": 20000,
+   "costo": 20000
   },
   "O-x70cb01b09": {
    "tengo": true,
    "notas": "Serie: C19711366\nFuente: Excel billetes costa rica, hoja \"20 colones\".",
-   "origen": "reventa"
+   "origen": "reventa",
+   "valor": 20000,
+   "costo": 20000
   },
   "O-x3ceb017f7": {
    "tengo": false,
@@ -5156,23 +5205,31 @@
   "O-x9db08e815": {
    "tengo": true,
    "notas": "Serie: C21363852\nFuente: Excel billetes costa rica, hoja \"20 colones\".",
-   "origen": "reventa"
+   "origen": "reventa",
+   "valor": 20000,
+   "costo": 20000
   },
   "O-xd48eb5006": {
    "tengo": true,
    "notas": "Serie: C23846918\nFuente: Excel billetes costa rica, hoja \"20 colones\".",
-   "origen": "reventa"
+   "origen": "reventa",
+   "valor": 20000,
+   "costo": 20000
   },
   "O-xd1ef0b5bb": {
    "tengo": true,
    "notas": "Serie: C25220839\nFuente: Excel billetes costa rica, hoja \"20 colones\".",
-   "origen": "reventa"
+   "origen": "reventa",
+   "valor": 20000,
+   "costo": 20000
   },
   "O-x947325c3c": {
    "tengo": true,
    "cantidad": 3,
    "notas": "Series: C29009738, C29112608, C27180250\nFuente: Excel billetes costa rica, hoja \"20 colones\".",
-   "origen": "reventa"
+   "origen": "reventa",
+   "valor": 20000,
+   "costo": 20000
   },
   "O-x977278c81": {
    "tengo": false,
@@ -5865,6 +5922,28 @@
    "origen": "reventa",
    "fechaVenta": "2026-11-18",
    "notas": "Las monedas son proof color de los acrilicos que vendio el banco"
+  },
+  "O-x003714af8m": {
+   "tengo": true,
+   "notas": "Material: Plata · Peso: 28,28 g · Diámetro: 38,60 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
+   "km": "KM# 200a",
+   "fo": "FO# 15937",
+   "fotosCompra": [
+    "privado:km-KM200a.jpg"
+   ],
+   "valor": 90000,
+   "costo": 90000
+  },
+  "O-x6907c6691m": {
+   "tengo": true,
+   "notas": "Material: Plata (0,500) · Peso: 31,65 g · Diámetro: 42,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 201",
+   "fo": "FO# 15942",
+   "fotosCompra": [
+    "privado:km-KM201.jpg"
+   ],
+   "valor": 90000,
+   "costo": 90000
   }
  },
  "sueltas": {},
@@ -7266,7 +7345,14 @@
   },
   {
    "id": "O-x003714af8",
-   "nombre": "50 colones 1974",
+   "nombre": "50 colones (Conservación de la Tortuga) 1974 · versión PROOF",
+   "categoria": "50 colones",
+   "seccion": "antano",
+   "ref": "privado:cat-84.jpg"
+  },
+  {
+   "id": "O-x003714af8m",
+   "nombre": "50 colones (Conservación de la Tortuga) 1974 · versión mate",
    "categoria": "50 colones",
    "seccion": "antano",
    "ref": "privado:cat-84.jpg"
@@ -7315,7 +7401,14 @@
   },
   {
    "id": "O-x6907c6691",
-   "nombre": "100 colones (Conservación del Manatí) 1974",
+   "nombre": "100 colones (Conservación del Manatí) 1974 · versión PROOF",
+   "categoria": "100 colones",
+   "seccion": "antano",
+   "ref": "privado:cat-91.jpg"
+  },
+  {
+   "id": "O-x6907c6691m",
+   "nombre": "100 colones (Conservación del Manatí) 1974 · versión mate",
    "categoria": "100 colones",
    "seccion": "antano",
    "ref": "privado:cat-91.jpg"
