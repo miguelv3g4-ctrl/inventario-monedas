@@ -1253,8 +1253,10 @@
         if (/^privado:/.test(otra)) { const im = new Image(); im.onload = () => conFondo(im.src); ponerRef(im, otra); }
         else fondo = locales[otra] || 'fotos/' + otra;
       }
-      // cono 1995 y plata: mosaico con las fotos de las monedas de la seccion (propias o del catalogo)
-      if (sc.id === 'cono-1995-2021' || sc.id === 'plata') {
+      // cono 1995: la imagen de las dos monedas de 500 colones que eligio Miguel (privada); mientras carga, el fondo de siempre
+      if (sc.id === 'cono-1995-2021') { const im = new Image(); im.onload = () => conFondo(im.src); ponerRef(im, 'privado:cono-boton.jpg'); }
+      // plata: mosaico con las fotos de las monedas de la seccion (propias o del catalogo)
+      if (sc.id === 'plata') {
         fondo = null;
         const clave = 'mosaico-' + sc.id, ps = deSeccion(sc.id), fs = [];
         const ruta = f => /^privado:/.test(f) ? f : (locales[f] || 'fotos/' + f);
