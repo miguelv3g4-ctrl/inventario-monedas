@@ -730,7 +730,7 @@
   }
   // MS sueltas: se compran por cantidad, directas de las bolsas del banco; precio por pieza segun la denominacion
   // (si la ficha tiene su propio "valor actual", manda ese)
-  const PRECIO_MS = { 500: 750, 50: 350, 25: 150 };
+  const PRECIO_MS = { 500: 750, 50: 350, 25: 500 / 7 }; // provincias: el set de 7 monedas sueltas (UNC) vale 500
   const DENOM_MS = [[500, /hito|independ|abolic|anexi|fundaci/i], [100, /patrimonio|cultural|swing|boyero|calipso|cimarrona|tope|ceramica|cerámica/i], [50, /fauna|mariposa|rana|tortuga|lagartija|cangrejo|conejo/i], [25, /provincia|lugares|emblem/i]];
   const denomMS = p => { const t = p.coleccion + ' ' + p.moneda; const d = DENOM_MS.find(x => x[1].test(t)); return d ? d[0] : 0; };
   const valorU = p => reg(p.id).valor || (p.seccion === 'ms-sueltas' ? PRECIO_MS[denomMS(p)] || 0 : 0);
