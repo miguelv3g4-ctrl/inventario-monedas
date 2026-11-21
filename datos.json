@@ -4297,10 +4297,6 @@
    ],
    "valor": 1000
   },
-  "O-x04c24733d": {
-   "tengo": true,
-   "notas": "\nFuente: Excel monedas costa rica, hoja \"500 colones\"."
-  },
   "O-xc3c372a07": {
    "tengo": true,
    "notas": "\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
@@ -7431,12 +7427,6 @@
   {
    "id": "O-x39afa064d",
    "nombre": "500 colones 2015",
-   "categoria": "500 colones",
-   "seccion": "cono-1995-2021"
-  },
-  {
-   "id": "O-x04c24733d",
-   "nombre": "500 colones (bicentenario bicolor) 2022",
    "categoria": "500 colones",
    "seccion": "cono-1995-2021"
   },
