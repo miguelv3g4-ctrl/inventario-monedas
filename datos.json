@@ -377,9 +377,6 @@
   },
   "O-51a96a29": {
    "tengo": true,
-   "cantidad": 1,
-   "valor": 55000,
-   "costo": 55000,
    "fotos": [
     "coleccionador-fauna-ms.jpg",
     "coleccionador-fauna-ms-2.jpg"
@@ -388,6 +385,8 @@
     "coleccionador-fauna-ms.jpg",
     "coleccionador-fauna-ms-2.jpg"
    ],
+   "valor": 55000,
+   "costo": 65000,
    "notas": "Código: Colecciónador Fauna MS\nColeccionador, versión MS (mint state). Producto: Colecciónador Fauna MS. Categoría: Coleccionadores. Código: Colecciónador Fauna MS. Precio de venta: ₡55 000. Disponibles: 1."
   },
   "O-2a01cc85": {
