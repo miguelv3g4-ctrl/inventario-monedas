@@ -4371,7 +4371,10 @@
    "tengo": true,
    "notas": "\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
    "valor": 1500,
-   "costo": 1500
+   "costo": 1500,
+   "fotosCompra": [
+    "privado:miguel-500-bicentenario-bimetalica.jpg"
+   ]
   },
   "O-x2678c4f97": {
    "tengo": false,
@@ -6062,13 +6065,6 @@
    "fechaCompra": "2022-09-01",
    "origen": "reventa",
    "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Canto: Estriado · Acabado normal (sin brillo espejo) · Tiraje: 9 500\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nPrecio: la mitad del par (valor ₡360 000 y costo ₡240 000 por las dos)."
-  },
-  "O-x200483d9c": {
-   "tengo": true,
-   "fotosCompra": [
-    "privado:miguel-500-bicentenario-bimetalica.jpg"
-   ],
-   "notas": "Moneda bimetálica de 500 colones por los 200 años de Independencia (1821-2021)."
   }
  },
  "sueltas": {},
@@ -7665,7 +7661,8 @@
    "id": "O-xc3c372a07",
    "nombre": "500 colones (bicentenario bicolor esmaltada) 2022",
    "categoria": "500 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:miguel-500-bicentenario-bimetalica.jpg"
   },
   {
    "id": "O-x2678c4f97",
@@ -7679,13 +7676,6 @@
    "nombre": "500 colones 2003 · ceros redondos",
    "categoria": "500 colones",
    "seccion": "cono-1995-2021"
-  },
-  {
-   "id": "O-x200483d9c",
-   "nombre": "500 colones bimetálica (Bicentenario de la Independencia 1821-2021) 2021",
-   "categoria": "500 colones",
-   "seccion": "cono-1995-2021",
-   "ref": "privado:miguel-500-bicentenario-bimetalica.jpg"
   },
   {
    "id": "O-x903a1aa01",
