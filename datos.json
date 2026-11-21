@@ -2200,7 +2200,8 @@
    "km": "KM# 146",
    "fo": "FO# 11459",
    "fotosCompra": [
-    "privado:km-KM146.jpg"
+    "privado:anio-O-x0dd39db09-0.jpg",
+    "privado:anio-O-x0dd39db09-1.jpg"
    ]
   },
   "O-x122bd88e1": {
@@ -2235,7 +2236,7 @@
    "km": "KM# 146",
    "fo": "FO# 11459",
    "fotosCompra": [
-    "privado:km-KM146.jpg"
+    "privado:anio-O-x3b6dc64b2-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor"
@@ -2261,7 +2262,8 @@
    "km": "KM# 152",
    "fo": "FO# 11465",
    "fotosCompra": [
-    "privado:km-KM152.jpg"
+    "privado:anio-O-x26a905aee-0.jpg",
+    "privado:anio-O-x26a905aee-1.jpg"
    ]
   },
   "O-x92c19e6f8": {
@@ -2273,7 +2275,8 @@
    "km": "KM# 152",
    "fo": "FO# 11465",
    "fotosCompra": [
-    "privado:km-KM152.jpg"
+    "privado:anio-O-x92c19e6f8-0.jpg",
+    "privado:anio-O-x92c19e6f8-1.jpg"
    ]
   },
   "O-xb16bfbae6": {
@@ -2336,7 +2339,8 @@
    "km": "KM# 180",
    "fo": "FO# 11419",
    "fotosCompra": [
-    "privado:km-KM180.jpg"
+    "privado:anio-O-x2e49f64bd-0.jpg",
+    "privado:anio-O-x2e49f64bd-1.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor"
@@ -2374,7 +2378,7 @@
    "km": "KM# 180",
    "fo": "FO# 11419",
    "fotosCompra": [
-    "privado:km-KM180.jpg"
+    "privado:anio-O-x423988bbf-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2417,7 +2421,7 @@
    "km": "KM# 185.1a",
    "fo": "FO# 8590",
    "fotosCompra": [
-    "privado:km-KM185-1a.jpg"
+    "privado:anio-O-xc3d7fba09-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2432,7 +2436,7 @@
    "km": "KM# 185.1a",
    "fo": "FO# 8590",
    "fotosCompra": [
-    "privado:km-KM185-1a.jpg"
+    "privado:anio-O-x22cea2e08-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2447,7 +2451,7 @@
    "km": "KM# 185.2",
    "fo": "FO# 10391",
    "fotosCompra": [
-    "privado:km-KM185-2.jpg"
+    "privado:anio-O-x929b5dfa3-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2462,7 +2466,7 @@
    "km": "KM# 185.2",
    "fo": "FO# 10391",
    "fotosCompra": [
-    "privado:km-KM185-2.jpg"
+    "privado:anio-O-x1606e6042-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2477,7 +2481,7 @@
    "km": "KM# 185.2",
    "fo": "FO# 10391",
    "fotosCompra": [
-    "privado:km-KM185-2.jpg"
+    "privado:anio-O-x305516372-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -6417,7 +6421,7 @@
    "nombre": "10 céntimos 1905",
    "categoria": "10 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-11.jpg"
+   "ref": "privado:anio-O-x0dd39db09-0.jpg"
   },
   {
    "id": "O-x122bd88e1",
@@ -6438,7 +6442,7 @@
    "nombre": "10 céntimos 1914",
    "categoria": "10 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-11.jpg"
+   "ref": "privado:anio-O-x3b6dc64b2-0.jpg"
   },
   {
    "id": "O-xb402c067e",
@@ -6452,14 +6456,14 @@
    "nombre": "10 céntimos 1920",
    "categoria": "10 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-13.jpg"
+   "ref": "privado:anio-O-x26a905aee-0.jpg"
   },
   {
    "id": "O-x92c19e6f8",
    "nombre": "10 céntimos 1921",
    "categoria": "10 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-13.jpg"
+   "ref": "privado:anio-O-x92c19e6f8-0.jpg"
   },
   {
    "id": "O-xb16bfbae6",
@@ -6494,7 +6498,7 @@
    "nombre": "10 céntimos 1942",
    "categoria": "10 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-16.jpg"
+   "ref": "privado:anio-O-x2e49f64bd-0.jpg"
   },
   {
    "id": "O-x22b6dee50",
@@ -6515,7 +6519,7 @@
    "nombre": "10 céntimos 1947",
    "categoria": "10 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-16.jpg"
+   "ref": "privado:anio-O-x423988bbf-0.jpg"
   },
   {
    "id": "O-xfb8bde918",
@@ -6536,35 +6540,35 @@
    "nombre": "10 céntimos 1958",
    "categoria": "10 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-17.jpg"
+   "ref": "privado:anio-O-xc3d7fba09-0.jpg"
   },
   {
    "id": "O-x22cea2e08",
    "nombre": "10 céntimos 1967",
    "categoria": "10 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-17.jpg"
+   "ref": "privado:anio-O-x22cea2e08-0.jpg"
   },
   {
    "id": "O-x929b5dfa3",
    "nombre": "10 céntimos 1969",
    "categoria": "10 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-19.jpg"
+   "ref": "privado:anio-O-x929b5dfa3-0.jpg"
   },
   {
    "id": "O-x1606e6042",
    "nombre": "10 céntimos 1972",
    "categoria": "10 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-19.jpg"
+   "ref": "privado:anio-O-x1606e6042-0.jpg"
   },
   {
    "id": "O-x305516372",
    "nombre": "10 céntimos 1975",
    "categoria": "10 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-19.jpg"
+   "ref": "privado:anio-O-x305516372-0.jpg"
   },
   {
    "id": "O-x7bf3b5c37",
