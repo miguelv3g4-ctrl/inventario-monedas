@@ -840,7 +840,7 @@
     if (esMS) { const q = tengo(id) ? cant(id) : 0; renglon(det, 'Cantidad', q + (q === 1 ? ' pieza' : ' piezas')); if (monto) renglon(det, 'Total', q + ' × ' + fmt(monto) + ' = ' + fmt(monto * q)); }
     renglon(det, 'Catálogo', [r.km, r.fo].filter(Boolean).join(' · '));
     if (esValor) { renglon(det, 'Fecha del valor', fecha(r.fechaValor)); renglon(det, 'Fuente', r.fuenteValor); if (r.valor && r.costo) renglon(det, 'Frente a lo que costó', conSigno(r.valor - r.costo)); }
-    else { renglon(det, 'Fecha de compra', fecha(r.fechaCompra)); renglon(det, 'Comprada a', r.origen); if (r.valor && r.costo) renglon(det, 'Valor actual', fmt(r.valor)); }
+    else { renglon(det, 'Fecha en que la conseguí', fecha(r.fechaCompra) || 'Sin fecha todavía (agrégala en «Cambiar datos y fotos»)'); renglon(det, 'Comprada a', r.origen); if (r.valor && r.costo) renglon(det, 'Valor actual', fmt(r.valor)); }
     const est = $('vEstado'); est.textContent = '';
     if (r.vendida) {
       est.appendChild(el('span', 'vend', 'Vendida' + (r.precioVenta ? ' en ' + fmt(r.precioVenta) : '') + (r.fechaVenta ? ' el ' + fecha(r.fechaVenta) : '') + (r.comprador ? ' a ' + r.comprador : '')));
@@ -1180,7 +1180,7 @@
       else ph.textContent = 'Sin foto';
       const tx = el('div', 'tx');
       tx.append(el('span', '', p.moneda), el('small', '', p.coleccion + (reg(p.id).km ? ' · ' + reg(p.id).km : '') + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '')));
-      if (r.fechaCompra) tx.appendChild(el('small', 'fechaCons', 'Conseguida: ' + fecha(r.fechaCompra)));
+      if (tengo(p.id)) tx.appendChild(el('small', 'fechaCons', 'Conseguida: ' + (fecha(r.fechaCompra) || 'sin fecha')));
       if (p.seccion === 'ms-sueltas') {
         // MS sueltas: cantidad que tengo, precio por pieza y total (cantidad x precio)
         const q = tengo(p.id) ? cant(p.id) : 0, u = valorU(p);
