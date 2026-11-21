@@ -1797,7 +1797,7 @@
    "km": "KM# 145",
    "fo": "FO# 11458",
    "fotosCompra": [
-    "privado:km-KM145.jpg"
+    "privado:anio-O-x9ce4b4b70-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor"
@@ -1869,7 +1869,8 @@
    "km": "KM# 151",
    "fo": "FO# 11464",
    "fotosCompra": [
-    "privado:km-KM151.jpg"
+    "privado:anio-O-x259014684-0.jpg",
+    "privado:anio-O-x259014684-1.jpg"
    ]
   },
   "O-x63c69a828": {
@@ -1881,7 +1882,7 @@
    "km": "KM# 151",
    "fo": "FO# 11464",
    "fotosCompra": [
-    "privado:km-KM151.jpg"
+    "privado:anio-O-x63c69a828-0.jpg"
    ]
   },
   "O-x67a29eb8e": {
@@ -1905,7 +1906,8 @@
    "km": "KM# 151",
    "fo": "FO# 11464",
    "fotosCompra": [
-    "privado:km-KM151.jpg"
+    "privado:anio-O-xd8457527a-0.jpg",
+    "privado:anio-O-xd8457527a-1.jpg"
    ]
   },
   "O-x9bc0d15da": {
@@ -1917,7 +1919,7 @@
    "km": "KM# 151",
    "fo": "FO# 11464",
    "fotosCompra": [
-    "privado:km-KM151.jpg"
+    "privado:anio-O-x9bc0d15da-0.jpg"
    ]
   },
   "O-x585474041": {
@@ -1929,7 +1931,8 @@
    "km": "KM# 151",
    "fo": "FO# 11464",
    "fotosCompra": [
-    "privado:km-KM151.jpg"
+    "privado:anio-O-x585474041-0.jpg",
+    "privado:anio-O-x585474041-1.jpg"
    ]
   },
   "O-xb8bc35bde": {
@@ -1965,7 +1968,7 @@
    "km": "KM# 179",
    "fo": "FO# 12987",
    "fotosCompra": [
-    "privado:km-KM179.jpg"
+    "privado:anio-O-xf2e01c902-0.jpg"
    ]
   },
   "O-x80946433b": {
@@ -2037,7 +2040,7 @@
    "km": "KM# 184.1a",
    "fo": "FO# 10240",
    "fotosCompra": [
-    "privado:km-KM184-1a.jpg"
+    "privado:anio-O-xe3d47d8e0-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2051,7 +2054,7 @@
    "km": "KM# 184.1a",
    "fo": "FO# 10240",
    "fotosCompra": [
-    "privado:km-KM184-1a.jpg"
+    "privado:anio-O-x5acb39897-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2065,7 +2068,7 @@
    "km": "KM# 184.1",
    "fo": "FO# 11420",
    "fotosCompra": [
-    "privado:km-KM184-1.jpg"
+    "privado:anio-O-x58dfa2f51-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2093,7 +2096,7 @@
    "km": "KM# 184.1",
    "fo": "FO# 11420",
    "fotosCompra": [
-    "privado:km-KM184-1.jpg"
+    "privado:anio-O-x5a5f0dfd0-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2108,7 +2111,7 @@
    "km": "KM# 184.2",
    "fo": "FO# 2708",
    "fotosCompra": [
-    "privado:km-KM184-2.jpg"
+    "privado:anio-O-x15e385cd4-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2123,7 +2126,7 @@
    "km": "KM# 184.3",
    "fo": "FO# 6826",
    "fotosCompra": [
-    "privado:km-KM184-3.jpg"
+    "privado:anio-O-x1e8fa5618-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2153,7 +2156,7 @@
    "km": "KM# 184.3",
    "fo": "FO# 6826",
    "fotosCompra": [
-    "privado:km-KM184-3.jpg"
+    "privado:anio-O-xc51d3a03e-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2167,7 +2170,7 @@
    "km": "KM# 184.2",
    "fo": "FO# 2708",
    "fotosCompra": [
-    "privado:km-KM184-2.jpg"
+    "privado:anio-O-xc8e07e657-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -6200,7 +6203,7 @@
    "nombre": "5 céntimos 1912",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-6.jpg"
+   "ref": "privado:anio-O-x9ce4b4b70-0.jpg"
   },
   {
    "id": "O-x2be4f4499",
@@ -6239,14 +6242,14 @@
    "nombre": "5 céntimos 1921",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-7.jpg"
+   "ref": "privado:anio-O-x259014684-0.jpg"
   },
   {
    "id": "O-x63c69a828",
    "nombre": "5 céntimos 1922",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-7.jpg"
+   "ref": "privado:anio-O-x63c69a828-0.jpg"
   },
   {
    "id": "O-x67a29eb8e",
@@ -6260,21 +6263,21 @@
    "nombre": "5 céntimos 1936",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-7.jpg"
+   "ref": "privado:anio-O-xd8457527a-0.jpg"
   },
   {
    "id": "O-x9bc0d15da",
    "nombre": "5 céntimos 1938",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-7.jpg"
+   "ref": "privado:anio-O-x9bc0d15da-0.jpg"
   },
   {
    "id": "O-x585474041",
    "nombre": "5 céntimos 1940",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-7.jpg"
+   "ref": "privado:anio-O-x585474041-0.jpg"
   },
   {
    "id": "O-xb8bc35bde",
@@ -6295,7 +6298,7 @@
    "nombre": "5 céntimos 1942 · Latón",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-10.jpg"
+   "ref": "privado:anio-O-xf2e01c902-0.jpg"
   },
   {
    "id": "O-x80946433b",
@@ -6337,21 +6340,21 @@
    "nombre": "5 céntimos 1953",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-2.jpg"
+   "ref": "privado:anio-O-xe3d47d8e0-0.jpg"
   },
   {
    "id": "O-x5acb39897",
    "nombre": "5 céntimos 1958 · Acero inoxidable",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-2.jpg"
+   "ref": "privado:anio-O-x5acb39897-0.jpg"
   },
   {
    "id": "O-x58dfa2f51",
    "nombre": "5 céntimos 1958 · Cobre-níquel",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-1.jpg"
+   "ref": "privado:anio-O-x58dfa2f51-0.jpg"
   },
   {
    "id": "O-x15d4420cd",
@@ -6365,21 +6368,21 @@
    "nombre": "5 céntimos 1967 · Cobre-níquel",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-1.jpg"
+   "ref": "privado:anio-O-x5a5f0dfd0-0.jpg"
   },
   {
    "id": "O-x15e385cd4",
    "nombre": "5 céntimos 1969",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-3.jpg"
+   "ref": "privado:anio-O-x15e385cd4-0.jpg"
   },
   {
    "id": "O-x1e8fa5618",
    "nombre": "5 céntimos 1972",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-4.jpg"
+   "ref": "privado:anio-O-x1e8fa5618-0.jpg"
   },
   {
    "id": "O-xb543d373e",
@@ -6393,14 +6396,14 @@
    "nombre": "5 céntimos 1976",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-4.jpg"
+   "ref": "privado:anio-O-xc51d3a03e-0.jpg"
   },
   {
    "id": "O-xc8e07e657",
    "nombre": "5 céntimos 1978",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-3.jpg"
+   "ref": "privado:anio-O-xc8e07e657-0.jpg"
   },
   {
    "id": "O-xdb6ad18f5",
