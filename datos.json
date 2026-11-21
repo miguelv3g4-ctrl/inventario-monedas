@@ -3380,31 +3380,48 @@
    "tengo": false,
    "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
    "km": "KM# 139",
-   "fo": "FO# 15173"
+   "fo": "FO# 15173",
+   "fotosCompra": [
+    "privado:anio-O-xb9d19fb61-0.jpg"
+   ]
   },
   "O-x4bf5a47e1": {
    "tengo": false,
    "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
    "km": "KM# 139",
-   "fo": "FO# 15173"
+   "fo": "FO# 15173",
+   "fotosCompra": [
+    "privado:anio-O-x4bf5a47e1-0.jpg",
+    "privado:anio-O-x4bf5a47e1-1.jpg"
+   ]
   },
   "O-xad736ec69": {
    "tengo": false,
    "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
    "km": "KM# 139",
-   "fo": "FO# 15173"
+   "fo": "FO# 15173",
+   "fotosCompra": [
+    "privado:anio-O-xad736ec69-0.jpg"
+   ]
   },
   "O-x0c52adf69": {
    "tengo": false,
    "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
    "km": "KM# 139",
-   "fo": "FO# 15173"
+   "fo": "FO# 15173",
+   "fotosCompra": [
+    "privado:anio-O-x0c52adf69-0.jpg"
+   ]
   },
   "O-xba99eb867": {
    "tengo": false,
    "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
    "km": "KM# 139",
-   "fo": "FO# 15173"
+   "fo": "FO# 15173",
+   "fotosCompra": [
+    "privado:anio-O-xba99eb867-0.jpg",
+    "privado:anio-O-xba99eb867-1.jpg"
+   ]
   },
   "O-x3094422ca": {
    "tengo": false,
@@ -3461,7 +3478,8 @@
    "km": "KM# 187.2",
    "fo": "FO# 5743",
    "fotosCompra": [
-    "privado:km-KM187-2.jpg"
+    "privado:anio-O-x31944087c-0.jpg",
+    "privado:anio-O-x31944087c-1.jpg"
    ],
    "valor": 500,
    "fechaValor": "2026-11-21",
@@ -3475,7 +3493,8 @@
    "km": "KM# 187.2",
    "fo": "FO# 5743",
    "fotosCompra": [
-    "privado:km-KM187-2.jpg"
+    "privado:anio-O-xe773b84d3-0.jpg",
+    "privado:anio-O-xe773b84d3-1.jpg"
    ],
    "valor": 500,
    "fechaValor": "2026-11-21",
@@ -3489,7 +3508,7 @@
    "km": "KM# 187.2",
    "fo": "FO# 5743",
    "fotosCompra": [
-    "privado:km-KM187-2.jpg"
+    "privado:anio-O-x1df2927ed-0.jpg"
    ],
    "valor": 500,
    "fechaValor": "2026-11-21",
@@ -3518,7 +3537,7 @@
    "km": "KM# 211.1",
    "fo": "FO# 5809",
    "fotosCompra": [
-    "privado:km-KM211-1.jpg"
+    "privado:anio-O-x397d78ae6-0.jpg"
    ],
    "valor": 500,
    "fechaValor": "2026-11-21",
@@ -3572,7 +3591,8 @@
    "km": "KM# 214.1",
    "fo": "FO# 4105",
    "fotosCompra": [
-    "privado:km-KM214-1.jpg"
+    "privado:anio-O-x778ff88f8-0.jpg",
+    "privado:anio-O-x778ff88f8-1.jpg"
    ],
    "valor": 1000,
    "costo": 1000
@@ -3594,7 +3614,8 @@
    "km": "KM# 214.1",
    "fo": "FO# 4105",
    "fotosCompra": [
-    "privado:km-KM214-1.jpg"
+    "privado:anio-O-xce08bf122-0.jpg",
+    "privado:anio-O-xce08bf122-1.jpg"
    ],
    "valor": 1000,
    "costo": 1000
@@ -3733,7 +3754,7 @@
    "km": "KM# 215.1",
    "fo": "FO# 371",
    "fotosCompra": [
-    "privado:km-KM215-1.jpg"
+    "privado:anio-O-xe6bbd7df4-0.jpg"
    ],
    "valor": 1000,
    "costo": 1000
@@ -3913,7 +3934,8 @@
    "km": "KM# 216.2",
    "fo": "FO# 370",
    "fotosCompra": [
-    "privado:km-KM216-2.jpg"
+    "privado:anio-O-xc70db8054-0.jpg",
+    "privado:anio-O-xc70db8054-1.jpg"
    ],
    "valor": 1000,
    "costo": 1000
@@ -7067,35 +7089,35 @@
    "nombre": "2 colones 1915",
    "categoria": "2 colones",
    "seccion": "antano",
-   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
+   "ref": "privado:anio-O-xb9d19fb61-0.jpg"
   },
   {
    "id": "O-x4bf5a47e1",
    "nombre": "2 colones 1916",
    "categoria": "2 colones",
    "seccion": "antano",
-   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
+   "ref": "privado:anio-O-x4bf5a47e1-0.jpg"
   },
   {
    "id": "O-xad736ec69",
    "nombre": "2 colones 1921",
    "categoria": "2 colones",
    "seccion": "antano",
-   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
+   "ref": "privado:anio-O-xad736ec69-0.jpg"
   },
   {
    "id": "O-x0c52adf69",
    "nombre": "2 colones 1922",
    "categoria": "2 colones",
    "seccion": "antano",
-   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
+   "ref": "privado:anio-O-x0c52adf69-0.jpg"
   },
   {
    "id": "O-xba99eb867",
    "nombre": "2 colones 1926",
    "categoria": "2 colones",
    "seccion": "antano",
-   "ref": "referencias/moneda-2-colones-oro-1900.jpg"
+   "ref": "privado:anio-O-xba99eb867-0.jpg"
   },
   {
    "id": "O-x3094422ca",
@@ -7130,21 +7152,21 @@
    "nombre": "2 colones 1968",
    "categoria": "2 colones",
    "seccion": "antano",
-   "ref": "privado:cat-63.jpg"
+   "ref": "privado:anio-O-x31944087c-0.jpg"
   },
   {
    "id": "O-xe773b84d3",
    "nombre": "2 colones 1970",
    "categoria": "2 colones",
    "seccion": "antano",
-   "ref": "privado:cat-63.jpg"
+   "ref": "privado:anio-O-xe773b84d3-0.jpg"
   },
   {
    "id": "O-x1df2927ed",
    "nombre": "2 colones 1972",
    "categoria": "2 colones",
    "seccion": "antano",
-   "ref": "privado:cat-63.jpg"
+   "ref": "privado:anio-O-x1df2927ed-0.jpg"
   },
   {
    "id": "O-x1b53c3b9e",
@@ -7158,7 +7180,7 @@
    "nombre": "2 colones 1982",
    "categoria": "2 colones",
    "seccion": "antano",
-   "ref": "privado:cat-64.jpg"
+   "ref": "privado:anio-O-x397d78ae6-0.jpg"
   },
   {
    "id": "O-xd472064ed",
@@ -7186,7 +7208,7 @@
    "nombre": "5 colones 1983",
    "categoria": "5 colones",
    "seccion": "antano",
-   "ref": "privado:cat-68.jpg"
+   "ref": "privado:anio-O-x778ff88f8-0.jpg"
   },
   {
    "id": "O-x33a303652",
@@ -7200,7 +7222,7 @@
    "nombre": "5 colones 1989",
    "categoria": "5 colones",
    "seccion": "antano",
-   "ref": "privado:cat-68.jpg"
+   "ref": "privado:anio-O-xce08bf122-0.jpg"
   },
   {
    "id": "O-x69f348fad",
@@ -7267,7 +7289,8 @@
    "id": "O-xe6bbd7df4",
    "nombre": "10 colones 1983",
    "categoria": "10 colones",
-   "seccion": "antano"
+   "seccion": "antano",
+   "ref": "privado:anio-O-xe6bbd7df4-0.jpg"
   },
   {
    "id": "O-x68b5fe4d2",
@@ -7360,7 +7383,7 @@
    "nombre": "20 colones 1985",
    "categoria": "20 colones",
    "seccion": "antano",
-   "ref": "privado:cat-78.jpg"
+   "ref": "privado:anio-O-xc70db8054-0.jpg"
   },
   {
    "id": "O-x98f975ad2",
