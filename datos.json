@@ -2791,7 +2791,8 @@
    "km": "KM# 143",
    "fo": "FO# 11457",
    "fotosCompra": [
-    "privado:km-KM143.jpg"
+    "privado:anio-O-xea71ba3dd-0.jpg",
+    "privado:anio-O-xea71ba3dd-1.jpg"
    ]
   },
   "O-xc3148346f": {
@@ -2887,7 +2888,8 @@
    "km": "KM# 176",
    "fo": "FO# 8586",
    "fotosCompra": [
-    "privado:km-KM176.jpg"
+    "privado:anio-O-x6ecf97344-0.jpg",
+    "privado:anio-O-x6ecf97344-1.jpg"
    ],
    "origen": "reventa"
   },
@@ -2924,7 +2926,7 @@
    "km": "KM# 189.3",
    "fo": "FO# 6469",
    "fotosCompra": [
-    "privado:km-KM189-3.jpg"
+    "privado:anio-O-xa5ccc1c22-0.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor"
@@ -2938,7 +2940,7 @@
    "km": "KM# 189.3",
    "fo": "FO# 6469",
    "fotosCompra": [
-    "privado:km-KM189-3.jpg"
+    "privado:anio-O-x37b2aafbf-0.jpg"
    ]
   },
   "O-x201edf229": {
@@ -2962,7 +2964,7 @@
    "km": "KM# 189.2",
    "fo": "FO# 10241",
    "fotosCompra": [
-    "privado:km-KM189-2.jpg"
+    "privado:anio-O-xdea505670-0.jpg"
    ]
   },
   "O-x72b788c96": {
@@ -2974,7 +2976,7 @@
    "km": "KM# 189.2",
    "fo": "FO# 10241",
    "fotosCompra": [
-    "privado:km-KM189-2.jpg"
+    "privado:anio-O-x72b788c96-0.jpg"
    ],
    "origen": "reventa"
   },
@@ -2987,7 +2989,8 @@
    "km": "KM# 189.3",
    "fo": "FO# 6469",
    "fotosCompra": [
-    "privado:km-KM189-3.jpg"
+    "privado:anio-O-x1184f6c99-0.jpg",
+    "privado:anio-O-x1184f6c99-1.jpg"
    ],
    "origen": "reventa"
   },
@@ -3014,7 +3017,7 @@
    "km": "KM# 209.1",
    "fo": "FO# 6827",
    "fotosCompra": [
-    "privado:km-KM209-1.jpg"
+    "privado:anio-O-x65ebe4a8c-0.jpg"
    ],
    "origen": "reventa"
   },
@@ -3027,7 +3030,8 @@
    "km": "KM# 209.1",
    "fo": "FO# 6827",
    "fotosCompra": [
-    "privado:km-KM209-1.jpg"
+    "privado:anio-O-xef3acce12-0.jpg",
+    "privado:anio-O-xef3acce12-1.jpg"
    ],
    "origen": "reventa"
   },
@@ -6731,7 +6735,7 @@
    "nombre": "50 céntimos 1902",
    "categoria": "50 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-33.jpg"
+   "ref": "privado:anio-O-xea71ba3dd-0.jpg"
   },
   {
    "id": "O-xc3148346f",
@@ -6787,7 +6791,7 @@
    "nombre": "50 céntimos 1948 · Cobre-níquel",
    "categoria": "50 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-41.jpg"
+   "ref": "privado:anio-O-x6ecf97344-0.jpg"
   },
   {
    "id": "O-x298f9978e",
@@ -6808,14 +6812,14 @@
    "nombre": "50 céntimos 1968",
    "categoria": "50 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-45.jpg"
+   "ref": "privado:anio-O-xa5ccc1c22-0.jpg"
   },
   {
    "id": "O-x37b2aafbf",
    "nombre": "50 céntimos 1970",
    "categoria": "50 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-45.jpg"
+   "ref": "privado:anio-O-x37b2aafbf-0.jpg"
   },
   {
    "id": "O-x201edf229",
@@ -6829,21 +6833,21 @@
    "nombre": "50 céntimos 1975 · Fecha pequeña",
    "categoria": "50 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-44.jpg"
+   "ref": "privado:anio-O-xdea505670-0.jpg"
   },
   {
    "id": "O-x72b788c96",
    "nombre": "50 céntimos 1975 · Fecha grande",
    "categoria": "50 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-44.jpg"
+   "ref": "privado:anio-O-x72b788c96-0.jpg"
   },
   {
    "id": "O-x1184f6c99",
    "nombre": "50 céntimos 1976",
    "categoria": "50 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-45.jpg"
+   "ref": "privado:anio-O-x1184f6c99-0.jpg"
   },
   {
    "id": "O-x19ce19ac9",
@@ -6857,14 +6861,14 @@
    "nombre": "50 céntimos 1982",
    "categoria": "50 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-46.jpg"
+   "ref": "privado:anio-O-x65ebe4a8c-0.jpg"
   },
   {
    "id": "O-xef3acce12",
    "nombre": "50 céntimos 1983",
    "categoria": "50 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-46.jpg"
+   "ref": "privado:anio-O-xef3acce12-0.jpg"
   },
   {
    "id": "O-x915a849cd",
