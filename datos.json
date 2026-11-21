@@ -3100,7 +3100,7 @@
    "km": "KM# 177",
    "fo": "FO# 12992",
    "fotosCompra": [
-    "privado:km-KM177.jpg"
+    "privado:anio-O-x805ea6f62-0.jpg"
    ],
    "valor": 750,
    "origen": "reventa",
@@ -3136,7 +3136,7 @@
    "km": "KM# 186.2",
    "fo": "FO# 7230",
    "fotosCompra": [
-    "privado:km-KM186-2.jpg"
+    "privado:anio-O-x5f892cf31-0.jpg"
    ],
    "valor": 750,
    "fechaValor": "2026-11-20",
@@ -3151,7 +3151,7 @@
    "km": "KM# 186.2",
    "fo": "FO# 7230",
    "fotosCompra": [
-    "privado:km-KM186-2.jpg"
+    "privado:anio-O-x87a884449-0.jpg"
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
@@ -3165,7 +3165,7 @@
    "km": "KM# 186.2",
    "fo": "FO# 7230",
    "fotosCompra": [
-    "privado:km-KM186-2.jpg"
+    "privado:anio-O-x5f1dafc47-0.jpg"
    ],
    "valor": 500,
    "origen": "reventa",
@@ -3189,7 +3189,8 @@
    "km": "KM# 186.2",
    "fo": "FO# 7230",
    "fotosCompra": [
-    "privado:km-KM186-2.jpg"
+    "privado:anio-O-x0ee8c9203-0.jpg",
+    "privado:anio-O-x0ee8c9203-1.jpg"
    ],
    "valor": 500,
    "origen": "reventa",
@@ -3201,7 +3202,8 @@
    "km": "KM# 186.3",
    "fo": "FO# 11422",
    "fotosCompra": [
-    "privado:km-KM186-3.jpg"
+    "privado:anio-O-x86ea4d9ba-0.jpg",
+    "privado:anio-O-x86ea4d9ba-1.jpg"
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
@@ -3215,7 +3217,7 @@
    "km": "KM# 186.4",
    "fo": "FO# 9010",
    "fotosCompra": [
-    "privado:km-KM186-4.jpg"
+    "privado:anio-O-x0965286c9-0.jpg"
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
@@ -3270,7 +3272,7 @@
    "km": "KM# 210.1",
    "fo": "FO# 2699",
    "fotosCompra": [
-    "privado:km-KM210-1.jpg"
+    "privado:anio-O-x25f569fc3-0.jpg"
    ],
    "valor": 500,
    "origen": "reventa",
@@ -3283,7 +3285,8 @@
    "km": "KM# 210.1",
    "fo": "FO# 2699",
    "fotosCompra": [
-    "privado:km-KM210-1.jpg"
+    "privado:anio-O-x7276031e9-0.jpg",
+    "privado:anio-O-x7276031e9-1.jpg"
    ],
    "valor": 500,
    "origen": "reventa",
@@ -3295,7 +3298,7 @@
    "km": "KM# 210.1",
    "fo": "FO# 2699",
    "fotosCompra": [
-    "privado:km-KM210-1.jpg"
+    "privado:anio-O-x36a873a9a-0.jpg"
    ],
    "valor": 500,
    "origen": "reventa",
@@ -3308,7 +3311,7 @@
    "km": "KM# 210.1",
    "fo": "FO# 2699",
    "fotosCompra": [
-    "privado:km-KM210-1.jpg"
+    "privado:anio-O-xc3cc41333-0.jpg"
    ],
    "valor": 500,
    "origen": "reventa",
@@ -3320,7 +3323,7 @@
    "km": "KM# 210.1",
    "fo": "FO# 2699",
    "fotosCompra": [
-    "privado:km-KM210-1.jpg"
+    "privado:anio-O-xed65f5cf9-0.jpg"
    ],
    "valor": 500,
    "origen": "reventa",
@@ -3333,7 +3336,8 @@
    "km": "KM# 210.2",
    "fo": "FO# 3027",
    "fotosCompra": [
-    "privado:km-KM210-2.jpg"
+    "privado:anio-O-xdab5e83ad-0.jpg",
+    "privado:anio-O-xdab5e83ad-1.jpg"
    ],
    "valor": 500,
    "origen": "reventa",
@@ -6910,7 +6914,7 @@
    "nombre": "1 colón 1948",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-50.jpg"
+   "ref": "privado:anio-O-x805ea6f62-0.jpg"
   },
   {
    "id": "O-x96359cf4e",
@@ -6931,21 +6935,21 @@
    "nombre": "1 colón 1965",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-53.jpg"
+   "ref": "privado:anio-O-x5f892cf31-0.jpg"
   },
   {
    "id": "O-x87a884449",
    "nombre": "1 colón 1968",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-53.jpg"
+   "ref": "privado:anio-O-x87a884449-0.jpg"
   },
   {
    "id": "O-x5f1dafc47",
    "nombre": "1 colón 1970",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-53.jpg"
+   "ref": "privado:anio-O-x5f1dafc47-0.jpg"
   },
   {
    "id": "O-xd8c67776d",
@@ -6959,21 +6963,21 @@
    "nombre": "1 colón 1974",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-53.jpg"
+   "ref": "privado:anio-O-x0ee8c9203-0.jpg"
   },
   {
    "id": "O-x86ea4d9ba",
    "nombre": "1 colón 1975",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-54.jpg"
+   "ref": "privado:anio-O-x86ea4d9ba-0.jpg"
   },
   {
    "id": "O-x0965286c9",
    "nombre": "1 colón 1976",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-55.jpg"
+   "ref": "privado:anio-O-x0965286c9-0.jpg"
   },
   {
    "id": "O-x43d5cd4fa",
@@ -7001,42 +7005,42 @@
    "nombre": "1 colón 1983",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-56.jpg"
+   "ref": "privado:anio-O-x25f569fc3-0.jpg"
   },
   {
    "id": "O-x7276031e9",
    "nombre": "1 colón 1984 · B.C.C.R. grandes - Barco grande - Letras de la cinta incusas",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-56.jpg"
+   "ref": "privado:anio-O-x7276031e9-0.jpg"
   },
   {
    "id": "O-x36a873a9a",
    "nombre": "1 colón 1984 · B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-56.jpg"
+   "ref": "privado:anio-O-x36a873a9a-0.jpg"
   },
   {
    "id": "O-xc3cc41333",
    "nombre": "1 colón 1989",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-56.jpg"
+   "ref": "privado:anio-O-xc3cc41333-0.jpg"
   },
   {
    "id": "O-xed65f5cf9",
    "nombre": "1 colón 1991",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-56.jpg"
+   "ref": "privado:anio-O-xed65f5cf9-0.jpg"
   },
   {
    "id": "O-xdab5e83ad",
    "nombre": "1 colón 1993",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:cat-57.jpg"
+   "ref": "privado:anio-O-xdab5e83ad-0.jpg"
   },
   {
    "id": "O-x693bae8aa",
