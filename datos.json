@@ -421,24 +421,6 @@
    "notas": "Código: Colecciónador Fauna PROOF\nColeccionador, versión PROOF. Producto: Coleccionador Fauna PROOF. Categoría: Coleccionadores. Código: Colecciónador Fauna PROOF. Precio de venta: ₡250 000. Disponibles: 1.",
    "origen": "Banco Central de Costa Rica (emisión)"
   },
-  "O-1b8787e2": {
-   "tengo": true,
-   "cantidad": 2,
-   "fotos": [
-    "100-colones-plata-version-proof-y-mate.jpg",
-    "100-colones-plata-version-proof-y-mate-2.jpg"
-   ],
-   "fotosCompra": [
-    "100-colones-plata-version-proof-y-mate.jpg",
-    "100-colones-plata-version-proof-y-mate-2.jpg"
-   ],
-   "valor": 180000,
-   "fechaValor": "2026-11-18",
-   "costo": 120000,
-   "fechaCompra": "2022-09-01",
-   "notas": "Código: Conmemorativas plata pollitos\nMoneda conmemorativa de 100 colones, versión PROOF, mate. Producto: 100 colones plata. Versión PROOF y mate. Categoría: Conmemorativas de plata. Código: Conmemorativas plata pollitos. Precio de venta: ₡260 000. Disponibles: 2.",
-   "origen": "reventa"
-  },
   "AM14": {
    "tengo": true,
    "producto": "Lagartija Acrilico PROOF",
@@ -4131,15 +4113,22 @@
   },
   "O-x322208290": {
    "tengo": true,
-   "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Canto: Estriado · Acabado PROOF · Tiraje: 5 000\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Canto: Estriado · Acabado PROOF · Tiraje: 5 000\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nPrecio: la mitad del par (valor ₡360 000 y costo ₡240 000 por las dos).",
    "km": "KM# 206",
    "fo": "FO# 11432",
    "fotosCompra": [
-    "privado:nino1979-proof-aves.jpg",
-    "privado:nino1979-proof-escudo.jpg"
+    "nino-1979-proof-aves.jpg",
+    "nino-1979-proof-escudo.jpg"
    ],
-   "valor": 62000,
-   "costo": 62000
+   "valor": 180000,
+   "costo": 120000,
+   "fotos": [
+    "nino-1979-proof-aves.jpg",
+    "nino-1979-proof-escudo.jpg"
+   ],
+   "fechaCompra": "2022-09-01",
+   "origen": "reventa",
+   "fechaValor": "2026-11-21"
   },
   "O-x41fa83d24": {
    "tengo": true,
@@ -5946,15 +5935,22 @@
   },
   "O-x322208290m": {
    "tengo": true,
-   "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Canto: Estriado · Acabado normal (sin brillo espejo) · Tiraje: 9 500\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Canto: Estriado · Acabado normal (sin brillo espejo) · Tiraje: 9 500\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nPrecio: la mitad del par (valor ₡360 000 y costo ₡240 000 por las dos).",
    "km": "KM# 206",
    "fo": "FO# 11432",
    "fotosCompra": [
-    "privado:nino1979-normal-aves.jpg",
-    "privado:nino1979-normal-escudo.jpg"
+    "nino-1979-normal-aves.jpg",
+    "nino-1979-normal-escudo.jpg"
    ],
-   "valor": 62000,
-   "costo": 62000
+   "valor": 180000,
+   "costo": 120000,
+   "fotos": [
+    "nino-1979-normal-aves.jpg",
+    "nino-1979-normal-escudo.jpg"
+   ],
+   "fechaCompra": "2022-09-01",
+   "origen": "reventa",
+   "fechaValor": "2026-11-21"
   }
  },
  "sueltas": {},
@@ -6087,8 +6083,42 @@
    "seccion": "museo-bccr"
   },
   {
-   "id": "O-1b8787e2",
-   "nombre": "100 colones plata. Versión PROOF y mate",
+   "id": "O-x003714af8",
+   "nombre": "50 colones (Conservación de la Tortuga) 1974 · versión PROOF",
+   "categoria": "Conmemorativas de plata",
+   "seccion": "plata",
+   "ref": "privado:cat-84.jpg"
+  },
+  {
+   "id": "O-x003714af8m",
+   "nombre": "50 colones (Conservación de la Tortuga) 1974 · versión mate",
+   "categoria": "Conmemorativas de plata",
+   "seccion": "plata",
+   "ref": "privado:cat-84.jpg"
+  },
+  {
+   "id": "O-x6907c6691",
+   "nombre": "100 colones (Conservación del Manatí) 1974 · versión PROOF",
+   "categoria": "Conmemorativas de plata",
+   "seccion": "plata",
+   "ref": "privado:cat-91.jpg"
+  },
+  {
+   "id": "O-x6907c6691m",
+   "nombre": "100 colones (Conservación del Manatí) 1974 · versión mate",
+   "categoria": "Conmemorativas de plata",
+   "seccion": "plata",
+   "ref": "privado:cat-91.jpg"
+  },
+  {
+   "id": "O-x322208290",
+   "nombre": "100 colones (Año Internacional del Niño) 1979 · versión PROOF",
+   "categoria": "Conmemorativas de plata",
+   "seccion": "plata"
+  },
+  {
+   "id": "O-x322208290m",
+   "nombre": "100 colones (Año Internacional del Niño) 1979 · versión normal",
    "categoria": "Conmemorativas de plata",
    "seccion": "plata"
   },
@@ -7355,20 +7385,6 @@
    "seccion": "cono-1995-2021"
   },
   {
-   "id": "O-x003714af8",
-   "nombre": "50 colones (Conservación de la Tortuga) 1974 · versión PROOF",
-   "categoria": "50 colones",
-   "seccion": "antano",
-   "ref": "privado:cat-84.jpg"
-  },
-  {
-   "id": "O-x003714af8m",
-   "nombre": "50 colones (Conservación de la Tortuga) 1974 · versión mate",
-   "categoria": "50 colones",
-   "seccion": "antano",
-   "ref": "privado:cat-84.jpg"
-  },
-  {
    "id": "O-xbec1cd63b",
    "nombre": "50 colones 1997",
    "categoria": "50 colones",
@@ -7409,34 +7425,6 @@
    "nombre": "50 colones 2015",
    "categoria": "50 colones",
    "seccion": "cono-1995-2021"
-  },
-  {
-   "id": "O-x6907c6691",
-   "nombre": "100 colones (Conservación del Manatí) 1974 · versión PROOF",
-   "categoria": "100 colones",
-   "seccion": "antano",
-   "ref": "privado:cat-91.jpg"
-  },
-  {
-   "id": "O-x6907c6691m",
-   "nombre": "100 colones (Conservación del Manatí) 1974 · versión mate",
-   "categoria": "100 colones",
-   "seccion": "antano",
-   "ref": "privado:cat-91.jpg"
-  },
-  {
-   "id": "O-x322208290",
-   "nombre": "100 colones (Año Internacional del Niño) 1979 · versión PROOF",
-   "categoria": "100 colones",
-   "seccion": "antano",
-   "ref": "privado:nino1979-proof-aves.jpg"
-  },
-  {
-   "id": "O-x322208290m",
-   "nombre": "100 colones (Año Internacional del Niño) 1979 · versión normal",
-   "categoria": "100 colones",
-   "seccion": "antano",
-   "ref": "privado:nino1979-normal-aves.jpg"
   },
   {
    "id": "O-x41fa83d24",
