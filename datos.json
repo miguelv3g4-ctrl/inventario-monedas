@@ -959,7 +959,7 @@
   "C47": {
    "tengo": true,
    "producto": "Swing criollo PROOF",
-   "valor": 35000,
+   "valor": 20000,
    "costo": 9000,
    "fotos": [
     "swing-criollo-proof.jpg"
@@ -970,13 +970,13 @@
    "notas": "Código: Swing Acrílico PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Swing criollo PROOF. Categoría: Patrimonio cultural acrilico. Código: Swing Acrílico PROOF. Precio de venta: ₡15 000. Disponibles: 3.\nCosto registrado antes del PDF: ₡15 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nPrecio revendedor",
    "fechaCompra": "2025-07-23",
    "origen": "Banco Central de Costa Rica (emisión)",
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fechaValor": "2026-11-21",
+   "fuenteValor": "Precio fijado por Miguel"
   },
   "C48": {
    "tengo": true,
    "producto": "Swing criollo PROOF",
-   "valor": 35000,
+   "valor": 20000,
    "costo": 9000,
    "fotos": [
     "swing-criollo-proof.jpg"
@@ -987,13 +987,13 @@
    "notas": "Código: Swing Acrílico PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Swing criollo PROOF. Categoría: Patrimonio cultural acrilico. Código: Swing Acrílico PROOF. Precio de venta: ₡15 000. Disponibles: 3.\nCosto registrado antes del PDF: ₡15 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nPrecio revendedor",
    "fechaCompra": "2025-07-23",
    "origen": "Banco Central de Costa Rica (emisión)",
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fechaValor": "2026-11-21",
+   "fuenteValor": "Precio fijado por Miguel"
   },
   "C49": {
    "tengo": true,
    "producto": "Swing criollo PROOF",
-   "valor": 35000,
+   "valor": 20000,
    "costo": 9000,
    "fotos": [
     "swing-criollo-proof.jpg"
@@ -1004,8 +1004,8 @@
    "notas": "Código: Swing Acrílico PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Swing criollo PROOF. Categoría: Patrimonio cultural acrilico. Código: Swing Acrílico PROOF. Precio de venta: ₡15 000. Disponibles: 3.\nCosto registrado antes del PDF: ₡15 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).\nPrecio revendedor",
    "fechaCompra": "2025-07-23",
    "origen": "Banco Central de Costa Rica (emisión)",
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fechaValor": "2026-11-21",
+   "fuenteValor": "Precio fijado por Miguel"
   },
   "C44": {
    "tengo": true,
@@ -5845,9 +5845,9 @@
   "M47": {
    "tengo": true,
    "producto": "Calipso limonense PROOF",
-   "valor": 35000,
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Estimado igual que el Swing criollo PROOF (falta confirmar)",
+   "valor": 20000,
+   "fechaValor": "2026-11-21",
+   "fuenteValor": "Precio fijado por Miguel",
    "fotos": [
     "calipso-acrilico-proof.jpg"
    ],
