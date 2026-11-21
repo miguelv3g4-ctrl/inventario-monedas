@@ -728,9 +728,15 @@
     if (casillas[id]) casillas[id].classList.toggle('on', tengo(id));
     if (!sinColocar) colocarCasillas([id]);
   }
+  // MS sueltas: se compran por cantidad, directas de las bolsas del banco; precio por pieza segun la denominacion
+  // (si la ficha tiene su propio "valor actual", manda ese)
+  const PRECIO_MS = { 500: 750, 50: 350, 25: 150 };
+  const DENOM_MS = [[500, /hito|independ|abolic|anexi|fundaci/i], [100, /patrimonio|cultural|swing|boyero|calipso|cimarrona|tope|ceramica|cerámica/i], [50, /fauna|mariposa|rana|tortuga|lagartija|cangrejo|conejo/i], [25, /provincia|lugares|emblem/i]];
+  const denomMS = p => { const t = p.coleccion + ' ' + p.moneda; const d = DENOM_MS.find(x => x[1].test(t)); return d ? d[0] : 0; };
+  const valorU = p => reg(p.id).valor || (p.seccion === 'ms-sueltas' ? PRECIO_MS[denomMS(p)] || 0 : 0);
   function sumas(lista) {
     let n = 0, inv = 0, val = 0;
-    for (const p of lista) { const r = reg(p.id), q = cant(p.id); if (tengo(p.id) && !r.vendida) { n += q; val += (r.valor || 0) * q; } if (tengo(p.id) || r.vendida) inv += (r.costo || 0) * q; } // invertido: solo lo que se tiene o se vendio
+    for (const p of lista) { const r = reg(p.id), q = cant(p.id); if (tengo(p.id) && !r.vendida) { n += q; val += valorU(p) * q; } if (tengo(p.id) || r.vendida) inv += (r.costo || 0) * q; } // invertido: solo lo que se tiene o se vendio
     return { n, inv, val };
   }
   const deSeccion = id => todas().filter(p => p.seccion === id);
@@ -804,10 +810,12 @@
       if (fotos.length > 1) fotos.forEach((n, i) => { const c = el('span', 'mini'), m = el('img'); m.alt = 'Foto ' + (i + 1); ponerFoto(m, n); aplicarGiro(m, n, 1); c.appendChild(m); c.onclick = () => ver(i); minis.appendChild(c); });
       ver(0);
     }
-    const monto = esValor ? r.valor : r.costo;
-    $('vRotulo').textContent = esValor ? 'Valor actual de la moneda' : 'Precio al que la compré';
+    const esMS = base[id].seccion === 'ms-sueltas';
+    const monto = esValor ? (esMS ? valorU(base[id]) : r.valor) : r.costo;
+    $('vRotulo').textContent = esValor ? (esMS ? 'Precio por pieza' : 'Valor actual de la moneda') : 'Precio al que la compré';
     $('vPrecio').textContent = monto ? fmt(monto) : 'Sin precio todavía'; $('vPrecio').classList.toggle('vacio', !monto);
     const det = $('vDetalle'); det.textContent = '';
+    if (esMS) { const q = tengo(id) ? cant(id) : 0; renglon(det, 'Cantidad', q + (q === 1 ? ' pieza' : ' piezas')); if (monto) renglon(det, 'Total', q + ' × ' + fmt(monto) + ' = ' + fmt(monto * q)); }
     renglon(det, 'Catálogo', [r.km, r.fo].filter(Boolean).join(' · '));
     if (r.enlace && String(r.enlace).startsWith('https://www.foronum.com/')) { const dv = el('div'), a = el('a', '', 'Ver esta moneda en Foronum'); a.href = r.enlace; a.target = '_blank'; a.rel = 'noopener'; a.style.color = 'var(--oro2)'; dv.appendChild(a); det.appendChild(dv); }
     if (esValor) { renglon(det, 'Fecha del valor', fecha(r.fechaValor)); renglon(det, 'Fuente', r.fuenteValor); if (r.valor && r.costo) renglon(det, 'Frente a lo que costó', conSigno(r.valor - r.costo)); }
@@ -1124,8 +1132,15 @@
       else ph.textContent = 'Sin foto';
       const tx = el('div', 'tx');
       tx.append(el('span', '', p.moneda), el('small', '', p.coleccion + (reg(p.id).km ? ' · ' + reg(p.id).km : '') + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '')));
+      if (p.seccion === 'ms-sueltas') {
+        // MS sueltas: cantidad que tengo, precio por pieza y total (cantidad x precio)
+        const q = tengo(p.id) ? cant(p.id) : 0, u = valorU(p);
+        tx.appendChild(el('small', 'msCant', 'Cantidad: ' + q + (q === 1 ? ' pieza' : ' piezas')));
+        tx.appendChild(el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : u ? q + ' × ' + fmt(u) + ' = ' + fmt(u * q) : 'Sin precio'));
+      } else {
       const precio = el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : r.valor ? fmt(r.valor) + (cant(p.id) > 1 ? ' c/u' : '') : 'Sin precio');
       tx.appendChild(precio);
+      }
       t.append(ph, tx);
       // casilla "La tengo": doble control de lo que falta conseguir; se marca cuando se consigue
       const tiene = tengo(p.id), lab = el('label', 'tengo'), ck = el('input');
@@ -1208,7 +1223,9 @@
         const grupo = col ? lista.filter(p => nivelDe(p) === NIVELES.findIndex(n => n[0] === col)) : otrasCols;
         if (!grupo.length) continue;
         const uno = sc.id === 'museo-bccr' ? ' pieza' : ' moneda', varios = sc.id === 'museo-bccr' ? ' piezas' : ' monedas';
-        const t = el('div', 'nivel'); t.append(el('b', '', col ? denom : 'Otras'), el('span', '', (col || '') + ' · ' + grupo.length + (grupo.length === 1 ? uno : varios))); g.appendChild(t);
+        let resumen = (col || '') + ' · ' + grupo.length + (grupo.length === 1 ? uno : varios);
+        if (sc.id === 'ms-sueltas') { const s = sumas(grupo); resumen += ' · ' + s.n + (s.n === 1 ? ' pieza' : ' piezas') + (s.val ? ' · ' + fmt(s.val) : ''); }
+        const t = el('div', 'nivel'); t.append(el('b', '', col ? denom : 'Otras'), el('span', '', resumen)); g.appendChild(t);
         for (const p of grupo.sort((a, b) => columnaHoja(a) - columnaHoja(b) || ordenHoja(a) - ordenHoja(b))) g.appendChild(tarjeta(p));
       }
     } else for (const p of lista) g.appendChild(tarjeta(p));
