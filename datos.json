@@ -4121,9 +4121,8 @@
   },
   "O-x6907c6691": {
    "tengo": true,
-   "notas": "Material: Plata (0,500) · Peso: 31,65 g · Diámetro: 42,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
-   "km": "KM# 201",
-   "fo": "FO# 15942",
+   "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Acabado PROOF · Tiraje: 11 000\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
+   "km": "KM# 201a",
    "fotosCompra": [
     "privado:km-KM201.jpg"
    ],
@@ -5925,9 +5924,8 @@
   },
   "O-x003714af8m": {
    "tengo": true,
-   "notas": "Material: Plata · Peso: 28,28 g · Diámetro: 38,60 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
-   "km": "KM# 200a",
-   "fo": "FO# 15937",
+   "notas": "Material: Plata (0,500) · Peso: 25,55 g · Diámetro: 38,60 mm · Acabado mate (sin brillo espejo) · Tiraje: 7 599\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
+   "km": "KM# 200",
    "fotosCompra": [
     "privado:km-KM200a.jpg"
    ],
