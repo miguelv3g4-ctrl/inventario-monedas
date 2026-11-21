@@ -539,6 +539,7 @@
 
   // direccion de una foto: la recien subida, o la publicada; si aun no esta publicada se pide al repositorio
   function ponerFoto(img, nombre) {
+    if (/^privado:/.test(nombre)) { ponerRef(img, nombre); return; }
     if (locales[nombre]) { img.src = locales[nombre]; return; }
     img.onerror = async () => {
       img.onerror = null; if (!conectado()) return;
@@ -807,7 +808,8 @@
     $('vRotulo').textContent = esValor ? 'Valor actual de la moneda' : 'Precio al que la compré';
     $('vPrecio').textContent = monto ? fmt(monto) : 'Sin precio todavía'; $('vPrecio').classList.toggle('vacio', !monto);
     const det = $('vDetalle'); det.textContent = '';
-    renglon(det, 'Catálogo', r.km);
+    renglon(det, 'Catálogo', [r.km, r.fo].filter(Boolean).join(' · '));
+    if (r.enlace && String(r.enlace).startsWith('https://www.foronum.com/')) { const dv = el('div'), a = el('a', '', 'Ver esta moneda en Foronum'); a.href = r.enlace; a.target = '_blank'; a.rel = 'noopener'; a.style.color = 'var(--oro2)'; dv.appendChild(a); det.appendChild(dv); }
     if (esValor) { renglon(det, 'Fecha del valor', fecha(r.fechaValor)); renglon(det, 'Fuente', r.fuenteValor); if (r.valor && r.costo) renglon(det, 'Frente a lo que costó', conSigno(r.valor - r.costo)); }
     else { renglon(det, 'Fecha de compra', fecha(r.fechaCompra)); renglon(det, 'Comprada a', r.origen); if (r.valor && r.costo) renglon(det, 'Valor actual', fmt(r.valor)); }
     const est = $('vEstado'); est.textContent = '';
@@ -1010,7 +1012,7 @@
       datos.piezas[id] = limpiar(r); sucias.add(id);
       await guardarDatos('Datos de ' + base[id].moneda + ' (' + nombrePieza(base[id]) + ')');
       // 3. quitar del repositorio las fotos que se quitaron y ya no usa ninguna otra pieza (si falla no pasa nada)
-      for (const nombre of borrador.quitadas.filter(n => !fotoEnUso(n))) {
+      for (const nombre of borrador.quitadas.filter(n => !fotoEnUso(n) && !/^privado:/.test(n))) {
         try { await api('DELETE', '/fotos/' + nombre); } catch (e) {}
       }
       cerrarForm(true); pintarPieza(id); totales(); abrirFicha(id);
@@ -1091,10 +1093,10 @@
   document.querySelectorAll('input[name=fl]').forEach(r => r.addEventListener('change', pintarLista));
   $('lCsv').onclick = () => {
     const q = s => '"' + String(s === undefined ? '' : s).replace(/"/g, '""') + '"';
-    const lineas = [['Colección', 'Moneda', 'Año', 'Tipo', 'Serie o calidad', 'Tiraje', 'Cantidad', 'KM', 'La tengo', 'Vendida', 'Valor actual (unidad)', 'Costo (unidad)', 'Fecha compra', 'Comprada a', 'Precio venta', 'Fecha venta', 'Vendida a', 'Ganancia', 'Fotos', 'Notas'].map(q).join(';')];
+    const lineas = [['Colección', 'Moneda', 'Año', 'Tipo', 'Serie o calidad', 'Tiraje', 'Cantidad', 'KM', 'FO', 'Enlace Foronum', 'La tengo', 'Vendida', 'Valor actual (unidad)', 'Costo (unidad)', 'Fecha compra', 'Comprada a', 'Precio venta', 'Fecha venta', 'Vendida a', 'Ganancia', 'Fotos', 'Notas'].map(q).join(';')];
     for (const p of todas()) {
       const r = reg(p.id);
-      lineas.push([p.coleccion, p.moneda, p.anio, p.tipo, serieDe(p.id) || p.calidad || '', tirajeDe(p.id), cant(p.id), r.km || '', tengo(p.id) ? 'Sí' : 'No', r.vendida ? 'Sí' : 'No', r.valor || '', r.costo || '', r.fechaCompra, r.origen, r.precioVenta || '', r.fechaVenta, r.comprador, r.vendida ? (r.precioVenta || 0) - (r.costo || 0) * cant(p.id) : '', nFotos(p.id), r.notas].map(q).join(';'));
+      lineas.push([p.coleccion, p.moneda, p.anio, p.tipo, serieDe(p.id) || p.calidad || '', tirajeDe(p.id), cant(p.id), r.km || '', r.fo || '', r.enlace || '', tengo(p.id) ? 'Sí' : 'No', r.vendida ? 'Sí' : 'No', r.valor || '', r.costo || '', r.fechaCompra, r.origen, r.precioVenta || '', r.fechaVenta, r.comprador, r.vendida ? (r.precioVenta || 0) - (r.costo || 0) * cant(p.id) : '', nFotos(p.id), r.notas].map(q).join(';'));
     }
     const a = el('a'); a.href = URL.createObjectURL(new Blob(['﻿' + lineas.join('\r\n')], { type: 'text/csv' }));
     a.download = 'inventario-monedas-' + hoy() + '.csv'; a.click(); URL.revokeObjectURL(a.href);
@@ -1117,7 +1119,7 @@
       const r = reg(p.id), t = el('div', 'tarjeta'), ph = el('div', 'ph'), f = fotosDe(p.id, 'fotos')[0] || fotosDe(p.id, 'fotosCompra')[0];
       t.tabIndex = 0; t.setAttribute('role', 'button');
       const rf = refDe(p.id);
-      if (f) { const im = el('img'); im.alt = ''; im.loading = 'lazy'; ponerFoto(im, f); aplicarGiro(im, f, 4 / 3); ph.appendChild(im); }
+      if (f) { const im = el('img'); im.alt = ''; im.loading = 'lazy'; ponerFoto(im, f); aplicarGiro(im, f, 4 / 3); ph.appendChild(im); if (/^privado:/.test(f) && !fotosDe(p.id, 'fotos').length) ph.appendChild(el('span', 'marcaRef', 'Catálogo · falta mi foto')); }
       else if (rf) { const im = el('img', 'ref'); im.alt = 'Imagen de referencia'; im.loading = 'lazy'; ponerRef(im, rf); aplicarGiro(im, rf, 4 / 3); ph.append(im, el('span', 'marcaRef', 'Referencia · falta mi foto')); }
       else ph.textContent = 'Sin foto';
       const tx = el('div', 'tx');
