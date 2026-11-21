@@ -32,6 +32,8 @@
 
   /* testamento */
   .boton-testamento { display: inline-flex; align-items: baseline; justify-content: center; gap: 10px; width: min(100%, 360px); margin: 0 auto 16px; padding: 9px 20px; cursor: pointer; color: #1a1408; font: inherit; border: 1px solid var(--oro); border-radius: 8px; background: linear-gradient(180deg, #ffe08a, #d9a92e 55%, #b8860b); box-shadow: 0 0 0 2px rgba(255, 217, 102, .12), 0 4px 14px rgba(0, 0, 0, .55); }
+  .fila-legal { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 0 auto 16px; }
+  .fila-legal .boton-testamento { margin: 0; width: min(100%, 320px); }
   .boton-testamento .nom { font: 17px "Copperplate Gothic Bold", Copperplate, Georgia, serif; letter-spacing: .08em; text-transform: uppercase; }
   .boton-testamento .desc { font-size: 13px; color: #3a2c0b; }
   .boton-testamento:hover, .boton-testamento:focus-visible { outline: none; background: linear-gradient(180deg, #fff0b0, #e6b73a 55%, #c9970f); box-shadow: 0 0 0 2px rgba(255, 217, 102, .35), 0 4px 14px rgba(0, 0, 0, .55); }
@@ -287,7 +289,10 @@
     <img class="sello" src="img/image19.png" alt="Pertenece a Familia Vega Godínez">
     <h1>Inventario de la colección</h1>
     <div id="mTotal"><div class="rot">Valor total de la colección</div><div class="monto" id="mTotalMonto">–</div><div class="det" id="mTotalDet"></div></div>
-    <button id="mTestamento" class="boton-testamento"><span class="nom">Testamento</span><span class="desc">Mi última voluntad</span></button>
+    <div class="fila-legal">
+      <button id="mTestamento" class="boton-testamento"><span class="nom">Testamento</span><span class="desc">Mi última voluntad</span></button>
+      <button id="mFideicomiso" class="boton-testamento"><span class="nom">Fideicomiso</span><span class="desc">Contrato para mi hijo</span></button>
+    </div>
     <div id="mBotones"></div>
   </div>
 </div>
@@ -473,7 +478,7 @@
 <div class="velo" id="vPdf">
   <div class="ventana" role="dialog" aria-modal="true" aria-label="Testamento guardado" style="width:min(980px,100%)">
     <div class="cab">
-      <div><h2>Testamento guardado</h2><div id="pInfo" style="color:var(--gris);font-size:13px;margin-top:2px"></div></div>
+      <div><h2 id="pTitulo">Testamento guardado</h2><div id="pInfo" style="color:var(--gris);font-size:13px;margin-top:2px"></div></div>
       <button id="pImprimir" class="fuerte">Imprimir</button>
       <button id="pBajar">Descargar</button>
       <button id="pCerrar">Cerrar</button>
@@ -1561,7 +1566,18 @@
   $('mTestamento').onclick = async () => { await cargarT(); armarCamposTestamento(); pintarTestamento(); $('vTestamento').classList.add('abierta'); };
   $('tCerrar').onclick = () => $('vTestamento').classList.remove('abierta');
   // PDF guardado en el almacen privado (con sesion): se sube desde aqui y se ve, imprime o descarga con el boton
-  let pdfUrl = '';
+  let pdfUrl = '', pdfNombre = 'testamento.pdf';
+  // abre un PDF del almacen privado (con sesion) en el visor, con imprimir y descargar
+  async function verPdfPrivado(clave, titulo, nombre) {
+    try {
+      const r = await api('GET', '/privado/' + clave);
+      if (!r.ok) { alert(r.status === 404 ? 'Todavía no hay un ' + titulo.toLowerCase() + ' guardado.' : 'No se pudo abrir (' + r.status + ').'); return; }
+      const b = await r.blob(); if (pdfUrl) URL.revokeObjectURL(pdfUrl);
+      pdfUrl = URL.createObjectURL(new Blob([b], { type: 'application/pdf' })); pdfNombre = nombre;
+      $('pTitulo').textContent = titulo; $('pInfo').textContent = ''; $('pMarco').src = pdfUrl; $('vPdf').classList.add('abierta');
+    } catch (e) { alert('No se pudo abrir: ' + (e.message || e)); }
+  }
+  $('mFideicomiso').onclick = () => verPdfPrivado('fideicomiso.jpg', 'Contrato de fideicomiso', 'contrato-de-fideicomiso.pdf');
   $('tVerPdf').onclick = async () => {
     try {
       let r = await api('GET', '/testamento-pdf');
@@ -1569,7 +1585,7 @@
       if (r.status === 404) { alert('Todavía no hay un PDF guardado. Usa "Guardar un PDF" para subir el testamento.'); return; }
       if (!r.ok) { alert('No se pudo abrir el PDF guardado (' + r.status + ').'); return; }
       const b = await r.blob(); if (pdfUrl) URL.revokeObjectURL(pdfUrl);
-      pdfUrl = URL.createObjectURL(new Blob([b], { type: 'application/pdf' })); $('pMarco').src = pdfUrl;
+      pdfUrl = URL.createObjectURL(new Blob([b], { type: 'application/pdf' })); $('pMarco').src = pdfUrl; pdfNombre = 'testamento.pdf'; $('pTitulo').textContent = 'Testamento guardado';
       $('pInfo').textContent = '';
       api('GET', '/testamento-pdf/info').then(x => x.json()).then(j => { if (j && j.fecha) $('pInfo').textContent = 'Guardado el ' + new Date(j.fecha).toLocaleString('es-CR'); }).catch(() => {});
       $('vPdf').classList.add('abierta');
@@ -1587,7 +1603,7 @@
     } catch (e) { alert('No se pudo guardar: ' + (e.message || e)); }
   };
   $('pImprimir').onclick = () => { try { $('pMarco').contentWindow.focus(); $('pMarco').contentWindow.print(); } catch (e) { alert('No se pudo imprimir desde aquí. Usa Descargar y imprime el archivo.'); } };
-  $('pBajar').onclick = () => { if (!pdfUrl) return; const a = document.createElement('a'); a.href = pdfUrl; a.download = 'testamento.pdf'; document.body.appendChild(a); a.click(); a.remove(); };
+  $('pBajar').onclick = () => { if (!pdfUrl) return; const a = document.createElement('a'); a.href = pdfUrl; a.download = pdfNombre; document.body.appendChild(a); a.click(); a.remove(); };
   $('pCerrar').onclick = () => { $('vPdf').classList.remove('abierta'); $('pMarco').src = 'about:blank'; };
   $('tImprimir').onclick = () => { pintarTestamento(); window.print(); };
   function irA() {
