@@ -169,6 +169,17 @@
   #gLienzo.arrastrando { cursor: grabbing; }
   #gImg { position: absolute; left: 50%; top: 50%; max-width: none; max-height: none; transform-origin: center center; user-select: none; -webkit-user-drag: none; }
   @media (max-width: 640px) { #gBarra .ayuda-visor { display: none; } }
+  #gBarra .nav { display: none; align-items: center; gap: 8px; }
+  #grande.conLista #gBarra .nav { display: inline-flex; }
+  #gBarra .bFicha { display: none; }
+  #grande.conFicha #gBarra .bFicha { display: inline-block; }
+  #gCont { color: var(--gris); min-width: 44px; text-align: center; font-variant-numeric: tabular-nums; }
+  .tarjeta .ph .pasa { position: absolute; top: 50%; transform: translateY(-50%); width: 30px; height: 44px; padding: 0; border: 0; border-radius: 4px; background: rgba(0, 0, 0, .55); color: var(--oro); font-size: 22px; line-height: 44px; cursor: pointer; opacity: 0; transition: opacity .15s; z-index: 2; }
+  .tarjeta .ph .pasa.ant { left: 4px; } .tarjeta .ph .pasa.sig { right: 4px; }
+  .tarjeta:hover .ph .pasa, .tarjeta .ph .pasa:focus-visible { opacity: 1; }
+  @media (hover: none) { .tarjeta .ph .pasa { opacity: .85; } }
+  .tarjeta .ph .cuenta { position: absolute; right: 6px; bottom: 6px; background: rgba(0, 0, 0, .7); color: var(--oro); border-radius: 10px; padding: 1px 8px; font-size: 12px; z-index: 2; pointer-events: none; }
+  .tarjeta .ph { cursor: zoom-in; }
 
   /* lista */
   #vLista .ventana { width: min(1150px, 100%); }
@@ -400,12 +411,14 @@
 </div>
 <div id="grande" role="dialog" aria-modal="true" aria-label="Foto en grande">
   <div id="gBarra">
+    <span class="nav"><button data-a="ant" title="Foto anterior (←)">◀</button><span id="gCont"></span><button data-a="sig" title="Foto siguiente (→)">▶</button></span>
     <button data-a="izq" title="Girar a la izquierda">⟲ Girar</button>
     <button data-a="der" title="Girar a la derecha">Girar ⟳</button>
     <button data-a="menos" title="Alejar">−</button>
     <span id="gZoom">100%</span>
     <button data-a="mas" title="Acercar">+</button>
     <button data-a="ajustar" title="Ver la foto completa">Ajustar</button>
+    <button data-a="ficha" class="bFicha" title="Abrir los datos de esta pieza">Ver ficha</button>
     <button data-a="cerrar" class="fuerte" title="Cerrar (Esc)">Cerrar ✕</button>
     <span class="ayuda-visor">Rueda del mouse: zoom · arrastrar: mover · doble clic: acercar</span>
   </div>
@@ -582,8 +595,8 @@
   for (const p of H.piezas) {
     const z = el('div', 'pz'); z.style.cssText = `left:${p.x}px;top:${p.y}px;width:${p.w}px;height:${p.h}px`;
     z.tabIndex = 0; z.setAttribute('role', 'button');
-    z.addEventListener('click', () => abrirFicha(p.id));
-    z.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrirFicha(p.id); } });
+    z.addEventListener('click', () => abrirFotos(p.id));
+    z.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrirFotos(p.id); } });
     zonas[p.id] = z; frag.appendChild(z);
     if (p.ck) {
       const k = el('div', 'ck'); k.style.cssText = `left:${p.ck.x + 3}px;top:${p.ck.y + 3}px`;
@@ -805,7 +818,7 @@
     else if (fotos.length) {
       const grande = el('img'); grande.alt = 'Foto de la pieza'; caja.appendChild(grande);
       let vista = 0;
-      grande.onclick = () => verGrande(grande.src, fotos[vista]);
+      grande.onclick = () => verGrande(grande.src, fotos[vista], fotos, vista);
       const ver = i => { vista = i; ponerFoto(grande, fotos[i]); aplicarGiro(grande, fotos[i], 4 / 3); [...minis.children].forEach((m, j) => m.classList.toggle('activa', i === j)); };
       if (fotos.length > 1) fotos.forEach((n, i) => { const c = el('span', 'mini'), m = el('img'); m.alt = 'Foto ' + (i + 1); ponerFoto(m, n); aplicarGiro(m, n, 1); c.appendChild(m); c.onclick = () => ver(i); minis.appendChild(c); });
       ver(0);
@@ -876,10 +889,29 @@
     if ($('seccion').classList.contains('abierta')) pintarSeccion();
     if ($('vOtras').classList.contains('abierta')) pintarOtras();
   }
-  function verGrande(src, clave) {
+  function verGrande(src, clave, lista, idx, id) {
+    visor.id = id || ''; $('grande').classList.toggle('conFicha', !!visor.id);
     const im = $('gImg'); visor.clave = clave || ''; visor.giro = giroDe(visor.clave);
+    visor.lista = lista && lista.length > 1 ? lista : null; visor.i = idx || 0;
+    $('grande').classList.toggle('conLista', !!visor.lista);
+    if (visor.lista) $('gCont').textContent = (visor.i + 1) + ' / ' + visor.lista.length;
     im.onload = ajustarVisor; im.src = src;
     $('grande').style.display = 'flex';
+    if (im.complete && im.naturalWidth) ajustarVisor();
+  }
+  // tocar una pieza (hoja, estuche, acrilico...) abre sus fotos para pasarlas; sin fotos abre su ficha
+  function abrirFotos(id) {
+    const g = fotosDe(id, 'fotos'), l = [...new Set([...g, ...(g.length ? [] : fotosDe(id, 'fotosCompra'))])].filter(n => !/^privado:/.test(n));
+    if (!l.length) { abrirFicha(id); return; }
+    const im = new Image(); ponerFoto(im, l[0]); verGrande(im.src, l[0], l, 0, id);
+  }
+  // pasar a la foto anterior o siguiente de la misma pieza sin salir del visor
+  function irFoto(d) {
+    if (!visor.lista) return;
+    const n = visor.lista.length; visor.i = (visor.i + d + n) % n;
+    const nombre = visor.lista[visor.i], im = $('gImg');
+    visor.clave = nombre; visor.giro = giroDe(nombre); $('gCont').textContent = (visor.i + 1) + ' / ' + n;
+    im.onload = ajustarVisor; im.removeAttribute('src'); ponerFoto(im, nombre);
     if (im.complete && im.naturalWidth) ajustarVisor();
   }
   const cerrarVisor = () => { $('grande').style.display = 'none'; };
@@ -889,6 +921,9 @@
     else if (a === 'mas') zoomEn(visor.zoom * 1.5);
     else if (a === 'menos') zoomEn(visor.zoom / 1.5);
     else if (a === 'ajustar') ajustarVisor();
+    else if (a === 'ficha') { const id = visor.id; cerrarVisor(); if (id) abrirFicha(id); }
+    else if (a === 'ant') irFoto(-1);
+    else if (a === 'sig') irFoto(1);
     else if (a === 'cerrar') cerrarVisor();
   });
   $('gLienzo').addEventListener('wheel', e => { e.preventDefault(); const L = $('gLienzo').getBoundingClientRect(); zoomEn(visor.zoom * (e.deltaY < 0 ? 1.2 : 1 / 1.2), e.clientX - L.left, e.clientY - L.top); }, { passive: false });
@@ -902,11 +937,22 @@
     if (dedos.size === 2 && pellizco) { const [a, b] = [...dedos.values()], L = $('gLienzo').getBoundingClientRect(); zoomEn(pellizco.z * Math.hypot(a.x - b.x, a.y - b.y) / pellizco.d, (a.x + b.x) / 2 - L.left, (a.y + b.y) / 2 - L.top); }
     else if (dedos.size === 1) { visor.x += ahora.x - antes.x; visor.y += ahora.y - antes.y; aplicarVisor(); }
   });
+  let inicio = null;
+  $('gLienzo').addEventListener('pointerdown', e => { inicio = dedos.size === 1 ? { x: e.clientX, y: e.clientY, z: visor.zoom } : null; });
+  $('gLienzo').addEventListener('pointerup', e => {
+    if (inicio && visor.lista && inicio.z === 1 && visor.zoom === 1) {
+      const dx = e.clientX - inicio.x, dy = e.clientY - inicio.y;
+      if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5) irFoto(dx < 0 ? 1 : -1);
+    }
+    inicio = null;
+  });
   const soltar = e => { dedos.delete(e.pointerId); if (dedos.size < 2) pellizco = null; if (!dedos.size) $('gLienzo').classList.remove('arrastrando'); };
   $('gLienzo').addEventListener('pointerup', soltar); $('gLienzo').addEventListener('pointercancel', soltar);
   document.addEventListener('keydown', e => {
     if ($('grande').style.display !== 'flex') return;
-    if (e.key === '+' || e.key === '=') zoomEn(visor.zoom * 1.5);
+    if (e.key === 'ArrowLeft') irFoto(-1);
+    else if (e.key === 'ArrowRight') irFoto(1);
+    else if (e.key === '+' || e.key === '=') zoomEn(visor.zoom * 1.5);
     else if (e.key === '-') zoomEn(visor.zoom / 1.5);
     else if (e.key === 'r' || e.key === 'R') { visor.giro += 90; ajustarVisor(); guardarGiro(visor.clave, visor.giro); }
   });
@@ -1140,6 +1186,24 @@
       } else {
       const precio = el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : r.valor ? fmt(r.valor) + (cant(p.id) > 1 ? ' c/u' : '') : 'Sin precio');
       tx.appendChild(precio);
+      }
+      // fotos de la pieza: flechas en la tarjeta para pasarlas, y al tocar la foto se abre el visor con todas
+      const lista = [...new Set([...fotosDe(p.id, 'fotos'), ...(fotosDe(p.id, 'fotos').length ? [] : fotosDe(p.id, 'fotosCompra'))])].filter(n => !/^privado:/.test(n));
+      if (lista.length) {
+        let k = Math.max(0, lista.indexOf(f)), cuenta = null;
+        const mostrar = () => { const im = ph.querySelector('img'); if (!im) return; im.removeAttribute('src'); ponerFoto(im, lista[k]); aplicarGiro(im, lista[k], 4 / 3); if (cuenta) cuenta.textContent = (k + 1) + ' / ' + lista.length; };
+        if (lista.length > 1) {
+          cuenta = el('span', 'cuenta', (k + 1) + ' / ' + lista.length);
+          for (const [cl, txt, d, tit] of [['ant', '‹', -1, 'Foto anterior'], ['sig', '›', 1, 'Foto siguiente']]) {
+            const b = el('button', 'pasa ' + cl, txt); b.type = 'button'; b.title = tit; b.setAttribute('aria-label', tit);
+            b.onclick = e => { e.stopPropagation(); k = (k + d + lista.length) % lista.length; mostrar(); };
+            ph.appendChild(b);
+          }
+          ph.appendChild(cuenta);
+        }
+        ph.onclick = e => { e.stopPropagation(); const im = ph.querySelector('img'); if (im && im.src) verGrande(im.src, lista[k], lista, k, p.id); };
+      } else if (rf) {
+        ph.onclick = e => { e.stopPropagation(); const im = ph.querySelector('img'); if (im && im.src) verGrande(im.src, rf, null, 0, p.id); };
       }
       t.append(ph, tx);
       // casilla "La tengo": doble control de lo que falta conseguir; se marca cuando se consigue
