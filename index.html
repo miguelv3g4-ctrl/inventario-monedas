@@ -1279,6 +1279,22 @@
           });
         }
       }
+      // si la foto del fondo tiene un giro guardado (datos.giros), el boton la muestra girada igual
+      const giroF = fondo && /^fotos\//.test(fondo) && ((datos.giros || {})[fondo.slice(6)] || 0) % 360;
+      if (giroF) {
+        const k = 'giro:' + fondo + ':' + giroF;
+        if (locales[k]) fondo = locales[k];
+        else {
+          const im = new Image(), f0 = fondo;
+          im.onload = () => {
+            const c = document.createElement('canvas'), g = c.getContext && c.getContext('2d'); if (!g) return;
+            const lado = giroF % 180 !== 0; c.width = lado ? im.naturalHeight : im.naturalWidth; c.height = lado ? im.naturalWidth : im.naturalHeight;
+            g.translate(c.width / 2, c.height / 2); g.rotate(giroF * Math.PI / 180); g.drawImage(im, -im.naturalWidth / 2, -im.naturalHeight / 2);
+            try { locales[k] = c.toDataURL('image/jpeg', 0.85); conFondo(locales[k]); } catch (e) {}
+          };
+          im.src = f0;
+        }
+      }
       if (fondo) conFondo(fondo);
       const num = el('span', 'num'); num.append(t.n + (t.n === 1 ? ' pieza' : ' piezas'));
       if (t.val) { num.append(' · '); num.appendChild(el('b', '', fmt(t.val))); }
