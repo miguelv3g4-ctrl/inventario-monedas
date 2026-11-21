@@ -4560,7 +4560,10 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 128",
-   "fo": "FO# 11454"
+   "fo": "FO# 11454",
+   "fotosCompra": [
+    "privado:anio-O-xfbcf86b5f-0.jpg"
+   ]
   },
   "O-xb903ac08e": {
    "tengo": false,
@@ -4578,7 +4581,10 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 128",
-   "fo": "FO# 11454"
+   "fo": "FO# 11454",
+   "fotosCompra": [
+    "privado:anio-O-x9a3268c79-0.jpg"
+   ]
   },
   "O-xfde480533": {
    "tengo": false,
@@ -4973,7 +4979,11 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 124",
-   "fo": "FO# 11449"
+   "fo": "FO# 11449",
+   "fotosCompra": [
+    "privado:anio-O-x282e75903-0.jpg",
+    "privado:anio-O-x282e75903-1.jpg"
+   ]
   },
   "O-xc3f0b1ece": {
    "tengo": false,
@@ -4982,7 +4992,10 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 124",
-   "fo": "FO# 11449"
+   "fo": "FO# 11449",
+   "fotosCompra": [
+    "privado:anio-O-xc3f0b1ece-0.jpg"
+   ]
   },
   "O-x45a09aff2": {
    "tengo": false,
@@ -4991,7 +5004,10 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 124",
-   "fo": "FO# 11449"
+   "fo": "FO# 11449",
+   "fotosCompra": [
+    "privado:anio-O-x45a09aff2-0.jpg"
+   ]
   },
   "O-xa911d1b1d": {
    "tengo": false,
@@ -5000,7 +5016,10 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 124",
-   "fo": "FO# 11449"
+   "fo": "FO# 11449",
+   "fotosCompra": [
+    "privado:anio-O-xa911d1b1d-0.jpg"
+   ]
   },
   "O-x738184247": {
    "tengo": false,
@@ -7724,7 +7743,7 @@
    "nombre": "5 centavos 1889",
    "categoria": "5 centavos",
    "seccion": "antano",
-   "ref": "referencias/moneda-5-centavos-1892.jpg"
+   "ref": "privado:anio-O-xfbcf86b5f-0.jpg"
   },
   {
    "id": "O-xb903ac08e",
@@ -7738,7 +7757,7 @@
    "nombre": "5 centavos 1890",
    "categoria": "5 centavos",
    "seccion": "antano",
-   "ref": "referencias/moneda-5-centavos-1892.jpg"
+   "ref": "privado:anio-O-x9a3268c79-0.jpg"
   },
   {
    "id": "O-xfde480533",
@@ -8009,28 +8028,28 @@
    "nombre": "50 centavos 1885",
    "categoria": "50 centavos",
    "seccion": "antano",
-   "ref": "referencias/moneda-50-centavos-1890.jpg"
+   "ref": "privado:anio-O-x282e75903-0.jpg"
   },
   {
    "id": "O-xc3f0b1ece",
    "nombre": "50 centavos 1886",
    "categoria": "50 centavos",
    "seccion": "antano",
-   "ref": "referencias/moneda-50-centavos-1890.jpg"
+   "ref": "privado:anio-O-xc3f0b1ece-0.jpg"
   },
   {
    "id": "O-x45a09aff2",
    "nombre": "50 centavos 1887",
    "categoria": "50 centavos",
    "seccion": "antano",
-   "ref": "referencias/moneda-50-centavos-1890.jpg"
+   "ref": "privado:anio-O-x45a09aff2-0.jpg"
   },
   {
    "id": "O-xa911d1b1d",
    "nombre": "50 centavos 1890",
    "categoria": "50 centavos",
    "seccion": "antano",
-   "ref": "referencias/moneda-50-centavos-1890.jpg"
+   "ref": "privado:anio-O-xa911d1b1d-0.jpg"
   },
   {
    "id": "O-x738184247",
