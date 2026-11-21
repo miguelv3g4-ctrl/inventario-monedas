@@ -1915,7 +1915,7 @@
    "km": "KM# 151",
    "fo": "FO# 11464",
    "fotosCompra": [
-    "privado:anio-O-x9bc0d15da-0.jpg"
+    "privado:anio-O-x9bc0d15da-0j.jpg"
    ]
   },
   "O-x585474041": {
@@ -2197,7 +2197,7 @@
    "fo": "FO# 11459",
    "fotosCompra": [
     "privado:anio-O-x0dd39db09-0.jpg",
-    "privado:anio-O-x0dd39db09-1.jpg"
+    "privado:anio-O-x0dd39db09-1j.jpg"
    ]
   },
   "O-x122bd88e1": {
@@ -2885,7 +2885,7 @@
    "fo": "FO# 8586",
    "fotosCompra": [
     "privado:anio-O-x6ecf97344-0.jpg",
-    "privado:anio-O-x6ecf97344-1.jpg"
+    "privado:anio-O-x6ecf97344-1j.jpg"
    ],
    "origen": "reventa"
   },
@@ -2922,7 +2922,7 @@
    "km": "KM# 189.3",
    "fo": "FO# 6469",
    "fotosCompra": [
-    "privado:anio-O-xa5ccc1c22-0.jpg"
+    "privado:anio-O-xa5ccc1c22-0j.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor"
@@ -3268,7 +3268,7 @@
    "km": "KM# 210.1",
    "fo": "FO# 2699",
    "fotosCompra": [
-    "privado:anio-O-x25f569fc3-0.jpg"
+    "privado:anio-O-x25f569fc3-0j.jpg"
    ],
    "valor": 500,
    "origen": "reventa",
@@ -3319,7 +3319,7 @@
    "km": "KM# 210.1",
    "fo": "FO# 2699",
    "fotosCompra": [
-    "privado:anio-O-xed65f5cf9-0.jpg"
+    "privado:anio-O-xed65f5cf9-0j.jpg"
    ],
    "valor": 500,
    "origen": "reventa",
@@ -3332,8 +3332,8 @@
    "km": "KM# 210.2",
    "fo": "FO# 3027",
    "fotosCompra": [
-    "privado:anio-O-xdab5e83ad-0.jpg",
-    "privado:anio-O-xdab5e83ad-1.jpg"
+    "privado:anio-O-xdab5e83ad-0j.jpg",
+    "privado:anio-O-xdab5e83ad-1j.jpg"
    ],
    "valor": 500,
    "origen": "reventa",
@@ -3588,7 +3588,7 @@
    "fo": "FO# 4105",
    "fotosCompra": [
     "privado:anio-O-x778ff88f8-0.jpg",
-    "privado:anio-O-x778ff88f8-1.jpg"
+    "privado:anio-O-x778ff88f8-1j.jpg"
    ],
    "valor": 1000,
    "costo": 1000
@@ -3611,7 +3611,7 @@
    "fo": "FO# 4105",
    "fotosCompra": [
     "privado:anio-O-xce08bf122-0.jpg",
-    "privado:anio-O-xce08bf122-1.jpg"
+    "privado:anio-O-xce08bf122-1j.jpg"
    ],
    "valor": 1000,
    "costo": 1000
@@ -4580,7 +4580,7 @@
    "km": "KM# 128",
    "fo": "FO# 11454",
    "fotosCompra": [
-    "privado:anio-O-x9a3268c79-0.jpg"
+    "privado:anio-O-x9a3268c79-0j.jpg"
    ]
   },
   "O-xfde480533": {
@@ -6368,7 +6368,7 @@
    "nombre": "5 céntimos 1938",
    "categoria": "5 céntimos",
    "seccion": "antano",
-   "ref": "privado:anio-O-x9bc0d15da-0.jpg"
+   "ref": "privado:anio-O-x9bc0d15da-0j.jpg"
   },
   {
    "id": "O-x585474041",
@@ -6900,7 +6900,7 @@
    "nombre": "50 céntimos 1968",
    "categoria": "50 céntimos",
    "seccion": "antano",
-   "ref": "privado:anio-O-xa5ccc1c22-0.jpg"
+   "ref": "privado:anio-O-xa5ccc1c22-0j.jpg"
   },
   {
    "id": "O-x37b2aafbf",
@@ -7089,7 +7089,7 @@
    "nombre": "1 colón 1983",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:anio-O-x25f569fc3-0.jpg"
+   "ref": "privado:anio-O-x25f569fc3-0j.jpg"
   },
   {
    "id": "O-x7276031e9",
@@ -7117,14 +7117,14 @@
    "nombre": "1 colón 1991",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:anio-O-xed65f5cf9-0.jpg"
+   "ref": "privado:anio-O-xed65f5cf9-0j.jpg"
   },
   {
    "id": "O-xdab5e83ad",
    "nombre": "1 colón 1993",
    "categoria": "1 colón",
    "seccion": "antano",
-   "ref": "privado:anio-O-xdab5e83ad-0.jpg"
+   "ref": "privado:anio-O-xdab5e83ad-0j.jpg"
   },
   {
    "id": "O-x693bae8aa",
@@ -7799,7 +7799,7 @@
    "nombre": "5 centavos 1890",
    "categoria": "5 centavos",
    "seccion": "antano",
-   "ref": "privado:anio-O-x9a3268c79-0.jpg"
+   "ref": "privado:anio-O-x9a3268c79-0j.jpg"
   },
   {
    "id": "O-xfde480533",
