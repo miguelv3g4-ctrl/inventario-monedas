@@ -46,7 +46,7 @@
   #tHoja { background: #fff; color: #111; padding: 28px 34px; border-radius: 4px; font: 14px/1.55 "Times New Roman", Georgia, serif; margin-top: 12px; max-height: 60vh; overflow: auto; }
   #tHoja h1 { font: bold 20px "Times New Roman", Georgia, serif; text-align: center; margin: 0 0 4px; letter-spacing: .06em; }
   #tHoja h2 { font: bold 15px "Times New Roman", Georgia, serif; margin: 16px 0 4px; text-transform: uppercase; color: #111; }
-  #tHoja .sub { text-align: center; margin: 0 0 16px; font-size: 13px; }
+  #tHoja .sub { color: #333; text-align: center; margin: 0 0 16px; font-size: 13px; }
   #tHoja p { margin: 6px 0; text-align: justify; }
   #tHoja table { font-size: 11.5px; margin: 6px 0 14px; width: 100%; }
   #tHoja th, #tHoja td { color: #111; border-bottom: 1px solid #bbb; padding: 3px 5px; background: none; position: static; font-size: 11.5px; text-transform: none; letter-spacing: 0; font-weight: bold; }
@@ -454,17 +454,19 @@
   <div class="ventana" role="dialog" aria-modal="true" aria-label="Testamento">
     <div class="cab noimprimir">
       <div><h2>Testamento</h2></div>
-      <button id="tImprimir" class="fuerte">Imprimir / Guardar PDF</button>
+      <button id="tImprimir" class="fuerte">Imprimir / Descargar PDF</button>
       <button id="tVerPdf">Ver PDF guardado</button>
-      <button id="tSubirPdf">Guardar un PDF</button>
-      <input type="file" id="tArchivo" accept="application/pdf" hidden>
       <button id="tCerrar">Cerrar</button>
     </div>
+    <details class="noimprimir" id="tCorregir">
+    <summary style="cursor:pointer;color:var(--oro2);margin:10px 0 0;font-size:14px">Corregir datos y notas para el notario</summary>
+    <div style="margin-top:8px"><button id="tSubirPdf">Reemplazar el PDF guardado</button><input type="file" id="tArchivo" accept="application/pdf" hidden></div>
     <div class="aviso-t noimprimir">
       <b>Borrador para el abogado y el notario.</b> El inventario se arma solo con lo que hay hoy en la app (lo que tengo, costo inicial y valor actual). Completa los datos de abajo, revisa el texto con tu abogado y, al imprimir, elige <b>Guardar como PDF</b> si quieres leerlo en pantalla. Los datos personales que escribes aquí se guardan en tu almacén privado (con clave), nunca en el repositorio público.
     </div>
     <div id="tCampos" class="noimprimir"></div>
     <div class="aviso-t noimprimir" id="tNotas"></div>
+    </details>
     <div id="tHoja"></div>
   </div>
 </div>
@@ -1460,7 +1462,12 @@
   }
   async function cargarT() {
     try {
-      const r = await api('GET', '/testamento'); if (!r.ok) return;
+      const r = await api('GET', '/testamento');
+      if (!r.ok) {
+        const p = await api('GET', '/privado/testamento-datos.jpg');
+        if (p.ok) { const d = JSON.parse(await p.text()); tDatos = Object.assign({}, d, Object.fromEntries(Object.entries(tDatos).filter(([, v]) => String(v || '').trim()))); }
+        return;
+      }
       const j = await r.json(), d = j && j.datos || {}; tServ = true;
       if (Object.keys(d).length) tDatos = d; // lo del servidor manda
       else if (Object.keys(tDatos).length) await api('PUT', '/testamento', { datos: tDatos }); // primera vez: sube lo que habia en este navegador
@@ -1544,7 +1551,8 @@
   let pdfUrl = '';
   $('tVerPdf').onclick = async () => {
     try {
-      const r = await api('GET', '/testamento-pdf');
+      let r = await api('GET', '/testamento-pdf');
+      if (!r.ok) r = await api('GET', '/privado/testamento.jpg');
       if (r.status === 404) { alert('Todavía no hay un PDF guardado. Usa "Guardar un PDF" para subir el testamento.'); return; }
       if (!r.ok) { alert('No se pudo abrir el PDF guardado (' + r.status + ').'); return; }
       const b = await r.blob(); if (pdfUrl) URL.revokeObjectURL(pdfUrl);
