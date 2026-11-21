@@ -3699,7 +3699,6 @@
   "O-xead7a029a": {
    "tengo": true,
    "fotosCompra": [
-    "privado:km-KM227b.jpg",
     "O-xead7a029a-1795203475325-zs89z.jpg"
    ],
    "km": "KM# 227b",
@@ -3712,7 +3711,6 @@
   "O-xce0766872": {
    "tengo": true,
    "fotosCompra": [
-    "privado:km-KM227b.jpg",
     "O-xce0766872-1795203887320-19xjv.jpg"
    ],
    "km": "KM# 227b",
@@ -3725,7 +3723,6 @@
   "O-x561dfed7f": {
    "tengo": true,
    "fotosCompra": [
-    "privado:km-KM227b.jpg",
     "O-x561dfed7f-1795203907891-qoeef.jpg"
    ],
    "km": "KM# 227b",
@@ -3851,7 +3848,8 @@
    "km": "KM# 228b",
    "fo": "FO# 5669",
    "fotosCompra": [
-    "privado:km-KM228b.jpg"
+    "privado:anio-O-x2bfc2e585-0.jpg",
+    "privado:anio-O-x2bfc2e585-1.jpg"
    ],
    "valor": 500,
    "costo": 500,
@@ -3884,7 +3882,7 @@
    "km": "KM# 228.2b",
    "fo": "FO# 15827",
    "fotosCompra": [
-    "privado:km-KM228-2b.jpg"
+    "privado:anio-O-xeea12af89-0.jpg"
    ],
    "valor": 500,
    "costo": 500,
@@ -3896,7 +3894,8 @@
    "km": "KM# 228.2b",
    "fo": "FO# 15827",
    "fotosCompra": [
-    "privado:km-KM228-2b.jpg"
+    "privado:anio-O-x8ce0a9cbe-0.jpg",
+    "privado:anio-O-x8ce0a9cbe-1.jpg"
    ],
    "valor": 500,
    "costo": 500,
@@ -3982,7 +3981,8 @@
    "km": "KM# 229a",
    "fo": "FO# 5207",
    "fotosCompra": [
-    "privado:km-KM229a.jpg"
+    "privado:anio-O-xd4802a3a4-0.jpg",
+    "privado:anio-O-xd4802a3a4-1.jpg"
    ],
    "valor": 3000,
    "costo": 3000,
@@ -4021,7 +4021,7 @@
    "km": "KM# 229c",
    "fo": "FO# 12476",
    "fotosCompra": [
-    "privado:km-KM229c_FO12476.jpg"
+    "privado:anio-O-x19b5a2c7f-0.jpg"
    ],
    "valor": 1500,
    "fechaValor": "2026-11-20",
@@ -4112,7 +4112,7 @@
    "km": "KM# 231.1b",
    "fo": "FO# 5670",
    "fotosCompra": [
-    "privado:km-KM231-1b.jpg"
+    "privado:anio-O-x0357cfcad-0.jpg"
    ],
    "valor": 2500,
    "fechaValor": "2026-11-20",
@@ -4126,7 +4126,7 @@
    "km": "KM# 231.1b",
    "fo": "FO# 5670",
    "fotosCompra": [
-    "privado:km-KM231-1b.jpg"
+    "privado:anio-O-x4ff6ed81f-0.jpg"
    ],
    "valor": 1000,
    "costo": 1000,
@@ -4213,7 +4213,7 @@
    "km": "KM# 230a",
    "fo": "FO# 6833",
    "fotosCompra": [
-    "privado:km-KM230a.jpg"
+    "privado:anio-O-x6ddfa1ed1-0.jpg"
    ],
    "valor": 1000,
    "costo": 1000
@@ -4250,7 +4250,7 @@
    "km": "KM# 240a",
    "fo": "FO# 5672",
    "fotosCompra": [
-    "privado:km-KM240a_FO5672.jpg"
+    "privado:anio-O-x9074baa28-0.jpg"
    ],
    "valor": 1000,
    "costo": 1000
@@ -4272,7 +4272,7 @@
    "km": "KM# 240a",
    "fo": "FO# 5672",
    "fotosCompra": [
-    "privado:km-KM240a_FO5672.jpg"
+    "privado:anio-O-x51beaee62-0.jpg"
    ],
    "valor": 2000,
    "fechaValor": "2026-11-20",
@@ -4285,7 +4285,7 @@
    "km": "KM# 240a",
    "fo": "FO# 20098",
    "fotosCompra": [
-    "privado:km-KM240a_FO20098.jpg"
+    "privado:anio-O-xc36b26f4f-0.jpg"
    ],
    "valor": 2000,
    "fechaValor": "2026-11-20",
@@ -4332,7 +4332,7 @@
    "km": "KM# 239.1",
    "fo": "FO# 5720",
    "fotosCompra": [
-    "privado:km-KM239-1.jpg"
+    "privado:anio-O-x23d1289ee-0.jpg"
    ],
    "valor": 1000,
    "costo": 1000
@@ -4354,7 +4354,8 @@
    "km": "KM# 239.1a",
    "fo": "FO# 5671",
    "fotosCompra": [
-    "privado:km-KM239-1a.jpg"
+    "privado:anio-O-x69eae3145-0.jpg",
+    "privado:anio-O-x69eae3145-1.jpg"
    ],
    "valor": 1000,
    "costo": 1000
@@ -7371,7 +7372,8 @@
    "id": "O-x2bfc2e585",
    "nombre": "10 colones 2008",
    "categoria": "10 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-x2bfc2e585-0.jpg"
   },
   {
    "id": "O-xfd1398080",
@@ -7389,13 +7391,15 @@
    "id": "O-xeea12af89",
    "nombre": "10 colones 2016",
    "categoria": "10 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-xeea12af89-0.jpg"
   },
   {
    "id": "O-x8ce0a9cbe",
    "nombre": "10 colones 2018",
    "categoria": "10 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-x8ce0a9cbe-0.jpg"
   },
   {
    "id": "O-x39370c2df",
@@ -7441,7 +7445,8 @@
    "id": "O-xd4802a3a4",
    "nombre": "25 colones 2003",
    "categoria": "25 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-xd4802a3a4-0.jpg"
   },
   {
    "id": "O-x847ed7e7c",
@@ -7459,7 +7464,8 @@
    "id": "O-x19b5a2c7f",
    "nombre": "25 colones 2014",
    "categoria": "25 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-x19b5a2c7f-0.jpg"
   },
   {
    "id": "O-x6b8c69a51",
@@ -7495,13 +7501,15 @@
    "id": "O-x0357cfcad",
    "nombre": "50 colones 2007",
    "categoria": "50 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-x0357cfcad-0.jpg"
   },
   {
    "id": "O-x4ff6ed81f",
    "nombre": "50 colones 2012",
    "categoria": "50 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-x4ff6ed81f-0.jpg"
   },
   {
    "id": "O-xead69f4e3",
@@ -7532,7 +7540,8 @@
    "id": "O-x6ddfa1ed1",
    "nombre": "100 colones 1998",
    "categoria": "100 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-x6ddfa1ed1-0.jpg"
   },
   {
    "id": "O-xd662fda1c",
@@ -7550,7 +7559,8 @@
    "id": "O-x9074baa28",
    "nombre": "100 colones 2006",
    "categoria": "100 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-x9074baa28-0.jpg"
   },
   {
    "id": "O-xdf61763bf",
@@ -7562,13 +7572,15 @@
    "id": "O-x51beaee62",
    "nombre": "100 colones 2014",
    "categoria": "100 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-x51beaee62-0.jpg"
   },
   {
    "id": "O-xc36b26f4f",
    "nombre": "100 colones 2017",
    "categoria": "100 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-xc36b26f4f-0.jpg"
   },
   {
    "id": "O-xe27fb207b",
@@ -7592,7 +7604,8 @@
    "id": "O-x23d1289ee",
    "nombre": "500 colones 2005",
    "categoria": "500 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-x23d1289ee-0.jpg"
   },
   {
    "id": "O-x4ffdc79ec",
@@ -7604,7 +7617,8 @@
    "id": "O-x69eae3145",
    "nombre": "500 colones 2007",
    "categoria": "500 colones",
-   "seccion": "cono-1995-2021"
+   "seccion": "cono-1995-2021",
+   "ref": "privado:anio-O-x69eae3145-0.jpg"
   },
   {
    "id": "O-x39afa064d",
