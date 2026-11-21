@@ -5478,6 +5478,21 @@
    ],
    "notas": "Moneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Calipso limonense PROOF.",
    "origen": "Banco Central de Costa Rica (emisión)"
+  },
+  "O-mwm5exrk": {
+   "tengo": true,
+   "fotosCompra": [
+    "O-mwm5exrk-1795008313606-1yqv8.jpg",
+    "O-mwm5exrk-1795008315504-vcbev.jpg"
+   ],
+   "valor": 60000,
+   "fechaValor": "2026-11-18",
+   "fuenteValor": "mercado numismatico",
+   "costo": 50000,
+   "fechaCompra": "2026-06-01",
+   "origen": "reventa",
+   "fechaVenta": "2026-11-18",
+   "notas": "Las monedas son proof color de los acrilicos que vendio el banco"
   }
  },
  "sueltas": {},
@@ -7853,6 +7868,12 @@
    "categoria": "20 colones serie Z",
    "seccion": "billetes",
    "ref": "referencias/billete-20-colones-serie-z.jpg"
+  },
+  {
+   "id": "O-mwm5exrk",
+   "nombre": "coleccionador fauna proof",
+   "categoria": "Fauna de los Ecosistemas",
+   "seccion": "museo-bccr"
   },
   {
    "id": "O-msacfccd037",
