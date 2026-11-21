@@ -5314,7 +5314,10 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-cangrejo.jpg"
+   ]
   },
   "O-msaeda5474f": {
    "tengo": true,
