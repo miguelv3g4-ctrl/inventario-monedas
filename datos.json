@@ -5824,7 +5824,41 @@
   "M51": {},
   "R51": {},
   "X51": {},
-  "AC51": {}
+  "AC51": {},
+  "M42": {
+   "tengo": true,
+   "producto": "Calipso limonense. Serie 6218/7000",
+   "serie": "6218",
+   "tiraje": "7000",
+   "valor": 35000,
+   "fechaValor": "2026-11-20",
+   "fuenteValor": "Igual que la serie alta del Swing criollo (mismo sobreprecio)",
+   "fotos": [
+    "estuche-calipso-serie-6218-7000.jpg",
+    "estuche-calipso-serie-6218-7000-2.jpg"
+   ],
+   "fotosCompra": [
+    "estuche-calipso-serie-6218-7000.jpg",
+    "estuche-calipso-serie-6218-7000-2.jpg"
+   ],
+   "notas": "Código: Cultural inmaterial. Serie especial serie Alta\nMoneda conmemorativa, en estuche. Serie(s) 6218 de un tiraje de 7000. Producto: Calipso limonense. Serie 6218/7000. Categoría: Patrimonio cultural estuche. Serie especial serie Alta.",
+   "origen": "Banco Central de Costa Rica (emisión)"
+  },
+  "M47": {
+   "tengo": true,
+   "producto": "Calipso limonense PROOF",
+   "valor": 35000,
+   "fechaValor": "2026-11-20",
+   "fuenteValor": "Estimado igual que el Swing criollo PROOF (falta confirmar)",
+   "fotos": [
+    "calipso-acrilico-proof.jpg"
+   ],
+   "fotosCompra": [
+    "calipso-acrilico-proof.jpg"
+   ],
+   "notas": "Moneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Calipso limonense PROOF.",
+   "origen": "Banco Central de Costa Rica (emisión)"
+  }
  },
  "sueltas": {},
  "otras": [
