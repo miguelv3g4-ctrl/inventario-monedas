@@ -2940,16 +2940,15 @@
   "O-x19ce19ac9": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 500,
-   "km": "KM# 189.3",
-   "fo": "FO# 6469",
    "fotosCompra": [
     "privado:km-KM189-3.jpg"
    ],
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "km": "KM# 189.3",
+   "valor": 5000,
+   "fechaValor": "2026-11-21",
+   "fuenteValor": "Precio revendedor",
+   "costo": 3500,
+   "notas": "Material: Cobre-níquel · Peso: 7,29 g · Diámetro: 26,00 mm · Canto: Liso con inscripción liso con letras\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"50 centimos\".\nPrecio revendedor"
   },
   "O-x65ebe4a8c": {
    "tengo": true,
