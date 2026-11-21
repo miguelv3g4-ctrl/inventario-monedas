@@ -441,19 +441,19 @@
   "X14": {
    "tengo": true,
    "producto": "Mariposa Acrilico PROOF",
-   "valor": 110000,
-   "costo": 9082,
    "fotos": [
     "mariposa-acrilico-proof.jpg"
    ],
    "fotosCompra": [
     "mariposa-acrilico-proof.jpg"
    ],
-   "notas": "Código: Fauna Mariposa PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Mariposa Acrilico PROOF. Categoría: Fauna acrilico. Código: Fauna Mariposa PROOF. Precio de venta: ₡110 000. Disponibles: 1.\nCosto registrado antes del PDF: ₡110 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "km": "KM# 249",
+   "valor": 130000,
+   "fechaValor": "2026-11-21",
+   "costo": 9082,
    "fechaCompra": "2024-11-12",
    "origen": "Banco Central de Costa Rica (emisión)",
-   "km": "KM# 249",
-   "fo": "FO# 27599"
+   "notas": "Código: Fauna Mariposa PROOF\nMoneda conmemorativa, en presentación acrílica, versión PROOF. Producto: Mariposa Acrilico PROOF. Categoría: Fauna acrilico. Código: Fauna Mariposa PROOF. Precio de venta: ₡110 000. Disponibles: 1.\nCosto registrado antes del PDF: ₡110 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina)."
   },
   "AC14": {
    "tengo": true,
