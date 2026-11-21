@@ -4007,7 +4007,8 @@
   "O-x003714af8": {
    "tengo": true,
    "fotosCompra": [
-    "privado:km-KM200a.jpg"
+    "privado:tortuga1974-proof-reverso.jpg",
+    "privado:tortuga1974-proof-escudo.jpg"
    ],
    "km": "KM# 200a",
    "valor": 90000,
@@ -4109,7 +4110,8 @@
    "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Acabado PROOF · Tiraje: 11 000\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
    "km": "KM# 201a",
    "fotosCompra": [
-    "privado:km-KM201.jpg"
+    "privado:manati1974-proof-reverso.jpg",
+    "privado:manati1974-proof-escudo.jpg"
    ],
    "valor": 90000,
    "costo": 90000
@@ -5918,7 +5920,8 @@
   "O-x003714af8m": {
    "tengo": true,
    "fotosCompra": [
-    "privado:km-KM200a.jpg"
+    "privado:tortuga1974-mate-reverso.jpg",
+    "privado:tortuga1974-mate-escudo.jpg"
    ],
    "km": "KM# 200",
    "valor": 90000,
@@ -5935,7 +5938,8 @@
    "km": "KM# 201",
    "fo": "FO# 15942",
    "fotosCompra": [
-    "privado:km-KM201.jpg"
+    "privado:manati1974-mate-reverso.jpg",
+    "privado:manati1974-mate-escudo.jpg"
    ],
    "valor": 90000,
    "costo": 90000
@@ -6093,28 +6097,28 @@
    "nombre": "50 colones (Conservación de la Tortuga) 1974 · versión PROOF",
    "categoria": "Conmemorativas de plata",
    "seccion": "plata",
-   "ref": "privado:cat-84.jpg"
+   "ref": "privado:tortuga1974-proof-reverso.jpg"
   },
   {
    "id": "O-x003714af8m",
    "nombre": "50 colones (Conservación de la Tortuga) 1974 · versión mate",
    "categoria": "Conmemorativas de plata",
    "seccion": "plata",
-   "ref": "privado:cat-84.jpg"
+   "ref": "privado:tortuga1974-mate-reverso.jpg"
   },
   {
    "id": "O-x6907c6691",
    "nombre": "100 colones (Conservación del Manatí) 1974 · versión PROOF",
    "categoria": "Conmemorativas de plata",
    "seccion": "plata",
-   "ref": "privado:cat-91.jpg"
+   "ref": "privado:manati1974-proof-reverso.jpg"
   },
   {
    "id": "O-x6907c6691m",
    "nombre": "100 colones (Conservación del Manatí) 1974 · versión mate",
    "categoria": "Conmemorativas de plata",
    "seccion": "plata",
-   "ref": "privado:cat-91.jpg"
+   "ref": "privado:manati1974-mate-reverso.jpg"
   },
   {
    "id": "O-x322208290",
