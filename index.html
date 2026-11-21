@@ -133,6 +133,9 @@
   #vFoto { background: #000; border: 1px solid var(--linea); border-radius: 4px; aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; color: #6b6250; font-size: 14px; text-align: center; overflow: hidden; }
   #vFoto img { width: 100%; height: 100%; object-fit: contain; cursor: zoom-in; }
   #vFoto { position: relative; }
+  #vFoto .pasa { position: absolute; top: 50%; transform: translateY(-50%); width: 34px; height: 52px; padding: 0; border: 0; border-radius: 4px; background: rgba(0, 0, 0, .6); color: var(--oro); font-size: 26px; line-height: 52px; cursor: pointer; z-index: 2; }
+  #vFoto .pasa.ant { left: 6px; } #vFoto .pasa.sig { right: 6px; }
+  #vFoto .cuenta { position: absolute; right: 8px; bottom: 8px; background: rgba(0, 0, 0, .7); color: var(--oro); border-radius: 10px; padding: 1px 8px; font-size: 12px; z-index: 2; pointer-events: none; }
   #vFoto .marcaRef, .tarjeta .marcaRef { position: absolute; left: 6px; bottom: 6px; background: rgba(0, 0, 0, .8); color: #ffcf7a; border: 1px solid #8a6a2a; border-radius: 4px; padding: 2px 7px; font-size: 12px; pointer-events: none; }
   .tarjeta .ph { position: relative; }
   .tarjeta .ph img.ref { opacity: .8; filter: saturate(.85); }
@@ -179,7 +182,6 @@
   .tarjeta:hover .ph .pasa, .tarjeta .ph .pasa:focus-visible { opacity: 1; }
   @media (hover: none) { .tarjeta .ph .pasa { opacity: .85; } }
   .tarjeta .ph .cuenta { position: absolute; right: 6px; bottom: 6px; background: rgba(0, 0, 0, .7); color: var(--oro); border-radius: 10px; padding: 1px 8px; font-size: 12px; z-index: 2; pointer-events: none; }
-  .tarjeta .ph { cursor: zoom-in; }
 
   /* lista */
   #vLista .ventana { width: min(1150px, 100%); }
@@ -595,8 +597,8 @@
   for (const p of H.piezas) {
     const z = el('div', 'pz'); z.style.cssText = `left:${p.x}px;top:${p.y}px;width:${p.w}px;height:${p.h}px`;
     z.tabIndex = 0; z.setAttribute('role', 'button');
-    z.addEventListener('click', () => abrirFotos(p.id));
-    z.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrirFotos(p.id); } });
+    z.addEventListener('click', () => abrirFicha(p.id));
+    z.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrirFicha(p.id); } });
     zonas[p.id] = z; frag.appendChild(z);
     if (p.ck) {
       const k = el('div', 'ck'); k.style.cssText = `left:${p.ck.x + 3}px;top:${p.ck.y + 3}px`;
@@ -822,6 +824,13 @@
       const ver = i => { vista = i; ponerFoto(grande, fotos[i]); aplicarGiro(grande, fotos[i], 4 / 3); [...minis.children].forEach((m, j) => m.classList.toggle('activa', i === j)); };
       if (fotos.length > 1) fotos.forEach((n, i) => { const c = el('span', 'mini'), m = el('img'); m.alt = 'Foto ' + (i + 1); ponerFoto(m, n); aplicarGiro(m, n, 1); c.appendChild(m); c.onclick = () => ver(i); minis.appendChild(c); });
       ver(0);
+      if (fotos.length > 1) {
+        const cu = el('span', 'cuenta', '1 / ' + fotos.length), vv = ver;
+        const ir = d => { vv((vista + d + fotos.length) % fotos.length); cu.textContent = (vista + 1) + ' / ' + fotos.length; };
+        for (const [cl, txt, d, tit] of [['ant', '‹', -1, 'Foto anterior'], ['sig', '›', 1, 'Foto siguiente']]) { const b = el('button', 'pasa ' + cl, txt); b.type = 'button'; b.title = tit; b.setAttribute('aria-label', tit); b.onclick = e => { e.stopPropagation(); ir(d); }; caja.appendChild(b); }
+        caja.appendChild(cu);
+        [...minis.children].forEach((m, j) => m.addEventListener('click', () => { cu.textContent = (j + 1) + ' / ' + fotos.length; }));
+      }
     }
     const esMS = base[id].seccion === 'ms-sueltas';
     const monto = esValor ? (esMS ? valorU(base[id]) : r.valor) : r.costo;
@@ -830,7 +839,6 @@
     const det = $('vDetalle'); det.textContent = '';
     if (esMS) { const q = tengo(id) ? cant(id) : 0; renglon(det, 'Cantidad', q + (q === 1 ? ' pieza' : ' piezas')); if (monto) renglon(det, 'Total', q + ' × ' + fmt(monto) + ' = ' + fmt(monto * q)); }
     renglon(det, 'Catálogo', [r.km, r.fo].filter(Boolean).join(' · '));
-    if (r.enlace && String(r.enlace).startsWith('https://www.foronum.com/')) { const dv = el('div'), a = el('a', '', 'Ver esta moneda en Foronum'); a.href = r.enlace; a.target = '_blank'; a.rel = 'noopener'; a.style.color = 'var(--oro2)'; dv.appendChild(a); det.appendChild(dv); }
     if (esValor) { renglon(det, 'Fecha del valor', fecha(r.fechaValor)); renglon(det, 'Fuente', r.fuenteValor); if (r.valor && r.costo) renglon(det, 'Frente a lo que costó', conSigno(r.valor - r.costo)); }
     else { renglon(det, 'Fecha de compra', fecha(r.fechaCompra)); renglon(det, 'Comprada a', r.origen); if (r.valor && r.costo) renglon(det, 'Valor actual', fmt(r.valor)); }
     const est = $('vEstado'); est.textContent = '';
@@ -898,12 +906,6 @@
     im.onload = ajustarVisor; im.src = src;
     $('grande').style.display = 'flex';
     if (im.complete && im.naturalWidth) ajustarVisor();
-  }
-  // tocar una pieza (hoja, estuche, acrilico...) abre sus fotos para pasarlas; sin fotos abre su ficha
-  function abrirFotos(id) {
-    const g = fotosDe(id, 'fotos'), l = [...new Set([...g, ...(g.length ? [] : fotosDe(id, 'fotosCompra'))])].filter(n => !/^privado:/.test(n));
-    if (!l.length) { abrirFicha(id); return; }
-    const im = new Image(); ponerFoto(im, l[0]); verGrande(im.src, l[0], l, 0, id);
   }
   // pasar a la foto anterior o siguiente de la misma pieza sin salir del visor
   function irFoto(d) {
@@ -1147,10 +1149,10 @@
   document.querySelectorAll('input[name=fl]').forEach(r => r.addEventListener('change', pintarLista));
   $('lCsv').onclick = () => {
     const q = s => '"' + String(s === undefined ? '' : s).replace(/"/g, '""') + '"';
-    const lineas = [['Colección', 'Moneda', 'Año', 'Tipo', 'Serie o calidad', 'Tiraje', 'Cantidad', 'KM', 'FO', 'Enlace Foronum', 'La tengo', 'Vendida', 'Valor actual (unidad)', 'Costo (unidad)', 'Fecha compra', 'Comprada a', 'Precio venta', 'Fecha venta', 'Vendida a', 'Ganancia', 'Fotos', 'Notas'].map(q).join(';')];
+    const lineas = [['Colección', 'Moneda', 'Año', 'Tipo', 'Serie o calidad', 'Tiraje', 'Cantidad', 'KM', 'FO', 'La tengo', 'Vendida', 'Valor actual (unidad)', 'Costo (unidad)', 'Fecha compra', 'Comprada a', 'Precio venta', 'Fecha venta', 'Vendida a', 'Ganancia', 'Fotos', 'Notas'].map(q).join(';')];
     for (const p of todas()) {
       const r = reg(p.id);
-      lineas.push([p.coleccion, p.moneda, p.anio, p.tipo, serieDe(p.id) || p.calidad || '', tirajeDe(p.id), cant(p.id), r.km || '', r.fo || '', r.enlace || '', tengo(p.id) ? 'Sí' : 'No', r.vendida ? 'Sí' : 'No', r.valor || '', r.costo || '', r.fechaCompra, r.origen, r.precioVenta || '', r.fechaVenta, r.comprador, r.vendida ? (r.precioVenta || 0) - (r.costo || 0) * cant(p.id) : '', nFotos(p.id), r.notas].map(q).join(';'));
+      lineas.push([p.coleccion, p.moneda, p.anio, p.tipo, serieDe(p.id) || p.calidad || '', tirajeDe(p.id), cant(p.id), r.km || '', r.fo || '', tengo(p.id) ? 'Sí' : 'No', r.vendida ? 'Sí' : 'No', r.valor || '', r.costo || '', r.fechaCompra, r.origen, r.precioVenta || '', r.fechaVenta, r.comprador, r.vendida ? (r.precioVenta || 0) - (r.costo || 0) * cant(p.id) : '', nFotos(p.id), r.notas].map(q).join(';'));
     }
     const a = el('a'); a.href = URL.createObjectURL(new Blob(['﻿' + lineas.join('\r\n')], { type: 'text/csv' }));
     a.download = 'inventario-monedas-' + hoy() + '.csv'; a.click(); URL.revokeObjectURL(a.href);
@@ -1178,6 +1180,7 @@
       else ph.textContent = 'Sin foto';
       const tx = el('div', 'tx');
       tx.append(el('span', '', p.moneda), el('small', '', p.coleccion + (reg(p.id).km ? ' · ' + reg(p.id).km : '') + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '')));
+      if (r.fechaCompra) tx.appendChild(el('small', 'fechaCons', 'Conseguida: ' + fecha(r.fechaCompra)));
       if (p.seccion === 'ms-sueltas') {
         // MS sueltas: cantidad que tengo, precio por pieza y total (cantidad x precio)
         const q = tengo(p.id) ? cant(p.id) : 0, u = valorU(p);
@@ -1201,9 +1204,6 @@
           }
           ph.appendChild(cuenta);
         }
-        ph.onclick = e => { e.stopPropagation(); const im = ph.querySelector('img'); if (im && im.src) verGrande(im.src, lista[k], lista, k, p.id); };
-      } else if (rf) {
-        ph.onclick = e => { e.stopPropagation(); const im = ph.querySelector('img'); if (im && im.src) verGrande(im.src, rf, null, 0, p.id); };
       }
       t.append(ph, tx);
       // casilla "La tengo": doble control de lo que falta conseguir; se marca cuando se consigue
