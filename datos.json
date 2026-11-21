@@ -5914,13 +5914,17 @@
   },
   "O-x003714af8m": {
    "tengo": true,
-   "notas": "Material: Plata (0,500) · Peso: 25,55 g · Diámetro: 38,60 mm · Acabado mate (sin brillo espejo) · Tiraje: 7 599\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
-   "km": "KM# 200",
    "fotosCompra": [
     "privado:km-KM200a.jpg"
    ],
+   "km": "KM# 200",
    "valor": 90000,
-   "costo": 90000
+   "fechaValor": "2026-11-21",
+   "fuenteValor": "mercado numismatico",
+   "costo": 60000,
+   "fechaCompra": "2022-03-21",
+   "origen": "reventa",
+   "notas": "Material: Plata (0,500) · Peso: 25,55 g · Diámetro: 38,60 mm · Acabado mate (sin brillo espejo) · Tiraje: 7 599\nFuente: Excel monedas costa rica, hoja \"50 colones\"."
   },
   "O-x6907c6691m": {
    "tengo": true,
