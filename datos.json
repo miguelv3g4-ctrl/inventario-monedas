@@ -392,9 +392,6 @@
   },
   "O-2a01cc85": {
    "tengo": true,
-   "cantidad": 1,
-   "valor": 250000,
-   "costo": 250000,
    "fotos": [
     "coleccionador-fauna-proof.jpg",
     "coleccionador-fauna-proof-2.jpg"
@@ -403,6 +400,8 @@
     "coleccionador-fauna-proof.jpg",
     "coleccionador-fauna-proof-2.jpg"
    ],
+   "valor": 350000,
+   "costo": 150000,
    "notas": "Código: Colecciónador Fauna PROOF\nColeccionador, versión PROOF. Producto: Coleccionador Fauna PROOF. Categoría: Coleccionadores. Código: Colecciónador Fauna PROOF. Precio de venta: ₡250 000. Disponibles: 1."
   },
   "O-1b8787e2": {
