@@ -1808,21 +1808,33 @@
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "fotosCompra": [
+    "5-centimos-1917-compra.jpg",
+    "5-centimos-1917-compra-2.jpg"
+   ]
   },
   "O-xbfc96e95d": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "fotosCompra": [
+    "5-centimos-1918-compra.jpg",
+    "5-centimos-1918-compra-2.jpg"
+   ]
   },
   "O-x9bcc64a7b": {
    "tengo": false,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
    "costo": 3500,
    "valor": 4900,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "fotosCompra": [
+    "5-centimos-1919-compra.jpg",
+    "5-centimos-1919-compra-2.jpg"
+   ]
   },
   "O-xc48e91c0a": {
    "tengo": false,
@@ -4078,7 +4090,11 @@
    "notas": "Material: Cobre Niquel · Peso: 0.8 · Diámetro: 12,5mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
    "costo": 30000,
    "valor": 42000,
-   "valorEstimado": true
+   "valorEstimado": true,
+   "fotosCompra": [
+    "1-4-centavo-1865-compra.jpg",
+    "1-4-centavo-1865-compra-2.jpg"
+   ]
   },
   "O-xed1002040": {
    "tengo": false,
