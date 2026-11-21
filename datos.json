@@ -5202,7 +5202,10 @@
    ],
    "valor": 1500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-200-independencia.jpg"
+   ]
   },
   "O-msda0cba6d9": {
    "tengo": true,
@@ -5216,7 +5219,10 @@
    ],
    "valor": 1500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-175-fundacion.jpg"
+   ]
   },
   "O-ms88823228f": {
    "tengo": true,
@@ -5230,7 +5236,10 @@
    ],
    "valor": 1500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-75-abolicion.jpg"
+   ]
   },
   "O-msf0ffcd327": {
    "tengo": true,
@@ -5240,6 +5249,9 @@
    "enlace": "https://www.foronum.com/catalogo-de-monedas/costa-rica/n-26714-500-colones-200-aniversario-de-la-anexion-del-partido-de-nicoya",
    "fotosCompra": [
     "privado:km-FO26714.jpg"
+   ],
+   "fotos": [
+    "ms-200-anexion.jpg"
    ]
   },
   "O-ms6183d92ac": {
@@ -5253,7 +5265,10 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-mariposa.jpg"
+   ]
   },
   "O-msf62912f9d": {
    "tengo": true,
@@ -5266,7 +5281,10 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-rana.jpg"
+   ]
   },
   "O-ms08faf0114": {
    "tengo": true,
@@ -5279,7 +5297,10 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-tortuga.jpg"
+   ]
   },
   "O-ms1a3921216": {
    "tengo": true,
@@ -5318,7 +5339,10 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-conejo.jpg"
+   ]
   },
   "O-msea88dec85": {
    "tengo": true,
@@ -5330,7 +5354,10 @@
    ],
    "valor": 150,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-limon.jpg"
+   ]
   },
   "O-ms9537cf5bb": {
    "tengo": true,
@@ -5342,7 +5369,10 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-puntarenas.jpg"
+   ]
   },
   "O-msc6fe145c6": {
    "tengo": true,
@@ -5354,7 +5384,10 @@
    ],
    "valor": 150,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-guanacaste.jpg"
+   ]
   },
   "O-ms30382c443": {
    "tengo": true,
@@ -5366,7 +5399,10 @@
    ],
    "valor": 500,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-heredia.jpg"
+   ]
   },
   "O-ms1be002f96": {
    "tengo": true,
@@ -5378,7 +5414,10 @@
    ],
    "valor": 150,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-cartago.jpg"
+   ]
   },
   "O-ms9e11d4fc2": {
    "tengo": true,
@@ -5391,7 +5430,10 @@
    ],
    "valor": 200,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-alajuela.jpg"
+   ]
   },
   "O-ms6fe432eb2": {
    "tengo": true,
@@ -5403,7 +5445,10 @@
    ],
    "valor": 150,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "ms-san-jose.jpg"
+   ]
   },
   "O-msde9df0025": {
    "tengo": true,
