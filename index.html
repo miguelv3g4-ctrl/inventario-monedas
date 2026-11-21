@@ -1253,6 +1253,32 @@
         if (/^privado:/.test(otra)) { const im = new Image(); im.onload = () => conFondo(im.src); ponerRef(im, otra); }
         else fondo = locales[otra] || 'fotos/' + otra;
       }
+      // cono 1995 y plata: mosaico con las fotos de las monedas de la seccion (propias o del catalogo)
+      if (sc.id === 'cono-1995-2021' || sc.id === 'plata') {
+        fondo = null;
+        const clave = 'mosaico-' + sc.id, ps = deSeccion(sc.id), fs = [];
+        const ruta = f => /^privado:/.test(f) ? f : (locales[f] || 'fotos/' + f);
+        if (sc.id === 'cono-1995-2021') {
+          for (const den of [5, 10, 25, 50, 100, 500]) {
+            const p = ps.find(p => new RegExp('^' + den + ' col').test(p.moneda) && (fotosDe(p.id, 'fotos')[0] || fotosDe(p.id, 'fotosCompra')[0]));
+            if (p) fs.push(fotosDe(p.id, 'fotos')[0] || fotosDe(p.id, 'fotosCompra')[0]);
+          }
+        } else for (const p of ps) for (const f of fotosDe(p.id, 'fotos').concat(fotosDe(p.id, 'fotosCompra'))) if (fs.length < 6 && !fs.includes(f)) fs.push(f);
+        const firma = fs.join('|');
+        if (locales[clave] && locales[clave + ':f'] === firma) conFondo(locales[clave]);
+        else {
+          conFondo(sc.fondo); // mientras cargan
+          Promise.all(fs.map(f => new Promise(ok => { const im = new Image(); im.onload = () => ok(im); im.onerror = () => ok(null); ponerRef(im, ruta(f)); }))).then(l => {
+            l = l.filter(Boolean); if (!l.length) return;
+            const W = 1200, H = 360, c = document.createElement('canvas'); c.width = W; c.height = H;
+            const g = c.getContext && c.getContext('2d'); if (!g) return;
+            g.fillStyle = '#0b0a09'; g.fillRect(0, 0, W, H);
+            const cw = W / l.length;
+            l.forEach((im, i) => { const s = Math.min((cw - 16) / im.naturalWidth, (H - 24) / im.naturalHeight), w = im.naturalWidth * s, h = im.naturalHeight * s; g.drawImage(im, i * cw + (cw - w) / 2, (H - h) / 2, w, h); });
+            try { locales[clave] = c.toDataURL('image/jpeg', 0.85); locales[clave + ':f'] = firma; conFondo(locales[clave]); } catch (e) {}
+          });
+        }
+      }
       if (fondo) conFondo(fondo);
       const num = el('span', 'num'); num.append(t.n + (t.n === 1 ? ' pieza' : ' piezas'));
       if (t.val) { num.append(' · '); num.appendChild(el('b', '', fmt(t.val))); }
