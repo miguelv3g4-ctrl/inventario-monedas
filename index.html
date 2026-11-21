@@ -454,7 +454,7 @@
       <button id="tCerrar">Cerrar</button>
     </div>
     <div class="aviso-t noimprimir">
-      <b>Borrador para el abogado y el notario.</b> El inventario se arma solo con lo que hay hoy en la app (lo que tengo, costo inicial y valor actual). Completa los datos de abajo, revisa el texto con tu abogado y, al imprimir, elige <b>Guardar como PDF</b> si quieres leerlo en pantalla. Los datos que escribes aquí se guardan solo en este navegador, no en el inventario.
+      <b>Borrador para el abogado y el notario.</b> El inventario se arma solo con lo que hay hoy en la app (lo que tengo, costo inicial y valor actual). Completa los datos de abajo, revisa el texto con tu abogado y, al imprimir, elige <b>Guardar como PDF</b> si quieres leerlo en pantalla. Los datos personales que escribes aquí se guardan en tu almacén privado (con clave), nunca en el repositorio público.
     </div>
     <div id="tCampos" class="noimprimir"></div>
     <div class="aviso-t noimprimir" id="tNotas"></div>
@@ -1433,11 +1433,27 @@
   const fechaLarga = nac => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(nac || ''); return m ? new Date(+m[1], +m[2] - 1, +m[3]).toLocaleDateString('es-CR', { day: 'numeric', month: 'long', year: 'numeric' }) : ''; };
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   const rell = (k, ancho) => { const v = tVal(k).trim(); return v ? '<b>' + esc(v) + '</b>' : '<span class="vacio">' + '_'.repeat(ancho || 22) + '</span>'; };
+  // los datos personales viven en el almacen privado del Worker (con sesion); si el Worker aun no lo soporta, quedan en este navegador
+  let tServ = false, tTimer = 0;
+  function guardarT() {
+    if (!tServ) { try { localStorage.setItem('testamentoDatos', JSON.stringify(tDatos)); } catch (e) {} return; }
+    clearTimeout(tTimer);
+    tTimer = setTimeout(() => { api('PUT', '/testamento', { datos: tDatos }).then(r => { if (!r.ok) { tServ = false; guardarT(); } }).catch(() => { tServ = false; guardarT(); }); }, 700);
+  }
+  async function cargarT() {
+    try {
+      const r = await api('GET', '/testamento'); if (!r.ok) return;
+      const j = await r.json(), d = j && j.datos || {}; tServ = true;
+      if (Object.keys(d).length) tDatos = d; // lo del servidor manda
+      else if (Object.keys(tDatos).length) await api('PUT', '/testamento', { datos: tDatos }); // primera vez: sube lo que habia en este navegador
+      try { localStorage.removeItem('testamentoDatos'); } catch (e) {} // ya no se deja copia en el navegador
+    } catch (e) {}
+  }
   function armarCamposTestamento() {
     const caja = $('tCampos'); caja.textContent = '';
     for (const [k, rot, , ancho, area] of T_CAMPOS) {
       const l = el('label', ancho ? 'ancho' : '', rot), i = el(area ? 'textarea' : 'input'); i.value = tVal(k);
-      i.oninput = () => { tDatos[k] = i.value; try { localStorage.setItem('testamentoDatos', JSON.stringify(tDatos)); } catch (e) {} pintarTestamento(); };
+      i.oninput = () => { tDatos[k] = i.value; guardarT(); pintarTestamento(); };
       l.appendChild(i); caja.appendChild(l);
     }
     $('tNotas').innerHTML = '<b>Para tu abogado y tu notario (no se imprime). Lo que el testamento logra y lo que no puede garantizar:</b><br>' +
@@ -1504,7 +1520,7 @@
     h += '<div class="firmas"><div>Firma del testador</div><div>Notario Público</div></div></div>';
     $('tHoja').innerHTML = h;
   }
-  $('mTestamento').onclick = () => { armarCamposTestamento(); pintarTestamento(); $('vTestamento').classList.add('abierta'); };
+  $('mTestamento').onclick = async () => { await cargarT(); armarCamposTestamento(); pintarTestamento(); $('vTestamento').classList.add('abierta'); };
   $('tCerrar').onclick = () => $('vTestamento').classList.remove('abierta');
   $('tImprimir').onclick = () => { pintarTestamento(); window.print(); };
   function irA() {

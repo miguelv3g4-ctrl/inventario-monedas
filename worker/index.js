@@ -96,6 +96,21 @@ export default {
         return new Response(img, { headers: { ...cors, 'Content-Type': 'image/jpeg', 'Cache-Control': 'private, max-age=86400' } });
       }
 
+      // datos personales del testamento: solo en el almacen privado, con sesion; nunca en el repositorio publico
+      if (ruta === '/testamento' && (req.method === 'GET' || req.method === 'PUT')) {
+        if (!env.INVENTARIO_PRIVADO) return json({ error: 'Falta el almacén privado.' }, 503);
+        if (req.method === 'GET') {
+          const t = await env.INVENTARIO_PRIVADO.get('testamento-datos');
+          return json({ datos: t ? JSON.parse(t) : {} });
+        }
+        const texto = await req.text();
+        if (texto.length > 20000) return json({ error: 'Datos demasiado grandes.' }, 413);
+        const { datos } = JSON.parse(texto);
+        if (!datos || typeof datos !== 'object' || Array.isArray(datos)) return json({ error: 'Datos no válidos.' }, 400);
+        await env.INVENTARIO_PRIVADO.put('testamento-datos', JSON.stringify(datos));
+        return json({ ok: true });
+      }
+
       if (ruta === '/datos' && req.method === 'GET' && !env.GITHUB_TOKEN) {
         // sin llave de GitHub todavia: se lee la copia publica (solo para ver)
         const r = await fetch('https://raw.githubusercontent.com/' + REPO + '/main/datos.json?t=' + Date.now(), { headers: { 'User-Agent': 'inventario-monedas-worker' } });
