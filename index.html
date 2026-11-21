@@ -839,7 +839,7 @@
     const det = $('vDetalle'); det.textContent = '';
     if (esMS) { const q = tengo(id) ? cant(id) : 0; renglon(det, 'Cantidad', q + (q === 1 ? ' pieza' : ' piezas')); if (monto) renglon(det, 'Total', q + ' × ' + fmt(monto) + ' = ' + fmt(monto * q)); }
     renglon(det, 'Catálogo', [r.km, r.fo].filter(Boolean).join(' · '));
-    if (esValor) { renglon(det, 'Fecha del valor', fecha(r.fechaValor)); renglon(det, 'Fuente', r.fuenteValor); if (r.valor && r.costo) renglon(det, 'Frente a lo que costó', conSigno(r.valor - r.costo)); }
+    if (esValor) { renglon(det, 'Fecha del valor', r.valor ? fecha(hoy()) : fecha(r.fechaValor)); /* el valor actual siempre al dia de hoy */ renglon(det, 'Fuente', r.fuenteValor); if (r.valor && r.costo) renglon(det, 'Frente a lo que costó', conSigno(r.valor - r.costo)); }
     else { renglon(det, 'Fecha en que la conseguí', fecha(r.fechaCompra) || 'Sin fecha todavía (agrégala en «Cambiar datos y fotos»)'); renglon(det, 'Comprada a', r.origen); if (r.valor && r.costo) renglon(det, 'Valor actual', fmt(r.valor)); }
     const est = $('vEstado'); est.textContent = '';
     if (r.vendida) {
@@ -984,6 +984,7 @@
     $('fTengo').disabled = esEstucheHoja(id);
     $('fTengo').parentNode.title = esEstucheHoja(id) ? 'En los estuches se marca sola cuando tienen número de serie' : '';
     for (const f in campos) { const v = r[campos[f]]; $(f).value = v === undefined ? '' : esDinero(campos[f]) ? Math.round(v).toLocaleString('es-CR') : v; }
+    if (r.valor) $('fFechaValor').value = hoy(); // la fecha del valor actual se pone al dia de hoy
     $('fNota').textContent = ''; $('fGuardar').disabled = false; $('fCancelar').disabled = false;
     for (const g in GRUPOS) pintarGrupo(g);
     $('vForm').classList.add('abierta'); $('vForm').scrollTop = 0;
