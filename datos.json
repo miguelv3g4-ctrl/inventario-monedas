@@ -2590,7 +2590,8 @@
    "km": "KM# 181",
    "fo": "FO# 12989",
    "fotosCompra": [
-    "privado:km-KM181.jpg"
+    "privado:anio-O-x71768fc80-0.jpg",
+    "privado:anio-O-x71768fc80-1.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor"
@@ -2616,7 +2617,7 @@
    "km": "KM# 181",
    "fo": "FO# 12989",
    "fotosCompra": [
-    "privado:km-KM181.jpg"
+    "privado:anio-O-xc9db761fe-0.jpg"
    ]
   },
   "O-x3b37ebb6e": {
@@ -2628,7 +2629,7 @@
    "km": "KM# 175",
    "fo": "FO# 2698",
    "fotosCompra": [
-    "privado:km-KM175.jpg"
+    "privado:anio-O-x3b37ebb6e-0.jpg"
    ],
    "origen": "reventa"
   },
@@ -2641,7 +2642,7 @@
    "km": "KM# 188.1",
    "fo": "FO# 7111",
    "fotosCompra": [
-    "privado:km-KM188-1.jpg"
+    "privado:anio-O-x33b9ffe7b-0.jpg"
    ],
    "origen": "reventa"
   },
@@ -2654,7 +2655,7 @@
    "km": "KM# 188.1",
    "fo": "FO# 7111",
    "fotosCompra": [
-    "privado:km-KM188-1.jpg"
+    "privado:anio-O-x873813965-0.jpg"
    ],
    "origen": "reventa"
   },
@@ -2693,7 +2694,7 @@
    "km": "KM# 188.1",
    "fo": "FO# 7111",
    "fotosCompra": [
-    "privado:km-KM188-1.jpg"
+    "privado:anio-O-x17a69bd37-0.jpg"
    ],
    "origen": "reventa"
   },
@@ -2706,7 +2707,8 @@
    "km": "KM# 188.1",
    "fo": "FO# 7111",
    "fotosCompra": [
-    "privado:km-KM188-1.jpg"
+    "privado:anio-O-xae37c1a00-0.jpg",
+    "privado:anio-O-xae37c1a00-1.jpg"
    ],
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
@@ -2749,7 +2751,7 @@
    "km": "KM# 188.3",
    "fo": "FO# 5205",
    "fotosCompra": [
-    "privado:km-KM188-3.jpg"
+    "privado:anio-O-x8d45ec313-0.jpg"
    ],
    "origen": "reventa"
   },
@@ -2776,7 +2778,7 @@
    "km": "KM# 188.3",
    "fo": "FO# 5205",
    "fotosCompra": [
-    "privado:km-KM188-3.jpg"
+    "privado:anio-O-x66c01a2b8-0.jpg"
    ],
    "origen": "reventa"
   },
@@ -6624,7 +6626,7 @@
    "nombre": "25 céntimos (latón amarillo) 1945 · Latón",
    "categoria": "25 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-26.jpg"
+   "ref": "privado:anio-O-x71768fc80-0.jpg"
   },
   {
    "id": "O-xfe54a68f0",
@@ -6638,28 +6640,28 @@
    "nombre": "25 céntimos (latón amarillo) 1946",
    "categoria": "25 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-26.jpg"
+   "ref": "privado:anio-O-xc9db761fe-0.jpg"
   },
   {
    "id": "O-x3b37ebb6e",
    "nombre": "25 céntimos 1948",
    "categoria": "25 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-25.jpg"
+   "ref": "privado:anio-O-x3b37ebb6e-0.jpg"
   },
   {
    "id": "O-x33b9ffe7b",
    "nombre": "25 céntimos 1967",
    "categoria": "25 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-28.jpg"
+   "ref": "privado:anio-O-x33b9ffe7b-0.jpg"
   },
   {
    "id": "O-x873813965",
    "nombre": "25 céntimos 1969",
    "categoria": "25 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-28.jpg"
+   "ref": "privado:anio-O-x873813965-0.jpg"
   },
   {
    "id": "O-x87cb49299",
@@ -6680,14 +6682,14 @@
    "nombre": "25 céntimos 1976",
    "categoria": "25 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-28.jpg"
+   "ref": "privado:anio-O-x17a69bd37-0.jpg"
   },
   {
    "id": "O-xae37c1a00",
    "nombre": "25 céntimos 1978",
    "categoria": "25 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-28.jpg"
+   "ref": "privado:anio-O-xae37c1a00-0.jpg"
   },
   {
    "id": "O-x483025dee",
@@ -6708,7 +6710,7 @@
    "nombre": "25 céntimos 1983",
    "categoria": "25 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-32.jpg"
+   "ref": "privado:anio-O-x8d45ec313-0.jpg"
   },
   {
    "id": "O-x8211325fe",
@@ -6722,7 +6724,7 @@
    "nombre": "25 céntimos 1989",
    "categoria": "25 céntimos",
    "seccion": "antano",
-   "ref": "privado:cat-32.jpg"
+   "ref": "privado:anio-O-x66c01a2b8-0.jpg"
   },
   {
    "id": "O-xea71ba3dd",
