@@ -7610,21 +7610,21 @@
   },
   "O-mwm6detr": {
    "tengo": true,
-   "fotosCompra": [
-    "O-mwm6detr-1795009669168-wlgli.jpg",
-    "privado:recibo-museo-2026-10-23.jpg"
-   ],
-   "valor": 30000,
-   "costo": 10000,
-   "fechaCompra": "2026-10-28",
-   "origen": "museo",
    "fotos": [
     "O-mwm6detr-mia-1.jpg",
     "O-mwm6detr-mia-2.jpg",
     "O-mwm6detr-mia-3.jpg"
    ],
+   "fotosCompra": [
+    "O-mwm6detr-1795009669168-wlgli.jpg",
+    "privado:recibo-museo-2026-10-23.jpg"
+   ],
+   "valor": 30000,
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio del Museo del Banco Central",
+   "costo": 10000,
+   "fechaCompra": "2026-10-28",
+   "origen": "museo",
    "notas": "Coleccionador del Banco Central \"Colección de monedas de 500 colones · Hitos de nuestra historia 2021-2024\". Trae 5 monedas: 200 años de la Independencia (1821-2021), 75 años de la Abolición del Ejército (1948-2023), 175 años de la Fundación de la República (1848-2023), 200 años de la Anexión del Partido de Nicoya (1824-2024) y la moneda de 500 con el escudo nacional (2021).\nCompra: Museos del Banco Central, 23/10/2026, 10 000 colones con impuesto (8 849,56 + IVA). El recibo está en las fotos de compra (privado)."
   },
   "AM11": {
