@@ -901,7 +901,8 @@
       if (varSel >= vars.length) varSel = 0;
       const barra = el('div', 'varTabs');
       vars.forEach((v, i) => { const b = el('button', i === varSel ? 'activo' : '', v.nombre); b.type = 'button'; b.onclick = () => { varSel = i; pintarFicha(); }; barra.appendChild(b); });
-      vv.append(barra, el('div', 'varExp', vars[varSel].explicacion || ''));
+      const exp = el('div', 'varExp'); (vars[varSel].explicacion || '').split(/\*\*(.+?)\*\*/).forEach((t, i) => { if (t) exp.appendChild(i % 2 ? el('b', '', t) : document.createTextNode(t)); }); // **texto** = negrita
+      vv.append(barra, exp);
     }
     const fotos = vars.length ? [...new Set(vars[varSel].fotos || [])] : [...new Set(esValor ? fotosDe(id, 'fotos').concat(fotosDe(id, 'fotosCompra')) : fotosDe(id, 'fotosCompra').concat(fotosDe(id, 'fotos')))], caja = $('vFoto'), minis = $('vMinis'); // todas las fotos: las de la pestaña primero y luego las otras
     caja.textContent = ''; minis.textContent = '';
