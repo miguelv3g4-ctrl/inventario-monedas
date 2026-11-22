@@ -7609,12 +7609,21 @@
   "O-mwm6detr": {
    "tengo": true,
    "fotosCompra": [
-    "O-mwm6detr-1795009669168-wlgli.jpg"
+    "O-mwm6detr-1795009669168-wlgli.jpg",
+    "privado:recibo-museo-2026-10-23.jpg"
    ],
    "valor": 30000,
    "costo": 10000,
    "fechaCompra": "2026-10-28",
-   "origen": "museo"
+   "origen": "museo",
+   "fotos": [
+    "O-mwm6detr-mia-1.jpg",
+    "O-mwm6detr-mia-2.jpg",
+    "O-mwm6detr-mia-3.jpg"
+   ],
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio del Museo del Banco Central",
+   "notas": "Coleccionador del Banco Central \"Colección de monedas de 500 colones · Hitos de nuestra historia 2021-2024\". Trae 5 monedas: 200 años de la Independencia (1821-2021), 75 años de la Abolición del Ejército (1948-2023), 175 años de la Fundación de la República (1848-2023), 200 años de la Anexión del Partido de Nicoya (1824-2024) y la moneda de 500 con el escudo nacional (2021).\nCompra: Museos del Banco Central, 23/10/2026, 10 000 colones con impuesto (8 849,56 + IVA). El recibo está en las fotos de compra (privado)."
   },
   "AM11": {
    "fechaCompra": "2025-08-26",
@@ -8518,6 +8527,31 @@
      "notas": "¿Por qué es especial? La serie 042037374 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 3737). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: muy circulado, ventana transparente arrugada y deteriorada, dobleces marcados."
     }
    ]
+  },
+  "O-4bab7a86": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotosCompra": [
+    "privado:socio-certificado-anc.jpg"
+   ],
+   "notas": "Certificado de acreditación como asociado activo de la Asociación Numismática Costarricense, firmado por el presidente y el secretario, con el sello de la asociación.\n¿Qué es? Es el documento que dice que Miguel es socio de la asociación de coleccionistas de monedas y billetes de Costa Rica. Los datos del registro (tomo, folio y número) están en la imagen.\nLa imagen es privada: solo se ve con la clave, porque tiene datos personales."
+  },
+  "O-657e9acc": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-657e9acc-mia-1.jpg",
+    "O-657e9acc-mia-2.jpg",
+    "O-657e9acc-mia-3.jpg"
+   ],
+   "fotosCompra": [
+    "privado:recibo-museo-2026-10-23.jpg"
+   ],
+   "costo": 10000,
+   "valor": 10000,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio del Museo del Banco Central",
+   "notas": "Coleccionador del Banco Central \"Colección de monedas Lugares emblemáticos\" de 25 colones: una moneda por cada provincia. Limón: Playa Manzanillo. Puntarenas: el faro. Guanacaste: Casona de Santa Rosa. Heredia: el Fortín. Cartago: Basílica de Nuestra Señora de los Ángeles. Alajuela: Volcán Arenal. San José: Teatro Nacional. Trae además una moneda de 25 colones común.\nCada moneda: 22,50 mm, 1,50 mm de grueso, 4,3 g, de cobre, níquel y zinc.\nCompra: Museos del Banco Central, 23/10/2026, 10 000 colones con impuesto (8 849,56 + IVA). El recibo está en las fotos de compra (privado)."
   }
  },
  "sueltas": {},
@@ -11179,6 +11213,19 @@
    "nombre": "1000 colones polímero (Braulio Carrillo / venado)",
    "categoria": "Billetes",
    "seccion": "billetes"
+  },
+  {
+   "id": "O-4bab7a86",
+   "nombre": "Título de socio · Asociación Numismática Costarricense",
+   "categoria": "Certificados",
+   "seccion": "documentos",
+   "ref": "privado:socio-certificado-anc.jpg"
+  },
+  {
+   "id": "O-657e9acc",
+   "nombre": "Coleccionador Lugares Emblemáticos · 25 colones",
+   "categoria": "Lugares Emblematicos de las Provincias de Costa Rica",
+   "seccion": "museo-bccr"
   }
  ],
  "giros": {

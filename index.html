@@ -548,7 +548,8 @@
     { id: 'coleccionadores-acrilicos', nombre: 'Coleccionadores acrílicos', fondo: 'fotos/set-acrilico-proof-y-bu.jpg' },
     { id: 'museo-bccr', nombre: 'Coleccionadores Museo Banco Central', fondo: 'fotos/coleccionador-fauna-ms.jpg' },
     { id: 'ms-sueltas', nombre: 'Monedas MS sueltas', fondo: 'referencias/calipso-ms.jpg' },
-    { id: 'coleccion-extranjera', nombre: 'Colección extranjera', desc: 'Piezas de otros países', fondo: 'fotos/bullion-collection-abierta.jpg' }
+    { id: 'coleccion-extranjera', nombre: 'Colección extranjera', desc: 'Piezas de otros países', fondo: 'fotos/bullion-collection-abierta.jpg' },
+    { id: 'documentos', nombre: 'Documentos y certificados', desc: 'Título de socio, certificados y recibos de compra (privados)', fondo: null }
   ];
   function armarBase() {
     base = Object.fromEntries(H.piezas.map(p => [p.id, Object.assign(p, { seccion: 'conmemorativas' })]));
