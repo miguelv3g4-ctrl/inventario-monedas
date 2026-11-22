@@ -2488,17 +2488,16 @@
   "O-xc51d3a03e": {
    "tengo": true,
    "cantidad": 21,
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 100,
-   "valor": 100,
-   "km": "KM# 184.3",
-   "fo": "FO# 6826",
    "fotosCompra": [
     "privado:anio-O-xc51d3a03e-0.jpg"
    ],
+   "km": "KM# 184.3",
+   "valor": 100,
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
-   "origen": "reventa"
+   "costo": 100,
+   "origen": "reventa",
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor"
   },
   "O-xc8e07e657": {
    "tengo": true,
