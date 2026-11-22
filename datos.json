@@ -7181,7 +7181,7 @@
   },
   "O-xd78528316": {
    "tengo": true,
-   "notas": "Serie: C11776060\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 20 a VF 25. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Suciedad general y dobleces marcados; borde inferior gastado.",
+   "notas": "Serie: C11776060\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 20 a VF 25. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Suciedad general y dobleces marcados; borde inferior gastado.\nSerie especial (11776060): Semi repetidor, el bloque 60 aparece dos veces seguidas (6060).",
    "origen": "reventa",
    "valor": 35000,
    "costo": 35000,
@@ -8190,12 +8190,12 @@
     },
     {
      "nombre": "500 C serie 9022206",
-     "explicacion": "Billete con número de serie C 9022206.",
+     "explicacion": "Billete con número de serie C 9022206. Serie especial (9022206): Casi radar, solo un par de dígitos rompe el radar.",
      "fotos": [
       "O-b421bb1e-billete-b-1.jpg",
       "O-b421bb1e-billete-b-2.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 25. Nivel: Fino (F 15) a Muy fino (VF 30). Detalle: circulado, papel firme, dobleces suaves y algo de suciedad en el reverso."
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 25. Nivel: Fino (F 15) a Muy fino (VF 30). Detalle: circulado, papel firme, dobleces suaves y algo de suciedad en el reverso.\nSerie especial (9022206): Casi radar, solo un par de dígitos rompe el radar."
     }
    ],
    "notas": "Dos billetes de la misma fecha, cada uno en su pestaña.\nFotos de Miguel (22/11/2026)."
@@ -8288,13 +8288,13 @@
      "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: varios dobleces, ventana transparente rayada y desgastada, suciedad leve."
     },
     {
-     "nombre": "1000 B serie 001818533",
-     "explicacion": "Billete con número de serie B001818533; papel con ventana transparente; serie A y B. Fotos: frente y reverso.",
+     "nombre": "1000 B serie 001818533 · Semi repetidor",
+     "explicacion": "Billete con número de serie B001818533; papel con ventana transparente; serie A y B. Fotos: frente y reverso. Serie especial (001818533): Semi repetidor, el bloque 18 aparece dos veces seguidas (1818).",
      "fotos": [
       "O-f2e2bbd5-billete-5.jpg",
       "O-f2e2bbd5-billete-6.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: un par de dobleces suaves, colores vivos, ventana limpia."
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: un par de dobleces suaves, colores vivos, ventana limpia.\nSerie especial (001818533): Semi repetidor, el bloque 18 aparece dos veces seguidas (1818)."
     }
    ]
   },
@@ -8394,22 +8394,22 @@
    "notas": "Billetes modernos de Costa Rica; polímero; serie B, acuerdo del 14 de setiembre de 2018.\nValor: falta el monto.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
    "variantes": [
     {
-     "nombre": "2000 B serie 020252020",
-     "explicacion": "Billete con número de serie B020252020; polímero; serie B, acuerdo del 14 de setiembre de 2018. Fotos: frente y reverso.",
+     "nombre": "2000 B serie 020252020 · Radar, Semi repetidor",
+     "explicacion": "Billete con número de serie B020252020; polímero; serie B, acuerdo del 14 de setiembre de 2018. Fotos: frente y reverso. Serie especial (020252020): Radar, se lee igual de izquierda a derecha que al revés; Trinario, solo tiene tres dígitos distintos (0, 2, 5); Semi repetidor, el bloque 02 aparece dos veces seguidas (0202).",
      "fotos": [
       "O-a5ae9afe-billete-1.jpg",
       "O-a5ae9afe-billete-2.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 35. Nivel: Muy fino (VF 30) a Extra fino (XF 40). Detalle: circulado leve, dobleces suaves y marcas en la ventana transparente."
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 35. Nivel: Muy fino (VF 30) a Extra fino (XF 40). Detalle: circulado leve, dobleces suaves y marcas en la ventana transparente.\nSerie especial (020252020): Radar, se lee igual de izquierda a derecha que al revés; Trinario, solo tiene tres dígitos distintos (0, 2, 5); Semi repetidor, el bloque 02 aparece dos veces seguidas (0202)."
     },
     {
-     "nombre": "2000 B serie 000124229",
-     "explicacion": "Billete con número de serie B000124229; polímero; serie B, acuerdo del 14 de setiembre de 2018. Fotos: frente y reverso.",
+     "nombre": "2000 B serie 000124229 · Número bajo",
+     "explicacion": "Billete con número de serie B000124229; polímero; serie B, acuerdo del 14 de setiembre de 2018. Fotos: frente y reverso. Serie especial (000124229): Número bajo, empieza con 3 ceros.",
      "fotos": [
       "O-a5ae9afe-billete-3.jpg",
       "O-a5ae9afe-billete-4.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 45. Nivel: Extra fino (XF 40) a Casi sin circular (AU 50). Detalle: casi sin desgaste, ventana limpia, colores vivos."
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 45. Nivel: Extra fino (XF 40) a Casi sin circular (AU 50). Detalle: casi sin desgaste, ventana limpia, colores vivos.\nSerie especial (000124229): Número bajo, empieza con 3 ceros."
     },
     {
      "nombre": "2000 B serie 024393348",
@@ -8464,40 +8464,40 @@
      "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta."
     },
     {
-     "nombre": "1000 C serie 015025151",
-     "explicacion": "Billete con número de serie C015025151; polímero; serie C, acuerdo del 20 de setiembre de 2019. Fotos: frente y reverso.",
+     "nombre": "1000 C serie 015025151 · Semi repetidor",
+     "explicacion": "Billete con número de serie C015025151; polímero; serie C, acuerdo del 20 de setiembre de 2019. Fotos: frente y reverso. Serie especial (015025151): Semi repetidor, el bloque 51 aparece dos veces seguidas (5151).",
      "fotos": [
       "O-20887687-billete-5.jpg",
       "O-20887687-billete-6.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta."
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta.\nSerie especial (015025151): Semi repetidor, el bloque 51 aparece dos veces seguidas (5151)."
     },
     {
-     "nombre": "1000 C serie 000641415",
-     "explicacion": "Billete con número de serie C000641415; polímero; serie C, acuerdo del 20 de setiembre de 2019. Fotos: frente y reverso.",
+     "nombre": "1000 C serie 000641415 · Número bajo, Semi repetidor",
+     "explicacion": "Billete con número de serie C000641415; polímero; serie C, acuerdo del 20 de setiembre de 2019. Fotos: frente y reverso. Serie especial (000641415): Número bajo, empieza con 3 ceros; Semi repetidor, el bloque 41 aparece dos veces seguidas (4141).",
      "fotos": [
       "O-20887687-billete-7.jpg",
       "O-20887687-billete-8.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta."
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta.\nSerie especial (000641415): Número bajo, empieza con 3 ceros; Semi repetidor, el bloque 41 aparece dos veces seguidas (4141)."
     },
     {
-     "nombre": "1000 C serie 000061107",
-     "explicacion": "Billete con número de serie C000061107; polímero; serie C, acuerdo del 20 de setiembre de 2019. Fotos: frente y reverso.",
+     "nombre": "1000 C serie 000061107 · Número bajo",
+     "explicacion": "Billete con número de serie C000061107; polímero; serie C, acuerdo del 20 de setiembre de 2019. Fotos: frente y reverso. Serie especial (000061107): Número bajo, empieza con 4 ceros; 4 dígitos iguales seguidos, tiene 0000.",
      "fotos": [
       "O-20887687-billete-9.jpg",
       "O-20887687-billete-10.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, dobleces suaves y marcas en la ventana transparente."
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, dobleces suaves y marcas en la ventana transparente.\nSerie especial (000061107): Número bajo, empieza con 4 ceros; 4 dígitos iguales seguidos, tiene 0000."
     },
     {
-     "nombre": "1000 C serie 006336006",
-     "explicacion": "Billete con número de serie C006336006; polímero; serie C, acuerdo del 20 de setiembre de 2019. Fotos: frente y reverso.",
+     "nombre": "1000 C serie 006336006 · Extremos iguales",
+     "explicacion": "Billete con número de serie C006336006; polímero; serie C, acuerdo del 20 de setiembre de 2019. Fotos: frente y reverso. Serie especial (006336006): Trinario, solo tiene tres dígitos distintos (0, 6, 3); Extremos iguales, empieza y termina con 006.",
      "fotos": [
       "O-20887687-billete-11.jpg",
       "O-20887687-billete-12.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, marcas finas y grietas leves en la ventana."
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, marcas finas y grietas leves en la ventana.\nSerie especial (006336006): Trinario, solo tiene tres dígitos distintos (0, 6, 3); Extremos iguales, empieza y termina con 006."
     },
     {
      "nombre": "1000 C serie 017598690",
@@ -8509,13 +8509,13 @@
      "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 20. Nivel: Fino (F 15) a Muy fino (VF 25). Detalle: circulado, ventana transparente muy dañada y arrugada, marcas visibles."
     },
     {
-     "nombre": "1000 C serie 042037374",
-     "explicacion": "Billete con número de serie C042037374; polímero; serie C, acuerdo del 20 de setiembre de 2019. Fotos: frente y reverso.",
+     "nombre": "1000 C serie 042037374 · Semi repetidor",
+     "explicacion": "Billete con número de serie C042037374; polímero; serie C, acuerdo del 20 de setiembre de 2019. Fotos: frente y reverso. Serie especial (042037374): Semi repetidor, el bloque 37 aparece dos veces seguidas (3737).",
      "fotos": [
       "O-20887687-billete-15.jpg",
       "O-20887687-billete-16.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: muy circulado, ventana transparente arrugada y deteriorada, dobleces marcados."
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: muy circulado, ventana transparente arrugada y deteriorada, dobleces marcados.\nSerie especial (042037374): Semi repetidor, el bloque 37 aparece dos veces seguidas (3737)."
     }
    ]
   }
