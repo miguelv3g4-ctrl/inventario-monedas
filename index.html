@@ -836,9 +836,12 @@
   const DENOM_MS = [[500, /hito|independ|abolic|anexi|fundaci/i], [100, /patrimonio|cultural|swing|boyero|calipso|cimarrona|tope|ceramica|cerámica/i], [50, /fauna|mariposa|rana|tortuga|lagartija|cangrejo|conejo/i], [25, /provincia|lugares|emblem/i]];
   const denomMS = p => { const t = p.coleccion + ' ' + p.moneda; const d = DENOM_MS.find(x => x[1].test(t)); return d ? d[0] : 0; };
   const valorU = p => reg(p.id).valor || (p.seccion === 'ms-sueltas' ? PRECIO_MS[denomMS(p)] || 0 : 0);
+  // total de una tarjeta: las pestañas con precio propio cuentan aparte; el resto de las piezas, al precio de la tarjeta
+  const precioT = (id, campo, unit) => { const vs = (reg(id).variantes || []).filter(v => typeof v[campo] === 'number'), q = cant(id); if (!vs.length) return unit * q; const k = vs.reduce((s, v) => s + (v.cantidad || 1), 0); return vs.reduce((s, v) => s + v[campo] * (v.cantidad || 1), 0) + Math.max(0, q - k) * unit; };
+  const valorT = p => precioT(p.id, 'valor', valorU(p)), costoT = id => precioT(id, 'costo', reg(id).costo || 0);
   function sumas(lista) {
     let n = 0, inv = 0, val = 0;
-    for (const p of lista) { const r = reg(p.id), q = cant(p.id); if (tengo(p.id) && !r.vendida) { n += q; val += valorU(p) * q; } if (tengo(p.id) || r.vendida) inv += (r.costo || 0) * q; } // invertido: solo lo que se tiene o se vendio
+    for (const p of lista) { const r = reg(p.id), q = cant(p.id); if (tengo(p.id) && !r.vendida) { n += q; val += valorT(p); } if (tengo(p.id) || r.vendida) inv += costoT(p.id); } // invertido: solo lo que se tiene o se vendio
     return { n, inv, val };
   }
   const deSeccion = id => todas().filter(p => p.seccion === id);
@@ -846,9 +849,9 @@
     let n = 0, inv = 0, ven = 0, gan = 0, val = 0;
     for (const p of deSeccion('conmemorativas')) {
       const r = reg(p.id), q = cant(p.id);
-      if (tengo(p.id) && !r.vendida) { n += q; val += (r.valor || 0) * q; }
-      if (tengo(p.id) || r.vendida) inv += (r.costo || 0) * q; // las que faltan no cuentan como invertido
-      if (r.vendida) { ven += r.precioVenta || 0; gan += (r.precioVenta || 0) - (r.costo || 0) * q; }
+      if (tengo(p.id) && !r.vendida) { n += q; val += valorT(p); }
+      if (tengo(p.id) || r.vendida) inv += costoT(p.id); // las que faltan no cuentan como invertido
+      if (r.vendida) { ven += r.precioVenta || 0; gan += (r.precioVenta || 0) - costoT(p.id); }
     }
     $('tPiezas').textContent = n; $('tInv').textContent = fmt(inv); $('tVal').textContent = fmt(val); $('tVen').textContent = fmt(ven); $('tGan').textContent = conSigno(gan);
     if ($('vLista').classList.contains('abierta')) pintarLista();
@@ -1250,12 +1253,12 @@
     for (const p of filas) {
       const r = reg(p.id), tr = el('tr');
       const est = r.vendida ? ['Vendida', 'vend'] : tengo(p.id) ? ['En la colección', 'inv'] : ['No la tengo', 'no'];
-      const q = cant(p.id), gan = r.vendida ? (r.precioVenta || 0) - (r.costo || 0) * q : null;
-      [[p.coleccion], [p.moneda], [nombrePieza(p)], est, [nFotos(p.id) || '', 'n'], [r.valor ? fmt(r.valor * q) : '', 'n'], [r.costo ? fmt(r.costo * q) : '', 'n'], [r.vendida && r.precioVenta ? fmt(r.precioVenta) : '', 'n'], [gan === null ? '' : conSigno(gan), 'n']]
+      const q = cant(p.id), gan = r.vendida ? (r.precioVenta || 0) - costoT(p.id) : null, vT = valorT(p), cT = costoT(p.id);
+      [[p.coleccion], [p.moneda], [nombrePieza(p)], est, [nFotos(p.id) || '', 'n'], [vT ? fmt(vT) : '', 'n'], [cT ? fmt(cT) : '', 'n'], [r.vendida && r.precioVenta ? fmt(r.precioVenta) : '', 'n'], [gan === null ? '' : conSigno(gan), 'n']]
         .forEach(([t, cls]) => tr.appendChild(el('td', cls, t)));
       tr.onclick = () => { $('vLista').classList.remove('abierta'); abrirFicha(p.id); };
       cuerpo.appendChild(tr);
-      c += (r.costo || 0) * q; if (!r.vendida) va += (r.valor || 0) * q; if (r.vendida) { v += r.precioVenta || 0; g += gan; }
+      c += cT; if (!r.vendida) va += vT; if (r.vendida) { v += r.precioVenta || 0; g += gan; }
     }
     $('lCuenta').textContent = filas.length + ' piezas'; $('lValor').textContent = fmt(va); $('lCosto').textContent = fmt(c); $('lVenta').textContent = fmt(v); $('lGan').textContent = conSigno(g);
   }
@@ -1547,7 +1550,7 @@
       if (!ps.length) continue;
       let n = 0, costo = 0, val = 0;
       const filas = ps.map(p => {
-        const r = reg(p.id), q = cant(p.id), v = valorU(p) * q, c = (r.costo || 0) * q;
+        const r = reg(p.id), q = cant(p.id), v = valorT(p), c = costoT(p.id);
         n += q; costo += c; val += v;
         const desc = p.otra ? p.moneda + (q > 1 ? ' (' + q + ' unidades)' : '') : (p.coleccion + ' · ' + p.moneda + ' · ' + nombrePieza(p));
         const col = r.enColeccion && base[r.enColeccion];
