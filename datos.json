@@ -5645,7 +5645,7 @@
   "O-msacfccd037": {
    "tengo": true,
    "cantidad": 15,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor",
    "km": "KM# 241",
    "fo": "FO# 20094",
    "fotosCompra": [
@@ -5655,9 +5655,7 @@
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
    "fotos": [
-    "ms-200-independencia.jpg",
-    "O-msacfccd037-video-cara.jpg",
-    "O-msacfccd037-video-valor.jpg"
+    "ms-200-independencia.jpg"
    ],
    "costo": 1500,
    "origen": "museo"
@@ -5666,9 +5664,7 @@
    "tengo": true,
    "cantidad": 11,
    "fotos": [
-    "ms-175-fundacion.jpg",
-    "O-msda0cba6d9-video-cara.jpg",
-    "O-msda0cba6d9-video-valor.jpg"
+    "ms-175-fundacion.jpg"
    ],
    "fotosCompra": [
     "privado:km-KM242.jpg"
@@ -5677,14 +5673,14 @@
    "valor": 1500,
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor",
    "costo": 1500,
    "origen": "museo"
   },
   "O-ms88823228f": {
    "tengo": true,
    "cantidad": 15,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2022.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2022.\nPrecio revendedor",
    "km": "KM# 243",
    "fo": "FO# 21442",
    "fotosCompra": [
@@ -5694,9 +5690,7 @@
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
    "fotos": [
-    "ms-75-abolicion.jpg",
-    "O-ms88823228f-video-cara.jpg",
-    "O-ms88823228f-video-valor.jpg"
+    "ms-75-abolicion.jpg"
    ],
    "costo": 1500,
    "origen": "museo"
@@ -6436,6 +6430,74 @@
    "valor": 1200,
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio de compra"
+  },
+  "O-x17c3c2995": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-x17c3c2995-video-cara.jpg",
+    "O-x17c3c2995-video-valor.jpg"
+   ],
+   "valor": 1500,
+   "costo": 1500,
+   "fechaValor": "2026-11-20",
+   "fuenteValor": "Igual que la moneda MS suelta del mismo tema",
+   "km": "KM# 241",
+   "fo": "FO# 20094",
+   "fotosCompra": [
+    "privado:km-KM241.jpg"
+   ],
+   "notas": "Bimetálica conmemorativa de 500 colones.\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de esta moneda; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nValor y costo copiados de la moneda MS suelta; corrígelos si son otros."
+  },
+  "O-x29e3ea31d": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-x29e3ea31d-video-cara.jpg",
+    "O-x29e3ea31d-video-valor.jpg"
+   ],
+   "valor": 1500,
+   "costo": 1500,
+   "fechaValor": "2026-11-20",
+   "fuenteValor": "Igual que la moneda MS suelta del mismo tema",
+   "km": "KM# 242",
+   "fotosCompra": [
+    "privado:km-KM242.jpg"
+   ],
+   "notas": "Bimetálica conmemorativa de 500 colones.\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de esta moneda; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nValor y costo copiados de la moneda MS suelta; corrígelos si son otros."
+  },
+  "O-x74369df11": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-x74369df11-video-cara.jpg",
+    "O-x74369df11-video-valor.jpg"
+   ],
+   "valor": 1500,
+   "costo": 1500,
+   "fechaValor": "2026-11-20",
+   "fuenteValor": "Igual que la moneda MS suelta del mismo tema",
+   "km": "KM# 243",
+   "fo": "FO# 21442",
+   "fotosCompra": [
+    "privado:km-KM243.jpg"
+   ],
+   "notas": "Bimetálica conmemorativa de 500 colones.\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de esta moneda; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nValor y costo copiados de la moneda MS suelta; corrígelos si son otros."
+  },
+  "O-x1d9cfb5e7": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "ms-200-anexion.jpg"
+   ],
+   "valor": 1500,
+   "costo": 1500,
+   "fuenteValor": "Igual que la moneda MS suelta del mismo tema",
+   "fo": "FO# 26714",
+   "fotosCompra": [
+    "privado:km-FO26714.jpg"
+   ],
+   "notas": "Bimetálica conmemorativa de 500 colones.\nFoto: la misma de la moneda MS suelta del mismo tema (no salió en el video).\nValor y costo copiados de la moneda MS suelta; corrígelos si son otros."
   }
  },
  "sueltas": {},
@@ -8987,6 +9049,30 @@
    "id": "O-x5b5bad0ec",
    "nombre": "100 colones 2021",
    "categoria": "100 colones",
+   "seccion": "cono-1995-2021"
+  },
+  {
+   "id": "O-x17c3c2995",
+   "nombre": "500 colones (200 años de Independencia) 2021",
+   "categoria": "500 colones",
+   "seccion": "cono-1995-2021"
+  },
+  {
+   "id": "O-x29e3ea31d",
+   "nombre": "500 colones (175 años de Fundación de la República) 2023",
+   "categoria": "500 colones",
+   "seccion": "cono-1995-2021"
+  },
+  {
+   "id": "O-x74369df11",
+   "nombre": "500 colones (75 años de Abolición del Ejército) 2023",
+   "categoria": "500 colones",
+   "seccion": "cono-1995-2021"
+  },
+  {
+   "id": "O-x1d9cfb5e7",
+   "nombre": "500 colones (200 años de Anexión del Partido de Nicoya) 2025",
+   "categoria": "500 colones",
    "seccion": "cono-1995-2021"
   }
  ],
