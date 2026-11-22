@@ -2033,70 +2033,70 @@
   "O-xe3d47d8e0": {
    "tengo": true,
    "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 184.1a",
    "fo": "FO# 10240",
    "fotosCompra": [
     "privado:anio-O-xe3d47d8e0-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
   "O-x5acb39897": {
    "tengo": true,
    "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 184.1a",
    "fo": "FO# 10240",
    "fotosCompra": [
     "privado:anio-O-x5acb39897-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
   "O-x58dfa2f51": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 184.1",
    "fo": "FO# 11420",
    "fotosCompra": [
     "privado:anio-O-x58dfa2f51-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
   "O-x15d4420cd": {
    "tengo": true,
    "notas": "Material: Acero inoxidable · Peso: 0,88 g · Diámetro: 14,92 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 184.1a",
    "fo": "FO# 10240",
    "fotosCompra": [
     "privado:km-KM184-1a.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
   "O-x5a5f0dfd0": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 184.1",
    "fo": "FO# 11420",
    "fotosCompra": [
     "privado:anio-O-x5a5f0dfd0-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2104,14 +2104,14 @@
    "tengo": true,
    "cantidad": 3,
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 184.2",
    "fo": "FO# 2708",
    "fotosCompra": [
     "privado:anio-O-x15e385cd4-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2119,14 +2119,14 @@
    "tengo": true,
    "cantidad": 3,
    "notas": "Material: Cobre-níquel · Peso: 1,02 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 184.3",
    "fo": "FO# 6826",
    "fotosCompra": [
     "privado:anio-O-x1e8fa5618-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2134,14 +2134,14 @@
    "tengo": true,
    "cantidad": 2,
    "notas": "Material: Cobre-níquel · Peso: 1,02 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 184.3",
    "fo": "FO# 6826",
    "fotosCompra": [
     "privado:km-KM184-3.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2149,28 +2149,28 @@
    "tengo": true,
    "cantidad": 2,
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 184.3",
    "fo": "FO# 6826",
    "fotosCompra": [
     "privado:anio-O-xc51d3a03e-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
   "O-xc8e07e657": {
    "tengo": true,
    "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 184.2",
    "fo": "FO# 2708",
    "fotosCompra": [
     "privado:anio-O-xc8e07e657-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2178,14 +2178,14 @@
    "tengo": true,
    "cantidad": 3,
    "notas": "Material: Latón · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 184.3a",
    "fo": "FO# 2707",
    "fotosCompra": [
     "privado:km-KM184-3a.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2399,14 +2399,14 @@
    "tengo": true,
    "cantidad": 2,
    "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 185.1a",
    "fo": "FO# 8590",
    "fotosCompra": [
     "privado:km-KM185-1a.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2414,14 +2414,14 @@
    "tengo": true,
    "cantidad": 3,
    "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 185.1a",
    "fo": "FO# 8590",
    "fotosCompra": [
     "privado:anio-O-xc3d7fba09-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2429,14 +2429,14 @@
    "tengo": true,
    "cantidad": 2,
    "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 185.1a",
    "fo": "FO# 8590",
    "fotosCompra": [
     "privado:anio-O-x22cea2e08-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2444,14 +2444,14 @@
    "tengo": true,
    "cantidad": 4,
    "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 185.2",
    "fo": "FO# 10391",
    "fotosCompra": [
     "privado:anio-O-x929b5dfa3-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2459,14 +2459,14 @@
    "tengo": true,
    "cantidad": 3,
    "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 185.2",
    "fo": "FO# 10391",
    "fotosCompra": [
     "privado:anio-O-x1606e6042-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2474,14 +2474,14 @@
    "tengo": true,
    "cantidad": 2,
    "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 185.2",
    "fo": "FO# 10391",
    "fotosCompra": [
     "privado:anio-O-x305516372-0.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2489,14 +2489,14 @@
    "tengo": true,
    "cantidad": 6,
    "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 5\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 185.2",
    "fo": "FO# 10391",
    "fotosCompra": [
     "privado:km-KM185-2.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2504,14 +2504,14 @@
    "tengo": true,
    "cantidad": 18,
    "notas": "Material: Acero bañado en níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nRepetidas: 17\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 185.2b",
    "fo": "FO# 9011",
    "fotosCompra": [
     "privado:km-KM185-2b.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
@@ -2519,14 +2519,14 @@
    "tengo": true,
    "cantidad": 4,
    "notas": "Material: Aluminio · Peso: 0,60 g · Diámetro: 18,00 mm · Canto: Liso\nRepetidas: 3\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor",
-   "costo": 3500,
-   "valor": 1000,
+   "costo": 100,
+   "valor": 100,
    "km": "KM# 185.2a",
    "fo": "FO# 5204",
    "fotosCompra": [
     "privado:km-KM185-2a.jpg"
    ],
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa"
   },
