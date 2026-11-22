@@ -2049,12 +2049,15 @@
    ],
    "variantes": [
     {
-     "nombre": "Normal",
-     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "nombre": "Cobre-níquel",
+     "explicacion": "Versión de 1942: material: Cobre-níquel; diámetro: 15,00 mm; catálogo KM# 178. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
      "fotos": [
-      "privado:km-KM178.jpg"
+      "privado:km-KM178.jpg",
+      "privado:catxl-KM178.jpg"
      ],
-     "notas": ""
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
     },
     {
      "nombre": "Cuproníquel B.N.C.R.",
@@ -2064,6 +2067,16 @@
       "O-xf7ba06e9b-especial-2.jpg"
      ],
      "notas": "Grado estimado (por foto): XF."
+    },
+    {
+     "nombre": "Otra: Latón",
+     "explicacion": "Versión de 1942: material: Latón; diámetro: 14,50 mm; catálogo KM# 179. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 céntimos 1942 · Latón.",
+     "fotos": [
+      "privado:anio-O-xf2e01c902-0.jpg",
+      "privado:catxl-KM179.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
     }
    ],
    "fotos": [
@@ -2084,12 +2097,15 @@
    ],
    "variantes": [
     {
-     "nombre": "Normal",
-     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "nombre": "Latón",
+     "explicacion": "Versión de 1942: material: Latón; diámetro: 14,50 mm; catálogo KM# 179. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
      "fotos": [
-      "privado:anio-O-xf2e01c902-0.jpg"
+      "privado:anio-O-xf2e01c902-0.jpg",
+      "privado:catxl-KM179.jpg"
      ],
-     "notas": ""
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
     },
     {
      "nombre": "Cospel quebrado",
@@ -2099,6 +2115,16 @@
       "O-xf2e01c902-especial-2.jpg"
      ],
      "notas": "Cospel quebrado (rotulado en el cartón). En el reverso, abajo cerca de \"B.N.\", hay una zona irregular que puede ser el otro extremo de la grieta."
+    },
+    {
+     "nombre": "Otra: Cobre-níquel",
+     "explicacion": "Versión de 1942: material: Cobre-níquel; diámetro: 15,00 mm; catálogo KM# 178. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 céntimos 1942 · Cobre-níquel.",
+     "fotos": [
+      "privado:km-KM178.jpg",
+      "privado:catxl-KM178.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
     }
    ],
    "fotos": [
@@ -2156,12 +2182,15 @@
    ],
    "variantes": [
     {
-     "nombre": "Normal",
-     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "nombre": "Canto estriado (KM 184A)",
+     "explicacion": "Versión de 1951: canto: Estriado; catálogo KM# 184A. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
      "fotos": [
-      "privado:km-KM184A.jpg"
+      "privado:km-KM184A.jpg",
+      "privado:catxl-KM184A.jpg"
      ],
-     "notas": ""
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
     },
     {
      "nombre": "Números gruesos",
@@ -2170,6 +2199,16 @@
       "O-x1ca9dd607-especial-1.jpg"
      ],
      "notas": "Diferencia en los números (Miguel). Identificada con la ficha de catálogo que pasó Miguel: KM# 184A, canto estriado."
+    },
+    {
+     "nombre": "Otra: Canto liso (KM 184.1)",
+     "explicacion": "Versión de 1951: canto: Liso; catálogo KM# 184.1. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 céntimos 1951 · Cobre-níquel.",
+     "fotos": [
+      "privado:km-KM184A.jpg",
+      "privado:catxl-KM184.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
     }
    ],
    "fotos": [
@@ -2189,12 +2228,15 @@
    ],
    "variantes": [
     {
-     "nombre": "Normal",
-     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "nombre": "Canto liso (KM 184.1)",
+     "explicacion": "Versión de 1951: canto: Liso; catálogo KM# 184.1. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
      "fotos": [
-      "privado:km-KM184A.jpg"
+      "privado:km-KM184A.jpg",
+      "privado:catxl-KM184.1.jpg"
      ],
-     "notas": ""
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
     },
     {
      "nombre": "Números finos",
@@ -2203,6 +2245,16 @@
       "O-x9dcbdff87-especial-1.jpg"
      ],
      "notas": "Diferencia en los números (Miguel). Identificada con la ficha de catálogo que pasó Miguel: KM# 184.1, canto liso."
+    },
+    {
+     "nombre": "Otra: Canto estriado (KM 184A)",
+     "explicacion": "Versión de 1951: canto: Estriado; catálogo KM# 184A. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 céntimos 1951 · Cobre-níquel.",
+     "fotos": [
+      "privado:km-KM184A.jpg",
+      "privado:catxl-KM184A.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
     }
    ],
    "fotos": [
@@ -2236,7 +2288,30 @@
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa",
-   "cantidad": 2
+   "cantidad": 2,
+   "variantes": [
+    {
+     "nombre": "Acero inoxidable",
+     "explicacion": "Versión de 1958: material: Acero inoxidable; peso: 0,88 g; diámetro: 14,92 mm; canto: Estriado; catálogo KM# 184.1a. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-x5acb39897-0.jpg",
+      "privado:catxl-KM184.1a.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Cobre-níquel",
+     "explicacion": "Versión de 1958: material: Cobre-níquel; peso: 1,00 g; diámetro: 15,00 mm; canto: Liso; catálogo KM# 184.1. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 céntimos 1958 · Cobre-níquel.",
+     "fotos": [
+      "privado:anio-O-x58dfa2f51-0.jpg",
+      "privado:catxl-KM184.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x58dfa2f51": {
    "tengo": true,
@@ -2251,7 +2326,30 @@
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa",
-   "cantidad": 2
+   "cantidad": 2,
+   "variantes": [
+    {
+     "nombre": "Cobre-níquel",
+     "explicacion": "Versión de 1958: material: Cobre-níquel; peso: 1,00 g; diámetro: 15,00 mm; canto: Liso; catálogo KM# 184.1. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-x58dfa2f51-0.jpg",
+      "privado:catxl-KM184.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Acero inoxidable",
+     "explicacion": "Versión de 1958: material: Acero inoxidable; peso: 0,88 g; diámetro: 14,92 mm; canto: Estriado; catálogo KM# 184.1a. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 céntimos 1958 · Acero inoxidable.",
+     "fotos": [
+      "privado:anio-O-x5acb39897-0.jpg",
+      "privado:catxl-KM184.1a.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x15d4420cd": {
    "tengo": true,
@@ -2269,12 +2367,15 @@
    "cantidad": 4,
    "variantes": [
     {
-     "nombre": "Normal",
-     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "nombre": "Acero inoxidable",
+     "explicacion": "Versión de 1967: material: Acero inoxidable; peso: 0,88 g; diámetro: 14,92 mm; canto: Estriado; catálogo KM# 184.1a. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
      "fotos": [
-      "privado:km-KM184-1a.jpg"
+      "privado:km-KM184-1a.jpg",
+      "privado:catxl-KM184.1a.jpg"
      ],
-     "notas": ""
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
     },
     {
      "nombre": "Posible rotura de troquel",
@@ -2284,6 +2385,16 @@
       "O-x15d4420cd-especial-2.jpg"
      ],
      "notas": "Acero inoxidable (confirmado por Miguel)."
+    },
+    {
+     "nombre": "Otra: Cobre-níquel",
+     "explicacion": "Versión de 1967: material: Cobre-níquel; peso: 1,00 g; diámetro: 15,00 mm; canto: Liso; catálogo KM# 184.1. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 céntimos 1967 · Cobre-níquel.",
+     "fotos": [
+      "privado:anio-O-x5a5f0dfd0-0.jpg",
+      "privado:catxl-KM184.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
     }
    ],
    "fotos": [
@@ -2304,7 +2415,30 @@
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa",
-   "cantidad": 5
+   "cantidad": 5,
+   "variantes": [
+    {
+     "nombre": "Cobre-níquel",
+     "explicacion": "Versión de 1967: material: Cobre-níquel; peso: 1,00 g; diámetro: 15,00 mm; canto: Liso; catálogo KM# 184.1. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-x5a5f0dfd0-0.jpg",
+      "privado:catxl-KM184.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Acero inoxidable",
+     "explicacion": "Versión de 1967: material: Acero inoxidable; peso: 0,88 g; diámetro: 14,92 mm; canto: Estriado; catálogo KM# 184.1a. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 céntimos 1967 · Acero inoxidable.",
+     "fotos": [
+      "privado:km-KM184-1a.jpg",
+      "privado:catxl-KM184.1a.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x15e385cd4": {
    "tengo": true,
@@ -2866,7 +3000,31 @@
     "privado:anio-O-x71768fc80-1.jpg"
    ],
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "variantes": [
+    {
+     "nombre": "Latón amarillo (KM 181)",
+     "explicacion": "Versión de 1945: catálogo KM# 181. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-x71768fc80-0.jpg",
+      "privado:anio-O-x71768fc80-1.jpg",
+      "privado:catxl-KM181.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Latón rojo (KM 181a)",
+     "explicacion": "Versión de 1945: catálogo KM# 181a. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 céntimos (latón rojo) 1945 · Latón.",
+     "fotos": [
+      "privado:km-KM181a.jpg",
+      "privado:catxl-KM181a.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-xfe54a68f0": {
    "tengo": false,
@@ -2878,6 +3036,30 @@
    "fo": "FO# 17022",
    "fotosCompra": [
     "privado:km-KM181a.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Latón rojo (KM 181a)",
+     "explicacion": "Versión de 1945: catálogo KM# 181a. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM181a.jpg",
+      "privado:catxl-KM181a.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Latón amarillo (KM 181)",
+     "explicacion": "Versión de 1945: catálogo KM# 181. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 céntimos (latón amarillo) 1945 · Latón.",
+     "fotos": [
+      "privado:anio-O-x71768fc80-0.jpg",
+      "privado:anio-O-x71768fc80-1.jpg",
+      "privado:catxl-KM181.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-xc9db761fe": {
@@ -3136,6 +3318,39 @@
    "fo": "FO# 11466",
    "fotosCompra": [
     "privado:km-KM158.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "KM 158 (6,25 g)",
+     "explicacion": "Versión de 1923: peso: 6,25 g; catálogo KM# 158. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM158.jpg",
+      "privado:catxl-KM158.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: KM 159 (6,30 g)",
+     "explicacion": "Versión de 1923: peso: 6,30 g; catálogo KM# 159. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 céntimos 1923 · Plata.",
+     "fotos": [
+      "privado:km-KM159.jpg",
+      "privado:catxl-KM159.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: Resellada (KM 159.1)",
+     "explicacion": "Versión de 1923: Resellada en moneda de 25 céntimos 1889 / resellada en moneda de 1892 / resellada en moneda de 1893; catálogo KM# 159.1. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 céntimos 1923 · Plata.",
+     "fotos": [
+      "privado:km-KM158.jpg",
+      "privado:catxl-KM159.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-x507cade4f": {
@@ -3148,6 +3363,39 @@
    "fo": "FO# 11467",
    "fotosCompra": [
     "privado:km-KM159.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "KM 159 (6,30 g)",
+     "explicacion": "Versión de 1923: peso: 6,30 g; catálogo KM# 159. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM159.jpg",
+      "privado:catxl-KM159.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: KM 158 (6,25 g)",
+     "explicacion": "Versión de 1923: peso: 6,25 g; catálogo KM# 158. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 céntimos 1923 · Plata.",
+     "fotos": [
+      "privado:km-KM158.jpg",
+      "privado:catxl-KM158.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: Resellada (KM 159.1)",
+     "explicacion": "Versión de 1923: Resellada en moneda de 25 céntimos 1889 / resellada en moneda de 1892 / resellada en moneda de 1893; catálogo KM# 159.1. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 céntimos 1923 · Plata.",
+     "fotos": [
+      "privado:km-KM158.jpg",
+      "privado:catxl-KM159.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-xe084069b3": {
@@ -3160,6 +3408,39 @@
    "fo": "FO# 11466",
    "fotosCompra": [
     "privado:km-KM158.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Resellada (KM 159.1)",
+     "explicacion": "Versión de 1923: Resellada en moneda de 25 céntimos 1889 / resellada en moneda de 1892 / resellada en moneda de 1893; catálogo KM# 159.1. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM158.jpg",
+      "privado:catxl-KM159.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: KM 158 (6,25 g)",
+     "explicacion": "Versión de 1923: peso: 6,25 g; catálogo KM# 158. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 céntimos 1923 · Plata.",
+     "fotos": [
+      "privado:km-KM158.jpg",
+      "privado:catxl-KM158.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: KM 159 (6,30 g)",
+     "explicacion": "Versión de 1923: peso: 6,30 g; catálogo KM# 159. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 céntimos 1923 · Plata.",
+     "fotos": [
+      "privado:km-KM159.jpg",
+      "privado:catxl-KM159.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-xb1d723843": {
@@ -3198,7 +3479,31 @@
     "privado:anio-O-x6ecf97344-0.jpg",
     "privado:anio-O-x6ecf97344-1j.jpg"
    ],
-   "origen": "reventa"
+   "origen": "reventa",
+   "variantes": [
+    {
+     "nombre": "KM 176 (1937-1948)",
+     "explicacion": "Versión de 1948: peso: 6,10 g; diámetro: 25,00 mm; canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR; catálogo KM# 176. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-x6ecf97344-0.jpg",
+      "privado:anio-O-x6ecf97344-1j.jpg",
+      "privado:catxl-KM176.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: KM 182 (26 mm)",
+     "explicacion": "Versión de 1948: peso: 7,00 g; diámetro: 26,00 mm; canto: no tiene; catálogo KM# 182. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 céntimos 1948 · Cobre-níquel.",
+     "fotos": [
+      "privado:km-KM182.jpg",
+      "privado:catxl-KM182.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x298f9978e": {
    "tengo": true,
@@ -3211,7 +3516,31 @@
    "fotosCompra": [
     "privado:km-KM182.jpg"
    ],
-   "origen": "reventa"
+   "origen": "reventa",
+   "variantes": [
+    {
+     "nombre": "KM 182 (26 mm)",
+     "explicacion": "Versión de 1948: peso: 7,00 g; diámetro: 26,00 mm; canto: no tiene; catálogo KM# 182. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM182.jpg",
+      "privado:catxl-KM182.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: KM 176 (1937-1948)",
+     "explicacion": "Versión de 1948: peso: 6,10 g; diámetro: 25,00 mm; canto: Liso con inscripción BNCR-BNCR-BNCR-BNCR; catálogo KM# 176. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 céntimos 1948 · Cobre-níquel.",
+     "fotos": [
+      "privado:anio-O-x6ecf97344-0.jpg",
+      "privado:anio-O-x6ecf97344-1j.jpg",
+      "privado:catxl-KM176.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-xeb403d2e8": {
    "tengo": false,
@@ -3295,6 +3624,29 @@
    "fo": "FO# 10241",
    "fotosCompra": [
     "privado:anio-O-xdea505670-0.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Fecha pequeña",
+     "explicacion": "Versión de 1975: Fecha pequeña. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-xdea505670-0.jpg",
+      "privado:catxl-KM189.2.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Fecha grande",
+     "explicacion": "Versión de 1975: Fecha grande. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 céntimos 1975 · Fecha grande.",
+     "fotos": [
+      "privado:anio-O-x72b788c96-0.jpg",
+      "privado:catxl-KM189.2.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-x72b788c96": {
@@ -3308,7 +3660,30 @@
    "fotosCompra": [
     "privado:anio-O-x72b788c96-0.jpg"
    ],
-   "origen": "reventa"
+   "origen": "reventa",
+   "variantes": [
+    {
+     "nombre": "Fecha grande",
+     "explicacion": "Versión de 1975: Fecha grande. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-x72b788c96-0.jpg",
+      "privado:catxl-KM189.2.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Fecha pequeña",
+     "explicacion": "Versión de 1975: Fecha pequeña. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 céntimos 1975 · Fecha pequeña.",
+     "fotos": [
+      "privado:anio-O-xdea505670-0.jpg",
+      "privado:catxl-KM189.2.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x1184f6c99": {
    "tengo": true,
@@ -3632,6 +4007,32 @@
    "fotos": [
     "O-x7276031e9-video-escudo.jpg",
     "O-x7276031e9-video-valor.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "B.C.C.R. grandes - Barco grande - Letras de la cinta incusas",
+     "explicacion": "Versión de 1984: B.C.C.R. grandes - Barco grande - Letras de la cinta incusas. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "O-x7276031e9-video-escudo.jpg",
+      "O-x7276031e9-video-valor.jpg",
+      "privado:anio-O-x7276031e9-0.jpg",
+      "privado:anio-O-x7276031e9-1.jpg",
+      "privado:catxl-KM210.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve",
+     "explicacion": "Versión de 1984: B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 1 colón 1984 · B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve.",
+     "fotos": [
+      "privado:anio-O-x36a873a9a-0.jpg",
+      "privado:catxl-KM210.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-x36a873a9a": {
@@ -3644,7 +4045,33 @@
    ],
    "valor": 500,
    "origen": "reventa",
-   "costo": 500
+   "costo": 500,
+   "variantes": [
+    {
+     "nombre": "B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve",
+     "explicacion": "Versión de 1984: B.C.C.R.pequeñas - Barco pequeño - Letras de la cinta en relieve. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-x36a873a9a-0.jpg",
+      "privado:catxl-KM210.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: B.C.C.R. grandes - Barco grande - Letras de la cinta incusas",
+     "explicacion": "Versión de 1984: B.C.C.R. grandes - Barco grande - Letras de la cinta incusas. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 1 colón 1984 · B.C.C.R. grandes - Barco grande - Letras de la cinta incusas.",
+     "fotos": [
+      "O-x7276031e9-video-escudo.jpg",
+      "O-x7276031e9-video-valor.jpg",
+      "privado:anio-O-x7276031e9-0.jpg",
+      "privado:anio-O-x7276031e9-1.jpg",
+      "privado:catxl-KM210.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-xc3cc41333": {
    "tengo": true,
@@ -4319,7 +4746,28 @@
    ],
    "valor": 500,
    "costo": 500,
-   "origen": "reventa"
+   "origen": "reventa",
+   "variantes": [
+    {
+     "nombre": "Aluminio",
+     "explicacion": "Versión de 2012: diámetro: 22,80 mm. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM228-1b.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Tamaño grande",
+     "explicacion": "Versión de 2012: Tamaño grande; diámetro: 23,50 mm. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 10 colones 2012 · Tamaño grande.",
+     "fotos": [
+      "privado:km-KM228-1b.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-xb55357d3b": {
    "tengo": false,
@@ -4328,6 +4776,27 @@
    "fo": "FO# 13315",
    "fotosCompra": [
     "privado:km-KM228-1b.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Tamaño grande",
+     "explicacion": "Versión de 2012: Tamaño grande; diámetro: 23,50 mm. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM228-1b.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Aluminio",
+     "explicacion": "Versión de 2012: diámetro: 22,80 mm. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 10 colones 2012 · Aluminio.",
+     "fotos": [
+      "privado:km-KM228-1b.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-xeea12af89": {
@@ -4863,7 +5332,42 @@
     "privado:km-KM239-1.jpg"
    ],
    "valor": 1000,
-   "costo": 1000
+   "costo": 1000,
+   "variantes": [
+    {
+     "nombre": "Números gruesos - no magnética",
+     "explicacion": "Versión de 2003: Números gruesos - no magnética; material: Aluminio-bronce; catálogo KM# 239.1. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM239-1.jpg",
+      "privado:catxl-KM239.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: No magnética - muy rara",
+     "explicacion": "Versión de 2003: No magnética - muy rara; material: Latón; catálogo KM# 239.2. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 500 colones 2003 · No magnética - muy rara.",
+     "fotos": [
+      "privado:km-KM239-2.jpg",
+      "privado:catxl-KM239.2.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: ceros redondos",
+     "explicacion": "Versión de 2003: catálogo KM# 239.2. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 500 colones 2003 · ceros redondos.",
+     "fotos": [
+      "O-xe41776751-video-escudo.jpg",
+      "O-xe41776751-video-valor.jpg",
+      "privado:km-KM239-2.jpg",
+      "privado:catxl-KM239.2.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x7a50c185a": {
    "tengo": true,
@@ -4874,7 +5378,42 @@
     "privado:km-KM239-2.jpg"
    ],
    "valor": 15000,
-   "costo": 60000
+   "costo": 60000,
+   "variantes": [
+    {
+     "nombre": "No magnética - muy rara",
+     "explicacion": "Versión de 2003: No magnética - muy rara; material: Latón; catálogo KM# 239.2. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM239-2.jpg",
+      "privado:catxl-KM239.2.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Números gruesos - no magnética",
+     "explicacion": "Versión de 2003: Números gruesos - no magnética; material: Aluminio-bronce; catálogo KM# 239.1. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 500 colones 2003 · Números gruesos - no magnética.",
+     "fotos": [
+      "privado:km-KM239-1.jpg",
+      "privado:catxl-KM239.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: ceros redondos",
+     "explicacion": "Versión de 2003: catálogo KM# 239.2. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 500 colones 2003 · ceros redondos.",
+     "fotos": [
+      "O-xe41776751-video-escudo.jpg",
+      "O-xe41776751-video-valor.jpg",
+      "privado:km-KM239-2.jpg",
+      "privado:catxl-KM239.2.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x23d1289ee": {
    "tengo": true,
@@ -4966,6 +5505,41 @@
    "fotos": [
     "O-xe41776751-video-escudo.jpg",
     "O-xe41776751-video-valor.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "ceros redondos",
+     "explicacion": "Versión de 2003: catálogo KM# 239.2. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "O-xe41776751-video-escudo.jpg",
+      "O-xe41776751-video-valor.jpg",
+      "privado:km-KM239-2.jpg",
+      "privado:catxl-KM239.2.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Números gruesos - no magnética",
+     "explicacion": "Versión de 2003: Números gruesos - no magnética; material: Aluminio-bronce; catálogo KM# 239.1. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 500 colones 2003 · Números gruesos - no magnética.",
+     "fotos": [
+      "privado:km-KM239-1.jpg",
+      "privado:catxl-KM239.1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: No magnética - muy rara",
+     "explicacion": "Versión de 2003: No magnética - muy rara; material: Latón; catálogo KM# 239.2. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 500 colones 2003 · No magnética - muy rara.",
+     "fotos": [
+      "privado:km-KM239-2.jpg",
+      "privado:catxl-KM239.2.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-x903a1aa01": {
@@ -5078,7 +5652,24 @@
    "costo": 30000,
    "valor": 35000,
    "km": "KM# 110",
-   "fo": "FO# 11436"
+   "fo": "FO# 11436",
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Versión de 1872. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: ensayos en metal blanco",
+     "explicacion": "Versión de 1872: ensayos en metal blanco. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 centavos 1872 · ensayos en metal blanco.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-xf29b3e962": {
    "tengo": false,
@@ -5086,7 +5677,24 @@
    "costo": 30000,
    "valor": 35000,
    "km": "KM# 110",
-   "fo": "FO# 11436"
+   "fo": "FO# 11436",
+   "variantes": [
+    {
+     "nombre": "ensayos en metal blanco",
+     "explicacion": "Versión de 1872: ensayos en metal blanco. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Normal",
+     "explicacion": "Versión de 1872. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 centavos 1872.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x54d0eadcb": {
    "tengo": true,
@@ -5133,6 +5741,25 @@
    "fo": "FO# 11454",
    "fotosCompra": [
     "privado:anio-O-xfbcf86b5f-0.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Versión de 1889. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-xfbcf86b5f-0.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Proof",
+     "explicacion": "Versión de 1889: Proof. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 centavos 1889 · Proof.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-xb903ac08e": {
@@ -5142,7 +5769,26 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 128",
-   "fo": "FO# 11454"
+   "fo": "FO# 11454",
+   "variantes": [
+    {
+     "nombre": "Proof",
+     "explicacion": "Versión de 1889: Proof. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Normal",
+     "explicacion": "Versión de 1889. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 5 centavos 1889.",
+     "fotos": [
+      "privado:anio-O-xfbcf86b5f-0.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x9a3268c79": {
    "tengo": false,
@@ -5207,6 +5853,27 @@
    "fo": "FO# 11437",
    "fotosCompra": [
     "privado:km-KM111.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Versión de 1872. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM111.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: ensayos en metal blanco",
+     "explicacion": "Versión de 1872: ensayos en metal blanco. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 10 centavos 1872 · ensayos en metal blanco.",
+     "fotos": [
+      "privado:km-KM111.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-xaa5fb7b92": {
@@ -5218,6 +5885,27 @@
    "fo": "FO# 11437",
    "fotosCompra": [
     "privado:km-KM111.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "ensayos en metal blanco",
+     "explicacion": "Versión de 1872: ensayos en metal blanco. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM111.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Normal",
+     "explicacion": "Versión de 1872. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 10 centavos 1872.",
+     "fotos": [
+      "privado:km-KM111.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-x886fea3dd": {
@@ -5245,6 +5933,27 @@
    "fo": "FO# 11451",
    "fotosCompra": [
     "privado:anio-O-x6d548f835-0.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Versión de 1886. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-x6d548f835-0.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: microletra CB debajo del escudo",
+     "explicacion": "Versión de 1886: microletra CB debajo del escudo. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 10 centavos 1886 · microletra CB debajo del escudo.",
+     "fotos": [
+      "privado:anio-O-x350c492e0-0.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-x350c492e0": {
@@ -5257,6 +5966,27 @@
    "fo": "FO# 11451",
    "fotosCompra": [
     "privado:anio-O-x350c492e0-0.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "microletra CB debajo del escudo",
+     "explicacion": "Versión de 1886: microletra CB debajo del escudo. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-x350c492e0-0.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Normal",
+     "explicacion": "Versión de 1886. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 10 centavos 1886.",
+     "fotos": [
+      "privado:anio-O-x6d548f835-0.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-xdfb74d609": {
@@ -5281,6 +6011,27 @@
    "fo": "FO# 8722",
    "fotosCompra": [
     "privado:anio-O-x1338f502a-0.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Versión de 1889. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-x1338f502a-0.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Proof",
+     "explicacion": "Versión de 1889: Proof. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 10 centavos 1889 · Proof.",
+     "fotos": [
+      "privado:km-KM129.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-x57e5bfbfa": {
@@ -5293,6 +6044,27 @@
    "fo": "FO# 8722",
    "fotosCompra": [
     "privado:km-KM129.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Proof",
+     "explicacion": "Versión de 1889: Proof. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:km-KM129.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Normal",
+     "explicacion": "Versión de 1889. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 10 centavos 1889.",
+     "fotos": [
+      "privado:anio-O-x1338f502a-0.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-x70cf42be8": {
@@ -5325,7 +6097,24 @@
    "costo": 30000,
    "valor": 45000,
    "km": "KM# 106",
-   "fo": "FO# 11435"
+   "fo": "FO# 11435",
+   "variantes": [
+    {
+     "nombre": "Números pequeños",
+     "explicacion": "Versión de 1864: nuemros pequeños. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Números grandes",
+     "explicacion": "Versión de 1864: numeros grandes. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1864 · numeros grandes.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-xe4f26576a": {
    "tengo": false,
@@ -5333,7 +6122,24 @@
    "costo": 30000,
    "valor": 45000,
    "km": "KM# 106",
-   "fo": "FO# 11435"
+   "fo": "FO# 11435",
+   "variantes": [
+    {
+     "nombre": "Números grandes",
+     "explicacion": "Versión de 1864: numeros grandes. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Números pequeños",
+     "explicacion": "Versión de 1864: nuemros pequeños. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1864 · nuemros pequeños.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x1a6760e2e": {
    "tengo": false,
@@ -5365,6 +6171,36 @@
    "fo": "FO# 11452",
    "fotosCompra": [
     "privado:miguel-25-centavos-1886.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "GW-9Ds",
+     "explicacion": "Versión de 1886: GW-9Ds. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:miguel-25-centavos-1886.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: 9Ds-GW",
+     "explicacion": "Versión de 1886: 9Ds-GW. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1886 · 9Ds-GW.",
+     "fotos": [
+      "privado:miguel-25-centavos-1886.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: 9Ds-GW microletra C debajo del escudo",
+     "explicacion": "Versión de 1886: 9Ds-GW microletra C debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1886 · 9Ds-GW microletra C debajo del escudo.",
+     "fotos": [
+      "privado:miguel-25-centavos-1886.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-xa747aa459": {
@@ -5377,6 +6213,36 @@
    "fo": "FO# 11452",
    "fotosCompra": [
     "privado:miguel-25-centavos-1886.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "9Ds-GW",
+     "explicacion": "Versión de 1886: 9Ds-GW. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:miguel-25-centavos-1886.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: GW-9Ds",
+     "explicacion": "Versión de 1886: GW-9Ds. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1886 · GW-9Ds.",
+     "fotos": [
+      "privado:miguel-25-centavos-1886.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: 9Ds-GW microletra C debajo del escudo",
+     "explicacion": "Versión de 1886: 9Ds-GW microletra C debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1886 · 9Ds-GW microletra C debajo del escudo.",
+     "fotos": [
+      "privado:miguel-25-centavos-1886.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-x43a40c16c": {
@@ -5389,6 +6255,36 @@
    "fo": "FO# 11452",
    "fotosCompra": [
     "privado:miguel-25-centavos-1886.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "9Ds-GW microletra C debajo del escudo",
+     "explicacion": "Versión de 1886: 9Ds-GW microletra C debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:miguel-25-centavos-1886.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: GW-9Ds",
+     "explicacion": "Versión de 1886: GW-9Ds. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1886 · GW-9Ds.",
+     "fotos": [
+      "privado:miguel-25-centavos-1886.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: 9Ds-GW",
+     "explicacion": "Versión de 1886: 9Ds-GW. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1886 · 9Ds-GW.",
+     "fotos": [
+      "privado:miguel-25-centavos-1886.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-xfc97ea550": {
@@ -5398,7 +6294,31 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 127.1",
-   "fo": "FO# 11452"
+   "fo": "FO# 11452",
+   "variantes": [
+    {
+     "nombre": "GW-9Ds microletra CB debajo del escudo",
+     "explicacion": "Versión de 1887: GW-9Ds microletra CB debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: 9Ds-GW microletra C debajo del escudo",
+     "explicacion": "Versión de 1887: 9Ds-GW microletra C debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1887 · 9Ds-GW microletra C debajo del escudo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: 9Ds-GW microletra CB debajo del escudo",
+     "explicacion": "Versión de 1887: 9Ds-GW microletra CB debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1887 · 9Ds-GW microletra CB debajo del escudo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x3a5a52068": {
    "tengo": false,
@@ -5407,7 +6327,31 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 127.1",
-   "fo": "FO# 11452"
+   "fo": "FO# 11452",
+   "variantes": [
+    {
+     "nombre": "9Ds-GW microletra C debajo del escudo",
+     "explicacion": "Versión de 1887: 9Ds-GW microletra C debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: GW-9Ds microletra CB debajo del escudo",
+     "explicacion": "Versión de 1887: GW-9Ds microletra CB debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1887 · GW-9Ds microletra CB debajo del escudo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: 9Ds-GW microletra CB debajo del escudo",
+     "explicacion": "Versión de 1887: 9Ds-GW microletra CB debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1887 · 9Ds-GW microletra CB debajo del escudo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x630ee3d25": {
    "tengo": false,
@@ -5416,7 +6360,31 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 127.1",
-   "fo": "FO# 11452"
+   "fo": "FO# 11452",
+   "variantes": [
+    {
+     "nombre": "9Ds-GW microletra CB debajo del escudo",
+     "explicacion": "Versión de 1887: 9Ds-GW microletra CB debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: GW-9Ds microletra CB debajo del escudo",
+     "explicacion": "Versión de 1887: GW-9Ds microletra CB debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1887 · GW-9Ds microletra CB debajo del escudo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: 9Ds-GW microletra C debajo del escudo",
+     "explicacion": "Versión de 1887: 9Ds-GW microletra C debajo del escudo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1887 · 9Ds-GW microletra C debajo del escudo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x363d6a360": {
    "tengo": false,
@@ -5425,7 +6393,31 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 130",
-   "fo": "FO# 8724"
+   "fo": "FO# 8724",
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Versión de 1889. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Proof",
+     "explicacion": "Versión de 1889: Proof. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1889 · Proof.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: ensayo octagonal del reverso en plomo",
+     "explicacion": "Versión de 1889: ensayo octagonal del reverso en plomo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1889 · ensayo octagonal del reverso en plomo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-xe42753b8d": {
    "tengo": false,
@@ -5434,7 +6426,31 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 130",
-   "fo": "FO# 8724"
+   "fo": "FO# 8724",
+   "variantes": [
+    {
+     "nombre": "Proof",
+     "explicacion": "Versión de 1889: Proof. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Normal",
+     "explicacion": "Versión de 1889. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1889.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: ensayo octagonal del reverso en plomo",
+     "explicacion": "Versión de 1889: ensayo octagonal del reverso en plomo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1889 · ensayo octagonal del reverso en plomo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-xd824c07da": {
    "tengo": false,
@@ -5443,7 +6459,31 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 130",
-   "fo": "FO# 8724"
+   "fo": "FO# 8724",
+   "variantes": [
+    {
+     "nombre": "ensayo octagonal del reverso en plomo",
+     "explicacion": "Versión de 1889: ensayo octagonal del reverso en plomo. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Normal",
+     "explicacion": "Versión de 1889. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1889.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: Proof",
+     "explicacion": "Versión de 1889: Proof. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1889 · Proof.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x85fa3bc88": {
    "tengo": false,
@@ -5474,6 +6514,33 @@
    "fotosCompra": [
     "privado:anio-O-x32b16035a-0.jpg",
     "privado:anio-O-x32b16035a-1.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Versión de 1893. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [
+      "privado:anio-O-x32b16035a-0.jpg",
+      "privado:anio-O-x32b16035a-1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Pruebas en cobre, bronce y plata",
+     "explicacion": "Versión de 1893: Pruebas en cobre, bronce y plata. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1893 · Pruebas en cobre, bronce y plata.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: tipo medalla o eje vertical",
+     "explicacion": "Versión de 1893: tipo medalla o eje vertical. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1893 · tipo medalla o eje vertical.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
    ]
   },
   "O-xc68c47c19": {
@@ -5483,7 +6550,34 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 130",
-   "fo": "FO# 8724"
+   "fo": "FO# 8724",
+   "variantes": [
+    {
+     "nombre": "Pruebas en cobre, bronce y plata",
+     "explicacion": "Versión de 1893: Pruebas en cobre, bronce y plata. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Normal",
+     "explicacion": "Versión de 1893. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1893.",
+     "fotos": [
+      "privado:anio-O-x32b16035a-0.jpg",
+      "privado:anio-O-x32b16035a-1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: tipo medalla o eje vertical",
+     "explicacion": "Versión de 1893: tipo medalla o eje vertical. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1893 · tipo medalla o eje vertical.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x0de94f948": {
    "tengo": false,
@@ -5492,7 +6586,34 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 130",
-   "fo": "FO# 8724"
+   "fo": "FO# 8724",
+   "variantes": [
+    {
+     "nombre": "tipo medalla o eje vertical",
+     "explicacion": "Versión de 1893: tipo medalla o eje vertical. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Normal",
+     "explicacion": "Versión de 1893. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1893.",
+     "fotos": [
+      "privado:anio-O-x32b16035a-0.jpg",
+      "privado:anio-O-x32b16035a-1.jpg"
+     ],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: Pruebas en cobre, bronce y plata",
+     "explicacion": "Versión de 1893: Pruebas en cobre, bronce y plata. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 25 centavos 1893 · Pruebas en cobre, bronce y plata.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x9d354d99e": {
    "tengo": false,
@@ -5540,7 +6661,24 @@
    "costo": 30000,
    "valor": 50000,
    "km": "KM# 112",
-   "fo": "FO# 11438"
+   "fo": "FO# 11438",
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Versión de 1875. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: tipo medalla o eje vertical",
+     "explicacion": "Versión de 1875: tipo medalla o eje vertical. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 centavos 1875 · tipo medalla o eje vertical.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-xb997f5c30": {
    "tengo": false,
@@ -5548,7 +6686,24 @@
    "costo": 30000,
    "valor": 50000,
    "km": "KM# 112",
-   "fo": "FO# 11438"
+   "fo": "FO# 11438",
+   "variantes": [
+    {
+     "nombre": "tipo medalla o eje vertical",
+     "explicacion": "Versión de 1875: tipo medalla o eje vertical. Hay 2 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: Normal",
+     "explicacion": "Versión de 1875. Hay 2 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 centavos 1875.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x282e75903": {
    "tengo": false,
@@ -5606,7 +6761,31 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 131",
-   "fo": "FO# 11455"
+   "fo": "FO# 11455",
+   "variantes": [
+    {
+     "nombre": "ensayos en plomo",
+     "explicacion": "Versión de 1889: ensayos en plomo. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: pruebas en bronce y cobre Fecha no aparece el 89",
+     "explicacion": "Versión de 1889: pruebas en bronce y cobre Fecha no aparece el 89. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 centavos 1889 · pruebas en bronce y cobre Fecha no aparece el 89.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: ensayo octagonal del reverso en plomo",
+     "explicacion": "Versión de 1889: ensayo octagonal del reverso en plomo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 centavos 1889 · ensayo octagonal del reverso en plomo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x58dae5f57": {
    "tengo": false,
@@ -5615,7 +6794,31 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 131",
-   "fo": "FO# 11455"
+   "fo": "FO# 11455",
+   "variantes": [
+    {
+     "nombre": "pruebas en bronce y cobre Fecha no aparece el 89",
+     "explicacion": "Versión de 1889: pruebas en bronce y cobre Fecha no aparece el 89. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: ensayos en plomo",
+     "explicacion": "Versión de 1889: ensayos en plomo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 centavos 1889 · ensayos en plomo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: ensayo octagonal del reverso en plomo",
+     "explicacion": "Versión de 1889: ensayo octagonal del reverso en plomo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 centavos 1889 · ensayo octagonal del reverso en plomo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x64aafd8a4": {
    "tengo": false,
@@ -5624,7 +6827,31 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 131",
-   "fo": "FO# 11455"
+   "fo": "FO# 11455",
+   "variantes": [
+    {
+     "nombre": "ensayo octagonal del reverso en plomo",
+     "explicacion": "Versión de 1889: ensayo octagonal del reverso en plomo. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true,
+     "propia": true
+    },
+    {
+     "nombre": "Otra: ensayos en plomo",
+     "explicacion": "Versión de 1889: ensayos en plomo. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 centavos 1889 · ensayos en plomo.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    },
+    {
+     "nombre": "Otra: pruebas en bronce y cobre Fecha no aparece el 89",
+     "explicacion": "Versión de 1889: pruebas en bronce y cobre Fecha no aparece el 89. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 50 centavos 1889 · pruebas en bronce y cobre Fecha no aparece el 89.",
+     "fotos": [],
+     "notas": "",
+     "mismoAnio": true
+    }
+   ]
   },
   "O-x885f202b7": {
    "tengo": true,
