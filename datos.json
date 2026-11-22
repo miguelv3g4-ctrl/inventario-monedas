@@ -8218,7 +8218,11 @@
     "O-77e20f9a-billete-1.jpg",
     "O-77e20f9a-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nValor: falta el monto."
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nCosto: 1 dólar × 600 colones (lo que costaba el dólar cuando Miguel lo compró) = 600 colones. Valor de reventa: costo + 40 % = 840 colones.",
+   "costo": 600,
+   "valor": 840,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Costo + 40 % (reventa)"
   },
   "O-a628e8e4": {
    "tengo": true,
@@ -8227,7 +8231,11 @@
     "O-a628e8e4-billete-1.jpg",
     "O-a628e8e4-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nValor: falta el monto."
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nCosto: 2 dólares × 600 colones (lo que costaba el dólar cuando Miguel lo compró) = 1 200 colones. Valor de reventa: costo + 40 % = 1 680 colones.",
+   "costo": 1200,
+   "valor": 1680,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Costo + 40 % (reventa)"
   },
   "O-0e88d6af": {
    "tengo": true,
@@ -8236,7 +8244,11 @@
     "O-0e88d6af-billete-1.jpg",
     "O-0e88d6af-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nValor: falta el monto."
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nCosto: 5 dólares × 600 colones (lo que costaba el dólar cuando Miguel lo compró) = 3 000 colones. Valor de reventa: costo + 40 % = 4 200 colones.",
+   "costo": 3000,
+   "valor": 4200,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Costo + 40 % (reventa)"
   },
   "O-74fecfbd": {
    "tengo": true,
@@ -8245,7 +8257,11 @@
     "O-74fecfbd-billete-1.jpg",
     "O-74fecfbd-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nValor: falta el monto."
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nCosto: 10 dólares × 600 colones (lo que costaba el dólar cuando Miguel lo compró) = 6 000 colones. Valor de reventa: costo + 40 % = 8 400 colones.",
+   "costo": 6000,
+   "valor": 8400,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Costo + 40 % (reventa)"
   },
   "O-4c2b8499": {
    "tengo": true,
