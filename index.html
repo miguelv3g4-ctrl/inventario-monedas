@@ -1259,7 +1259,7 @@
       const tx = el('div', 'tx');
       tx.append(el('span', '', p.moneda), el('small', '', p.coleccion + (reg(p.id).km ? ' · ' + reg(p.id).km : '') + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '')));
       if (tengo(p.id)) tx.appendChild(el('small', 'fechaCons', 'Conseguida: ' + (fecha(r.fechaCompra) || 'sin fecha')));
-      { const g = /Grado estimado( del lote)?[^:]*: ([^.]*?)(?: \(lote\))?\. Nivel: ([^(]*)\(/.exec(r.notas || ''); if (g) tx.appendChild(el('small', 'fechaCons', 'Grado' + (g[1] ? ' del lote' : '') + ': ' + g[2] + ' · ' + g[3].trim())); }
+      { const g = /Grado estimado( del lote)?[^:]*: ([^.]*?)(?: \(lote\))?\. Nivel: (.*?)\. Detalle/.exec(r.notas || ''); if (g) tx.appendChild(el('small', 'fechaCons', 'Grado' + (g[1] ? ' del lote' : '') + ': ' + g[2] + ' · ' + g[3].replace(/ \([^)]*\)/g, ''))); }
       if (p.seccion === 'ms-sueltas') {
         // MS sueltas: cantidad que tengo, precio por pieza y total (cantidad x precio)
         const q = tengo(p.id) ? cant(p.id) : 0, u = valorU(p);
