@@ -4174,14 +4174,16 @@
   },
   "O-x41fa83d24": {
    "tengo": true,
-   "notas": "Material: Níquel · Peso: 22,68 g · Diámetro: 37,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"100 colones\".",
-   "km": "KM# 224",
-   "fo": "FO# 8726",
    "fotosCompra": [
     "privado:km-KM224.jpg"
    ],
-   "valor": 50000,
-   "costo": 50000
+   "km": "KM# 224",
+   "valor": 25000,
+   "fechaValor": "2026-11-21",
+   "fuenteValor": "Precio revendedor",
+   "costo": 25000,
+   "origen": "reventa",
+   "notas": "Material: Níquel · Peso: 22,68 g · Diámetro: 37,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"100 colones\"."
   },
   "O-xc0213beb3": {
    "tengo": true,
