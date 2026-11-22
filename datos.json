@@ -8382,41 +8382,12 @@
     "O-55fda5b4-billete-5.jpg",
     "O-55fda5b4-billete-6.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; series A y B.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
-   "variantes": [
-    {
-     "nombre": "5000 A serie 007321451",
-     "explicacion": "Billete con número de serie A007321451; papel con ventana transparente; series A y B. Fotos: frente y reverso. Valor: 20 000 colones.",
-     "fotos": [
-      "O-55fda5b4-billete-1.jpg",
-      "O-55fda5b4-billete-2.jpg"
-     ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: dobleces suaves, colores vivos, leve arrugado en el papel.\nValor de reventa: 20 000 colones: los billetes de 5000 serie A son escasos (papá).",
-     "valor": 20000
-    },
-    {
-     "nombre": "5000 B serie 019868333",
-     "explicacion": "Billete con número de serie B019868333; papel con ventana transparente; series A y B. Fotos: frente y reverso. Valor: 6 500 colones.",
-     "fotos": [
-      "O-55fda5b4-billete-3.jpg",
-      "O-55fda5b4-billete-4.jpg"
-     ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 20. Nivel: Fino (F 15) a Muy fino (VF 25). Detalle: dobleces marcados y arrugas, colores algo gastados, sin roturas.\nValor de reventa: 6500 colones. Dos billetes de 5000 serie B y C algo maltratados se vendieron en 13 000 (6500 cada uno).",
-     "valor": 6500
-    },
-    {
-     "nombre": "5000 B serie 007794147",
-     "explicacion": "Billete con número de serie B007794147; papel con ventana transparente; series A y B. Fotos: frente y reverso. Valor: 6 500 colones.",
-     "fotos": [
-      "O-55fda5b4-billete-5.jpg",
-      "O-55fda5b4-billete-6.jpg"
-     ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 12. Nivel: Muy bueno (VG 10) a Fino (F 15). Detalle: muy circulado, dobleces centrales marcados, arrugas y suciedad, orillas cansadas.\nValor de reventa: 6500 colones. Dos billetes de 5000 serie B y C algo maltratados se vendieron en 13 000 (6500 cada uno).",
-     "valor": 6500
-    }
-   ],
+   "valor": 15000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
+   "fuenteValor": "Precio de reventa según papá (22/11/2026)",
+   "costo": 10000,
+   "origen": "reventa",
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; series A y B.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana."
   },
   "O-00d26b62": {
    "tengo": true,
