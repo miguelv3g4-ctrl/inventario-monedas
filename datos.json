@@ -1799,7 +1799,7 @@
   },
   "O-xc9390bfc0": {
    "tengo": false,
-   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
+   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor\nFotos de Miguel (22/11/2026): monedas de plata de 5 céntimos de diferentes años; la de la izquierda es de 1910, el año de la otra no se lee en la foto.",
    "costo": 4500,
    "valor": 4000,
    "km": "KM# 145",
@@ -1808,7 +1808,10 @@
     "privado:km-KM145.jpg"
    ],
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "fotos": [
+    "O-xc9390bfc0-mia-14.jpg"
+   ]
   },
   "O-x9ce4b4b70": {
    "tengo": false,
@@ -1856,6 +1859,28 @@
    "fotosCompra": [
     "5-centimos-1918-compra.jpg",
     "5-centimos-1918-compra-2.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "5-centimos-1918-compra.jpg",
+      "5-centimos-1918-compra-2.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Fecha escasa",
+     "explicacion": "Fecha escasa: de este año se acuñaron pocas piezas y es difícil de encontrar.",
+     "fotos": [
+      "O-xbfc96e95d-especial-9.jpg"
+     ],
+     "notas": "Fecha escasa (Miguel)."
+    }
+   ],
+   "fotos": [
+    "O-xbfc96e95d-especial-9.jpg"
    ]
   },
   "O-x9bcc64a7b": {
@@ -1879,6 +1904,27 @@
    "fo": "FO# 11464",
    "fotosCompra": [
     "privado:km-KM151.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM151.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Fecha escasa",
+     "explicacion": "Fecha escasa: de este año se acuñaron pocas piezas y es difícil de encontrar.",
+     "fotos": [
+      "O-xc48e91c0a-especial-8.jpg"
+     ],
+     "notas": "Fecha escasa (Miguel)."
+    }
+   ],
+   "fotos": [
+    "O-xc48e91c0a-especial-8.jpg"
    ]
   },
   "O-x259014684": {
@@ -1892,6 +1938,28 @@
    "fotosCompra": [
     "privado:anio-O-x259014684-0.jpg",
     "privado:anio-O-x259014684-1.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:anio-O-x259014684-0.jpg",
+      "privado:anio-O-x259014684-1.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Fecha escasa",
+     "explicacion": "Fecha escasa: de este año se acuñaron pocas piezas y es difícil de encontrar. Esta pieza está muy maltratada.",
+     "fotos": [
+      "O-x259014684-especial-7.jpg"
+     ],
+     "notas": "Fecha escasa (Miguel)."
+    }
+   ],
+   "fotos": [
+    "O-x259014684-especial-7.jpg"
    ]
   },
   "O-x63c69a828": {
@@ -2346,6 +2414,27 @@
    "fo": "FO# 11461",
    "fotosCompra": [
     "privado:km-KM148.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM148.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Fecha escasa",
+     "explicacion": "Fecha escasa: de este año se acuñaron pocas piezas y es difícil de encontrar.",
+     "fotos": [
+      "O-xb402c067e-especial-10.jpg"
+     ],
+     "notas": "Fecha escasa (Miguel)."
+    }
+   ],
+   "fotos": [
+    "O-xb402c067e-especial-10.jpg"
    ]
   },
   "O-x26a905aee": {
@@ -3886,7 +3975,31 @@
    "fo": "FO# 6046",
    "valor": 1000,
    "costo": 1000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM227a.jpg",
+      "O-xd20f2c5d2-1795117846459-oal6g.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Error de cospel lleno",
+     "explicacion": "Error de acuñación: el troquel estaba lleno (de grasa o suciedad) y una parte del diseño no se marcó; en esta pieza no se nota el \"1\".",
+     "fotos": [
+      "O-xd20f2c5d2-especial-1.jpg",
+      "O-xd20f2c5d2-especial-2.jpg"
+     ],
+     "notas": "Error de cospel lleno: no se nota el \"1\" (Miguel)."
+    }
+   ],
+   "fotos": [
+    "O-xd20f2c5d2-especial-1.jpg",
+    "O-xd20f2c5d2-especial-2.jpg"
+   ]
   },
   "O-xd7c4d06a4": {
    "tengo": true,
@@ -5067,13 +5180,17 @@
   },
   "O-x886fea3dd": {
    "tengo": true,
-   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.",
+   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.\nFotos de Miguel (22/11/2026): pieza muy gastada; en el reverso se alcanza a leer \"10 ... G.C.R.\".",
    "costo": 30000,
    "valor": 40000,
    "km": "KM# 121",
    "fo": "FO# 11446",
    "fotosCompra": [
     "privado:km-KM121.jpg"
+   ],
+   "fotos": [
+    "O-x886fea3dd-mia-3.jpg",
+    "O-x886fea3dd-mia-4.jpg"
    ]
   },
   "O-x6d548f835": {
@@ -5186,11 +5303,15 @@
   },
   "O-x50c709336": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.",
+   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.\nFotos de Miguel (22/11/2026): pieza muy gastada con el escudo de 1875; la denominación (25 centavos) se dedujo por el tamaño, falta confirmarla.",
    "costo": 30000,
    "valor": 45000,
    "km": "KM# 106",
-   "fo": "FO# 11435"
+   "fo": "FO# 11435",
+   "fotos": [
+    "O-x50c709336-mia-5.jpg",
+    "O-x50c709336-mia-6.jpg"
+   ]
   },
   "O-x2561fd32e": {
    "tengo": false,
@@ -6713,6 +6834,44 @@
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio aproximado (Miguel)",
    "notas": "Estuche negro \"Bullion Collection\" con 14 barras plateadas, cada una en su cápsula.\nDiseños: réplicas de billetes de Estados Unidos de 1, 2, 5, 20 (frente), 20 (Casa Blanca), 50, 100, 500, 1000, 5000, 10 000 y 100 000 dólares, y dos de \"One Billion\".\nMarcadas \"GOLD 999999\": es una marca de fantasía de los artículos de recuerdo, no una ley real. Son piezas chapadas, de colección o regalo, no plata de inversión; el estuche no trae ceca ni certificado.\nValor: unos 40 000 colones (Miguel)."
+  },
+  "O-x21bc2c58c": {
+   "tengo": true,
+   "cantidad": 2,
+   "variantes": [
+    {
+     "nombre": "Fecha escasa",
+     "explicacion": "Fecha escasa: de este año se acuñaron pocas piezas y es difícil de encontrar.",
+     "fotos": [
+      "O-x21bc2c58c-especial-11.jpg"
+     ],
+     "notas": "Fecha escasa (Miguel)."
+    },
+    {
+     "nombre": "Rara",
+     "explicacion": "Moneda de 10 céntimos de 1918 difícil de encontrar. El reverso dice \"AMERICA CENTRAL · 10 CENTAVOS\".",
+     "fotos": [
+      "O-x21bc2c58c-especial-12.jpg",
+      "O-x21bc2c58c-especial-13.jpg"
+     ],
+     "notas": "Rara (Miguel). Muy gastada, con una raya que cruza el escudo."
+    }
+   ],
+   "fotos": [
+    "O-x21bc2c58c-especial-11.jpg",
+    "O-x21bc2c58c-especial-12.jpg",
+    "O-x21bc2c58c-especial-13.jpg"
+   ],
+   "notas": "Tarjeta creada con las fotos de Miguel (22/11/2026): dos piezas de 1918, una de fecha escasa y otra rara."
+  },
+  "O-xccf62f81e": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-xccf62f81e-mia-15.jpg",
+    "O-xccf62f81e-mia-16.jpg"
+   ],
+   "notas": "Boleto de café de latón (información de Miguel). Por un lado tiene el escudo antiguo de Costa Rica, con banderas, lanzas y cinco estrellas (tipo 1848-1906); por el otro, el número \"16\" dentro de una corona de laurel. No tiene fecha.\nQué son: en las fincas de café se le daba al cogedor un boleto de latón por cada cajuela de grano cosechado, y después lo cambiaba por dinero o mercadería. En Costa Rica se usaron como medio de pago de 1840 a 1943; después, solo para llevar la cuenta. No son moneda de curso legal. El número puede indicar la cantidad que valía o un código de la finca.\nFuentes: Revista Herencia (UCR), \"Boletos de café y fichas de empresas\"; Museos del Banco Central de Costa Rica."
   }
  },
  "sueltas": {},
@@ -9272,6 +9431,18 @@
    "categoria": "Estados Unidos",
    "seccion": "coleccion-extranjera",
    "ref": "fotos/bullion-collection-abierta.jpg"
+  },
+  {
+   "id": "O-x21bc2c58c",
+   "nombre": "10 céntimos 1918",
+   "categoria": "10 céntimos",
+   "seccion": "antano"
+  },
+  {
+   "id": "O-xccf62f81e",
+   "nombre": "Boleto de café · número 16",
+   "categoria": "Boletos de café",
+   "seccion": "antano"
   }
  ],
  "giros": {
