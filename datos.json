@@ -2056,7 +2056,8 @@
    ],
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
-   "origen": "reventa"
+   "origen": "reventa",
+   "cantidad": 2
   },
   "O-x58dfa2f51": {
    "tengo": true,
@@ -2070,7 +2071,8 @@
    ],
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
-   "origen": "reventa"
+   "origen": "reventa",
+   "cantidad": 2
   },
   "O-x15d4420cd": {
    "tengo": true,
@@ -2084,7 +2086,8 @@
    ],
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
-   "origen": "reventa"
+   "origen": "reventa",
+   "cantidad": 4
   },
   "O-x5a5f0dfd0": {
    "tengo": true,
@@ -2098,7 +2101,8 @@
    ],
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
-   "origen": "reventa"
+   "origen": "reventa",
+   "cantidad": 5
   },
   "O-x15e385cd4": {
    "tengo": true,
