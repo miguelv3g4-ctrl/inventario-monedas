@@ -8602,7 +8602,6 @@
   },
   "O-657e9acc": {
    "tengo": true,
-   "cantidad": 1,
    "fotos": [
     "O-657e9acc-mia-1.jpg",
     "O-657e9acc-mia-2.jpg",
@@ -8611,10 +8610,11 @@
    "fotosCompra": [
     "privado:recibo-museo-2026-10-23.jpg"
    ],
-   "costo": 10000,
-   "valor": 10000,
+   "valor": 20000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio del Museo del Banco Central",
+   "fuenteValor": "revental",
+   "costo": 10000,
+   "origen": "Banco Central de Costa Rica (emisión)",
    "notas": "Coleccionador del Banco Central \"Colección de monedas Lugares emblemáticos\" de 25 colones: una moneda por cada provincia. Limón: Playa Manzanillo. Puntarenas: el faro. Guanacaste: Casona de Santa Rosa. Heredia: el Fortín. Cartago: Basílica de Nuestra Señora de los Ángeles. Alajuela: Volcán Arenal. San José: Teatro Nacional. Trae además una moneda de 25 colones común.\nCada moneda: 22,50 mm, 1,50 mm de grueso, 4,3 g, de cobre, níquel y zinc.\nCompra: Museos del Banco Central, 23/10/2026, 10 000 colones con impuesto (8 849,56 + IVA). El recibo está en las fotos de compra (privado)."
   },
   "O-25fef205": {
