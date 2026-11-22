@@ -940,7 +940,7 @@
    "fechaCompra": "2025-07-23",
    "origen": "Banco Central de Costa Rica (emisión)",
    "fechaValor": "2026-11-21",
-   "fuenteValor": "Precio fijado por Miguel"
+   "fuenteValor": "Precio fijado por papá"
   },
   "C48": {
    "tengo": true,
@@ -957,7 +957,7 @@
    "fechaCompra": "2025-07-23",
    "origen": "Banco Central de Costa Rica (emisión)",
    "fechaValor": "2026-11-21",
-   "fuenteValor": "Precio fijado por Miguel"
+   "fuenteValor": "Precio fijado por papá"
   },
   "C49": {
    "tengo": true,
@@ -974,7 +974,7 @@
    "fechaCompra": "2025-07-23",
    "origen": "Banco Central de Costa Rica (emisión)",
    "fechaValor": "2026-11-21",
-   "fuenteValor": "Precio fijado por Miguel"
+   "fuenteValor": "Precio fijado por papá"
   },
   "C44": {
    "tengo": true,
@@ -1799,7 +1799,7 @@
   },
   "O-xc9390bfc0": {
    "tengo": false,
-   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor\nFotos de Miguel (22/11/2026): monedas de plata de 5 céntimos de diferentes años; la de la izquierda es de 1910, el año de la otra no se lee en la foto.",
+   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor\nFotos de papá (22/11/2026): monedas de plata de 5 céntimos de diferentes años; la de la izquierda es de 1910, el año de la otra no se lee en la foto.",
    "costo": 4500,
    "valor": 4000,
    "km": "KM# 145",
@@ -1876,7 +1876,7 @@
      "fotos": [
       "O-xbfc96e95d-especial-9.jpg"
      ],
-     "notas": "Fecha escasa (Miguel)."
+     "notas": "Fecha escasa (papá)."
     }
    ],
    "fotos": [
@@ -1920,7 +1920,7 @@
      "fotos": [
       "O-xc48e91c0a-especial-8.jpg"
      ],
-     "notas": "Fecha escasa (Miguel)."
+     "notas": "Fecha escasa (papá)."
     }
    ],
    "fotos": [
@@ -1955,7 +1955,7 @@
      "fotos": [
       "O-x259014684-especial-7.jpg"
      ],
-     "notas": "Fecha escasa (Miguel)."
+     "notas": "Fecha escasa (papá)."
     }
    ],
    "fotos": [
@@ -2198,7 +2198,7 @@
      "fotos": [
       "O-x1ca9dd607-especial-1.jpg"
      ],
-     "notas": "Diferencia en los números (Miguel). Identificada con la ficha de catálogo que pasó Miguel: KM# 184A, canto estriado."
+     "notas": "Diferencia en los números (papá). Identificada con la ficha de catálogo que pasó papá: KM# 184A, canto estriado."
     },
     {
      "nombre": "Otra: Canto liso (KM 184.1)",
@@ -2244,7 +2244,7 @@
      "fotos": [
       "O-x9dcbdff87-especial-1.jpg"
      ],
-     "notas": "Diferencia en los números (Miguel). Identificada con la ficha de catálogo que pasó Miguel: KM# 184.1, canto liso."
+     "notas": "Diferencia en los números (papá). Identificada con la ficha de catálogo que pasó papá: KM# 184.1, canto liso."
     },
     {
      "nombre": "Otra: Canto estriado (KM 184A)",
@@ -2384,7 +2384,7 @@
       "O-x15d4420cd-especial-1.jpg",
       "O-x15d4420cd-especial-2.jpg"
      ],
-     "notas": "Acero inoxidable (confirmado por Miguel)."
+     "notas": "Acero inoxidable (confirmado por papá)."
     },
     {
      "nombre": "Otra: Cobre-níquel",
@@ -2606,7 +2606,7 @@
      "fotos": [
       "O-xb402c067e-especial-10.jpg"
      ],
-     "notas": "Fecha escasa (Miguel)."
+     "notas": "Fecha escasa (papá)."
     }
    ],
    "fotos": [
@@ -2760,7 +2760,7 @@
   "O-xcf8b0e40e": {
    "tengo": true,
    "cantidad": 38,
-   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 38 (conteo de Miguel, 22/11/2026).",
+   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 38 (conteo de papá, 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.1a",
@@ -2775,7 +2775,7 @@
   "O-xc3d7fba09": {
    "tengo": true,
    "cantidad": 100,
-   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 100 (conteo de Miguel, 22/11/2026).",
+   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 100 (conteo de papá, 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.1a",
@@ -2790,7 +2790,7 @@
   "O-x22cea2e08": {
    "tengo": true,
    "cantidad": 80,
-   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 80 (conteo de Miguel, 22/11/2026).",
+   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 80 (conteo de papá, 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.1a",
@@ -2828,7 +2828,7 @@
   "O-x929b5dfa3": {
    "tengo": true,
    "cantidad": 145,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 145 (conteo de Miguel, 22/11/2026).",
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 145 (conteo de papá, 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2",
@@ -2843,7 +2843,7 @@
   "O-x1606e6042": {
    "tengo": true,
    "cantidad": 315,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 315 (conteo de Miguel, 22/11/2026).",
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 315 (conteo de papá, 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2",
@@ -2858,7 +2858,7 @@
   "O-x305516372": {
    "tengo": true,
    "cantidad": 80,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 80 (conteo de Miguel, 22/11/2026).",
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 80 (conteo de papá, 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2",
@@ -2873,7 +2873,7 @@
   "O-x7bf3b5c37": {
    "tengo": true,
    "cantidad": 180,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 180 (conteo de Miguel, 22/11/2026).",
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 180 (conteo de papá, 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2",
@@ -2888,7 +2888,7 @@
   "O-xd066553eb": {
    "tengo": true,
    "cantidad": 200,
-   "notas": "Material: Acero bañado en níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 200 (conteo de Miguel, 22/11/2026).",
+   "notas": "Material: Acero bañado en níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 200 (conteo de papá, 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2b",
@@ -2903,7 +2903,7 @@
   "O-xbe0d3afec": {
    "tengo": true,
    "cantidad": 225,
-   "notas": "Material: Aluminio · Peso: 0,60 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 225 (conteo de Miguel, 22/11/2026).",
+   "notas": "Material: Aluminio · Peso: 0,60 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 225 (conteo de papá, 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2a",
@@ -3084,7 +3084,7 @@
     },
     {
      "nombre": "Rara",
-     "explicacion": "Pieza rara: Miguel la marcó con \"R.\" en el cartón. Tiene manchas café de corrosión arriba, en \"DE\" y en la cimera.",
+     "explicacion": "Pieza rara: papá la marcó con \"R.\" en el cartón. Tiene manchas café de corrosión arriba, en \"DE\" y en la cimera.",
      "fotos": [
       "O-xc9db761fe-especial-1.jpg",
       "O-xc9db761fe-especial-2.jpg"
@@ -3564,12 +3564,12 @@
     },
     {
      "nombre": "Pieza especial",
-     "explicacion": "Pieza que Miguel marcó como especial. En la foto se ve circulada, con un golpe en el reborde abajo a la derecha; falta confirmar qué la hace especial.",
+     "explicacion": "Pieza que papá marcó como especial. En la foto se ve circulada, con un golpe en el reborde abajo a la derecha; falta confirmar qué la hace especial.",
      "fotos": [
       "O-xeb403d2e8-especial-1.jpg",
       "O-xeb403d2e8-especial-2.jpg"
      ],
-     "notas": "Por confirmar con Miguel qué tiene de especial."
+     "notas": "Por confirmar con papá qué tiene de especial."
     }
    ],
    "fotos": [
@@ -4462,7 +4462,7 @@
       "O-xd20f2c5d2-especial-1.jpg",
       "O-xd20f2c5d2-especial-2.jpg"
      ],
-     "notas": "Error de cospel lleno: no se nota el \"1\" (Miguel)."
+     "notas": "Error de cospel lleno: no se nota el \"1\" (papá)."
     }
    ],
    "fotos": [
@@ -5912,7 +5912,7 @@
   },
   "O-x886fea3dd": {
    "tengo": true,
-   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.\nFotos de Miguel (22/11/2026): pieza muy gastada; en el reverso se alcanza a leer \"10 ... G.C.R.\".",
+   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.\nFotos de papá (22/11/2026): pieza muy gastada; en el reverso se alcanza a leer \"10 ... G.C.R.\".",
    "costo": 30000,
    "valor": 40000,
    "km": "KM# 121",
@@ -6153,7 +6153,7 @@
   },
   "O-x50c709336": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.\nFotos de Miguel (22/11/2026): pieza muy gastada con el escudo de 1875; la denominación (25 centavos) se dedujo por el tamaño, falta confirmarla.",
+   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.\nFotos de papá (22/11/2026): pieza muy gastada con el escudo de 1875; la denominación (25 centavos) se dedujo por el tamaño, falta confirmarla.",
    "costo": 30000,
    "valor": 45000,
    "km": "KM# 106",
@@ -7800,7 +7800,7 @@
    "fo": "FO# 20094",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de Miguel: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "H17": {
    "fechaCompra": "2023-08-01",
@@ -7811,7 +7811,7 @@
    "fo": "FO# 21280",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de Miguel: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "M17": {
    "fechaCompra": "2023-12-04",
@@ -7822,7 +7822,7 @@
    "fo": "FO# 21442",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de Miguel: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "R17": {
    "fechaCompra": "2024-07-26",
@@ -7832,7 +7832,7 @@
    "fo": "FO# 26714",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de Miguel: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "AH17": {
    "fechaCompra": "2025-05-26",
@@ -7843,7 +7843,7 @@
    "fo": "FO# 29429",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de Miguel: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "AW17": {
    "fechaCompra": "2025-11-26",
@@ -7854,7 +7854,7 @@
    "fo": "FO# 29744",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de Miguel: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "R26": {
    "fechaCompra": "2026-02-25",
@@ -7929,7 +7929,7 @@
    "fo": "FO# 29879",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de Miguel: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "X35": {
    "fechaCompra": "2026-03-25",
@@ -7939,7 +7939,7 @@
    "fo": "FO# 30080",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de Miguel: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "AC35": {
    "fechaCompra": "2026-04-22",
@@ -7948,7 +7948,7 @@
    "origen": "Banco Central de Costa Rica (emisión)",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de Miguel: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "AH35": {
    "fechaCompra": "2026-05-20",
@@ -7958,7 +7958,7 @@
    "fo": "FO# 30097",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de Miguel: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "C10": {
    "km": "KM# 241",
@@ -8007,7 +8007,7 @@
    "producto": "Calipso limonense PROOF",
    "valor": 20000,
    "fechaValor": "2026-11-21",
-   "fuenteValor": "Precio fijado por Miguel",
+   "fuenteValor": "Precio fijado por papá",
    "fotos": [
     "calipso-acrilico-proof.jpg"
    ],
@@ -8114,8 +8114,8 @@
    ],
    "valor": 40000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio aproximado (Miguel)",
-   "notas": "Estuche negro \"Bullion Collection\" con 14 barras plateadas, cada una en su cápsula.\nDiseños: réplicas de billetes de Estados Unidos de 1, 2, 5, 20 (frente), 20 (Casa Blanca), 50, 100, 500, 1000, 5000, 10 000 y 100 000 dólares, y dos de \"One Billion\".\nMarcadas \"GOLD 999999\": es una marca de fantasía de los artículos de recuerdo, no una ley real. Son piezas chapadas, de colección o regalo, no plata de inversión; el estuche no trae ceca ni certificado.\nValor: unos 40 000 colones (Miguel)."
+   "fuenteValor": "Precio aproximado (papá)",
+   "notas": "Estuche negro \"Bullion Collection\" con 14 barras plateadas, cada una en su cápsula.\nDiseños: réplicas de billetes de Estados Unidos de 1, 2, 5, 20 (frente), 20 (Casa Blanca), 50, 100, 500, 1000, 5000, 10 000 y 100 000 dólares, y dos de \"One Billion\".\nMarcadas \"GOLD 999999\": es una marca de fantasía de los artículos de recuerdo, no una ley real. Son piezas chapadas, de colección o regalo, no plata de inversión; el estuche no trae ceca ni certificado.\nValor: unos 40 000 colones (papá)."
   },
   "O-x21bc2c58c": {
    "tengo": true,
@@ -8127,7 +8127,7 @@
      "fotos": [
       "O-x21bc2c58c-especial-11.jpg"
      ],
-     "notas": "Fecha escasa (Miguel)."
+     "notas": "Fecha escasa (papá)."
     },
     {
      "nombre": "Rara",
@@ -8136,7 +8136,7 @@
       "O-x21bc2c58c-especial-12.jpg",
       "O-x21bc2c58c-especial-13.jpg"
      ],
-     "notas": "Rara (Miguel). Muy gastada, con una raya que cruza el escudo."
+     "notas": "Rara (papá). Muy gastada, con una raya que cruza el escudo."
     }
    ],
    "fotos": [
@@ -8144,7 +8144,7 @@
     "O-x21bc2c58c-especial-12.jpg",
     "O-x21bc2c58c-especial-13.jpg"
    ],
-   "notas": "Tarjeta creada con las fotos de Miguel (22/11/2026): dos piezas de 1918, una de fecha escasa y otra rara."
+   "notas": "Tarjeta creada con las fotos de papá (22/11/2026): dos piezas de 1918, una de fecha escasa y otra rara."
   },
   "O-xccf62f81e": {
    "tengo": true,
@@ -8153,7 +8153,7 @@
     "O-xccf62f81e-mia-15.jpg",
     "O-xccf62f81e-mia-16.jpg"
    ],
-   "notas": "Boleto de café de latón (información de Miguel). Por un lado tiene el escudo antiguo de Costa Rica, con banderas, lanzas y cinco estrellas (tipo 1848-1906); por el otro, el número \"16\" dentro de una corona de laurel. No tiene fecha.\nQué son: en las fincas de café se le daba al cogedor un boleto de latón por cada cajuela de grano cosechado, y después lo cambiaba por dinero o mercadería. En Costa Rica se usaron como medio de pago de 1840 a 1943; después, solo para llevar la cuenta. No son moneda de curso legal. El número puede indicar la cantidad que valía o un código de la finca.\nFuentes: Revista Herencia (UCR), \"Boletos de café y fichas de empresas\"; Museos del Banco Central de Costa Rica."
+   "notas": "Boleto de café de latón (información de papá). Por un lado tiene el escudo antiguo de Costa Rica, con banderas, lanzas y cinco estrellas (tipo 1848-1906); por el otro, el número \"16\" dentro de una corona de laurel. No tiene fecha.\nQué son: en las fincas de café se le daba al cogedor un boleto de latón por cada cajuela de grano cosechado, y después lo cambiaba por dinero o mercadería. En Costa Rica se usaron como medio de pago de 1840 a 1943; después, solo para llevar la cuenta. No son moneda de curso legal. El número puede indicar la cantidad que valía o un código de la finca.\nFuentes: Revista Herencia (UCR), \"Boletos de café y fichas de empresas\"; Museos del Banco Central de Costa Rica."
   },
   "O-4054b4c8": {
    "tengo": true,
@@ -8162,7 +8162,7 @@
     "O-4054b4c8-billete-1.jpg",
     "O-4054b4c8-billete-2.jpg"
    ],
-   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VG 8. Nivel: Bueno (G 6) a Muy bueno (VG 10). Detalle: muy circulado, dobleces marcados, manchas de tinta y suciedad en el reverso, papel cansado sin roturas grandes.\nFotos de Miguel (22/11/2026): frente y reverso.\nValor de reventa: 4500 colones. En los grupos se vendió este mismo billete (6 de julio de 1994, serie D) en 4500.",
+   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VG 8. Nivel: Bueno (G 6) a Muy bueno (VG 10). Detalle: muy circulado, dobleces marcados, manchas de tinta y suciedad en el reverso, papel cansado sin roturas grandes.\nFotos de papá (22/11/2026): frente y reverso.\nValor de reventa: 4500 colones. En los grupos se vendió este mismo billete (6 de julio de 1994, serie D) en 4500.",
    "valor": 4500,
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)"
@@ -8174,7 +8174,7 @@
     "O-85083fd8-billete-1.jpg",
     "O-85083fd8-billete-2.jpg"
    ],
-   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): G 4. Nivel: Regular (G 4) a Bueno (G 6). Detalle: muy circulado, papel cuarteado con muchas arrugas, suciedad general y una mancha de tinta azul al frente.\nFotos de Miguel (22/11/2026): frente y reverso.\nValor de reventa: 3500 colones. Un par de billetes de 500 serie C y D se vendió en 7000 (3500 cada uno). Este está muy gastado.",
+   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): G 4. Nivel: Regular (G 4) a Bueno (G 6). Detalle: muy circulado, papel cuarteado con muchas arrugas, suciedad general y una mancha de tinta azul al frente.\nFotos de papá (22/11/2026): frente y reverso.\nValor de reventa: 3500 colones. Un par de billetes de 500 serie C y D se vendió en 7000 (3500 cada uno). Este está muy gastado.",
    "valor": 3500,
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)"
@@ -8186,7 +8186,7 @@
     "O-b569402c-billete-1.jpg",
     "O-b569402c-billete-2.jpg"
    ],
-   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 12. Nivel: Muy bueno (VG 10) a Fino (F 15). Detalle: circulado, dobleces y suciedad leve, color morado conservado y bordes completos.\nFotos de Miguel (22/11/2026): frente y reverso.\nValor de reventa: 15 000 colones. Los billetes morados de 500 serie B sin certificar se venden entre 10 000 y 20 000 (promedio 16 000); uno de 1985 serie B, en 13 000. Este está circulado, por eso 15 000.",
+   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 12. Nivel: Muy bueno (VG 10) a Fino (F 15). Detalle: circulado, dobleces y suciedad leve, color morado conservado y bordes completos.\nFotos de papá (22/11/2026): frente y reverso.\nValor de reventa: 15 000 colones. Los billetes morados de 500 serie B sin certificar se venden entre 10 000 y 20 000 (promedio 16 000); uno de 1985 serie B, en 13 000. Este está circulado, por eso 15 000.",
    "valor": 15000,
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)"
@@ -8222,7 +8222,7 @@
      "valor": 5000
     }
    ],
-   "notas": "Dos billetes de la misma fecha, cada uno en su pestaña.\nFotos de Miguel (22/11/2026).",
+   "notas": "Dos billetes de la misma fecha, cada uno en su pestaña.\nFotos de papá (22/11/2026).",
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)"
   },
@@ -8233,7 +8233,7 @@
     "O-77e20f9a-billete-1.jpg",
     "O-77e20f9a-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nCosto: 1 dólar × 600 colones (lo que costaba el dólar cuando Miguel lo compró) = 600 colones. Valor de reventa: costo + 40 % = 840 colones.",
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de papá (22/11/2026): frente y reverso.\nCosto: 1 dólar × 600 colones (lo que costaba el dólar cuando papá lo compró) = 600 colones. Valor de reventa: costo + 40 % = 840 colones.",
    "costo": 600,
    "valor": 840,
    "fechaValor": "2026-11-22",
@@ -8246,7 +8246,7 @@
     "O-a628e8e4-billete-1.jpg",
     "O-a628e8e4-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nCosto: 2 dólares × 600 colones (lo que costaba el dólar cuando Miguel lo compró) = 1 200 colones. Valor de reventa: costo + 40 % = 1 680 colones.",
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de papá (22/11/2026): frente y reverso.\nCosto: 2 dólares × 600 colones (lo que costaba el dólar cuando papá lo compró) = 1 200 colones. Valor de reventa: costo + 40 % = 1 680 colones.",
    "costo": 1200,
    "valor": 1680,
    "fechaValor": "2026-11-22",
@@ -8259,7 +8259,7 @@
     "O-0e88d6af-billete-1.jpg",
     "O-0e88d6af-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nCosto: 5 dólares × 600 colones (lo que costaba el dólar cuando Miguel lo compró) = 3 000 colones. Valor de reventa: costo + 40 % = 4 200 colones.",
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de papá (22/11/2026): frente y reverso.\nCosto: 5 dólares × 600 colones (lo que costaba el dólar cuando papá lo compró) = 3 000 colones. Valor de reventa: costo + 40 % = 4 200 colones.",
    "costo": 3000,
    "valor": 4200,
    "fechaValor": "2026-11-22",
@@ -8272,7 +8272,7 @@
     "O-74fecfbd-billete-1.jpg",
     "O-74fecfbd-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nCosto: 10 dólares × 600 colones (lo que costaba el dólar cuando Miguel lo compró) = 6 000 colones. Valor de reventa: costo + 40 % = 8 400 colones.",
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de papá (22/11/2026): frente y reverso.\nCosto: 10 dólares × 600 colones (lo que costaba el dólar cuando papá lo compró) = 6 000 colones. Valor de reventa: costo + 40 % = 8 400 colones.",
    "costo": 6000,
    "valor": 8400,
    "fechaValor": "2026-11-22",
@@ -8285,7 +8285,7 @@
     "O-4c2b8499-billete-1.jpg",
     "O-4c2b8499-billete-2.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel; 26 de setiembre de 2007.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 20 000 colones (Miguel).",
+   "notas": "Billetes modernos de Costa Rica; papel; 26 de setiembre de 2007.\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 20 000 colones (papá).",
    "variantes": [
     {
      "nombre": "10 000 A serie 82132589",
@@ -8299,7 +8299,7 @@
    ],
    "valor": 20000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
+   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
   },
   "O-f2e2bbd5": {
    "tengo": true,
@@ -8312,7 +8312,7 @@
     "O-f2e2bbd5-billete-5.jpg",
     "O-f2e2bbd5-billete-6.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A y B.\nValor: falta el monto.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A y B.\nValor: falta el monto.\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
    "variantes": [
     {
      "nombre": "1000 A serie 041445076",
@@ -8321,17 +8321,17 @@
       "O-f2e2bbd5-billete-1.jpg",
       "O-f2e2bbd5-billete-2.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: dobleces suaves, colores vivos, ventana con algo de desgaste.\nValor de reventa: 10 000 colones (Miguel).",
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: dobleces suaves, colores vivos, ventana con algo de desgaste.\nValor de reventa: 10 000 colones (papá).",
      "valor": 10000
     },
     {
      "nombre": "1000 B serie 013983938 · Billete de la suerte",
-     "explicacion": "**El billete de la suerte: Miguel se lo encontró en la calle.** Billete con número de serie B013983938; papel con ventana transparente; serie A y B. Fotos: frente y reverso. Valor: 10 000 colones.",
+     "explicacion": "**El billete de la suerte: papá se lo encontró en la calle.** Billete con número de serie B013983938; papel con ventana transparente; serie A y B. Fotos: frente y reverso. Valor: 10 000 colones.",
      "fotos": [
       "O-f2e2bbd5-billete-3.jpg",
       "O-f2e2bbd5-billete-4.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: varios dobleces, ventana transparente rayada y desgastada, suciedad leve.\nValor de reventa: 10 000 colones (igual que el de serie A, Miguel). Su serie no tiene nada especial, pero es el billete de la suerte: Miguel se lo encontró en la calle.",
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: varios dobleces, ventana transparente rayada y desgastada, suciedad leve.\nValor de reventa: 10 000 colones (igual que el de serie A, papá). Su serie no tiene nada especial, pero es el billete de la suerte: papá se lo encontró en la calle.",
      "valor": 10000
     },
     {
@@ -8341,12 +8341,12 @@
       "O-f2e2bbd5-billete-5.jpg",
       "O-f2e2bbd5-billete-6.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 001818533 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 1818). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: un par de dobleces suaves, colores vivos, ventana limpia.\nValor de reventa: 15 000 colones por ser serie rara (Miguel).",
+     "notas": "¿Por qué es especial? La serie 001818533 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 1818). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: un par de dobleces suaves, colores vivos, ventana limpia.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
      "valor": 15000
     }
    ],
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
+   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
   },
   "O-70300eba": {
    "tengo": true,
@@ -8355,7 +8355,7 @@
     "O-70300eba-billete-1.jpg",
     "O-70300eba-billete-2.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
    "variantes": [
     {
      "nombre": "2000 A serie 082457454",
@@ -8382,7 +8382,7 @@
     "O-55fda5b4-billete-5.jpg",
     "O-55fda5b4-billete-6.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; series A y B.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; series A y B.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
    "variantes": [
     {
      "nombre": "5000 A serie 007321451",
@@ -8391,7 +8391,7 @@
       "O-55fda5b4-billete-1.jpg",
       "O-55fda5b4-billete-2.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: dobleces suaves, colores vivos, leve arrugado en el papel.\nValor de reventa: 20 000 colones: los billetes de 5000 serie A son escasos (Miguel).",
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: dobleces suaves, colores vivos, leve arrugado en el papel.\nValor de reventa: 20 000 colones: los billetes de 5000 serie A son escasos (papá).",
      "valor": 20000
     },
     {
@@ -8416,7 +8416,7 @@
     }
    ],
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
+   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
   },
   "O-00d26b62": {
    "tengo": true,
@@ -8425,7 +8425,7 @@
     "O-00d26b62-billete-1.jpg",
     "O-00d26b62-billete-2.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 20 000 colones (Miguel).",
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 20 000 colones (papá).",
    "variantes": [
     {
      "nombre": "10 000 A serie 087077390",
@@ -8439,7 +8439,7 @@
    ],
    "valor": 20000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
+   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
   },
   "O-a5ae9afe": {
    "tengo": true,
@@ -8452,7 +8452,7 @@
     "O-a5ae9afe-billete-5.jpg",
     "O-a5ae9afe-billete-6.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; polímero; serie B, acuerdo del 14 de setiembre de 2018.\nValor: el billete 2000 B serie 020252020 (radar y fecha) vale 60 000 colones; a los otros dos les falta el monto.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 10 000 colones cada billete; el 2000 B serie 020252020 (serie rara y que forma fecha) vale 60 000 (Miguel).",
+   "notas": "Billetes modernos de Costa Rica; polímero; serie B, acuerdo del 14 de setiembre de 2018.\nValor: el billete 2000 B serie 020252020 (radar y fecha) vale 60 000 colones; a los otros dos les falta el monto.\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 10 000 colones cada billete; el 2000 B serie 020252020 (serie rara y que forma fecha) vale 60 000 (papá).",
    "variantes": [
     {
      "nombre": "2000 B serie 020252020 · Serie rara (radar y semi repetida) · Serie que forma fecha",
@@ -8461,7 +8461,7 @@
       "O-a5ae9afe-billete-1.jpg",
       "O-a5ae9afe-billete-2.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 020252020 es una serie rara: se lee igual de izquierda a derecha que de derecha a izquierda, como la palabra \"radar\"; además, un pedacito del número aparece dos veces seguidas (en este billete: 0202). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común. Además es una serie que forma fecha: en el número se leen 0202 y 2020, como una fecha del año 2020. Que tenga las dos cosas la hace todavía más rara. Valor: 60 000 colones.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 35. Nivel: Muy fino (VF 30) a Extra fino (XF 40). Detalle: circulado leve, dobleces suaves y marcas en la ventana transparente.\nValor de este billete: 60 000 colones (Miguel, 22/11/2026).",
+     "notas": "¿Por qué es especial? La serie 020252020 es una serie rara: se lee igual de izquierda a derecha que de derecha a izquierda, como la palabra \"radar\"; además, un pedacito del número aparece dos veces seguidas (en este billete: 0202). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común. Además es una serie que forma fecha: en el número se leen 0202 y 2020, como una fecha del año 2020. Que tenga las dos cosas la hace todavía más rara. Valor: 60 000 colones.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 35. Nivel: Muy fino (VF 30) a Extra fino (XF 40). Detalle: circulado leve, dobleces suaves y marcas en la ventana transparente.\nValor de este billete: 60 000 colones (papá, 22/11/2026).",
      "valor": 60000
     },
     {
@@ -8485,7 +8485,7 @@
    ],
    "valor": 10000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
+   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
   },
   "O-20887687": {
    "tengo": true,
@@ -8508,7 +8508,7 @@
     "O-20887687-billete-15.jpg",
     "O-20887687-billete-16.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; polímero; serie C, acuerdo del 20 de setiembre de 2019.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 7000 colones cada billete (Miguel).",
+   "notas": "Billetes modernos de Costa Rica; polímero; serie C, acuerdo del 20 de setiembre de 2019.\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 7000 colones cada billete (papá).",
    "variantes": [
     {
      "nombre": "1000 C serie 003757653",
@@ -8535,7 +8535,7 @@
       "O-20887687-billete-5.jpg",
       "O-20887687-billete-6.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 015025151 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 5151). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta.\nValor de reventa: 15 000 colones por ser serie rara (Miguel).",
+     "notas": "¿Por qué es especial? La serie 015025151 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 5151). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
      "valor": 15000
     },
     {
@@ -8545,7 +8545,7 @@
       "O-20887687-billete-7.jpg",
       "O-20887687-billete-8.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 000641415 es una serie rara: empieza con varios ceros: salió entre los primeros billetes que se imprimieron (empieza con 3 ceros); además, un pedacito del número aparece dos veces seguidas (en este billete: 4141). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta.\nValor de reventa: 15 000 colones por ser serie rara (Miguel).",
+     "notas": "¿Por qué es especial? La serie 000641415 es una serie rara: empieza con varios ceros: salió entre los primeros billetes que se imprimieron (empieza con 3 ceros); además, un pedacito del número aparece dos veces seguidas (en este billete: 4141). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
      "valor": 15000
     },
     {
@@ -8555,7 +8555,7 @@
       "O-20887687-billete-9.jpg",
       "O-20887687-billete-10.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 000061107 es una serie rara: empieza con varios ceros: salió entre los primeros billetes que se imprimieron (empieza con 4 ceros). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, dobleces suaves y marcas en la ventana transparente.\nValor de reventa: 15 000 colones por ser serie rara (Miguel).",
+     "notas": "¿Por qué es especial? La serie 000061107 es una serie rara: empieza con varios ceros: salió entre los primeros billetes que se imprimieron (empieza con 4 ceros). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, dobleces suaves y marcas en la ventana transparente.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
      "valor": 15000
     },
     {
@@ -8565,7 +8565,7 @@
       "O-20887687-billete-11.jpg",
       "O-20887687-billete-12.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 006336006 es una serie rara: empieza y termina con los mismos números (empieza y termina con 006). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, marcas finas y grietas leves en la ventana.\nValor de reventa: 15 000 colones por ser serie rara (Miguel).",
+     "notas": "¿Por qué es especial? La serie 006336006 es una serie rara: empieza y termina con los mismos números (empieza y termina con 006). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, marcas finas y grietas leves en la ventana.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
      "valor": 15000
     },
     {
@@ -8584,13 +8584,13 @@
       "O-20887687-billete-15.jpg",
       "O-20887687-billete-16.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 042037374 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 3737). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: muy circulado, ventana transparente arrugada y deteriorada, dobleces marcados.\nValor de reventa: 15 000 colones por ser serie rara (Miguel).",
+     "notas": "¿Por qué es especial? La serie 042037374 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 3737). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: muy circulado, ventana transparente arrugada y deteriorada, dobleces marcados.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
      "valor": 15000
     }
    ],
    "valor": 7000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
+   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
   },
   "O-4bab7a86": {
    "tengo": true,
@@ -8598,7 +8598,7 @@
    "fotosCompra": [
     "privado:socio-certificado-anc.jpg"
    ],
-   "notas": "Certificado de acreditación como asociado activo de la Asociación Numismática Costarricense, firmado por el presidente y el secretario, con el sello de la asociación.\n¿Qué es? Es el documento que dice que Miguel es socio de la asociación de coleccionistas de monedas y billetes de Costa Rica. Los datos del registro (tomo, folio y número) están en la imagen.\nLa imagen es privada: solo se ve con la clave, porque tiene datos personales."
+   "notas": "Certificado de acreditación como asociado activo de la Asociación Numismática Costarricense, firmado por el presidente y el secretario, con el sello de la asociación.\n¿Qué es? Es el documento que dice que papá es socio de la asociación de coleccionistas de monedas y billetes de Costa Rica. Los datos del registro (tomo, folio y número) están en la imagen.\nLa imagen es privada: solo se ve con la clave, porque tiene datos personales."
   },
   "O-657e9acc": {
    "tengo": true,
