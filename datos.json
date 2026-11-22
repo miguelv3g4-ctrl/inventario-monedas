@@ -6405,7 +6405,11 @@
     "O-x83a8e659f-video-escudo.jpg",
     "O-x83a8e659f-video-valor.jpg"
    ],
-   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Falta el valor.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño."
+   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Estado: UNC (sin circular). Costó 1200 colones.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño.",
+   "costo": 1200,
+   "valor": 1200,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio de compra"
   },
   "O-x465ccbc47": {
    "tengo": true,
@@ -6414,7 +6418,11 @@
     "O-x465ccbc47-video-escudo.jpg",
     "O-x465ccbc47-video-valor.jpg"
    ],
-   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Falta el valor.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño."
+   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Estado: UNC (sin circular). Costó 1200 colones.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño.",
+   "costo": 1200,
+   "valor": 1200,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio de compra"
   },
   "O-x5b5bad0ec": {
    "tengo": true,
@@ -6423,7 +6431,11 @@
     "O-x5b5bad0ec-video-escudo.jpg",
     "O-x5b5bad0ec-video-valor.jpg"
    ],
-   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Falta el valor.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño."
+   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Estado: UNC (sin circular). Costó 1200 colones.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño.",
+   "costo": 1200,
+   "valor": 1200,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio de compra"
   }
  },
  "sueltas": {},
