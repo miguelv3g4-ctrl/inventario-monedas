@@ -8350,26 +8350,15 @@
   },
   "O-70300eba": {
    "tengo": true,
-   "cantidad": 1,
    "fotos": [
     "O-70300eba-billete-1.jpg",
     "O-70300eba-billete-2.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
-   "variantes": [
-    {
-     "nombre": "2000 A serie 082457454",
-     "explicacion": "Billete con número de serie A082457454; papel con ventana transparente; serie A. Fotos: frente y reverso. Valor: 14 000 colones.",
-     "fotos": [
-      "O-70300eba-billete-1.jpg",
-      "O-70300eba-billete-2.jpg"
-     ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 45. Nivel: Extra fino (XF 40) a Casi sin circular (AU 50). Detalle: casi sin dobleces, colores vivos, fotografiado dentro de funda.\nValor de reventa: 14 000 colones. Un 2000 serie A sin circular se vende en 14 000 y este está casi sin circular.",
-     "valor": 14000
-    }
-   ],
+   "valor": 10000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)"
+   "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)",
+   "origen": "reventa",
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana."
   },
   "O-55fda5b4": {
    "tengo": true,
