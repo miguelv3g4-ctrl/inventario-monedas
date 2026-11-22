@@ -98,6 +98,8 @@
   #mTotal .monto { color: var(--oro); font: 40px "Copperplate Gothic Bold", Copperplate, Georgia, serif; font-variant-numeric: tabular-nums; margin: 4px 0 6px; line-height: 1.1; }
   #mTotal .det { color: var(--gris); font-size: 14px; }
   #mTotal .det b { color: var(--oro); font-weight: normal; }
+  .notasF { margin-top: 12px; display: grid; gap: 5px; white-space: normal; line-height: 1.35; }
+  .notasF b { color: var(--oro2); font-weight: 600; }
   .boton-seccion { background-size: cover !important; background-position: center !important; text-shadow: 0 1px 3px #000, 0 0 8px #000; }
   .boton-seccion { background: linear-gradient(180deg, #1d1810, #0b0a09); border: 1px solid var(--oro2); border-radius: 8px; padding: 16px 16px 14px; cursor: pointer; color: var(--oro); font: inherit; text-align: left; display: flex; flex-direction: column; gap: 8px; min-height: 108px; }
   .boton-seccion:hover, .boton-seccion:focus-visible { border-color: var(--oro); background: linear-gradient(180deg, #2a2213, #0b0a09); outline: none; }
@@ -925,8 +927,27 @@
     } else est.appendChild(tengo(id) ? el('span', 'inv', 'En la colección') : el('span', 'no', 'No la tengo'));
     if (cant(id) > 1 && (r.valor || r.costo)) est.append('\nPrecios por unidad · ' + cant(id) + ' unidades');
     if (r.producto) est.append('\n\nProducto: ' + r.producto);
-    if (r.notas) est.append('\n\n' + r.notas);
+    if (r.notas) est.appendChild(notasOrdenadas(r.notas));
     $('vEditar').textContent = nFotos(id) || r.valor || r.costo ? 'Cambiar datos y fotos' : 'Poner datos y fotos';
+  }
+  // descripcion ordenada: una idea por renglon, el nombre del dato en negrita y sin renglones repetidos
+  function notasOrdenadas(txt) {
+    const caja = el('div', 'notasF'), vistos = new Set();
+    const partes = [];
+    for (const linea of String(txt).split('\n')) {
+      for (let s of linea.split(/\.\s+(?=[A-ZÁÉÍÓÚÑ¿¡])/)) {
+        s = s.trim().replace(/\.$/, ''); if (!s) continue;
+        // "Material: Plata · Peso: 1,2 g · ..." -> un dato por renglon
+        if (/ · /.test(s) && s.split(' · ').every(x => /^[^:]{2,30}:/.test(x))) partes.push(...s.split(' · ')); else partes.push(s);
+      }
+    }
+    for (const s of partes) {
+      const clave = s.toLowerCase().replace(/\s+/g, ' '); if (vistos.has(clave)) continue; vistos.add(clave);
+      const d = el('div'), m = /^([^:]{2,60}):\s+(.*)$/.exec(s);
+      if (m) { d.appendChild(el('b', '', m[1] + ': ')); d.append(m[2]); } else d.append(s);
+      caja.appendChild(d);
+    }
+    return caja;
   }
   $('pValor').onclick = () => { pestana = 'valor'; pintarFicha(); }; $('pCompra').onclick = () => { pestana = 'compra'; pintarFicha(); };
   const cerrarFicha = () => { $('vFicha').classList.remove('abierta'); };
