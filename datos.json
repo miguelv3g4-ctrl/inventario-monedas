@@ -3723,7 +3723,11 @@
    "fo": "FO# 5717",
    "valor": 1000,
    "costo": 1000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x109cb7dca-video-escudo.jpg",
+    "O-x109cb7dca-video-valor.jpg"
+   ]
   },
   "O-x7567e6ed2": {
    "tengo": true,
@@ -3736,7 +3740,11 @@
    "fo": "FO# 5668",
    "valor": 500,
    "costo": 500,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x7567e6ed2-video-escudo.jpg",
+    "O-x7567e6ed2-video-valor.jpg"
+   ]
   },
   "O-xead7a029a": {
    "tengo": true,
@@ -3748,7 +3756,11 @@
    "fo": "FO# 5668",
    "valor": 500,
    "costo": 500,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-xead7a029a-video-escudo.jpg",
+    "O-xead7a029a-video-valor.jpg"
+   ]
   },
   "O-xce0766872": {
    "tengo": true,
@@ -3882,7 +3894,11 @@
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
    "costo": 4000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-xb067abf23-video-escudo.jpg",
+    "O-xb067abf23-video-valor.jpg"
+   ]
   },
   "O-x11bee65fb": {
    "tengo": true,
@@ -3894,7 +3910,11 @@
    ],
    "valor": 1000,
    "costo": 1000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x11bee65fb-video-escudo.jpg",
+    "O-x11bee65fb-video-valor.jpg"
+   ]
   },
   "O-x2bfc2e585": {
    "tengo": true,
@@ -3907,7 +3927,11 @@
    ],
    "valor": 500,
    "costo": 500,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x2bfc2e585-video-escudo.jpg",
+    "O-x2bfc2e585-video-valor.jpg"
+   ]
   },
   "O-xfd1398080": {
    "tengo": true,
@@ -4035,7 +4059,11 @@
    "fo": "FO# 5207",
    "valor": 1000,
    "costo": 1000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-xb2a0db2d6-video-escudo.jpg",
+    "O-xb2a0db2d6-video-valor.jpg"
+   ]
   },
   "O-xd4802a3a4": {
    "tengo": true,
@@ -4048,7 +4076,11 @@
    ],
    "valor": 3000,
    "costo": 3000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-xd4802a3a4-video-escudo.jpg",
+    "O-xd4802a3a4-video-valor.jpg"
+   ]
   },
   "O-x847ed7e7c": {
    "tengo": true,
@@ -4060,7 +4092,11 @@
    ],
    "valor": 1000,
    "costo": 1000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x847ed7e7c-video-escudo.jpg",
+    "O-x847ed7e7c-video-valor.jpg"
+   ]
   },
   "O-xa8ced4273": {
    "tengo": true,
@@ -4075,7 +4111,11 @@
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
    "costo": 2000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-xa8ced4273-video-escudo.jpg",
+    "O-xa8ced4273-video-valor.jpg"
+   ]
   },
   "O-x19b5a2c7f": {
    "tengo": true,
@@ -4154,7 +4194,11 @@
    ],
    "valor": 1000,
    "costo": 1000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-xeb9bba39d-video-escudo.jpg",
+    "O-xeb9bba39d-video-valor.jpg"
+   ]
   },
   "O-x97e4c2697": {
    "tengo": true,
@@ -4166,7 +4210,11 @@
    ],
    "valor": 1000,
    "costo": 1000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x97e4c2697-video-escudo.jpg",
+    "O-x97e4c2697-video-valor.jpg"
+   ]
   },
   "O-x0357cfcad": {
    "tengo": true,
@@ -4328,7 +4376,11 @@
     "privado:km-KM240a_FO5672.jpg"
    ],
    "valor": 1000,
-   "costo": 1000
+   "costo": 1000,
+   "fotos": [
+    "O-xdf61763bf-video-escudo.jpg",
+    "O-xdf61763bf-video-valor.jpg"
+   ]
   },
   "O-x51beaee62": {
    "tengo": true,
@@ -4399,7 +4451,11 @@
     "privado:anio-O-x23d1289ee-0.jpg"
    ],
    "valor": 1000,
-   "costo": 1000
+   "costo": 1000,
+   "fotos": [
+    "O-x23d1289ee-video-escudo.jpg",
+    "O-x23d1289ee-video-valor.jpg"
+   ]
   },
   "O-x4ffdc79ec": {
    "tengo": true,
@@ -4422,7 +4478,11 @@
     "privado:anio-O-x69eae3145-1.jpg"
    ],
    "valor": 1000,
-   "costo": 1000
+   "costo": 1000,
+   "fotos": [
+    "O-x69eae3145-video-escudo.jpg",
+    "O-x69eae3145-video-valor.jpg"
+   ]
   },
   "O-x39afa064d": {
    "tengo": true,
@@ -4464,7 +4524,11 @@
    "fuenteValor": "mercado numismatico",
    "costo": 60,
    "fechaCompra": "2020-03-21",
-   "notas": "Está en la hoja \"me faltan\".\nFuente: Excel monedas costa rica."
+   "notas": "Está en la hoja \"me faltan\".\nFuente: Excel monedas costa rica.",
+   "fotos": [
+    "O-xe41776751-video-escudo.jpg",
+    "O-xe41776751-video-valor.jpg"
+   ]
   },
   "O-x903a1aa01": {
    "tengo": false,
