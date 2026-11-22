@@ -2156,7 +2156,30 @@
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
    "origen": "reventa",
-   "cantidad": 4
+   "cantidad": 4,
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM184-1a.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Posible rotura de troquel",
+     "explicacion": "Tiene un bulto pequeño en relieve dentro del \"5\" del reverso: puede ser una rotura o grieta del troquel. Hay que confirmarlo con lupa.",
+     "fotos": [
+      "O-x15d4420cd-especial-1.jpg",
+      "O-x15d4420cd-especial-2.jpg"
+     ],
+     "notas": "Acero inoxidable (confirmado por Miguel)."
+    }
+   ],
+   "fotos": [
+    "O-x15d4420cd-especial-1.jpg",
+    "O-x15d4420cd-especial-2.jpg"
+   ]
   },
   "O-x5a5f0dfd0": {
    "tengo": true,
@@ -2747,13 +2770,13 @@
      "notas": ""
     },
     {
-     "nombre": "Marcada \"R.\"",
-     "explicacion": "Pieza en cartón marcada con \"R.\" a mano. Tiene manchas café de corrosión arriba, en \"DE\" y en la cimera.",
+     "nombre": "Rara",
+     "explicacion": "Pieza rara: Miguel la marcó con \"R.\" en el cartón. Tiene manchas café de corrosión arriba, en \"DE\" y en la cimera.",
      "fotos": [
       "O-xc9db761fe-especial-1.jpg",
       "O-xc9db761fe-especial-2.jpg"
      ],
-     "notas": "Falta confirmar qué significa la \"R.\" del cartón."
+     "notas": "\"R.\" en el cartón = rara."
     }
    ],
    "fotos": [
@@ -3889,12 +3912,12 @@
     },
     {
      "nombre": "UNC",
-     "explicacion": "Pieza sin circular (UNC): conserva todo el brillo de acuñación y no tiene desgaste. Vale más que una circulada.",
+     "explicacion": "Pieza sin circular (UNC): conserva todo el brillo de acuñación y no tiene desgaste. Vale más que una circulada: 3500 colones.",
      "fotos": [
       "O-xd7c4d06a4-especial-1.jpg",
       "O-xd7c4d06a4-especial-2.jpg"
      ],
-     "notas": "Estado: UNC. Año leído en la foto: 1999 (probable).\nPrecio: más caro que una circulada (falta el monto)."
+     "notas": "Estado: UNC. Año leído en la foto: 1999 (probable).\nPrecio UNC: 3500 colones."
     }
    ],
    "fotos": [
@@ -4444,12 +4467,12 @@
     },
     {
      "nombre": "UNC",
-     "explicacion": "Pieza sin circular (UNC): conserva todo el brillo de acuñación y no tiene desgaste. Vale más que una circulada.",
+     "explicacion": "Pieza sin circular (UNC): conserva todo el brillo de acuñación y no tiene desgaste. Vale más que una circulada: 3500 colones.",
      "fotos": [
       "O-x97e4c2697-especial-1.jpg",
       "O-x97e4c2697-especial-2.jpg"
      ],
-     "notas": "Estado: UNC (escrito en el cartón). Año leído en la foto: 2006 (probable).\nPrecio: más caro que una circulada (falta el monto)."
+     "notas": "Estado: UNC (escrito en el cartón). Año leído en la foto: 2006 (probable).\nPrecio UNC: 3500 colones."
     }
    ]
   },
@@ -5911,13 +5934,13 @@
      "notas": ""
     },
     {
-     "nombre": "En cartón \"2K\"",
-     "explicacion": "Pieza sin circular guardada en cartón, con \"2K\" escrito a mano (puede ser el precio, 2000 colones).",
+     "nombre": "En cartón",
+     "explicacion": "Pieza sin circular guardada en cartón. Valía 2000 colones (\"2K\" escrito a mano).",
      "fotos": [
       "O-msda0cba6d9-especial-1.jpg",
       "O-msda0cba6d9-especial-2.jpg"
      ],
-     "notas": "\"2K\" escrito en el cartón: por confirmar si es el precio."
+     "notas": "Valor anotado en el cartón: 2000 colones."
     }
    ]
   },
@@ -6676,6 +6699,20 @@
    "valor": 1200,
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio de compra"
+  },
+  "O-x945fee44e": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "bullion-collection-abierta.jpg",
+    "bullion-collection-1.jpg",
+    "bullion-collection-2.jpg",
+    "bullion-collection-caja.jpg"
+   ],
+   "valor": 40000,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio aproximado (Miguel)",
+   "notas": "Estuche negro \"Bullion Collection\" con 14 barras plateadas, cada una en su cápsula.\nDiseños: réplicas de billetes de Estados Unidos de 1, 2, 5, 20 (frente), 20 (Casa Blanca), 50, 100, 500, 1000, 5000, 10 000 y 100 000 dólares, y dos de \"One Billion\".\nMarcadas \"GOLD 999999\": es una marca de fantasía de los artículos de recuerdo, no una ley real. Son piezas chapadas, de colección o regalo, no plata de inversión; el estuche no trae ceca ni certificado.\nValor: unos 40 000 colones (Miguel)."
   }
  },
  "sueltas": {},
@@ -9228,6 +9265,13 @@
    "nombre": "100 colones 2021",
    "categoria": "100 colones",
    "seccion": "cono-1995-2021"
+  },
+  {
+   "id": "O-x945fee44e",
+   "nombre": "Set Bullion Collection · 14 barras réplica de billetes de Estados Unidos",
+   "categoria": "Estados Unidos",
+   "seccion": "coleccion-extranjera",
+   "ref": "fotos/bullion-collection-abierta.jpg"
   }
  ],
  "giros": {
