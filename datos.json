@@ -8141,6 +8141,100 @@
     "O-xccf62f81e-mia-16.jpg"
    ],
    "notas": "Boleto de café de latón (información de Miguel). Por un lado tiene el escudo antiguo de Costa Rica, con banderas, lanzas y cinco estrellas (tipo 1848-1906); por el otro, el número \"16\" dentro de una corona de laurel. No tiene fecha.\nQué son: en las fincas de café se le daba al cogedor un boleto de latón por cada cajuela de grano cosechado, y después lo cambiaba por dinero o mercadería. En Costa Rica se usaron como medio de pago de 1840 a 1943; después, solo para llevar la cuenta. No son moneda de curso legal. El número puede indicar la cantidad que valía o un código de la finca.\nFuentes: Revista Herencia (UCR), \"Boletos de café y fichas de empresas\"; Museos del Banco Central de Costa Rica."
+  },
+  "O-4054b4c8": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-4054b4c8-billete-1.jpg",
+    "O-4054b4c8-billete-2.jpg"
+   ],
+   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VG 8. Nivel: Bueno (G 6) a Muy bueno (VG 10). Detalle: muy circulado, dobleces marcados, manchas de tinta y suciedad en el reverso, papel cansado sin roturas grandes.\nFotos de Miguel (22/11/2026): frente y reverso."
+  },
+  "O-85083fd8": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-85083fd8-billete-1.jpg",
+    "O-85083fd8-billete-2.jpg"
+   ],
+   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): G 4. Nivel: Regular (G 4) a Bueno (G 6). Detalle: muy circulado, papel cuarteado con muchas arrugas, suciedad general y una mancha de tinta azul al frente.\nFotos de Miguel (22/11/2026): frente y reverso."
+  },
+  "O-b569402c": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-b569402c-billete-1.jpg",
+    "O-b569402c-billete-2.jpg"
+   ],
+   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 12. Nivel: Muy bueno (VG 10) a Fino (F 15). Detalle: circulado, dobleces y suciedad leve, color morado conservado y bordes completos.\nFotos de Miguel (22/11/2026): frente y reverso."
+  },
+  "O-b421bb1e": {
+   "tengo": true,
+   "cantidad": 2,
+   "fotos": [
+    "O-b421bb1e-billete-a-1.jpg",
+    "O-b421bb1e-billete-a-2.jpg",
+    "O-b421bb1e-billete-b-1.jpg",
+    "O-b421bb1e-billete-b-2.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Serie C 9747717",
+     "explicacion": "Billete con número de serie C 9747717.",
+     "fotos": [
+      "O-b421bb1e-billete-a-1.jpg",
+      "O-b421bb1e-billete-a-2.jpg"
+     ],
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: poco circulado, papel firme y limpio, dobleces suaves, colores vivos."
+    },
+    {
+     "nombre": "Serie C 9022206",
+     "explicacion": "Billete con número de serie C 9022206.",
+     "fotos": [
+      "O-b421bb1e-billete-b-1.jpg",
+      "O-b421bb1e-billete-b-2.jpg"
+     ],
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 25. Nivel: Fino (F 15) a Muy fino (VF 30). Detalle: circulado, papel firme, dobleces suaves y algo de suciedad en el reverso."
+    }
+   ],
+   "notas": "Dos billetes de la misma fecha, cada uno en su pestaña.\nFotos de Miguel (22/11/2026)."
+  },
+  "O-77e20f9a": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-77e20f9a-billete-1.jpg",
+    "O-77e20f9a-billete-2.jpg"
+   ],
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nValor: falta el monto."
+  },
+  "O-a628e8e4": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-a628e8e4-billete-1.jpg",
+    "O-a628e8e4-billete-2.jpg"
+   ],
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nValor: falta el monto."
+  },
+  "O-0e88d6af": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-0e88d6af-billete-1.jpg",
+    "O-0e88d6af-billete-2.jpg"
+   ],
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nValor: falta el monto."
+  },
+  "O-74fecfbd": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-74fecfbd-billete-1.jpg",
+    "O-74fecfbd-billete-2.jpg"
+   ],
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de Miguel (22/11/2026): frente y reverso.\nValor: falta el monto."
   }
  },
  "sueltas": {},
@@ -10712,6 +10806,54 @@
    "nombre": "Boleto de café · número 16",
    "categoria": "Boletos de café",
    "seccion": "antano"
+  },
+  {
+   "id": "O-4054b4c8",
+   "nombre": "500 colones 6 de julio de 1994. Serie D 15335763",
+   "categoria": "Billetes",
+   "seccion": "billetes"
+  },
+  {
+   "id": "O-85083fd8",
+   "nombre": "500 colones 21 de enero de 1987. Serie C 0887511",
+   "categoria": "Billetes",
+   "seccion": "billetes"
+  },
+  {
+   "id": "O-b569402c",
+   "nombre": "500 colones 18 de mayo de 1982. Serie B 2891266",
+   "categoria": "Billetes",
+   "seccion": "billetes"
+  },
+  {
+   "id": "O-b421bb1e",
+   "nombre": "500 colones 14 de junio de 1989. Serie C 9747717 y C 9022206",
+   "categoria": "Billetes",
+   "seccion": "billetes"
+  },
+  {
+   "id": "O-77e20f9a",
+   "nombre": "1 dólar de Estados Unidos. Serie B 66685417 A",
+   "categoria": "Estados Unidos",
+   "seccion": "coleccion-extranjera"
+  },
+  {
+   "id": "O-a628e8e4",
+   "nombre": "2 dólares de Estados Unidos. Serie L 16919995 A",
+   "categoria": "Estados Unidos",
+   "seccion": "coleccion-extranjera"
+  },
+  {
+   "id": "O-0e88d6af",
+   "nombre": "5 dólares de Estados Unidos. Serie QL 20437757 A",
+   "categoria": "Estados Unidos",
+   "seccion": "coleccion-extranjera"
+  },
+  {
+   "id": "O-74fecfbd",
+   "nombre": "10 dólares de Estados Unidos. Serie PK 34156448 B",
+   "categoria": "Estados Unidos",
+   "seccion": "coleccion-extranjera"
   }
  ],
  "giros": {
