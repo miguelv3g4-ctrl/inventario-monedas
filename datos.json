@@ -5645,7 +5645,7 @@
   "O-msacfccd037": {
    "tengo": true,
    "cantidad": 15,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.",
    "km": "KM# 241",
    "fo": "FO# 20094",
    "fotosCompra": [
@@ -5655,7 +5655,9 @@
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
    "fotos": [
-    "ms-200-independencia.jpg"
+    "ms-200-independencia.jpg",
+    "O-msacfccd037-video-cara.jpg",
+    "O-msacfccd037-video-valor.jpg"
    ],
    "costo": 1500,
    "origen": "museo"
@@ -5664,7 +5666,9 @@
    "tengo": true,
    "cantidad": 11,
    "fotos": [
-    "ms-175-fundacion.jpg"
+    "ms-175-fundacion.jpg",
+    "O-msda0cba6d9-video-cara.jpg",
+    "O-msda0cba6d9-video-valor.jpg"
    ],
    "fotosCompra": [
     "privado:km-KM242.jpg"
@@ -5673,14 +5677,14 @@
    "valor": 1500,
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.",
    "costo": 1500,
    "origen": "museo"
   },
   "O-ms88823228f": {
    "tengo": true,
    "cantidad": 15,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2022.\nPrecio revendedor",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2022.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.",
    "km": "KM# 243",
    "fo": "FO# 21442",
    "fotosCompra": [
@@ -5690,7 +5694,9 @@
    "fechaValor": "2026-11-20",
    "fuenteValor": "Precio revendedor",
    "fotos": [
-    "ms-75-abolicion.jpg"
+    "ms-75-abolicion.jpg",
+    "O-ms88823228f-video-cara.jpg",
+    "O-ms88823228f-video-valor.jpg"
    ],
    "costo": 1500,
    "origen": "museo"
@@ -6391,6 +6397,33 @@
    "fechaCompra": "2022-09-01",
    "origen": "reventa",
    "notas": "Material: Plata (0,925) · Peso: 35,00 g · Diámetro: 42,00 mm · Canto: Estriado · Acabado normal (sin brillo espejo) · Tiraje: 9 500\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nPrecio: la mitad del par (valor ₡360 000 y costo ₡240 000 por las dos)."
+  },
+  "O-x83a8e659f": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-x83a8e659f-video-escudo.jpg",
+    "O-x83a8e659f-video-valor.jpg"
+   ],
+   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Falta el valor.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño."
+  },
+  "O-x465ccbc47": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-x465ccbc47-video-escudo.jpg",
+    "O-x465ccbc47-video-valor.jpg"
+   ],
+   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Falta el valor.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño."
+  },
+  "O-x5b5bad0ec": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-x5b5bad0ec-video-escudo.jpg",
+    "O-x5b5bad0ec-video-valor.jpg"
+   ],
+   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Falta el valor.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño."
   }
  },
  "sueltas": {},
@@ -8925,6 +8958,24 @@
    "nombre": "coleccionador hitos historicos MS",
    "categoria": "Hitos de la Historia",
    "seccion": "museo-bccr"
+  },
+  {
+   "id": "O-x83a8e659f",
+   "nombre": "10 colones 2021",
+   "categoria": "10 colones",
+   "seccion": "cono-1995-2021"
+  },
+  {
+   "id": "O-x465ccbc47",
+   "nombre": "25 colones 2021",
+   "categoria": "25 colones",
+   "seccion": "cono-1995-2021"
+  },
+  {
+   "id": "O-x5b5bad0ec",
+   "nombre": "100 colones 2021",
+   "categoria": "100 colones",
+   "seccion": "cono-1995-2021"
   }
  ],
  "giros": {
