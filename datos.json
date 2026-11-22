@@ -2145,40 +2145,7 @@
   },
   "O-x1ca9dd607": {
    "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
-   "costo": 3500,
-   "valor": 4900,
-   "valorEstimado": true,
-   "km": "KM# 184A",
-   "fo": "FO# 11434",
-   "fotosCompra": [
-    "privado:km-KM184A.jpg"
-   ],
-   "variantes": [
-    {
-     "nombre": "Normal",
-     "explicacion": "Pieza normal (foto de referencia del catálogo).",
-     "fotos": [
-      "privado:km-KM184A.jpg"
-     ],
-     "notas": ""
-    },
-    {
-     "nombre": "Números finos",
-     "explicacion": "Variante de 1951 con el \"5\" delgado, letras finas y la leyenda \"B.C.C.R.\" con puntos.",
-     "fotos": [
-      "O-x1ca9dd607-especial-1.jpg"
-     ],
-     "notas": "Diferencia en los números (Miguel). Falta confirmar en la moneda cuál de las dos es la de canto estriado y cuál la de canto liso."
-    }
-   ],
-   "fotos": [
-    "O-x1ca9dd607-especial-1.jpg"
-   ]
-  },
-  "O-x9dcbdff87": {
-   "tengo": false,
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.",
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.\nPrecio de referencia en catálogo: 6,55 a 12,00 euros (KM# 184A).",
    "costo": 3500,
    "valor": 4900,
    "valorEstimado": true,
@@ -2198,11 +2165,44 @@
     },
     {
      "nombre": "Números gruesos",
-     "explicacion": "Variante de 1951 con el \"5\" grueso, corona de hojas distinta y la leyenda \"B C C R\" sin puntos.",
+     "explicacion": "KM# 184A, solo de 1951, canto estriado: el \"5\" grueso, otra corona de hojas y la leyenda \"B C C R\" sin puntos. Es la más escasa de las dos.",
+     "fotos": [
+      "O-x1ca9dd607-especial-1.jpg"
+     ],
+     "notas": "Diferencia en los números (Miguel). Identificada con la ficha de catálogo que pasó Miguel: KM# 184A, canto estriado."
+    }
+   ],
+   "fotos": [
+    "O-x1ca9dd607-especial-1.jpg"
+   ]
+  },
+  "O-x9dcbdff87": {
+   "tengo": false,
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nValor actual provisional: costo + 40 %.\nPrecio de referencia en catálogo: 0,56 a 2,00 euros (KM# 184.1, 1951-1967).",
+   "costo": 3500,
+   "valor": 4900,
+   "valorEstimado": true,
+   "km": "KM# 184.1",
+   "fo": "FO# 11434",
+   "fotosCompra": [
+    "privado:km-KM184A.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM184A.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Números finos",
+     "explicacion": "KM# 184.1, tipo de 1951 a 1967, canto liso: el \"5\" delgado, letras finas y la leyenda \"B.C.C.R.\" con puntos.",
      "fotos": [
       "O-x9dcbdff87-especial-1.jpg"
      ],
-     "notas": "Diferencia en los números (Miguel). Falta confirmar en la moneda cuál de las dos es la de canto estriado y cuál la de canto liso."
+     "notas": "Diferencia en los números (Miguel). Identificada con la ficha de catálogo que pasó Miguel: KM# 184.1, canto liso."
     }
    ],
    "fotos": [
