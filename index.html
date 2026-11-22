@@ -458,7 +458,7 @@
 <div class="velo" id="vTestamento">
   <div class="ventana" role="dialog" aria-modal="true" aria-label="Testamento">
     <div class="cab noimprimir">
-      <div><h2>Testamento</h2></div>
+      <div><h2 id="tTitulo">Testamento</h2></div>
       <button id="tImprimir" class="fuerte">Imprimir / Descargar PDF</button>
       <button id="tVerPdf">Ver PDF guardado</button>
       <button id="tVerFid">Contrato de fideicomiso</button>
@@ -1487,7 +1487,7 @@
     const caja = $('tCampos'); caja.textContent = '';
     for (const [k, rot, , ancho, area] of T_CAMPOS) {
       const l = el('label', ancho ? 'ancho' : '', rot), i = el(area ? 'textarea' : 'input'); i.value = tVal(k);
-      i.oninput = () => { tDatos[k] = i.value; guardarT(); pintarTestamento(); };
+      i.oninput = () => { tDatos[k] = i.value; guardarT(); pintarDoc(); };
       l.appendChild(i); caja.appendChild(l);
     }
     $('tNotas').innerHTML = '<b>Para tu abogado y tu notario (no se imprime). Lo que el testamento logra y lo que no puede garantizar:</b><br>' +
@@ -1565,7 +1565,57 @@
     h += '<div class="firmas"><div>Firma del testador</div><div>Notario Público</div></div></div>';
     $('tHoja').innerHTML = h;
   }
-  $('mTestamento').onclick = async () => { await cargarT(); armarCamposTestamento(); pintarTestamento(); $('vTestamento').classList.add('abierta'); };
+
+  // ---------- contrato de fideicomiso (se arma en vivo, igual que el testamento: montos y piezas siempre al dia)
+  let docT = 'testamento';
+  const pintarDoc = () => docT === 'fideicomiso' ? pintarFideicomiso() : pintarTestamento();
+  function pintarFideicomiso() {
+    const g = filasTestamento(), T = g.reduce((a, x) => ({ n: a.n + x.n, c: a.c + x.costo, v: a.v + x.val }), { n: 0, c: 0, v: 0 });
+    const fh = new Date().toLocaleDateString('es-CR', { day: 'numeric', month: 'long', year: 'numeric' });
+    const B = n => '<span class="vacio">' + '_'.repeat(n) + '</span>';
+    const fid = tVal('fiduciario').trim().replace(/, madre de mi hijo$/, ''), fidH = fid ? '<b>' + esc(fid) + '</b>' : B(34);
+    const nac = tVal('hijoNac'), ORD = ['Primera', 'Segunda', 'Tercera', 'Cuarta', 'Quinta', 'Sexta', 'Séptima', 'Octava', 'Novena', 'Décima', 'Undécima', 'Duodécima', 'Decimotercera', 'Decimocuarta', 'Decimoquinta', 'Decimosexta'];
+    let oi = 0; const C = (t, c) => '<h2>' + ORD[oi++] + ' · ' + t + '</h2>' + c;
+    const resumen = '<table><thead><tr><th>Resumen por colección</th><th class="n">Piezas</th><th class="n">Costo inicial</th><th class="n">Valor actual</th></tr></thead><tbody>' + g.map(x => '<tr><td>' + esc(x.nombre) + '</td><td class="n">' + x.n + '</td><td class="n">' + fmt(x.costo) + '</td><td class="n">' + fmt(x.val) + '</td></tr>').join('') + '<tr class="tot"><td>Total</td><td class="n">' + T.n + '</td><td class="n">' + fmt(T.c) + '</td><td class="n">' + fmt(T.v) + '</td></tr></tbody></table>';
+    let h = '<h1>CONTRATO DE FIDEICOMISO</h1><p class="sub">Fideicomiso de administración y garantía familiar, revocable, para ser otorgado en escritura pública ante Notario Público · República de Costa Rica</p>';
+    h += '<p class="vigencia" style="text-align:center;margin:0 0 14px"><b>Inventario y montos vigentes al ' + fh + '</b></p>';
+    h += '<p><b>Comparecen:</b></p><ol><li><b>El fideicomitente:</b> ' + rell('nombre', 30) + ', mayor de edad, ' + rell('estadoCivil', 12) + ', ' + rell('profesion', 14) + ', vecino de ' + rell('domicilio', 24) + ', portador de la cédula de identidad número ' + rell('cedula', 14) + '.</li>' +
+      '<li><b>La fiduciaria:</b> ' + fidH + ', madre del fideicomisario, mayor de edad, vecina de ' + rell('domicilio', 24) + ', quien acepta el cargo en este acto.</li>' +
+      '<li><b>El fideicomisario:</b> ' + rell('hijo', 26) + ', cédula de identidad número ' + rell('hijoCed', 12) + ', nacido el ' + (nac ? '<b>' + fechaLarga(nac) + '</b>' : B(16)) + ', hijo del fideicomitente, menor de edad, quien no comparece y acepta los beneficios de este contrato por medio de quien legalmente lo represente.</li></ol>';
+    h += '<p>Las partes convienen en constituir el presente fideicomiso, que se regirá por las normas del Código de Comercio de Costa Rica sobre el fideicomiso y por las siguientes cláusulas:</p>';
+    h += C('Objeto y finalidad', '<p>El fideicomitente traspasa en fideicomiso a la fiduciaria las colecciones numismáticas y coleccionables que se describen en el Anexo A, con la finalidad de <b>custodiarlas, conservarlas y administrarlas en beneficio exclusivo de su hijo</b>, para que a la muerte del fideicomitente pasen al fideicomisario <b>sin necesidad de proceso sucesorio</b>, puedan venderse para pagar sus estudios o la compra de su vivienda, y le sean entregadas en propiedad plena al cumplir la mayoría de edad.</p>');
+    h += C('Patrimonio del fideicomiso', '<p>El patrimonio fideicometido está formado por las piezas del Anexo A: al ' + fh + ', <b>' + T.n + ' piezas</b>, con un costo inicial de <b>' + fmt(T.c) + '</b> y un valor actual de <b>' + fmt(T.v) + '</b>, con sus estuches, acrílicos, certificados, cajas, vitrinas y accesorios. Formarán parte del fideicomiso, sin necesidad de un nuevo contrato, las piezas que el fideicomitente adquiera y registre después en su aplicación de inventario, así como el dinero que se obtenga por la venta de cualquier pieza; el inventario y los montos vigentes serán siempre los que muestre esa aplicación. Este patrimonio es <b>autónomo y separado</b> del patrimonio personal del fideicomitente, de la fiduciaria y del fideicomisario.</p>' + resumen);
+    h += C('Fideicomisarios', '<p>Mientras viva, el fideicomitente será <b>primer fideicomisario</b>: conservará el uso y disfrute de las colecciones y podrá dar instrucciones a la fiduciaria. A su fallecimiento, el único fideicomisario será su hijo ' + rell('hijo', 26) + '. Si el hijo falleciera antes de la entrega final, los bienes pasarán a sus descendientes por partes iguales y, si no los tuviera, a ' + rell('sustituto', 26) + '.</p>');
+    h += C('Posesión y custodia en vida del fideicomitente', '<p>Mientras viva, el fideicomitente mantendrá la posesión material de las colecciones como depositario de la fiduciaria, en su domicilio o en el lugar seguro que escoja, y podrá comprar, vender o cambiar piezas por su cuenta, dejando constancia en su aplicación de inventario. Ese registro, con el costo inicial y el valor actual de cada pieza, se tendrá como el inventario oficial del fideicomiso.</p>');
+    h += C('Obligaciones de la fiduciaria', '<p>A partir del fallecimiento del fideicomitente, la fiduciaria deberá:</p><ol><li>Recibir y custodiar las colecciones en un lugar seguro y conservarlas completas.</li><li>Imprimir y firmar el inventario de la aplicación a la fecha del fallecimiento, que servirá como valor de recibo de los bienes para efectos fiscales; si alguna institución lo exige, respaldarlo con el avalúo de un perito numismático.</li><li>Llevar cuentas y rendir un informe escrito cada año al fideicomisario o, mientras sea menor, a quien lo represente y al juez si así lo pide.</li><li>Asegurar las colecciones cuando su valor lo justifique y el patrimonio del fideicomiso lo permita.</li></ol>');
+    h += C('Ventas para estudios y vivienda', '<p>La fiduciaria podrá vender total o parcialmente las colecciones <b>únicamente</b> para pagar los estudios del fideicomisario o la compra, construcción o mejora de su vivienda, a solicitud de él o, mientras sea menor, de quien lo represente; desde que el fideicomisario cumpla diecisiete años, toda venta requerirá también su conformidad escrita. El precio no podrá ser inferior al valor actual registrado en la aplicación o al de un avalúo. La fiduciaria pagará directamente al centro de estudios, al vendedor del inmueble o a la entidad financiera, y entregará al fideicomisario los comprobantes.</p>');
+    h += C('Prohibiciones', '<p>La fiduciaria no podrá gravar, prestar, empeñar ni dar en garantía los bienes, ni usarlos o adquirirlos para sí, ni venderlos a sus parientes, ni destinar el dinero a fines distintos de los de este contrato.</p>');
+    h += C('Protección del patrimonio', '<p>Los bienes fideicometidos no responden por deudas personales de la fiduciaria. En la medida que la ley lo permita, tampoco responderán por deudas del fideicomisario, de su cónyuge o conviviente, ni de terceros, mientras permanezcan en el fideicomiso. La vivienda que el fideicomisario adquiera con estos bienes podrá constituirse como patrimonio familiar.</p>');
+    h += C('Gratuidad y gastos', '<p>La fiduciaria desempeñará su cargo <b>sin cobrar honorarios</b>. Los gastos necesarios de custodia, seguro, avalúo o venta se pagarán con los bienes del propio fideicomiso, <b>nunca con dinero del fideicomisario</b>. Los aportes al fideicomiso y la entrega final se hacen a título gratuito, sin contraprestación, y las partes solicitan aplicar las exenciones fiscales que la ley conceda.</p>');
+    h += C('Revocación y modificación', '<p>Este fideicomiso es <b>revocable</b>: mientras viva, el fideicomitente podrá modificarlo, retirar bienes o darlo por terminado, por escrito ante notario. A su fallecimiento se volverá irrevocable.</p>');
+    h += C('Plazo y entrega final', '<p>El fideicomiso terminará cuando el fideicomisario cumpla la mayoría de edad. En ese momento la fiduciaria le entregará en propiedad plena todos los bienes y el dinero que queden, con una rendición final de cuentas. Si el fideicomitente falleciera cuando el fideicomisario ya sea mayor de edad, la fiduciaria le entregará los bienes de inmediato. En ningún caso el plazo excederá el máximo que permita la ley.</p>');
+    h += C('Fiduciaria sustituta', '<p>Si la fiduciaria falleciera, renunciara o no pudiera ejercer el cargo, la sustituirá la persona o entidad que designe un juez a solicitud del fideicomisario o de quien legalmente lo represente.</p>');
+    h += C('Relación con el testamento', '<p>Este contrato se otorga en coordinación con el <b>testamento abierto</b> del fideicomitente, otorgado en escritura pública número ' + B(8) + ' ante el notario ' + B(26) + ' el día ' + B(18) + ', cuya cláusula sobre el fideicomiso hace referencia expresa a este contrato. Ambos documentos comparten el mismo inventario (Anexo A) y las mismas instrucciones sobre el uso, la venta y la entrega de los bienes al fideicomisario. Los bienes aportados aquí no forman parte de la sucesión del fideicomitente y se rigen por este contrato; los que no se hubieran aportado pasan por el testamento y por el fideicomiso testamentario que en él se dispone, con la misma fiduciaria y las mismas instrucciones. Lo que este contrato no regule se interpretará conforme a la voluntad expresada en el testamento y, si hubiera contradicción sobre los bienes aportados, prevalecerá este contrato.</p>');
+    h += C('Ley aplicable', '<p>Este contrato se rige por las leyes de la República de Costa Rica. Las partes señalan para notificaciones sus domicilios indicados.</p>');
+    h += '<p style="margin-top:18px">Leído lo anterior, las partes lo aprueban y firman en ' + rell('ciudad', 18) + ', el día ' + B(22) + '.</p>';
+    h += '<div class="firmas"><div>El fideicomitente<br>' + rell('nombre', 20) + '</div><div>La fiduciaria (acepta el cargo)<br>' + fidH + '</div><div>Notario Público<br>(firma, sello y timbres)</div><div>Testigo (nombre y cédula)</div></div>';
+    h += '<div class="corte"><h1 style="font-size:17px">ANEXO A · BIENES APORTADOS AL FIDEICOMISO</h1><p class="sub">Tomado de la aplicación de inventario el ' + fh + '. Cada página debe ir rubricada por el fideicomitente, la fiduciaria y el notario.</p>';
+    for (const x of g) {
+      h += '<h2>' + esc(x.nombre) + '</h2><table><thead><tr><th>Pieza</th><th class="n">Cant.</th><th class="n">Costo inicial</th><th class="n">Valor actual</th></tr></thead><tbody>';
+      h += x.filas.map(f => '<tr><td>' + esc(f.desc) + '</td><td class="n">' + f.q + '</td><td class="n">' + (f.c ? fmt(f.c) : '—') + '</td><td class="n">' + (f.v ? fmt(f.v) : '<span style="font-size:10px">' + esc(f.nota) + '</span>') + '</td></tr>').join('');
+      h += '<tr class="subt"><td>Subtotal</td><td class="n">' + x.n + '</td><td class="n">' + fmt(x.costo) + '</td><td class="n">' + fmt(x.val) + '</td></tr></tbody></table>';
+    }
+    h += '<table><tbody><tr class="tot"><td>TOTAL DE LAS COLECCIONES</td><td class="n">' + T.n + '</td><td class="n">' + fmt(T.c) + '</td><td class="n">' + fmt(T.v) + '</td></tr></tbody></table>';
+    h += '<div class="firmas"><div>El fideicomitente</div><div>La fiduciaria</div></div></div>';
+    $('tHoja').innerHTML = h;
+  }
+  async function abrirDoc(cual) {
+    await cargarT(); armarCamposTestamento(); docT = cual;
+    $('tTitulo').textContent = cual === 'fideicomiso' ? 'Contrato de fideicomiso' : 'Testamento';
+    $('tVerFid').textContent = cual === 'fideicomiso' ? 'Ver testamento' : 'Contrato de fideicomiso';
+    pintarDoc(); $('vTestamento').classList.add('abierta'); $('tHoja').scrollTop = 0;
+  }
+  $('mTestamento').onclick = () => abrirDoc('testamento');
   $('tCerrar').onclick = () => $('vTestamento').classList.remove('abierta');
   // PDF guardado en el almacen privado (con sesion): se sube desde aqui y se ve, imprime o descarga con el boton
   let pdfUrl = '', pdfNombre = 'testamento.pdf';
@@ -1577,11 +1627,11 @@
       const b = await r.blob(); if (pdfUrl) URL.revokeObjectURL(pdfUrl);
       pdfUrl = URL.createObjectURL(new Blob([b], { type: 'application/pdf' })); pdfNombre = nombre;
       $('pTitulo').textContent = titulo; $('pInfo').textContent = ''; $('pMarco').src = pdfUrl; $('vPdf').classList.add('abierta');
-      $('pOtro').textContent = 'Ver testamento'; $('pOtro').onclick = () => { $('pCerrar').click(); $('mTestamento').click(); };
+      $('pOtro').textContent = 'Ver testamento'; $('pOtro').onclick = () => { $('pCerrar').click(); abrirDoc('testamento'); };
     } catch (e) { alert('No se pudo abrir: ' + (e.message || e)); }
   }
-  $('tVerFid').onclick = () => $('mFideicomiso').click();
-  $('mFideicomiso').onclick = () => verPdfPrivado('fideicomiso.jpg', 'Contrato de fideicomiso', 'contrato-de-fideicomiso.pdf');
+  $('tVerFid').onclick = () => abrirDoc(docT === 'fideicomiso' ? 'testamento' : 'fideicomiso');
+  $('mFideicomiso').onclick = () => abrirDoc('fideicomiso');
   $('tVerPdf').onclick = async () => {
     try {
       let r = await api('GET', '/testamento-pdf');
@@ -1590,12 +1640,14 @@
       if (!r.ok) { alert('No se pudo abrir el PDF guardado (' + r.status + ').'); return; }
       const b = await r.blob(); if (pdfUrl) URL.revokeObjectURL(pdfUrl);
       pdfUrl = URL.createObjectURL(new Blob([b], { type: 'application/pdf' })); $('pMarco').src = pdfUrl; pdfNombre = 'testamento.pdf'; $('pTitulo').textContent = 'Testamento guardado';
-      $('pOtro').textContent = 'Ver contrato de fideicomiso'; $('pOtro').onclick = () => $('mFideicomiso').click();
+      $('pOtro').textContent = 'Ver contrato de fideicomiso'; $('pOtro').onclick = () => { $('pCerrar').click(); abrirDoc('fideicomiso'); };
       $('pInfo').textContent = '';
       api('GET', '/testamento-pdf/info').then(x => x.json()).then(j => { if (j && j.fecha) $('pInfo').textContent = 'Guardado el ' + new Date(j.fecha).toLocaleString('es-CR'); }).catch(() => {});
       $('vPdf').classList.add('abierta');
     } catch (e) { alert('No se pudo abrir el PDF guardado: ' + (e.message || e)); }
   };
+  const verPdfTestamento = $('tVerPdf').onclick;
+  $('tVerPdf').onclick = () => docT === 'fideicomiso' ? verPdfPrivado('fideicomiso.jpg', 'Contrato de fideicomiso', 'contrato-de-fideicomiso.pdf') : verPdfTestamento();
   $('tSubirPdf').onclick = () => $('tArchivo').click();
   $('tArchivo').onchange = async () => {
     const f = $('tArchivo').files[0]; $('tArchivo').value = ''; if (!f) return;
@@ -1610,7 +1662,7 @@
   $('pImprimir').onclick = () => { try { $('pMarco').contentWindow.focus(); $('pMarco').contentWindow.print(); } catch (e) { alert('No se pudo imprimir desde aquí. Usa Descargar y imprime el archivo.'); } };
   $('pBajar').onclick = () => { if (!pdfUrl) return; const a = document.createElement('a'); a.href = pdfUrl; a.download = pdfNombre; document.body.appendChild(a); a.click(); a.remove(); };
   $('pCerrar').onclick = () => { $('vPdf').classList.remove('abierta'); $('pMarco').src = 'about:blank'; };
-  $('tImprimir').onclick = () => { pintarTestamento(); window.print(); };
+  $('tImprimir').onclick = () => { pintarDoc(); window.print(); };
   function irA() {
     const h = location.hash;
     let m = /^#s\/([\w-]+)$/.exec(h);
