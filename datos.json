@@ -2153,6 +2153,27 @@
    "fo": "FO# 11434",
    "fotosCompra": [
     "privado:km-KM184A.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM184A.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Números finos",
+     "explicacion": "Variante de 1951 con el \"5\" delgado, letras finas y la leyenda \"B.C.C.R.\" con puntos.",
+     "fotos": [
+      "O-x1ca9dd607-especial-1.jpg"
+     ],
+     "notas": "Diferencia en los números (Miguel). Falta confirmar en la moneda cuál de las dos es la de canto estriado y cuál la de canto liso."
+    }
+   ],
+   "fotos": [
+    "O-x1ca9dd607-especial-1.jpg"
    ]
   },
   "O-x9dcbdff87": {
@@ -2165,6 +2186,27 @@
    "fo": "FO# 11434",
    "fotosCompra": [
     "privado:km-KM184A.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM184A.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Números gruesos",
+     "explicacion": "Variante de 1951 con el \"5\" grueso, corona de hojas distinta y la leyenda \"B C C R\" sin puntos.",
+     "fotos": [
+      "O-x9dcbdff87-especial-1.jpg"
+     ],
+     "notas": "Diferencia en los números (Miguel). Falta confirmar en la moneda cuál de las dos es la de canto estriado y cuál la de canto liso."
+    }
+   ],
+   "fotos": [
+    "O-x9dcbdff87-especial-1.jpg"
    ]
   },
   "O-xe3d47d8e0": {
