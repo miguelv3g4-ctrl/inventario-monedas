@@ -8285,7 +8285,7 @@
     "O-4c2b8499-billete-1.jpg",
     "O-4c2b8499-billete-2.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel; 26 de setiembre de 2007.\nValor: falta el monto.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "notas": "Billetes modernos de Costa Rica; papel; 26 de setiembre de 2007.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 20 000 colones (Miguel).",
    "variantes": [
     {
      "nombre": "10 000 A serie 82132589",
@@ -8296,7 +8296,10 @@
      ],
      "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: dobleces marcados, suciedad y desgaste en las orillas, papel cansado sin roturas grandes."
     }
-   ]
+   ],
+   "valor": 20000,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
   },
   "O-f2e2bbd5": {
    "tengo": true,
@@ -8313,12 +8316,13 @@
    "variantes": [
     {
      "nombre": "1000 A serie 041445076",
-     "explicacion": "Billete con número de serie A041445076; papel con ventana transparente; serie A y B. Fotos: frente y reverso.",
+     "explicacion": "Billete con número de serie A041445076; papel con ventana transparente; serie A y B. Fotos: frente y reverso. Valor: 10 000 colones.",
      "fotos": [
       "O-f2e2bbd5-billete-1.jpg",
       "O-f2e2bbd5-billete-2.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: dobleces suaves, colores vivos, ventana con algo de desgaste."
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: dobleces suaves, colores vivos, ventana con algo de desgaste.\nValor de reventa: 10 000 colones (Miguel).",
+     "valor": 10000
     },
     {
      "nombre": "1000 B serie 013983938",
@@ -8338,7 +8342,9 @@
      ],
      "notas": "¿Por qué es especial? La serie 001818533 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 1818). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: un par de dobleces suaves, colores vivos, ventana limpia."
     }
-   ]
+   ],
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
   },
   "O-70300eba": {
    "tengo": true,
@@ -8378,12 +8384,13 @@
    "variantes": [
     {
      "nombre": "5000 A serie 007321451",
-     "explicacion": "Billete con número de serie A007321451; papel con ventana transparente; series A y B. Fotos: frente y reverso.",
+     "explicacion": "Billete con número de serie A007321451; papel con ventana transparente; series A y B. Fotos: frente y reverso. Valor: 20 000 colones.",
      "fotos": [
       "O-55fda5b4-billete-1.jpg",
       "O-55fda5b4-billete-2.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: dobleces suaves, colores vivos, leve arrugado en el papel."
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: dobleces suaves, colores vivos, leve arrugado en el papel.\nValor de reventa: 20 000 colones: los billetes de 5000 serie A son escasos (Miguel).",
+     "valor": 20000
     },
     {
      "nombre": "5000 B serie 019868333",
@@ -8407,7 +8414,7 @@
     }
    ],
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)"
+   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
   },
   "O-00d26b62": {
    "tengo": true,
@@ -8416,7 +8423,7 @@
     "O-00d26b62-billete-1.jpg",
     "O-00d26b62-billete-2.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nValor: falta el monto.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 20 000 colones (Miguel).",
    "variantes": [
     {
      "nombre": "10 000 A serie 087077390",
@@ -8427,7 +8434,10 @@
      ],
      "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 45. Nivel: Extra fino (XF 40) a Casi sin circular (AU 50). Detalle: casi sin dobleces, colores frescos, papel firme."
     }
-   ]
+   ],
+   "valor": 20000,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
   },
   "O-a5ae9afe": {
    "tengo": true,
@@ -8440,7 +8450,7 @@
     "O-a5ae9afe-billete-5.jpg",
     "O-a5ae9afe-billete-6.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; polímero; serie B, acuerdo del 14 de setiembre de 2018.\nValor: el billete 2000 B serie 020252020 (radar y fecha) vale 60 000 colones; a los otros dos les falta el monto.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "notas": "Billetes modernos de Costa Rica; polímero; serie B, acuerdo del 14 de setiembre de 2018.\nValor: el billete 2000 B serie 020252020 (radar y fecha) vale 60 000 colones; a los otros dos les falta el monto.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 10 000 colones cada billete; el 2000 B serie 020252020 (serie rara y que forma fecha) vale 60 000 (Miguel).",
    "variantes": [
     {
      "nombre": "2000 B serie 020252020 · Serie rara (radar y semi repetida) · Serie que forma fecha",
@@ -8470,7 +8480,10 @@
      ],
      "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: circulado leve, algunas marcas finas en el polímero."
     }
-   ]
+   ],
+   "valor": 10000,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
   },
   "O-20887687": {
    "tengo": true,
@@ -8493,7 +8506,7 @@
     "O-20887687-billete-15.jpg",
     "O-20887687-billete-16.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; polímero; serie C, acuerdo del 20 de setiembre de 2019.\nValor: falta el monto.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "notas": "Billetes modernos de Costa Rica; polímero; serie C, acuerdo del 20 de setiembre de 2019.\nFotos de Miguel (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 7000 colones cada billete (Miguel).",
    "variantes": [
     {
      "nombre": "1000 C serie 003757653",
@@ -8567,7 +8580,10 @@
      ],
      "notas": "¿Por qué es especial? La serie 042037374 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 3737). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: muy circulado, ventana transparente arrugada y deteriorada, dobleces marcados."
     }
-   ]
+   ],
+   "valor": 7000,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio de reventa según Miguel (22/11/2026)"
   },
   "O-4bab7a86": {
    "tengo": true,
