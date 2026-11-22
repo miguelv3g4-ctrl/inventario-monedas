@@ -98,6 +98,11 @@
   #mTotal .monto { color: var(--oro); font: 40px "Copperplate Gothic Bold", Copperplate, Georgia, serif; font-variant-numeric: tabular-nums; margin: 4px 0 6px; line-height: 1.1; }
   #mTotal .det { color: var(--gris); font-size: 14px; }
   #mTotal .det b { color: var(--oro); font-weight: normal; }
+  #vVariantes { margin: 4px 0 12px; }
+  #vVariantes .varTabs { display: flex; flex-wrap: wrap; gap: 6px; }
+  #vVariantes .varTabs button { background: #1a1610; color: var(--oro2); border: 1px solid var(--oro2); border-radius: 6px; padding: 6px 12px; font: inherit; font-size: 14px; cursor: pointer; }
+  #vVariantes .varTabs button.activo { background: var(--oro); color: #111; border-color: var(--oro); }
+  #vVariantes .varExp { margin-top: 8px; color: var(--gris); font-size: 14px; line-height: 1.4; }
   .notasF { margin-top: 12px; display: grid; gap: 5px; white-space: normal; line-height: 1.35; }
   .notasF b { color: var(--oro2); font-weight: 600; }
   .boton-seccion { background-size: cover !important; background-position: center !important; text-shadow: 0 1px 3px #000, 0 0 8px #000; }
@@ -368,6 +373,7 @@
       <button id="vCerrar">Cerrar</button>
     </div>
     <div class="pest"><button id="pValor">Valor de la colección</button><button id="pCompra">Inventario (compra)</button></div>
+    <div id="vVariantes"></div>
     <div id="vCuerpo">
       <div><div id="vFoto"></div><div id="vMinis"></div><div id="vRefInfo"></div></div>
       <div>
@@ -872,9 +878,9 @@
   ponerZoom(zoom);
 
   // ---------- ficha de consulta (lo que se ve al dar clic a una pieza)
-  let actual = null, pestana = 'valor';
+  let actual = null, pestana = 'valor', varSel = 0;
   function abrirFicha(id) {
-    actual = id; pestana = modo; const p = base[id];
+    actual = id; pestana = modo; varSel = 0; const p = base[id];
     $('vMoneda').textContent = p.moneda;
     $('vSub').textContent = nombrePieza(p) + (p.anio ? ' · Emisión ' + p.anio : '');
     $('vCol').textContent = p.coleccion;
@@ -884,7 +890,15 @@
   function pintarFicha() {
     const id = actual, r = reg(id), esValor = pestana === 'valor';
     $('pValor').classList.toggle('activo', esValor); $('pCompra').classList.toggle('activo', !esValor);
-    const fotos = [...new Set(esValor ? fotosDe(id, 'fotos').concat(fotosDe(id, 'fotosCompra')) : fotosDe(id, 'fotosCompra').concat(fotosDe(id, 'fotos')))], caja = $('vFoto'), minis = $('vMinis'); // todas las fotos: las de la pestaña primero y luego las otras
+    // variantes de la misma fecha en una sola tarjeta: una pestaña por variante, con su explicacion y sus fotos
+    const vars = r.variantes || [], vv = $('vVariantes'); vv.textContent = ''; vv.style.display = vars.length ? '' : 'none';
+    if (vars.length) {
+      if (varSel >= vars.length) varSel = 0;
+      const barra = el('div', 'varTabs');
+      vars.forEach((v, i) => { const b = el('button', i === varSel ? 'activo' : '', v.nombre); b.type = 'button'; b.onclick = () => { varSel = i; pintarFicha(); }; barra.appendChild(b); });
+      vv.append(barra, el('div', 'varExp', vars[varSel].explicacion || ''));
+    }
+    const fotos = vars.length ? [...new Set(vars[varSel].fotos || [])] : [...new Set(esValor ? fotosDe(id, 'fotos').concat(fotosDe(id, 'fotosCompra')) : fotosDe(id, 'fotosCompra').concat(fotosDe(id, 'fotos')))], caja = $('vFoto'), minis = $('vMinis'); // todas las fotos: las de la pestaña primero y luego las otras
     caja.textContent = ''; minis.textContent = '';
     const rf = refDe(id), info = $('vRefInfo'); info.textContent = '';
     if (!fotos.length && rf) {
@@ -927,6 +941,7 @@
     } else est.appendChild(tengo(id) ? el('span', 'inv', 'En la colección') : el('span', 'no', 'No la tengo'));
     if (cant(id) > 1 && (r.valor || r.costo)) est.append('\nPrecios por unidad · ' + cant(id) + ' unidades');
     if (r.producto) est.append('\n\nProducto: ' + r.producto);
+    if (vars.length && vars[varSel].notas) est.appendChild(notasOrdenadas(vars[varSel].notas));
     if (r.notas) est.appendChild(notasOrdenadas(r.notas));
     $('vEditar').textContent = nFotos(id) || r.valor || r.costo ? 'Cambiar datos y fotos' : 'Poner datos y fotos';
   }
