@@ -1772,7 +1772,30 @@
     "privado:km-KM145.jpg"
    ],
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM145.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Plata .900",
+     "explicacion": "Versión de plata de ley 900: en el reverso dice \"900 M G.C.R.\". Bien conservada, con tono oscuro.",
+     "fotos": [
+      "O-xf0a1ca1eb-especial-1.jpg",
+      "O-xf0a1ca1eb-especial-2.jpg"
+     ],
+     "notas": "Grado estimado (por foto): VF-XF."
+    }
+   ],
+   "fotos": [
+    "O-xf0a1ca1eb-especial-1.jpg",
+    "O-xf0a1ca1eb-especial-2.jpg"
+   ]
   },
   "O-xc9390bfc0": {
    "tengo": false,
@@ -1955,6 +1978,29 @@
    "fo": "FO# 16625",
    "fotosCompra": [
     "privado:km-KM178.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM178.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Cuproníquel B.N.C.R.",
+     "explicacion": "Versión de 1942 en metal blanco (cuproníquel), con la leyenda \"B.N.C.R.\". Ese año también se acuñó en latón.",
+     "fotos": [
+      "O-xf7ba06e9b-especial-1.jpg",
+      "O-xf7ba06e9b-especial-2.jpg"
+     ],
+     "notas": "Grado estimado (por foto): XF."
+    }
+   ],
+   "fotos": [
+    "O-xf7ba06e9b-especial-1.jpg",
+    "O-xf7ba06e9b-especial-2.jpg"
    ]
   },
   "O-xf2e01c902": {
@@ -1967,6 +2013,29 @@
    "fo": "FO# 12987",
    "fotosCompra": [
     "privado:anio-O-xf2e01c902-0.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:anio-O-xf2e01c902-0.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Cospel quebrado",
+     "explicacion": "El disco de metal (cospel) tenía una grieta antes de acuñarse: se ve una línea fina que entra desde el borde derecho, a la altura de \"RICA\", y cruza el escudo.",
+     "fotos": [
+      "O-xf2e01c902-especial-1.jpg",
+      "O-xf2e01c902-especial-2.jpg"
+     ],
+     "notas": "Cospel quebrado (rotulado en el cartón). En el reverso, abajo cerca de \"B.N.\", hay una zona irregular que puede ser el otro extremo de la grieta."
+    }
+   ],
+   "fotos": [
+    "O-xf2e01c902-especial-1.jpg",
+    "O-xf2e01c902-especial-2.jpg"
    ]
   },
   "O-x80946433b": {
@@ -2443,7 +2512,30 @@
    ],
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio revendedor",
-   "origen": "reventa"
+   "origen": "reventa",
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:anio-O-x22cea2e08-0.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Error de giro",
+     "explicacion": "Las dos caras no quedaron alineadas al acuñarla: al voltear la moneda, el reverso queda girado respecto del escudo.",
+     "fotos": [
+      "O-x22cea2e08-especial-1.jpg",
+      "O-x22cea2e08-especial-2.jpg"
+     ],
+     "notas": "Error de giro (rotulado en el cartón). Los grados de giro no se pueden medir con estas fotos: hace falta una foto volteando la moneda sobre su eje. No es seguro que la segunda foto sea el reverso de esta misma moneda."
+    }
+   ],
+   "fotos": [
+    "O-x22cea2e08-especial-1.jpg",
+    "O-x22cea2e08-especial-2.jpg"
+   ]
   },
   "O-x929b5dfa3": {
    "tengo": true,
@@ -2546,7 +2638,30 @@
    "fotosCompra": [
     "privado:km-KM168.jpg"
    ],
-   "origen": "reventa"
+   "origen": "reventa",
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM168.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Plata .650",
+     "explicacion": "Versión de plata de ley 650: en el reverso dice \"650 M G.C.R.\". Hay piezas de la misma época en plata 900.",
+     "fotos": [
+      "O-x4cfb888e8-especial-1.jpg",
+      "O-x4cfb888e8-especial-2.jpg"
+     ],
+     "notas": "Grado estimado (por foto): VG-F, gastada."
+    }
+   ],
+   "fotos": [
+    "O-x4cfb888e8-especial-1.jpg",
+    "O-x4cfb888e8-especial-2.jpg"
+   ]
   },
   "O-x672ef19a2": {
    "tengo": true,
@@ -2621,6 +2736,29 @@
    "fo": "FO# 12989",
    "fotosCompra": [
     "privado:anio-O-xc9db761fe-0.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:anio-O-xc9db761fe-0.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Marcada \"R.\"",
+     "explicacion": "Pieza en cartón marcada con \"R.\" a mano. Tiene manchas café de corrosión arriba, en \"DE\" y en la cimera.",
+     "fotos": [
+      "O-xc9db761fe-especial-1.jpg",
+      "O-xc9db761fe-especial-2.jpg"
+     ],
+     "notas": "Falta confirmar qué significa la \"R.\" del cartón."
+    }
+   ],
+   "fotos": [
+    "O-xc9db761fe-especial-1.jpg",
+    "O-xc9db761fe-especial-2.jpg"
    ]
   },
   "O-x3b37ebb6e": {
@@ -2931,6 +3069,29 @@
    "fo": "FO# 11428",
    "fotosCompra": [
     "privado:km-KM189-1.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM189-1.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "Pieza especial",
+     "explicacion": "Pieza que Miguel marcó como especial. En la foto se ve circulada, con un golpe en el reborde abajo a la derecha; falta confirmar qué la hace especial.",
+     "fotos": [
+      "O-xeb403d2e8-especial-1.jpg",
+      "O-xeb403d2e8-especial-2.jpg"
+     ],
+     "notas": "Por confirmar con Miguel qué tiene de especial."
+    }
+   ],
+   "fotos": [
+    "O-xeb403d2e8-especial-1.jpg",
+    "O-xeb403d2e8-especial-2.jpg"
    ]
   },
   "O-xa5ccc1c22": {
@@ -3715,7 +3876,31 @@
    "fo": "FO# 6829",
    "valor": 1000,
    "costo": 1000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "Pieza normal (foto de referencia del catálogo).",
+     "fotos": [
+      "privado:km-KM227-1a.jpg",
+      "O-xd7c4d06a4-1795118129669-xq9if.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "UNC",
+     "explicacion": "Pieza sin circular (UNC): conserva todo el brillo de acuñación y no tiene desgaste. Vale más que una circulada.",
+     "fotos": [
+      "O-xd7c4d06a4-especial-1.jpg",
+      "O-xd7c4d06a4-especial-2.jpg"
+     ],
+     "notas": "Estado: UNC. Año leído en la foto: 1999 (probable).\nPrecio: más caro que una circulada (falta el monto)."
+    }
+   ],
+   "fotos": [
+    "O-xd7c4d06a4-especial-1.jpg",
+    "O-xd7c4d06a4-especial-2.jpg"
+   ]
   },
   "O-x109cb7dca": {
    "tengo": true,
@@ -4242,7 +4427,30 @@
    "origen": "reventa",
    "fotos": [
     "O-x97e4c2697-video-escudo.jpg",
-    "O-x97e4c2697-video-valor.jpg"
+    "O-x97e4c2697-video-valor.jpg",
+    "O-x97e4c2697-especial-1.jpg",
+    "O-x97e4c2697-especial-2.jpg"
+   ],
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "La pieza normal de la colección.",
+     "fotos": [
+      "O-x97e4c2697-video-escudo.jpg",
+      "O-x97e4c2697-video-valor.jpg",
+      "privado:km-KM231-1b.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "UNC",
+     "explicacion": "Pieza sin circular (UNC): conserva todo el brillo de acuñación y no tiene desgaste. Vale más que una circulada.",
+     "fotos": [
+      "O-x97e4c2697-especial-1.jpg",
+      "O-x97e4c2697-especial-2.jpg"
+     ],
+     "notas": "Estado: UNC (escrito en el cartón). Año leído en la foto: 2006 (probable).\nPrecio: más caro que una circulada (falta el monto)."
+    }
    ]
   },
   "O-x0357cfcad": {
@@ -5676,7 +5884,9 @@
    "fotos": [
     "ms-175-fundacion.jpg",
     "O-msda0cba6d9-video-cara.jpg",
-    "O-msda0cba6d9-video-valor.jpg"
+    "O-msda0cba6d9-video-valor.jpg",
+    "O-msda0cba6d9-especial-1.jpg",
+    "O-msda0cba6d9-especial-2.jpg"
    ],
    "fotosCompra": [
     "privado:km-KM242.jpg"
@@ -5687,7 +5897,29 @@
    "fuenteValor": "Precio revendedor",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.",
    "costo": 1500,
-   "origen": "museo"
+   "origen": "museo",
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "La pieza normal de la colección.",
+     "fotos": [
+      "ms-175-fundacion.jpg",
+      "O-msda0cba6d9-video-cara.jpg",
+      "O-msda0cba6d9-video-valor.jpg",
+      "privado:km-KM242.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "En cartón \"2K\"",
+     "explicacion": "Pieza sin circular guardada en cartón, con \"2K\" escrito a mano (puede ser el precio, 2000 colones).",
+     "fotos": [
+      "O-msda0cba6d9-especial-1.jpg",
+      "O-msda0cba6d9-especial-2.jpg"
+     ],
+     "notas": "\"2K\" escrito en el cartón: por confirmar si es el precio."
+    }
+   ]
   },
   "O-ms88823228f": {
    "tengo": true,
