@@ -2723,7 +2723,11 @@
    "fotosCompra": [
     "privado:km-KM188-1a.jpg"
    ],
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x483025dee-video-escudo.jpg",
+    "O-x483025dee-video-valor.jpg"
+   ]
   },
   "O-x7f3059237": {
    "tengo": true,
@@ -2751,7 +2755,11 @@
    "fotosCompra": [
     "privado:anio-O-x8d45ec313-0.jpg"
    ],
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x8d45ec313-video-escudo.jpg",
+    "O-x8d45ec313-video-valor.jpg"
+   ]
   },
   "O-x8211325fe": {
    "tengo": true,
@@ -2778,7 +2786,11 @@
    "fotosCompra": [
     "privado:anio-O-x66c01a2b8-0.jpg"
    ],
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x66c01a2b8-video-escudo.jpg",
+    "O-x66c01a2b8-video-valor.jpg"
+   ]
   },
   "O-xea71ba3dd": {
    "tengo": false,
@@ -3044,7 +3056,11 @@
    "fotosCompra": [
     "privado:km-KM209-2.jpg"
    ],
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x915a849cd-video-escudo.jpg",
+    "O-x915a849cd-video-valor.jpg"
+   ]
   },
   "O-xfbc18a8dd": {
    "tengo": true,
@@ -3262,7 +3278,11 @@
    ],
    "valor": 500,
    "origen": "reventa",
-   "costo": 500
+   "costo": 500,
+   "fotos": [
+    "O-x1ad793dad-video-escudo.jpg",
+    "O-x1ad793dad-video-valor.jpg"
+   ]
   },
   "O-x25f569fc3": {
    "tengo": true,
@@ -3288,7 +3308,11 @@
    ],
    "valor": 500,
    "origen": "reventa",
-   "costo": 500
+   "costo": 500,
+   "fotos": [
+    "O-x7276031e9-video-escudo.jpg",
+    "O-x7276031e9-video-valor.jpg"
+   ]
   },
   "O-x36a873a9a": {
    "tengo": true,
@@ -3339,7 +3363,11 @@
    ],
    "valor": 500,
    "origen": "reventa",
-   "costo": 500
+   "costo": 500,
+   "fotos": [
+    "O-xdab5e83ad-video-escudo.jpg",
+    "O-xdab5e83ad-video-valor.jpg"
+   ]
   },
   "O-x693bae8aa": {
    "tengo": true,
@@ -3541,7 +3569,11 @@
    "fechaValor": "2026-11-21",
    "fuenteValor": "Igual que la moneda de 1 colón del mismo rango de años",
    "costo": 500,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x397d78ae6-video-escudo.jpg",
+    "O-x397d78ae6-video-valor.jpg"
+   ]
   },
   "O-xd472064ed": {
    "tengo": true,
@@ -3570,7 +3602,11 @@
    "fechaValor": "2026-11-21",
    "fuenteValor": "Igual que la moneda de 1 colón del mismo rango de años",
    "costo": 500,
-   "origen": "reventa"
+   "origen": "reventa",
+   "fotos": [
+    "O-x016780748-video-escudo.jpg",
+    "O-x016780748-video-valor.jpg"
+   ]
   },
   "O-x9cc5a1850": {
    "tengo": true,
@@ -3762,7 +3798,8 @@
    "valor": 1000,
    "costo": 1000,
    "fotos": [
-    "O-xe6bbd7df4-video-escudo.jpg"
+    "O-xe6bbd7df4-video-escudo.jpg",
+    "O-xe6bbd7df4-video-valor.jpg"
    ]
   },
   "O-x68b5fe4d2": {
