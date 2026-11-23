@@ -920,7 +920,7 @@
           const tot = rr.variantes.filter(x => x.estadoMS).reduce((s, x) => s + (x.cantidad || 0), 0); if (tot) { rr.cantidad = tot; rr.tengo = true; }
           sucias.add(id); pintarFicha(); totales(); guardarCasillas();
         };
-        l.append((i ? 'MS circuladas (' + fmt(v.valor) + ' c/u): ' : 'MS UNC (' + fmt(v.valor) + ' c/u): '), inp); fila.appendChild(l);
+        const pr = typeof v.valor === 'number' ? fmt(v.valor) + ' c/u' : 'precio por definir'; l.append((i ? 'MS circuladas (' : 'MS UNC (') + pr + '): ', inp); fila.appendChild(l);
       });
       caja3.append(fila, el('div', '', conectado() ? 'Cambia los números y se guarda solo.' : 'Para cambiarlo, entra con la clave.'));
       vv.appendChild(caja3);
