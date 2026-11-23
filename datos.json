@@ -8639,6 +8639,7 @@
   },
   "O-ms1a3921216": {
    "tengo": true,
+   "cantidad": 10,
    "fotos": [
     "O-ms1a3921216-1795400994313-mi868.jpg"
    ],
@@ -8647,7 +8648,7 @@
    ],
    "km": "KM# 245",
    "valor": 500,
-   "fechaValor": "2026-11-22",
+   "fechaValor": "2026-11-23",
    "fuenteValor": "Precio revendedor",
    "costo": 150,
    "origen": "reventa",
