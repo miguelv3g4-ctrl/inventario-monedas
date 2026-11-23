@@ -6737,7 +6737,7 @@
    "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 500 colones del mismo diseño.",
    "variantes": [
     {
-     "nombre": "MS UNC (sin circular) · 16",
+     "nombre": "MS UNC (sin circular) · 3",
      "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 16 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x39afa064d-video-escudo.jpg",
@@ -6746,11 +6746,11 @@
      ],
      "notas": "",
      "valor": 2500,
-     "cantidad": 16,
+     "cantidad": 3,
      "estadoMS": true
     },
     {
-     "nombre": "MS circuladas · 0",
+     "nombre": "MS circuladas · 13",
      "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x39afa064d-video-escudo.jpg",
@@ -6758,7 +6758,7 @@
       "privado:km-KM239-1a.jpg"
      ],
      "notas": "",
-     "cantidad": 0,
+     "cantidad": 13,
      "estadoMS": true,
      "valor": 1000
     }
