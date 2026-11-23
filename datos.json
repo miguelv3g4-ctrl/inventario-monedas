@@ -8800,10 +8800,11 @@
   },
   "O-msde9df0025": {
    "tengo": true,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 2025.",
-   "valor": 25000,
-   "costo": 12000,
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "valor": 1000,
+   "fechaValor": "2026-11-23",
+   "costo": 1000,
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 2025."
   },
   "O-ms3b4bcc9d9": {
    "tengo": false,
