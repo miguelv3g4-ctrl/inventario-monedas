@@ -9653,10 +9653,8 @@
   },
   "O-f2e2bbd5": {
    "tengo": true,
-   "cantidad": 3,
+   "cantidad": 2,
    "fotos": [
-    "O-f2e2bbd5-billete-1.jpg",
-    "O-f2e2bbd5-billete-2.jpg",
     "O-f2e2bbd5-billete-3.jpg",
     "O-f2e2bbd5-billete-4.jpg",
     "O-f2e2bbd5-billete-5.jpg",
@@ -9664,16 +9662,6 @@
    ],
    "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A y B.\nValor: falta el monto.\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
    "variantes": [
-    {
-     "nombre": "1000 A serie 041445076",
-     "explicacion": "Billete con número de serie A041445076; papel con ventana transparente; serie A y B. Fotos: frente y reverso. Valor: 10 000 colones.",
-     "fotos": [
-      "O-f2e2bbd5-billete-1.jpg",
-      "O-f2e2bbd5-billete-2.jpg"
-     ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: dobleces suaves, colores vivos, ventana con algo de desgaste.\nValor de reventa: 10 000 colones.",
-     "valor": 10000
-    },
     {
      "nombre": "1000 B serie 013983938 · Billete de la suerte",
      "explicacion": "**El billete de la suerte: papá se lo encontró en la calle.** Billete con número de serie B013983938; papel con ventana transparente; serie A y B. Fotos: frente y reverso. Valor: 10 000 colones.",
@@ -10016,6 +10004,29 @@
      "valor": 20000
     }
    ]
+  },
+  "O-651bdef0": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-651bdef0-billete-1.jpg",
+    "O-651bdef0-billete-2.jpg"
+   ],
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A y B.\nValor: falta el monto.\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "variantes": [
+    {
+     "nombre": "1000 A serie 041445076",
+     "explicacion": "Billete con número de serie A041445076; papel con ventana transparente; serie A y B. Fotos: frente y reverso. Valor: 10 000 colones.",
+     "fotos": [
+      "O-651bdef0-billete-1.jpg",
+      "O-651bdef0-billete-2.jpg"
+     ],
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: dobleces suaves, colores vivos, ventana con algo de desgaste.\nValor de reventa: 10 000 colones.",
+     "valor": 10000
+    }
+   ],
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio de reventa (22/11/2026)"
   }
  },
  "sueltas": {},
@@ -12630,8 +12641,14 @@
    "seccion": "billetes"
   },
   {
+   "id": "O-651bdef0",
+   "nombre": "1000 colones papel serie A (Braulio Carrillo / venado)",
+   "categoria": "Billetes",
+   "seccion": "billetes"
+  },
+  {
    "id": "O-f2e2bbd5",
-   "nombre": "1000 colones papel (Braulio Carrillo / venado)",
+   "nombre": "1000 colones papel serie B (Braulio Carrillo / venado)",
    "categoria": "Billetes",
    "seccion": "billetes"
   },
