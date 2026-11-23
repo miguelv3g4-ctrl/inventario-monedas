@@ -6774,86 +6774,6 @@
     "privado:km-KM202.jpg"
    ]
   },
-  "O-xe41776751": {
-   "tengo": true,
-   "fotosCompra": [
-    "privado:km-KM239-2.jpg"
-   ],
-   "km": "KM# 239.2",
-   "valor": 150000,
-   "fechaValor": "2026-11-22",
-   "fuenteValor": "mercado numismatico",
-   "costo": 60,
-   "fechaCompra": "2020-03-21",
-   "notas": "Está en la hoja \"me faltan\".\nFuente: Excel monedas costa rica.",
-   "fotos": [
-    "O-xe41776751-video-escudo.jpg",
-    "O-xe41776751-video-valor.jpg"
-   ],
-   "variantes": [
-    {
-     "nombre": "ceros redondos",
-     "explicacion": "Versión de 2003: catálogo KM# 239.2. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
-     "fotos": [
-      "O-xe41776751-video-escudo.jpg",
-      "O-xe41776751-video-valor.jpg",
-      "privado:km-KM239-2.jpg",
-      "privado:catxl-KM239.2.jpg"
-     ],
-     "notas": "",
-     "mismoAnio": true,
-     "propia": true
-    },
-    {
-     "nombre": "Otra: Números gruesos - no magnética",
-     "explicacion": "Versión de 2003: Números gruesos - no magnética; material: Aluminio-bronce; catálogo KM# 239.1. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 500 colones 2003 · Números gruesos - no magnética.",
-     "fotos": [
-      "privado:km-KM239-1.jpg",
-      "privado:catxl-KM239.1.jpg"
-     ],
-     "notas": "",
-     "mismoAnio": true
-    },
-    {
-     "nombre": "Otra: No magnética - muy rara",
-     "explicacion": "Versión de 2003: No magnética - muy rara; material: Latón; catálogo KM# 239.2. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 500 colones 2003 · No magnética - muy rara.",
-     "fotos": [
-      "privado:km-KM239-2.jpg",
-      "privado:catxl-KM239.2.jpg"
-     ],
-     "notas": "",
-     "mismoAnio": true
-    },
-    {
-     "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 150 000 colones.",
-     "fotos": [
-      "O-xe41776751-video-escudo.jpg",
-      "O-xe41776751-video-valor.jpg",
-      "privado:km-KM239-2.jpg"
-     ],
-     "notas": "",
-     "valor": 150000,
-     "cantidad": 1,
-     "estadoMS": true
-    },
-    {
-     "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 90 000 colones.",
-     "fotos": [
-      "O-xe41776751-video-escudo.jpg",
-      "O-xe41776751-video-valor.jpg",
-      "privado:km-KM239-2.jpg"
-     ],
-     "notas": "",
-     "cantidad": 0,
-     "estadoMS": true,
-     "valor": 90000
-    }
-   ],
-   "cantidad": 1,
-   "valorCirculada": 90000
-  },
   "O-x903a1aa01": {
    "tengo": false,
    "notas": "Material: Cobre Niquel · Peso: 3.8 · Diámetro: 20mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nValor actual provisional: costo + 40 %.",
@@ -11583,12 +11503,6 @@
    "categoria": "1500 colones",
    "seccion": "antano",
    "ref": "privado:cat-98.jpg"
-  },
-  {
-   "id": "O-xe41776751",
-   "nombre": "500 colones 2003 · ceros redondos",
-   "categoria": "500 colones",
-   "seccion": "cono-1995-2021"
   },
   {
    "id": "O-x903a1aa01",
