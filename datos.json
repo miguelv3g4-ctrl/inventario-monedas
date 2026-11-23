@@ -8811,7 +8811,9 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 2026."
   },
   "O-ms7126281ad": {
-   "tengo": false,
+   "tengo": true,
+   "valor": 1000,
+   "costo": 1000,
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 100 colones. Año de emisión: 202X."
   },
   "O-ms7128eb503": {
