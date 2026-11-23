@@ -4446,7 +4446,7 @@
   },
   "O-x150f54e4a": {
    "tengo": true,
-   "cantidad": 4,
+   "cantidad": 7,
    "fotosCompra": [
     "privado:km-KM227.jpg",
     "O-x150f54e4a-1795096553418-u4b9p.jpg"
@@ -4472,15 +4472,15 @@
      "estadoMS": true
     },
     {
-     "nombre": "MS circuladas · 3",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 400 colones.",
+     "nombre": "MS circuladas · 6",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 6. Cada una vale 400 colones.",
      "fotos": [
       "privado:km-KM227.jpg",
       "O-x150f54e4a-1795096553418-u4b9p.jpg"
      ],
      "notas": "",
      "valor": 400,
-     "cantidad": 3,
+     "cantidad": 6,
      "estadoMS": true
     }
    ]
