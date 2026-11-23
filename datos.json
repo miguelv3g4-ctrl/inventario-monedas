@@ -4433,7 +4433,32 @@
    "origen": "reventa",
    "notas": "Material: Acero bañado en latón · Peso: 4,03 g · Diámetro: 21,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 3 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 500.",
    "valorCirculada": 400,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 4",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 4. Cada una vale 500 colones.",
+     "fotos": [
+      "privado:km-KM227.jpg",
+      "O-x150f54e4a-1795096553418-u4b9p.jpg"
+     ],
+     "notas": "",
+     "valor": 500,
+     "cantidad": 4,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 3",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 400 colones.",
+     "fotos": [
+      "privado:km-KM227.jpg",
+      "O-x150f54e4a-1795096553418-u4b9p.jpg"
+     ],
+     "notas": "",
+     "valor": 400,
+     "cantidad": 3,
+     "estadoMS": true
+    }
+   ]
   },
   "O-xd20f2c5d2": {
    "tengo": true,
@@ -4453,7 +4478,36 @@
    "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 2 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "cantidad": 2,
    "valorCirculada": 400,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "fotos": [
+      "O-xd20f2c5d2-especial-1.jpg",
+      "O-xd20f2c5d2-especial-2.jpg",
+      "privado:km-KM227a.jpg",
+      "O-xd20f2c5d2-1795117846459-oal6g.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 2",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 400 colones.",
+     "fotos": [
+      "O-xd20f2c5d2-especial-1.jpg",
+      "O-xd20f2c5d2-especial-2.jpg",
+      "privado:km-KM227a.jpg",
+      "O-xd20f2c5d2-1795117846459-oal6g.jpg"
+     ],
+     "notas": "",
+     "valor": 400,
+     "cantidad": 2,
+     "estadoMS": true
+    }
+   ]
   },
   "O-xd7c4d06a4": {
    "tengo": true,
@@ -4473,7 +4527,36 @@
    "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras grandes - Volcanes sin humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 3 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "cantidad": 3,
    "valorCirculada": 400,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "fotos": [
+      "O-xd7c4d06a4-especial-1.jpg",
+      "O-xd7c4d06a4-especial-2.jpg",
+      "privado:km-KM227-1a.jpg",
+      "O-xd7c4d06a4-1795118129669-xq9if.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 3",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 400 colones.",
+     "fotos": [
+      "O-xd7c4d06a4-especial-1.jpg",
+      "O-xd7c4d06a4-especial-2.jpg",
+      "privado:km-KM227-1a.jpg",
+      "O-xd7c4d06a4-1795118129669-xq9if.jpg"
+     ],
+     "notas": "",
+     "valor": 400,
+     "cantidad": 3,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x109cb7dca": {
    "tengo": true,
@@ -4493,7 +4576,36 @@
    ],
    "cantidad": 5,
    "valorCirculada": 400,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "fotos": [
+      "O-x109cb7dca-video-escudo.jpg",
+      "O-x109cb7dca-video-valor.jpg",
+      "privado:km-KM227-2a.jpg",
+      "O-x109cb7dca-1795128431868-6snco.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 5",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 5. Cada una vale 400 colones.",
+     "fotos": [
+      "O-x109cb7dca-video-escudo.jpg",
+      "O-x109cb7dca-video-valor.jpg",
+      "privado:km-KM227-2a.jpg",
+      "O-x109cb7dca-1795128431868-6snco.jpg"
+     ],
+     "notas": "",
+     "valor": 400,
+     "cantidad": 5,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x7567e6ed2": {
    "tengo": true,
@@ -4631,7 +4743,30 @@
    "origen": "reventa",
    "cantidad": 3,
    "valorCirculada": 400,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "fotos": [
+      "privado:km-KM228.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 3",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 400 colones.",
+     "fotos": [
+      "privado:km-KM228.jpg"
+     ],
+     "notas": "",
+     "valor": 400,
+     "cantidad": 3,
+     "estadoMS": true
+    }
+   ]
   },
   "O-xe0aaf7616": {
    "tengo": true,
@@ -4648,7 +4783,30 @@
    "origen": "reventa",
    "cantidad": 2,
    "valorCirculada": 400,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 3 000 colones.",
+     "fotos": [
+      "privado:km-KM228a.jpg"
+     ],
+     "notas": "",
+     "valor": 3000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 2",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 400 colones.",
+     "fotos": [
+      "privado:km-KM228a.jpg"
+     ],
+     "notas": "",
+     "valor": 400,
+     "cantidad": 2,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x8a6998b28": {
    "tengo": true,
@@ -4663,7 +4821,30 @@
    "origen": "reventa",
    "cantidad": 2,
    "valorCirculada": 400,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "fotos": [
+      "privado:km-KM228-1a.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 2",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 400 colones.",
+     "fotos": [
+      "privado:km-KM228-1a.jpg"
+     ],
+     "notas": "",
+     "valor": 400,
+     "cantidad": 2,
+     "estadoMS": true
+    }
+   ]
   },
   "O-xb067abf23": {
    "tengo": true,
@@ -4684,7 +4865,34 @@
    ],
    "cantidad": 4,
    "valorCirculada": 400,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 4 000 colones.",
+     "fotos": [
+      "O-xb067abf23-video-escudo.jpg",
+      "O-xb067abf23-video-valor.jpg",
+      "privado:km-KM228-2.jpg"
+     ],
+     "notas": "",
+     "valor": 4000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 4",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 4. Cada una vale 400 colones.",
+     "fotos": [
+      "O-xb067abf23-video-escudo.jpg",
+      "O-xb067abf23-video-valor.jpg",
+      "privado:km-KM228-2.jpg"
+     ],
+     "notas": "",
+     "valor": 400,
+     "cantidad": 4,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x11bee65fb": {
    "tengo": true,
@@ -4885,7 +5093,30 @@
    "origen": "reventa",
    "cantidad": 1,
    "valorCirculada": 600,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "fotos": [
+      "privado:km-KM229.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 1",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 600 colones.",
+     "fotos": [
+      "privado:km-KM229.jpg"
+     ],
+     "notas": "",
+     "valor": 600,
+     "cantidad": 1,
+     "estadoMS": true
+    }
+   ]
   },
   "O-xb2a0db2d6": {
    "tengo": true,
@@ -4905,7 +5136,36 @@
    ],
    "cantidad": 2,
    "valorCirculada": 600,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "fotos": [
+      "O-xb2a0db2d6-video-escudo.jpg",
+      "O-xb2a0db2d6-video-valor.jpg",
+      "privado:km-KM229a.jpg",
+      "O-xb2a0db2d6-1795055324351-zg44d.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 2",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 600 colones.",
+     "fotos": [
+      "O-xb2a0db2d6-video-escudo.jpg",
+      "O-xb2a0db2d6-video-valor.jpg",
+      "privado:km-KM229a.jpg",
+      "O-xb2a0db2d6-1795055324351-zg44d.jpg"
+     ],
+     "notas": "",
+     "valor": 600,
+     "cantidad": 2,
+     "estadoMS": true
+    }
+   ]
   },
   "O-xd4802a3a4": {
    "tengo": true,
@@ -4925,7 +5185,36 @@
    ],
    "cantidad": 3,
    "valorCirculada": 600,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 3 000 colones.",
+     "fotos": [
+      "O-xd4802a3a4-video-escudo.jpg",
+      "O-xd4802a3a4-video-valor.jpg",
+      "privado:anio-O-xd4802a3a4-0.jpg",
+      "privado:anio-O-xd4802a3a4-1.jpg"
+     ],
+     "notas": "",
+     "valor": 3000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 3",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 600 colones.",
+     "fotos": [
+      "O-xd4802a3a4-video-escudo.jpg",
+      "O-xd4802a3a4-video-valor.jpg",
+      "privado:anio-O-xd4802a3a4-0.jpg",
+      "privado:anio-O-xd4802a3a4-1.jpg"
+     ],
+     "notas": "",
+     "valor": 600,
+     "cantidad": 3,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x847ed7e7c": {
    "tengo": true,
@@ -4963,7 +5252,36 @@
    ],
    "cantidad": 4,
    "valorCirculada": 600,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 2 000 colones.",
+     "fotos": [
+      "O-xa8ced4273-video-escudo.jpg",
+      "O-xa8ced4273-video-valor.jpg",
+      "privado:km-KM229c_FO12476.jpg",
+      "O-xa8ced4273-1795054667879-naqah.jpg"
+     ],
+     "notas": "",
+     "valor": 2000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 4",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 4. Cada una vale 600 colones.",
+     "fotos": [
+      "O-xa8ced4273-video-escudo.jpg",
+      "O-xa8ced4273-video-valor.jpg",
+      "privado:km-KM229c_FO12476.jpg",
+      "O-xa8ced4273-1795054667879-naqah.jpg"
+     ],
+     "notas": "",
+     "valor": 600,
+     "cantidad": 4,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x19b5a2c7f": {
    "tengo": true,
@@ -4984,7 +5302,34 @@
    ],
    "cantidad": 1,
    "valorCirculada": 600,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 500 colones.",
+     "fotos": [
+      "O-x19b5a2c7f-video-escudo.jpg",
+      "O-x19b5a2c7f-video-valor.jpg",
+      "privado:anio-O-x19b5a2c7f-0.jpg"
+     ],
+     "notas": "",
+     "valor": 1500,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 1",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 600 colones.",
+     "fotos": [
+      "O-x19b5a2c7f-video-escudo.jpg",
+      "O-x19b5a2c7f-video-valor.jpg",
+      "privado:anio-O-x19b5a2c7f-0.jpg"
+     ],
+     "notas": "",
+     "valor": 600,
+     "cantidad": 1,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x6b8c69a51": {
    "tengo": true,
@@ -5032,7 +5377,30 @@
    "origen": "reventa",
    "cantidad": 1,
    "valorCirculada": 600,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "fotos": [
+      "privado:km-KM231.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 1",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 600 colones.",
+     "fotos": [
+      "privado:km-KM231.jpg"
+     ],
+     "notas": "",
+     "valor": 600,
+     "cantidad": 1,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x1d00c2792": {
    "tengo": true,
@@ -5047,7 +5415,30 @@
    "origen": "reventa",
    "cantidad": 1,
    "valorCirculada": 600,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "fotos": [
+      "privado:km-KM231-1.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 1",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 600 colones.",
+     "fotos": [
+      "privado:km-KM231-1.jpg"
+     ],
+     "notas": "",
+     "valor": 600,
+     "cantidad": 1,
+     "estadoMS": true
+    }
+   ]
   },
   "O-xeb9bba39d": {
    "tengo": true,
@@ -5066,7 +5457,34 @@
    ],
    "cantidad": 1,
    "valorCirculada": 600,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "fotos": [
+      "O-xeb9bba39d-video-escudo.jpg",
+      "O-xeb9bba39d-video-valor.jpg",
+      "privado:km-KM231-1a.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 1",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 600 colones.",
+     "fotos": [
+      "O-xeb9bba39d-video-escudo.jpg",
+      "O-xeb9bba39d-video-valor.jpg",
+      "privado:km-KM231-1a.jpg"
+     ],
+     "notas": "",
+     "valor": 600,
+     "cantidad": 1,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x97e4c2697": {
    "tengo": true,
@@ -5209,7 +5627,30 @@
    "costo": 1000,
    "cantidad": 3,
    "valorCirculada": 700,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 1",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 000 colones.",
+     "fotos": [
+      "privado:km-KM230.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 1,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 2",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 700 colones.",
+     "fotos": [
+      "privado:km-KM230.jpg"
+     ],
+     "notas": "",
+     "valor": 700,
+     "cantidad": 2,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x55e57c564": {
    "tengo": true,
@@ -5223,7 +5664,30 @@
    "costo": 1000,
    "cantidad": 5,
    "valorCirculada": 700,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 2",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 2. Cada una vale 1 000 colones.",
+     "fotos": [
+      "privado:km-KM230a.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 2,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 3",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 700 colones.",
+     "fotos": [
+      "privado:km-KM230a.jpg"
+     ],
+     "notas": "",
+     "valor": 700,
+     "cantidad": 3,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x6ddfa1ed1": {
    "tengo": true,
@@ -5237,7 +5701,30 @@
    "costo": 1000,
    "cantidad": 1,
    "valorCirculada": 700,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "fotos": [
+      "privado:anio-O-x6ddfa1ed1-0.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 1",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 700 colones.",
+     "fotos": [
+      "privado:anio-O-x6ddfa1ed1-0.jpg"
+     ],
+     "notas": "",
+     "valor": 700,
+     "cantidad": 1,
+     "estadoMS": true
+    }
+   ]
   },
   "O-xd662fda1c": {
    "tengo": true,
@@ -5266,7 +5753,30 @@
    "costo": 5000,
    "cantidad": 1,
    "valorCirculada": 700,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 5 000 colones.",
+     "fotos": [
+      "privado:km-KM240.jpg"
+     ],
+     "notas": "",
+     "valor": 5000,
+     "cantidad": 0,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 1",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 700 colones.",
+     "fotos": [
+      "privado:km-KM240.jpg"
+     ],
+     "notas": "",
+     "valor": 700,
+     "cantidad": 1,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x9074baa28": {
    "tengo": true,
@@ -5295,7 +5805,34 @@
    ],
    "cantidad": 6,
    "valorCirculada": 700,
-   "circulada": true
+   "variantes": [
+    {
+     "nombre": "MS UNC (sin circular) · 3",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 3. Cada una vale 1 000 colones.",
+     "fotos": [
+      "O-xdf61763bf-video-escudo.jpg",
+      "O-xdf61763bf-video-valor.jpg",
+      "privado:km-KM240a_FO5672.jpg"
+     ],
+     "notas": "",
+     "valor": 1000,
+     "cantidad": 3,
+     "estadoMS": true
+    },
+    {
+     "nombre": "MS circuladas · 3",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 700 colones.",
+     "fotos": [
+      "O-xdf61763bf-video-escudo.jpg",
+      "O-xdf61763bf-video-valor.jpg",
+      "privado:km-KM240a_FO5672.jpg"
+     ],
+     "notas": "",
+     "valor": 700,
+     "cantidad": 3,
+     "estadoMS": true
+    }
+   ]
   },
   "O-x51beaee62": {
    "tengo": true,

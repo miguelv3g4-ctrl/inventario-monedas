@@ -839,7 +839,7 @@
   const denomMS = p => { const t = p.coleccion + ' ' + p.moneda; const d = DENOM_MS.find(x => x[1].test(t)); return d ? d[0] : 0; };
   const valorU = p => { const r = reg(p.id); if (r.circulada && r.valorCirculada) return r.valorCirculada; return r.valor || (p.seccion === 'ms-sueltas' ? PRECIO_MS[denomMS(p)] || 0 : 0); }; // circulada: precio de MS circulada
   // total de una tarjeta: las pestañas con precio propio cuentan aparte; el resto de las piezas, al precio de la tarjeta
-  const precioT = (id, campo, unit) => { const vs = (reg(id).variantes || []).filter(v => typeof v[campo] === 'number'), q = cant(id); if (!vs.length) return unit * q; const k = vs.reduce((s, v) => s + (v.cantidad || 1), 0); return vs.reduce((s, v) => s + v[campo] * (v.cantidad || 1), 0) + Math.max(0, q - k) * unit; };
+  const precioT = (id, campo, unit) => { const vs = (reg(id).variantes || []).filter(v => typeof v[campo] === 'number'), q = cant(id); if (!vs.length) return unit * q; const k = vs.reduce((s, v) => s + (v.cantidad ?? 1), 0); return vs.reduce((s, v) => s + v[campo] * (v.cantidad ?? 1), 0) + Math.max(0, q - k) * unit; };
   const valorT = p => precioT(p.id, 'valor', valorU(p)), costoT = id => precioT(id, 'costo', reg(id).costo || 0);
   function sumas(lista) {
     let n = 0, inv = 0, val = 0;
@@ -907,7 +907,7 @@
       vv.append(barra, exp);
     }
     // monedas MS: casilla para escoger si son UNC (sin circular) o circuladas; cambia el valor
-    if (r.valorCirculada) {
+    if (r.valorCirculada && !vars.some(v => v.estadoMS)) {
       vv.style.display = '';
       const caja2 = el('div', 'varExp estadoMS'), fila = el('div', 'varTabs');
       const opcion = (txt, circ) => { const l = el('label', 'ckMS'), ck = el('input'); ck.type = 'checkbox'; ck.checked = !!r.circulada === circ; ck.onchange = () => { if (!conectado()) { ck.checked = !ck.checked; abrirConexion(); return; } datos.piezas[id] = limpiar(Object.assign({}, datos.piezas[id], { circulada: circ })); sucias.add(id); pintarFicha(); totales(); guardarCasillas(); }; l.append(ck, ' ' + txt); return l; };
