@@ -8546,33 +8546,11 @@
    ],
    "km": "KM# 242",
    "valor": 1500,
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-23",
    "fuenteValor": "Precio revendedor",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.",
    "costo": 1500,
    "origen": "museo",
-   "variantes": [
-    {
-     "nombre": "Normal",
-     "explicacion": "La pieza normal de la colección.",
-     "fotos": [
-      "ms-175-fundacion.jpg",
-      "O-msda0cba6d9-video-cara.jpg",
-      "O-msda0cba6d9-video-valor.jpg",
-      "privado:km-KM242.jpg"
-     ],
-     "notas": ""
-    },
-    {
-     "nombre": "En cartón",
-     "explicacion": "Pieza sin circular guardada en cartón. Valía 2000 colones (\"2K\" escrito a mano).",
-     "fotos": [
-      "O-msda0cba6d9-especial-1.jpg",
-      "O-msda0cba6d9-especial-2.jpg"
-     ],
-     "notas": "Valor anotado en el cartón: 2000 colones."
-    }
-   ]
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del álbum (22/11/2026): la cara conmemorativa y el reverso de 500 colones la moneda del álbum."
   },
   "O-ms88823228f": {
    "tengo": true,
