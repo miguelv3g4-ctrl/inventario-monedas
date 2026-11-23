@@ -5314,15 +5314,15 @@
   },
   "O-xe27fb207b": {
    "tengo": true,
-   "cantidad": 2,
-   "notas": "Material: Latón · Peso: 9,80 g · Diámetro: 31,50 mm · Canto: Liso\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
-   "km": "KM# 236",
-   "fo": "FO# 5208",
+   "cantidad": 3,
    "fotosCompra": [
     "privado:km-KM236.jpg"
    ],
+   "km": "KM# 236",
    "valor": 2000,
-   "costo": 2000
+   "fechaValor": "2026-11-22",
+   "costo": 2000,
+   "notas": "Material: Latón · Peso: 9,80 g · Diámetro: 31,50 mm · Canto: Liso\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"500 colones\"."
   },
   "O-x367dc9a8d": {
    "tengo": true,
