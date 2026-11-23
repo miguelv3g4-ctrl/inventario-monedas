@@ -6518,7 +6518,7 @@
   },
   "O-x367dc9a8d": {
    "tengo": true,
-   "cantidad": 18,
+   "cantidad": 9,
    "fotosCompra": [
     "privado:km-KM239-1.jpg"
    ],
@@ -6529,14 +6529,14 @@
    "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Números gruesos - no magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
    "variantes": [
     {
-     "nombre": "MS UNC (sin circular) · 9",
+     "nombre": "MS UNC (sin circular) · 0",
      "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 9 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM239-1.jpg"
      ],
      "notas": "",
      "valor": 2500,
-     "cantidad": 9,
+     "cantidad": 0,
      "estadoMS": true
     },
     {
