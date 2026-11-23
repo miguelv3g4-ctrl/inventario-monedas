@@ -5964,15 +5964,6 @@
    "costo": 1000,
    "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 500 colones del mismo diseño."
   },
-  "O-xc3c372a07": {
-   "tengo": true,
-   "notas": "\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
-   "valor": 1500,
-   "costo": 1500,
-   "fotosCompra": [
-    "privado:miguel-500-bicentenario-bimetalica.jpg"
-   ]
-  },
   "O-x2678c4f97": {
    "tengo": false,
    "notas": "Material: Oro (0,900) · Peso: 33,44 g · Diámetro: 33,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"1500 colones\".",
@@ -7765,12 +7756,13 @@
   },
   "O-msacfccd037": {
    "tengo": true,
-   "cantidad": 15,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó. Antes decía 1500. El valor de reventa no se cambió.",
+   "cantidad": 16,
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó. Antes decía 1500. El valor de reventa no se cambió.\nSe sumó 1 moneda de la tarjeta \"500 colones (bicentenario bicolor esmaltada) 2022\" que estaba en el cono 1995-2021 (22/11/2026).",
    "km": "KM# 241",
    "fo": "FO# 20094",
    "fotosCompra": [
-    "privado:km-KM241.jpg"
+    "privado:km-KM241.jpg",
+    "privado:miguel-500-bicentenario-bimetalica.jpg"
    ],
    "valor": 1500,
    "fechaValor": "2026-11-20",
@@ -10674,13 +10666,6 @@
    "nombre": "500 colones 2015",
    "categoria": "500 colones",
    "seccion": "cono-1995-2021"
-  },
-  {
-   "id": "O-xc3c372a07",
-   "nombre": "200 años de Independencia (bicolor esmaltada) 2022 · moneda MS suelta",
-   "categoria": "Hitos de la Historia",
-   "seccion": "ms-sueltas",
-   "ref": "privado:miguel-500-bicentenario-bimetalica.jpg"
   },
   {
    "id": "O-x2678c4f97",
