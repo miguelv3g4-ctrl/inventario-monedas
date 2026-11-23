@@ -4761,8 +4761,8 @@
      "estadoMS": true
     },
     {
-     "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 400 colones.",
+     "nombre": "MS circuladas · 1",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 400 colones.",
      "fotos": [
       "O-xce0766872-video-escudo.jpg",
       "O-xce0766872-video-valor.jpg",
@@ -4770,11 +4770,11 @@
      ],
      "notas": "",
      "valor": 400,
-     "cantidad": 0,
+     "cantidad": 1,
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 2
   },
   "O-x561dfed7f": {
    "tengo": true,
