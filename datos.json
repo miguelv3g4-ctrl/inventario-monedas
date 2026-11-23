@@ -4435,40 +4435,21 @@
   },
   "O-xd20f2c5d2": {
    "tengo": true,
+   "cantidad": 3,
+   "fotos": [
+    "O-xd20f2c5d2-especial-1.jpg",
+    "O-xd20f2c5d2-especial-2.jpg"
+   ],
    "fotosCompra": [
     "privado:km-KM227a.jpg",
     "O-xd20f2c5d2-1795117846459-oal6g.jpg"
    ],
    "km": "KM# 227a",
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
-   "fo": "FO# 6046",
    "valor": 1000,
+   "fechaValor": "2026-11-22",
    "costo": 1000,
    "origen": "reventa",
-   "variantes": [
-    {
-     "nombre": "Normal",
-     "explicacion": "Pieza normal (foto de referencia del catálogo).",
-     "fotos": [
-      "privado:km-KM227a.jpg",
-      "O-xd20f2c5d2-1795117846459-oal6g.jpg"
-     ],
-     "notas": ""
-    },
-    {
-     "nombre": "Error de cospel lleno",
-     "explicacion": "Error de acuñación: el troquel estaba lleno (de grasa o suciedad) y una parte del diseño no se marcó; en esta pieza no se nota el \"1\".",
-     "fotos": [
-      "O-xd20f2c5d2-especial-1.jpg",
-      "O-xd20f2c5d2-especial-2.jpg"
-     ],
-     "notas": "Error de cospel lleno: no se nota el \"1\" (papá)."
-    }
-   ],
-   "fotos": [
-    "O-xd20f2c5d2-especial-1.jpg",
-    "O-xd20f2c5d2-especial-2.jpg"
-   ]
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
   },
   "O-xd7c4d06a4": {
    "tengo": true,
