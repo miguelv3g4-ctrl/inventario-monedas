@@ -4452,41 +4452,20 @@
   },
   "O-xd7c4d06a4": {
    "tengo": true,
+   "fotos": [
+    "O-xd7c4d06a4-especial-1.jpg",
+    "O-xd7c4d06a4-especial-2.jpg"
+   ],
    "fotosCompra": [
     "privado:km-KM227-1a.jpg",
     "O-xd7c4d06a4-1795118129669-xq9if.jpg"
    ],
    "km": "KM# 227.1a",
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras grandes - Volcanes sin humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
-   "fo": "FO# 6829",
    "valor": 1000,
+   "fechaValor": "2026-11-22",
    "costo": 1000,
    "origen": "reventa",
-   "variantes": [
-    {
-     "nombre": "Normal",
-     "explicacion": "Pieza normal (foto de referencia del catálogo).",
-     "fotos": [
-      "privado:km-KM227-1a.jpg",
-      "O-xd7c4d06a4-1795118129669-xq9if.jpg"
-     ],
-     "notas": ""
-    },
-    {
-     "nombre": "UNC",
-     "explicacion": "Pieza sin circular (UNC): conserva todo el brillo de acuñación y no tiene desgaste. Vale más que una circulada: 3500 colones.",
-     "fotos": [
-      "O-xd7c4d06a4-especial-1.jpg",
-      "O-xd7c4d06a4-especial-2.jpg"
-     ],
-     "notas": "Estado: UNC. Año leído en la foto: 1999 (probable).\nPrecio UNC: 3500 colones.",
-     "valor": 3500
-    }
-   ],
-   "fotos": [
-    "O-xd7c4d06a4-especial-1.jpg",
-    "O-xd7c4d06a4-especial-2.jpg"
-   ]
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras grandes - Volcanes sin humo\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
   },
   "O-x109cb7dca": {
    "tengo": true,
