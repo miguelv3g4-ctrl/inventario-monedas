@@ -5400,14 +5400,15 @@
   },
   "O-x4ffdc79ec": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
-   "km": "KM# 239.1a",
-   "fo": "FO# 5671",
+   "cantidad": 5,
    "fotosCompra": [
     "privado:km-KM239-1a.jpg"
    ],
+   "km": "KM# 239.1a",
    "valor": 1000,
-   "costo": 1000
+   "fechaValor": "2026-11-22",
+   "costo": 1000,
+   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\"."
   },
   "O-x69eae3145": {
    "tengo": true,
