@@ -6161,7 +6161,7 @@
    ],
    "valor": 1000,
    "costo": 1000,
-   "cantidad": 5,
+   "cantidad": 7,
    "valorCirculada": 700,
    "variantes": [
     {
@@ -6176,14 +6176,14 @@
      "estadoMS": true
     },
     {
-     "nombre": "MS circuladas · 3",
+     "nombre": "MS circuladas · 5",
      "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 3 en la colección. Cada una vale 700 colones.",
      "fotos": [
       "privado:km-KM230a.jpg"
      ],
      "notas": "",
      "valor": 700,
-     "cantidad": 3,
+     "cantidad": 5,
      "estadoMS": true
     }
    ]
