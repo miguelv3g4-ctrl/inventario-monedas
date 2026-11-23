@@ -102,7 +102,9 @@
   #vVariantes .varTabs { display: flex; flex-wrap: wrap; gap: 6px; }
   #vVariantes .varTabs button { background: #1a1610; color: var(--oro2); border: 1px solid var(--oro2); border-radius: 6px; padding: 6px 12px; font: inherit; font-size: 14px; cursor: pointer; }
   #vVariantes .varTabs button.activo { background: var(--oro); color: #111; border-color: var(--oro); }
-  #vVariantes .varExp { margin-top: 8px; color: var(--gris); font-size: 14px; line-height: 1.4; }
+  #vVariantes .ckMS { display: inline-flex; align-items: center; gap: 6px; margin: 6px 14px 4px 0; cursor: pointer; }
+  .ckMS input { width: 20px; height: 20px; accent-color: var(--oro); }
+  .varExp { margin-top: 8px; color: var(--gris); font-size: 14px; line-height: 1.4; }
   .notasF { margin-top: 12px; display: grid; gap: 5px; white-space: normal; line-height: 1.35; }
   .notasF b { color: var(--oro2); font-weight: 600; }
   .boton-seccion { background-size: cover !important; background-position: center !important; text-shadow: 0 1px 3px #000, 0 0 8px #000; }
@@ -835,7 +837,7 @@
   const PRECIO_MS = { 500: 750, 50: 350, 25: 500 / 7 }; // provincias: el set de 7 monedas sueltas (UNC) vale 500
   const DENOM_MS = [[500, /hito|independ|abolic|anexi|fundaci/i], [100, /patrimonio|cultural|swing|boyero|calipso|cimarrona|tope|ceramica|cerámica/i], [50, /fauna|mariposa|rana|tortuga|lagartija|cangrejo|conejo/i], [25, /provincia|lugares|emblem/i]];
   const denomMS = p => { const t = p.coleccion + ' ' + p.moneda; const d = DENOM_MS.find(x => x[1].test(t)); return d ? d[0] : 0; };
-  const valorU = p => reg(p.id).valor || (p.seccion === 'ms-sueltas' ? PRECIO_MS[denomMS(p)] || 0 : 0);
+  const valorU = p => { const r = reg(p.id); if (r.circulada && r.valorCirculada) return r.valorCirculada; return r.valor || (p.seccion === 'ms-sueltas' ? PRECIO_MS[denomMS(p)] || 0 : 0); }; // circulada: precio de MS circulada
   // total de una tarjeta: las pestañas con precio propio cuentan aparte; el resto de las piezas, al precio de la tarjeta
   const precioT = (id, campo, unit) => { const vs = (reg(id).variantes || []).filter(v => typeof v[campo] === 'number'), q = cant(id); if (!vs.length) return unit * q; const k = vs.reduce((s, v) => s + (v.cantidad || 1), 0); return vs.reduce((s, v) => s + v[campo] * (v.cantidad || 1), 0) + Math.max(0, q - k) * unit; };
   const valorT = p => precioT(p.id, 'valor', valorU(p)), costoT = id => precioT(id, 'costo', reg(id).costo || 0);
@@ -904,6 +906,15 @@
       const exp = el('div', 'varExp'); (vars[varSel].explicacion || '').split(/\*\*(.+?)\*\*/).forEach((t, i) => { if (t) exp.appendChild(i % 2 ? el('b', '', t) : document.createTextNode(t)); }); // **texto** = negrita
       vv.append(barra, exp);
     }
+    // monedas MS: casilla para escoger si son UNC (sin circular) o circuladas; cambia el valor
+    if (r.valorCirculada) {
+      vv.style.display = '';
+      const caja2 = el('div', 'varExp estadoMS'), fila = el('div', 'varTabs');
+      const opcion = (txt, circ) => { const l = el('label', 'ckMS'), ck = el('input'); ck.type = 'checkbox'; ck.checked = !!r.circulada === circ; ck.onchange = () => { if (!conectado()) { ck.checked = !ck.checked; abrirConexion(); return; } datos.piezas[id] = limpiar(Object.assign({}, datos.piezas[id], { circulada: circ })); sucias.add(id); pintarFicha(); totales(); guardarCasillas(); }; l.append(ck, ' ' + txt); return l; };
+      fila.append(opcion('MS UNC (sin circular): ' + fmt(r.valor || 0), false), opcion('MS circuladas: ' + fmt(r.valorCirculada), true));
+      caja2.append(el('b', '', 'Estado de mis monedas de este año'), fila, el('div', '', r.circulada ? 'Están marcadas como circuladas: cada una vale ' + fmt(r.valorCirculada) + '.' : 'Están marcadas como MS UNC (sin circular): cada una vale ' + fmt(r.valor || 0) + '.'));
+      vv.appendChild(caja2);
+    }
     const fotos = vars.length ? [...new Set(vars[varSel].fotos || [])] : [...new Set(esValor ? fotosDe(id, 'fotos').concat(fotosDe(id, 'fotosCompra')) : fotosDe(id, 'fotosCompra').concat(fotosDe(id, 'fotos')))], caja = $('vFoto'), minis = $('vMinis'); // todas las fotos: las de la pestaña primero y luego las otras
     caja.textContent = ''; minis.textContent = '';
     const rf = refDe(id), info = $('vRefInfo'); info.textContent = '';
@@ -932,7 +943,7 @@
       }
     }
     const esMS = base[id].seccion === 'ms-sueltas';
-    const monto = esValor ? (esMS ? valorU(base[id]) : r.valor) : r.costo;
+    const monto = esValor ? (esMS || r.valorCirculada ? valorU(base[id]) : r.valor) : r.costo;
     $('vRotulo').textContent = esValor ? (esMS ? 'Precio por pieza' : 'Valor actual de la moneda') : 'Precio al que la compré';
     $('vPrecio').textContent = monto ? fmt(monto) : r.textoPrecio ? r.textoPrecio : r.enColeccion ? 'Ver valor en colección completa' : 'Sin precio todavía'; $('vPrecio').classList.toggle('vacio', !monto);
     const det = $('vDetalle'); det.textContent = '';
