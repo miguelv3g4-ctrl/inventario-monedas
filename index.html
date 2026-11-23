@@ -907,6 +907,24 @@
       vv.append(barra, exp);
     }
     // monedas MS: casilla para escoger si son UNC (sin circular) o circuladas; cambia el valor
+    // pestañas MS UNC / MS circuladas: papá escoge cuántas son de cada una
+    const est = vars.filter(v => v.estadoMS);
+    if (est.length === 2) {
+      const caja3 = el('div', 'varExp estadoMS'), fila = el('div', 'varTabs');
+      caja3.appendChild(el('b', '', '¿Cuántas son sin circular y cuántas circuladas?'));
+      est.forEach((v, i) => {
+        const l = el('label', 'ckMS'), inp = el('input'); inp.type = 'number'; inp.min = '0'; inp.value = v.cantidad || 0; inp.style.width = '64px'; inp.disabled = !conectado();
+        inp.onchange = () => {
+          const n = Math.max(0, parseInt(inp.value, 10) || 0), rr = datos.piezas[id], vv2 = rr.variantes.filter(x => x.estadoMS)[i];
+          vv2.cantidad = n; vv2.nombre = vv2.nombre.replace(/ · \d+$/, '') + ' · ' + n; vv2.explicacion = vv2.explicacion.replace(/Papá tiene \d+( por ahora)?\./, 'Papá tiene ' + n + '.');
+          const tot = rr.variantes.filter(x => x.estadoMS).reduce((s, x) => s + (x.cantidad || 0), 0); if (tot) { rr.cantidad = tot; rr.tengo = true; }
+          sucias.add(id); pintarFicha(); totales(); guardarCasillas();
+        };
+        l.append((i ? 'MS circuladas (' + fmt(v.valor) + ' c/u): ' : 'MS UNC (' + fmt(v.valor) + ' c/u): '), inp); fila.appendChild(l);
+      });
+      caja3.append(fila, el('div', '', conectado() ? 'Cambia los números y se guarda solo.' : 'Para cambiarlo, entra con la clave.'));
+      vv.appendChild(caja3);
+    }
     if (r.valorCirculada && !vars.some(v => v.estadoMS)) {
       vv.style.display = '';
       const caja2 = el('div', 'varExp estadoMS'), fila = el('div', 'varTabs');
