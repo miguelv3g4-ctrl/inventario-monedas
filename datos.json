@@ -9900,6 +9900,14 @@
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio propio",
    "notas": "¿Qué es? Son monedas falsificadas: copias hechas para engañar, que no fabricó el Banco Central. A los coleccionistas les sirven para aprender a reconocer las falsas, y por eso tienen valor de colección.\nHay 3 monedas falsas de 2007, a 1000 colones cada una."
+  },
+  "O-7c90e7c8": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-7c90e7c8-mia-1.jpg"
+   ],
+   "notas": "Moneda de 10 colones de 2023, el diseño nuevo de acero: por un lado el 10 grande con \"REPÚBLICA DE COSTA RICA\" alrededor, y por el otro el escudo con el año 2023.\nVersión MS (sin circular).\nFalta: cuántas hay y cuánto vale cada una."
   }
  },
  "sueltas": {},
@@ -12574,6 +12582,12 @@
    "nombre": "Monedas falsas 2007",
    "categoria": "Monedas falsas",
    "seccion": "cono-1995-2021"
+  },
+  {
+   "id": "O-7c90e7c8",
+   "nombre": "10 colones 2023 · moneda MS suelta",
+   "categoria": "10 colones",
+   "seccion": "ms-sueltas"
   }
  ],
  "giros": {
