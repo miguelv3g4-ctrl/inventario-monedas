@@ -9909,6 +9909,10 @@
   "O-ab262972": {
    "tengo": true,
    "cantidad": 3,
+   "fotos": [
+    "O-ab262972-1795400744794-yrs8e.jpg",
+    "O-ab262972-1795400746447-atrfl.jpg"
+   ],
    "valor": 1000,
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precio propio",
