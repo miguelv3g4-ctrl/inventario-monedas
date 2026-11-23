@@ -6161,18 +6161,18 @@
    ],
    "valor": 1000,
    "costo": 1000,
-   "cantidad": 7,
+   "cantidad": 5,
    "valorCirculada": 700,
    "variantes": [
     {
-     "nombre": "MS UNC (sin circular) · 2",
+     "nombre": "MS UNC (sin circular) · 0",
      "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 2 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM230a.jpg"
      ],
      "notas": "",
      "valor": 1000,
-     "cantidad": 2,
+     "cantidad": 0,
      "estadoMS": true
     },
     {
