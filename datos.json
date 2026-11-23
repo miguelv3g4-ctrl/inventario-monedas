@@ -4156,16 +4156,19 @@
     },
     {
      "nombre": "MS circuladas · 2",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Falta definir cuánto vale cada una.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 300 colones.",
      "fotos": [
       "privado:km-KM233.jpg",
       "O-x0085cc125-1795096208723-poebe.jpg"
      ],
      "notas": "",
      "cantidad": 2,
-     "estadoMS": true
+     "estadoMS": true,
+     "valor": 300
     }
-   ]
+   ],
+   "valorCirculada": 300,
+   "fechaValor": "2026-11-22"
   },
   "O-x41e23a1e6": {
    "tengo": false,
@@ -6483,7 +6486,7 @@
     "privado:km-KM236.jpg"
    ],
    "km": "KM# 236",
-   "valor": 2000,
+   "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 2000,
    "notas": "Material: Latón · Peso: 9,80 g · Diámetro: 31,50 mm · Canto: Liso\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
@@ -6495,21 +6498,23 @@
       "privado:km-KM236.jpg"
      ],
      "notas": "",
-     "valor": 2000,
+     "valor": 2500,
      "cantidad": 3,
      "estadoMS": true
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Falta definir cuánto vale cada una.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM236.jpg"
      ],
      "notas": "",
      "cantidad": 0,
-     "estadoMS": true
+     "estadoMS": true,
+     "valor": 1000
     }
-   ]
+   ],
+   "valorCirculada": 1000
   },
   "O-x367dc9a8d": {
    "tengo": true,
@@ -6518,7 +6523,7 @@
     "privado:km-KM239-1.jpg"
    ],
    "km": "KM# 239.1",
-   "valor": 1000,
+   "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 1000,
    "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Números gruesos - no magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
@@ -6530,21 +6535,23 @@
       "privado:km-KM239-1.jpg"
      ],
      "notas": "",
-     "valor": 1000,
+     "valor": 2500,
      "cantidad": 9,
      "estadoMS": true
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Falta definir cuánto vale cada una.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM239-1.jpg"
      ],
      "notas": "",
      "cantidad": 0,
-     "estadoMS": true
+     "estadoMS": true,
+     "valor": 1000
     }
-   ]
+   ],
+   "valorCirculada": 1000
   },
   "O-x7a50c185a": {
    "tengo": true,
@@ -6570,16 +6577,18 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Falta definir cuánto vale cada una.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 90 000 colones.",
      "fotos": [
       "privado:km-KM239-2.jpg"
      ],
      "notas": "",
      "cantidad": 0,
-     "estadoMS": true
+     "estadoMS": true,
+     "valor": 90000
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "valorCirculada": 90000
   },
   "O-x23d1289ee": {
    "tengo": true,
@@ -6592,7 +6601,7 @@
     "privado:anio-O-x23d1289ee-0.jpg"
    ],
    "km": "KM# 239.1",
-   "valor": 1000,
+   "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 1000,
    "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
@@ -6606,13 +6615,13 @@
       "privado:anio-O-x23d1289ee-0.jpg"
      ],
      "notas": "",
-     "valor": 1000,
+     "valor": 2500,
      "cantidad": 9,
      "estadoMS": true
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Falta definir cuánto vale cada una.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x23d1289ee-video-escudo.jpg",
       "O-x23d1289ee-video-valor.jpg",
@@ -6620,9 +6629,11 @@
      ],
      "notas": "",
      "cantidad": 0,
-     "estadoMS": true
+     "estadoMS": true,
+     "valor": 1000
     }
-   ]
+   ],
+   "valorCirculada": 1000
   },
   "O-x4ffdc79ec": {
    "tengo": true,
@@ -6631,7 +6642,7 @@
     "privado:km-KM239-1a.jpg"
    ],
    "km": "KM# 239.1a",
-   "valor": 1000,
+   "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 1000,
    "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
@@ -6643,21 +6654,23 @@
       "privado:km-KM239-1a.jpg"
      ],
      "notas": "",
-     "valor": 1000,
+     "valor": 2500,
      "cantidad": 5,
      "estadoMS": true
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Falta definir cuánto vale cada una.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM239-1a.jpg"
      ],
      "notas": "",
      "cantidad": 0,
-     "estadoMS": true
+     "estadoMS": true,
+     "valor": 1000
     }
-   ]
+   ],
+   "valorCirculada": 1000
   },
   "O-x69eae3145": {
    "tengo": true,
@@ -6671,14 +6684,14 @@
     "privado:anio-O-x69eae3145-1.jpg"
    ],
    "km": "KM# 239.1a",
-   "valor": 1000,
+   "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 1000,
    "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: No magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
    "variantes": [
     {
-     "nombre": "MS UNC (sin circular) · 38",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 38. Cada una vale 1 000 colones.",
+     "nombre": "MS UNC (sin circular) · 3",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 3. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x69eae3145-video-escudo.jpg",
       "O-x69eae3145-video-valor.jpg",
@@ -6686,13 +6699,13 @@
       "privado:anio-O-x69eae3145-1.jpg"
      ],
      "notas": "",
-     "valor": 1000,
-     "cantidad": 38,
+     "valor": 2500,
+     "cantidad": 3,
      "estadoMS": true
     },
     {
-     "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Falta definir cuánto vale cada una.",
+     "nombre": "MS circuladas · 35",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 35. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x69eae3145-video-escudo.jpg",
       "O-x69eae3145-video-valor.jpg",
@@ -6700,10 +6713,12 @@
       "privado:anio-O-x69eae3145-1.jpg"
      ],
      "notas": "",
-     "cantidad": 0,
-     "estadoMS": true
+     "cantidad": 35,
+     "estadoMS": true,
+     "valor": 1000
     }
-   ]
+   ],
+   "valorCirculada": 1000
   },
   "O-x39afa064d": {
    "tengo": true,
@@ -6716,7 +6731,7 @@
     "privado:km-KM239-1a.jpg"
    ],
    "km": "KM# 239.1a",
-   "valor": 1000,
+   "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 1000,
    "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 500 colones del mismo diseño.",
@@ -6730,13 +6745,13 @@
       "privado:km-KM239-1a.jpg"
      ],
      "notas": "",
-     "valor": 1000,
+     "valor": 2500,
      "cantidad": 16,
      "estadoMS": true
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Falta definir cuánto vale cada una.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x39afa064d-video-escudo.jpg",
       "O-x39afa064d-video-valor.jpg",
@@ -6744,9 +6759,11 @@
      ],
      "notas": "",
      "cantidad": 0,
-     "estadoMS": true
+     "estadoMS": true,
+     "valor": 1000
     }
-   ]
+   ],
+   "valorCirculada": 1000
   },
   "O-x2678c4f97": {
    "tengo": false,
@@ -6764,7 +6781,7 @@
    ],
    "km": "KM# 239.2",
    "valor": 150000,
-   "fechaValor": "2026-11-21",
+   "fechaValor": "2026-11-22",
    "fuenteValor": "mercado numismatico",
    "costo": 60,
    "fechaCompra": "2020-03-21",
@@ -6822,7 +6839,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Falta definir cuánto vale cada una.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 90 000 colones.",
      "fotos": [
       "O-xe41776751-video-escudo.jpg",
       "O-xe41776751-video-valor.jpg",
@@ -6830,10 +6847,12 @@
      ],
      "notas": "",
      "cantidad": 0,
-     "estadoMS": true
+     "estadoMS": true,
+     "valor": 90000
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "valorCirculada": 90000
   },
   "O-x903a1aa01": {
    "tengo": false,
