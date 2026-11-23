@@ -8588,20 +8588,20 @@
   },
   "O-ms6183d92ac": {
    "tengo": true,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2023.\nPrecio revendedor",
-   "km": "KM# 249",
-   "fo": "FO# 27599",
-   "fotosCompra": [
-    "privado:km-KM249.jpg"
-   ],
-   "valor": 500,
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor",
+   "cantidad": 10,
    "fotos": [
     "ms-mariposa.jpg"
    ],
+   "fotosCompra": [
+    "privado:km-KM249.jpg"
+   ],
+   "km": "KM# 249",
+   "valor": 500,
+   "fechaValor": "2026-11-23",
+   "fuenteValor": "Precio revendedor",
    "costo": 150,
-   "origen": "reventa"
+   "origen": "reventa",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2023.\nPrecio revendedor"
   },
   "O-msf62912f9d": {
    "tengo": true,
