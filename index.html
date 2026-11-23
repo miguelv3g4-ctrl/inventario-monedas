@@ -961,20 +961,22 @@
       }
     }
     const esMS = base[id].seccion === 'ms-sueltas';
-    const monto = esValor ? (esMS || r.valorCirculada ? valorU(base[id]) : r.valor) : r.costo;
-    $('vRotulo').textContent = esValor ? (esMS ? 'Precio por pieza' : 'Valor actual de la moneda') : 'Precio al que la compré';
+    const conTabs = (r.variantes || []).some(v => typeof v.valor === 'number' || v.estadoMS); // pestañas con su propio precio y cantidad: se muestra el total
+    const monto = esValor ? (conTabs ? valorT(base[id]) : esMS || r.valorCirculada ? valorU(base[id]) : r.valor) : (conTabs ? costoT(id) : r.costo);
+    $('vRotulo').textContent = esValor ? (conTabs ? 'Valor de todas mis monedas' : esMS ? 'Precio por pieza' : 'Valor actual de la moneda') : (conTabs ? 'Lo que costaron todas' : 'Precio al que la compré');
     $('vPrecio').textContent = monto ? fmt(monto) : r.textoPrecio ? r.textoPrecio : r.enColeccion ? 'Ver valor en colección completa' : 'Sin precio todavía'; $('vPrecio').classList.toggle('vacio', !monto);
     const det = $('vDetalle'); det.textContent = '';
+    if (esValor && conTabs) for (const v of r.variantes) { if (!(typeof v.valor === 'number' || v.estadoMS)) continue; const q = v.cantidad ?? 1; renglon(det, v.nombre.replace(/ · \d+$/, ''), typeof v.valor === 'number' ? q + ' × ' + fmt(v.valor) + ' = ' + fmt(q * v.valor) : q + ' (precio por definir)'); }
     if (esMS) { const q = tengo(id) ? cant(id) : 0; renglon(det, 'Cantidad', q + (q === 1 ? ' pieza' : ' piezas')); if (monto) renglon(det, 'Total', q + ' × ' + fmt(monto) + ' = ' + fmt(monto * q)); }
     renglon(det, 'Catálogo', [r.km, r.fo].filter(Boolean).join(' · '));
-    if (esValor) { renglon(det, 'Fecha del valor', r.valor ? fecha(hoy()) : fecha(r.fechaValor)); /* el valor actual siempre al dia de hoy */ renglon(det, 'Fuente', r.fuenteValor); if (r.valor && r.costo) renglon(det, 'Frente a lo que costó', conSigno(r.valor - r.costo)); }
+    if (esValor) { renglon(det, 'Fecha del valor', r.valor ? fecha(hoy()) : fecha(r.fechaValor)); /* el valor actual siempre al dia de hoy */ renglon(det, 'Fuente', r.fuenteValor); if (!conTabs && r.valor && r.costo) renglon(det, 'Frente a lo que costó', conSigno(r.valor - r.costo)); }
     else { renglon(det, 'Fecha en que la conseguí', fecha(r.fechaCompra) || 'Sin fecha todavía (agrégala en «Cambiar datos y fotos»)'); renglon(det, 'Comprada a', r.origen); if (r.valor && r.costo) renglon(det, 'Valor actual', fmt(r.valor)); }
     const est = $('vEstado'); est.textContent = '';
     if (r.vendida) {
       est.appendChild(el('span', 'vend', 'Vendida' + (r.precioVenta ? ' en ' + fmt(r.precioVenta) : '') + (r.fechaVenta ? ' el ' + fecha(r.fechaVenta) : '') + (r.comprador ? ' a ' + r.comprador : '')));
       if (r.precioVenta && r.costo) est.append('\n' + (r.precioVenta >= r.costo ? 'Ganancia: ' : 'Pérdida: ') + fmt(Math.abs(r.precioVenta - r.costo)));
     } else est.appendChild(tengo(id) ? el('span', 'inv', 'En la colección') : el('span', 'no', 'No la tengo'));
-    if (cant(id) > 1 && (r.valor || r.costo)) est.append('\nPrecios por unidad · ' + cant(id) + ' unidades');
+    if (cant(id) > 1 && (r.valor || r.costo)) est.append(conTabs ? '\n' + cant(id) + ' unidades en total' : '\nPrecios por unidad · ' + cant(id) + ' unidades');
     if (r.producto) est.append('\n\nProducto: ' + r.producto);
     if (vars.length && vars[varSel].notas) est.appendChild(notasOrdenadas(vars[varSel].notas));
     if (r.notas) est.appendChild(notasOrdenadas(r.notas));
@@ -1337,7 +1339,7 @@
         tx.appendChild(el('small', 'msCant', 'Cantidad: ' + q + (q === 1 ? ' pieza' : ' piezas')));
         tx.appendChild(el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : u ? q + ' × ' + fmt(u) + ' = ' + fmt(u * q) : 'Sin precio'));
       } else {
-      const precio = el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : r.valor ? fmt(r.valor) + (cant(p.id) > 1 ? ' c/u' : '') : r.textoPrecio ? r.textoPrecio : r.enColeccion ? 'Ver valor en colección completa' : 'Sin precio');
+      const precio = el('b', r.vendida ? 'vend' : '', r.vendida ? 'Vendida' : (r.variantes || []).some(v => typeof v.valor === 'number' || v.estadoMS) ? fmt(valorT(p)) + ' · ' + cant(p.id) + (cant(p.id) === 1 ? ' unidad' : ' unidades') : r.valor ? fmt(r.valor) + (cant(p.id) > 1 ? ' c/u' : '') : r.textoPrecio ? r.textoPrecio : r.enColeccion ? 'Ver valor en colección completa' : 'Sin precio');
       tx.appendChild(precio);
       }
       // fotos de la pieza: flechas en la tarjeta para pasarlas, y al tocar la foto se abre el visor con todas
