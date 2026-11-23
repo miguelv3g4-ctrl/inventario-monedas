@@ -1792,14 +1792,15 @@
   // ---------- version nueva: si en GitHub hay una pagina mas reciente que la abierta, se recarga sola
   // (compara el codigo de esta pagina con el publicado; asi nunca queda una version vieja guardada)
   const huella = t => { let h = 5381; for (let i = 0; i < t.length; i++) h = ((h << 5) + h + t.charCodeAt(i)) | 0; return h; };
-  const huellaActual = (() => { const sc = document.scripts[document.scripts.length - 1]; return sc ? huella(sc.textContent) : 0; })();
+  const huellaActual = (() => { const sc = document.scripts[document.scripts.length - 1], st = document.querySelector('style'); return sc ? huella((st ? st.textContent : '') + sc.textContent) : 0; })(); // estilos y codigo: cualquier cambio publicado se nota
   async function revisarVersion() {
     if (location.protocol === 'file:' || sucias.size || $('vForm').classList.contains('abierta')) return;
     try {
       const t = await (await fetch('index.html?v=' + Date.now(), { cache: 'no-store' })).text();
       const i = t.lastIndexOf('<' + 'script>'), j = t.lastIndexOf('<' + '/script>'); // partido para no cerrar este script
       if (i < 0 || j < i) return;
-      if (huella(t.slice(i + 8, j)) !== huellaActual) { aviso('Hay una versión nueva de la página. Actualizando…'); setTimeout(() => location.reload(), 800); }
+      const k = t.indexOf('<style>'), l = t.indexOf('</' + 'style>'), estilo = k >= 0 && l > k ? t.slice(k + 7, l) : '';
+      if (huella(estilo + t.slice(i + 8, j)) !== huellaActual) { aviso('Hay una versión nueva de la página. Actualizando…'); setTimeout(() => location.replace(location.pathname + '?v=' + Date.now() + location.hash), 800); } // la direccion nueva evita la copia guardada
     } catch (e) {}
   }
   setTimeout(revisarVersion, 3000);
