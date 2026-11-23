@@ -6492,14 +6492,14 @@
    "notas": "Material: Latón · Peso: 9,80 g · Diámetro: 31,50 mm · Canto: Liso\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
    "variantes": [
     {
-     "nombre": "MS UNC (sin circular) · 3",
+     "nombre": "MS UNC (sin circular) · 0",
      "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 3 en la colección. Cada una vale 2 000 colones.",
      "fotos": [
       "privado:km-KM236.jpg"
      ],
      "notas": "",
      "valor": 2500,
-     "cantidad": 3,
+     "cantidad": 0,
      "estadoMS": true
     },
     {
