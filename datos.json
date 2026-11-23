@@ -6503,13 +6503,13 @@
      "estadoMS": true
     },
     {
-     "nombre": "MS circuladas · 0",
+     "nombre": "MS circuladas · 3",
      "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM236.jpg"
      ],
      "notas": "",
-     "cantidad": 0,
+     "cantidad": 3,
      "estadoMS": true,
      "valor": 1000
     }
