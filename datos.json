@@ -6526,12 +6526,14 @@
    "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 1000,
-   "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Números gruesos - no magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Números gruesos - no magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".\nFotos propias sacadas del video del álbum.",
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
      "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 9 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
+      "O-x367dc9a8d-video-escudo.jpg",
+      "O-x367dc9a8d-video-valor.jpg",
       "privado:km-KM239-1.jpg"
      ],
      "notas": "",
@@ -6543,6 +6545,8 @@
      "nombre": "MS circuladas · 9",
      "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
+      "O-x367dc9a8d-video-escudo.jpg",
+      "O-x367dc9a8d-video-valor.jpg",
       "privado:km-KM239-1.jpg"
      ],
      "notas": "",
@@ -6551,7 +6555,11 @@
      "valor": 1000
     }
    ],
-   "valorCirculada": 1000
+   "valorCirculada": 1000,
+   "fotos": [
+    "O-x367dc9a8d-video-escudo.jpg",
+    "O-x367dc9a8d-video-valor.jpg"
+   ]
   },
   "O-x7a50c185a": {
    "tengo": true,
@@ -12613,7 +12621,6 @@
   "O-x69eae3145-video-escudo.jpg": 180,
   "O-x23d1289ee-video-escudo.jpg": 180,
   "O-xdf61763bf-video-escudo.jpg": 180,
-  "O-xe41776751-video-escudo.jpg": 180,
   "O-x97e4c2697-video-escudo.jpg": 180,
   "O-xeb9bba39d-video-escudo.jpg": 180,
   "O-xa8ced4273-video-escudo.jpg": 180,
@@ -12626,6 +12633,7 @@
   "O-x109cb7dca-video-escudo.jpg": 180,
   "O-x7567e6ed2-video-escudo.jpg": 180,
   "O-xead7a029a-video-escudo.jpg": 180,
-  "O-xd7c4d06a4-especial-1.jpg": 270
+  "O-xd7c4d06a4-especial-1.jpg": 270,
+  "O-x367dc9a8d-video-escudo.jpg": 180
  }
 }
