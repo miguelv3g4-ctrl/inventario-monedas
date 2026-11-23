@@ -4421,16 +4421,17 @@
   },
   "O-x150f54e4a": {
    "tengo": true,
+   "cantidad": 4,
    "fotosCompra": [
     "privado:km-KM227.jpg",
     "O-x150f54e4a-1795096553418-u4b9p.jpg"
    ],
    "km": "KM# 227",
-   "notas": "Material: Acero bañado en latón · Peso: 4,03 g · Diámetro: 21,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".",
-   "fo": "FO# 3504",
    "valor": 1000,
+   "fechaValor": "2026-11-22",
    "costo": 1000,
-   "origen": "reventa"
+   "origen": "reventa",
+   "notas": "Material: Acero bañado en latón · Peso: 4,03 g · Diámetro: 21,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\"."
   },
   "O-xd20f2c5d2": {
    "tengo": true,
