@@ -8514,23 +8514,22 @@
   "O-msacfccd037": {
    "tengo": true,
    "cantidad": 16,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó. Antes decía 1500. El valor de reventa no se cambió.\nSe sumó 1 moneda de la tarjeta \"500 colones (bicentenario bicolor esmaltada) 2022\" que estaba en el cono 1995-2021 (22/11/2026).",
-   "km": "KM# 241",
-   "fo": "FO# 20094",
-   "fotosCompra": [
-    "privado:km-KM241.jpg",
-    "privado:miguel-500-bicentenario-bimetalica.jpg"
-   ],
-   "valor": 1500,
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-200-independencia.jpg",
     "O-msacfccd037-video-cara.jpg",
     "O-msacfccd037-video-valor.jpg"
    ],
+   "fotosCompra": [
+    "privado:km-KM241.jpg",
+    "privado:miguel-500-bicentenario-bimetalica.jpg"
+   ],
+   "km": "KM# 241",
+   "valor": 1500,
+   "fechaValor": "2026-11-23",
+   "fuenteValor": "Precio revendedor",
    "costo": 2000,
-   "origen": "museo"
+   "origen": "museo",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó. Antes decía 1500. El valor de reventa no se cambió.\nSe sumó 1 moneda de la tarjeta \"500 colones (bicentenario bicolor esmaltada) 2022\" que estaba en el cono 1995-2021 (22/11/2026)."
   },
   "O-msda0cba6d9": {
    "tengo": true,
