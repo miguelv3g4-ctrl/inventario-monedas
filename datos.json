@@ -5338,49 +5338,14 @@
   },
   "O-x7a50c185a": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: No magnética - muy rara\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
-   "km": "KM# 239.2",
-   "fo": "FO# 15039",
    "fotosCompra": [
     "privado:km-KM239-2.jpg"
    ],
-   "valor": 15000,
+   "km": "KM# 239.2",
+   "valor": 150000,
+   "fechaValor": "2026-11-22",
    "costo": 60000,
-   "variantes": [
-    {
-     "nombre": "No magnética - muy rara",
-     "explicacion": "Versión de 2003: No magnética - muy rara; material: Latón; catálogo KM# 239.2. Hay 3 versiones de este año; las otras pestañas muestran las demás.",
-     "fotos": [
-      "privado:km-KM239-2.jpg",
-      "privado:catxl-KM239.2.jpg"
-     ],
-     "notas": "",
-     "mismoAnio": true,
-     "propia": true
-    },
-    {
-     "nombre": "Otra: Números gruesos - no magnética",
-     "explicacion": "Versión de 2003: Números gruesos - no magnética; material: Aluminio-bronce; catálogo KM# 239.1. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 500 colones 2003 · Números gruesos - no magnética.",
-     "fotos": [
-      "privado:km-KM239-1.jpg",
-      "privado:catxl-KM239.1.jpg"
-     ],
-     "notas": "",
-     "mismoAnio": true
-    },
-    {
-     "nombre": "Otra: ceros redondos",
-     "explicacion": "Versión de 2003: catálogo KM# 239.2. Hay 3 versiones de este año; las otras pestañas muestran las demás. Es otra tarjeta: 500 colones 2003 · ceros redondos.",
-     "fotos": [
-      "O-xe41776751-video-escudo.jpg",
-      "O-xe41776751-video-valor.jpg",
-      "privado:km-KM239-2.jpg",
-      "privado:catxl-KM239.2.jpg"
-     ],
-     "notas": "",
-     "mismoAnio": true
-    }
-   ]
+   "notas": "Material: Latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: No magnética - muy rara\nFuente: Excel monedas costa rica, hoja \"500 colones\"."
   },
   "O-x23d1289ee": {
    "tengo": true,
