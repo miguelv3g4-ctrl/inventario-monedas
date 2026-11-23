@@ -2497,7 +2497,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 100,
    "origen": "reventa",
-   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor"
+   "notas": "Material: Cobre-níquel · Peso: 1,00 g · Diámetro: 15,00 mm · Canto: Estriado\nRepetidas: 1\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor",
+   "fo": "FO# 6826"
   },
   "O-xc8e07e657": {
    "tengo": true,
@@ -4486,7 +4487,8 @@
      "cantidad": 6,
      "estadoMS": true
     }
-   ]
+   ],
+   "fo": "FO# 3504"
   },
   "O-xd20f2c5d2": {
    "tengo": true,
@@ -4535,7 +4537,8 @@
      "cantidad": 2,
      "estadoMS": true
     }
-   ]
+   ],
+   "fo": "FO# 6046"
   },
   "O-xd7c4d06a4": {
    "tengo": true,
@@ -4584,7 +4587,8 @@
      "cantidad": 3,
      "estadoMS": true
     }
-   ]
+   ],
+   "fo": "FO# 6829"
   },
   "O-x109cb7dca": {
    "tengo": true,
@@ -6514,7 +6518,8 @@
      "valor": 1000
     }
    ],
-   "valorCirculada": 1000
+   "valorCirculada": 1000,
+   "fo": "FO# 5208"
   },
   "O-x367dc9a8d": {
    "tengo": true,
@@ -6559,7 +6564,8 @@
    "fotos": [
     "O-x367dc9a8d-video-escudo.jpg",
     "O-x367dc9a8d-video-valor.jpg"
-   ]
+   ],
+   "fo": "FO# 5720"
   },
   "O-x7a50c185a": {
    "tengo": true,
@@ -6596,7 +6602,8 @@
     }
    ],
    "cantidad": 1,
-   "valorCirculada": 90000
+   "valorCirculada": 90000,
+   "fo": "FO# 15039"
   },
   "O-x23d1289ee": {
    "tengo": true,
@@ -6641,7 +6648,8 @@
      "valor": 1000
     }
    ],
-   "valorCirculada": 1000
+   "valorCirculada": 1000,
+   "fo": "FO# 5720"
   },
   "O-x4ffdc79ec": {
    "tengo": true,
@@ -6678,7 +6686,8 @@
      "valor": 1000
     }
    ],
-   "valorCirculada": 1000
+   "valorCirculada": 1000,
+   "fo": "FO# 5671"
   },
   "O-x69eae3145": {
    "tengo": true,
@@ -6726,7 +6735,8 @@
      "valor": 1000
     }
    ],
-   "valorCirculada": 1000
+   "valorCirculada": 1000,
+   "fo": "FO# 5671"
   },
   "O-x39afa064d": {
    "tengo": true,
@@ -6771,7 +6781,8 @@
      "valor": 1000
     }
    ],
-   "valorCirculada": 1000
+   "valorCirculada": 1000,
+   "fo": "FO# 5671"
   },
   "O-x2678c4f97": {
    "tengo": false,
@@ -8529,7 +8540,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 2000,
    "origen": "museo",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó. Antes decía 1500. El valor de reventa no se cambió.\nSe sumó 1 moneda de la tarjeta \"500 colones (bicentenario bicolor esmaltada) 2022\" que estaba en el cono 1995-2021 (22/11/2026)."
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó. Antes decía 1500. El valor de reventa no se cambió.\nSe sumó 1 moneda de la tarjeta \"500 colones (bicentenario bicolor esmaltada) 2022\" que estaba en el cono 1995-2021 (22/11/2026).",
+   "fo": "FO# 20094"
   },
   "O-msda0cba6d9": {
    "tengo": true,
@@ -8550,7 +8562,29 @@
    "fuenteValor": "Precio revendedor",
    "costo": 1500,
    "origen": "museo",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del álbum (22/11/2026): la cara conmemorativa y el reverso de 500 colones la moneda del álbum.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). \nVenían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó. El valor de reventa no se cambió."
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del álbum (22/11/2026): la cara conmemorativa y el reverso de 500 colones la moneda del álbum.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). \nVenían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó. El valor de reventa no se cambió.",
+   "variantes": [
+    {
+     "nombre": "Normal",
+     "explicacion": "La pieza normal de la colección.",
+     "fotos": [
+      "ms-175-fundacion.jpg",
+      "O-msda0cba6d9-video-cara.jpg",
+      "O-msda0cba6d9-video-valor.jpg",
+      "privado:km-KM242.jpg"
+     ],
+     "notas": ""
+    },
+    {
+     "nombre": "En cartón",
+     "explicacion": "Pieza sin circular guardada en cartón. Valía 2000 colones (\"2K\" escrito a mano).",
+     "fotos": [
+      "O-msda0cba6d9-especial-1.jpg",
+      "O-msda0cba6d9-especial-2.jpg"
+     ],
+     "notas": "Valor anotado en el cartón: 2000 colones."
+    }
+   ]
   },
   "O-ms88823228f": {
    "tengo": true,
@@ -8569,7 +8603,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 2000,
    "origen": "museo",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2022.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó."
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2022.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó.",
+   "fo": "FO# 21442"
   },
   "O-msf0ffcd327": {
    "tengo": true,
@@ -8601,7 +8636,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 150,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2023.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2023.\nPrecio revendedor",
+   "fo": "FO# 27599"
   },
   "O-msf62912f9d": {
    "tengo": true,
@@ -8618,7 +8654,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 150,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2024.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2024.\nPrecio revendedor",
+   "fo": "FO# 28967"
   },
   "O-ms08faf0114": {
    "tengo": true,
@@ -8635,7 +8672,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 150,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2024.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2024.\nPrecio revendedor",
+   "fo": "FO# 29429"
   },
   "O-ms1a3921216": {
    "tengo": true,
@@ -8652,7 +8690,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 150,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2025.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2025.\nPrecio revendedor",
+   "fo": "FO# 29516"
   },
   "O-ms22038ce3c": {
    "tengo": true,
@@ -8669,7 +8708,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 150,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2025.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2025.\nPrecio revendedor",
+   "fo": "FO# 29572"
   },
   "O-msaeda5474f": {
    "tengo": true,
@@ -8686,7 +8726,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 150,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2026.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2026.\nPrecio revendedor",
+   "fo": "FO# 29744"
   },
   "O-msea88dec85": {
    "tengo": true,
@@ -8702,7 +8743,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 150,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
+   "fo": "FO# 29291"
   },
   "O-ms9537cf5bb": {
    "tengo": true,
@@ -8718,7 +8760,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 500,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
+   "fo": "FO# 29746"
   },
   "O-msc6fe145c6": {
    "tengo": true,
@@ -8734,7 +8777,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 150,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
+   "fo": "FO# 29745"
   },
   "O-ms30382c443": {
    "tengo": true,
@@ -8750,7 +8794,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 500,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
+   "fo": "FO# 29879"
   },
   "O-ms1be002f96": {
    "tengo": true,
@@ -8766,7 +8811,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 150,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor",
+   "fo": "FO# 30080"
   },
   "O-ms9e11d4fc2": {
    "tengo": true,
@@ -8798,7 +8844,8 @@
    "fuenteValor": "Precio revendedor",
    "costo": 145,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor",
+   "fo": "FO# 30097"
   },
   "O-msde9df0025": {
    "tengo": true,
@@ -9661,14 +9708,24 @@
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)",
    "origen": "reventa",
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana."
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "variantes": [
+    {
+     "nombre": "2000 A serie 082457454",
+     "explicacion": "Billete con número de serie A082457454; papel con ventana transparente; serie A. Fotos: frente y reverso. Valor: 14 000 colones.",
+     "fotos": [
+      "O-70300eba-billete-1.jpg",
+      "O-70300eba-billete-2.jpg"
+     ],
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 45. Nivel: Extra fino (XF 40) a Casi sin circular (AU 50). Detalle: casi sin dobleces, colores vivos, fotografiado dentro de funda.\nValor de reventa: 14 000 colones. Un 2000 serie A sin circular se vende en 14 000 y este está casi sin circular.",
+     "valor": 14000
+    }
+   ]
   },
   "O-55fda5b4": {
    "tengo": true,
-   "cantidad": 3,
+   "cantidad": 2,
    "fotos": [
-    "O-55fda5b4-billete-1.jpg",
-    "O-55fda5b4-billete-2.jpg",
     "O-55fda5b4-billete-3.jpg",
     "O-55fda5b4-billete-4.jpg",
     "O-55fda5b4-billete-5.jpg",
@@ -9679,7 +9736,29 @@
    "fuenteValor": "Precio de reventa (22/11/2026)",
    "costo": 10000,
    "origen": "reventa",
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; series A y B.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana."
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie B.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "variantes": [
+    {
+     "nombre": "5000 B serie 019868333",
+     "explicacion": "Billete con número de serie B019868333; papel con ventana transparente; series A y B. Fotos: frente y reverso. Valor: 6 500 colones.",
+     "fotos": [
+      "O-55fda5b4-billete-3.jpg",
+      "O-55fda5b4-billete-4.jpg"
+     ],
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 20. Nivel: Fino (F 15) a Muy fino (VF 25). Detalle: dobleces marcados y arrugas, colores algo gastados, sin roturas.\nValor de reventa: 6500 colones. Dos billetes de 5000 serie B y C algo maltratados se vendieron en 13 000 (6500 cada uno).",
+     "valor": 6500
+    },
+    {
+     "nombre": "5000 B serie 007794147",
+     "explicacion": "Billete con número de serie B007794147; papel con ventana transparente; series A y B. Fotos: frente y reverso. Valor: 6 500 colones.",
+     "fotos": [
+      "O-55fda5b4-billete-5.jpg",
+      "O-55fda5b4-billete-6.jpg"
+     ],
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 12. Nivel: Muy bueno (VG 10) a Fino (F 15). Detalle: muy circulado, dobleces centrales marcados, arrugas y suciedad, orillas cansadas.\nValor de reventa: 6500 colones. Dos billetes de 5000 serie B y C algo maltratados se vendieron en 13 000 (6500 cada uno).",
+     "valor": 6500
+    }
+   ]
   },
   "O-00d26b62": {
    "tengo": true,
@@ -9911,6 +9990,32 @@
    "valor": 300,
    "fechaValor": "2026-11-23",
    "fuenteValor": "Precio de reventa"
+  },
+  "O-186c13b1": {
+   "tengo": true,
+   "cantidad": 1,
+   "fotos": [
+    "O-186c13b1-billete-1.jpg",
+    "O-186c13b1-billete-2.jpg"
+   ],
+   "valor": 15000,
+   "fechaValor": "2026-11-22",
+   "fuenteValor": "Precio de reventa (22/11/2026)",
+   "costo": 10000,
+   "origen": "reventa",
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "variantes": [
+    {
+     "nombre": "5000 A serie 007321451",
+     "explicacion": "Billete con número de serie A007321451; papel con ventana transparente; series A y B. Fotos: frente y reverso. Valor: 20 000 colones.",
+     "fotos": [
+      "O-186c13b1-billete-1.jpg",
+      "O-186c13b1-billete-2.jpg"
+     ],
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: dobleces suaves, colores vivos, leve arrugado en el papel.\nValor de reventa: 20 000 colones: los billetes de 5000 serie A son escasos (papá).",
+     "valor": 20000
+    }
+   ]
   }
  },
  "sueltas": {},
@@ -12537,8 +12642,14 @@
    "seccion": "billetes"
   },
   {
+   "id": "O-186c13b1",
+   "nombre": "5000 colones papel serie A (Alfredo González Flores / mono)",
+   "categoria": "Billetes",
+   "seccion": "billetes"
+  },
+  {
    "id": "O-55fda5b4",
-   "nombre": "5000 colones papel (Alfredo González Flores / mono)",
+   "nombre": "5000 colones papel serie B (Alfredo González Flores / mono)",
    "categoria": "Billetes",
    "seccion": "billetes"
   },

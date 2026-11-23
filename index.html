@@ -1203,7 +1203,7 @@
       // 2. guardar los datos
       nota.textContent = 'Guardando datos…';
       const ant = reg(id);
-      const r = { tengo: esEstucheHoja(id) ? undefined : $('fTengo').checked, vendida: $('fVendida').checked, producto: ant.producto, cantidad: ant.cantidad, serie: ant.serie, tiraje: ant.tiraje, fotos: borrador.fotos.map(f => f.nombre), fotosCompra: borrador.fotosCompra.map(f => f.nombre) };
+      const r = Object.assign({}, ant, { tengo: esEstucheHoja(id) ? undefined : $('fTengo').checked, vendida: $('fVendida').checked, producto: ant.producto, cantidad: ant.cantidad, serie: ant.serie, tiraje: ant.tiraje, fotos: borrador.fotos.map(f => f.nombre), fotosCompra: borrador.fotosCompra.map(f => f.nombre) });
       for (const f in campos) r[campos[f]] = esDinero(campos[f]) ? num($(f).value) : $(f).value.trim();
       if (!p.otra && p.tipo === 'Estuche') {
         // solo se guarda si es distinta de la que traia la hoja
