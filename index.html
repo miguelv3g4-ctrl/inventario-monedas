@@ -102,7 +102,8 @@
   #vVariantes .varTabs { display: flex; flex-wrap: wrap; gap: 6px; }
   #vVariantes .varTabs button { background: #1a1610; color: var(--oro2); border: 1px solid var(--oro2); border-radius: 6px; padding: 6px 12px; font: inherit; font-size: 14px; cursor: pointer; }
   #vVariantes .varTabs button.activo { background: var(--oro); color: #111; border-color: var(--oro); }
-  #vVariantes .ckMS { display: inline-flex; align-items: center; gap: 6px; margin: 6px 14px 4px 0; cursor: pointer; }
+  #vVariantes .nivel .etapaDesc { display: block; width: 100%; margin-top: 4px; color: var(--gris); font-size: 13px; line-height: 1.4; }
+  .ckMS { display: inline-flex; align-items: center; gap: 6px; margin: 6px 14px 4px 0; cursor: pointer; }
   .ckMS input { width: 20px; height: 20px; accent-color: var(--oro); }
   .varExp { margin-top: 8px; color: var(--gris); font-size: 14px; line-height: 1.4; }
   .notasF { margin-top: 12px; display: grid; gap: 5px; white-space: normal; line-height: 1.35; }
@@ -1502,6 +1503,23 @@
         if (sc.id === 'ms-sueltas') { const s = sumas(grupo); resumen += ' · ' + s.n + (s.n === 1 ? ' pieza' : ' piezas') + (s.val ? ' · ' + fmt(s.val) : ''); }
         const t = el('div', 'nivel'); t.append(el('b', '', col ? denom : 'Otras'), el('span', '', resumen)); g.appendChild(t);
         for (const p of grupo.sort((a, b) => columnaHoja(a) - columnaHoja(b) || ordenHoja(a) - ordenHoja(b))) g.appendChild(tarjeta(p));
+      }
+    } else if (sc.id === 'billetes') {
+      // billetes por etapas de la historia del dinero en Costa Rica; dentro de cada una, por denominación y fecha
+      const ETAPAS = [[1839, 1850, 'Vales y papel moneda inicial', 'En 1839 se emitieron vales en pesos, bajo el gobierno de Braulio Carrillo.'],
+        [1851, 1921, 'Banca privada y primeros bancos emisores', 'Bancos privados como el Banco Nacional Costarricense, el Anglo Costarricense y el de la Unión hacían sus propios billetes. En 1896 nació el colón.'],
+        [1922, 1949, 'Centralización y Banco Nacional', 'Desde 1922 la Caja de Conversión y luego el Banco Nacional de Costa Rica emitieron los billetes, como el de 5 colones de 1939 y las series reselladas.'],
+        [1950, 2010, 'Emisiones del Banco Central de Costa Rica', 'Desde 1950 el Banco Central es el único que hace billetes: series de colores, el de 1000 rojo y luego los de 10 000, 20 000 y 50 000.'],
+        [2011, 9999, 'Familia de biodiversidad y personajes, y billetes de polímero', 'Desde 2011 los billetes muestran personajes de la historia y ecosistemas de Costa Rica. Desde 2020 algunos son de polímero, un plástico más resistente.']];
+      const anioDe = p => reg(p.id).anio || (fechaDe(p) < 99999999 ? Math.floor(fechaDe(p) / 1e4) : 0);
+      const etapaDe = p => { const y = anioDe(p); const i = ETAPAS.findIndex(e => y >= e[0] && y <= e[1]); return i < 0 ? ETAPAS.length : i; };
+      for (let i = 0; i <= ETAPAS.length; i++) {
+        const grupo = lista.filter(p => etapaDe(p) === i); if (!grupo.length) continue;
+        const e = ETAPAS[i], s = sumas(grupo), tt = el('div', 'nivel');
+        tt.append(el('b', '', e ? e[0] + (e[1] < 9999 ? '–' + e[1] : ' a hoy') : 'Sin año'), el('span', '', (e ? e[2] : 'Billetes sin año anotado') + ' · ' + grupo.length + (grupo.length === 1 ? ' tarjeta' : ' tarjetas') + ' · ' + s.n + (s.n === 1 ? ' billete' : ' billetes') + (s.val ? ' · ' + fmt(s.val) : '')));
+        if (e) tt.appendChild(el('small', 'etapaDesc', e[3]));
+        g.appendChild(tt);
+        for (const p of grupo) g.appendChild(tarjeta(p));
       }
     } else for (const p of lista) g.appendChild(tarjeta(p));
     const lasTengo = deCat.filter(p => tengo(p.id)).length;
