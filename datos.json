@@ -8786,19 +8786,19 @@
   },
   "O-ms6fe432eb2": {
    "tengo": true,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor",
-   "fo": "FO# 30097",
+   "cantidad": 10,
+   "fotos": [
+    "ms-san-jose.jpg"
+   ],
    "fotosCompra": [
     "privado:km-FO30097.jpg"
    ],
    "valor": 150,
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-23",
    "fuenteValor": "Precio revendedor",
-   "fotos": [
-    "ms-san-jose.jpg"
-   ],
    "costo": 145,
-   "origen": "reventa"
+   "origen": "reventa",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor"
   },
   "O-msde9df0025": {
    "tengo": true,
