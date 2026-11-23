@@ -4501,12 +4501,12 @@
    "costo": 1000,
    "origen": "reventa",
    "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 2 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
-   "cantidad": 2,
+   "cantidad": 3,
    "valorCirculada": 400,
    "variantes": [
     {
-     "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "nombre": "MS UNC (sin circular) · 1",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 000 colones.",
      "fotos": [
       "O-xd20f2c5d2-especial-1.jpg",
       "O-xd20f2c5d2-especial-2.jpg",
@@ -4515,7 +4515,7 @@
      ],
      "notas": "",
      "valor": 1000,
-     "cantidad": 0,
+     "cantidad": 1,
      "estadoMS": true
     },
     {
