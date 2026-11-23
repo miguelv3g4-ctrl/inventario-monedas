@@ -5955,25 +5955,25 @@
    "valorCirculada": 600,
    "variantes": [
     {
-     "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 2 500 colones.",
+     "nombre": "MS UNC (sin circular) · 0",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 2 500 colones.",
      "fotos": [
       "privado:anio-O-x0357cfcad-0.jpg"
      ],
      "notas": "",
      "valor": 2500,
-     "cantidad": 1,
+     "cantidad": 0,
      "estadoMS": true
     },
     {
-     "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 600 colones.",
+     "nombre": "MS circuladas · 1",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 600 colones.",
      "fotos": [
       "privado:anio-O-x0357cfcad-0.jpg"
      ],
      "notas": "",
      "valor": 600,
-     "cantidad": 0,
+     "cantidad": 1,
      "estadoMS": true
     }
    ],
