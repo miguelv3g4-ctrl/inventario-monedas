@@ -940,7 +940,7 @@
    "fechaCompra": "2025-07-23",
    "origen": "Banco Central de Costa Rica (emisión)",
    "fechaValor": "2026-11-21",
-   "fuenteValor": "Precio fijado por papá"
+   "fuenteValor": "Precio fijado"
   },
   "C48": {
    "tengo": true,
@@ -957,7 +957,7 @@
    "fechaCompra": "2025-07-23",
    "origen": "Banco Central de Costa Rica (emisión)",
    "fechaValor": "2026-11-21",
-   "fuenteValor": "Precio fijado por papá"
+   "fuenteValor": "Precio fijado"
   },
   "C49": {
    "tengo": true,
@@ -974,7 +974,7 @@
    "fechaCompra": "2025-07-23",
    "origen": "Banco Central de Costa Rica (emisión)",
    "fechaValor": "2026-11-21",
-   "fuenteValor": "Precio fijado por papá"
+   "fuenteValor": "Precio fijado"
   },
   "C44": {
    "tengo": true,
@@ -1799,7 +1799,7 @@
   },
   "O-xc9390bfc0": {
    "tengo": false,
-   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor\nFotos de papá (22/11/2026): monedas de plata de 5 céntimos de diferentes años; la de la izquierda es de 1910, el año de la otra no se lee en la foto.",
+   "notas": "Material: Plata (0,900) · Peso: 1,00 g · Diámetro: 14,20 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"5 centimos\".\nPrecio revendedor\nFotos propias (22/11/2026): monedas de plata de 5 céntimos de diferentes años; la de la izquierda es de 1910, el año de la otra no se lee en la foto.",
    "costo": 4500,
    "valor": 4000,
    "km": "KM# 145",
@@ -1876,7 +1876,7 @@
      "fotos": [
       "O-xbfc96e95d-especial-9.jpg"
      ],
-     "notas": "Fecha escasa (papá)."
+     "notas": "Fecha escasa."
     }
    ],
    "fotos": [
@@ -1920,7 +1920,7 @@
      "fotos": [
       "O-xc48e91c0a-especial-8.jpg"
      ],
-     "notas": "Fecha escasa (papá)."
+     "notas": "Fecha escasa."
     }
    ],
    "fotos": [
@@ -1955,7 +1955,7 @@
      "fotos": [
       "O-x259014684-especial-7.jpg"
      ],
-     "notas": "Fecha escasa (papá)."
+     "notas": "Fecha escasa."
     }
    ],
    "fotos": [
@@ -2198,7 +2198,7 @@
      "fotos": [
       "O-x1ca9dd607-especial-1.jpg"
      ],
-     "notas": "Diferencia en los números (papá). Identificada con la ficha de catálogo que pasó papá: KM# 184A, canto estriado."
+     "notas": "Diferencia en los números. Identificada con la ficha de catálogo: KM# 184A, canto estriado."
     },
     {
      "nombre": "Otra: Canto liso (KM 184.1)",
@@ -2244,7 +2244,7 @@
      "fotos": [
       "O-x9dcbdff87-especial-1.jpg"
      ],
-     "notas": "Diferencia en los números (papá). Identificada con la ficha de catálogo que pasó papá: KM# 184.1, canto liso."
+     "notas": "Diferencia en los números. Identificada con la ficha de catálogo: KM# 184.1, canto liso."
     },
     {
      "nombre": "Otra: Canto estriado (KM 184A)",
@@ -2384,7 +2384,7 @@
       "O-x15d4420cd-especial-1.jpg",
       "O-x15d4420cd-especial-2.jpg"
      ],
-     "notas": "Acero inoxidable (confirmado por papá)."
+     "notas": "Acero inoxidable (confirmado)."
     },
     {
      "nombre": "Otra: Cobre-níquel",
@@ -2605,7 +2605,7 @@
      "fotos": [
       "O-xb402c067e-especial-10.jpg"
      ],
-     "notas": "Fecha escasa (papá)."
+     "notas": "Fecha escasa."
     }
    ],
    "fotos": [
@@ -2759,7 +2759,7 @@
   "O-xcf8b0e40e": {
    "tengo": true,
    "cantidad": 38,
-   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 38 (conteo de papá, 22/11/2026).",
+   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 38 (conteo del 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.1a",
@@ -2774,7 +2774,7 @@
   "O-xc3d7fba09": {
    "tengo": true,
    "cantidad": 100,
-   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 100 (conteo de papá, 22/11/2026).",
+   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 100 (conteo del 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.1a",
@@ -2789,7 +2789,7 @@
   "O-x22cea2e08": {
    "tengo": true,
    "cantidad": 80,
-   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 80 (conteo de papá, 22/11/2026).",
+   "notas": "Material: Acero inoxidable · Peso: 1,75 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 80 (conteo del 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.1a",
@@ -2827,7 +2827,7 @@
   "O-x929b5dfa3": {
    "tengo": true,
    "cantidad": 145,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 145 (conteo de papá, 22/11/2026).",
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 145 (conteo del 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2",
@@ -2842,7 +2842,7 @@
   "O-x1606e6042": {
    "tengo": true,
    "cantidad": 315,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 315 (conteo de papá, 22/11/2026).",
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 315 (conteo del 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2",
@@ -2857,7 +2857,7 @@
   "O-x305516372": {
    "tengo": true,
    "cantidad": 80,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 80 (conteo de papá, 22/11/2026).",
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 80 (conteo del 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2",
@@ -2872,7 +2872,7 @@
   "O-x7bf3b5c37": {
    "tengo": true,
    "cantidad": 180,
-   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 180 (conteo de papá, 22/11/2026).",
+   "notas": "Material: Cobre-níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 180 (conteo del 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2",
@@ -2887,7 +2887,7 @@
   "O-xd066553eb": {
    "tengo": true,
    "cantidad": 200,
-   "notas": "Material: Acero bañado en níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 200 (conteo de papá, 22/11/2026).",
+   "notas": "Material: Acero bañado en níquel · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 200 (conteo del 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2b",
@@ -2902,7 +2902,7 @@
   "O-xbe0d3afec": {
    "tengo": true,
    "cantidad": 225,
-   "notas": "Material: Aluminio · Peso: 0,60 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 225 (conteo de papá, 22/11/2026).",
+   "notas": "Material: Aluminio · Peso: 0,60 g · Diámetro: 18,00 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"10 centimos\".\nPrecio revendedor\nCantidad aproximada en la caja: 225 (conteo del 22/11/2026).",
    "costo": 100,
    "valor": 100,
    "km": "KM# 185.2a",
@@ -3083,7 +3083,7 @@
     },
     {
      "nombre": "Rara",
-     "explicacion": "Pieza rara: papá la marcó con \"R.\" en el cartón. Tiene manchas café de corrosión arriba, en \"DE\" y en la cimera.",
+     "explicacion": "Pieza rara: se marcó con \"R.\" en el cartón. Tiene manchas café de corrosión arriba, en \"DE\" y en la cimera.",
      "fotos": [
       "O-xc9db761fe-especial-1.jpg",
       "O-xc9db761fe-especial-2.jpg"
@@ -3563,12 +3563,12 @@
     },
     {
      "nombre": "Pieza especial",
-     "explicacion": "Pieza que papá marcó como especial. En la foto se ve circulada, con un golpe en el reborde abajo a la derecha; falta confirmar qué la hace especial.",
+     "explicacion": "Pieza marcada como especial. En la foto se ve circulada, con un golpe en el reborde abajo a la derecha; falta confirmar qué la hace especial.",
      "fotos": [
       "O-xeb403d2e8-especial-1.jpg",
       "O-xeb403d2e8-especial-2.jpg"
      ],
-     "notas": "Por confirmar con papá qué tiene de especial."
+     "notas": "Por confirmar qué tiene de especial."
     }
    ],
    "fotos": [
@@ -4144,7 +4144,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 500 colones.",
      "fotos": [
       "privado:km-KM233.jpg",
       "O-x0085cc125-1795096208723-poebe.jpg"
@@ -4156,7 +4156,7 @@
     },
     {
      "nombre": "MS circuladas · 2",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 300 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 2 en la colección. Cada una vale 300 colones.",
      "fotos": [
       "privado:km-KM233.jpg",
       "O-x0085cc125-1795096208723-poebe.jpg"
@@ -4459,12 +4459,12 @@
    "fechaValor": "2026-11-22",
    "costo": 500,
    "origen": "reventa",
-   "notas": "Material: Acero bañado en latón · Peso: 4,03 g · Diámetro: 21,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 3 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 500.",
+   "notas": "Material: Acero bañado en latón · Peso: 4,03 g · Diámetro: 21,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 500.",
    "valorCirculada": 400,
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 500 colones.",
      "fotos": [
       "privado:km-KM227.jpg",
       "O-x150f54e4a-1795096553418-u4b9p.jpg"
@@ -4476,7 +4476,7 @@
     },
     {
      "nombre": "MS circuladas · 6",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 6. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 6 en la colección. Cada una vale 400 colones.",
      "fotos": [
       "privado:km-KM227.jpg",
       "O-x150f54e4a-1795096553418-u4b9p.jpg"
@@ -4503,13 +4503,13 @@
    "fechaValor": "2026-11-22",
    "costo": 1000,
    "origen": "reventa",
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 2 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "cantidad": 3,
    "valorCirculada": 400,
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-xd20f2c5d2-especial-1.jpg",
       "O-xd20f2c5d2-especial-2.jpg",
@@ -4523,7 +4523,7 @@
     },
     {
      "nombre": "MS circuladas · 2",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 2 en la colección. Cada una vale 400 colones.",
      "fotos": [
       "O-xd20f2c5d2-especial-1.jpg",
       "O-xd20f2c5d2-especial-2.jpg",
@@ -4552,13 +4552,13 @@
    "fechaValor": "2026-11-22",
    "costo": 1000,
    "origen": "reventa",
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras grandes - Volcanes sin humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 3 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras grandes - Volcanes sin humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "cantidad": 4,
    "valorCirculada": 400,
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-xd7c4d06a4-especial-1.jpg",
       "O-xd7c4d06a4-especial-2.jpg",
@@ -4572,7 +4572,7 @@
     },
     {
      "nombre": "MS circuladas · 3",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 3 en la colección. Cada una vale 400 colones.",
      "fotos": [
       "O-xd7c4d06a4-especial-1.jpg",
       "O-xd7c4d06a4-especial-2.jpg",
@@ -4593,7 +4593,7 @@
     "O-x109cb7dca-1795128431868-6snco.jpg"
    ],
    "km": "KM# 227.2a",
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras gruesas - Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 5 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras gruesas - Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 5 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "fo": "FO# 5717",
    "valor": 1000,
    "costo": 1000,
@@ -4607,7 +4607,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x109cb7dca-video-escudo.jpg",
       "O-x109cb7dca-video-valor.jpg",
@@ -4621,7 +4621,7 @@
     },
     {
      "nombre": "MS circuladas · 5",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 5. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 5 en la colección. Cada una vale 400 colones.",
      "fotos": [
       "O-x109cb7dca-video-escudo.jpg",
       "O-x109cb7dca-video-valor.jpg",
@@ -4655,7 +4655,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 500 colones.",
      "fotos": [
       "O-x7567e6ed2-video-escudo.jpg",
       "O-x7567e6ed2-video-valor.jpg",
@@ -4669,7 +4669,7 @@
     },
     {
      "nombre": "MS circuladas · 1",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 1 en la colección. Cada una vale 400 colones.",
      "fotos": [
       "O-x7567e6ed2-video-escudo.jpg",
       "O-x7567e6ed2-video-valor.jpg",
@@ -4703,7 +4703,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 500 colones.",
      "fotos": [
       "O-xead7a029a-video-escudo.jpg",
       "O-xead7a029a-video-valor.jpg",
@@ -4716,7 +4716,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 en la colección. Cada una vale 400 colones.",
      "fotos": [
       "O-xead7a029a-video-escudo.jpg",
       "O-xead7a029a-video-valor.jpg",
@@ -4749,7 +4749,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 500 colones.",
      "fotos": [
       "O-xce0766872-video-escudo.jpg",
       "O-xce0766872-video-valor.jpg",
@@ -4762,7 +4762,7 @@
     },
     {
      "nombre": "MS circuladas · 1",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 1 en la colección. Cada una vale 400 colones.",
      "fotos": [
       "O-xce0766872-video-escudo.jpg",
       "O-xce0766872-video-valor.jpg",
@@ -4797,7 +4797,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 500 colones.",
      "fotos": [
       "O-x561dfed7f-video-escudo.jpg",
       "O-x561dfed7f-video-valor.jpg",
@@ -4810,7 +4810,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 400 colones.",
      "fotos": [
       "O-x561dfed7f-video-escudo.jpg",
       "O-x561dfed7f-video-valor.jpg",
@@ -4882,7 +4882,7 @@
   },
   "O-xc3fc2b519": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 4,20 g · Diámetro: 24,00 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nMS circuladas: 3 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Acero bañado en latón · Peso: 4,20 g · Diámetro: 24,00 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 228",
    "fo": "FO# 373",
    "fotosCompra": [
@@ -4896,7 +4896,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM228.jpg"
      ],
@@ -4907,7 +4907,7 @@
     },
     {
      "nombre": "MS circuladas · 3",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 3 en la colección. Cada una vale 400 colones.",
      "fotos": [
       "privado:km-KM228.jpg"
      ],
@@ -4920,7 +4920,7 @@
   },
   "O-xe0aaf7616": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 5,05 g · Diámetro: 23,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nPrecio revendedor\nMS circuladas: 2 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 3000.",
+   "notas": "Material: Latón · Peso: 5,05 g · Diámetro: 23,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nPrecio revendedor\nMS circuladas: 2 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 3000.",
    "km": "KM# 228a",
    "fo": "FO# 6830",
    "fotosCompra": [
@@ -4936,7 +4936,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 3 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 3 000 colones.",
      "fotos": [
       "privado:km-KM228a.jpg"
      ],
@@ -4947,7 +4947,7 @@
     },
     {
      "nombre": "MS circuladas · 2",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 2 en la colección. Cada una vale 400 colones.",
      "fotos": [
       "privado:km-KM228a.jpg"
      ],
@@ -4960,7 +4960,7 @@
   },
   "O-x8a6998b28": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 5,00 g · Diámetro: 23,50 mm · Canto: Estriado segmentado\nVariante: Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nMS circuladas: 2 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 5,00 g · Diámetro: 23,50 mm · Canto: Estriado segmentado\nVariante: Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 228.1a",
    "fo": "FO# 6831",
    "fotosCompra": [
@@ -4974,7 +4974,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM228-1a.jpg"
      ],
@@ -4985,7 +4985,7 @@
     },
     {
      "nombre": "MS circuladas · 2",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 2 en la colección. Cada una vale 400 colones.",
      "fotos": [
       "privado:km-KM228-1a.jpg"
      ],
@@ -4998,7 +4998,7 @@
   },
   "O-xb067abf23": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 5,00 g · Diámetro: 23,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nPrecio revendedor\nMS circuladas: 4 monedas (lista de papá). Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 4000.",
+   "notas": "Material: Latón · Peso: 5,00 g · Diámetro: 23,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nPrecio revendedor\nMS circuladas: 4 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 4000.",
    "km": "KM# 228.2",
    "fo": "FO# 5718",
    "fotosCompra": [
@@ -5018,7 +5018,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 4 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 4 000 colones.",
      "fotos": [
       "O-xb067abf23-video-escudo.jpg",
       "O-xb067abf23-video-valor.jpg",
@@ -5031,7 +5031,7 @@
     },
     {
      "nombre": "MS circuladas · 4",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 4. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 4 en la colección. Cada una vale 400 colones.",
      "fotos": [
       "O-xb067abf23-video-escudo.jpg",
       "O-xb067abf23-video-valor.jpg",
@@ -5063,7 +5063,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x11bee65fb-video-escudo.jpg",
       "O-x11bee65fb-video-valor.jpg",
@@ -5076,7 +5076,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 400 colones.",
      "fotos": [
       "O-x11bee65fb-video-escudo.jpg",
       "O-x11bee65fb-video-valor.jpg",
@@ -5110,7 +5110,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 500 colones.",
      "fotos": [
       "O-x2bfc2e585-video-escudo.jpg",
       "O-x2bfc2e585-video-valor.jpg",
@@ -5124,7 +5124,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 400 colones.",
      "fotos": [
       "O-x2bfc2e585-video-escudo.jpg",
       "O-x2bfc2e585-video-valor.jpg",
@@ -5172,7 +5172,7 @@
     },
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 500 colones.",
      "fotos": [
       "privado:km-KM228-1b.jpg"
      ],
@@ -5183,7 +5183,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 400 colones.",
      "fotos": [
       "privado:km-KM228-1b.jpg"
      ],
@@ -5226,7 +5226,7 @@
     },
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 0 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 0 colones.",
      "fotos": [
       "privado:km-KM228-1b.jpg"
      ],
@@ -5237,7 +5237,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 400 colones.",
      "fotos": [
       "privado:km-KM228-1b.jpg"
      ],
@@ -5268,7 +5268,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 500 colones.",
      "fotos": [
       "O-xeea12af89-video-escudo.jpg",
       "O-xeea12af89-video-valor.jpg",
@@ -5281,7 +5281,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 400 colones.",
      "fotos": [
       "O-xeea12af89-video-escudo.jpg",
       "O-xeea12af89-video-valor.jpg",
@@ -5315,7 +5315,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 500 colones.",
      "fotos": [
       "O-x8ce0a9cbe-video-escudo.jpg",
       "O-x8ce0a9cbe-video-valor.jpg",
@@ -5329,7 +5329,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 400 colones.",
      "fotos": [
       "O-x8ce0a9cbe-video-escudo.jpg",
       "O-x8ce0a9cbe-video-valor.jpg",
@@ -5403,7 +5403,7 @@
   },
   "O-x1562341e0": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 1 moneda (lista de papá). Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 229",
    "fo": "FO# 5206",
    "fotosCompra": [
@@ -5417,7 +5417,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM229.jpg"
      ],
@@ -5428,7 +5428,7 @@
     },
     {
      "nombre": "MS circuladas · 1",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 1 en la colección. Cada una vale 600 colones.",
      "fotos": [
       "privado:km-KM229.jpg"
      ],
@@ -5446,7 +5446,7 @@
     "O-xb2a0db2d6-1795055324351-zg44d.jpg"
    ],
    "km": "KM# 229a",
-   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 2 monedas (lista de papá). Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "fo": "FO# 5207",
    "valor": 1000,
    "costo": 1000,
@@ -5460,7 +5460,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-xb2a0db2d6-video-escudo.jpg",
       "O-xb2a0db2d6-video-valor.jpg",
@@ -5474,7 +5474,7 @@
     },
     {
      "nombre": "MS circuladas · 2",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 2 en la colección. Cada una vale 600 colones.",
      "fotos": [
       "O-xb2a0db2d6-video-escudo.jpg",
       "O-xb2a0db2d6-video-valor.jpg",
@@ -5490,7 +5490,7 @@
   },
   "O-xd4802a3a4": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 3 monedas (lista de papá). Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 3000.",
+   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 3000.",
    "km": "KM# 229a",
    "fo": "FO# 5207",
    "fotosCompra": [
@@ -5509,7 +5509,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 3 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 3 000 colones.",
      "fotos": [
       "O-xd4802a3a4-video-escudo.jpg",
       "O-xd4802a3a4-video-valor.jpg",
@@ -5523,7 +5523,7 @@
     },
     {
      "nombre": "MS circuladas · 3",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 3 en la colección. Cada una vale 600 colones.",
      "fotos": [
       "O-xd4802a3a4-video-escudo.jpg",
       "O-xd4802a3a4-video-valor.jpg",
@@ -5556,7 +5556,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x847ed7e7c-video-escudo.jpg",
       "O-x847ed7e7c-video-valor.jpg",
@@ -5569,7 +5569,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 600 colones.",
      "fotos": [
       "O-x847ed7e7c-video-escudo.jpg",
       "O-x847ed7e7c-video-valor.jpg",
@@ -5590,7 +5590,7 @@
     "O-xa8ced4273-1795054667879-naqah.jpg"
    ],
    "km": "KM# 229c",
-   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nPrecio revendedor\nMS circuladas: 4 monedas (lista de papá). Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 2000.",
+   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nPrecio revendedor\nMS circuladas: 4 monedas. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 2000.",
    "fo": "FO# 12476",
    "valor": 2000,
    "fechaValor": "2026-11-20",
@@ -5606,7 +5606,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 2 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 2 000 colones.",
      "fotos": [
       "O-xa8ced4273-video-escudo.jpg",
       "O-xa8ced4273-video-valor.jpg",
@@ -5620,7 +5620,7 @@
     },
     {
      "nombre": "MS circuladas · 4",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 4. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 4 en la colección. Cada una vale 600 colones.",
      "fotos": [
       "O-xa8ced4273-video-escudo.jpg",
       "O-xa8ced4273-video-valor.jpg",
@@ -5636,7 +5636,7 @@
   },
   "O-x19b5a2c7f": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nPrecio revendedor\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 25 colones del mismo diseño.\nMS circuladas: 1 moneda (lista de papá). Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1500.",
+   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Liso\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nPrecio revendedor\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 25 colones del mismo diseño.\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1500.",
    "km": "KM# 229c",
    "fo": "FO# 12476",
    "fotosCompra": [
@@ -5656,7 +5656,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 1 500 colones.",
      "fotos": [
       "O-x19b5a2c7f-video-escudo.jpg",
       "O-x19b5a2c7f-video-valor.jpg",
@@ -5669,7 +5669,7 @@
     },
     {
      "nombre": "MS circuladas · 1",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 1 en la colección. Cada una vale 600 colones.",
      "fotos": [
       "O-x19b5a2c7f-video-escudo.jpg",
       "O-x19b5a2c7f-video-valor.jpg",
@@ -5703,7 +5703,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 1 500 colones.",
      "fotos": [
       "O-x6b8c69a51-video-escudo.jpg",
       "O-x6b8c69a51-video-valor.jpg",
@@ -5716,7 +5716,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 600 colones.",
      "fotos": [
       "O-x6b8c69a51-video-escudo.jpg",
       "O-x6b8c69a51-video-valor.jpg",
@@ -5747,7 +5747,7 @@
   },
   "O-xbec1cd63b": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nVariante: Letras grandes\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda (lista de papá). Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nVariante: Letras grandes\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 231",
    "fo": "FO# 369",
    "fotosCompra": [
@@ -5761,7 +5761,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM231.jpg"
      ],
@@ -5772,7 +5772,7 @@
     },
     {
      "nombre": "MS circuladas · 1",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 1 en la colección. Cada una vale 600 colones.",
      "fotos": [
       "privado:km-KM231.jpg"
      ],
@@ -5785,7 +5785,7 @@
   },
   "O-x1d00c2792": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nVariante: letras pequeñas\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda (lista de papá). Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nVariante: letras pequeñas\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 231.1",
    "fo": "FO# 3544",
    "fotosCompra": [
@@ -5799,7 +5799,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM231-1.jpg"
      ],
@@ -5810,7 +5810,7 @@
     },
     {
      "nombre": "MS circuladas · 1",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 1 en la colección. Cada una vale 600 colones.",
      "fotos": [
       "privado:km-KM231-1.jpg"
      ],
@@ -5823,7 +5823,7 @@
   },
   "O-xeb9bba39d": {
    "tengo": true,
-   "notas": "Material: Aluminio-bronce · Peso: 7,92 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda (lista de papá). Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Aluminio-bronce · Peso: 7,92 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 231.1a",
    "fo": "FO# 15038",
    "fotosCompra": [
@@ -5841,7 +5841,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-xeb9bba39d-video-escudo.jpg",
       "O-xeb9bba39d-video-valor.jpg",
@@ -5854,7 +5854,7 @@
     },
     {
      "nombre": "MS circuladas · 1",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 1 en la colección. Cada una vale 600 colones.",
      "fotos": [
       "O-xeb9bba39d-video-escudo.jpg",
       "O-xeb9bba39d-video-valor.jpg",
@@ -5907,7 +5907,7 @@
     },
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x97e4c2697-video-escudo.jpg",
       "O-x97e4c2697-video-valor.jpg",
@@ -5922,7 +5922,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 600 colones.",
      "fotos": [
       "O-x97e4c2697-video-escudo.jpg",
       "O-x97e4c2697-video-valor.jpg",
@@ -5956,7 +5956,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 2 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 2 500 colones.",
      "fotos": [
       "privado:anio-O-x0357cfcad-0.jpg"
      ],
@@ -5967,7 +5967,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 600 colones.",
      "fotos": [
       "privado:anio-O-x0357cfcad-0.jpg"
      ],
@@ -5998,7 +5998,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x4ff6ed81f-video-escudo.jpg",
       "O-x4ff6ed81f-video-valor.jpg",
@@ -6011,7 +6011,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 600 colones.",
      "fotos": [
       "O-x4ff6ed81f-video-escudo.jpg",
       "O-x4ff6ed81f-video-valor.jpg",
@@ -6044,7 +6044,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-xead69f4e3-video-escudo.jpg",
       "O-xead69f4e3-video-valor.jpg",
@@ -6057,7 +6057,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 600 colones.",
      "fotos": [
       "O-xead69f4e3-video-escudo.jpg",
       "O-xead69f4e3-video-valor.jpg",
@@ -6116,7 +6116,7 @@
   },
   "O-xc0213beb3": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 2 monedas (lista de papá). Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 230",
    "fo": "FO# 368",
    "fotosCompra": [
@@ -6129,7 +6129,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM230.jpg"
      ],
@@ -6140,7 +6140,7 @@
     },
     {
      "nombre": "MS circuladas · 2",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Cada una vale 700 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 2 en la colección. Cada una vale 700 colones.",
      "fotos": [
       "privado:km-KM230.jpg"
      ],
@@ -6153,7 +6153,7 @@
   },
   "O-x55e57c564": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 3 monedas (lista de papá). Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 230a",
    "fo": "FO# 6833",
    "fotosCompra": [
@@ -6166,7 +6166,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 2",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 2. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 2 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM230a.jpg"
      ],
@@ -6177,7 +6177,7 @@
     },
     {
      "nombre": "MS circuladas · 3",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 700 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 3 en la colección. Cada una vale 700 colones.",
      "fotos": [
       "privado:km-KM230a.jpg"
      ],
@@ -6190,7 +6190,7 @@
   },
   "O-x6ddfa1ed1": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 1 moneda (lista de papá). Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 230a",
    "fo": "FO# 6833",
    "fotosCompra": [
@@ -6203,7 +6203,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:anio-O-x6ddfa1ed1-0.jpg"
      ],
@@ -6214,7 +6214,7 @@
     },
     {
      "nombre": "MS circuladas · 1",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 700 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 1 en la colección. Cada una vale 700 colones.",
      "fotos": [
       "privado:anio-O-x6ddfa1ed1-0.jpg"
      ],
@@ -6241,7 +6241,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 5 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 5 000 colones.",
      "fotos": [
       "privado:km-KM230-1a.jpg"
      ],
@@ -6252,7 +6252,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 700 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 700 colones.",
      "fotos": [
       "privado:km-KM230-1a.jpg"
      ],
@@ -6266,7 +6266,7 @@
   },
   "O-x0250cf030": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nPrecio revendedor\nMS circuladas: 1 moneda (lista de papá). Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 5000.",
+   "notas": "Material: Latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nPrecio revendedor\nMS circuladas: 1 moneda. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 5000.",
    "km": "KM# 240",
    "fo": "FO# 5719",
    "fotosCompra": [
@@ -6281,7 +6281,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 0. Cada una vale 5 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 0 en la colección. Cada una vale 5 000 colones.",
      "fotos": [
       "privado:km-KM240.jpg"
      ],
@@ -6292,7 +6292,7 @@
     },
     {
      "nombre": "MS circuladas · 1",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 1. Cada una vale 700 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 1 en la colección. Cada una vale 700 colones.",
      "fotos": [
       "privado:km-KM240.jpg"
      ],
@@ -6317,7 +6317,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:anio-O-x9074baa28-0.jpg"
      ],
@@ -6328,7 +6328,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 700 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 700 colones.",
      "fotos": [
       "privado:anio-O-x9074baa28-0.jpg"
      ],
@@ -6342,7 +6342,7 @@
   },
   "O-xdf61763bf": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 3 monedas (lista de papá). Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Acero bañado en latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 240a",
    "fo": "FO# 5672",
    "fotosCompra": [
@@ -6359,7 +6359,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 3",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 3. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 3 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-xdf61763bf-video-escudo.jpg",
       "O-xdf61763bf-video-valor.jpg",
@@ -6372,7 +6372,7 @@
     },
     {
      "nombre": "MS circuladas · 3",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 3. Cada una vale 700 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 3 en la colección. Cada una vale 700 colones.",
      "fotos": [
       "O-xdf61763bf-video-escudo.jpg",
       "O-xdf61763bf-video-valor.jpg",
@@ -6405,7 +6405,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 2 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 2 000 colones.",
      "fotos": [
       "O-x51beaee62-video-escudo.jpg",
       "O-x51beaee62-video-valor.jpg",
@@ -6418,7 +6418,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 700 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 700 colones.",
      "fotos": [
       "O-x51beaee62-video-escudo.jpg",
       "O-x51beaee62-video-valor.jpg",
@@ -6452,7 +6452,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 2 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 2 000 colones.",
      "fotos": [
       "O-xc36b26f4f-video-escudo.jpg",
       "O-xc36b26f4f-video-valor.jpg",
@@ -6465,7 +6465,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 700 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 700 colones.",
      "fotos": [
       "O-xc36b26f4f-video-escudo.jpg",
       "O-xc36b26f4f-video-valor.jpg",
@@ -6493,7 +6493,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 3",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 3. Cada una vale 2 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 3 en la colección. Cada una vale 2 000 colones.",
      "fotos": [
       "privado:km-KM236.jpg"
      ],
@@ -6504,7 +6504,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM236.jpg"
      ],
@@ -6530,7 +6530,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 9",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 9. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 9 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM239-1.jpg"
      ],
@@ -6541,7 +6541,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM239-1.jpg"
      ],
@@ -6566,7 +6566,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 150 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 150 000 colones.",
      "fotos": [
       "privado:km-KM239-2.jpg"
      ],
@@ -6577,7 +6577,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 90 000 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 90 000 colones.",
      "fotos": [
       "privado:km-KM239-2.jpg"
      ],
@@ -6608,7 +6608,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 9",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 9. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 9 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x23d1289ee-video-escudo.jpg",
       "O-x23d1289ee-video-valor.jpg",
@@ -6621,7 +6621,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x23d1289ee-video-escudo.jpg",
       "O-x23d1289ee-video-valor.jpg",
@@ -6649,7 +6649,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 5",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 5. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 5 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM239-1a.jpg"
      ],
@@ -6660,7 +6660,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "privado:km-KM239-1a.jpg"
      ],
@@ -6691,7 +6691,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 3",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 3. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 3 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x69eae3145-video-escudo.jpg",
       "O-x69eae3145-video-valor.jpg",
@@ -6705,7 +6705,7 @@
     },
     {
      "nombre": "MS circuladas · 35",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 35. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 35 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x69eae3145-video-escudo.jpg",
       "O-x69eae3145-video-valor.jpg",
@@ -6738,7 +6738,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 16",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 16. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 16 en la colección. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x39afa064d-video-escudo.jpg",
       "O-x39afa064d-video-valor.jpg",
@@ -6751,7 +6751,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 1 000 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 1 000 colones.",
      "fotos": [
       "O-x39afa064d-video-escudo.jpg",
       "O-x39afa064d-video-valor.jpg",
@@ -6826,7 +6826,7 @@
     },
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 150 000 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 150 000 colones.",
      "fotos": [
       "O-xe41776751-video-escudo.jpg",
       "O-xe41776751-video-valor.jpg",
@@ -6839,7 +6839,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 90 000 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 90 000 colones.",
      "fotos": [
       "O-xe41776751-video-escudo.jpg",
       "O-xe41776751-video-valor.jpg",
@@ -7222,7 +7222,7 @@
   },
   "O-x886fea3dd": {
    "tengo": true,
-   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.\nFotos de papá (22/11/2026): pieza muy gastada; en el reverso se alcanza a leer \"10 ... G.C.R.\".",
+   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.\nFotos propias (22/11/2026): pieza muy gastada; en el reverso se alcanza a leer \"10 ... G.C.R.\".",
    "costo": 30000,
    "valor": 40000,
    "km": "KM# 121",
@@ -7463,7 +7463,7 @@
   },
   "O-x50c709336": {
    "tengo": false,
-   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.\nFotos de papá (22/11/2026): pieza muy gastada con el escudo de 1875; la denominación (25 centavos) se dedujo por el tamaño, falta confirmarla.",
+   "notas": "Material: 0.750 Plata · Peso: 6.25 · Diámetro: 25 mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.\nFotos propias (22/11/2026): pieza muy gastada con el escudo de 1875; la denominación (25 centavos) se dedujo por el tamaño, falta confirmarla.",
    "costo": 30000,
    "valor": 45000,
    "km": "KM# 106",
@@ -9111,7 +9111,7 @@
    "fo": "FO# 20094",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "H17": {
    "fechaCompra": "2023-08-01",
@@ -9122,7 +9122,7 @@
    "fo": "FO# 21280",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "M17": {
    "fechaCompra": "2023-12-04",
@@ -9133,7 +9133,7 @@
    "fo": "FO# 21442",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "R17": {
    "fechaCompra": "2024-07-26",
@@ -9143,7 +9143,7 @@
    "fo": "FO# 26714",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "AH17": {
    "fechaCompra": "2025-05-26",
@@ -9154,7 +9154,7 @@
    "fo": "FO# 29429",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "AW17": {
    "fechaCompra": "2025-11-26",
@@ -9165,7 +9165,7 @@
    "fo": "FO# 29744",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "R26": {
    "fechaCompra": "2026-02-25",
@@ -9240,7 +9240,7 @@
    "fo": "FO# 29879",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "X35": {
    "fechaCompra": "2026-03-25",
@@ -9250,7 +9250,7 @@
    "fo": "FO# 30080",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "AC35": {
    "fechaCompra": "2026-04-22",
@@ -9259,7 +9259,7 @@
    "origen": "Banco Central de Costa Rica (emisión)",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "AH35": {
    "fechaCompra": "2026-05-20",
@@ -9269,7 +9269,7 @@
    "fo": "FO# 30097",
    "valor": 6000,
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Rango de papá: acrílicos MS entre ₡5 000 y ₡7 000"
+   "fuenteValor": "Rango: acrílicos MS entre ₡5 000 y ₡7 000"
   },
   "C10": {
    "km": "KM# 241",
@@ -9318,7 +9318,7 @@
    "producto": "Calipso limonense PROOF",
    "valor": 20000,
    "fechaValor": "2026-11-21",
-   "fuenteValor": "Precio fijado por papá",
+   "fuenteValor": "Precio fijado",
    "fotos": [
     "calipso-acrilico-proof.jpg"
    ],
@@ -9391,7 +9391,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 12 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 12 500 colones.",
      "fotos": [
       "O-x83a8e659f-video-escudo.jpg",
       "O-x83a8e659f-video-valor.jpg"
@@ -9403,7 +9403,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 400 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 400 colones.",
      "fotos": [
       "O-x83a8e659f-video-escudo.jpg",
       "O-x83a8e659f-video-valor.jpg"
@@ -9431,7 +9431,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 12 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 12 500 colones.",
      "fotos": [
       "O-x465ccbc47-video-escudo.jpg",
       "O-x465ccbc47-video-valor.jpg"
@@ -9443,7 +9443,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 600 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 600 colones.",
      "fotos": [
       "O-x465ccbc47-video-escudo.jpg",
       "O-x465ccbc47-video-valor.jpg"
@@ -9471,7 +9471,7 @@
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 12 500 colones.",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Hay 1 en la colección. Cada una vale 12 500 colones.",
      "fotos": [
       "O-x5b5bad0ec-video-escudo.jpg",
       "O-x5b5bad0ec-video-valor.jpg"
@@ -9483,7 +9483,7 @@
     },
     {
      "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Cada una vale 700 colones.",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Hay 0 por ahora. Cada una vale 700 colones.",
      "fotos": [
       "O-x5b5bad0ec-video-escudo.jpg",
       "O-x5b5bad0ec-video-valor.jpg"
@@ -9506,8 +9506,8 @@
    ],
    "valor": 40000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio aproximado (papá)",
-   "notas": "Estuche negro \"Bullion Collection\" con 14 barras plateadas, cada una en su cápsula.\nDiseños: réplicas de billetes de Estados Unidos de 1, 2, 5, 20 (frente), 20 (Casa Blanca), 50, 100, 500, 1000, 5000, 10 000 y 100 000 dólares, y dos de \"One Billion\".\nMarcadas \"GOLD 999999\": es una marca de fantasía de los artículos de recuerdo, no una ley real. Son piezas chapadas, de colección o regalo, no plata de inversión; el estuche no trae ceca ni certificado.\nValor: unos 40 000 colones (papá)."
+   "fuenteValor": "Precio aproximado",
+   "notas": "Estuche negro \"Bullion Collection\" con 14 barras plateadas, cada una en su cápsula.\nDiseños: réplicas de billetes de Estados Unidos de 1, 2, 5, 20 (frente), 20 (Casa Blanca), 50, 100, 500, 1000, 5000, 10 000 y 100 000 dólares, y dos de \"One Billion\".\nMarcadas \"GOLD 999999\": es una marca de fantasía de los artículos de recuerdo, no una ley real. Son piezas chapadas, de colección o regalo, no plata de inversión; el estuche no trae ceca ni certificado.\nValor: unos 40 000 colones."
   },
   "O-x21bc2c58c": {
    "tengo": true,
@@ -9519,7 +9519,7 @@
      "fotos": [
       "O-x21bc2c58c-especial-11.jpg"
      ],
-     "notas": "Fecha escasa (papá)."
+     "notas": "Fecha escasa."
     },
     {
      "nombre": "Rara",
@@ -9528,7 +9528,7 @@
       "O-x21bc2c58c-especial-12.jpg",
       "O-x21bc2c58c-especial-13.jpg"
      ],
-     "notas": "Rara (papá). Muy gastada, con una raya que cruza el escudo."
+     "notas": "Rara. Muy gastada, con una raya que cruza el escudo."
     }
    ],
    "fotos": [
@@ -9536,7 +9536,7 @@
     "O-x21bc2c58c-especial-12.jpg",
     "O-x21bc2c58c-especial-13.jpg"
    ],
-   "notas": "Tarjeta creada con las fotos de papá (22/11/2026): dos piezas de 1918, una de fecha escasa y otra rara."
+   "notas": "Tarjeta creada con fotos propias (22/11/2026): dos piezas de 1918, una de fecha escasa y otra rara."
   },
   "O-xccf62f81e": {
    "tengo": true,
@@ -9545,7 +9545,7 @@
     "O-xccf62f81e-mia-15.jpg",
     "O-xccf62f81e-mia-16.jpg"
    ],
-   "notas": "Boleto de café de latón (información de papá). Por un lado tiene el escudo antiguo de Costa Rica, con banderas, lanzas y cinco estrellas (tipo 1848-1906); por el otro, el número \"16\" dentro de una corona de laurel. No tiene fecha.\nQué son: en las fincas de café se le daba al cogedor un boleto de latón por cada cajuela de grano cosechado, y después lo cambiaba por dinero o mercadería. En Costa Rica se usaron como medio de pago de 1840 a 1943; después, solo para llevar la cuenta. No son moneda de curso legal. El número puede indicar la cantidad que valía o un código de la finca.\nFuentes: Revista Herencia (UCR), \"Boletos de café y fichas de empresas\"; Museos del Banco Central de Costa Rica."
+   "notas": "Boleto de café de latón. Por un lado tiene el escudo antiguo de Costa Rica, con banderas, lanzas y cinco estrellas (tipo 1848-1906); por el otro, el número \"16\" dentro de una corona de laurel. No tiene fecha.\nQué son: en las fincas de café se le daba al cogedor un boleto de latón por cada cajuela de grano cosechado, y después lo cambiaba por dinero o mercadería. En Costa Rica se usaron como medio de pago de 1840 a 1943; después, solo para llevar la cuenta. No son moneda de curso legal. El número puede indicar la cantidad que valía o un código de la finca.\nFuentes: Revista Herencia (UCR), \"Boletos de café y fichas de empresas\"; Museos del Banco Central de Costa Rica."
   },
   "O-4054b4c8": {
    "tengo": true,
@@ -9554,7 +9554,7 @@
     "O-4054b4c8-billete-1.jpg",
     "O-4054b4c8-billete-2.jpg"
    ],
-   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VG 8. Nivel: Bueno (G 6) a Muy bueno (VG 10). Detalle: muy circulado, dobleces marcados, manchas de tinta y suciedad en el reverso, papel cansado sin roturas grandes.\nFotos de papá (22/11/2026): frente y reverso.\nValor de reventa: 4500 colones. En los grupos se vendió este mismo billete (6 de julio de 1994, serie D) en 4500.",
+   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VG 8. Nivel: Bueno (G 6) a Muy bueno (VG 10). Detalle: muy circulado, dobleces marcados, manchas de tinta y suciedad en el reverso, papel cansado sin roturas grandes.\nFotos propias (22/11/2026): frente y reverso.\nValor de reventa: 4500 colones. En los grupos se vendió este mismo billete (6 de julio de 1994, serie D) en 4500.",
    "valor": 4500,
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)"
@@ -9566,7 +9566,7 @@
     "O-85083fd8-billete-1.jpg",
     "O-85083fd8-billete-2.jpg"
    ],
-   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): G 4. Nivel: Regular (G 4) a Bueno (G 6). Detalle: muy circulado, papel cuarteado con muchas arrugas, suciedad general y una mancha de tinta azul al frente.\nFotos de papá (22/11/2026): frente y reverso.\nValor de reventa: 3500 colones. Un par de billetes de 500 serie C y D se vendió en 7000 (3500 cada uno). Este está muy gastado.",
+   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): G 4. Nivel: Regular (G 4) a Bueno (G 6). Detalle: muy circulado, papel cuarteado con muchas arrugas, suciedad general y una mancha de tinta azul al frente.\nFotos propias (22/11/2026): frente y reverso.\nValor de reventa: 3500 colones. Un par de billetes de 500 serie C y D se vendió en 7000 (3500 cada uno). Este está muy gastado.",
    "valor": 3500,
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)"
@@ -9578,7 +9578,7 @@
     "O-b569402c-billete-1.jpg",
     "O-b569402c-billete-2.jpg"
    ],
-   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 12. Nivel: Muy bueno (VG 10) a Fino (F 15). Detalle: circulado, dobleces y suciedad leve, color morado conservado y bordes completos.\nFotos de papá (22/11/2026): frente y reverso.\nValor de reventa: 15 000 colones. Los billetes morados de 500 serie B sin certificar se venden entre 10 000 y 20 000 (promedio 16 000); uno de 1985 serie B, en 13 000. Este está circulado, por eso 15 000.",
+   "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): F 12. Nivel: Muy bueno (VG 10) a Fino (F 15). Detalle: circulado, dobleces y suciedad leve, color morado conservado y bordes completos.\nFotos propias (22/11/2026): frente y reverso.\nValor de reventa: 15 000 colones. Los billetes morados de 500 serie B sin certificar se venden entre 10 000 y 20 000 (promedio 16 000); uno de 1985 serie B, en 13 000. Este está circulado, por eso 15 000.",
    "valor": 15000,
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)"
@@ -9614,7 +9614,7 @@
      "valor": 5000
     }
    ],
-   "notas": "Dos billetes de la misma fecha, cada uno en su pestaña.\nFotos de papá (22/11/2026).",
+   "notas": "Dos billetes de la misma fecha, cada uno en su pestaña.\nFotos propias (22/11/2026).",
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)"
   },
@@ -9625,7 +9625,7 @@
     "O-77e20f9a-billete-1.jpg",
     "O-77e20f9a-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de papá (22/11/2026): frente y reverso.\nCosto: 1 dólar × 600 colones (lo que costaba el dólar cuando papá lo compró) = 600 colones. Valor de reventa: costo + 40 % = 840 colones.",
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos propias (22/11/2026): frente y reverso.\nCosto: 1 dólar × 600 colones (lo que costaba el dólar cuando se compró) = 600 colones. Valor de reventa: costo + 40 % = 840 colones.",
    "costo": 600,
    "valor": 840,
    "fechaValor": "2026-11-22",
@@ -9638,7 +9638,7 @@
     "O-a628e8e4-billete-1.jpg",
     "O-a628e8e4-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de papá (22/11/2026): frente y reverso.\nCosto: 2 dólares × 600 colones (lo que costaba el dólar cuando papá lo compró) = 1 200 colones. Valor de reventa: costo + 40 % = 1 680 colones.",
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos propias (22/11/2026): frente y reverso.\nCosto: 2 dólares × 600 colones (lo que costaba el dólar cuando se compró) = 1 200 colones. Valor de reventa: costo + 40 % = 1 680 colones.",
    "costo": 1200,
    "valor": 1680,
    "fechaValor": "2026-11-22",
@@ -9651,7 +9651,7 @@
     "O-0e88d6af-billete-1.jpg",
     "O-0e88d6af-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de papá (22/11/2026): frente y reverso.\nCosto: 5 dólares × 600 colones (lo que costaba el dólar cuando papá lo compró) = 3 000 colones. Valor de reventa: costo + 40 % = 4 200 colones.",
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos propias (22/11/2026): frente y reverso.\nCosto: 5 dólares × 600 colones (lo que costaba el dólar cuando se compró) = 3 000 colones. Valor de reventa: costo + 40 % = 4 200 colones.",
    "costo": 3000,
    "valor": 4200,
    "fechaValor": "2026-11-22",
@@ -9664,7 +9664,7 @@
     "O-74fecfbd-billete-1.jpg",
     "O-74fecfbd-billete-2.jpg"
    ],
-   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos de papá (22/11/2026): frente y reverso.\nCosto: 10 dólares × 600 colones (lo que costaba el dólar cuando papá lo compró) = 6 000 colones. Valor de reventa: costo + 40 % = 8 400 colones.",
+   "notas": "Billete de la Reserva Federal de Estados Unidos. Fotos propias (22/11/2026): frente y reverso.\nCosto: 10 dólares × 600 colones (lo que costaba el dólar cuando se compró) = 6 000 colones. Valor de reventa: costo + 40 % = 8 400 colones.",
    "costo": 6000,
    "valor": 8400,
    "fechaValor": "2026-11-22",
@@ -9677,7 +9677,7 @@
     "O-4c2b8499-billete-1.jpg",
     "O-4c2b8499-billete-2.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel; 26 de setiembre de 2007.\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 20 000 colones (papá).",
+   "notas": "Billetes modernos de Costa Rica; papel; 26 de setiembre de 2007.\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 20 000 colones.",
    "variantes": [
     {
      "nombre": "10 000 A serie 82132589",
@@ -9691,7 +9691,7 @@
    ],
    "valor": 20000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
+   "fuenteValor": "Precio de reventa (22/11/2026)"
   },
   "O-f2e2bbd5": {
    "tengo": true,
@@ -9704,7 +9704,7 @@
     "O-f2e2bbd5-billete-5.jpg",
     "O-f2e2bbd5-billete-6.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A y B.\nValor: falta el monto.\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A y B.\nValor: falta el monto.\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.",
    "variantes": [
     {
      "nombre": "1000 A serie 041445076",
@@ -9713,7 +9713,7 @@
       "O-f2e2bbd5-billete-1.jpg",
       "O-f2e2bbd5-billete-2.jpg"
      ],
-     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: dobleces suaves, colores vivos, ventana con algo de desgaste.\nValor de reventa: 10 000 colones (papá).",
+     "notas": "Grado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: dobleces suaves, colores vivos, ventana con algo de desgaste.\nValor de reventa: 10 000 colones.",
      "valor": 10000
     },
     {
@@ -9733,12 +9733,12 @@
       "O-f2e2bbd5-billete-5.jpg",
       "O-f2e2bbd5-billete-6.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 001818533 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 1818). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: un par de dobleces suaves, colores vivos, ventana limpia.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
+     "notas": "¿Por qué es especial? La serie 001818533 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 1818). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): XF 40. Nivel: Muy fino (VF 35) a Extra fino (XF 45). Detalle: un par de dobleces suaves, colores vivos, ventana limpia.\nValor de reventa: 15 000 colones por ser serie rara.",
      "valor": 15000
     }
    ],
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
+   "fuenteValor": "Precio de reventa (22/11/2026)"
   },
   "O-70300eba": {
    "tengo": true,
@@ -9750,7 +9750,7 @@
    "fechaValor": "2026-11-22",
    "fuenteValor": "Precios de venta en grupos de numismática (Excel precios_numismatica_cr, 16-21/11/2026)",
    "origen": "reventa",
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana."
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana."
   },
   "O-55fda5b4": {
    "tengo": true,
@@ -9765,10 +9765,10 @@
    ],
    "valor": 15000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según papá (22/11/2026)",
+   "fuenteValor": "Precio de reventa (22/11/2026)",
    "costo": 10000,
    "origen": "reventa",
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; series A y B.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana."
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; series A y B.\nValor: cada billete tiene su valor en su pestaña (los que no lo dicen, todavía falta).\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana."
   },
   "O-00d26b62": {
    "tengo": true,
@@ -9777,7 +9777,7 @@
     "O-00d26b62-billete-1.jpg",
     "O-00d26b62-billete-2.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 20 000 colones (papá).",
+   "notas": "Billetes modernos de Costa Rica; papel con ventana transparente; serie A.\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 20 000 colones.",
    "variantes": [
     {
      "nombre": "10 000 A serie 087077390",
@@ -9791,7 +9791,7 @@
    ],
    "valor": 20000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
+   "fuenteValor": "Precio de reventa (22/11/2026)"
   },
   "O-a5ae9afe": {
    "tengo": true,
@@ -9804,7 +9804,7 @@
     "O-a5ae9afe-billete-5.jpg",
     "O-a5ae9afe-billete-6.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; polímero; serie B, acuerdo del 14 de setiembre de 2018.\nValor: el billete 2000 B serie 020252020 (radar y fecha) vale 60 000 colones; a los otros dos les falta el monto.\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 10 000 colones cada billete; el 2000 B serie 020252020 (serie rara y que forma fecha) vale 60 000 (papá).",
+   "notas": "Billetes modernos de Costa Rica; polímero; serie B, acuerdo del 14 de setiembre de 2018.\nValor: el billete 2000 B serie 020252020 (radar y fecha) vale 60 000 colones; a los otros dos les falta el monto.\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 10 000 colones cada billete; el 2000 B serie 020252020 (serie rara y que forma fecha) vale 60 000.",
    "variantes": [
     {
      "nombre": "2000 B serie 020252020 · Serie rara (radar y semi repetida) · Serie que forma fecha",
@@ -9813,7 +9813,7 @@
       "O-a5ae9afe-billete-1.jpg",
       "O-a5ae9afe-billete-2.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 020252020 es una serie rara: se lee igual de izquierda a derecha que de derecha a izquierda, como la palabra \"radar\"; además, un pedacito del número aparece dos veces seguidas (en este billete: 0202). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común. Además es una serie que forma fecha: en el número se leen 0202 y 2020, como una fecha del año 2020. Que tenga las dos cosas la hace todavía más rara. Valor: 60 000 colones.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 35. Nivel: Muy fino (VF 30) a Extra fino (XF 40). Detalle: circulado leve, dobleces suaves y marcas en la ventana transparente.\nValor de este billete: 60 000 colones (papá, 22/11/2026).",
+     "notas": "¿Por qué es especial? La serie 020252020 es una serie rara: se lee igual de izquierda a derecha que de derecha a izquierda, como la palabra \"radar\"; además, un pedacito del número aparece dos veces seguidas (en este billete: 0202). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común. Además es una serie que forma fecha: en el número se leen 0202 y 2020, como una fecha del año 2020. Que tenga las dos cosas la hace todavía más rara. Valor: 60 000 colones.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 35. Nivel: Muy fino (VF 30) a Extra fino (XF 40). Detalle: circulado leve, dobleces suaves y marcas en la ventana transparente.\nValor de este billete: 60 000 colones (22/11/2026).",
      "valor": 60000
     },
     {
@@ -9837,7 +9837,7 @@
    ],
    "valor": 10000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
+   "fuenteValor": "Precio de reventa (22/11/2026)"
   },
   "O-20887687": {
    "tengo": true,
@@ -9860,7 +9860,7 @@
     "O-20887687-billete-15.jpg",
     "O-20887687-billete-16.jpg"
    ],
-   "notas": "Billetes modernos de Costa Rica; polímero; serie C, acuerdo del 20 de setiembre de 2019.\nFotos de papá (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 7000 colones cada billete (papá).",
+   "notas": "Billetes modernos de Costa Rica; polímero; serie C, acuerdo del 20 de setiembre de 2019.\nFotos propias (22/11/2026): frente y reverso de cada billete; el frente no lleva serie, se emparejó por orden de las fotos, desgaste y ventana.\nValor de reventa: 7000 colones cada billete.",
    "variantes": [
     {
      "nombre": "1000 C serie 003757653",
@@ -9887,7 +9887,7 @@
       "O-20887687-billete-5.jpg",
       "O-20887687-billete-6.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 015025151 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 5151). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
+     "notas": "¿Por qué es especial? La serie 015025151 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 5151). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta.\nValor de reventa: 15 000 colones por ser serie rara.",
      "valor": 15000
     },
     {
@@ -9897,7 +9897,7 @@
       "O-20887687-billete-7.jpg",
       "O-20887687-billete-8.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 000641415 es una serie rara: empieza con varios ceros: salió entre los primeros billetes que se imprimieron (empieza con 3 ceros); además, un pedacito del número aparece dos veces seguidas (en este billete: 4141). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
+     "notas": "¿Por qué es especial? La serie 000641415 es una serie rara: empieza con varios ceros: salió entre los primeros billetes que se imprimieron (empieza con 3 ceros); además, un pedacito del número aparece dos veces seguidas (en este billete: 4141). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): AU 55. Nivel: Casi sin circular (AU 50) a Casi sin circular (AU 58). Detalle: casi sin circular, polímero limpio, ventana intacta.\nValor de reventa: 15 000 colones por ser serie rara.",
      "valor": 15000
     },
     {
@@ -9907,7 +9907,7 @@
       "O-20887687-billete-9.jpg",
       "O-20887687-billete-10.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 000061107 es una serie rara: empieza con varios ceros: salió entre los primeros billetes que se imprimieron (empieza con 4 ceros). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, dobleces suaves y marcas en la ventana transparente.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
+     "notas": "¿Por qué es especial? La serie 000061107 es una serie rara: empieza con varios ceros: salió entre los primeros billetes que se imprimieron (empieza con 4 ceros). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, dobleces suaves y marcas en la ventana transparente.\nValor de reventa: 15 000 colones por ser serie rara.",
      "valor": 15000
     },
     {
@@ -9917,7 +9917,7 @@
       "O-20887687-billete-11.jpg",
       "O-20887687-billete-12.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 006336006 es una serie rara: empieza y termina con los mismos números (empieza y termina con 006). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, marcas finas y grietas leves en la ventana.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
+     "notas": "¿Por qué es especial? La serie 006336006 es una serie rara: empieza y termina con los mismos números (empieza y termina con 006). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): VF 30. Nivel: Muy fino (VF 25) a Extra fino (XF 40). Detalle: circulado, marcas finas y grietas leves en la ventana.\nValor de reventa: 15 000 colones por ser serie rara.",
      "valor": 15000
     },
     {
@@ -9936,13 +9936,13 @@
       "O-20887687-billete-15.jpg",
       "O-20887687-billete-16.jpg"
      ],
-     "notas": "¿Por qué es especial? La serie 042037374 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 3737). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: muy circulado, ventana transparente arrugada y deteriorada, dobleces marcados.\nValor de reventa: 15 000 colones por ser serie rara (papá).",
+     "notas": "¿Por qué es especial? La serie 042037374 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 3737). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nGrado estimado (escala PMG, por foto, 22/11/2026): F 15. Nivel: Fino (F 12) a Muy fino (VF 20). Detalle: muy circulado, ventana transparente arrugada y deteriorada, dobleces marcados.\nValor de reventa: 15 000 colones por ser serie rara.",
      "valor": 15000
     }
    ],
    "valor": 7000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de reventa según papá (22/11/2026)"
+   "fuenteValor": "Precio de reventa (22/11/2026)"
   },
   "O-4bab7a86": {
    "tengo": true,
@@ -9950,7 +9950,7 @@
    "fotosCompra": [
     "privado:socio-certificado-anc.jpg"
    ],
-   "notas": "Certificado de acreditación como asociado activo de la Asociación Numismática Costarricense, firmado por el presidente y el secretario, con el sello de la asociación.\n¿Qué es? Es el documento que dice que papá es socio de la asociación de coleccionistas de monedas y billetes de Costa Rica. Los datos del registro (tomo, folio y número) están en la imagen.\nLa imagen es privada: solo se ve con la clave, porque tiene datos personales."
+   "notas": "Certificado de acreditación como asociado activo de la Asociación Numismática Costarricense, firmado por el presidente y el secretario, con el sello de la asociación.\n¿Qué es? Es el documento que dice que el dueño de esta colección es socio de la asociación de coleccionistas de monedas y billetes de Costa Rica. Los datos del registro (tomo, folio y número) están en la imagen.\nLa imagen es privada: solo se ve con la clave, porque tiene datos personales."
   },
   "O-657e9acc": {
    "tengo": true,
@@ -9983,8 +9983,8 @@
    "cantidad": 3,
    "valor": 1000,
    "fechaValor": "2026-11-22",
-   "fuenteValor": "Precio de papá",
-   "notas": "¿Qué es? Son monedas falsificadas: copias hechas para engañar, que no fabricó el Banco Central. A los coleccionistas les sirven para aprender a reconocer las falsas, y por eso tienen valor de colección.\nPapá tiene 3 monedas falsas de 2007, a 1000 colones cada una."
+   "fuenteValor": "Precio propio",
+   "notas": "¿Qué es? Son monedas falsificadas: copias hechas para engañar, que no fabricó el Banco Central. A los coleccionistas les sirven para aprender a reconocer las falsas, y por eso tienen valor de colección.\nHay 3 monedas falsas de 2007, a 1000 colones cada una."
   }
  },
  "sueltas": {},

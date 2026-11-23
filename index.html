@@ -907,7 +907,7 @@
       vv.append(barra, exp);
     }
     // monedas MS: casilla para escoger si son UNC (sin circular) o circuladas; cambia el valor
-    // pestañas MS UNC / MS circuladas: papá escoge cuántas son de cada una
+    // pestañas MS UNC / MS circuladas: se escoge cuántas son de cada una
     const estMS = vars.filter(v => v.estadoMS);
     if (estMS.length === 2) {
       const caja3 = el('div', 'varExp estadoMS'), fila = el('div', 'varTabs');
@@ -916,7 +916,7 @@
         const l = el('label', 'ckMS'), inp = el('input'); inp.type = 'number'; inp.min = '0'; inp.value = v.cantidad || 0; inp.style.width = '64px'; inp.disabled = !conectado();
         inp.onchange = () => {
           const n = Math.max(0, parseInt(inp.value, 10) || 0), rr = datos.piezas[id], vv2 = rr.variantes.filter(x => x.estadoMS)[i];
-          vv2.cantidad = n; vv2.nombre = vv2.nombre.replace(/ · \d+$/, '') + ' · ' + n; vv2.explicacion = vv2.explicacion.replace(/Papá tiene \d+( por ahora)?\./, 'Papá tiene ' + n + '.');
+          vv2.cantidad = n; vv2.nombre = vv2.nombre.replace(/ · \d+$/, '') + ' · ' + n; vv2.explicacion = vv2.explicacion.replace(/(Papá tiene|Hay) \d+( por ahora| en la colección)?\./, 'Hay ' + n + ' en la colección.');
           const tot = rr.variantes.filter(x => x.estadoMS).reduce((s, x) => s + (x.cantidad || 0), 0); if (tot) { rr.cantidad = tot; rr.tengo = true; }
           sucias.add(id); pintarFicha(); totales(); guardarCasillas();
         };
