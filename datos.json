@@ -8738,19 +8738,19 @@
   },
   "O-ms30382c443": {
    "tengo": true,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
-   "fo": "FO# 29879",
+   "cantidad": 10,
+   "fotos": [
+    "ms-heredia.jpg"
+   ],
    "fotosCompra": [
     "privado:km-FO29879.jpg"
    ],
    "valor": 500,
-   "fechaValor": "2026-11-20",
+   "fechaValor": "2026-11-23",
    "fuenteValor": "Precio revendedor",
-   "fotos": [
-    "ms-heredia.jpg"
-   ],
    "costo": 500,
-   "origen": "reventa"
+   "origen": "reventa",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor"
   },
   "O-ms1be002f96": {
    "tengo": true,
