@@ -4446,7 +4446,7 @@
   },
   "O-x150f54e4a": {
    "tengo": true,
-   "cantidad": 7,
+   "cantidad": 4,
    "fotosCompra": [
     "privado:km-KM227.jpg",
     "O-x150f54e4a-1795096553418-u4b9p.jpg"
@@ -4460,15 +4460,15 @@
    "valorCirculada": 400,
    "variantes": [
     {
-     "nombre": "MS UNC (sin circular) · 4",
-     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 4. Cada una vale 500 colones.",
+     "nombre": "MS UNC (sin circular) · 1",
+     "explicacion": "Monedas sin circular: están como salieron de la fábrica, con todo su brillo y sin desgaste. Papá tiene 1. Cada una vale 500 colones.",
      "fotos": [
       "privado:km-KM227.jpg",
       "O-x150f54e4a-1795096553418-u4b9p.jpg"
      ],
      "notas": "",
      "valor": 500,
-     "cantidad": 4,
+     "cantidad": 1,
      "estadoMS": true
     },
     {
