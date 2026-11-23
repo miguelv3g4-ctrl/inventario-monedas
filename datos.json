@@ -8555,22 +8555,21 @@
   "O-ms88823228f": {
    "tengo": true,
    "cantidad": 15,
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2022.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó. Antes decía 1500. El valor de reventa no se cambió.",
-   "km": "KM# 243",
-   "fo": "FO# 21442",
-   "fotosCompra": [
-    "privado:km-KM243.jpg"
-   ],
-   "valor": 1500,
-   "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor",
    "fotos": [
     "ms-75-abolicion.jpg",
     "O-ms88823228f-video-cara.jpg",
     "O-ms88823228f-video-valor.jpg"
    ],
+   "fotosCompra": [
+    "privado:km-KM243.jpg"
+   ],
+   "km": "KM# 243",
+   "valor": 1500,
+   "fechaValor": "2026-11-23",
+   "fuenteValor": "Precio revendedor",
    "costo": 2000,
-   "origen": "museo"
+   "origen": "museo",
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2022.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó."
   },
   "O-msf0ffcd327": {
    "tengo": true,
