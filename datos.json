@@ -4130,7 +4130,7 @@
   },
   "O-x0085cc125": {
    "tengo": true,
-   "cantidad": 1,
+   "cantidad": 3,
    "fotosCompra": [
     "privado:km-KM233.jpg",
     "O-x0085cc125-1795096208723-poebe.jpg"
@@ -4155,14 +4155,14 @@
      "estadoMS": true
     },
     {
-     "nombre": "MS circuladas · 0",
-     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 0 por ahora. Falta definir cuánto vale cada una.",
+     "nombre": "MS circuladas · 2",
+     "explicacion": "Monedas circuladas: ya se usaron para pagar, tienen desgaste y por eso valen menos. Papá tiene 2. Falta definir cuánto vale cada una.",
      "fotos": [
       "privado:km-KM233.jpg",
       "O-x0085cc125-1795096208723-poebe.jpg"
      ],
      "notas": "",
-     "cantidad": 0,
+     "cantidad": 2,
      "estadoMS": true
     }
    ]
