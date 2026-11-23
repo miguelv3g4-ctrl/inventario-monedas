@@ -104,7 +104,6 @@
   #vVariantes .varTabs { display: flex; flex-wrap: wrap; gap: 6px; }
   #vVariantes .varTabs button { background: #1a1610; color: var(--oro2); border: 1px solid var(--oro2); border-radius: 6px; padding: 6px 12px; font: inherit; font-size: 14px; cursor: pointer; }
   #vVariantes .varTabs button.activo { background: var(--oro); color: #111; border-color: var(--oro); }
-  #vVariantes .nivel .etapaDesc { display: block; width: 100%; margin-top: 4px; color: var(--gris); font-size: 13px; line-height: 1.4; }
   .ckMS { display: inline-flex; align-items: center; gap: 6px; margin: 6px 14px 4px 0; cursor: pointer; }
   .ckMS input { width: 20px; height: 20px; accent-color: var(--oro); }
   .varExp { margin-top: 8px; color: var(--gris); font-size: 14px; line-height: 1.4; }
@@ -121,7 +120,9 @@
   #seccion h2 { font: 22px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 0; }
   #sGrid .nivel { grid-column: 1 / -1; display: flex; align-items: baseline; gap: 10px; margin: 14px 0 0; padding: 6px 2px; border-bottom: 1px solid var(--oro2); }
   #sGrid .nivel:first-child { margin-top: 0; }
-  #sGrid .nivel b { font: 18px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); font-weight: normal; }
+  #sGrid .nivel { flex-wrap: wrap; row-gap: 2px; }
+  #sGrid .nivel b { font: 18px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); font-weight: normal; white-space: nowrap; } /* el rango de años en una sola línea */
+  #sGrid .nivel .etapaDesc { flex-basis: 100%; color: var(--gris); font-size: 13px; line-height: 1.4; } /* la explicación de la etapa, debajo y a todo lo ancho */
   #sGrid .nivel span { color: var(--gris); font-size: 14px; }
   #sGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; margin-top: 12px; }
   #sVacia { color: var(--gris); text-align: center; padding: 40px 10px; font-size: 16px; display: none; }
