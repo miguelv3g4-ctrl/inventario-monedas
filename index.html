@@ -93,10 +93,8 @@
   .arriba .dato b { color: var(--oro); font-size: 15px; margin-left: 4px; font-variant-numeric: tabular-nums; }
   #menu .centro { max-width: 1100px; margin: 0 auto; padding: 18px 16px 40px; text-align: center; }
   #menu .sello { width: min(240px, 70vw); display: block; margin: 0 auto; }
-  /* escudo con movimiento 3D: se mece solo y, con el cursor encima, se inclina hacia el mouse */
-  .sello { animation: selloFlota 8s ease-in-out infinite; transform-origin: 50% 50%; will-change: transform; filter: drop-shadow(0 12px 16px rgba(0, 0, 0, .7)); cursor: pointer; }
-  .sello.siguiendo { animation: none; transition: transform .12s ease-out; }
-  .sello.soltando { animation: none; transition: transform .6s ease; }
+  /* escudo con movimiento 3D: siempre se mece solo */
+  .sello { animation: selloFlota 8s ease-in-out infinite; transform-origin: 50% 50%; will-change: transform; filter: drop-shadow(0 12px 16px rgba(0, 0, 0, .7)); }
   @keyframes selloFlota {
     0%, 100% { transform: perspective(900px) rotateY(-14deg) rotateX(3deg) translateY(0); }
     25% { transform: perspective(900px) rotateY(0deg) rotateX(-2deg) translateY(-6px); }
@@ -1850,12 +1848,6 @@
   })();
 })();
 
-  // escudo: se inclina en 3D siguiendo el cursor
-  document.querySelectorAll('img.sello').forEach(s => {
-    s.addEventListener('pointermove', e => { const b = s.getBoundingClientRect(), x = (e.clientX - b.left) / b.width - .5, y = (e.clientY - b.top) / b.height - .5;
-      s.classList.remove('soltando'); s.classList.add('siguiendo'); s.style.transform = 'perspective(900px) rotateY(' + (x * 30).toFixed(1) + 'deg) rotateX(' + (-y * 22).toFixed(1) + 'deg) scale(1.06)'; });
-    s.addEventListener('pointerleave', () => { s.classList.replace('siguiendo', 'soltando'); s.style.transform = 'perspective(900px) rotateY(-14deg) rotateX(3deg)'; setTimeout(() => { if (s.classList.contains('soltando')) { s.classList.remove('soltando'); s.style.transform = ''; } }, 600); });
-  });
 </script>
 </body>
 </html>
