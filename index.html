@@ -94,9 +94,8 @@
   #menu .centro { max-width: 1100px; margin: 0 auto; padding: 18px 16px 40px; text-align: center; }
   #menu .sello { width: min(240px, 70vw); display: block; margin: 0 auto; }
   /* escudo con relieve metálico: se dibuja en un canvas con una luz que se mueve despacio */
-  /* el escudo se despega del fondo: oscuridad suave detrás, sombra honda y un filo de luz dorada */
-  .sello { filter: drop-shadow(0 0 1.5px rgba(255, 214, 120, .45)) drop-shadow(0 6px 6px rgba(0, 0, 0, .85)) drop-shadow(0 22px 26px rgba(0, 0, 0, .9));
-    background: radial-gradient(ellipse 58% 62% at 50% 60%, rgba(0, 0, 0, .78), rgba(0, 0, 0, .45) 55%, transparent 78%); }
+  /* el escudo se despega del fondo solo con sombra negra (sin halo ni fondo detrás) */
+  .sello { filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .85)) drop-shadow(0 18px 22px rgba(0, 0, 0, .8)); background: none; }
   canvas.sello { height: auto; }
   #menu h1 { font: 24px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 6px 0 14px; }
   #mBotones { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; text-align: left; }
