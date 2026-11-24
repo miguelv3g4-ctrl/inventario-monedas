@@ -1848,49 +1848,60 @@
 
   // ---------- escudo con relieve metálico: se calcula el volumen a partir de la imagen y una luz lo recorre
   function prepararRelieve(px, w, h) {
-    const n = w * h, alt = new Float32Array(n);
-    for (let i = 0; i < n; i++) { const r = px[i * 4], g = px[i * 4 + 1], b = px[i * 4 + 2], a = px[i * 4 + 3] / 255; alt[i] = ((.3 * r + .59 * g + .11 * b) / 255) * a; }
-    const tmp = new Float32Array(n), suav = (s, d, rad) => { // desenfoque de caja horizontal + vertical
-      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { let t = 0, c = 0; for (let k = -rad; k <= rad; k++) { const xx = x + k; if (xx >= 0 && xx < w) { t += s[y * w + xx]; c++; } } tmp[y * w + x] = t / c; }
-      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { let t = 0, c = 0; for (let k = -rad; k <= rad; k++) { const yy = y + k; if (yy >= 0 && yy < h) { t += tmp[yy * w + x]; c++; } } d[y * w + x] = t / c; } };
-    const fino = new Float32Array(n), grueso = new Float32Array(n);
-    suav(alt, fino, 1); suav(alt, grueso, 7);
-    for (let i = 0; i < n; i++) alt[i] = fino[i] * .55 + grueso[i] * .45; // detalle fino + volumen general
-    const nx = new Float32Array(n), ny = new Float32Array(n), nz = new Float32Array(n), F = 8;
+    const n = w * h, tmp = new Float32Array(n), suav = (s, d, rad) => { // desenfoque de caja horizontal + vertical
+      for (let y = 0; y < h; y++) { let t = 0, c = 0; const f = y * w; for (let k = 0; k <= rad && k < w; k++) { t += s[f + k]; c++; }
+        for (let x = 0; x < w; x++) { tmp[f + x] = t / c; const q = x + rad + 1, p = x - rad; if (q < w) { t += s[f + q]; c++; } if (p >= 0) { t -= s[f + p]; c--; } } }
+      for (let x = 0; x < w; x++) { let t = 0, c = 0; for (let k = 0; k <= rad && k < h; k++) { t += tmp[k * w + x]; c++; }
+        for (let y = 0; y < h; y++) { d[y * w + x] = t / c; const q = y + rad + 1, p = y - rad; if (q < h) { t += tmp[q * w + x]; c++; } if (p >= 0) { t -= tmp[p * w + x]; c--; } } } };
+    const lum = new Float32Array(n), oro = new Float32Array(n), esm = new Uint8Array(n);
+    for (let i = 0; i < n; i++) { const o = i * 4, a = px[o + 3] / 255, l = (.3 * px[o] + .59 * px[o + 1] + .11 * px[o + 2]) / 255; lum[i] = l * a;
+      oro[i] = a * Math.min(1, Math.max(0, (l - .12) / .25)); if (px[o + 3] > 200 && l < .18) esm[i] = 1; }
+    // altura = cuerpo (piezas de metal redondeadas) + volumen general + detalle fino del grabado
+    const b1 = new Float32Array(n), b2 = new Float32Array(n), cuerpo = new Float32Array(n), gr = new Float32Array(n), fino = new Float32Array(n);
+    suav(oro, b1, 2); suav(b1, b2, 2); suav(b2, cuerpo, 2);
+    suav(lum, b1, 8); suav(b1, gr, 8);
+    suav(lum, fino, 1);
+    const alt = new Float32Array(n);
+    for (let i = 0; i < n; i++) alt[i] = cuerpo[i] * 1.0 + gr[i] * .35 + fino[i] * .55 + (lum[i] - fino[i]) * .6;
+    // oclusión: lo que queda más hundido que su alrededor se oscurece (da profundidad)
+    const ao = new Float32Array(n); suav(alt, b1, 6); suav(b1, b2, 6);
+    for (let i = 0; i < n; i++) ao[i] = Math.max(.5, Math.min(1, 1 - (b2[i] - alt[i]) * 1.6));
+    // esmalte negro: liso y abombado, como vidrio
+    const dm = new Float32Array(n); for (let i = 0; i < n; i++) dm[i] = esm[i];
+    suav(dm, b1, 6); suav(b1, b2, 6); suav(b2, b1, 6);
+    const nx = new Float32Array(n), ny = new Float32Array(n), nz = new Float32Array(n), F = 7;
     for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
-      const i = y * w + x, l = alt[y * w + Math.max(0, x - 1)], r = alt[y * w + Math.min(w - 1, x + 1)], u = alt[Math.max(0, y - 1) * w + x], d = alt[Math.min(h - 1, y + 1) * w + x];
-      let a = (l - r) * F, b = (u - d) * F, c = 1, m = Math.hypot(a, b, c); nx[i] = a / m; ny[i] = b / m; nz[i] = c / m;
+      const i = y * w + x, xl = y * w + Math.max(0, x - 1), xr = y * w + Math.min(w - 1, x + 1), yu = Math.max(0, y - 1) * w + x, yd = Math.min(h - 1, y + 1) * w + x;
+      let a, b; if (esm[i]) { a = (b1[xl] - b1[xr]) * 9; b = (b1[yu] - b1[yd]) * 9; } else { a = (alt[xl] - alt[xr]) * F; b = (alt[yu] - alt[yd]) * F; }
+      const m = Math.hypot(a, b, 1); nx[i] = a / m; ny[i] = b / m; nz[i] = 1 / m;
     }
-    // esmalte negro: las zonas negras quedan lisas y abombadas, como vidrio
-    const esm = new Uint8Array(n), domo = new Float32Array(n);
-    for (let i = 0; i < n; i++) { const o = i * 4; if (px[o + 3] > 200 && .3 * px[o] + .59 * px[o + 1] + .11 * px[o + 2] < 45) { esm[i] = 1; domo[i] = 1; } }
-    const d2 = new Float32Array(n); suav(domo, d2, 6); suav(d2, domo, 6); suav(domo, d2, 6);
-    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { const i = y * w + x; if (!esm[i]) continue;
-      const l = d2[y * w + Math.max(0, x - 1)], r = d2[y * w + Math.min(w - 1, x + 1)], u = d2[Math.max(0, y - 1) * w + x], d = d2[Math.min(h - 1, y + 1) * w + x];
-      let a = (l - r) * 14, b = (u - d) * 14, c = 1, m = Math.hypot(a, b, c); nx[i] = a / m; ny[i] = b / m; nz[i] = c / m; }
-    return { w, h, nx, ny, nz, esm, base: px };
+    return { w, h, nx, ny, nz, esm, ao, base: px };
   }
   function pintarRelieve(R, salida, ang) {
-    const { w, h, nx, ny, nz, esm, base } = R, n = w * h;
+    const { w, h, nx, ny, nz, esm, ao, base } = R, n = w * h;
     let lx = Math.cos(ang) * .55, ly = -.35 + Math.sin(ang) * .3, lz = .75; const lm = Math.hypot(lx, ly, lz); lx /= lm; ly /= lm; lz /= lm;
     let hx = lx, hy = ly, hz = lz + 1; const hm = Math.hypot(hx, hy, hz); hx /= hm; hy /= hm; hz /= hm;
     for (let i = 0; i < n; i++) {
       const o = i * 4, a = base[o + 3]; salida[o + 3] = a; if (!a) continue;
-      if (esm[i]) { const nh = Math.max(0, nx[i] * hx + ny[i] * hy + nz[i] * hz), e = Math.pow(nh, 140) * .95 + Math.pow(nh, 14) * .07, f = (1 - nz[i]) * 60; // brillo de esmalte
+      const nh = Math.max(0, nx[i] * hx + ny[i] * hy + nz[i] * hz);
+      if (esm[i]) { const e = Math.pow(nh, 140) * .95 + Math.pow(nh, 14) * .07, f = (1 - nz[i]) * 60; // brillo de esmalte
         salida[o] = Math.min(255, 7 + f * .5 + e * 235); salida[o + 1] = Math.min(255, 8 + f * .5 + e * 238); salida[o + 2] = Math.min(255, 12 + f * .7 + e * 250); continue; }
-      const dif = Math.max(0, nx[i] * lx + ny[i] * ly + nz[i] * lz), nh = Math.max(0, nx[i] * hx + ny[i] * hy + nz[i] * hz);
-      const lum = (.3 * base[o] + .59 * base[o + 1] + .11 * base[o + 2]) / 255, met = Math.min(1, lum * 1.6), esp = (Math.pow(nh, 50) * 1.3 + Math.pow(nh, 8) * .18) * met * met, k = .3 + .95 * dif;
+      const dif = Math.max(0, nx[i] * lx + ny[i] * ly + nz[i] * lz), oc = ao[i];
+      // reflejo del entorno: el metal que mira hacia arriba refleja claro, el que mira hacia abajo, oscuro
+      const env = .55 + .45 * Math.max(-1, Math.min(1, -ny[i] * 2.2)) * (1 - nz[i] * .5);
+      const lum = (.3 * base[o] + .59 * base[o + 1] + .11 * base[o + 2]) / 255, met = Math.min(1, lum * 1.6);
+      const esp = (Math.pow(nh, 60) * 1.4 + Math.pow(nh, 9) * .22) * met * met * oc, k = (.34 + 1.0 * dif * env + .4 * env) * oc;
       salida[o] = Math.min(255, base[o] * k + esp * 255); salida[o + 1] = Math.min(255, base[o + 1] * k + esp * 236); salida[o + 2] = Math.min(255, base[o + 2] * k + esp * 190);
     }
   }
   const relieveListo = {}; // el cálculo se hace una vez y lo usan los dos escudos
   function relieveEscudo(img) {
-    const E = 1.5, w = Math.round(img.naturalWidth * E), h = Math.round(img.naturalHeight * E);
+    const E = 2, w = Math.round(img.naturalWidth * E), h = Math.round(img.naturalHeight * E);
     const cv = document.createElement('canvas'); cv.width = w; cv.height = h; cv.className = img.className; cv.setAttribute('role', 'img'); cv.setAttribute('aria-label', img.alt);
     const cx = cv.getContext('2d'); cx.drawImage(img, 0, 0, w, h);
     let px; try { px = cx.getImageData(0, 0, w, h); } catch (e) { return; } // si el navegador no deja leer la imagen, queda la imagen normal
     const Rr = relieveListo[img.src] || (relieveListo[img.src] = prepararRelieve(px.data, w, h)), sal = cx.createImageData(w, h); img.replaceWith(cv);
-    let ult = 0; const cuadro = tt => { requestAnimationFrame(cuadro); if (tt - ult < 80 || document.hidden || !cv.offsetParent) return; ult = tt;
+    let ult = 0; const cuadro = tt => { requestAnimationFrame(cuadro); if (tt - ult < 110 || document.hidden || !cv.offsetParent) return; ult = tt;
       pintarRelieve(Rr, sal.data, -1.5 + Math.sin(tt / 2600) * 1.3); cx.putImageData(sal, 0, 0); };
     requestAnimationFrame(cuadro);
   }
