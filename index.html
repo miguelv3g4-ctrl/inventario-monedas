@@ -112,6 +112,12 @@
   .boton-seccion { background-size: cover !important; background-position: center !important; text-shadow: 0 1px 3px #000, 0 0 8px #000; }
   .boton-seccion { background: linear-gradient(180deg, #1d1810, #0b0a09); border: 1px solid var(--oro2); border-radius: 8px; padding: 16px 16px 14px; cursor: pointer; color: var(--oro); font: inherit; text-align: left; display: flex; flex-direction: column; gap: 8px; min-height: 108px; }
   .boton-seccion:hover, .boton-seccion:focus-visible { border-color: var(--oro); background: linear-gradient(180deg, #2a2213, #0b0a09); outline: none; }
+  /* efecto al pasar el cursor */
+  .boton-seccion, .boton-testamento { transition: transform .22s ease, box-shadow .22s ease, filter .22s ease, border-color .22s ease; }
+  .boton-seccion:hover, .boton-seccion:focus-visible { transform: translateY(-4px) scale(1.03); filter: brightness(1.18); box-shadow: 0 0 0 1px var(--oro), 0 0 18px rgba(255, 217, 102, .45), 0 10px 22px rgba(0, 0, 0, .7); }
+  .boton-testamento:hover, .boton-testamento:focus-visible { transform: translateY(-3px) scale(1.03); box-shadow: 0 0 0 2px rgba(255, 217, 102, .5), 0 0 20px rgba(255, 217, 102, .5), 0 8px 18px rgba(0, 0, 0, .6); }
+  .boton-seccion:active, .boton-testamento:active { transform: translateY(-1px) scale(.99); }
+  @media (prefers-reduced-motion: reduce) { .boton-seccion, .boton-testamento { transition: none; } .boton-seccion:hover, .boton-testamento:hover { transform: none; } }
   .boton-seccion .nom { font: 17px "Copperplate Gothic Bold", Copperplate, Georgia, serif; line-height: 1.25; }
   .boton-seccion .num { color: var(--gris); font-size: 14px; margin-top: auto; }
   .boton-seccion .desc { color: var(--oro2); font-size: 13px; line-height: 1.3; }
