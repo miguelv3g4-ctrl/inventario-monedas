@@ -466,7 +466,7 @@
         const lugar = lugares.find(d => d.offsetParent); if (!lugar) return; // solo se dibuja si el escudo está a la vista
         if (renderer.domElement.parentNode !== lugar) lugar.appendChild(renderer.domElement);
         const w = lugar.clientWidth, h = lugar.clientHeight; if (w !== anW || h !== anH) { anW = w; anH = h; renderer.setSize(w, h, false); camara.aspect = w / Math.max(1, h); camara.updateProjectionMatrix(); }
-        giro += dt * .6; mE.rotation.y = giro; /* el escudo gira 360° */ mL.rotation.y = (1 - Math.cos(tt / 1000 * 1.4)) / 2 * 25 * Math.PI / 180; /* las letras giran 25° y vuelven a su posición de frente (10° casi no se notaba) */ renderer.render(escena, camara);
+        giro += dt * .6; mE.rotation.y = giro; /* el escudo gira 360° */ mL.rotation.y = (1 - Math.cos(tt / 1000 * 1.4)) / 2 * 18 * Math.PI / 180; /* las letras giran 18° y vuelven a su posición de frente */ renderer.render(escena, camara);
       });
     } catch (e) { console.warn('Escudo 3D no disponible:', e && e.message); window.iniciarRelieve2D && window.iniciarRelieve2D(); }
   })();
