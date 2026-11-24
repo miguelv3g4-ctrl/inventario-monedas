@@ -194,6 +194,8 @@
   .tarjeta .ph img.ref { opacity: .8; filter: saturate(.85); }
   #vRefInfo { color: #8a8170; font-size: 12px; margin-top: 6px; line-height: 1.4; }
   #vRefInfo a { color: var(--oro2); }
+  #vPrecioTab { margin-top: 8px; padding: 8px 12px; border: 1px solid var(--oro2); border-radius: 6px; background: #14110a; color: var(--gris); font-size: 15px; }
+  #vPrecioTab b { color: var(--oro); font-size: 20px; font-variant-numeric: tabular-nums; }
   #vMinis { display: flex; gap: 6px; margin-top: 6px; flex-wrap: wrap; }
   #vMinis img { position: relative; }
   #vMinis span.mini { display: inline-block; position: relative; width: 54px; height: 54px; overflow: hidden; border: 1px solid var(--linea); border-radius: 3px; cursor: pointer; }
@@ -381,7 +383,7 @@
     <div class="pest"><button id="pValor">Valor de la colección</button><button id="pCompra">Inventario (compra)</button></div>
     <div id="vVariantes"></div>
     <div id="vCuerpo">
-      <div><div id="vFoto"></div><div id="vMinis"></div><div id="vRefInfo"></div></div>
+      <div><div id="vFoto"></div><div id="vPrecioTab"></div><div id="vMinis"></div><div id="vRefInfo"></div></div>
       <div>
         <div class="rotulo" id="vRotulo"></div>
         <div id="vPrecio"></div>
@@ -939,6 +941,15 @@
     }
     const fotos = vars.length ? [...new Set(vars[varSel].fotos || [])] : [...new Set(esValor ? fotosDe(id, 'fotos').concat(fotosDe(id, 'fotosCompra')) : fotosDe(id, 'fotosCompra').concat(fotosDe(id, 'fotos')))], caja = $('vFoto'), minis = $('vMinis'); // todas las fotos: las de la pestaña primero y luego las otras
     caja.textContent = ''; minis.textContent = '';
+    { // valor del billete o pieza de la pestaña elegida, debajo de la imagen
+      const pt = $('vPrecioTab'), v = vars[varSel]; pt.textContent = ''; pt.style.display = 'none';
+      if (v && !v.mismoAnio && esValor) {
+        const u = typeof v.valor === 'number' ? v.valor : (r.valor || 0), q = v.cantidad ?? 1, esBillete = base[id].seccion === 'billetes';
+        const que = v.estadoMS ? 'Cada una vale' : esBillete ? 'Valor de este billete' : 'Valor de esta pieza';
+        if (u || v.estadoMS) { pt.append(el('span', '', que + ': '), el('b', '', u ? fmt(u) : 'precio por definir')); if (v.estadoMS) pt.append(el('span', '', ' · ' + q + (q === 1 ? ' unidad' : ' unidades') + (u ? ' = ' + fmt(u * q) : ''))); pt.style.display = ''; }
+        else { pt.append(el('span', '', (esBillete ? 'Valor de este billete' : 'Valor de esta pieza') + ': '), el('b', '', 'falta el precio')); pt.style.display = ''; }
+      }
+    }
     const rf = refDe(id), info = $('vRefInfo'); info.textContent = '';
     if (!fotos.length && rf) {
       const im = el('img'); im.alt = 'Imagen de referencia'; ponerRef(im, rf); aplicarGiro(im, rf, 4 / 3); im.onclick = () => im.src && verGrande(im.src, rf);
