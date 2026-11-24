@@ -1877,13 +1877,12 @@
   function pintarRelieve(R, salida, ang) {
     const { w, h, nx, ny, nz, esm, ao, base } = R, n = w * h;
     let lx = Math.cos(ang) * .55, ly = -.35 + Math.sin(ang) * .3, lz = .75; const lm = Math.hypot(lx, ly, lz); lx /= lm; ly /= lm; lz /= lm;
-    const banda = .5 + (ang + 1.5) / 1.3 * .6; // dónde va el reflejo del esmalte
     let hx = lx, hy = ly, hz = lz + 1; const hm = Math.hypot(hx, hy, hz); hx /= hm; hy /= hm; hz /= hm;
     for (let i = 0; i < n; i++) {
       const o = i * 4, a = base[o + 3]; salida[o + 3] = a; if (!a) continue;
       const nh = Math.max(0, nx[i] * hx + ny[i] * hy + nz[i] * hz);
-      if (esm[i]) { // esmalte negro parejo: brillo suave arriba y un reflejo ancho que cruza todo el campo
-        const x = i % w, y = (i / w) | 0, u = x / w * .75 + y / h * .45, bd = (u - banda) / .1, r = Math.exp(-bd * bd) * 16 + Math.exp(-bd * bd * 14) * 34, v = 7 + 13 * (1 - y / h) + r;
+      if (esm[i]) { // esmalte negro parejo
+        const y = (i / w) | 0, v = 6 + 12 * (1 - y / h); // sin reflejo que cruce: negro parejo con un leve brillo arriba
         salida[o] = Math.min(255, v); salida[o + 1] = Math.min(255, v + 2); salida[o + 2] = Math.min(255, v + 7); continue; }
       const dif = Math.max(0, nx[i] * lx + ny[i] * ly + nz[i] * lz), oc = ao[i];
       // reflejo del entorno: el metal que mira hacia arriba refleja claro, el que mira hacia abajo, oscuro
