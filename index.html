@@ -93,22 +93,9 @@
   .arriba .dato b { color: var(--oro); font-size: 15px; margin-left: 4px; font-variant-numeric: tabular-nums; }
   #menu .centro { max-width: 1100px; margin: 0 auto; padding: 18px 16px 40px; text-align: center; }
   #menu .sello { width: min(240px, 70vw); display: block; margin: 0 auto; }
-  /* escudo 3D: placa con grosor (capas detrás), gira siempre y le pasa un reflejo de luz */
-  .escudo3d { perspective: 800px; margin: 0 auto; }
-  #portada .escudo3d { width: 100%; max-width: 400px; margin-bottom: 6px; }
-  #menu .escudo3d { width: min(240px, 70vw); }
-  .escudoGiro { position: relative; transform-style: preserve-3d; animation: selloGira 7s ease-in-out infinite; }
-  .escudoGiro .sello { position: relative; width: 100%; max-width: none; margin: 0; transform: translateZ(0); }
-  .escudoGiro .capaEsc { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-  .escudoGiro .brilloEsc { position: absolute; inset: 0; pointer-events: none; transform: translateZ(1px); -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
-    background: linear-gradient(105deg, transparent 38%, rgba(255, 244, 200, .55) 50%, transparent 62%); background-size: 300% 100%; animation: brilloEsc 7s ease-in-out infinite; }
-  .escudoSombra { width: 60%; height: 14px; margin: -4px auto 0; border-radius: 50%; background: radial-gradient(ellipse, rgba(0, 0, 0, .75), transparent 70%); animation: sombraEsc 7s ease-in-out infinite; }
-  @keyframes selloGira {
-    0%, 100% { transform: rotateY(-32deg) rotateX(8deg) translateY(0); }
-    50% { transform: rotateY(32deg) rotateX(-4deg) translateY(-8px); }
-  }
-  @keyframes brilloEsc { 0%, 100% { background-position: 120% 0; } 50% { background-position: -20% 0; } }
-  @keyframes sombraEsc { 0%, 100% { transform: scaleX(1); opacity: .9; } 50% { transform: scaleX(.8); opacity: .6; } }
+  /* escudo con relieve metálico: se dibuja en un canvas con una luz que se mueve despacio */
+  .sello { filter: drop-shadow(0 10px 14px rgba(0, 0, 0, .75)); }
+  canvas.sello { height: auto; }
   #menu h1 { font: 24px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 6px 0 14px; }
   #mBotones { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; text-align: left; }
   #mTotal { margin: -8px auto 12px; padding: 14px 18px 12px; max-width: 520px; border: 1px solid var(--oro2); border-radius: 10px; background: linear-gradient(180deg, #221b0c, #0b0a09); }
@@ -297,7 +284,7 @@
 <body>
 <div id="portada" class="abierta">
   <div class="caja">
-    <img class="sello" src="img/image19.png" alt="Pertenece a Familia Vega Godínez">
+    <img class="sello" src="img/escudo-familia.png" alt="Pertenece a Familia Vega Godínez">
     <h1>Inventario de la colección</h1>
     <div class="bajada">Monedas y billetes</div>
     <form id="pForm" autocomplete="on">
@@ -323,7 +310,7 @@
     <button id="mSalir">Salir</button>
   </div>
   <div class="centro">
-    <img class="sello" src="img/image19.png" alt="Pertenece a Familia Vega Godínez">
+    <img class="sello" src="img/escudo-familia.png" alt="Pertenece a Familia Vega Godínez">
     <h1>Inventario de la colección</h1>
     <div id="mTotal"><div class="rot">Valor total de la colección</div><div class="monto" id="mTotalMonto">–</div><div class="det" id="mTotalDet"></div></div>
     <div class="fila-legal">
@@ -1856,14 +1843,46 @@
 })();
 
 
-  const div3d = c => { const d = document.createElement('div'); d.className = c; return d; };
-  // escudo 3D: se arma una placa con grosor (copias oscuras detrás) y un reflejo de luz
-  document.querySelectorAll('img.sello').forEach(img => {
-    const caja = div3d('escudo3d'), giro = div3d('escudoGiro'); img.replaceWith(caja); caja.append(giro, div3d('escudoSombra'));
-    for (let i = 10; i >= 1; i--) { const c = img.cloneNode(); c.className = 'capaEsc'; c.alt = ''; c.setAttribute('aria-hidden', 'true');
-      c.style.transform = 'translateZ(' + (-i * 1.4) + 'px)'; c.style.filter = 'brightness(' + (.3 + .05 * (10 - i)) + ') sepia(.8) saturate(1.6)'; giro.appendChild(c); }
-    giro.appendChild(img); const br = div3d('brilloEsc'); br.style.webkitMaskImage = br.style.maskImage = 'url(' + img.getAttribute('src') + ')'; giro.appendChild(br);
-  });
+
+  // ---------- escudo con relieve metálico: se calcula el volumen a partir de la imagen y una luz lo recorre
+  function prepararRelieve(px, w, h) {
+    const n = w * h, alt = new Float32Array(n);
+    for (let i = 0; i < n; i++) { const r = px[i * 4], g = px[i * 4 + 1], b = px[i * 4 + 2], a = px[i * 4 + 3] / 255; alt[i] = ((.3 * r + .59 * g + .11 * b) / 255) * a; }
+    const tmp = new Float32Array(n), suav = (s, d, rad) => { // desenfoque de caja horizontal + vertical
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { let t = 0, c = 0; for (let k = -rad; k <= rad; k++) { const xx = x + k; if (xx >= 0 && xx < w) { t += s[y * w + xx]; c++; } } tmp[y * w + x] = t / c; }
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { let t = 0, c = 0; for (let k = -rad; k <= rad; k++) { const yy = y + k; if (yy >= 0 && yy < h) { t += tmp[yy * w + x]; c++; } } d[y * w + x] = t / c; } };
+    const fino = new Float32Array(n), grueso = new Float32Array(n);
+    suav(alt, fino, 1); suav(alt, grueso, 7);
+    for (let i = 0; i < n; i++) alt[i] = fino[i] * .55 + grueso[i] * .45; // detalle fino + volumen general
+    const nx = new Float32Array(n), ny = new Float32Array(n), nz = new Float32Array(n), F = 8;
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+      const i = y * w + x, l = alt[y * w + Math.max(0, x - 1)], r = alt[y * w + Math.min(w - 1, x + 1)], u = alt[Math.max(0, y - 1) * w + x], d = alt[Math.min(h - 1, y + 1) * w + x];
+      let a = (l - r) * F, b = (u - d) * F, c = 1, m = Math.hypot(a, b, c); nx[i] = a / m; ny[i] = b / m; nz[i] = c / m;
+    }
+    return { w, h, nx, ny, nz, base: px };
+  }
+  function pintarRelieve(R, salida, ang) {
+    const { w, h, nx, ny, nz, base } = R, n = w * h;
+    let lx = Math.cos(ang) * .55, ly = -.35 + Math.sin(ang) * .3, lz = .75; const lm = Math.hypot(lx, ly, lz); lx /= lm; ly /= lm; lz /= lm;
+    let hx = lx, hy = ly, hz = lz + 1; const hm = Math.hypot(hx, hy, hz); hx /= hm; hy /= hm; hz /= hm;
+    for (let i = 0; i < n; i++) {
+      const o = i * 4, a = base[o + 3]; salida[o + 3] = a; if (!a) continue;
+      const dif = Math.max(0, nx[i] * lx + ny[i] * ly + nz[i] * lz), nh = Math.max(0, nx[i] * hx + ny[i] * hy + nz[i] * hz);
+      const lum = (.3 * base[o] + .59 * base[o + 1] + .11 * base[o + 2]) / 255, met = Math.min(1, lum * 1.6), esp = (Math.pow(nh, 50) * 1.3 + Math.pow(nh, 8) * .18) * met * met, k = .3 + .95 * dif;
+      salida[o] = Math.min(255, base[o] * k + esp * 255); salida[o + 1] = Math.min(255, base[o + 1] * k + esp * 236); salida[o + 2] = Math.min(255, base[o + 2] * k + esp * 190);
+    }
+  }
+  function relieveEscudo(img) {
+    const E = 1.5, w = Math.round(img.naturalWidth * E), h = Math.round(img.naturalHeight * E);
+    const cv = document.createElement('canvas'); cv.width = w; cv.height = h; cv.className = img.className; cv.setAttribute('role', 'img'); cv.setAttribute('aria-label', img.alt);
+    const cx = cv.getContext('2d'); cx.drawImage(img, 0, 0, w, h);
+    let px; try { px = cx.getImageData(0, 0, w, h); } catch (e) { return; } // si el navegador no deja leer la imagen, queda la imagen normal
+    const Rr = prepararRelieve(px.data, w, h), sal = cx.createImageData(w, h); img.replaceWith(cv);
+    let ult = 0; const cuadro = tt => { requestAnimationFrame(cuadro); if (tt - ult < 80 || document.hidden || !cv.offsetParent) return; ult = tt;
+      pintarRelieve(Rr, sal.data, -1.5 + Math.sin(tt / 2600) * 1.3); cx.putImageData(sal, 0, 0); };
+    requestAnimationFrame(cuadro);
+  }
+  document.querySelectorAll('img.sello').forEach(img => { if (img.complete && img.naturalWidth) relieveEscudo(img); else img.addEventListener('load', () => relieveEscudo(img), { once: true }); });
 </script>
 </body>
 </html>
