@@ -1507,9 +1507,14 @@
         const t = el('div', 'nivel'); t.append(el('b', '', col ? denom : 'Otras'), el('span', '', resumen)); g.appendChild(t);
         for (const p of grupo.sort((a, b) => columnaHoja(a) - columnaHoja(b) || ordenHoja(a) - ordenHoja(b))) g.appendChild(tarjeta(p));
       }
-    } else if (sc.id === 'billetes') {
+    } else if (sc.id === 'billetes' || sc.id === 'antano') {
       // billetes por etapas de la historia del dinero en Costa Rica; dentro de cada una, por denominación y fecha
-      const ETAPAS = [[1839, 1850, 'Vales y papel moneda inicial', 'En 1839 se emitieron vales en pesos, bajo el gobierno de Braulio Carrillo.'],
+      const ETAPAS = sc.id === 'antano' ? [
+        [1864, 1896, 'El peso decimal (monedas de 1865 a 1893)', 'En 1863 Costa Rica adoptó el sistema decimal: se acuñaron monedas en centavos (¼, 1, 5, 10, 25 y 50) y en pesos (1, 2, 5, 10 y 20), de cobre, plata y oro.'],
+        [1897, 1934, 'Creación del colón, patrón oro (monedas de 1897 a 1929)', 'En 1896 el colón reemplazó al peso y se dividió en 100 céntimos. Hubo monedas de oro (2, 5, 10 y 20 colones), de plata (5, 10, 25 y 50 céntimos) y de latón o cobre (2, 5 y 10 céntimos).'],
+        [1935, 1950, 'Emisiones de los bancos estatales (monedas de 1935 a 1949)', 'Ya no se usaron oro ni plata: las monedas de cuproníquel y latón las hicieron el Banco Internacional (1935-1936) y el Banco Nacional (1937-1949), de 5, 10, 25 y 50 céntimos, 1 y 2 colones.'],
+        [1951, 9999, 'Banco Central de Costa Rica (monedas de 1951 a hoy)', 'Desde 1950 el Banco Central es el único que hace monedas: las clásicas de cuproníquel, las doradas de bajo costo (1995), las de aluminio (2005), las de 500 colones (2003) y los diseños actuales.']]
+      : [[1839, 1850, 'Vales y papel moneda inicial', 'En 1839 se emitieron vales en pesos, bajo el gobierno de Braulio Carrillo.'],
         [1851, 1921, 'Banca privada y primeros bancos emisores', 'Bancos privados como el Banco Nacional Costarricense, el Anglo Costarricense y el de la Unión hacían sus propios billetes. En 1896 nació el colón.'],
         [1922, 1949, 'Centralización y Banco Nacional', 'Desde 1922 la Caja de Conversión y luego el Banco Nacional de Costa Rica emitieron los billetes, como el de 5 colones de 1939 y las series reselladas.'],
         [1950, 2010, 'Emisiones del Banco Central de Costa Rica', 'Desde 1950 el Banco Central es el único que hace billetes: series de colores, el de 1000 rojo y luego los de 10 000, 20 000 y 50 000.'],
@@ -1519,7 +1524,7 @@
       for (let i = 0; i <= ETAPAS.length; i++) {
         const grupo = lista.filter(p => etapaDe(p) === i); if (!grupo.length) continue;
         const e = ETAPAS[i], s = sumas(grupo), tt = el('div', 'nivel');
-        tt.append(el('b', '', e ? e[0] + (e[1] < 9999 ? '–' + e[1] : ' a hoy') : 'Sin año'), el('span', '', (e ? e[2] : 'Billetes sin año anotado') + ' · ' + grupo.length + (grupo.length === 1 ? ' tarjeta' : ' tarjetas') + ' · ' + s.n + (s.n === 1 ? ' billete' : ' billetes') + (s.val ? ' · ' + fmt(s.val) : '')));
+        tt.append(el('b', '', e ? e[0] + (e[1] < 9999 ? '–' + e[1] : ' a hoy') : 'Sin año'), el('span', '', (e ? e[2] : (sc.id === 'antano' ? 'Piezas sin año anotado' : 'Billetes sin año anotado')) + ' · ' + grupo.length + (grupo.length === 1 ? ' tarjeta' : ' tarjetas') + ' · ' + s.n + (sc.id === 'antano' ? (s.n === 1 ? ' pieza' : ' piezas') : (s.n === 1 ? ' billete' : ' billetes')) + (s.val ? ' · ' + fmt(s.val) : '')));
         if (e) tt.appendChild(el('small', 'etapaDesc', e[3]));
         g.appendChild(tt);
         for (const p of grupo) g.appendChild(tarjeta(p));
