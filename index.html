@@ -97,6 +97,8 @@
   /* el escudo se despega del fondo solo con sombra negra (sin halo ni fondo detrás) */
   .sello { filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .85)) drop-shadow(0 18px 22px rgba(0, 0, 0, .8)); background: none; }
   canvas.sello { height: auto; }
+  .sello3d { aspect-ratio: 15 / 12.9; filter: none !important; } /* escudo 3D: escudo y letras girando */
+  .sello3d canvas { display: block; width: 100%; height: 100%; }
   #menu h1 { font: 24px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 6px 0 14px; }
   #mBotones { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; text-align: left; }
   #mTotal { margin: -8px auto 12px; padding: 14px 18px 12px; max-width: 520px; border: 1px solid var(--oro2); border-radius: 10px; background: linear-gradient(180deg, #221b0c, #0b0a09); }
@@ -281,6 +283,194 @@
   .ayuda ol { padding-left: 20px; margin: 8px 0; }
   @media (max-width: 680px) { .campos { grid-template-columns: 1fr; } #vCuerpo { grid-template-columns: 1fr; } }
 </style>
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }</script>
+<script type="module">
+  // ---------- escudo 3D: pieza cerrada con relieve por ambas caras (escudo + letras de la familia), girando 360°
+  import * as THREE from 'three';
+  import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+  function construirEscudo(px, w, h, ancho, opc = {}) {
+    const conYelmo = opc.yelmo !== false, ref = opc.ref || ancho; // las letras no llevan yelmo ni penacho; ref fija la hondura igual que el escudo
+    const n = w * h, tmp = new Float32Array(n);
+    const suav = (s, d, rad) => { // desenfoque de caja horizontal + vertical
+      for (let y = 0; y < h; y++) { let t = 0, c = 0; const f = y * w; for (let k = 0; k <= rad && k < w; k++) { t += s[f + k]; c++; }
+        for (let x = 0; x < w; x++) { tmp[f + x] = t / c; const q = x + rad + 1, p = x - rad; if (q < w) { t += s[f + q]; c++; } if (p >= 0) { t -= s[f + p]; c--; } } }
+      for (let x = 0; x < w; x++) { let t = 0, c = 0; for (let k = 0; k <= rad && k < h; k++) { t += tmp[k * w + x]; c++; }
+        for (let y = 0; y < h; y++) { d[y * w + x] = t / c; const q = y + rad + 1, p = y - rad; if (q < h) { t += tmp[q * w + x]; c++; } if (p >= 0) { t -= tmp[p * w + x]; c--; } } } };
+    // 1) qué es pieza, qué es metal y qué es esmalte
+    const den = new Uint8Array(n), lum = new Float32Array(n), oro = new Float32Array(n), esm = new Uint8Array(n);
+    for (let i = 0; i < n; i++) { const o = i * 4, a = px[o + 3]; if (a < 128) continue; den[i] = 1;
+      const l = (.3 * px[o] + .59 * px[o + 1] + .11 * px[o + 2]) / 255; lum[i] = l; oro[i] = Math.min(1, Math.max(0, (l - .12) / .25)); if (l < .18) esm[i] = 1; }
+    // 2) altura: cuerpo redondeado de cada pieza de metal + volumen general + grabado fino
+    const b1 = new Float32Array(n), b2 = new Float32Array(n), cuerpo = new Float32Array(n), gr = new Float32Array(n), fino = new Float32Array(n), alt = new Float32Array(n);
+    suav(oro, b1, 2); suav(b1, b2, 2); suav(b2, cuerpo, 2);
+    suav(lum, b1, 8); suav(b1, gr, 8);
+    suav(lum, fino, 1);
+    let mx = 0;
+    for (let i = 0; i < n; i++) { if (!den[i]) continue; const v = esm[i] ? 0 : Math.max(0, cuerpo[i] * 1.0 + gr[i] * .35 + fino[i] * .55 + (lum[i] - fino[i]) * .4); alt[i] = v; if (v > mx) mx = v; }
+    // el esmalte queda plano; el metal sube en una curva suave
+    const esc = ancho / w, BASE = ref * .016, D = ref * .05, ZB0 = BASE * .05; // BASE = medio grosor del alma; el relieve sale por los dos lados
+    const z = new Float32Array(n); for (let i = 0; i < n; i++) z[i] = den[i] ? BASE + (esm[i] ? 0 : Math.pow(alt[i] / mx, .8) * D) : 0;
+    // yelmo y penacho: volumen redondo de verdad (perfil de media esfera según la distancia al borde de la pieza)
+    const domo = (sel, alto, rad, mez = .6) => {
+      const m = new Float32Array(n); for (let i = 0; i < n; i++) m[i] = sel(i) ? 1 : 0;
+      suav(m, b1, rad); const reg = new Uint8Array(n); for (let i = 0; i < n; i++) reg[i] = den[i] && b1[i] > .35 ? 1 : 0; // rellena las rendijas de la visera
+      const d = new Float32Array(n); for (let i = 0; i < n; i++) d[i] = reg[i] ? 1e9 : 0;
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { const i = y * w + x; if (!d[i]) continue; let v = d[i];
+        if (x > 0) v = Math.min(v, d[i - 1] + 1); if (y > 0) { v = Math.min(v, d[i - w] + 1); if (x > 0) v = Math.min(v, d[i - w - 1] + 1.414); if (x < w - 1) v = Math.min(v, d[i - w + 1] + 1.414); } d[i] = v; }
+      for (let y = h - 1; y >= 0; y--) for (let x = w - 1; x >= 0; x--) { const i = y * w + x; if (!d[i]) continue; let v = d[i];
+        if (x < w - 1) v = Math.min(v, d[i + 1] + 1); if (y < h - 1) { v = Math.min(v, d[i + w] + 1); if (x < w - 1) v = Math.min(v, d[i + w + 1] + 1.414); if (x > 0) v = Math.min(v, d[i + w - 1] + 1.414); } d[i] = v; }
+      let dm = 0; for (let i = 0; i < n; i++) if (d[i] > dm && d[i] < 1e8) dm = d[i];
+      let c = 0; for (let i = 0; i < n; i++) if (reg[i]) { const q = Math.min(1, d[i] / dm), p = Math.sqrt(1 - (1 - q) * (1 - q)); const viejo = z[i] - BASE; z[i] = BASE + Math.min(alto, (mez * p * (esm[i] ? .8 : 1) + (1 - mez) * viejo / D) * alto); /* redondo, pero sin pasar la altura del león */ c++; }
+      return { pixeles: c, radio: dm };
+    };
+    const sat = i => { const o = i * 4; return (Math.max(px[o], px[o + 1], px[o + 2]) - Math.min(px[o], px[o + 1], px[o + 2])) / 255; };
+    const rojo = i => conYelmo && px[i * 4] > 70 && px[i * 4 + 1] < px[i * 4] * .3;
+    const enCasco = i => { const x = i % w, y = (i / w) | 0, dx = (x / w - .478) / .103, dy = (y / h - .142) / .131; return dx * dx + dy * dy < 1; }; // óvalo del yelmo
+    // yelmo: volumen lleno y redondo que sigue su contorno real (sin aros), rendijas de la visera apenas hundidas
+    const cascoM = new Uint8Array(n);
+    for (let i = 0; i < n; i++) { if (!den[i]) continue; const x = i % w, y = (i / w) | 0, dx = (x / w - .478) / .103, dy = (y / h - .142) / .131, r2 = dx * dx + dy * dy;
+      if (conYelmo && (r2 < 1 || (r2 < 1.4 && (sat(i) < .38 || rojo(i))))) cascoM[i] = 1; } /* el penacho es parte de la misma cúpula: sin surco entre los dos */
+    const dC = new Float32Array(n); for (let i = 0; i < n; i++) dC[i] = cascoM[i] ? 1e9 : 0;
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { const i = y * w + x; if (!dC[i]) continue; let v = dC[i]; v = Math.min(v, x > 0 ? dC[i - 1] + 1 : 1, y > 0 ? dC[i - w] + 1 : 1); if (x > 0 && y > 0) v = Math.min(v, dC[i - w - 1] + 1.414); if (x < w - 1 && y > 0) v = Math.min(v, dC[i - w + 1] + 1.414); dC[i] = v; }
+    for (let y = h - 1; y >= 0; y--) for (let x = w - 1; x >= 0; x--) { const i = y * w + x; if (!dC[i]) continue; let v = dC[i]; v = Math.min(v, x < w - 1 ? dC[i + 1] + 1 : 1, y < h - 1 ? dC[i + w] + 1 : 1); if (x < w - 1 && y < h - 1) v = Math.min(v, dC[i + w + 1] + 1.414); if (x > 0 && y < h - 1) v = Math.min(v, dC[i + w - 1] + 1.414); dC[i] = v; }
+    { const mk = new Float32Array(n), dd = new Float32Array(n), m2 = new Float32Array(n), d2 = new Float32Array(n); // distancia suavizada: forma pareja desde el contorno, sin aristas
+      for (let i = 0; i < n; i++) if (cascoM[i]) { mk[i] = 1; dd[i] = dC[i]; }
+      for (let k = 0; k < 2; k++) { suav(mk, m2, 2); suav(dd, d2, 2); for (let i = 0; i < n; i++) if (cascoM[i]) dC[i] = Math.min(dC[i], d2[i] / Math.max(1e-6, m2[i])); dd.set(dC); for (let i = 0; i < n; i++) if (!cascoM[i]) dd[i] = 0; } }
+    let dmC = 0; for (let i = 0; i < n; i++) if (cascoM[i] && dC[i] > dmC) dmC = dC[i];
+    const casco = { pixeles: 0, radio: dmC };
+    for (let i = 0; i < n; i++) if (cascoM[i]) { const q = Math.min(1, (dC[i] - .5) / dmC), p = Math.sqrt(Math.max(0, 1 - (1 - q) * (1 - q)));
+      z[i] = ZB0 + (BASE + D - ZB0) * p ; casco.pixeles++; }
+    const penacho = domo(i => den[i] && rojo(i) && !cascoM[i], D * .75, 1, 1); // penacho: volumen sin sobresalir del relieve
+    // orillas redondeadas: cerca del contorno la pieza baja en curva, como el borde de una hoja de metal
+    { const d = new Float32Array(n); for (let i = 0; i < n; i++) d[i] = den[i] ? 1e9 : 0;
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { const i = y * w + x; if (!d[i]) continue; let v = d[i];
+        v = Math.min(v, x > 0 ? d[i - 1] + 1 : 1); v = Math.min(v, y > 0 ? d[i - w] + 1 : 1); if (x > 0 && y > 0) v = Math.min(v, d[i - w - 1] + 1.414); if (x < w - 1 && y > 0) v = Math.min(v, d[i - w + 1] + 1.414); d[i] = v; }
+      for (let y = h - 1; y >= 0; y--) for (let x = w - 1; x >= 0; x--) { const i = y * w + x; if (!d[i]) continue; let v = d[i];
+        v = Math.min(v, x < w - 1 ? d[i + 1] + 1 : 1); v = Math.min(v, y < h - 1 ? d[i + w] + 1 : 1); if (x < w - 1 && y < h - 1) v = Math.min(v, d[i + w + 1] + 1.414); if (x > 0 && y < h - 1) v = Math.min(v, d[i + w - 1] + 1.414); d[i] = v; }
+      const RB = 7, ZB = BASE * .05; // las dos caras se juntan en el borde: sin franja lisa entre ellas
+      for (let i = 0; i < n; i++) { const rb = RB; if (!(den[i] && d[i] < rb) || cascoM[i] || rojo(i)) continue; /* el yelmo ya baja solo hasta su borde */ const q = (d[i] - .5) / rb, p = Math.max(d[i] >= 1.5 ? .55 : 0, Math.sqrt(Math.max(0, 1 - (1 - q) * (1 - q)))); z[i] = ZB + (z[i] - ZB) * p; } /* los trazos finos conservan cuerpo; el yelmo se redondea el doble */
+       /* sin ranura: el dibujo de la visera lo dan los colores; el frente del yelmo queda abombado */
+      for (let i = 0; i < n; i++) if (den[i] && rojo(i)) z[i] = Math.min(BASE + D * .8, Math.max(BASE * .3, z[i] * .82 + (lum[i] - fino[i]) * D * 1.2)); /* plumas: los trazos del dibujo se marcan como surcos y crestas */ /* yelmo: superficie lisa de metal batido, sin escalones */ }
+    // yelmo como pieza 3D aparte: esfera deformada cuyo contorno sigue la silueta del yelmo; redonda y lisa por todos lados
+    let cxC = 0, cyC = 0, nC = 0; for (let i = 0; i < n; i++) if (cascoM[i]) { cxC += i % w; cyC += (i / w) | 0; nC++; } cxC /= nC; cyC /= nC;
+    const NA = 96, radio = new Float32Array(NA);
+    for (let k = 0; k < NA; k++) { const a = k / NA * Math.PI * 2, ca = Math.cos(a), sa = Math.sin(a); let r = 0;
+      for (let s = 0; s < 200; s += .5) { const x = Math.round(cxC + ca * s), y = Math.round(cyC + sa * s); if (x < 0 || y < 0 || x >= w || y >= h || !cascoM[y * w + x]) break; r = s; } radio[k] = r + .5; }
+    for (let rep = 0; rep < 3; rep++) { const c = Float32Array.from(radio); for (let k = 0; k < NA; k++) radio[k] = (c[(k + NA - 1) % NA] + 2 * c[k] + c[(k + 1) % NA]) / 4; } // contorno suave
+    const rMed = radio.reduce((s, v) => s + v, 0) / NA, PROF = Math.max(BASE + D, rMed * esc * .62); // hondura del yelmo
+    const cPos = [], cUv = [], cInd = [], NT = 40;
+    for (let j = 0; j <= NT; j++) { const tt = j / NT * Math.PI, st = Math.sin(tt), ct = Math.cos(tt);
+      for (let k = 0; k <= NA; k++) { const kk = k % NA, a = kk / NA * Math.PI * 2, X = cxC + .5 + Math.cos(a) * radio[kk] * st, Y = cyC + .5 + Math.sin(a) * radio[kk] * st;
+        const xi = Math.min(w - 1, Math.max(0, Math.floor(X))), yi = Math.min(h - 1, Math.max(0, Math.floor(Y))), hund = esm[yi * w + xi] && st > .35 ? .95 : 1;
+        cPos.push(-ancho / 2 + X * esc, h * esc / 2 - Y * esc, ct * PROF * hund); cUv.push(X / w, 1 - Y / h); } }
+    for (let j = 0; j < NT; j++) for (let k = 0; k < NA; k++) { const a = j * (NA + 1) + k, b = a + NA + 1; cInd.push(a, a + 1, b, a + 1, b + 1, b); }
+    // 3) vértices en las esquinas de los píxeles; la altura de una esquina es el promedio de los píxeles de pieza que la tocan
+    const W1 = w + 1, H1 = h + 1, idF = new Int32Array(W1 * H1).fill(-1), idB = new Int32Array(W1 * H1).fill(-1);
+    const pos = [], uv = [], back = [], uvB = [], ind = [], indB = [], x0 = -ancho / 2, y0 = h * esc / 2;
+    const esquinaZ = (X, Y) => { let t = 0, c = 0, borde = false; for (const [dx, dy] of [[-1, -1], [0, -1], [-1, 0], [0, 0]]) { const x = X + dx, y = Y + dy; if (x < 0 || y < 0 || x >= w || y >= h) { borde = true; continue; } const i = y * w + x; if (den[i]) { t += z[i]; c++; } else borde = true; } return borde ? 0 : c ? t / c : BASE; };
+    const esBorde = (X, Y) => { for (const [dx, dy] of [[-1, -1], [0, -1], [-1, 0], [0, 0]]) { const x = X + dx, y = Y + dy; if (x < 0 || y < 0 || x >= w || y >= h || !den[y * w + x]) return true; } return false; }; // en el contorno las dos caras se tocan
+    const vF = (X, Y) => { const k = Y * W1 + X; if (idF[k] < 0) { idF[k] = pos.length / 3; pos.push(x0 + X * esc, y0 - Y * esc, esquinaZ(X, Y)); uv.push(X / w, 1 - Y / h); } return idF[k]; };
+    const vB = (X, Y) => { if (esBorde(X, Y)) return vF(X, Y); /* en el contorno, frente y atrás comparten el mismo punto: una sola superficie cerrada */ const k = Y * W1 + X; if (idB[k] < 0) { idB[k] = pos.length / 3; pos.push(x0 + X * esc, y0 - Y * esc, -esquinaZ(X, Y)); uv.push(X / w, 1 - Y / h); } return idB[k]; };
+    const pared = []; // canto: triángulos sueltos con su propia normal
+    let pxCanto = 0; const muro = (X1, Y1, X2, Y2, nx, ny) => { const esR = rojo(pxCanto) ? 1 : 0; let sr = 0, sg = 0, sb = 0, sc = 0; // color del canto: promedio de la pieza junto al borde (igual que se ve en la cara)
+      { const cx = pxCanto % w, cy = (pxCanto / w) | 0; for (let dy = -3; dy <= 3; dy++) for (let dx = -3; dx <= 3; dx++) { const xx = cx + dx, yy = cy + dy; if (xx < 0 || yy < 0 || xx >= w || yy >= h) continue; const j = yy * w + xx; if (!den[j] || esm[j]) continue; if (esR !== (rojo(j) ? 1 : 0)) continue; sr += px[j * 4]; sg += px[j * 4 + 1]; sb += px[j * 4 + 2]; sc++; } }
+      if (!sc) { sr = px[pxCanto * 4]; sg = px[pxCanto * 4 + 1]; sb = px[pxCanto * 4 + 2]; sc = 1; }
+       // de la esquina 1 a la 2, del frente a la cara de atrás
+      const a = [x0 + X1 * esc, y0 - Y1 * esc], b = [x0 + X2 * esc, y0 - Y2 * esc], za = esquinaZ(X1, Y1), zb = esquinaZ(X2, Y2);
+      pared.push(a[0], a[1], za, b[0], b[1], -zb, b[0], b[1], zb, a[0], a[1], za, a[0], a[1], -za, b[0], b[1], -zb, nx, ny, sr / sc / 255, sg / sc / 255, sb / sc / 255, esR); }; // caras mirando hacia afuera
+    const fuera = (x, y) => x < 0 || y < 0 || x >= w || y >= h || !den[y * w + x];
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+      if (!den[y * w + x]) continue;
+      if (esBorde(x, y) && esBorde(x + 1, y) && esBorde(x, y + 1) && esBorde(x + 1, y + 1)) continue; /* trazo de un píxel: sin grosor, no se dibuja doble */
+      const a = vF(x, y), b = vF(x + 1, y), c = vF(x, y + 1), d = vF(x + 1, y + 1);
+      ind.push(a, c, b, b, c, d); // frente (mira hacia +z)
+      const A = vB(x, y), B = vB(x + 1, y), C = vB(x, y + 1), Dd = vB(x + 1, y + 1);
+      ind.push(A, B, C, B, Dd, C); // atrás: el mismo relieve en espejo (mira hacia -z)
+      pxCanto = y * w + x;
+    }
+    // canto en formato plano con normales
+    const armar = rojoSi => { const sel = []; for (let o = 0; o < pared.length; o += 24) if (pared[o + 23] === rojoSi) sel.push(o);
+      const P = new Float32Array(sel.length * 18), N = new Float32Array(sel.length * 18), C = new Float32Array(sel.length * 18);
+      sel.forEach((o, m) => { for (let k = 0; k < 18; k++) P[m * 18 + k] = pared[o + k];
+        for (let v = 0; v < 6; v++) { N[m * 18 + v * 3] = pared[o + 18]; N[m * 18 + v * 3 + 1] = pared[o + 19]; C[m * 18 + v * 3] = pared[o + 20]; C[m * 18 + v * 3 + 1] = pared[o + 21]; C[m * 18 + v * 3 + 2] = pared[o + 22]; } });
+      return { pos: P, nor: N, col: C }; };
+    const cantoMetal = armar(0), cantoRojo = armar(1);
+    // mapa de material: azul = metal, verde = aspereza (rojo del penacho y esmalte no son metal)
+    const mat = new Uint8ClampedArray(n * 4);
+    for (let i = 0; i < n; i++) { const o = i * 4, r = px[o], g = px[o + 1], bl = px[o + 2]; let met = 1, rug = .26;
+      if (esm[i]) { met = 0; rug = .06; } else if (r > g * 1.7 && r > 90) { met = .15; rug = .45; } else if (Math.abs(r - bl) < 30 && Math.abs(r - g) < 30) { met = 1; rug = .2; }
+      mat[o] = 255; mat[o + 1] = rug * 255; mat[o + 2] = met * 255; mat[o + 3] = 255; }
+    // textura de color sin línea negra en la unión: el filo oscuro del dibujo toma el color de su pieza y el color se extiende hacia afuera
+    const tex = new Uint8ClampedArray(px), op = i => px[i * 4 + 3] >= 128, lu = i => (.3 * px[i * 4] + .59 * px[i * 4 + 1] + .11 * px[i * 4 + 2]) / 255;
+    const anillo = new Uint8Array(n);
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { const i = y * w + x; if (!op(i)) continue; let e = 0;
+      for (let dy = -2; dy <= 2 && !e; dy++) for (let dx = -2; dx <= 2; dx++) { const xx = x + dx, yy = y + dy; if (xx < 0 || yy < 0 || xx >= w || yy >= h || !op(yy * w + xx)) { e = 1; break; } } anillo[i] = e; }
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { const i = y * w + x; if (!anillo[i] || lu(i) >= .45) continue; let r = 0, g = 0, b = 0, c = 0;
+      for (let dy = -5; dy <= 5; dy++) for (let dx = -5; dx <= 5; dx++) { const xx = x + dx, yy = y + dy; if (xx < 0 || yy < 0 || xx >= w || yy >= h) continue; const j = yy * w + xx; if (!op(j) || anillo[j] || lu(j) < .3) continue; r += px[j * 4]; g += px[j * 4 + 1]; b += px[j * 4 + 2]; c++; }
+      if (c) { const o = i * 4; tex[o] = r / c * .85; tex[o + 1] = g / c * .85; tex[o + 2] = b / c * .85; } }
+    { const lleno = new Uint8Array(n); for (let i = 0; i < n; i++) lleno[i] = op(i) ? 1 : 0;
+      for (let it = 0; it < 12; it++) { const nuevos = [];
+        for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { const i = y * w + x; if (lleno[i]) continue; let r = 0, g = 0, b = 0, c = 0;
+          for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) { const xx = x + dx, yy = y + dy; if (xx < 0 || yy < 0 || xx >= w || yy >= h) continue; const j = yy * w + xx; if (lleno[j]) { r += tex[j * 4]; g += tex[j * 4 + 1]; b += tex[j * 4 + 2]; c++; } }
+          if (c) nuevos.push(i, r / c, g / c, b / c); }
+        for (let k = 0; k < nuevos.length; k += 4) { const i = nuevos[k]; tex[i * 4] = nuevos[k + 1]; tex[i * 4 + 1] = nuevos[k + 2]; tex[i * 4 + 2] = nuevos[k + 3]; lleno[i] = 1; } } }
+    // yelmo: su filo dorado del dibujo se pinta del plateado del yelmo, para que de lado se vea un casco completo y no una mitad sobre un marco
+    { const st = i => { const o = i * 4; return (Math.max(px[o], px[o + 1], px[o + 2]) - Math.min(px[o], px[o + 1], px[o + 2])) / 255; };
+      let pintados = 0;
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) { const i = y * w + x; if (!cascoM[i] || rojo(i) || dC[i] > 5 || st(i) < .22) continue;
+        let best = -1, bd = 1e9; // el punto más cercano del frente del yelmo (ya sin filo), tal cual: mismas luces y sombras
+        for (let dy = -10; dy <= 10; dy++) for (let dx = -10; dx <= 10; dx++) { const xx = x + dx, yy = y + dy; if (xx < 0 || yy < 0 || xx >= w || yy >= h) continue; const j = yy * w + xx; if (!cascoM[j] || rojo(j) || dC[j] <= 5 || st(j) > .3) continue; const dd = dx * dx + dy * dy; if (dd < bd) { bd = dd; best = j; } }
+        if (best >= 0) { tex[i * 4] = px[best * 4]; tex[i * 4 + 1] = px[best * 4 + 1]; tex[i * 4 + 2] = px[best * 4 + 2]; } pintados++; }
+      casco.filoPlateado = pintados; }
+    for (let i = 0; i < n; i++) tex[i * 4 + 3] = 255;
+    return { tex, yelmo: { pos: new Float32Array(cPos), uv: new Float32Array(cUv), ind: new Uint32Array(cInd), hondura: PROF }, frente: { pos: new Float32Array(pos), uv: new Float32Array(uv), ind: new Uint32Array(ind) }, atras: { pos: new Float32Array(back), uv: new Float32Array(uvB), ind: new Uint32Array(indB) }, canto: cantoMetal, cantoRojo, mat, alto: h * esc, grosor: 2 * (BASE + D), casco, penacho, z };
+  }
+  (async () => {
+    try {
+      const prueba = document.createElement('canvas'); if (!(prueba.getContext('webgl2') || prueba.getContext('webgl'))) throw new Error('sin WebGL');
+      const cargar = src => new Promise((ok, mal) => { const im = new Image(); im.onload = () => ok(im); im.onerror = mal; im.src = src; });
+      const [iE, iL] = await Promise.all([cargar('img/escudo3d-v20.png'), cargar('img/letras3d-v1.png')]);
+      await new Promise(r => setTimeout(r, 300)); // que la página termine de pintarse antes de armar el modelo
+      const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'low-power' });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5)); renderer.outputColorSpace = THREE.SRGBColorSpace;
+      renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05; renderer.setClearColor(0x000000, 0);
+      const escena = new THREE.Scene(), pmrem = new THREE.PMREMGenerator(renderer);
+      escena.environment = pmrem.fromScene(new RoomEnvironment(renderer), 0.04).texture; // reflejos de estudio para el metal
+      const luz1 = new THREE.DirectionalLight(0xfff1d6, 2.2); luz1.position.set(-6, 8, 10); escena.add(luz1);
+      const luz2 = new THREE.DirectionalLight(0xbcd0ff, 1.4); luz2.position.set(6, 3, -9); escena.add(luz2);
+      escena.add(new THREE.AmbientLight(0xffffff, 0.15));
+      const camara = new THREE.PerspectiveCamera(32, 15 / 12.9, 0.1, 100); camara.position.set(0, 0, 24.5);
+      const pieza = new THREE.Group(); escena.add(pieza);
+      const malla = (img, ancho, opc) => {
+        const c = document.createElement('canvas'); c.width = img.width; c.height = img.height; const g = c.getContext('2d'); g.drawImage(img, 0, 0);
+        const M = construirEscudo(g.getImageData(0, 0, img.width, img.height).data, img.width, img.height, ancho, opc);
+        const lienzoDe = d => { const k = document.createElement('canvas'); k.width = img.width; k.height = img.height; k.getContext('2d').putImageData(new ImageData(d, img.width, img.height), 0, 0); return k; };
+        const color = new THREE.CanvasTexture(lienzoDe(M.tex)); color.colorSpace = THREE.SRGBColorSpace; color.anisotropy = 4;
+        const matTex = new THREE.CanvasTexture(lienzoDe(M.mat));
+        const geo = new THREE.BufferGeometry(); geo.setAttribute('position', new THREE.BufferAttribute(M.frente.pos, 3)); geo.setAttribute('uv', new THREE.BufferAttribute(M.frente.uv, 2));
+        geo.setIndex(new THREE.BufferAttribute(M.frente.ind, 1)); geo.computeVertexNormals();
+        const nr = geo.attributes.normal, ps = geo.attributes.position;
+        for (let i = 0; i < nr.count; i++) if (Math.hypot(nr.getX(i), nr.getY(i), nr.getZ(i)) < 1e-4) { const x = ps.getX(i), y = ps.getY(i), l = Math.hypot(x, y) || 1; nr.setXYZ(i, x / l, y / l, 0); }
+        return new THREE.Mesh(geo, new THREE.MeshPhysicalMaterial({ map: color, metalnessMap: matTex, roughnessMap: matTex, metalness: 1, roughness: 1, clearcoat: 0.7, clearcoatRoughness: 0.06, envMapIntensity: 1.25 }));
+      };
+      const ALTO_E = 9.53, ALTO_L = 2.84, SEP = .45, BAJA = (ALTO_L + SEP) / 2;
+      const mE = malla(iE, 10, {}); mE.position.y = -BAJA; pieza.add(mE);
+      const mL = malla(iL, 15, { yelmo: false, ref: 10 }); mL.position.y = -BAJA + ALTO_E / 2 + SEP + ALTO_L / 2; pieza.add(mL);
+      // el escudo 3D toma el lugar de la imagen en la portada y en el menú (un solo dibujo que se muda al que esté a la vista)
+      const lugares = [...document.querySelectorAll('.sello')].map(e => { const d = document.createElement('div'); d.className = 'sello sello3d'; d.setAttribute('role', 'img'); d.setAttribute('aria-label', 'Pertenece a Familia Vega Godínez'); e.replaceWith(d); return d; });
+      window.ESCUDO3D_LISTO = true;
+      let ult = 0, giro = 0, anW = 0, anH = 0;
+      renderer.setAnimationLoop(tt => {
+        if (tt - ult < 33 || document.hidden) return; // unas 30 imágenes por segundo
+        const dt = Math.min(.1, (tt - ult) / 1000); ult = tt;
+        const lugar = lugares.find(d => d.offsetParent); if (!lugar) return; // solo se dibuja si el escudo está a la vista
+        if (renderer.domElement.parentNode !== lugar) lugar.appendChild(renderer.domElement);
+        const w = lugar.clientWidth, h = lugar.clientHeight; if (w !== anW || h !== anH) { anW = w; anH = h; renderer.setSize(w, h, false); camara.aspect = w / Math.max(1, h); camara.updateProjectionMatrix(); }
+        giro += dt * .6; pieza.rotation.y = giro; renderer.render(escena, camara);
+      });
+    } catch (e) { console.warn('Escudo 3D no disponible:', e && e.message); window.iniciarRelieve2D && window.iniciarRelieve2D(); }
+  })();
+</script>
 </head>
 <body>
 <div id="portada" class="abierta">
@@ -1902,7 +2092,8 @@
       pintarRelieve(Rr, sal.data, -1.5 + Math.sin(tt / 2600) * 1.3); cx.putImageData(sal, 0, 0); };
     requestAnimationFrame(cuadro);
   }
-  setTimeout(() => document.querySelectorAll('img.sello').forEach(img => { if (img.complete && img.naturalWidth) relieveEscudo(img); else img.addEventListener('load', () => relieveEscudo(img), { once: true }); }), 400); // después de que cargue la página
+  window.iniciarRelieve2D = () => { if (window.ESCUDO3D_LISTO) return; document.querySelectorAll('img.sello').forEach(img => { if (img.complete && img.naturalWidth) relieveEscudo(img); else img.addEventListener('load', () => relieveEscudo(img), { once: true }); }); };
+  setTimeout(() => window.iniciarRelieve2D(), 6000); // respaldo: el escudo con relieve 2D, si el 3D no se pudo armar
 </script>
 </body>
 </html>
