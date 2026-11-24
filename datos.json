@@ -10045,22 +10045,34 @@
   "O-26f4b83e": {
    "tengo": false,
    "anio": 1950,
-   "notas": "Billete que todavía falta en la colección.\nLos primeros billetes del Banco Central: billetes anteriores con un resello que dice Banco Central de Costa Rica.\nEmisión del Banco Central de Costa Rica, años 1950-1955.\nFuente: catálogo de billetes del Banco Central (banknote.ws).\nCatálogo: Pick P-215."
+   "notas": "Billete que todavía falta en la colección.\nLos primeros billetes del Banco Central: billetes anteriores con un resello que dice Banco Central de Costa Rica.\nEmisión del Banco Central de Costa Rica, años 1950-1955.\nFuente: catálogo de billetes del Banco Central (banknote.ws).\nCatálogo: Pick P-215.\nImagen de referencia: captura de pantalla del catálogo Numista, solo para reconocer el billete.",
+   "fotosCompra": [
+    "privado:ref-billete-O-26f4b83e-1.jpg"
+   ]
   },
   "O-038b3776": {
    "tengo": false,
    "anio": 1950,
-   "notas": "Billete que todavía falta en la colección.\nLos primeros billetes del Banco Central: billetes anteriores con un resello que dice Banco Central de Costa Rica.\nEmisión del Banco Central de Costa Rica, años 1950-1955.\nFuente: catálogo de billetes del Banco Central (banknote.ws).\nCatálogo: Pick P-216."
+   "notas": "Billete que todavía falta en la colección.\nLos primeros billetes del Banco Central: billetes anteriores con un resello que dice Banco Central de Costa Rica.\nEmisión del Banco Central de Costa Rica, años 1950-1955.\nFuente: catálogo de billetes del Banco Central (banknote.ws).\nCatálogo: Pick P-216.\nImagen de referencia: captura de pantalla del catálogo Numista, solo para reconocer el billete.",
+   "fotosCompra": [
+    "privado:ref-billete-O-038b3776-1.jpg"
+   ]
   },
   "O-e76f8dbf": {
    "tengo": false,
    "anio": 1950,
-   "notas": "Billete que todavía falta en la colección.\nLos primeros billetes del Banco Central: billetes anteriores con un resello que dice Banco Central de Costa Rica.\nEmisión del Banco Central de Costa Rica, años 1950-1955.\nFuente: catálogo de billetes del Banco Central (banknote.ws).\nCatálogo: Pick P-217."
+   "notas": "Billete que todavía falta en la colección.\nLos primeros billetes del Banco Central: billetes anteriores con un resello que dice Banco Central de Costa Rica.\nEmisión del Banco Central de Costa Rica, años 1950-1955.\nFuente: catálogo de billetes del Banco Central (banknote.ws).\nCatálogo: Pick P-217.\nImagen de referencia: captura de pantalla del catálogo Numista, solo para reconocer el billete.",
+   "fotosCompra": [
+    "privado:ref-billete-O-e76f8dbf-1.jpg"
+   ]
   },
   "O-24623e6b": {
    "tengo": false,
    "anio": 1950,
-   "notas": "Billete que todavía falta en la colección.\nLos primeros billetes del Banco Central: billetes anteriores con un resello que dice Banco Central de Costa Rica.\nEmisión del Banco Central de Costa Rica, años 1950-1955.\nFuente: catálogo de billetes del Banco Central (banknote.ws).\nCatálogo: Pick P-218."
+   "notas": "Billete que todavía falta en la colección.\nLos primeros billetes del Banco Central: billetes anteriores con un resello que dice Banco Central de Costa Rica.\nEmisión del Banco Central de Costa Rica, años 1950-1955.\nFuente: catálogo de billetes del Banco Central (banknote.ws).\nCatálogo: Pick P-218.\nImagen de referencia: captura de pantalla del catálogo Numista, solo para reconocer el billete.",
+   "fotosCompra": [
+    "privado:ref-billete-O-24623e6b-1.jpg"
+   ]
   },
   "O-c566793f": {
    "tengo": false,
@@ -10188,7 +10200,11 @@
   "O-75393bcf": {
    "tengo": false,
    "anio": 1971,
-   "notas": "Billete que todavía falta en la colección.\nBilletes con un sello que celebra los 150 años de la Independencia (1821-1971).\nEmisión del Banco Central de Costa Rica, años 1971.\nFuente: catálogo de billetes del Banco Central (banknote.ws).\nCatálogo: Pick P-245."
+   "notas": "Billete que todavía falta en la colección.\nBilletes con un sello que celebra los 150 años de la Independencia (1821-1971).\nEmisión del Banco Central de Costa Rica, años 1971.\nFuente: catálogo de billetes del Banco Central (banknote.ws).\nCatálogo: Pick P-245.\nImagen de referencia: captura de pantalla del catálogo Numista, solo para reconocer el billete.",
+   "fotosCompra": [
+    "privado:ref-billete-O-75393bcf-1.jpg",
+    "privado:ref-billete-O-75393bcf-2.jpg"
+   ]
   },
   "O-46990dcf": {
    "tengo": false,
@@ -13107,25 +13123,29 @@
    "id": "O-26f4b83e",
    "nombre": "5 colones · Emisión provisional con resello del Banco Central (1950-1955)",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "privado:ref-billete-O-26f4b83e-1.jpg"
   },
   {
    "id": "O-038b3776",
    "nombre": "10 colones · Emisión provisional con resello del Banco Central (1950-1955)",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "privado:ref-billete-O-038b3776-1.jpg"
   },
   {
    "id": "O-e76f8dbf",
    "nombre": "20 colones · Emisión provisional con resello del Banco Central (1950-1955)",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "privado:ref-billete-O-e76f8dbf-1.jpg"
   },
   {
    "id": "O-24623e6b",
    "nombre": "50 colones · Emisión provisional con resello del Banco Central (1950-1955)",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "privado:ref-billete-O-24623e6b-1.jpg"
   },
   {
    "id": "O-c566793f",
@@ -13229,7 +13249,8 @@
    "id": "O-75393bcf",
    "nombre": "500 colones · Conmemorativo 150 años de la Independencia (1971)",
    "categoria": "Billetes",
-   "seccion": "billetes"
+   "seccion": "billetes",
+   "ref": "privado:ref-billete-O-75393bcf-1.jpg"
   },
   {
    "id": "O-46990dcf",
