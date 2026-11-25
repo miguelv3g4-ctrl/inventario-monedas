@@ -4142,7 +4142,7 @@
     "O-x0085cc125-1795096208723-poebe.jpg"
    ],
    "km": "KM# 233",
-   "notas": "Material: Latón · Peso: 2,78 g · Diámetro: 15,00 mm · Canto: Estriado segmentado\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"colon\".",
+   "notas": "Material: Latón · Peso: 2,78 g · Diámetro: 15,00 mm · Canto: Estriado continuo\nRepetidas: 2\nFuente: Excel monedas costa rica, hoja \"colon\".",
    "fo": "FO# 2696",
    "valor": 500,
    "origen": "reventa",
@@ -4174,7 +4174,13 @@
     }
    ],
    "valorCirculada": 300,
-   "fechaValor": "2026-11-22"
+   "fechaValor": "2026-11-22",
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 2.2,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x41e23a1e6": {
    "tengo": false,
@@ -4465,7 +4471,7 @@
    "fechaValor": "2026-11-22",
    "costo": 500,
    "origen": "reventa",
-   "notas": "Material: Acero bañado en latón · Peso: 4,03 g · Diámetro: 21,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 500.",
+   "notas": "Material: Acero bañado en latón · Peso: 4,03 g · Diámetro: 21,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 500.",
    "valorCirculada": 400,
    "variantes": [
     {
@@ -4493,7 +4499,13 @@
      "estadoMS": true
     }
    ],
-   "fo": "FO# 3504"
+   "fo": "FO# 3504",
+   "medida3d": {
+    "diametro": 21.5,
+    "grosor": 1.7,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xd20f2c5d2": {
    "tengo": true,
@@ -4510,7 +4522,7 @@
    "fechaValor": "2026-11-22",
    "costo": 1000,
    "origen": "reventa",
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "cantidad": 3,
    "valorCirculada": 400,
    "variantes": [
@@ -4543,7 +4555,13 @@
      "estadoMS": true
     }
    ],
-   "fo": "FO# 6046"
+   "fo": "FO# 6046",
+   "medida3d": {
+    "diametro": 21.6,
+    "grosor": 1.7,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xd7c4d06a4": {
    "tengo": true,
@@ -4560,7 +4578,7 @@
    "fechaValor": "2026-11-22",
    "costo": 1000,
    "origen": "reventa",
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras grandes - Volcanes sin humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado continuo\nVariante: Letras grandes - Volcanes sin humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "cantidad": 4,
    "valorCirculada": 400,
    "variantes": [
@@ -4593,7 +4611,13 @@
      "estadoMS": true
     }
    ],
-   "fo": "FO# 6829"
+   "fo": "FO# 6829",
+   "medida3d": {
+    "diametro": 21.6,
+    "grosor": 1.7,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x109cb7dca": {
    "tengo": true,
@@ -4602,7 +4626,7 @@
     "O-x109cb7dca-1795128431868-6snco.jpg"
    ],
    "km": "KM# 227.2a",
-   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado segmentado\nVariante: Letras gruesas - Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 5 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 4,00 g · Diámetro: 21,60 mm · Canto: Estriado continuo\nVariante: Letras gruesas - Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"5 colones\".\nMS circuladas: 5 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "fo": "FO# 5717",
    "valor": 1000,
    "costo": 1000,
@@ -4642,7 +4666,13 @@
      "cantidad": 5,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 21.6,
+    "grosor": 1.7,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x7567e6ed2": {
    "tengo": true,
@@ -4691,7 +4721,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 21.44,
+    "grosor": 1.14,
+    "canto": "Liso",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xead7a029a": {
    "tengo": true,
@@ -4737,7 +4773,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 21.44,
+    "grosor": 1.14,
+    "canto": "Liso",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xce0766872": {
    "tengo": true,
@@ -4783,7 +4825,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 21.44,
+    "grosor": 1.14,
+    "canto": "Liso",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x561dfed7f": {
    "tengo": true,
@@ -4831,7 +4879,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 21.44,
+    "grosor": 1.14,
+    "canto": "Liso",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xea6d56c8d": {
    "tengo": true,
@@ -4891,7 +4945,7 @@
   },
   "O-xc3fc2b519": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 4,20 g · Diámetro: 24,00 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Acero bañado en latón · Peso: 4,20 g · Diámetro: 24,00 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 228",
    "fo": "FO# 373",
    "fotosCompra": [
@@ -4925,11 +4979,17 @@
      "cantidad": 3,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 24,
+    "grosor": 1.9,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xe0aaf7616": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 5,05 g · Diámetro: 23,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nPrecio revendedor\nMS circuladas: 2 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 3000.",
+   "notas": "Material: Latón · Peso: 5,05 g · Diámetro: 23,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nPrecio revendedor\nMS circuladas: 2 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 3000.",
    "km": "KM# 228a",
    "fo": "FO# 6830",
    "fotosCompra": [
@@ -4965,11 +5025,17 @@
      "cantidad": 2,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 23.5,
+    "grosor": 1.9,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x8a6998b28": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 5,00 g · Diámetro: 23,50 mm · Canto: Estriado segmentado\nVariante: Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 5,00 g · Diámetro: 23,50 mm · Canto: Estriado continuo\nVariante: Volcanes con humo\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 228.1a",
    "fo": "FO# 6831",
    "fotosCompra": [
@@ -5003,11 +5069,17 @@
      "cantidad": 2,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 23.5,
+    "grosor": 1.9,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xb067abf23": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 5,00 g · Diámetro: 23,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nPrecio revendedor\nMS circuladas: 4 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 4000.",
+   "notas": "Material: Latón · Peso: 5,00 g · Diámetro: 23,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nPrecio revendedor\nMS circuladas: 4 monedas. Cada circulada vale 400 colones; si se marcan como MS UNC (sin circular) valen 4000.",
    "km": "KM# 228.2",
    "fo": "FO# 5718",
    "fotosCompra": [
@@ -5051,7 +5123,13 @@
      "cantidad": 4,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 23.5,
+    "grosor": 1.9,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x11bee65fb": {
    "tengo": true,
@@ -5097,7 +5175,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 22.8,
+    "grosor": 1.4,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x2bfc2e585": {
    "tengo": true,
@@ -5146,7 +5230,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 22.8,
+    "grosor": 1.4,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xfd1398080": {
    "tengo": true,
@@ -5203,7 +5293,13 @@
     }
    ],
    "valorCirculada": 400,
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 22.8,
+    "grosor": 1.4,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xb55357d3b": {
    "tengo": false,
@@ -5256,11 +5352,17 @@
      "estadoMS": true
     }
    ],
-   "valorCirculada": 400
+   "valorCirculada": 400,
+   "medida3d": {
+    "diametro": 23.5,
+    "grosor": 1.4,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xeea12af89": {
    "tengo": true,
-   "notas": "Material: Aluminio · Peso: 1,10 g · Diámetro: 23,50 mm\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 10 colones del mismo diseño.",
+   "notas": "Material: Aluminio · Peso: 1,10 g · Diámetro: 23,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 10 colones del mismo diseño.",
    "km": "KM# 228.2b",
    "fo": "FO# 15827",
    "fotosCompra": [
@@ -5302,11 +5404,17 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 23.5,
+    "grosor": 1.4,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x8ce0a9cbe": {
    "tengo": true,
-   "notas": "Material: Aluminio · Peso: 1,10 g · Diámetro: 23,50 mm\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 10 colones del mismo diseño.",
+   "notas": "Material: Aluminio · Peso: 1,10 g · Diámetro: 23,50 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"10 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 10 colones del mismo diseño.",
    "km": "KM# 228.2b",
    "fo": "FO# 15827",
    "fotosCompra": [
@@ -5351,7 +5459,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 23.5,
+    "grosor": 1.4,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x39370c2df": {
    "tengo": true,
@@ -5412,7 +5526,7 @@
   },
   "O-x1562341e0": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Acero bañado en latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado continuo\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 229",
    "fo": "FO# 5206",
    "fotosCompra": [
@@ -5446,7 +5560,13 @@
      "cantidad": 1,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25.5,
+    "grosor": 2,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xb2a0db2d6": {
    "tengo": true,
@@ -5455,7 +5575,7 @@
     "O-xb2a0db2d6-1795055324351-zg44d.jpg"
    ],
    "km": "KM# 229a",
-   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "fo": "FO# 5207",
    "valor": 1000,
    "costo": 1000,
@@ -5495,11 +5615,17 @@
      "cantidad": 2,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25.5,
+    "grosor": 2,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xd4802a3a4": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 3000.",
+   "notas": "Material: Latón · Peso: 7,00 g · Diámetro: 25,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"25 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 3000.",
    "km": "KM# 229a",
    "fo": "FO# 5207",
    "fotosCompra": [
@@ -5544,7 +5670,13 @@
      "cantidad": 3,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25.5,
+    "grosor": 2,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x847ed7e7c": {
    "tengo": true,
@@ -5590,7 +5722,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 25.5,
+    "grosor": 2,
+    "canto": "Liso",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xa8ced4273": {
    "tengo": true,
@@ -5641,7 +5779,13 @@
      "cantidad": 4,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25.5,
+    "grosor": 2,
+    "canto": "Liso",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x19b5a2c7f": {
    "tengo": true,
@@ -5689,7 +5833,13 @@
      "cantidad": 1,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25.5,
+    "grosor": 2,
+    "canto": "Liso",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x6b8c69a51": {
    "tengo": true,
@@ -5737,7 +5887,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 25.5,
+    "grosor": 2,
+    "canto": "Liso",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x003714af8": {
    "tengo": true,
@@ -5756,7 +5912,7 @@
   },
   "O-xbec1cd63b": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nVariante: Letras grandes\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado continuo\nVariante: Letras grandes\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 231",
    "fo": "FO# 369",
    "fotosCompra": [
@@ -5790,11 +5946,17 @@
      "cantidad": 1,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 27.5,
+    "grosor": 1.95,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x1d00c2792": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nVariante: letras pequeñas\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado continuo\nVariante: letras pequeñas\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 231.1",
    "fo": "FO# 3544",
    "fotosCompra": [
@@ -5828,11 +5990,17 @@
      "cantidad": 1,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 27.5,
+    "grosor": 1.95,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xeb9bba39d": {
    "tengo": true,
-   "notas": "Material: Aluminio-bronce · Peso: 7,92 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Aluminio-bronce · Peso: 7,92 g · Diámetro: 27,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 600 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 231.1a",
    "fo": "FO# 15038",
    "fotosCompra": [
@@ -5874,11 +6042,17 @@
      "cantidad": 1,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 27.5,
+    "grosor": 1.95,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x97e4c2697": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
+   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"50 colones\".",
    "km": "KM# 231.1b",
    "fo": "FO# 5670",
    "fotosCompra": [
@@ -5946,11 +6120,17 @@
     }
    ],
    "valorCirculada": 600,
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 27.5,
+    "grosor": 1.95,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x0357cfcad": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nPrecio revendedor",
+   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nPrecio revendedor",
    "km": "KM# 231.1b",
    "fo": "FO# 5670",
    "fotosCompra": [
@@ -5986,11 +6166,17 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 27.5,
+    "grosor": 1.95,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x4ff6ed81f": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 50 colones del mismo diseño.",
+   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 50 colones del mismo diseño.",
    "km": "KM# 231.1b",
    "fo": "FO# 5670",
    "fotosCompra": [
@@ -6032,11 +6218,17 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 27.5,
+    "grosor": 1.95,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xead69f4e3": {
    "tengo": true,
-   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 50 colones del mismo diseño.",
+   "notas": "Material: Acero bañado en latón · Peso: 7,80 g · Diámetro: 27,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"50 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 50 colones del mismo diseño.",
    "km": "KM# 231.1b",
    "fo": "FO# 5670",
    "fotosCompra": [
@@ -6078,7 +6270,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 27.5,
+    "grosor": 1.95,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x6907c6691": {
    "tengo": true,
@@ -6125,7 +6323,7 @@
   },
   "O-xc0213beb3": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 2 monedas. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 230",
    "fo": "FO# 368",
    "fotosCompra": [
@@ -6158,11 +6356,17 @@
      "cantidad": 3,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 29.5,
+    "grosor": 1.92,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x55e57c564": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
+   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 3 monedas. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.",
    "km": "KM# 230a",
    "fo": "FO# 6833",
    "fotosCompra": [
@@ -6195,11 +6399,17 @@
      "cantidad": 5,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 29.5,
+    "grosor": 1.92,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x6ddfa1ed1": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.\nReverso de referencia: el del catálogo KM230 (de 1995 a 2000 el reverso es igual, no lleva año).",
+   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nMS circuladas: 1 moneda. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 1000.\nReverso de referencia: el del catálogo KM230 (de 1995 a 2000 el reverso es igual, no lleva año).",
    "km": "KM# 230a",
    "fo": "FO# 6833",
    "fotosCompra": [
@@ -6233,11 +6443,17 @@
      "cantidad": 1,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 29.5,
+    "grosor": 1.92,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xd662fda1c": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nVariante: Letras grandes - no magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nPrecio revendedor",
+   "notas": "Material: Latón · Peso: 9,00 g · Diámetro: 29,50 mm · Canto: Estriado continuo\nVariante: Letras grandes - no magnética\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nPrecio revendedor",
    "km": "KM# 230.1a",
    "fo": "FO# 11433",
    "fotosCompra": [
@@ -6272,11 +6488,17 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 29.5,
+    "grosor": 1.92,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x0250cf030": {
    "tengo": true,
-   "notas": "Material: Latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nPrecio revendedor\nMS circuladas: 1 moneda. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 5000.",
+   "notas": "Material: Latón · Peso: 9,10 g · Diámetro: 29,50 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"100 colones\".\nPrecio revendedor\nMS circuladas: 1 moneda. Cada circulada vale 700 colones; si se marcan como MS UNC (sin circular) valen 5000.",
    "km": "KM# 240",
    "fo": "FO# 5719",
    "fotosCompra": [
@@ -6311,7 +6533,13 @@
      "cantidad": 1,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 29.5,
+    "grosor": 1.92,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x9074baa28": {
    "tengo": true,
@@ -6350,7 +6578,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 29.5,
+    "grosor": 1.96,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xdf61763bf": {
    "tengo": true,
@@ -6395,7 +6629,13 @@
      "cantidad": 3,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 29.5,
+    "grosor": 1.96,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x51beaee62": {
    "tengo": true,
@@ -6442,7 +6682,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 29.5,
+    "grosor": 1.96,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xc36b26f4f": {
    "tengo": true,
@@ -6489,7 +6735,13 @@
      "estadoMS": true
     }
    ],
-   "cantidad": 1
+   "cantidad": 1,
+   "medida3d": {
+    "diametro": 29.5,
+    "grosor": 1.96,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-xe27fb207b": {
    "tengo": true,
@@ -6527,7 +6779,13 @@
     }
    ],
    "valorCirculada": 1000,
-   "fo": "FO# 5208"
+   "fo": "FO# 5208",
+   "medida3d": {
+    "diametro": 31.5,
+    "grosor": 1.9,
+    "canto": "Liso",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x367dc9a8d": {
    "tengo": true,
@@ -6539,7 +6797,7 @@
    "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 1000,
-   "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Números gruesos - no magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".\nFotos propias sacadas del video del álbum.",
+   "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado continuo\nVariante: Números gruesos - no magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".\nFotos propias sacadas del video del álbum.",
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
@@ -6573,7 +6831,13 @@
     "O-x367dc9a8d-video-escudo.jpg",
     "O-x367dc9a8d-video-valor.jpg"
    ],
-   "fo": "FO# 5720"
+   "fo": "FO# 5720",
+   "medida3d": {
+    "diametro": 33,
+    "grosor": 2.1,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x7a50c185a": {
    "tengo": true,
@@ -6584,7 +6848,7 @@
    "valor": 150000,
    "fechaValor": "2026-11-22",
    "costo": 60000,
-   "notas": "Material: Latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: No magnética - muy rara\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "notas": "Material: Latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado continuo\nVariante: No magnética - muy rara\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 1",
@@ -6611,7 +6875,13 @@
    ],
    "cantidad": 1,
    "valorCirculada": 90000,
-   "fo": "FO# 15039"
+   "fo": "FO# 15039",
+   "medida3d": {
+    "diametro": 33,
+    "grosor": 2.1,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x23d1289ee": {
    "tengo": true,
@@ -6627,7 +6897,7 @@
    "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 1000,
-   "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "notas": "Material: Aluminio-bronce · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado continuo\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
@@ -6657,7 +6927,13 @@
     }
    ],
    "valorCirculada": 1000,
-   "fo": "FO# 5720"
+   "fo": "FO# 5720",
+   "medida3d": {
+    "diametro": 33,
+    "grosor": 2.1,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x4ffdc79ec": {
    "tengo": true,
@@ -6669,7 +6945,7 @@
    "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 1000,
-   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado continuo\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 0",
@@ -6695,7 +6971,13 @@
     }
    ],
    "valorCirculada": 1000,
-   "fo": "FO# 5671"
+   "fo": "FO# 5671",
+   "medida3d": {
+    "diametro": 33,
+    "grosor": 1.9,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x69eae3145": {
    "tengo": true,
@@ -6712,7 +6994,7 @@
    "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 1000,
-   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: No magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
+   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado continuo\nVariante: No magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".",
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 3",
@@ -6744,7 +7026,13 @@
     }
    ],
    "valorCirculada": 1000,
-   "fo": "FO# 5671"
+   "fo": "FO# 5671",
+   "medida3d": {
+    "diametro": 33,
+    "grosor": 1.9,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x39afa064d": {
    "tengo": true,
@@ -6760,7 +7048,7 @@
    "valor": 2500,
    "fechaValor": "2026-11-22",
    "costo": 1000,
-   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado segmentado\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 500 colones del mismo diseño.",
+   "notas": "Material: Acero bañado en latón · Peso: 11,00 g · Diámetro: 33,00 mm · Canto: Estriado continuo\nVariante: Magnética\nFuente: Excel monedas costa rica, hoja \"500 colones\".\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda de 500 colones del mismo diseño.",
    "variantes": [
     {
      "nombre": "MS UNC (sin circular) · 3",
@@ -6790,7 +7078,13 @@
     }
    ],
    "valorCirculada": 1000,
-   "fo": "FO# 5671"
+   "fo": "FO# 5671",
+   "medida3d": {
+    "diametro": 33,
+    "grosor": 1.9,
+    "canto": "Estriado continuo",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x2678c4f97": {
    "tengo": false,
@@ -9348,7 +9642,7 @@
     "O-x83a8e659f-video-escudo.jpg",
     "O-x83a8e659f-video-valor.jpg"
    ],
-   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Estado: UNC (sin circular). Costó 1200 colones.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño.\nValor actual: 12 500 colones, según el precio del Museo para monedas flor de cuño (UNC): 25 y 50 colones, las dos por 25 000.",
+   "notas": "Material: Acero inoxidable · Diámetro: 23,5 mm · Canto: Estriado\nTarjeta creada desde el video del álbum (22/11/2026). Estado: UNC (sin circular). Costó 1200 colones.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño.\nValor actual: 12 500 colones, según el precio del Museo para monedas flor de cuño (UNC): 25 y 50 colones, las dos por 25 000.",
    "costo": 1200,
    "valor": 12500,
    "fechaValor": "2026-11-22",
@@ -9379,7 +9673,13 @@
      "cantidad": 0,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 23.5,
+    "grosor": 1,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x465ccbc47": {
    "tengo": true,
@@ -9388,7 +9688,7 @@
     "O-x465ccbc47-video-escudo.jpg",
     "O-x465ccbc47-video-valor.jpg"
    ],
-   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Estado: UNC (sin circular). Costó 1200 colones.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño.\nValor actual: 12 500 colones, según el precio del Museo para monedas flor de cuño (UNC): 25 y 50 colones, las dos por 25 000.",
+   "notas": "Material: Acero bañado en latón · Diámetro: 25,5 mm · Canto: Liso\nTarjeta creada desde el video del álbum (22/11/2026). Estado: UNC (sin circular). Costó 1200 colones.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño.\nValor actual: 12 500 colones, según el precio del Museo para monedas flor de cuño (UNC): 25 y 50 colones, las dos por 25 000.",
    "costo": 1200,
    "valor": 12500,
    "fechaValor": "2026-11-22",
@@ -9419,7 +9719,13 @@
      "cantidad": 0,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25.5,
+    "grosor": 2,
+    "canto": "Liso",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x5b5bad0ec": {
    "tengo": true,
@@ -9428,7 +9734,7 @@
     "O-x5b5bad0ec-video-escudo.jpg",
     "O-x5b5bad0ec-video-valor.jpg"
    ],
-   "notas": "Tarjeta creada desde el video del álbum (22/11/2026). Estado: UNC (sin circular). Costó 1200 colones.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño.\nValor actual: 12 500 colones, según el precio del Museo para monedas flor de cuño (UNC): 25 y 50 colones, las dos por 25 000.",
+   "notas": "Material: Acero bañado en latón · Diámetro: 29,5 mm · Canto: Estriado\nTarjeta creada desde el video del álbum (22/11/2026). Estado: UNC (sin circular). Costó 1200 colones.\nFotos: sacadas del video del álbum (22/11/2026). El escudo es de esta moneda; el reverso es de otra moneda del mismo diseño.\nValor actual: 12 500 colones, según el precio del Museo para monedas flor de cuño (UNC): 25 y 50 colones, las dos por 25 000.",
    "costo": 1200,
    "valor": 12500,
    "fechaValor": "2026-11-22",
@@ -9459,7 +9765,13 @@
      "cantidad": 0,
      "estadoMS": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 29.5,
+    "grosor": 1.96,
+    "canto": "Estriado",
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   }
   },
   "O-x945fee44e": {
    "tengo": true,
