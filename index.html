@@ -336,7 +336,7 @@
       let r = 0, gg = 0, b = 0, k = 0; for (let y = 0; y < n; y++) for (let x = 0; x < n; x++) { const d = Math.hypot(x - n / 2 + .5, y - n / 2 + .5) / (n / 2); if (d < .8 || d > .95) continue; const o = (y * n + x) * 4; r += p[o]; gg += p[o + 1]; b += p[o + 2]; k++; }
       return new THREE.Color(r / k / 255, gg / k / 255, b / k / 255).convertSRGBToLinear(); }
     function armarMoneda(M, txE, txR) {
-      const R = M.diametro / 2, H = M.grosor, g = new THREE.Group(), seg = 160;
+      const R = M.diametro / 2, H = M.grosor - (M.diametro > 15.5 ? .02 : 0), g = new THREE.Group(), seg = 160; // canto 0,02 mm más delgado, menos en la de 1 colón (pedido de Miguel)
       const caraMat = tx => new THREE.MeshPhysicalMaterial({ map: tx, bumpMap: tx, bumpScale: 1.2, metalness: .85, roughness: .36, clearcoat: .25, clearcoatRoughness: .2, envMapIntensity: 1.2 });
       const frente = new THREE.Mesh(new THREE.CircleGeometry(R, seg), caraMat(txR)); frente.position.z = H / 2; g.add(frente); // cara principal: el número, centrado y legible
       const atras = new THREE.Mesh(new THREE.CircleGeometry(R, seg), caraMat(txE)); atras.rotation.x = Math.PI; atras.position.z = -H / 2; g.add(atras); // escudo girado 180° respecto al número (alineación de moneda)
