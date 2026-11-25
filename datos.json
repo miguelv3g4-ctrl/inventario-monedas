@@ -329,7 +329,8 @@
    "fotos": [
     "coleccion-completa-10-colones-serie-d-con-variante.jpg",
     "coleccion-completa-10-colones-serie-d-con-variante-2.jpg",
-    "coleccion-completa-10-colones-serie-d-con-variante-3.jpg"
+    "coleccion-completa-10-colones-serie-d-con-variante-3.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
    ],
    "fotosCompra": [
     "coleccion-completa-10-colones-serie-d-con-variante.jpg",
@@ -343,8 +344,9 @@
    "fechaCompra": "2020-02-21",
    "origen": "reventa",
    "fechaVenta": "2026-11-21",
-   "notas": "Código: Colección completa fechas y variantes 10 colones serie D\nBillete de 10 colones. Serie D con variantes. Producto: Colección completa 10 colones serie D con variantes. Categoría: Billetes. Código: Colección completa fechas y variantes 10 colones serie D. Precio de venta: ₡200 000. Disponibles: 1.\nGrado estimado (escala PMG, por foto, 21/11/2026): VF 25 a AU 55 (lote). Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Casi sin circular (AU: solo un doblez leve o manejo mínimo). Detalle: Lote mixto en álbum: la mayoría con circulación leve, algunos nítidos; no calificable uno por uno.",
-   "anio": 1972
+   "notas": "Código: Colección completa fechas y variantes 10 colones serie D\nBillete de 10 colones. Serie D con variantes. Producto: Colección completa 10 colones serie D con variantes. Categoría: Billetes. Código: Colección completa fechas y variantes 10 colones serie D. Precio de venta: ₡200 000. Disponibles: 1.\nGrado estimado (escala PMG, por foto, 21/11/2026): VF 25 a AU 55 (lote). Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Casi sin circular (AU: solo un doblez leve o manejo mínimo). Detalle: Lote mixto en álbum: la mayoría con circulación leve, algunos nítidos; no calificable uno por uno.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
+   "anio": 1972,
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-bfeb6e5b": {
    "tengo": true,
@@ -8702,75 +8704,92 @@
   },
   "O-x885f202b7": {
    "tengo": true,
-   "notas": "fecha 1\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Papel blanco, nítido; solo frente y funda: dobleces suaves no confirmables.",
+   "notas": "fecha 1\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Papel blanco, nítido; solo frente y funda: dobleces suaves no confirmables.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-x885f202b7-billete-1.jpg"
-   ]
+    "O-x885f202b7-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-xff3a96c8c": {
    "tengo": true,
-   "notas": "fecha 2\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 20 a VF 25. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Papel tonado y sucio, bordes gastados, esquinas romas: circulado moderado.",
+   "notas": "fecha 2\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 20 a VF 25. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Papel tonado y sucio, bordes gastados, esquinas romas: circulado moderado.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-xff3a96c8c-billete-1.jpg"
-   ]
+    "O-xff3a96c8c-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x71be4cb8b": {
    "tengo": true,
-   "notas": "fecha 3\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 30 a XF 40. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Bastante limpio, líneas finas y ondulación en margen; probables dobleces leves.",
+   "notas": "fecha 3\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 30 a XF 40. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Bastante limpio, líneas finas y ondulación en margen; probables dobleces leves.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-x71be4cb8b-billete-1.jpg"
-   ]
+    "O-x71be4cb8b-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-xa206f238c": {
    "tengo": true,
-   "notas": "fecha 4\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): F 15 a VF 20. Nivel: Fino (F: circulado, con muchos dobleces y papel blando) a Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Papel oscurecido en todo el billete, suciedad en bordes, circulación fuerte.",
+   "notas": "fecha 4\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): F 15 a VF 20. Nivel: Fino (F: circulado, con muchos dobleces y papel blando) a Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Papel oscurecido en todo el billete, suciedad en bordes, circulación fuerte.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-xa206f238c-billete-1.jpg"
-   ]
+    "O-xa206f238c-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-xa56b8126a": {
    "tengo": true,
-   "notas": "fecha 5\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 25 a VF 35. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Tono general y algo de suciedad; dobleces probables, solo frente visible.",
+   "notas": "fecha 5\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 25 a VF 35. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Tono general y algo de suciedad; dobleces probables, solo frente visible.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-xa56b8126a-billete-1.jpg"
-   ]
+    "O-xa56b8126a-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-xb93d98d35": {
    "tengo": true,
-   "notas": "fecha 6\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Limpio y nítido; sin reverso ni luz rasante, UNC no confirmable.",
+   "notas": "fecha 6\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Limpio y nítido; sin reverso ni luz rasante, UNC no confirmable.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-xb93d98d35-billete-1.jpg"
-   ]
+    "O-xb93d98d35-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x6283d1757": {
    "tengo": true,
-   "notas": "fecha 7\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Papel limpio, colores vivos; la funda impide ver dobleces suaves.",
+   "notas": "fecha 7\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Papel limpio, colores vivos; la funda impide ver dobleces suaves.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-x6283d1757-billete-1.jpg"
-   ]
+    "O-x6283d1757-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x7ca97f991": {
    "tengo": true,
-   "notas": "fecha 8\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 20 a VF 25. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Papel tonado y sucio en todo el billete; la fecha impresa dice 16 de noviembre.\nFecha corregida según lo impreso en el billete (antes: 16/10/1978).",
+   "notas": "fecha 8\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 20 a VF 25. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Papel tonado y sucio en todo el billete; la fecha impresa dice 16 de noviembre.\nFecha corregida según lo impreso en el billete (antes: 16/10/1978).\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-x7ca97f991-billete-1.jpg"
-   ]
+    "O-x7ca97f991-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x576bd5e4c": {
    "tengo": true,
-   "notas": "Variantes de esta fecha: Fecha pequeña, Fecha grande.\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".",
+   "notas": "Variantes de esta fecha: Fecha pequeña, Fecha grande.\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
     "O-x576bd5e4c-billete-1.jpg",
-    "O-xafb9a5c34-billete-1.jpg"
+    "O-xafb9a5c34-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
    ],
    "variantes": [
     {
@@ -8778,7 +8797,8 @@
      "nombre": "Fecha pequeña",
      "explicacion": "Los números de la fecha impresa son de tamaño pequeño.",
      "fotos": [
-      "O-x576bd5e4c-billete-1.jpg"
+      "O-x576bd5e4c-billete-1.jpg",
+      "privado:web-billete-10-colones-serie-d-reverso.jpg"
      ],
      "notas": "Fuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 30 a XF 45. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Tono leve y marcas finas en márgenes; probable circulación ligera."
     },
@@ -8787,55 +8807,72 @@
      "nombre": "Fecha grande",
      "explicacion": "Los números de la fecha impresa son más grandes que en la variante de fecha pequeña.",
      "fotos": [
-      "O-xafb9a5c34-billete-1.jpg"
+      "O-xafb9a5c34-billete-1.jpg",
+      "privado:web-billete-10-colones-serie-d-reverso.jpg"
      ],
      "notas": "Fuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 25 a XF 40. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Esquinas y bordes con suciedad, tono parejo; circulado ligero a moderado."
     }
    ],
-   "cantidad": 2
+   "cantidad": 2,
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x9b61e52aa": {
    "tengo": true,
-   "notas": "fecha 10 · fecha gringa\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado del lote de la colección completa (escala PMG, por fotos del álbum, 21/11/2026; no calificado uno por uno): VF 25 a AU 55 (lote). Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Casi sin circular (AU: solo un doblez leve o manejo mínimo). Detalle: Lote mixto en álbum: la mayoría con circulación leve, algunos nítidos; no calificable uno por uno.",
-   "enColeccion": "O-9b939ff5"
+   "notas": "fecha 10 · fecha gringa\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado del lote de la colección completa (escala PMG, por fotos del álbum, 21/11/2026; no calificado uno por uno): VF 25 a AU 55 (lote). Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Casi sin circular (AU: solo un doblez leve o manejo mínimo). Detalle: Lote mixto en álbum: la mayoría con circulación leve, algunos nítidos; no calificable uno por uno.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
+   "enColeccion": "O-9b939ff5",
+   "fotos": [
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-xa6fbe134c": {
    "tengo": true,
-   "notas": "fecha 11 · fecha gringa\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado del lote de la colección completa (escala PMG, por fotos del álbum, 21/11/2026; no calificado uno por uno): VF 25 a AU 55 (lote). Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Casi sin circular (AU: solo un doblez leve o manejo mínimo). Detalle: Lote mixto en álbum: la mayoría con circulación leve, algunos nítidos; no calificable uno por uno.",
-   "enColeccion": "O-9b939ff5"
+   "notas": "fecha 11 · fecha gringa\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado del lote de la colección completa (escala PMG, por fotos del álbum, 21/11/2026; no calificado uno por uno): VF 25 a AU 55 (lote). Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Casi sin circular (AU: solo un doblez leve o manejo mínimo). Detalle: Lote mixto en álbum: la mayoría con circulación leve, algunos nítidos; no calificable uno por uno.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
+   "enColeccion": "O-9b939ff5",
+   "fotos": [
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x6134dcf6c": {
    "tengo": true,
-   "notas": "fecha 12 · fecha gringa\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Limpio, buen color; solo frente a través de funda, no confirmable.",
+   "notas": "fecha 12 · fecha gringa\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Limpio, buen color; solo frente a través de funda, no confirmable.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-x6134dcf6c-billete-1.jpg"
-   ]
+    "O-x6134dcf6c-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x2c8a9870f": {
    "tengo": true,
-   "notas": "fecha 13 · fecha gringa\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Muy limpio y nítido; la fecha impresa dice Noviembre 15.\nFecha corregida según lo impreso en el billete (antes: 15/10/1979 ).",
+   "notas": "fecha 13 · fecha gringa\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Muy limpio y nítido; la fecha impresa dice Noviembre 15.\nFecha corregida según lo impreso en el billete (antes: 15/10/1979 ).\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-x2c8a9870f-billete-1.jpg"
-   ]
+    "O-x2c8a9870f-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-xfc353688a": {
    "tengo": true,
-   "notas": "fecha 14\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Limpio, márgenes parejos; sin luz rasante no se descartan dobleces.",
+   "notas": "fecha 14\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Limpio, márgenes parejos; sin luz rasante no se descartan dobleces.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-xfc353688a-billete-1.jpg"
-   ]
+    "O-xfc353688a-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x1d3a8b608": {
    "tengo": true,
-   "notas": "Variantes de esta fecha: Fecha grande, Fecha pequeña, Fecha corrida hacia arriba.\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".",
+   "notas": "Variantes de esta fecha: Fecha grande, Fecha pequeña, Fecha corrida hacia arriba.\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
     "O-x1d3a8b608-billete-1.jpg",
     "O-xeadd04555-billete-1.jpg",
-    "O-x58ca08f77-billete-1.jpg"
+    "O-x58ca08f77-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
    ],
    "variantes": [
     {
@@ -8843,7 +8880,8 @@
      "nombre": "Fecha grande",
      "explicacion": "Los números de la fecha impresa son grandes.",
      "fotos": [
-      "O-x1d3a8b608-billete-1.jpg"
+      "O-x1d3a8b608-billete-1.jpg",
+      "privado:web-billete-10-colones-serie-d-reverso.jpg"
      ],
      "notas": "Fuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 40 a UNC 62 (Foxing). Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Puntos de óxido en márgenes superior e inferior; frente sin dobleces visibles."
     },
@@ -8852,7 +8890,8 @@
      "nombre": "Fecha pequeña",
      "explicacion": "Los números de la fecha impresa son pequeños.",
      "fotos": [
-      "O-xeadd04555-billete-1.jpg"
+      "O-xeadd04555-billete-1.jpg",
+      "privado:web-billete-10-colones-serie-d-reverso.jpg"
      ],
      "notas": "Fuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Limpio, buen color; funda y foto plana impiden confirmar sin circular."
     },
@@ -8861,70 +8900,85 @@
      "nombre": "Fecha corrida hacia arriba",
      "explicacion": "La fecha quedó impresa más arriba de su lugar normal (corrimiento de impresión).",
      "fotos": [
-      "O-x58ca08f77-billete-1.jpg"
+      "O-x58ca08f77-billete-1.jpg",
+      "privado:web-billete-10-colones-serie-d-reverso.jpg"
      ],
      "notas": "Fuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): F 12 a VF 20. Nivel: Fino (F: circulado, con muchos dobleces y papel blando) a Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Muy circulado: papel sucio y blando, manchas, bordes gastados."
     }
    ],
-   "cantidad": 3
+   "cantidad": 3,
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-xbb502c427": {
    "tengo": true,
-   "notas": "fecha 16\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 30 a XF 40 (Foxing). Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Manchas café de humedad en lado derecho y tono general.",
+   "notas": "fecha 16\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 30 a XF 40 (Foxing). Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Manchas café de humedad en lado derecho y tono general.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-xbb502c427-billete-1.jpg"
-   ]
+    "O-xbb502c427-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x8c49892bf": {
    "tengo": true,
-   "notas": "fecha 17\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 64. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Muy limpio, colores vivos, buen centrado; UNC no confirmable sin reverso.\nFecha corregida según lo impreso en el billete (antes: 04/10/1982).",
+   "notas": "fecha 17\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 64. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Muy limpio, colores vivos, buen centrado; UNC no confirmable sin reverso.\nFecha corregida según lo impreso en el billete (antes: 04/10/1982).\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-x8c49892bf-billete-1.jpg"
-   ]
+    "O-x8c49892bf-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x82b9e8ac4": {
    "tengo": true,
-   "notas": "fecha 18\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 40 a UNC 62 (Foxing). Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Puntos de óxido arriba a la derecha y márgenes; resto limpio.",
+   "notas": "fecha 18\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 40 a UNC 62 (Foxing). Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Puntos de óxido arriba a la derecha y márgenes; resto limpio.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-x82b9e8ac4-billete-1.jpg"
-   ]
+    "O-x82b9e8ac4-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-xa7527d897": {
    "tengo": true,
-   "notas": "fecha 19\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 64. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Papel muy blanco y nítido; solo frente, dobleces suaves no confirmables.",
+   "notas": "fecha 19\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 64. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Papel muy blanco y nítido; solo frente, dobleces suaves no confirmables.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-xa7527d897-billete-1.jpg"
-   ]
+    "O-xa7527d897-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-xedb802424": {
    "tengo": true,
-   "notas": "fecha 20\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 30 a XF 40 NET (Stained). Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Mancha café fuerte en todo el billete; PMG lo marcaría NET.",
+   "notas": "fecha 20\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 30 a XF 40 NET (Stained). Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Mancha café fuerte en todo el billete; PMG lo marcaría NET.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-xedb802424-billete-1.jpg"
-   ]
+    "O-xedb802424-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x548eec141": {
    "tengo": true,
-   "notas": "fecha 21\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Limpio con puntitos leves; la fecha impresa dice 2 de octubre.\nFecha corregida según lo impreso en el billete (antes: 05/10/1985).",
+   "notas": "fecha 21\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Limpio con puntitos leves; la fecha impresa dice 2 de octubre.\nFecha corregida según lo impreso en el billete (antes: 05/10/1985).\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
-    "O-x548eec141-billete-1.jpg"
-   ]
+    "O-x548eec141-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x5a77b4af3": {
    "tengo": true,
-   "notas": "Variantes de esta fecha: Consecutivos, Serie parcial repetidor.\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".",
+   "notas": "Variantes de esta fecha: Consecutivos, Serie parcial repetidor.\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
     "O-x5a77b4af3-billete-1.jpg",
     "O-x5a77b4af3-billete-2.jpg",
     "O-x5a77b4af3-billete-3.jpg",
-    "O-x49d5ec145-billete-1.jpg"
+    "O-x49d5ec145-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
    ],
    "variantes": [
     {
@@ -8934,7 +8988,8 @@
      "fotos": [
       "O-x5a77b4af3-billete-1.jpg",
       "O-x5a77b4af3-billete-2.jpg",
-      "O-x5a77b4af3-billete-3.jpg"
+      "O-x5a77b4af3-billete-3.jpg",
+      "privado:web-billete-10-colones-serie-d-reverso.jpg"
      ],
      "notas": "Fuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 64 / XF 40 a UNC 62 / VF 20 a VF 25. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: billete 1 nítido; billete 2 tono leve; billete 3 circulado."
     },
@@ -8943,20 +8998,23 @@
      "nombre": "Serie parcial repetidor",
      "explicacion": "El número de serie tiene un grupo de dígitos que se repite (repetidor parcial).",
      "fotos": [
-      "O-x49d5ec145-billete-1.jpg"
+      "O-x49d5ec145-billete-1.jpg",
+      "privado:web-billete-10-colones-serie-d-reverso.jpg"
      ],
      "notas": "fecha 22 · serie parcial repetidor\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 40 a AU 58. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Casi sin circular (AU: solo un doblez leve o manejo mínimo). Detalle: Tono leve y suciedad en bordes."
     }
    ],
-   "cantidad": 4
+   "cantidad": 4,
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-xc22547a02": {
    "tengo": true,
-   "notas": "Variantes de esta fecha: Normal, Error de impresión de fecha.\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".",
+   "notas": "Variantes de esta fecha: Normal, Error de impresión de fecha.\nParte de la \"Colección completa 10 colones serie D con variantes\" (el precio está en esa pieza).\nFuente: Excel billetes costa rica, hoja \"10 serie D\".\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "enColeccion": "O-9b939ff5",
    "fotos": [
     "O-xc22547a02-billete-1.jpg",
-    "O-xbd8e016e8-billete-1.jpg"
+    "O-xbd8e016e8-billete-1.jpg",
+    "privado:web-billete-10-colones-serie-d-reverso.jpg"
    ],
    "variantes": [
     {
@@ -8964,7 +9022,8 @@
      "nombre": "Normal",
      "explicacion": "Fecha impresa normal.",
      "fotos": [
-      "O-xc22547a02-billete-1.jpg"
+      "O-xc22547a02-billete-1.jpg",
+      "privado:web-billete-10-colones-serie-d-reverso.jpg"
      ],
      "notas": "Fuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 40 a UNC 62 (Foxing). Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Puntos de óxido junto al retrato y margen derecho."
     },
@@ -8973,12 +9032,14 @@
      "nombre": "Error de impresión de fecha",
      "explicacion": "La fecha salió mal impresa: débil o incompleta.",
      "fotos": [
-      "O-xbd8e016e8-billete-1.jpg"
+      "O-xbd8e016e8-billete-1.jpg",
+      "privado:web-billete-10-colones-serie-d-reverso.jpg"
      ],
      "notas": "Fuente: Excel billetes costa rica, hoja \"10 serie D\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 45 a UNC 63. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: Limpio, buen color; fecha impresa débil; la funda impide confirmar dobleces."
     }
    ],
-   "cantidad": 2
+   "cantidad": 2,
+   "reversoWeb": "privado:web-billete-10-colones-serie-d-reverso.jpg"
   },
   "O-x8bae38ff6": {
    "tengo": false,
@@ -9018,23 +9079,27 @@
   },
   "O-xe547adf2f": {
    "tengo": true,
-   "notas": "Serie: C11072004\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): F 15 a VF 20. Nivel: Fino (F: circulado, con muchos dobleces y papel blando) a Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Papel sucio, dobleces visibles, esquinas gastadas: circulación fuerte.",
+   "notas": "Serie: C11072004\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): F 15 a VF 20. Nivel: Fino (F: circulado, con muchos dobleces y papel blando) a Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Papel sucio, dobleces visibles, esquinas gastadas: circulación fuerte.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "origen": "reventa",
    "valor": 20000,
    "costo": 20000,
    "fotos": [
-    "O-xe547adf2f-billete-1.jpg"
-   ]
+    "O-xe547adf2f-billete-1.jpg",
+    "privado:web-billete-20-colones-serie-c-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-20-colones-serie-c-reverso.jpg"
   },
   "O-xd78528316": {
    "tengo": true,
-   "notas": "Serie: C11776060\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 20 a VF 25. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Suciedad general y dobleces marcados; borde inferior gastado.\n¿Por qué es especial? La serie 11776060 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 6060). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.",
+   "notas": "Serie: C11776060\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 20 a VF 25. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Suciedad general y dobleces marcados; borde inferior gastado.\n¿Por qué es especial? La serie 11776060 es una serie rara: un pedacito del número aparece dos veces seguidas (en este billete: 6060). A los coleccionistas les gustan estos números y por eso el billete vale más que uno común.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "origen": "reventa",
    "valor": 35000,
    "costo": 35000,
    "fotos": [
-    "O-xd78528316-billete-1.jpg"
-   ]
+    "O-xd78528316-billete-1.jpg",
+    "privado:web-billete-20-colones-serie-c-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-20-colones-serie-c-reverso.jpg"
   },
   "O-x5da28fa97": {
    "tengo": false,
@@ -9050,23 +9115,27 @@
   },
   "O-x2c41dae7c": {
    "tengo": true,
-   "notas": "Serie: C17358434\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 30 a XF 45. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Bastante limpio, algo de suciedad en bordes; dobleces no visibles por la funda.",
+   "notas": "Serie: C17358434\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 30 a XF 45. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Bastante limpio, algo de suciedad en bordes; dobleces no visibles por la funda.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "origen": "reventa",
    "valor": 20000,
    "costo": 20000,
    "fotos": [
-    "O-x2c41dae7c-billete-1.jpg"
-   ]
+    "O-x2c41dae7c-billete-1.jpg",
+    "privado:web-billete-20-colones-serie-c-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-20-colones-serie-c-reverso.jpg"
   },
   "O-x70cb01b09": {
    "tengo": true,
-   "notas": "Serie: C19711366\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 30 a XF 40. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Tono leve y suciedad en márgenes; circulación ligera probable.",
+   "notas": "Serie: C19711366\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 30 a XF 40. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme) a Extra fino (XF: poca circulación, unos 3 dobleces leves). Detalle: Tono leve y suciedad en márgenes; circulación ligera probable.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "origen": "reventa",
    "valor": 20000,
    "costo": 20000,
    "fotos": [
-    "O-x70cb01b09-billete-1.jpg"
-   ]
+    "O-x70cb01b09-billete-1.jpg",
+    "privado:web-billete-20-colones-serie-c-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-20-colones-serie-c-reverso.jpg"
   },
   "O-x3ceb017f7": {
    "tengo": false,
@@ -9074,45 +9143,53 @@
   },
   "O-x9db08e815": {
    "tengo": true,
-   "notas": "Serie: C21363852\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 20 a VF 25. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Suciedad, dobleces y esquinas redondeadas; circulado moderado.",
+   "notas": "Serie: C21363852\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 20 a VF 25. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Suciedad, dobleces y esquinas redondeadas; circulado moderado.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "origen": "reventa",
    "valor": 20000,
    "costo": 20000,
    "fotos": [
-    "O-x9db08e815-billete-1.jpg"
-   ]
+    "O-x9db08e815-billete-1.jpg",
+    "privado:web-billete-20-colones-serie-c-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-20-colones-serie-c-reverso.jpg"
   },
   "O-xd48eb5006": {
    "tengo": true,
-   "notas": "Serie: C23846918\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 25 a VF 30. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Papel tonado, suciedad en bordes y manchas leves; circulado.",
+   "notas": "Serie: C23846918\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): VF 25 a VF 30. Nivel: Muy fino (VF: circulado, con varios dobleces pero papel aún firme). Detalle: Papel tonado, suciedad en bordes y manchas leves; circulado.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "origen": "reventa",
    "valor": 20000,
    "costo": 20000,
    "fotos": [
-    "O-xd48eb5006-billete-1.jpg"
-   ]
+    "O-xd48eb5006-billete-1.jpg",
+    "privado:web-billete-20-colones-serie-c-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-20-colones-serie-c-reverso.jpg"
   },
   "O-xd1ef0b5bb": {
    "tengo": true,
-   "notas": "Serie: C25220839\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 40 a AU 55. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Casi sin circular (AU: solo un doblez leve o manejo mínimo). Detalle: Limpio y nítido, leve tono; la foto plana no muestra dobleces suaves.",
+   "notas": "Serie: C25220839\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): XF 40 a AU 55. Nivel: Extra fino (XF: poca circulación, unos 3 dobleces leves) a Casi sin circular (AU: solo un doblez leve o manejo mínimo). Detalle: Limpio y nítido, leve tono; la foto plana no muestra dobleces suaves.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "origen": "reventa",
    "valor": 20000,
    "costo": 20000,
    "fotos": [
-    "O-xd1ef0b5bb-billete-1.jpg"
-   ]
+    "O-xd1ef0b5bb-billete-1.jpg",
+    "privado:web-billete-20-colones-serie-c-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-20-colones-serie-c-reverso.jpg"
   },
   "O-x947325c3c": {
    "tengo": true,
    "cantidad": 2,
-   "notas": "Series: C29009738, C29112608, C27180250\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nDos billetes: series C29000738 y C29112608.\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): F 12 a VF 20 / XF 40 a UNC 62. Nivel: Fino (F: circulado, con muchos dobleces y papel blando) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: billete 1 sucio y gastado; billete 2 limpio y nítido, no confirmable.",
+   "notas": "Series: C29009738, C29112608, C27180250\nFuente: Excel billetes costa rica, hoja \"20 colones\".\nDos billetes: series C29000738 y C29112608.\nGrado estimado (escala PMG, por foto del frente, 22/11/2026): F 12 a VF 20 / XF 40 a UNC 62. Nivel: Fino (F: circulado, con muchos dobleces y papel blando) a Sin circular (UNC: nuevo, sin dobleces, esquinas en punta). Detalle: billete 1 sucio y gastado; billete 2 limpio y nítido, no confirmable.\nReverso: imagen de internet (no es foto propia), porque solo hay foto del frente.",
    "origen": "reventa",
    "valor": 20000,
    "costo": 20000,
    "fotos": [
     "O-x947325c3c-billete-1.jpg",
-    "O-x947325c3c-billete-2.jpg"
-   ]
+    "O-x947325c3c-billete-2.jpg",
+    "privado:web-billete-20-colones-serie-c-reverso.jpg"
+   ],
+   "reversoWeb": "privado:web-billete-20-colones-serie-c-reverso.jpg"
   },
   "O-x977278c81": {
    "tengo": false,
