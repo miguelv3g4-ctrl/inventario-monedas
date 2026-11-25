@@ -102,6 +102,18 @@
   /* el escudo se despega del fondo solo con sombra negra (sin halo ni fondo detrás) */
   .sello { filter: drop-shadow(0 6px 6px rgba(0, 0, 0, .85)) drop-shadow(0 18px 22px rgba(0, 0, 0, .8)); background: none; }
   canvas.sello { height: auto; }
+  #visor3d { position: fixed; inset: 0; z-index: 9000; display: flex; flex-direction: column; gap: 8px; padding: 12px max(12px, env(safe-area-inset-right)) 14px max(12px, env(safe-area-inset-left)); background: radial-gradient(ellipse 70% 55% at 50% 45%, #1d1810, #070605 75%); color: #e9e1d2; }
+  #visor3d[hidden] { display: none; }
+  .v3dCab { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .v3dTit { display: grid; gap: 2px; } .v3dTit b { color: var(--oro); font-size: 18px; } .v3dTit span { color: var(--gris); font-size: 13px; }
+  .v3dLienzo { position: relative; flex: 1; min-height: 0; }
+  #v3dCanvas { width: 100%; height: 100%; display: block; touch-action: none; cursor: grab; }
+  #v3dAviso { position: absolute; inset: 0; display: grid; place-items: center; color: var(--gris); pointer-events: none; }
+  #v3dRegla { position: absolute; left: 12px; bottom: 10px; display: grid; gap: 3px; color: var(--gris); font-size: 12px; pointer-events: none; }
+  #v3dRegla i { display: block; height: 6px; border: 1px solid var(--oro2); border-top: 0; }
+  .v3dBotones { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .v3dNota { margin: 0; text-align: center; color: var(--gris); font-size: 12px; }
+  #vBoton3d button { margin-top: 8px; width: 100%; }
   .sello3d { aspect-ratio: 15 / 12.9; filter: none !important; } /* escudo 3D: escudo y letras girando */
   .sello3d canvas { display: block; width: 100%; height: 100%; }
   #menu h1 { font: 24px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 6px 0 14px; }
@@ -293,6 +305,72 @@
   // ---------- escudo 3D: pieza cerrada con relieve por ambas caras (escudo + letras de la familia), girando 360°
   import * as THREE from 'three';
   import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+  import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+  // ---------- visor de monedas en 3D a escala 1:1 (milímetros reales)
+  {
+    const capa = document.getElementById('visor3d'), lienzo = document.getElementById('v3dCanvas'), aviso = document.getElementById('v3dAviso');
+    let R3 = null; // renderizador y escena, se crean la primera vez
+    const VISTA = 44; // milímetros que caben de alto en la pantalla (la misma regla para todas)
+    function preparar() {
+      const renderer = new THREE.WebGLRenderer({ canvas: lienzo, antialias: true, alpha: true, powerPreference: 'low-power' });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.75)); renderer.outputColorSpace = THREE.SRGBColorSpace;
+      renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05; renderer.setClearColor(0x000000, 0);
+      const escena = new THREE.Scene(), pm = new THREE.PMREMGenerator(renderer); escena.environment = pm.fromScene(new RoomEnvironment(renderer), 0.04).texture;
+      const l1 = new THREE.DirectionalLight(0xfff1d6, 2.4); l1.position.set(-40, 60, 80); escena.add(l1);
+      const l2 = new THREE.DirectionalLight(0xbcd0ff, 1.2); l2.position.set(50, -20, -60); escena.add(l2); escena.add(new THREE.AmbientLight(0xffffff, .15));
+      const camara = new THREE.PerspectiveCamera(30, 1, 1, 1000), DIST = (VISTA / 2) / Math.tan(15 * Math.PI / 180); camara.position.set(0, 0, DIST);
+      const ctl = new OrbitControls(camara, lienzo); ctl.enableDamping = true; ctl.enablePan = false; ctl.minDistance = DIST * .35; ctl.maxDistance = DIST * 1.6;
+      const grupo = new THREE.Group(); escena.add(grupo);
+      return { renderer, escena, camara, ctl, grupo, DIST, moneda: null, girando: true, vista: null };
+    }
+    function ajustar() { const r = lienzo.getBoundingClientRect(); R3.renderer.setSize(r.width, r.height, false); R3.camara.aspect = r.width / Math.max(1, r.height); R3.camara.updateProjectionMatrix();
+      const mmPx = r.height / (2 * R3.camara.position.length() * Math.tan(15 * Math.PI / 180)); document.querySelector('#v3dRegla i').style.width = (10 * mmPx).toFixed(1) + 'px'; }
+    const cargarTex = url => new Promise((ok, mal) => new THREE.TextureLoader().load(url, tx => { tx.colorSpace = THREE.SRGBColorSpace; tx.anisotropy = 4; ok(tx); }, undefined, mal));
+    function colorBorde(tx) { // color promedio cerca del borde de la cara, para el canto
+      const im = tx.image, c = document.createElement('canvas'), n = 64; c.width = c.height = n; const g = c.getContext('2d'); g.drawImage(im, 0, 0, n, n); const p = g.getImageData(0, 0, n, n).data;
+      let r = 0, gg = 0, b = 0, k = 0; for (let y = 0; y < n; y++) for (let x = 0; x < n; x++) { const d = Math.hypot(x - n / 2 + .5, y - n / 2 + .5) / (n / 2); if (d < .8 || d > .95) continue; const o = (y * n + x) * 4; r += p[o]; gg += p[o + 1]; b += p[o + 2]; k++; }
+      return new THREE.Color(r / k / 255, gg / k / 255, b / k / 255).convertSRGBToLinear(); }
+    function armarMoneda(M, txE, txR) {
+      const R = M.diametro / 2, H = M.grosor, g = new THREE.Group(), seg = 160;
+      const caraMat = tx => new THREE.MeshPhysicalMaterial({ map: tx, bumpMap: tx, bumpScale: 1.2, metalness: .85, roughness: .36, clearcoat: .25, clearcoatRoughness: .2, envMapIntensity: 1.2 });
+      const frente = new THREE.Mesh(new THREE.CircleGeometry(R, seg), caraMat(txE)); frente.position.z = H / 2; g.add(frente);
+      const atras = new THREE.Mesh(new THREE.CircleGeometry(R, seg), caraMat(txR)); atras.rotation.x = Math.PI; atras.position.z = -H / 2; g.add(atras); // girado de arriba a abajo: alineación de moneda
+      // canto: estriado (con estrías de verdad) o liso
+      const estriado = /estriado/i.test(M.canto || ''), nEst = estriado ? Math.round(Math.PI * M.diametro / .6) : 0, segC = estriado ? nEst * 4 : seg;
+      const cg = new THREE.CylinderGeometry(R, R, H, segC, 1, true); cg.rotateX(Math.PI / 2);
+      if (estriado) { const ps = cg.attributes.position; for (let i = 0; i < ps.count; i++) { const x = ps.getX(i), y = ps.getY(i), a = Math.atan2(y, x), f = R * (1 - .006 * (.5 + .5 * Math.cos(a * nEst))) ; ps.setXY(i, Math.cos(a) * f, Math.sin(a) * f); } cg.computeVertexNormals(); }
+      const canto = new THREE.Mesh(cg, new THREE.MeshPhysicalMaterial({ color: colorBorde(txE), metalness: .9, roughness: .32, envMapIntensity: 1.3 })); g.add(canto);
+      return g; }
+    function liberar() { if (!R3 || !R3.moneda) return; R3.moneda.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) { if (o.material.map) o.material.map.dispose(); o.material.dispose(); } }); R3.grupo.remove(R3.moneda); R3.moneda = null; }
+    function cerrar() { capa.hidden = true; window.VISOR3D_ABIERTO = false; if (R3) { R3.renderer.setAnimationLoop(null); liberar(); } }
+    document.getElementById('v3dCerrar').onclick = cerrar;
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && !capa.hidden) cerrar(); });
+    const bGiro = document.getElementById('v3dGiro');
+    bGiro.onclick = () => { R3.girando = !R3.girando; bGiro.textContent = R3.girando ? 'Pausar' : 'Girar'; };
+    capa.querySelectorAll('[data-v]').forEach(b => b.onclick = () => { R3.girando = false; bGiro.textContent = 'Girar'; R3.vista = b.dataset.v; R3.camara.position.set(0, 0, R3.DIST); R3.ctl.target.set(0, 0, 0); });
+    window.abrirMoneda3D = async id => {
+      const info = window.infoPieza3d && window.infoPieza3d(id); if (!info) return;
+      const { r, nombre } = info, M = r.medida3d;
+      document.getElementById('v3dNombre').textContent = nombre;
+      document.getElementById('v3dDatos').textContent = 'Diámetro ' + String(M.diametro).replace('.', ',') + ' mm · grosor ' + String(M.grosor).replace('.', ',') + ' mm · canto ' + (M.canto || 'liso').toLowerCase();
+      capa.hidden = false; window.VISOR3D_ABIERTO = true; aviso.hidden = false; aviso.textContent = 'Armando la moneda…';
+      try {
+        if (!R3) R3 = preparar(); ajustar(); liberar();
+        const [uE, uR] = await Promise.all([window.urlRef(r.caras3d.escudo), window.urlRef(r.caras3d.reverso)]);
+        if (!uE || !uR) throw new Error('Para ver esta moneda en 3D hay que entrar con la clave (sus caras son privadas).');
+        const [txE, txR] = await Promise.all([cargarTex(uE), cargarTex(uR)]);
+        R3.moneda = armarMoneda(M, txE, txR); R3.grupo.add(R3.moneda); R3.grupo.rotation.set(0, 0, 0);
+        R3.girando = true; bGiro.textContent = 'Pausar'; R3.vista = null; R3.camara.position.set(0, 0, R3.DIST); R3.ctl.target.set(0, 0, 0); aviso.hidden = true;
+        let ult = performance.now();
+        R3.renderer.setAnimationLoop(tt => { const dt = Math.min(.05, (tt - ult) / 1000); ult = tt; const gr = R3.grupo;
+          if (R3.girando) { gr.rotation.x += dt * .9; gr.rotation.y = Math.sin(tt / 2400) * .35; } // da vueltas de arriba a abajo, como una moneda lanzada
+          else if (R3.vista) { const obj = R3.vista === 'escudo' ? [0, 0] : R3.vista === 'reverso' ? [Math.PI, 0] : [0, Math.PI / 2];
+            const ax = gr.rotation.x % (2 * Math.PI); gr.rotation.x = ax + (obj[0] - ax) * .12; gr.rotation.y += (obj[1] - gr.rotation.y) * .12; }
+          R3.ctl.update(); R3.renderer.render(R3.escena, R3.camara); });
+      } catch (e) { aviso.hidden = false; aviso.textContent = (e && e.message) || 'No se pudo armar la moneda en 3D.'; }
+    };
+    new ResizeObserver(() => { if (R3 && !capa.hidden) ajustar(); }).observe(lienzo);
+  }
   function construirEscudo(px, w, h, ancho, opc = {}) {
     const conYelmo = opc.yelmo !== false, ref = opc.ref || ancho; // las letras no llevan yelmo ni penacho; ref fija la hondura igual que el escudo
     const n = w * h, tmp = new Float32Array(n);
@@ -466,7 +544,7 @@
       window.ESCUDO3D_LISTO = true;
       let ult = 0, giro = 0, anW = 0, anH = 0;
       renderer.setAnimationLoop(tt => {
-        if (tt - ult < 33 || document.hidden) return; // unas 30 imágenes por segundo
+        if (tt - ult < 33 || document.hidden || window.VISOR3D_ABIERTO) return; // unas 30 imágenes por segundo; pausa si el visor de monedas está abierto
         const dt = Math.min(.1, (tt - ult) / 1000); ult = tt;
         const lugar = lugares.find(d => d.offsetParent); if (!lugar) return; // solo se dibuja si el escudo está a la vista
         if (renderer.domElement.parentNode !== lugar) lugar.appendChild(renderer.domElement);
@@ -496,6 +574,12 @@
   </div>
 </div>
 <div id="aviso"></div>
+<div id="visor3d" hidden>
+  <div class="v3dCab"><div class="v3dTit"><b id="v3dNombre"></b><span id="v3dDatos"></span></div><button id="v3dCerrar" type="button">Cerrar</button></div>
+  <div class="v3dLienzo"><canvas id="v3dCanvas" aria-label="Moneda en 3D"></canvas><div id="v3dAviso">Armando la moneda…</div><div id="v3dRegla"><i></i><span>10 mm</span></div></div>
+  <div class="v3dBotones"><button type="button" data-v="escudo">Escudo</button><button type="button" data-v="reverso">Reverso</button><button type="button" data-v="canto">Canto</button><button type="button" id="v3dGiro">Pausar</button></div>
+  <p class="v3dNota">Tamaño a escala: todas las monedas se ven con la misma regla, así se pueden comparar entre sí. Arrastra para girarla y usa la rueda o dos dedos para acercarte.</p>
+</div>
 <div class="capa" id="menu">
   <div class="arriba">
     <span class="dato">Toda la colección: piezas<b id="mPiezas">–</b></span>
@@ -588,7 +672,7 @@
     <div class="pest"><button id="pValor">Valor de la colección</button><button id="pCompra">Inventario (compra)</button></div>
     <div id="vVariantes"></div>
     <div id="vCuerpo">
-      <div><div id="vFoto"></div><div id="vPrecioTab"></div><div id="vMinis"></div><div id="vRefInfo"></div></div>
+      <div><div id="vFoto"></div><div id="vBoton3d"></div><div id="vPrecioTab"></div><div id="vMinis"></div><div id="vRefInfo"></div></div>
       <div>
         <div class="rotulo" id="vRotulo"></div>
         <div id="vPrecio"></div>
@@ -783,6 +867,12 @@
     pendientesRef[k] = pendientesRef[k] || api('GET', '/privado/' + k).then(r => r.ok ? r.blob() : null).then(b => { if (b) locales['p:' + k] = URL.createObjectURL(b); return locales['p:' + k]; }).catch(() => null);
     pendientesRef[k].then(u => { if (u) img.src = u; else delete pendientesRef[k]; });
   }
+  // para el visor 3D: imagen (pública o privada) como dirección que se puede cargar
+  window.urlRef = rf => { if (!rf) return Promise.resolve(null); if (!rf.startsWith('privado:')) return Promise.resolve(rf); const k = rf.slice(8);
+    if (locales['p:' + k]) return Promise.resolve(locales['p:' + k]); if (!conectado()) return Promise.resolve(null);
+    pendientesRef[k] = pendientesRef[k] || api('GET', '/privado/' + k).then(r => r.ok ? r.blob() : null).then(b => { if (b) locales['p:' + k] = URL.createObjectURL(b); return locales['p:' + k]; }).catch(() => null);
+    return pendientesRef[k]; };
+  window.infoPieza3d = id => { const r = reg(id); if (!r.caras3d || !r.medida3d) return null; return { r, nombre: (datos.otras.find(o => o.id === id) || {}).nombre || id }; };
   const buscarEnInternet = p => 'https://www.google.com/search?tbm=isch&q=' + encodeURIComponent('Costa Rica ' + p.moneda + (p.tipo === 'Estuche' || p.tipo === 'Acrílico' ? ' ' + p.tipo : ''));
   const reg = id => datos.piezas[id] || {};
   const esEstucheHoja = id => !!(base[id] && !base[id].otra && base[id].tipo === 'Estuche');
@@ -1107,6 +1197,8 @@
   function renglon(caja, rotulo, valor) { if (!valor) return; const d = el('div'); d.append(el('span', '', rotulo + ': '), valor); caja.appendChild(d); }
   function pintarFicha() {
     const id = actual, r = reg(id), esValor = pestana === 'valor';
+    { const b3 = $('vBoton3d'); b3.textContent = ''; // moneda en 3D a escala real
+      if (r.caras3d && r.medida3d) { const b = el('button', 'fuerte', 'Ver en 3D'); b.type = 'button'; b.onclick = () => { if (window.abrirMoneda3D) window.abrirMoneda3D(id); else b.textContent = 'El 3D todavía está cargando…'; }; b3.appendChild(b); } }
     $('pValor').classList.toggle('activo', esValor); $('pCompra').classList.toggle('activo', !esValor);
     // variantes de la misma fecha en una sola tarjeta: una pestaña por variante, con su explicacion y sus fotos
     const vars = r.variantes || [], vv = $('vVariantes'); vv.textContent = ''; vv.style.display = vars.length ? '' : 'none';

@@ -4180,6 +4180,11 @@
     "grosor": 2.2,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x0085cc125-escudo.jpg",
+    "reverso": "privado:cara3d-O-x0085cc125-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x41e23a1e6": {
@@ -4505,6 +4510,11 @@
     "grosor": 1.7,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x150f54e4a-escudo.jpg",
+    "reverso": "privado:cara3d-O-x150f54e4a-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xd20f2c5d2": {
@@ -4561,6 +4571,11 @@
     "grosor": 1.7,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xd20f2c5d2-escudo.webp",
+    "reverso": "fotos-3d/O-xd20f2c5d2-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xd7c4d06a4": {
@@ -4617,6 +4632,11 @@
     "grosor": 1.7,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xd7c4d06a4-escudo.webp",
+    "reverso": "fotos-3d/O-xd7c4d06a4-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x109cb7dca": {
@@ -4672,6 +4692,11 @@
     "grosor": 1.7,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x109cb7dca-escudo.webp",
+    "reverso": "fotos-3d/O-x109cb7dca-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x7567e6ed2": {
@@ -4727,6 +4752,11 @@
     "grosor": 1.14,
     "canto": "Liso",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x7567e6ed2-escudo.webp",
+    "reverso": "fotos-3d/O-x7567e6ed2-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xead7a029a": {
@@ -4779,6 +4809,11 @@
     "grosor": 1.14,
     "canto": "Liso",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xead7a029a-escudo.webp",
+    "reverso": "fotos-3d/O-xead7a029a-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xce0766872": {
@@ -4831,6 +4866,11 @@
     "grosor": 1.14,
     "canto": "Liso",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xce0766872-escudo.webp",
+    "reverso": "fotos-3d/O-xce0766872-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x561dfed7f": {
@@ -4885,6 +4925,11 @@
     "grosor": 1.14,
     "canto": "Liso",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x561dfed7f-escudo.webp",
+    "reverso": "fotos-3d/O-x561dfed7f-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xea6d56c8d": {
@@ -4985,6 +5030,11 @@
     "grosor": 1.9,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xc3fc2b519-escudo.jpg",
+    "reverso": "privado:cara3d-O-xc3fc2b519-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xe0aaf7616": {
@@ -5031,6 +5081,11 @@
     "grosor": 1.9,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xe0aaf7616-escudo.jpg",
+    "reverso": "privado:cara3d-O-xe0aaf7616-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x8a6998b28": {
@@ -5075,6 +5130,11 @@
     "grosor": 1.9,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x8a6998b28-escudo.jpg",
+    "reverso": "privado:cara3d-O-x8a6998b28-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xb067abf23": {
@@ -5129,6 +5189,11 @@
     "grosor": 1.9,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xb067abf23-escudo.webp",
+    "reverso": "fotos-3d/O-xb067abf23-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x11bee65fb": {
@@ -5181,6 +5246,11 @@
     "grosor": 1.4,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x11bee65fb-escudo.webp",
+    "reverso": "fotos-3d/O-x11bee65fb-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x2bfc2e585": {
@@ -5236,6 +5306,11 @@
     "grosor": 1.4,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x2bfc2e585-escudo.webp",
+    "reverso": "fotos-3d/O-x2bfc2e585-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xfd1398080": {
@@ -5299,6 +5374,11 @@
     "grosor": 1.4,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xfd1398080-escudo.jpg",
+    "reverso": "privado:cara3d-O-xfd1398080-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xb55357d3b": {
@@ -5358,6 +5438,11 @@
     "grosor": 1.4,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xb55357d3b-escudo.jpg",
+    "reverso": "privado:cara3d-O-xb55357d3b-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xeea12af89": {
@@ -5410,6 +5495,11 @@
     "grosor": 1.4,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xeea12af89-escudo.webp",
+    "reverso": "fotos-3d/O-xeea12af89-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x8ce0a9cbe": {
@@ -5465,6 +5555,11 @@
     "grosor": 1.4,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x8ce0a9cbe-escudo.webp",
+    "reverso": "fotos-3d/O-x8ce0a9cbe-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x39370c2df": {
@@ -5566,6 +5661,11 @@
     "grosor": 2,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x1562341e0-escudo.jpg",
+    "reverso": "privado:cara3d-O-x1562341e0-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xb2a0db2d6": {
@@ -5621,6 +5721,11 @@
     "grosor": 2,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xb2a0db2d6-escudo.webp",
+    "reverso": "fotos-3d/O-xb2a0db2d6-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xd4802a3a4": {
@@ -5676,6 +5781,11 @@
     "grosor": 2,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xd4802a3a4-escudo.webp",
+    "reverso": "fotos-3d/O-xd4802a3a4-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x847ed7e7c": {
@@ -5728,6 +5838,11 @@
     "grosor": 2,
     "canto": "Liso",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x847ed7e7c-escudo.webp",
+    "reverso": "fotos-3d/O-x847ed7e7c-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xa8ced4273": {
@@ -5785,6 +5900,11 @@
     "grosor": 2,
     "canto": "Liso",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xa8ced4273-escudo.webp",
+    "reverso": "fotos-3d/O-xa8ced4273-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x19b5a2c7f": {
@@ -5839,6 +5959,11 @@
     "grosor": 2,
     "canto": "Liso",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x19b5a2c7f-escudo.webp",
+    "reverso": "fotos-3d/O-x19b5a2c7f-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x6b8c69a51": {
@@ -5893,6 +6018,11 @@
     "grosor": 2,
     "canto": "Liso",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x6b8c69a51-escudo.webp",
+    "reverso": "fotos-3d/O-x6b8c69a51-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x003714af8": {
@@ -5952,6 +6082,11 @@
     "grosor": 1.95,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xbec1cd63b-escudo.jpg",
+    "reverso": "privado:cara3d-O-xbec1cd63b-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x1d00c2792": {
@@ -5996,6 +6131,11 @@
     "grosor": 1.95,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x1d00c2792-escudo.jpg",
+    "reverso": "privado:cara3d-O-x1d00c2792-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xeb9bba39d": {
@@ -6048,6 +6188,11 @@
     "grosor": 1.95,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xeb9bba39d-escudo.webp",
+    "reverso": "fotos-3d/O-xeb9bba39d-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x97e4c2697": {
@@ -6126,6 +6271,11 @@
     "grosor": 1.95,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x97e4c2697-escudo.webp",
+    "reverso": "fotos-3d/O-x97e4c2697-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x0357cfcad": {
@@ -6172,6 +6322,11 @@
     "grosor": 1.95,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x0357cfcad-escudo.jpg",
+    "reverso": "fotos-3d/O-x0357cfcad-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x4ff6ed81f": {
@@ -6224,6 +6379,11 @@
     "grosor": 1.95,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x4ff6ed81f-escudo.webp",
+    "reverso": "fotos-3d/O-x4ff6ed81f-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xead69f4e3": {
@@ -6276,6 +6436,11 @@
     "grosor": 1.95,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xead69f4e3-escudo.webp",
+    "reverso": "fotos-3d/O-xead69f4e3-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x6907c6691": {
@@ -6362,6 +6527,11 @@
     "grosor": 1.92,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xc0213beb3-escudo.jpg",
+    "reverso": "privado:cara3d-O-xc0213beb3-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x55e57c564": {
@@ -6405,6 +6575,11 @@
     "grosor": 1.92,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x55e57c564-escudo.jpg",
+    "reverso": "privado:cara3d-O-x55e57c564-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x6ddfa1ed1": {
@@ -6449,6 +6624,11 @@
     "grosor": 1.92,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x6ddfa1ed1-escudo.jpg",
+    "reverso": "privado:cara3d-O-x6ddfa1ed1-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xd662fda1c": {
@@ -6494,6 +6674,11 @@
     "grosor": 1.92,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xd662fda1c-escudo.jpg",
+    "reverso": "privado:cara3d-O-xd662fda1c-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x0250cf030": {
@@ -6539,6 +6724,11 @@
     "grosor": 1.92,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x0250cf030-escudo.jpg",
+    "reverso": "privado:cara3d-O-x0250cf030-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x9074baa28": {
@@ -6584,6 +6774,11 @@
     "grosor": 1.96,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x9074baa28-escudo.jpg",
+    "reverso": "privado:cara3d-O-x9074baa28-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xdf61763bf": {
@@ -6635,6 +6830,11 @@
     "grosor": 1.96,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xdf61763bf-escudo.webp",
+    "reverso": "fotos-3d/O-xdf61763bf-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x51beaee62": {
@@ -6688,6 +6888,11 @@
     "grosor": 1.96,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x51beaee62-escudo.webp",
+    "reverso": "fotos-3d/O-x51beaee62-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xc36b26f4f": {
@@ -6741,6 +6946,11 @@
     "grosor": 1.96,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-xc36b26f4f-escudo.webp",
+    "reverso": "fotos-3d/O-xc36b26f4f-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-xe27fb207b": {
@@ -6785,6 +6995,11 @@
     "grosor": 1.9,
     "canto": "Liso",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xe27fb207b-escudo.jpg",
+    "reverso": "privado:cara3d-O-xe27fb207b-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x367dc9a8d": {
@@ -6837,6 +7052,11 @@
     "grosor": 2.1,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x367dc9a8d-escudo.webp",
+    "reverso": "fotos-3d/O-x367dc9a8d-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x7a50c185a": {
@@ -6881,6 +7101,11 @@
     "grosor": 2.1,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x7a50c185a-escudo.jpg",
+    "reverso": "privado:cara3d-O-x7a50c185a-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x23d1289ee": {
@@ -6933,6 +7158,11 @@
     "grosor": 2.1,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x23d1289ee-escudo.webp",
+    "reverso": "fotos-3d/O-x23d1289ee-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x4ffdc79ec": {
@@ -6977,6 +7207,11 @@
     "grosor": 1.9,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x4ffdc79ec-escudo.jpg",
+    "reverso": "privado:cara3d-O-x4ffdc79ec-reverso.jpg",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x69eae3145": {
@@ -7032,6 +7267,11 @@
     "grosor": 1.9,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x69eae3145-escudo.webp",
+    "reverso": "fotos-3d/O-x69eae3145-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x39afa064d": {
@@ -7084,6 +7324,11 @@
     "grosor": 1.9,
     "canto": "Estriado continuo",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x39afa064d-escudo.webp",
+    "reverso": "fotos-3d/O-x39afa064d-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x2678c4f97": {
@@ -9679,6 +9924,11 @@
     "grosor": 1,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x83a8e659f-escudo.webp",
+    "reverso": "fotos-3d/O-x83a8e659f-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x465ccbc47": {
@@ -9725,6 +9975,11 @@
     "grosor": 2,
     "canto": "Liso",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x465ccbc47-escudo.webp",
+    "reverso": "fotos-3d/O-x465ccbc47-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x5b5bad0ec": {
@@ -9771,6 +10026,11 @@
     "grosor": 1.96,
     "canto": "Estriado",
     "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+   },
+   "caras3d": {
+    "escudo": "fotos-3d/O-x5b5bad0ec-escudo.webp",
+    "reverso": "fotos-3d/O-x5b5bad0ec-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
    }
   },
   "O-x945fee44e": {
