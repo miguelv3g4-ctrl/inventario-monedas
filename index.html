@@ -333,8 +333,8 @@
     function armarMoneda(M, txE, txR) {
       const R = M.diametro / 2, H = M.grosor, g = new THREE.Group(), seg = 160;
       const caraMat = tx => new THREE.MeshPhysicalMaterial({ map: tx, bumpMap: tx, bumpScale: 1.2, metalness: .85, roughness: .36, clearcoat: .25, clearcoatRoughness: .2, envMapIntensity: 1.2 });
-      const frente = new THREE.Mesh(new THREE.CircleGeometry(R, seg), caraMat(txE)); frente.position.z = H / 2; g.add(frente);
-      const atras = new THREE.Mesh(new THREE.CircleGeometry(R, seg), caraMat(txR)); atras.rotation.x = Math.PI; atras.position.z = -H / 2; g.add(atras); // girado de arriba a abajo: alineación de moneda
+      const frente = new THREE.Mesh(new THREE.CircleGeometry(R, seg), caraMat(txR)); frente.position.z = H / 2; g.add(frente); // cara principal: el número, centrado y legible
+      const atras = new THREE.Mesh(new THREE.CircleGeometry(R, seg), caraMat(txE)); atras.rotation.x = Math.PI; atras.position.z = -H / 2; g.add(atras); // escudo girado 180° respecto al número (alineación de moneda)
       // canto: estriado (con estrías de verdad) o liso
       const estriado = /estriado/i.test(M.canto || ''), nEst = estriado ? Math.round(Math.PI * M.diametro / .6) : 0, segC = estriado ? nEst * 4 : seg;
       const cg = new THREE.CylinderGeometry(R, R, H, segC, 1, true); cg.rotateX(Math.PI / 2);
@@ -364,7 +364,7 @@
         let ult = performance.now();
         R3.renderer.setAnimationLoop(tt => { const dt = Math.min(.05, (tt - ult) / 1000); ult = tt; const gr = R3.grupo;
           if (R3.girando) { gr.rotation.x += dt * .9; gr.rotation.y = Math.sin(tt / 2400) * .35; } // da vueltas de arriba a abajo, como una moneda lanzada
-          else if (R3.vista) { const obj = R3.vista === 'escudo' ? [0, 0] : R3.vista === 'reverso' ? [Math.PI, 0] : [0, Math.PI / 2];
+          else if (R3.vista) { const obj = R3.vista === 'reverso' ? [0, 0] : R3.vista === 'escudo' ? [Math.PI, 0] : [0, Math.PI / 2];
             const ax = gr.rotation.x % (2 * Math.PI); gr.rotation.x = ax + (obj[0] - ax) * .12; gr.rotation.y += (obj[1] - gr.rotation.y) * .12; }
           R3.ctl.update(); R3.renderer.render(R3.escena, R3.camara); });
       } catch (e) { aviso.hidden = false; aviso.textContent = (e && e.message) || 'No se pudo armar la moneda en 3D.'; }
@@ -577,7 +577,7 @@
 <div id="visor3d" hidden>
   <div class="v3dCab"><div class="v3dTit"><b id="v3dNombre"></b><span id="v3dDatos"></span></div><button id="v3dCerrar" type="button">Cerrar</button></div>
   <div class="v3dLienzo"><canvas id="v3dCanvas" aria-label="Moneda en 3D"></canvas><div id="v3dAviso">Armando la moneda…</div><div id="v3dRegla"><i></i><span>10 mm</span></div></div>
-  <div class="v3dBotones"><button type="button" data-v="escudo">Escudo</button><button type="button" data-v="reverso">Reverso</button><button type="button" data-v="canto">Canto</button><button type="button" id="v3dGiro">Pausar</button></div>
+  <div class="v3dBotones"><button type="button" data-v="reverso">Número</button><button type="button" data-v="escudo">Escudo</button><button type="button" data-v="canto">Canto</button><button type="button" id="v3dGiro">Pausar</button></div>
   <p class="v3dNota">Tamaño a escala: todas las monedas se ven con la misma regla, así se pueden comparar entre sí. Arrastra para girarla y usa la rueda o dos dedos para acercarte.</p>
 </div>
 <div class="capa" id="menu">
