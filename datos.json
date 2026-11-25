@@ -9740,7 +9740,23 @@
    "costo": 2000,
    "origen": "museo",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó. Antes decía 1500. El valor de reventa no se cambió.\nSe sumó 1 moneda de la tarjeta \"500 colones (bicentenario bicolor esmaltada) 2022\" que estaba en el cono 1995-2021 (22/11/2026).",
-   "fo": "FO# 20094"
+   "fo": "FO# 20094",
+   "caras3d": {
+    "escudo": "fotos-3d/O-msacfccd037-escudo.webp",
+    "reverso": "fotos-3d/O-msacfccd037-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 28,
+    "grosor": 2.25,
+    "canto": "Estriado segmentado",
+    "grosor3d": 1.98,
+    "metal": "bimetálica",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-msda0cba6d9": {
    "tengo": true,
@@ -9783,7 +9799,23 @@
      ],
      "notas": "Valor anotado en el cartón: 2000 colones."
     }
-   ]
+   ],
+   "caras3d": {
+    "escudo": "privado:cara3d-O-msda0cba6d9-escudo.jpg",
+    "reverso": "fotos-3d/O-msda0cba6d9-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 28,
+    "grosor": 2.25,
+    "canto": "Estriado segmentado",
+    "grosor3d": 1.98,
+    "metal": "bimetálica",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-ms88823228f": {
    "tengo": true,
@@ -9803,7 +9835,23 @@
    "costo": 2000,
    "origen": "museo",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2022.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó.",
-   "fo": "FO# 21442"
+   "fo": "FO# 21442",
+   "caras3d": {
+    "escudo": "fotos-3d/O-ms88823228f-escudo.webp",
+    "reverso": "fotos-3d/O-ms88823228f-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 28,
+    "grosor": 2.25,
+    "canto": "Estriado segmentado",
+    "grosor3d": 1.98,
+    "metal": "bimetálica",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-msf0ffcd327": {
    "tengo": true,
@@ -9818,7 +9866,23 @@
    ],
    "valor": 1500,
    "costo": 2000,
-   "origen": "museo"
+   "origen": "museo",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-msf0ffcd327-escudo.jpg",
+    "reverso": "fotos-3d/O-msf0ffcd327-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 28,
+    "grosor": 2.25,
+    "canto": "Estriado segmentado",
+    "grosor3d": 1.98,
+    "metal": "bimetálica",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-ms6183d92ac": {
    "tengo": true,
@@ -9836,7 +9900,23 @@
    "costo": 150,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2023.\nPrecio revendedor",
-   "fo": "FO# 27599"
+   "fo": "FO# 27599",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-ms6183d92ac-escudo.jpg",
+    "reverso": "fotos-3d/O-ms6183d92ac-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 24.5,
+    "grosor": 1.75,
+    "canto": "Estriado segmentado",
+    "grosor3d": 1.37,
+    "metal": "alpaca (cobre, zinc y níquel)",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-msf62912f9d": {
    "tengo": true,
@@ -9854,7 +9934,23 @@
    "costo": 150,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2024.\nPrecio revendedor",
-   "fo": "FO# 28967"
+   "fo": "FO# 28967",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-msf62912f9d-escudo.jpg",
+    "reverso": "fotos-3d/O-msf62912f9d-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 24.5,
+    "grosor": 1.75,
+    "canto": "Estriado segmentado",
+    "grosor3d": 1.37,
+    "metal": "alpaca (cobre, zinc y níquel)",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-ms08faf0114": {
    "tengo": true,
@@ -9872,7 +9968,23 @@
    "costo": 150,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2024.\nPrecio revendedor",
-   "fo": "FO# 29429"
+   "fo": "FO# 29429",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-ms08faf0114-escudo.jpg",
+    "reverso": "fotos-3d/O-ms08faf0114-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 24.5,
+    "grosor": 1.75,
+    "canto": "Estriado segmentado",
+    "grosor3d": 1.37,
+    "metal": "alpaca (cobre, zinc y níquel)",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-ms1a3921216": {
    "tengo": true,
@@ -9890,7 +10002,23 @@
    "costo": 150,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2025.\nPrecio revendedor",
-   "fo": "FO# 29516"
+   "fo": "FO# 29516",
+   "caras3d": {
+    "escudo": "fotos-3d/O-ms1a3921216-escudo.webp",
+    "reverso": "fotos-3d/O-ms1a3921216-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 24.5,
+    "grosor": 1.75,
+    "canto": "Estriado segmentado",
+    "grosor3d": 1.37,
+    "metal": "alpaca (cobre, zinc y níquel)",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-ms22038ce3c": {
    "tengo": true,
@@ -9908,7 +10036,23 @@
    "costo": 150,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2025.\nPrecio revendedor",
-   "fo": "FO# 29572"
+   "fo": "FO# 29572",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-ms22038ce3c-escudo.jpg",
+    "reverso": "fotos-3d/O-ms22038ce3c-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 24.5,
+    "grosor": 1.75,
+    "canto": "Estriado segmentado",
+    "grosor3d": 1.37,
+    "metal": "alpaca (cobre, zinc y níquel)",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-msaeda5474f": {
    "tengo": true,
@@ -9926,7 +10070,23 @@
    "costo": 150,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2026.\nPrecio revendedor",
-   "fo": "FO# 29744"
+   "fo": "FO# 29744",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-msaeda5474f-escudo.jpg",
+    "reverso": "fotos-3d/O-msaeda5474f-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 24.5,
+    "grosor": 1.75,
+    "canto": "Estriado segmentado",
+    "grosor3d": 1.37,
+    "metal": "alpaca (cobre, zinc y níquel)",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-msea88dec85": {
    "tengo": true,
@@ -9943,7 +10103,23 @@
    "costo": 150,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
-   "fo": "FO# 29291"
+   "fo": "FO# 29291",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-msea88dec85-escudo.jpg",
+    "reverso": "fotos-3d/O-msea88dec85-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 22.5,
+    "grosor": 1.5,
+    "canto": "Liso",
+    "grosor3d": 1.26,
+    "metal": "latón con níquel",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-ms9537cf5bb": {
    "tengo": true,
@@ -9960,7 +10136,23 @@
    "costo": 500,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
-   "fo": "FO# 29746"
+   "fo": "FO# 29746",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-ms9537cf5bb-escudo.jpg",
+    "reverso": "fotos-3d/O-ms9537cf5bb-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 22.5,
+    "grosor": 1.5,
+    "canto": "Liso",
+    "grosor3d": 1.26,
+    "metal": "latón con níquel",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-msc6fe145c6": {
    "tengo": true,
@@ -9977,7 +10169,23 @@
    "costo": 150,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
-   "fo": "FO# 29745"
+   "fo": "FO# 29745",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-msc6fe145c6-escudo.jpg",
+    "reverso": "fotos-3d/O-msc6fe145c6-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 22.5,
+    "grosor": 1.5,
+    "canto": "Liso",
+    "grosor3d": 1.26,
+    "metal": "latón con níquel",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-ms30382c443": {
    "tengo": true,
@@ -9994,7 +10202,23 @@
    "costo": 500,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
-   "fo": "FO# 29879"
+   "fo": "FO# 29879",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-ms30382c443-escudo.jpg",
+    "reverso": "fotos-3d/O-ms30382c443-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 22.5,
+    "grosor": 1.5,
+    "canto": "Liso",
+    "grosor3d": 1.26,
+    "metal": "latón con níquel",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-ms1be002f96": {
    "tengo": true,
@@ -10011,7 +10235,23 @@
    "costo": 150,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor",
-   "fo": "FO# 30080"
+   "fo": "FO# 30080",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-ms1be002f96-escudo.jpg",
+    "reverso": "fotos-3d/O-ms1be002f96-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 22.5,
+    "grosor": 1.5,
+    "canto": "Liso",
+    "grosor3d": 1.26,
+    "metal": "latón con níquel",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-ms9e11d4fc2": {
    "tengo": true,
@@ -10027,7 +10267,23 @@
    "fuenteValor": "Precio revendedor",
    "costo": 200,
    "origen": "reventa",
-   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor"
+   "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-ms9e11d4fc2-escudo.jpg",
+    "reverso": "fotos-3d/O-ms9e11d4fc2-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 22.5,
+    "grosor": 1.5,
+    "canto": "Liso",
+    "grosor3d": 1.26,
+    "metal": "latón con níquel",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-ms6fe432eb2": {
    "tengo": true,
@@ -10044,7 +10300,23 @@
    "costo": 145,
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor",
-   "fo": "FO# 30097"
+   "fo": "FO# 30097",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-ms6fe432eb2-escudo.jpg",
+    "reverso": "fotos-3d/O-ms6fe432eb2-reverso.webp",
+    "nombres": [
+     "Diseño",
+     "Valor"
+    ]
+   },
+   "medida3d": {
+    "diametro": 22.5,
+    "grosor": 1.5,
+    "canto": "Liso",
+    "grosor3d": 1.26,
+    "metal": "latón con níquel",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-msde9df0025": {
    "tengo": true,
@@ -11410,7 +11682,19 @@
    "notas": "Moneda de 10 colones de 2023, el diseño nuevo de acero: por un lado el 10 grande con \"REPÚBLICA DE COSTA RICA\" alrededor, y por el otro el escudo con el año 2023.\nVersión MS (sin circular).\nSon nuevas, sin circular (UNC). Hay 10 en la colección; cada una vale 300 colones.",
    "valor": 300,
    "fechaValor": "2026-11-23",
-   "fuenteValor": "Precio de reventa"
+   "fuenteValor": "Precio de reventa",
+   "caras3d": {
+    "escudo": "fotos-3d/O-7c90e7c8-escudo.webp",
+    "reverso": "fotos-3d/O-7c90e7c8-reverso.webp"
+   },
+   "medida3d": {
+    "diametro": 20,
+    "grosor": 1.22,
+    "canto": "Estriado",
+    "grosor3d": 0.98,
+    "metal": "acero inoxidable",
+    "fuente": "Medidas de uCoin y del BCCR; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D)."
+   }
   },
   "O-186c13b1": {
    "tengo": true,
