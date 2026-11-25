@@ -9742,11 +9742,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2021.\nPrecio revendedor\nFotos del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó. Antes decía 1500. El valor de reventa no se cambió.\nSe sumó 1 moneda de la tarjeta \"500 colones (bicentenario bicolor esmaltada) 2022\" que estaba en el cono 1995-2021 (22/11/2026).",
    "fo": "FO# 20094",
    "caras3d": {
-    "escudo": "fotos-3d/O-msacfccd037-escudo.webp",
-    "reverso": "fotos-3d/O-msacfccd037-reverso.webp",
+    "escudo": "fotos-3d/O-msacfccd037-reverso.webp",
+    "reverso": "fotos-3d/O-msacfccd037-escudo.webp",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -9801,11 +9801,11 @@
     }
    ],
    "caras3d": {
-    "escudo": "privado:cara3d-O-msda0cba6d9-escudo.jpg",
-    "reverso": "fotos-3d/O-msda0cba6d9-reverso.webp",
+    "escudo": "fotos-3d/O-msda0cba6d9-reverso.webp",
+    "reverso": "privado:cara3d-O-msda0cba6d9-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -9837,11 +9837,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 500 colones. Año de emisión: 2022.\nPrecio revendedor\nFotos del video del álbum (22/11/2026): la cara conmemorativa es de la moneda del álbum; el reverso de 500 colones es de otra bimetálica del mismo diseño.\nPrecio de compra en el Museo del Banco Central: 2000 colones cada una (el set de 3 monedas costó 6000). Venían en el set de monedas UNC (sin circular) de 500 colones; la moneda de los dos escudos (175 años de la Fundación) no venía porque se agotó.",
    "fo": "FO# 21442",
    "caras3d": {
-    "escudo": "fotos-3d/O-ms88823228f-escudo.webp",
-    "reverso": "fotos-3d/O-ms88823228f-reverso.webp",
+    "escudo": "fotos-3d/O-ms88823228f-reverso.webp",
+    "reverso": "fotos-3d/O-ms88823228f-escudo.webp",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -9868,11 +9868,11 @@
    "costo": 2000,
    "origen": "museo",
    "caras3d": {
-    "escudo": "privado:cara3d-O-msf0ffcd327-escudo.jpg",
-    "reverso": "fotos-3d/O-msf0ffcd327-reverso.webp",
+    "escudo": "fotos-3d/O-msf0ffcd327-reverso.webp",
+    "reverso": "privado:cara3d-O-msf0ffcd327-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -9902,11 +9902,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2023.\nPrecio revendedor",
    "fo": "FO# 27599",
    "caras3d": {
-    "escudo": "privado:cara3d-O-ms6183d92ac-escudo.jpg",
-    "reverso": "fotos-3d/O-ms6183d92ac-reverso.webp",
+    "escudo": "fotos-3d/O-ms6183d92ac-reverso.webp",
+    "reverso": "privado:cara3d-O-ms6183d92ac-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -9936,11 +9936,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2024.\nPrecio revendedor",
    "fo": "FO# 28967",
    "caras3d": {
-    "escudo": "privado:cara3d-O-msf62912f9d-escudo.jpg",
-    "reverso": "fotos-3d/O-msf62912f9d-reverso.webp",
+    "escudo": "fotos-3d/O-msf62912f9d-reverso.webp",
+    "reverso": "privado:cara3d-O-msf62912f9d-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -9970,11 +9970,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2024.\nPrecio revendedor",
    "fo": "FO# 29429",
    "caras3d": {
-    "escudo": "privado:cara3d-O-ms08faf0114-escudo.jpg",
-    "reverso": "fotos-3d/O-ms08faf0114-reverso.webp",
+    "escudo": "fotos-3d/O-ms08faf0114-reverso.webp",
+    "reverso": "privado:cara3d-O-ms08faf0114-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -10004,11 +10004,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2025.\nPrecio revendedor",
    "fo": "FO# 29516",
    "caras3d": {
-    "escudo": "fotos-3d/O-ms1a3921216-escudo.webp",
-    "reverso": "fotos-3d/O-ms1a3921216-reverso.webp",
+    "escudo": "fotos-3d/O-ms1a3921216-reverso.webp",
+    "reverso": "fotos-3d/O-ms1a3921216-escudo.webp",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -10038,11 +10038,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2025.\nPrecio revendedor",
    "fo": "FO# 29572",
    "caras3d": {
-    "escudo": "privado:cara3d-O-ms22038ce3c-escudo.jpg",
-    "reverso": "fotos-3d/O-ms22038ce3c-reverso.webp",
+    "escudo": "fotos-3d/O-ms22038ce3c-reverso.webp",
+    "reverso": "privado:cara3d-O-ms22038ce3c-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -10072,11 +10072,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 50 colones. Año de emisión: 2026.\nPrecio revendedor",
    "fo": "FO# 29744",
    "caras3d": {
-    "escudo": "privado:cara3d-O-msaeda5474f-escudo.jpg",
-    "reverso": "fotos-3d/O-msaeda5474f-reverso.webp",
+    "escudo": "fotos-3d/O-msaeda5474f-reverso.webp",
+    "reverso": "privado:cara3d-O-msaeda5474f-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -10105,11 +10105,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
    "fo": "FO# 29291",
    "caras3d": {
-    "escudo": "privado:cara3d-O-msea88dec85-escudo.jpg",
-    "reverso": "fotos-3d/O-msea88dec85-reverso.webp",
+    "escudo": "fotos-3d/O-msea88dec85-reverso.webp",
+    "reverso": "privado:cara3d-O-msea88dec85-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -10138,11 +10138,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
    "fo": "FO# 29746",
    "caras3d": {
-    "escudo": "privado:cara3d-O-ms9537cf5bb-escudo.jpg",
-    "reverso": "fotos-3d/O-ms9537cf5bb-reverso.webp",
+    "escudo": "fotos-3d/O-ms9537cf5bb-reverso.webp",
+    "reverso": "privado:cara3d-O-ms9537cf5bb-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -10171,11 +10171,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
    "fo": "FO# 29745",
    "caras3d": {
-    "escudo": "privado:cara3d-O-msc6fe145c6-escudo.jpg",
-    "reverso": "fotos-3d/O-msc6fe145c6-reverso.webp",
+    "escudo": "fotos-3d/O-msc6fe145c6-reverso.webp",
+    "reverso": "privado:cara3d-O-msc6fe145c6-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -10204,11 +10204,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2025.\nPrecio revendedor",
    "fo": "FO# 29879",
    "caras3d": {
-    "escudo": "privado:cara3d-O-ms30382c443-escudo.jpg",
-    "reverso": "fotos-3d/O-ms30382c443-reverso.webp",
+    "escudo": "fotos-3d/O-ms30382c443-reverso.webp",
+    "reverso": "privado:cara3d-O-ms30382c443-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -10237,11 +10237,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor",
    "fo": "FO# 30080",
    "caras3d": {
-    "escudo": "privado:cara3d-O-ms1be002f96-escudo.jpg",
-    "reverso": "fotos-3d/O-ms1be002f96-reverso.webp",
+    "escudo": "fotos-3d/O-ms1be002f96-reverso.webp",
+    "reverso": "privado:cara3d-O-ms1be002f96-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -10269,11 +10269,11 @@
    "origen": "reventa",
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor",
    "caras3d": {
-    "escudo": "privado:cara3d-O-ms9e11d4fc2-escudo.jpg",
-    "reverso": "fotos-3d/O-ms9e11d4fc2-reverso.webp",
+    "escudo": "fotos-3d/O-ms9e11d4fc2-reverso.webp",
+    "reverso": "privado:cara3d-O-ms9e11d4fc2-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
@@ -10302,11 +10302,11 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor",
    "fo": "FO# 30097",
    "caras3d": {
-    "escudo": "privado:cara3d-O-ms6fe432eb2-escudo.jpg",
-    "reverso": "fotos-3d/O-ms6fe432eb2-reverso.webp",
+    "escudo": "fotos-3d/O-ms6fe432eb2-reverso.webp",
+    "reverso": "privado:cara3d-O-ms6fe432eb2-escudo.jpg",
     "nombres": [
-     "Diseño",
-     "Valor"
+     "Valor",
+     "Diseño"
     ]
    },
    "medida3d": {
