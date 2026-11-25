@@ -114,6 +114,11 @@
   .v3dBotones { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
   .v3dNota { margin: 0; text-align: center; color: var(--gris); font-size: 12px; }
   #vBoton3d button { margin-top: 8px; width: 100%; }
+  #vFoto .vista3d { position: absolute; inset: 0; z-index: 1; background: radial-gradient(ellipse 70% 60% at 50% 50%, #1d1810, #000 80%); cursor: zoom-in; }
+  #vFoto .vista3d[hidden] { display: none; }
+  #vFoto .vista3d canvas { display: block; width: 100%; height: 100%; }
+  #vFoto .marca3d { position: absolute; left: 6px; bottom: 6px; background: rgba(0, 0, 0, .75); color: var(--oro); border: 1px solid var(--oro2); border-radius: 4px; padding: 2px 7px; font-size: 12px; pointer-events: none; }
+  #vMinis span.mini3d { display: inline-grid; place-items: center; color: var(--oro); font-weight: bold; font-size: 15px; background: #14110a; }
   .sello3d { aspect-ratio: 15 / 12.9; filter: none !important; } /* escudo 3D: escudo y letras girando */
   .sello3d canvas { display: block; width: 100%; height: 100%; }
   #menu h1 { font: 24px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 6px 0 14px; }
@@ -341,7 +346,7 @@
       if (estriado) { const ps = cg.attributes.position; for (let i = 0; i < ps.count; i++) { const x = ps.getX(i), y = ps.getY(i), a = Math.atan2(y, x), f = R * (1 - .006 * (.5 + .5 * Math.cos(a * nEst))) ; ps.setXY(i, Math.cos(a) * f, Math.sin(a) * f); } cg.computeVertexNormals(); }
       const canto = new THREE.Mesh(cg, new THREE.MeshPhysicalMaterial({ color: colorBorde(txE), metalness: .9, roughness: .32, envMapIntensity: 1.3 })); g.add(canto);
       return g; }
-    function liberar() { if (!R3 || !R3.moneda) return; R3.moneda.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) { if (o.material.map) o.material.map.dispose(); o.material.dispose(); } }); R3.grupo.remove(R3.moneda); R3.moneda = null; }
+    function liberar() { if (!R3 || !R3.moneda) return; R3.moneda.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose(); }); R3.grupo.remove(R3.moneda); R3.moneda = null; }
     function cerrar() { capa.hidden = true; window.VISOR3D_ABIERTO = false; if (R3) { R3.renderer.setAnimationLoop(null); liberar(); } }
     document.getElementById('v3dCerrar').onclick = cerrar;
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !capa.hidden) cerrar(); });
@@ -356,20 +361,47 @@
       capa.hidden = false; window.VISOR3D_ABIERTO = true; aviso.hidden = false; aviso.textContent = 'Armando la moneda…';
       try {
         if (!R3) R3 = preparar(); ajustar(); liberar();
-        const [uE, uR] = await Promise.all([window.urlRef(r.caras3d.escudo), window.urlRef(r.caras3d.reverso)]);
-        if (!uE || !uR) throw new Error('Para ver esta moneda en 3D hay que entrar con la clave (sus caras son privadas).');
-        const [txE, txR] = await Promise.all([cargarTex(uE), cargarTex(uR)]);
+        let txE, txR; try { [txE, txR] = await texturasDe(id, r); } catch (e) { throw new Error('Para ver esta moneda en 3D hay que entrar con la clave (sus caras son privadas).'); }
         R3.moneda = armarMoneda(M, txE, txR); R3.grupo.add(R3.moneda); R3.grupo.rotation.set(0, 0, 0);
         R3.girando = true; bGiro.textContent = 'Pausar'; R3.vista = null; R3.camara.position.set(0, 0, R3.DIST); R3.ctl.target.set(0, 0, 0); aviso.hidden = true;
         let ult = performance.now();
         R3.renderer.setAnimationLoop(tt => { const dt = Math.min(.05, (tt - ult) / 1000); ult = tt; const gr = R3.grupo;
-          if (R3.girando) { gr.rotation.x += dt * .9; gr.rotation.y = Math.sin(tt / 2400) * .35; } // da vueltas de arriba a abajo, como una moneda lanzada
-          else if (R3.vista) { const obj = R3.vista === 'reverso' ? [0, 0] : R3.vista === 'escudo' ? [Math.PI, 0] : [0, Math.PI / 2];
-            const ax = gr.rotation.x % (2 * Math.PI); gr.rotation.x = ax + (obj[0] - ax) * .12; gr.rotation.y += (obj[1] - gr.rotation.y) * .12; }
+          if (R3.girando) { gr.rotation.x = 0; gr.rotation.y += dt * .6; } // gira de lado, 360°, como el escudo del menú
+          else if (R3.vista) { const obj = R3.vista === 'reverso' ? 0 : R3.vista === 'escudo' ? Math.PI : Math.PI / 2;
+            const ay = ((gr.rotation.y % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI); let df = obj - ay; if (df > Math.PI) df -= 2 * Math.PI; if (df < -Math.PI) df += 2 * Math.PI; gr.rotation.y = ay + df * .12; gr.rotation.x = 0; }
           R3.ctl.update(); R3.renderer.render(R3.escena, R3.camara); });
       } catch (e) { aviso.hidden = false; aviso.textContent = (e && e.message) || 'No se pudo armar la moneda en 3D.'; }
     };
     new ResizeObserver(() => { if (R3 && !capa.hidden) ajustar(); }).observe(lienzo);
+    // ----- la moneda en la ficha: misma escala (44 mm de alto), girando de lado como el escudo del menú
+    let F3 = null; const texturas = {};
+    async function texturasDe(id, r) { if (texturas[id]) return texturas[id];
+      const [uE, uR] = await Promise.all([window.urlRef(r.caras3d.escudo), window.urlRef(r.caras3d.reverso)]); if (!uE || !uR) throw new Error('privada');
+      return (texturas[id] = await Promise.all([cargarTex(uE), cargarTex(uR)])); }
+    window.ponerMoneda3D = async (id, cont) => {
+      const info = window.infoPieza3d && window.infoPieza3d(id); if (!info) return;
+      const et = cont.querySelector('.marca3d');
+      try {
+        if (!F3) { const c = document.createElement('canvas'), renderer = new THREE.WebGLRenderer({ canvas: c, antialias: true, alpha: true, powerPreference: 'low-power' });
+          renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5)); renderer.outputColorSpace = THREE.SRGBColorSpace; renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.setClearColor(0x000000, 0);
+          const escena = new THREE.Scene(), pm = new THREE.PMREMGenerator(renderer); escena.environment = pm.fromScene(new RoomEnvironment(renderer), 0.04).texture;
+          const l1 = new THREE.DirectionalLight(0xfff1d6, 2.4); l1.position.set(-40, 60, 80); escena.add(l1); const l2 = new THREE.DirectionalLight(0xbcd0ff, 1.2); l2.position.set(50, -20, -60); escena.add(l2); escena.add(new THREE.AmbientLight(0xffffff, .15));
+          const camara = new THREE.PerspectiveCamera(30, 4 / 3, 1, 1000); camara.position.set(0, 0, (VISTA / 2) / Math.tan(15 * Math.PI / 180));
+          const grupo = new THREE.Group(); escena.add(grupo);
+          F3 = { renderer, escena, camara, grupo, moneda: null, id: null, cont: null, w: 0, h: 0 };
+          let ult = 0;
+          renderer.setAnimationLoop(tt => { if (tt - ult < 33 || document.hidden || window.VISOR3D_ABIERTO || !F3.cont || !F3.cont.isConnected || F3.cont.hidden || !F3.cont.offsetParent) return;
+            const dt = Math.min(.1, (tt - ult) / 1000); ult = tt;
+            const w = F3.cont.clientWidth, h = F3.cont.clientHeight; if (w !== F3.w || h !== F3.h) { F3.w = w; F3.h = h; renderer.setSize(w, h, false); camara.aspect = w / Math.max(1, h); camara.updateProjectionMatrix(); }
+            F3.grupo.rotation.y += dt * .6; renderer.render(escena, camara); }); }
+        F3.cont = cont; cont.prepend(F3.renderer.domElement); F3.w = 0;
+        if (F3.id !== id) { if (F3.moneda) { F3.moneda.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose(); }); F3.grupo.remove(F3.moneda); F3.moneda = null; }
+          F3.id = id; const [txE, txR] = await texturasDe(id, info.r); if (F3.id !== id) return;
+          F3.moneda = armarMoneda(info.r.medida3d, txE, txR); F3.grupo.add(F3.moneda); F3.grupo.rotation.set(0, 0, 0); }
+        if (et) et.textContent = '3D · toca para verla grande';
+      } catch (e) { if (et) et.textContent = e && e.message === 'privada' ? 'Para ver el 3D hay que entrar con la clave' : 'No se pudo armar el 3D'; }
+    };
+    if (window.pendiente3d) { const [i, c] = window.pendiente3d; window.pendiente3d = null; if (c.isConnected) window.ponerMoneda3D(i, c); }
   }
   function construirEscudo(px, w, h, ancho, opc = {}) {
     const conYelmo = opc.yelmo !== false, ref = opc.ref || ancho; // las letras no llevan yelmo ni penacho; ref fija la hondura igual que el escudo
@@ -1197,8 +1229,7 @@
   function renglon(caja, rotulo, valor) { if (!valor) return; const d = el('div'); d.append(el('span', '', rotulo + ': '), valor); caja.appendChild(d); }
   function pintarFicha() {
     const id = actual, r = reg(id), esValor = pestana === 'valor';
-    { const b3 = $('vBoton3d'); b3.textContent = ''; // moneda en 3D a escala real
-      if (r.caras3d && r.medida3d) { const b = el('button', 'fuerte', 'Ver en 3D'); b.type = 'button'; b.onclick = () => { if (window.abrirMoneda3D) window.abrirMoneda3D(id); else b.textContent = 'El 3D todavía está cargando…'; }; b3.appendChild(b); } }
+    $('vBoton3d').textContent = '';
     $('pValor').classList.toggle('activo', esValor); $('pCompra').classList.toggle('activo', !esValor);
     // variantes de la misma fecha en una sola tarjeta: una pestaña por variante, con su explicacion y sus fotos
     const vars = r.variantes || [], vv = $('vVariantes'); vv.textContent = ''; vv.style.display = vars.length ? '' : 'none';
@@ -1261,7 +1292,7 @@
       const grande = el('img'); grande.alt = 'Foto de la pieza'; caja.appendChild(grande);
       let vista = 0;
       grande.onclick = () => verGrande(grande.src, fotos[vista], fotos, vista);
-      const ver = i => { vista = i; ponerFoto(grande, fotos[i]); aplicarGiro(grande, fotos[i], 4 / 3); [...minis.children].forEach((m, j) => m.classList.toggle('activa', i === j)); };
+      const ver = i => { vista = i; ponerFoto(grande, fotos[i]); aplicarGiro(grande, fotos[i], 4 / 3); [...minis.children].filter(m => !m.classList.contains('mini3d')).forEach((m, j) => m.classList.toggle('activa', i === j)); };
       if (fotos.length > 1) fotos.forEach((n, i) => { const c = el('span', 'mini'), m = el('img'); m.alt = 'Foto ' + (i + 1); ponerFoto(m, n); aplicarGiro(m, n, 1); c.appendChild(m); c.onclick = () => ver(i); minis.appendChild(c); });
       ver(0);
       if (fotos.length > 1) {
@@ -1271,6 +1302,16 @@
         caja.appendChild(cu);
         [...minis.children].forEach((m, j) => m.addEventListener('click', () => { cu.textContent = (j + 1) + ' / ' + fotos.length; }));
       }
+    }
+    if (r.caras3d && r.medida3d) { // moneda en 3D: es lo primero que se ve al abrir la ficha
+      const v3 = el('div', 'vista3d'), et = el('span', 'marca3d', '3D · toca para verla grande'); v3.append(et); caja.appendChild(v3);
+      v3.onclick = () => window.abrirMoneda3D && window.abrirMoneda3D(id);
+      const m3 = el('span', 'mini mini3d activa', '3D'); m3.title = 'Moneda en 3D';
+      const mostrar3d = si => { v3.hidden = !si; m3.classList.toggle('activa', si); if (si) [...minis.children].forEach(m => m !== m3 && m.classList.remove('activa')); };
+      m3.onclick = () => mostrar3d(true); minis.prepend(m3); mostrar3d(true);
+      [...minis.children].forEach(m => { if (m !== m3) m.addEventListener('click', () => mostrar3d(false)); });
+      caja.querySelectorAll('.pasa').forEach(b => b.addEventListener('click', () => mostrar3d(false)));
+      if (window.ponerMoneda3D) window.ponerMoneda3D(id, v3); else { et.textContent = 'Cargando el 3D…'; window.pendiente3d = [id, v3]; }
     }
     const esMS = base[id].seccion === 'ms-sueltas';
     const conTabs = (r.variantes || []).some(v => typeof v.valor === 'number' || v.estadoMS); // pestañas con su propio precio y cantidad: se muestra el total
