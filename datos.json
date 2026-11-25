@@ -4179,7 +4179,8 @@
     "diametro": 15,
     "grosor": 2.2,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo).",
+    "grosor3d": 2.2
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x0085cc125-escudo.jpg",
@@ -4509,7 +4510,8 @@
     "diametro": 21.5,
     "grosor": 1.7,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.41
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x150f54e4a-escudo.jpg",
@@ -4570,7 +4572,8 @@
     "diametro": 21.6,
     "grosor": 1.7,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.28
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xd20f2c5d2-escudo.webp",
@@ -4631,7 +4634,8 @@
     "diametro": 21.6,
     "grosor": 1.7,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.28
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xd7c4d06a4-escudo.webp",
@@ -4691,7 +4695,8 @@
     "diametro": 21.6,
     "grosor": 1.7,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.28
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x109cb7dca-escudo.webp",
@@ -4751,7 +4756,8 @@
     "diametro": 21.44,
     "grosor": 1.14,
     "canto": "Liso",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 0.92
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x7567e6ed2-escudo.webp",
@@ -4808,7 +4814,8 @@
     "diametro": 21.44,
     "grosor": 1.14,
     "canto": "Liso",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 0.92
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xead7a029a-escudo.webp",
@@ -4865,7 +4872,8 @@
     "diametro": 21.44,
     "grosor": 1.14,
     "canto": "Liso",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 0.92
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xce0766872-escudo.webp",
@@ -4924,7 +4932,8 @@
     "diametro": 21.44,
     "grosor": 1.14,
     "canto": "Liso",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 0.92
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x561dfed7f-escudo.webp",
@@ -5029,7 +5038,8 @@
     "diametro": 24,
     "grosor": 1.9,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.18
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xc3fc2b519-escudo.jpg",
@@ -5080,7 +5090,8 @@
     "diametro": 23.5,
     "grosor": 1.9,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.37
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xe0aaf7616-escudo.jpg",
@@ -5129,7 +5140,8 @@
     "diametro": 23.5,
     "grosor": 1.9,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.36
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x8a6998b28-escudo.jpg",
@@ -5188,7 +5200,8 @@
     "diametro": 23.5,
     "grosor": 1.9,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.36
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xb067abf23-escudo.webp",
@@ -5245,7 +5258,8 @@
     "diametro": 22.8,
     "grosor": 1.4,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x11bee65fb-escudo.webp",
@@ -5305,7 +5319,8 @@
     "diametro": 22.8,
     "grosor": 1.4,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x2bfc2e585-escudo.webp",
@@ -5373,7 +5388,8 @@
     "diametro": 22.8,
     "grosor": 1.4,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xfd1398080-escudo.jpg",
@@ -5437,7 +5453,8 @@
     "diametro": 23.5,
     "grosor": 1.4,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 0.94
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xb55357d3b-escudo.jpg",
@@ -5494,7 +5511,8 @@
     "diametro": 23.5,
     "grosor": 1.4,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 0.94
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xeea12af89-escudo.webp",
@@ -5554,7 +5572,8 @@
     "diametro": 23.5,
     "grosor": 1.4,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 0.94
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x8ce0a9cbe-escudo.webp",
@@ -5660,7 +5679,8 @@
     "diametro": 25.5,
     "grosor": 2,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.75
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x1562341e0-escudo.jpg",
@@ -5720,7 +5740,8 @@
     "diametro": 25.5,
     "grosor": 2,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.61
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xb2a0db2d6-escudo.webp",
@@ -5780,7 +5801,8 @@
     "diametro": 25.5,
     "grosor": 2,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.61
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xd4802a3a4-escudo.webp",
@@ -5837,7 +5859,8 @@
     "diametro": 25.5,
     "grosor": 2,
     "canto": "Liso",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.61
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x847ed7e7c-escudo.webp",
@@ -5899,7 +5922,8 @@
     "diametro": 25.5,
     "grosor": 2,
     "canto": "Liso",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.75
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xa8ced4273-escudo.webp",
@@ -5958,7 +5982,8 @@
     "diametro": 25.5,
     "grosor": 2,
     "canto": "Liso",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.75
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x19b5a2c7f-escudo.webp",
@@ -6017,7 +6042,8 @@
     "diametro": 25.5,
     "grosor": 2,
     "canto": "Liso",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.75
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x6b8c69a51-escudo.webp",
@@ -6081,7 +6107,8 @@
     "diametro": 27.5,
     "grosor": 1.95,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.54
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xbec1cd63b-escudo.jpg",
@@ -6130,7 +6157,8 @@
     "diametro": 27.5,
     "grosor": 1.95,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.54
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x1d00c2792-escudo.jpg",
@@ -6187,7 +6215,8 @@
     "diametro": 27.5,
     "grosor": 1.95,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.73
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xeb9bba39d-escudo.webp",
@@ -6270,7 +6299,8 @@
     "diametro": 27.5,
     "grosor": 1.95,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.67
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x97e4c2697-escudo.webp",
@@ -6321,7 +6351,8 @@
     "diametro": 27.5,
     "grosor": 1.95,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.67
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x0357cfcad-escudo.jpg",
@@ -6378,7 +6409,8 @@
     "diametro": 27.5,
     "grosor": 1.95,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.67
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x4ff6ed81f-escudo.webp",
@@ -6435,7 +6467,8 @@
     "diametro": 27.5,
     "grosor": 1.95,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.67
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xead69f4e3-escudo.webp",
@@ -6526,7 +6559,8 @@
     "diametro": 29.5,
     "grosor": 1.92,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.55
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xc0213beb3-escudo.jpg",
@@ -6574,7 +6608,8 @@
     "diametro": 29.5,
     "grosor": 1.92,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.55
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x55e57c564-escudo.jpg",
@@ -6623,7 +6658,8 @@
     "diametro": 29.5,
     "grosor": 1.92,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.55
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x6ddfa1ed1-escudo.jpg",
@@ -6673,7 +6709,8 @@
     "diametro": 29.5,
     "grosor": 1.92,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.55
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xd662fda1c-escudo.jpg",
@@ -6723,7 +6760,8 @@
     "diametro": 29.5,
     "grosor": 1.92,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.57
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x0250cf030-escudo.jpg",
@@ -6773,7 +6811,8 @@
     "diametro": 29.5,
     "grosor": 1.96,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.7
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x9074baa28-escudo.jpg",
@@ -6829,7 +6868,8 @@
     "diametro": 29.5,
     "grosor": 1.96,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.7
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xdf61763bf-escudo.webp",
@@ -6887,7 +6927,8 @@
     "diametro": 29.5,
     "grosor": 1.96,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.7
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x51beaee62-escudo.webp",
@@ -6945,7 +6986,8 @@
     "diametro": 29.5,
     "grosor": 1.96,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.7
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xc36b26f4f-escudo.webp",
@@ -6994,7 +7036,8 @@
     "diametro": 31.5,
     "grosor": 1.9,
     "canto": "Liso",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.48
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xe27fb207b-escudo.jpg",
@@ -7051,7 +7094,8 @@
     "diametro": 33,
     "grosor": 2.1,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.67
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x367dc9a8d-escudo.webp",
@@ -7100,7 +7144,8 @@
     "diametro": 33,
     "grosor": 2.1,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.51
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x7a50c185a-escudo.jpg",
@@ -7157,7 +7202,8 @@
     "diametro": 33,
     "grosor": 2.1,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.67
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x23d1289ee-escudo.webp",
@@ -7206,7 +7252,8 @@
     "diametro": 33,
     "grosor": 1.9,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.64
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x4ffdc79ec-escudo.jpg",
@@ -7266,7 +7313,8 @@
     "diametro": 33,
     "grosor": 1.9,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.64
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x69eae3145-escudo.webp",
@@ -7323,7 +7371,8 @@
     "diametro": 33,
     "grosor": 1.9,
     "canto": "Estriado continuo",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.64
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x39afa064d-escudo.webp",
@@ -9923,7 +9972,8 @@
     "diametro": 23.5,
     "grosor": 1,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.02
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x83a8e659f-escudo.webp",
@@ -9974,7 +10024,8 @@
     "diametro": 25.5,
     "grosor": 2,
     "canto": "Liso",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.75
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x465ccbc47-escudo.webp",
@@ -10025,7 +10076,8 @@
     "diametro": 29.5,
     "grosor": 1.96,
     "canto": "Estriado",
-    "fuente": "Diámetro de las notas; grosor de uCoin (catálogo)."
+    "fuente": "Diámetro de las notas; grosor del borde de uCoin; grosor3d = grosor promedio calculado con el peso y el metal (se usa en el 3D).",
+    "grosor3d": 1.68
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x5b5bad0ec-escudo.webp",
