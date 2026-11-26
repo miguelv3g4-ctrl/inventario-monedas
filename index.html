@@ -1076,6 +1076,9 @@
     m.title = nombre + ' · ' + den + ' colones · ' + String(M.d).replace('.', ',') + ' mm';
     m.setAttribute('role', 'img'); m.setAttribute('aria-label', 'Moneda ' + nombre + ' en 3D');
     const giro = el('div', 'm3giro'), frente = el('img', 'm3cara m3frente');
+    // regla: solo va en 3D la moneda que tiene su cara real recortada en img/monedas3d/ (las que aun no salen al publico
+    // solo tienen una foto); si no existe, vuelve la imagen plana de la hoja, sin giro. Al agregar la cara, el 3D sale solo.
+    frente.onerror = () => { if (m.isConnected) m.replaceWith(imagenPlana(p)); };
     frente.src = 'img/monedas3d/' + archivo + '.webp'; frente.alt = ''; frente.draggable = false;
     giro.appendChild(frente); m.appendChild(giro);
     let activa = false, armada = false, tipo = 'mouse';
@@ -1110,11 +1113,14 @@
   for (const p of H.imagenes) {
     if (p.elipse) continue; // el circulo blanco de atras de Puntarenas ya no hace falta: la moneda 3D va sola
     if (MONEDA_IMG[p.f]) { const m = moneda3d(MONEDA_IMG[p.f], p); if (m) { frag.appendChild(m); continue; } }
+    frag.appendChild(imagenPlana(p));
+  }
+  function imagenPlana(p) { // imagen de la hoja tal cual el Excel (recortada)
     const d = el('div', 'im'); d.style.cssText = `left:${p.x}px;top:${p.y}px;width:${p.w}px;height:${p.h}px`;
     const l = p.cl || 0, t = p.ct || 0, r = p.cr || 0, b = p.cb || 0, w = p.w / (1 - l - r), h = p.h / (1 - t - b);
     const im = el('img'); im.src = 'img/' + p.f; im.alt = ''; im.draggable = false;
     im.style.cssText = `left:${-l * w}px;top:${-t * h}px;width:${w}px;height:${h}px` + (p.negroTransparente ? ';mix-blend-mode:lighten' : '');
-    d.appendChild(im); frag.appendChild(d);
+    d.appendChild(im); return d;
   }
   const zonas = {}, casillas = {};
   let relojCasillas = null;
