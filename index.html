@@ -268,6 +268,9 @@
   #grande.conFicha #gBarra .bFicha { display: inline-block; }
   #gCont { color: var(--gris); min-width: 44px; text-align: center; font-variant-numeric: tabular-nums; }
   .tarjeta .ph .pasa { position: absolute; top: 50%; transform: translateY(-50%); width: 30px; height: 44px; padding: 0; border: 0; border-radius: 4px; background: rgba(0, 0, 0, .55); color: var(--oro); font-size: 22px; line-height: 44px; cursor: pointer; opacity: 0; transition: opacity .15s; z-index: 2; }
+  .tarjeta .ph .vista3d { position: absolute; inset: 0; z-index: 1; background: radial-gradient(ellipse 70% 60% at 50% 50%, #1d1810, #000 80%); pointer-events: none; }
+  .tarjeta .ph .vista3d[hidden] { display: none; }
+  .tarjeta .ph .vista3d canvas { display: block; width: 100%; height: 100%; }
   .tarjeta .ph .pasa.ant { left: 4px; } .tarjeta .ph .pasa.sig { right: 4px; }
   .tarjeta:hover .ph .pasa, .tarjeta .ph .pasa:focus-visible { opacity: 1; }
   @media (hover: none) { .tarjeta .ph .pasa { opacity: .85; } }
@@ -1706,6 +1709,13 @@
       if (f) { const im = el('img'); im.alt = ''; im.loading = 'lazy'; ponerFoto(im, f); aplicarGiro(im, f, 4 / 3); ph.appendChild(im); if (/^privado:/.test(f) && !fotosDe(p.id, 'fotos').length) ph.appendChild(el('span', 'marcaRef', 'Catálogo · falta mi foto')); }
       else if (rf) { const im = el('img', 'ref'); im.alt = 'Imagen de referencia'; im.loading = 'lazy'; ponerRef(im, rf); aplicarGiro(im, rf, 4 / 3); ph.append(im, el('span', 'marcaRef', 'Referencia · falta mi foto')); }
       else ph.textContent = 'Sin foto';
+      if (window.infoPieza3d && window.infoPieza3d(p.id)) { // con el cursor encima, la tarjeta muestra de una vez la pieza en 3D girando
+        let v3 = null;
+        t.addEventListener('pointerenter', e => { if (e.pointerType !== 'mouse') return;
+          if (!v3) { v3 = el('div', 'vista3d'); ph.appendChild(v3); } v3.hidden = false;
+          if (window.ponerMoneda3D) window.ponerMoneda3D(p.id, v3); });
+        t.addEventListener('pointerleave', () => { if (v3) v3.hidden = true; });
+      }
       const tx = el('div', 'tx');
       tx.append(el('span', '', p.moneda), el('small', '', p.coleccion + (reg(p.id).km ? ' · ' + reg(p.id).km : '') + (cant(p.id) > 1 ? ' · ' + cant(p.id) + ' unidades' : '')));
       if (tengo(p.id)) tx.appendChild(el('small', 'fechaCons', 'Conseguida: ' + (fecha(r.fechaCompra) || 'sin fecha')));
