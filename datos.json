@@ -1992,9 +1992,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-xf0a1ca1eb-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-xf0a1ca1eb-escudo-r.jpg",
     "reverso": "privado:cara3d-O-xf0a1ca1eb-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1905 (ventas registradas en Numista)"
    }
   },
   "O-xc9390bfc0": {
@@ -2047,9 +2048,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x9ce4b4b70-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x9ce4b4b70-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x9ce4b4b70-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1912 (ventas registradas en Numista)"
    }
   },
   "O-x2be4f4499": {
@@ -2073,9 +2075,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x2be4f4499-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x2be4f4499-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x2be4f4499-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1914 (ventas registradas en Numista)"
    }
   },
   "O-xe851380f9": {
@@ -2286,9 +2289,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x63c69a828-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x63c69a828-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x63c69a828-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1922 (ventas registradas en Numista)"
    }
   },
   "O-x67a29eb8e": {
@@ -3167,9 +3171,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x0dd39db09-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x0dd39db09-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x0dd39db09-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1905 (ventas registradas en Numista)"
    }
   },
   "O-x122bd88e1": {
@@ -3243,9 +3248,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x3b6dc64b2-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x3b6dc64b2-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x3b6dc64b2-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1914 (ventas registradas en Numista)"
    }
   },
   "O-xb402c067e": {
@@ -3341,9 +3347,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x92c19e6f8-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x92c19e6f8-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x92c19e6f8-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1921 (ventas registradas en Numista)"
    }
   },
   "O-xb16bfbae6": {
@@ -4505,9 +4512,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-xc3148346f-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-xc3148346f-escudo-r.jpg",
     "reverso": "privado:cara3d-O-xc3148346f-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1903 (ventas registradas en Numista)"
    }
   },
   "O-x158225232": {
@@ -5970,9 +5978,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x41e23a1e6-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x41e23a1e6-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x41e23a1e6-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1900 (ventas registradas en Numista)"
    }
   },
   "O-xb9d19fb61": {
@@ -6015,9 +6024,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x4bf5a47e1-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x4bf5a47e1-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x4bf5a47e1-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1916 (ventas registradas en Numista)"
    }
   },
   "O-xad736ec69": {
@@ -10470,9 +10480,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x1338f502a-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x1338f502a-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x1338f502a-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1889 (ventas registradas en Numista)"
    }
   },
   "O-x57e5bfbfa": {
@@ -10516,9 +10527,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x57e5bfbfa-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x57e5bfbfa-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x57e5bfbfa-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1889 (ventas registradas en Numista)"
    }
   },
   "O-x70cf42be8": {
@@ -10541,9 +10553,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x70cf42be8-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x70cf42be8-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x70cf42be8-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1890 (ventas registradas en Numista)"
    }
   },
   "O-xc9d18facf": {
@@ -10688,9 +10701,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x50c709336-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x50c709336-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x50c709336-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1875 (ventas registradas en Numista)"
    }
   },
   "O-x2561fd32e": {
@@ -11173,9 +11187,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x1eac818a3-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x1eac818a3-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x1eac818a3-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1892 (ventas registradas en Numista)"
    }
   },
   "O-x32b16035a": {
@@ -11226,9 +11241,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x32b16035a-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x32b16035a-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x32b16035a-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1893 (ventas registradas en Numista)"
    }
   },
   "O-xc68c47c19": {
@@ -11275,9 +11291,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-xc68c47c19-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-xc68c47c19-escudo-r.jpg",
     "reverso": "privado:cara3d-O-xc68c47c19-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1893 (ventas registradas en Numista)"
    }
   },
   "O-x0de94f948": {
@@ -11324,9 +11341,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x0de94f948-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x0de94f948-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x0de94f948-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1893 (ventas registradas en Numista)"
    }
   },
   "O-x9d354d99e": {
@@ -11408,9 +11426,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-xa0cc7adc9-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-xa0cc7adc9-escudo-r.jpg",
     "reverso": "privado:cara3d-O-xa0cc7adc9-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1870 (ventas registradas en Numista)"
    }
   },
   "O-x973b98277": {
@@ -11467,9 +11486,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-xd374888f5-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-xd374888f5-escudo-r.jpg",
     "reverso": "privado:cara3d-O-xd374888f5-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1875 (ventas registradas en Numista)"
    }
   },
   "O-xb997f5c30": {
@@ -11505,9 +11525,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-xb997f5c30-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-xb997f5c30-escudo-r.jpg",
     "reverso": "privado:cara3d-O-xb997f5c30-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1875 (ventas registradas en Numista)"
    }
   },
   "O-x282e75903": {
@@ -11531,9 +11552,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x282e75903-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x282e75903-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x282e75903-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1885 (ventas registradas en Numista)"
    }
   },
   "O-xc3f0b1ece": {
@@ -11581,9 +11603,10 @@
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
    "caras3d": {
-    "escudo": "privado:cara3d-O-x45a09aff2-escudo-f.jpg",
+    "escudo": "privado:cara3d-O-x45a09aff2-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x45a09aff2-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "fuenteEscudo": "Foto real de una moneda de 1887 (ventas registradas en Numista)"
    }
   },
   "O-xa911d1b1d": {
