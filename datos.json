@@ -1982,7 +1982,20 @@
    "fotos": [
     "O-xf0a1ca1eb-especial-1.jpg",
     "O-xf0a1ca1eb-especial-2.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 14.2,
+    "grosor": 0.61,
+    "canto": "Estriado",
+    "grosor3d": 0.61,
+    "metal": "plata (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xf0a1ca1eb-escudo.jpg",
+    "reverso": "privado:cara3d-O-xf0a1ca1eb-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xc9390bfc0": {
    "tengo": false,
@@ -1998,7 +2011,20 @@
    "fuenteValor": "Precio revendedor",
    "fotos": [
     "O-xc9390bfc0-mia-14.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 14.2,
+    "grosor": 0.61,
+    "canto": "Estriado",
+    "grosor3d": 0.61,
+    "metal": "plata (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xc9390bfc0-escudo.jpg",
+    "reverso": "privado:cara3d-O-xc9390bfc0-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x9ce4b4b70": {
    "tengo": false,
@@ -2011,7 +2037,20 @@
     "privado:anio-O-x9ce4b4b70-0.jpg"
    ],
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "medida3d": {
+    "diametro": 14.2,
+    "grosor": 0.61,
+    "canto": "Estriado",
+    "grosor3d": 0.61,
+    "metal": "plata (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x9ce4b4b70-escudo.jpg",
+    "reverso": "privado:cara3d-O-x9ce4b4b70-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x2be4f4499": {
    "tengo": false,
@@ -2024,7 +2063,20 @@
     "privado:km-KM145.jpg"
    ],
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "medida3d": {
+    "diametro": 14.2,
+    "grosor": 0.61,
+    "canto": "Estriado",
+    "grosor3d": 0.61,
+    "metal": "plata (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x2be4f4499-escudo.jpg",
+    "reverso": "privado:cara3d-O-x2be4f4499-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xe851380f9": {
    "tengo": false,
@@ -2035,7 +2087,20 @@
    "fotosCompra": [
     "5-centimos-1917-compra.jpg",
     "5-centimos-1917-compra-2.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.67,
+    "canto": "Liso",
+    "grosor3d": 0.67,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xe851380f9-escudo.jpg",
+    "reverso": "privado:cara3d-O-xe851380f9-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xbfc96e95d": {
    "tengo": false,
@@ -2068,7 +2133,20 @@
    ],
    "fotos": [
     "O-xbfc96e95d-especial-9.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.67,
+    "canto": "Liso",
+    "grosor3d": 0.67,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xbfc96e95d-escudo.jpg",
+    "reverso": "privado:cara3d-O-xbfc96e95d-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x9bcc64a7b": {
    "tengo": false,
@@ -2079,7 +2157,20 @@
    "fotosCompra": [
     "5-centimos-1919-compra.jpg",
     "5-centimos-1919-compra-2.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.67,
+    "canto": "Liso",
+    "grosor3d": 0.67,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x9bcc64a7b-escudo.jpg",
+    "reverso": "privado:cara3d-O-x9bcc64a7b-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xc48e91c0a": {
    "tengo": false,
@@ -2112,7 +2203,20 @@
    ],
    "fotos": [
     "O-xc48e91c0a-especial-8.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.67,
+    "canto": "Liso",
+    "grosor3d": 0.67,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xc48e91c0a-escudo.jpg",
+    "reverso": "privado:cara3d-O-xc48e91c0a-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x259014684": {
    "tengo": false,
@@ -2147,7 +2251,20 @@
    ],
    "fotos": [
     "O-x259014684-especial-7.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.67,
+    "canto": "Liso",
+    "grosor3d": 0.67,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x259014684-escudo.jpg",
+    "reverso": "privado:cara3d-O-x259014684-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x63c69a828": {
    "tengo": false,
@@ -2159,7 +2276,20 @@
    "fo": "FO# 11464",
    "fotosCompra": [
     "privado:anio-O-x63c69a828-0.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.67,
+    "canto": "Liso",
+    "grosor3d": 0.67,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x63c69a828-escudo.jpg",
+    "reverso": "privado:cara3d-O-x63c69a828-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x67a29eb8e": {
    "tengo": false,
@@ -2171,7 +2301,20 @@
    "fo": "FO# 17024",
    "fotosCompra": [
     "privado:km-KM169.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.64,
+    "canto": "Liso",
+    "grosor3d": 0.64,
+    "metal": "bronce",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x67a29eb8e-escudo.jpg",
+    "reverso": "privado:cara3d-O-x67a29eb8e-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xd8457527a": {
    "tengo": false,
@@ -2184,7 +2327,20 @@
    "fotosCompra": [
     "privado:anio-O-xd8457527a-0.jpg",
     "privado:anio-O-xd8457527a-1.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.67,
+    "canto": "Liso",
+    "grosor3d": 0.67,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xd8457527a-escudo.jpg",
+    "reverso": "privado:cara3d-O-xd8457527a-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x9bc0d15da": {
    "tengo": false,
@@ -2196,7 +2352,20 @@
    "fo": "FO# 11464",
    "fotosCompra": [
     "privado:anio-O-x9bc0d15da-0j.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.67,
+    "canto": "Liso",
+    "grosor3d": 0.67,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x9bc0d15da-escudo.jpg",
+    "reverso": "privado:cara3d-O-x9bc0d15da-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x585474041": {
    "tengo": false,
@@ -2209,7 +2378,20 @@
    "fotosCompra": [
     "privado:anio-O-x585474041-0.jpg",
     "privado:anio-O-x585474041-1.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.67,
+    "canto": "Liso",
+    "grosor3d": 0.67,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x585474041-escudo.jpg",
+    "reverso": "privado:cara3d-O-x585474041-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xb8bc35bde": {
    "tengo": false,
@@ -2221,7 +2403,20 @@
    "fo": "FO# 11464",
    "fotosCompra": [
     "privado:km-KM151.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.67,
+    "canto": "Liso",
+    "grosor3d": 0.67,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xb8bc35bde-escudo.jpg",
+    "reverso": "privado:cara3d-O-xb8bc35bde-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xf7ba06e9b": {
    "tengo": false,
@@ -2269,7 +2464,20 @@
    "fotos": [
     "O-xf7ba06e9b-especial-1.jpg",
     "O-xf7ba06e9b-especial-2.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.64,
+    "canto": "Liso",
+    "grosor3d": 0.64,
+    "metal": "cobre-níquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xf7ba06e9b-escudo.jpg",
+    "reverso": "privado:cara3d-O-xf7ba06e9b-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xf2e01c902": {
    "tengo": false,
@@ -2317,7 +2525,20 @@
    "fotos": [
     "O-xf2e01c902-especial-1.jpg",
     "O-xf2e01c902-especial-2.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 14.5,
+    "grosor": 0.71,
+    "canto": "Liso",
+    "grosor3d": 0.71,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xf2e01c902-escudo.jpg",
+    "reverso": "privado:cara3d-O-xf2e01c902-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x80946433b": {
    "tengo": false,
@@ -2329,7 +2550,20 @@
    "fo": "FO# 12987",
    "fotosCompra": [
     "privado:km-KM179.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 14.5,
+    "grosor": 0.71,
+    "canto": "Liso",
+    "grosor3d": 0.71,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x80946433b-escudo.jpg",
+    "reverso": "privado:cara3d-O-x80946433b-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x91db8b50f": {
    "tengo": false,
@@ -2341,7 +2575,20 @@
    "fo": "FO# 12987",
    "fotosCompra": [
     "privado:km-KM179.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 14.5,
+    "grosor": 0.71,
+    "canto": "Liso",
+    "grosor3d": 0.71,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x91db8b50f-escudo.jpg",
+    "reverso": "privado:cara3d-O-x91db8b50f-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x40c414f10": {
    "tengo": true,
@@ -2413,7 +2660,20 @@
    ],
    "fotos": [
     "O-x1ca9dd607-especial-1.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.64,
+    "canto": "Estriado",
+    "grosor3d": 0.64,
+    "metal": "cobre-níquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x1ca9dd607-escudo.jpg",
+    "reverso": "privado:cara3d-O-x1ca9dd607-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x9dcbdff87": {
    "tengo": false,
@@ -2459,7 +2719,20 @@
    ],
    "fotos": [
     "O-x9dcbdff87-especial-1.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.64,
+    "canto": "Liso",
+    "grosor3d": 0.64,
+    "metal": "cobre-níquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x9dcbdff87-escudo.jpg",
+    "reverso": "privado:cara3d-O-x9dcbdff87-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xe3d47d8e0": {
    "tengo": true,
@@ -2884,7 +3157,20 @@
    "fotosCompra": [
     "privado:anio-O-x0dd39db09-0.jpg",
     "privado:anio-O-x0dd39db09-1j.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 17.5,
+    "grosor": 0.83,
+    "canto": "Estriado",
+    "grosor3d": 0.83,
+    "metal": "plata",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x0dd39db09-escudo.jpg",
+    "reverso": "privado:cara3d-O-x0dd39db09-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x122bd88e1": {
    "tengo": false,
@@ -2896,7 +3182,20 @@
    "fo": "FO# 11459",
    "fotosCompra": [
     "privado:km-KM146.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 17.5,
+    "grosor": 0.83,
+    "canto": "Estriado",
+    "grosor3d": 0.83,
+    "metal": "plata",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x122bd88e1-escudo.jpg",
+    "reverso": "privado:cara3d-O-x122bd88e1-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xcf60cf766": {
    "tengo": false,
@@ -2908,7 +3207,20 @@
    "fo": "FO# 11459",
    "fotosCompra": [
     "privado:km-KM146.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 17.5,
+    "grosor": 0.83,
+    "canto": "Estriado",
+    "grosor3d": 0.83,
+    "metal": "plata",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xcf60cf766-escudo.jpg",
+    "reverso": "privado:cara3d-O-xcf60cf766-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x3b6dc64b2": {
    "tengo": false,
@@ -2921,7 +3233,20 @@
     "privado:anio-O-x3b6dc64b2-0.jpg"
    ],
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "medida3d": {
+    "diametro": 17.5,
+    "grosor": 0.83,
+    "canto": "Estriado",
+    "grosor3d": 0.83,
+    "metal": "plata",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x3b6dc64b2-escudo.jpg",
+    "reverso": "privado:cara3d-O-x3b6dc64b2-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xb402c067e": {
    "tengo": false,
@@ -2954,7 +3279,20 @@
    ],
    "fotos": [
     "O-xb402c067e-especial-10.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.81,
+    "canto": "Estriado",
+    "grosor3d": 0.81,
+    "metal": "plata (0,500)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xb402c067e-escudo.jpg",
+    "reverso": "privado:cara3d-O-xb402c067e-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x26a905aee": {
    "tengo": false,
@@ -2967,7 +3305,20 @@
    "fotosCompra": [
     "privado:anio-O-x26a905aee-0.jpg",
     "privado:anio-O-x26a905aee-1.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.92,
+    "canto": "Liso",
+    "grosor3d": 0.92,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x26a905aee-escudo.jpg",
+    "reverso": "privado:cara3d-O-x26a905aee-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x92c19e6f8": {
    "tengo": false,
@@ -2980,7 +3331,20 @@
    "fotosCompra": [
     "privado:anio-O-x92c19e6f8-0.jpg",
     "privado:anio-O-x92c19e6f8-1.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.92,
+    "canto": "Liso",
+    "grosor3d": 0.92,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x92c19e6f8-escudo.jpg",
+    "reverso": "privado:cara3d-O-x92c19e6f8-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xb16bfbae6": {
    "tengo": true,
@@ -3019,7 +3383,20 @@
     "privado:km-KM170.jpg"
    ],
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.89,
+    "canto": "Liso",
+    "grosor3d": 0.89,
+    "metal": "bronce",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xf2c633f9a-escudo.jpg",
+    "reverso": "privado:cara3d-O-xf2c633f9a-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xf50ceb0b7": {
    "tengo": true,
@@ -3058,7 +3435,20 @@
    "fo": "FO# 12988",
    "fotosCompra": [
     "privado:km-KM174.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.92,
+    "canto": "Estriado",
+    "grosor3d": 0.92,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x69fd1edf2-escudo.jpg",
+    "reverso": "privado:cara3d-O-x69fd1edf2-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x2e49f64bd": {
    "tengo": false,
@@ -3072,7 +3462,20 @@
     "privado:anio-O-x2e49f64bd-1.jpg"
    ],
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.92,
+    "canto": "Liso",
+    "grosor3d": 0.92,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x2e49f64bd-escudo.jpg",
+    "reverso": "privado:cara3d-O-x2e49f64bd-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x22b6dee50": {
    "tengo": false,
@@ -3084,7 +3487,20 @@
    "fo": "FO# 11419",
    "fotosCompra": [
     "privado:km-KM180.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.92,
+    "canto": "Liso",
+    "grosor3d": 0.92,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x22b6dee50-escudo.jpg",
+    "reverso": "privado:cara3d-O-x22b6dee50-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x05f454d6e": {
    "tengo": true,
@@ -3525,7 +3941,20 @@
    "fo": "FO# 2698",
    "fotosCompra": [
     "privado:km-KM175.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 23,
+    "grosor": 0.9,
+    "canto": "Liso con letras",
+    "grosor3d": 0.9,
+    "metal": "cobre-níquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x09ee32428-escudo.jpg",
+    "reverso": "privado:cara3d-O-x09ee32428-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x60dd36046": {
    "tengo": false,
@@ -3537,7 +3966,20 @@
    "fo": "FO# 12989",
    "fotosCompra": [
     "privado:km-KM181.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 23,
+    "grosor": 0.99,
+    "canto": "Estriado",
+    "grosor3d": 0.99,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x60dd36046-escudo.jpg",
+    "reverso": "privado:cara3d-O-x60dd36046-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x71768fc80": {
    "tengo": false,
@@ -3575,7 +4017,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 23,
+    "grosor": 0.99,
+    "canto": "Estriado",
+    "grosor3d": 0.99,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x71768fc80-escudo.jpg",
+    "reverso": "privado:cara3d-O-x71768fc80-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xfe54a68f0": {
    "tengo": false,
@@ -3611,7 +4066,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 23,
+    "grosor": 0.99,
+    "canto": "Estriado",
+    "grosor3d": 0.99,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xfe54a68f0-escudo.jpg",
+    "reverso": "privado:cara3d-O-xfe54a68f0-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xc9db761fe": {
    "tengo": false,
@@ -3646,7 +4114,20 @@
    "fotos": [
     "O-xc9db761fe-especial-1.jpg",
     "O-xc9db761fe-especial-2.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 23,
+    "grosor": 0.99,
+    "canto": "Estriado",
+    "grosor3d": 0.99,
+    "metal": "latón",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xc9db761fe-escudo.jpg",
+    "reverso": "privado:cara3d-O-xc9db761fe-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x3b37ebb6e": {
    "tengo": true,
@@ -3989,7 +4470,20 @@
    "fotosCompra": [
     "privado:anio-O-xea71ba3dd-0.jpg",
     "privado:anio-O-xea71ba3dd-1.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 29,
+    "grosor": 1.51,
+    "canto": "Estriado",
+    "grosor3d": 1.51,
+    "metal": "plata",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xea71ba3dd-escudo.jpg",
+    "reverso": "privado:cara3d-O-xea71ba3dd-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xc3148346f": {
    "tengo": false,
@@ -4001,7 +4495,20 @@
    "fo": "FO# 11457",
    "fotosCompra": [
     "privado:km-KM143.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 29,
+    "grosor": 1.51,
+    "canto": "Estriado",
+    "grosor3d": 1.51,
+    "metal": "plata",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xc3148346f-escudo.jpg",
+    "reverso": "privado:cara3d-O-xc3148346f-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x158225232": {
    "tengo": false,
@@ -4013,7 +4520,20 @@
    "fo": "FO# 11457",
    "fotosCompra": [
     "privado:km-KM143.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 29,
+    "grosor": 1.51,
+    "canto": "Estriado",
+    "grosor3d": 1.51,
+    "metal": "plata",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x158225232-escudo.jpg",
+    "reverso": "privado:cara3d-O-x158225232-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xb580f96cc": {
    "tengo": false,
@@ -4058,7 +4578,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.27,
+    "canto": "Estriado",
+    "grosor3d": 1.27,
+    "metal": "plata",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xb580f96cc-escudo.jpg",
+    "reverso": "privado:cara3d-O-xb580f96cc-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x507cade4f": {
    "tengo": false,
@@ -4103,7 +4636,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.28,
+    "canto": "Estriado",
+    "grosor3d": 1.28,
+    "metal": "plata",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x507cade4f-escudo.jpg",
+    "reverso": "privado:cara3d-O-x507cade4f-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xe084069b3": {
    "tengo": false,
@@ -4148,7 +4694,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.32,
+    "canto": "Estriado",
+    "grosor3d": 1.32,
+    "metal": "plata 0,750",
+    "fuente": "Numista (KM 159): 25 mm y 6,5 g; grosor3d = peso / (densidad × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xe084069b3-escudo.jpg",
+    "reverso": "privado:cara3d-O-xe084069b3-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xb1d723843": {
    "tengo": false,
@@ -4160,7 +4719,20 @@
    "fo": "FO# 12990",
    "fotosCompra": [
     "privado:km-KM172.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25.02,
+    "grosor": 1.43,
+    "canto": "Liso con letras",
+    "grosor3d": 1.43,
+    "metal": "cobre-níquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xb1d723843-escudo.jpg",
+    "reverso": "privado:cara3d-O-xb1d723843-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xdee55ae78": {
    "tengo": false,
@@ -4172,7 +4744,20 @@
    "fo": "FO# 8586",
    "fotosCompra": [
     "privado:km-KM176.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.4,
+    "canto": "Liso con letras",
+    "grosor3d": 1.4,
+    "metal": "cobre-níquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xdee55ae78-escudo.jpg",
+    "reverso": "privado:cara3d-O-xdee55ae78-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x6ecf97344": {
    "tengo": true,
@@ -4308,7 +4893,20 @@
    "fotos": [
     "O-xeb403d2e8-especial-1.jpg",
     "O-xeb403d2e8-especial-2.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 26,
+    "grosor": 1.54,
+    "canto": "Liso con letras",
+    "grosor3d": 1.54,
+    "metal": "cobre-níquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xeb403d2e8-escudo.jpg",
+    "reverso": "privado:cara3d-O-xeb403d2e8-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xa5ccc1c22": {
    "tengo": false,
@@ -4321,7 +4919,20 @@
     "privado:anio-O-xa5ccc1c22-0j.jpg"
    ],
    "fechaValor": "2026-11-20",
-   "fuenteValor": "Precio revendedor"
+   "fuenteValor": "Precio revendedor",
+   "medida3d": {
+    "diametro": 26,
+    "grosor": 1.54,
+    "canto": "Liso con letras",
+    "grosor3d": 1.54,
+    "metal": "cobre-níquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xa5ccc1c22-escudo.jpg",
+    "reverso": "privado:cara3d-O-xa5ccc1c22-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x37b2aafbf": {
    "tengo": false,
@@ -4333,7 +4944,20 @@
    "fo": "FO# 6469",
    "fotosCompra": [
     "privado:anio-O-x37b2aafbf-0.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 26,
+    "grosor": 1.54,
+    "canto": "Liso con letras",
+    "grosor3d": 1.54,
+    "metal": "cobre-níquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x37b2aafbf-escudo.jpg",
+    "reverso": "privado:cara3d-O-x37b2aafbf-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x201edf229": {
    "tengo": false,
@@ -4345,7 +4969,20 @@
    "fo": "FO# 10241",
    "fotosCompra": [
     "privado:km-KM189-2.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 26,
+    "grosor": 1.48,
+    "canto": "Liso con letras",
+    "grosor3d": 1.48,
+    "metal": "cobre-níquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x201edf229-escudo.jpg",
+    "reverso": "privado:cara3d-O-x201edf229-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xdea505670": {
    "tengo": false,
@@ -4380,7 +5017,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 26,
+    "grosor": 1.48,
+    "canto": "Liso con letras",
+    "grosor3d": 1.48,
+    "metal": "cobre-níquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xdea505670-escudo.jpg",
+    "reverso": "privado:cara3d-O-xdea505670-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x72b788c96": {
    "tengo": true,
@@ -4601,7 +5251,20 @@
    "fo": "FO# 13646",
    "fotosCompra": [
     "privado:km-KM163.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 32,
+    "grosor": 1.55,
+    "canto": "Estriado",
+    "grosor3d": 1.55,
+    "metal": "plata",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xaf16fb498-escudo.jpg",
+    "reverso": "privado:cara3d-O-xaf16fb498-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x84d6461b9": {
    "tengo": true,
@@ -5297,7 +5960,20 @@
    "tengo": false,
    "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
    "km": "KM# 139",
-   "fo": "FO# 15173"
+   "fo": "FO# 15173",
+   "medida3d": {
+    "diametro": 14,
+    "grosor": 0.59,
+    "canto": "Estriado",
+    "grosor3d": 0.59,
+    "metal": "oro (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x41e23a1e6-escudo.jpg",
+    "reverso": "privado:cara3d-O-x41e23a1e6-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xb9d19fb61": {
    "tengo": false,
@@ -5306,7 +5982,20 @@
    "fo": "FO# 15173",
    "fotosCompra": [
     "privado:anio-O-xb9d19fb61-0.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 14,
+    "grosor": 0.59,
+    "canto": "Estriado",
+    "grosor3d": 0.59,
+    "metal": "oro (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xb9d19fb61-escudo.jpg",
+    "reverso": "privado:cara3d-O-xb9d19fb61-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x4bf5a47e1": {
    "tengo": false,
@@ -5316,7 +6005,20 @@
    "fotosCompra": [
     "privado:anio-O-x4bf5a47e1-0.jpg",
     "privado:anio-O-x4bf5a47e1-1.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 14,
+    "grosor": 0.59,
+    "canto": "Estriado",
+    "grosor3d": 0.59,
+    "metal": "oro (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x4bf5a47e1-escudo.jpg",
+    "reverso": "privado:cara3d-O-x4bf5a47e1-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xad736ec69": {
    "tengo": false,
@@ -5325,7 +6027,20 @@
    "fo": "FO# 15173",
    "fotosCompra": [
     "privado:anio-O-xad736ec69-0.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 14,
+    "grosor": 0.59,
+    "canto": "Estriado",
+    "grosor3d": 0.59,
+    "metal": "oro (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xad736ec69-escudo.jpg",
+    "reverso": "privado:cara3d-O-xad736ec69-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x0c52adf69": {
    "tengo": false,
@@ -5334,7 +6049,20 @@
    "fo": "FO# 15173",
    "fotosCompra": [
     "privado:anio-O-x0c52adf69-0.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 14,
+    "grosor": 0.59,
+    "canto": "Estriado",
+    "grosor3d": 0.59,
+    "metal": "oro (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x0c52adf69-escudo.jpg",
+    "reverso": "privado:cara3d-O-x0c52adf69-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xba99eb867": {
    "tengo": false,
@@ -5344,13 +6072,39 @@
    "fotosCompra": [
     "privado:anio-O-xba99eb867-0.jpg",
     "privado:anio-O-xba99eb867-1.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 14,
+    "grosor": 0.59,
+    "canto": "Estriado",
+    "grosor3d": 0.59,
+    "metal": "oro (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xba99eb867-escudo.jpg",
+    "reverso": "privado:cara3d-O-xba99eb867-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x3094422ca": {
    "tengo": false,
    "notas": "Material: Oro (0,900) · Peso: 1,55 g · Diámetro: 14,00 mm · Canto: Estriado\nFuente: Excel monedas costa rica, hoja \"2 colones\".",
    "km": "KM# 139",
-   "fo": "FO# 15173"
+   "fo": "FO# 15173",
+   "medida3d": {
+    "diametro": 14,
+    "grosor": 0.59,
+    "canto": "Estriado",
+    "grosor3d": 0.59,
+    "metal": "oro (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x3094422ca-escudo.jpg",
+    "reverso": "privado:cara3d-O-x3094422ca-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xc393f4c32": {
    "tengo": true,
@@ -8820,7 +9574,20 @@
    "fo": "FO# 19310",
    "fotosCompra": [
     "privado:km-KM202.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 33.5,
+    "grosor": 2.21,
+    "canto": "Estriado",
+    "grosor3d": 2.21,
+    "metal": "oro (0,900)",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x2678c4f97-escudo.jpg",
+    "reverso": "privado:cara3d-O-x2678c4f97-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x903a1aa01": {
    "tengo": false,
@@ -8832,7 +9599,20 @@
    "fo": "FO# 11439",
    "fotosCompra": [
     "privado:km-KM109.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 20,
+    "grosor": 1.36,
+    "canto": "Liso",
+    "grosor3d": 1.36,
+    "metal": "cobre niquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x903a1aa01-escudo.jpg",
+    "reverso": "privado:cara3d-O-x903a1aa01-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x2a2b56013": {
    "tengo": false,
@@ -8844,7 +9624,20 @@
    "fo": "FO# 11439",
    "fotosCompra": [
     "privado:km-KM109.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 20,
+    "grosor": 1.36,
+    "canto": "Liso",
+    "grosor3d": 1.36,
+    "metal": "cobre niquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x2a2b56013-escudo.jpg",
+    "reverso": "privado:cara3d-O-x2a2b56013-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x9c1f9f746": {
    "tengo": false,
@@ -8856,7 +9649,20 @@
    "fo": "FO# 11439",
    "fotosCompra": [
     "privado:km-KM109.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 20,
+    "grosor": 1.36,
+    "canto": "Liso",
+    "grosor3d": 1.36,
+    "metal": "cobre niquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x9c1f9f746-escudo.jpg",
+    "reverso": "privado:cara3d-O-x9c1f9f746-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x972bb7612": {
    "tengo": false,
@@ -8869,7 +9675,20 @@
    "fotosCompra": [
     "privado:anio-O-x972bb7612-0.jpg",
     "privado:anio-O-x972bb7612-1.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 20,
+    "grosor": 1.36,
+    "canto": "Liso",
+    "grosor3d": 1.36,
+    "metal": "cobre niquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x972bb7612-escudo.jpg",
+    "reverso": "privado:cara3d-O-x972bb7612-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xa5dfea8bb": {
    "tengo": false,
@@ -8881,7 +9700,20 @@
    "fo": "FO# 11445",
    "fotosCompra": [
     "privado:km-KM120.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 20,
+    "grosor": 1.36,
+    "canto": "Liso",
+    "grosor3d": 1.36,
+    "metal": "cobre niquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xa5dfea8bb-escudo.jpg",
+    "reverso": "privado:cara3d-O-xa5dfea8bb-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xefc64ffa6": {
    "tengo": false,
@@ -8892,7 +9724,20 @@
    "fotosCompra": [
     "1-4-centavo-1865-compra.jpg",
     "1-4-centavo-1865-compra-2.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 12.5,
+    "grosor": 0.73,
+    "canto": "Liso",
+    "grosor3d": 0.73,
+    "metal": "cobre niquel",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xefc64ffa6-escudo.jpg",
+    "reverso": "privado:cara3d-O-xefc64ffa6-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xed1002040": {
    "tengo": false,
@@ -8900,7 +9745,20 @@
    "costo": 30000,
    "valor": 35000,
    "km": "KM# 110",
-   "fo": "FO# 11436"
+   "fo": "FO# 11436",
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.72,
+    "canto": "Liso",
+    "grosor3d": 0.72,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xed1002040-escudo.jpg",
+    "reverso": "privado:cara3d-O-xed1002040-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xd10a5095e": {
    "tengo": false,
@@ -8908,7 +9766,20 @@
    "costo": 30000,
    "valor": 35000,
    "km": "KM# 110",
-   "fo": "FO# 11436"
+   "fo": "FO# 11436",
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.72,
+    "canto": "Liso",
+    "grosor3d": 0.72,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xd10a5095e-escudo.jpg",
+    "reverso": "privado:cara3d-O-xd10a5095e-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xefa3a31e0": {
    "tengo": false,
@@ -8916,7 +9787,20 @@
    "costo": 30000,
    "valor": 35000,
    "km": "KM# 110",
-   "fo": "FO# 11436"
+   "fo": "FO# 11436",
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.72,
+    "canto": "Liso",
+    "grosor3d": 0.72,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xefa3a31e0-escudo.jpg",
+    "reverso": "privado:cara3d-O-xefa3a31e0-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x0c0f6da94": {
    "tengo": false,
@@ -8924,7 +9808,20 @@
    "costo": 30000,
    "valor": 35000,
    "km": "KM# 110",
-   "fo": "FO# 11436"
+   "fo": "FO# 11436",
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.72,
+    "canto": "Liso",
+    "grosor3d": 0.72,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x0c0f6da94-escudo.jpg",
+    "reverso": "privado:cara3d-O-x0c0f6da94-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x981998a95": {
    "tengo": false,
@@ -8949,7 +9846,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.72,
+    "canto": "Liso",
+    "grosor3d": 0.72,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x981998a95-escudo.jpg",
+    "reverso": "privado:cara3d-O-x981998a95-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xf29b3e962": {
    "tengo": false,
@@ -8974,7 +9884,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.72,
+    "canto": "Liso",
+    "grosor3d": 0.72,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xf29b3e962-escudo.jpg",
+    "reverso": "privado:cara3d-O-xf29b3e962-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x54d0eadcb": {
    "tengo": true,
@@ -9008,7 +9931,20 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 125",
-   "fo": "FO# 11450"
+   "fo": "FO# 11450",
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.72,
+    "canto": "Liso",
+    "grosor3d": 0.72,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x579d6fb16-escudo.jpg",
+    "reverso": "privado:cara3d-O-x579d6fb16-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x7656eee09": {
    "tengo": false,
@@ -9017,7 +9953,20 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 125",
-   "fo": "FO# 11450"
+   "fo": "FO# 11450",
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.72,
+    "canto": "Liso",
+    "grosor3d": 0.72,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x7656eee09-escudo.jpg",
+    "reverso": "privado:cara3d-O-x7656eee09-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x00a26e295": {
    "tengo": false,
@@ -9026,7 +9975,20 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 125",
-   "fo": "FO# 11450"
+   "fo": "FO# 11450",
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.72,
+    "canto": "Liso",
+    "grosor3d": 0.72,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x00a26e295-escudo.jpg",
+    "reverso": "privado:cara3d-O-x00a26e295-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xfbcf86b5f": {
    "tengo": false,
@@ -9057,7 +10019,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.68,
+    "canto": "Liso",
+    "grosor3d": 0.68,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xfbcf86b5f-escudo.jpg",
+    "reverso": "privado:cara3d-O-xfbcf86b5f-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xb903ac08e": {
    "tengo": false,
@@ -9085,7 +10060,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.68,
+    "canto": "Liso",
+    "grosor3d": 0.68,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xb903ac08e-escudo.jpg",
+    "reverso": "privado:cara3d-O-xb903ac08e-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x9a3268c79": {
    "tengo": false,
@@ -9097,7 +10085,20 @@
    "fo": "FO# 11454",
    "fotosCompra": [
     "privado:anio-O-x9a3268c79-0j.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.68,
+    "canto": "Liso",
+    "grosor3d": 0.68,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x9a3268c79-escudo.jpg",
+    "reverso": "privado:cara3d-O-x9a3268c79-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xfde480533": {
    "tengo": false,
@@ -9106,7 +10107,20 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 128",
-   "fo": "FO# 11454"
+   "fo": "FO# 11454",
+   "medida3d": {
+    "diametro": 15,
+    "grosor": 0.68,
+    "canto": "Liso",
+    "grosor3d": 0.68,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xfde480533-escudo.jpg",
+    "reverso": "privado:cara3d-O-xfde480533-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x122553906": {
    "tengo": false,
@@ -9117,7 +10131,20 @@
    "fo": "FO# 11437",
    "fotosCompra": [
     "privado:km-KM111.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 19,
+    "grosor": 0.89,
+    "canto": "Liso",
+    "grosor3d": 0.89,
+    "metal": "plata 0,750",
+    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x122553906-escudo.jpg",
+    "reverso": "privado:cara3d-O-x122553906-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x02fb29662": {
    "tengo": false,
@@ -9128,7 +10155,20 @@
    "fo": "FO# 11437",
    "fotosCompra": [
     "privado:km-KM111.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 19,
+    "grosor": 0.89,
+    "canto": "Liso",
+    "grosor3d": 0.89,
+    "metal": "plata 0,750",
+    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x02fb29662-escudo.jpg",
+    "reverso": "privado:cara3d-O-x02fb29662-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x5c359e4db": {
    "tengo": false,
@@ -9139,7 +10179,20 @@
    "fo": "FO# 11437",
    "fotosCompra": [
     "privado:km-KM111.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 19,
+    "grosor": 0.89,
+    "canto": "Liso",
+    "grosor3d": 0.89,
+    "metal": "plata 0,750",
+    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x5c359e4db-escudo.jpg",
+    "reverso": "privado:cara3d-O-x5c359e4db-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x6e6c3cea2": {
    "tengo": false,
@@ -9171,7 +10224,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 19,
+    "grosor": 0.89,
+    "canto": "Liso",
+    "grosor3d": 0.89,
+    "metal": "plata 0,750",
+    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x6e6c3cea2-escudo.jpg",
+    "reverso": "privado:cara3d-O-x6e6c3cea2-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xaa5fb7b92": {
    "tengo": false,
@@ -9203,7 +10269,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 19,
+    "grosor": 0.89,
+    "canto": "Liso",
+    "grosor3d": 0.89,
+    "metal": "plata 0,750",
+    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xaa5fb7b92-escudo.jpg",
+    "reverso": "privado:cara3d-O-xaa5fb7b92-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x886fea3dd": {
    "tengo": true,
@@ -9264,7 +10343,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.98,
+    "canto": "Liso",
+    "grosor3d": 0.98,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x6d548f835-escudo.jpg",
+    "reverso": "privado:cara3d-O-x6d548f835-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x350c492e0": {
    "tengo": false,
@@ -9297,7 +10389,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.98,
+    "canto": "Liso",
+    "grosor3d": 0.98,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x350c492e0-escudo.jpg",
+    "reverso": "privado:cara3d-O-x350c492e0-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xdfb74d609": {
    "tengo": false,
@@ -9309,7 +10414,20 @@
    "fo": "FO# 11451",
    "fotosCompra": [
     "privado:km-KM126.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.98,
+    "canto": "Liso",
+    "grosor3d": 0.98,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xdfb74d609-escudo.jpg",
+    "reverso": "privado:cara3d-O-xdfb74d609-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x1338f502a": {
    "tengo": false,
@@ -9342,7 +10460,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.98,
+    "canto": "Liso",
+    "grosor3d": 0.98,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x1338f502a-escudo.jpg",
+    "reverso": "privado:cara3d-O-x1338f502a-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x57e5bfbfa": {
    "tengo": false,
@@ -9375,7 +10506,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.98,
+    "canto": "Liso",
+    "grosor3d": 0.98,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x57e5bfbfa-escudo.jpg",
+    "reverso": "privado:cara3d-O-x57e5bfbfa-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x70cf42be8": {
    "tengo": false,
@@ -9387,7 +10531,20 @@
    "fo": "FO# 8722",
    "fotosCompra": [
     "privado:km-KM129.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.98,
+    "canto": "Liso",
+    "grosor3d": 0.98,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x70cf42be8-escudo.jpg",
+    "reverso": "privado:cara3d-O-x70cf42be8-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xc9d18facf": {
    "tengo": false,
@@ -9399,7 +10556,20 @@
    "fo": "FO# 8722",
    "fotosCompra": [
     "privado:anio-O-xc9d18facf-0.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 18,
+    "grosor": 0.98,
+    "canto": "Liso",
+    "grosor3d": 0.98,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xc9d18facf-escudo.jpg",
+    "reverso": "privado:cara3d-O-xc9d18facf-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xa5f1883b5": {
    "tengo": false,
@@ -9424,7 +10594,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.27,
+    "canto": "Liso",
+    "grosor3d": 1.27,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xa5f1883b5-escudo.jpg",
+    "reverso": "privado:cara3d-O-xa5f1883b5-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xe4f26576a": {
    "tengo": false,
@@ -9449,7 +10632,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.27,
+    "canto": "Liso",
+    "grosor3d": 1.27,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xe4f26576a-escudo.jpg",
+    "reverso": "privado:cara3d-O-xe4f26576a-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x1a6760e2e": {
    "tengo": false,
@@ -9457,7 +10653,20 @@
    "costo": 30000,
    "valor": 45000,
    "km": "KM# 106",
-   "fo": "FO# 11435"
+   "fo": "FO# 11435",
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.27,
+    "canto": "Liso",
+    "grosor3d": 1.27,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x1a6760e2e-escudo.jpg",
+    "reverso": "privado:cara3d-O-x1a6760e2e-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x50c709336": {
    "tengo": false,
@@ -9469,7 +10678,20 @@
    "fotos": [
     "O-x50c709336-mia-5.jpg",
     "O-x50c709336-mia-6.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.27,
+    "canto": "Liso",
+    "grosor3d": 1.27,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x50c709336-escudo.jpg",
+    "reverso": "privado:cara3d-O-x50c709336-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x2561fd32e": {
    "tengo": false,
@@ -9511,7 +10733,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.27,
+    "canto": "Liso",
+    "grosor3d": 1.27,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x2561fd32e-escudo.jpg",
+    "reverso": "privado:cara3d-O-x2561fd32e-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xa747aa459": {
    "tengo": false,
@@ -9553,7 +10788,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.27,
+    "canto": "Liso",
+    "grosor3d": 1.27,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xa747aa459-escudo.jpg",
+    "reverso": "privado:cara3d-O-xa747aa459-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x43a40c16c": {
    "tengo": false,
@@ -9595,7 +10843,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.27,
+    "canto": "Liso",
+    "grosor3d": 1.27,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x43a40c16c-escudo.jpg",
+    "reverso": "privado:cara3d-O-x43a40c16c-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xfc97ea550": {
    "tengo": false,
@@ -9628,7 +10889,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.27,
+    "canto": "Liso",
+    "grosor3d": 1.27,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xfc97ea550-escudo.jpg",
+    "reverso": "privado:cara3d-O-xfc97ea550-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x3a5a52068": {
    "tengo": false,
@@ -9661,7 +10935,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.27,
+    "canto": "Liso",
+    "grosor3d": 1.27,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x3a5a52068-escudo.jpg",
+    "reverso": "privado:cara3d-O-x3a5a52068-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x630ee3d25": {
    "tengo": false,
@@ -9694,7 +10981,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.27,
+    "canto": "Liso",
+    "grosor3d": 1.27,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x630ee3d25-escudo.jpg",
+    "reverso": "privado:cara3d-O-x630ee3d25-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x363d6a360": {
    "tengo": false,
@@ -9727,7 +11027,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.28,
+    "canto": "Liso",
+    "grosor3d": 1.28,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x363d6a360-escudo.jpg",
+    "reverso": "privado:cara3d-O-x363d6a360-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xe42753b8d": {
    "tengo": false,
@@ -9760,7 +11073,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.28,
+    "canto": "Liso",
+    "grosor3d": 1.28,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xe42753b8d-escudo.jpg",
+    "reverso": "privado:cara3d-O-xe42753b8d-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xd824c07da": {
    "tengo": false,
@@ -9793,7 +11119,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.28,
+    "canto": "Liso",
+    "grosor3d": 1.28,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xd824c07da-escudo.jpg",
+    "reverso": "privado:cara3d-O-xd824c07da-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x85fa3bc88": {
    "tengo": false,
@@ -9802,7 +11141,20 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 130",
-   "fo": "FO# 8724"
+   "fo": "FO# 8724",
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.28,
+    "canto": "Liso",
+    "grosor3d": 1.28,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x85fa3bc88-escudo.jpg",
+    "reverso": "privado:cara3d-O-x85fa3bc88-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x1eac818a3": {
    "tengo": false,
@@ -9811,7 +11163,20 @@
    "valor": 42000,
    "valorEstimado": true,
    "km": "KM# 130",
-   "fo": "FO# 8724"
+   "fo": "FO# 8724",
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.28,
+    "canto": "Liso",
+    "grosor3d": 1.28,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x1eac818a3-escudo.jpg",
+    "reverso": "privado:cara3d-O-x1eac818a3-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x32b16035a": {
    "tengo": false,
@@ -9851,7 +11216,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.28,
+    "canto": "Liso",
+    "grosor3d": 1.28,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x32b16035a-escudo.jpg",
+    "reverso": "privado:cara3d-O-x32b16035a-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xc68c47c19": {
    "tengo": false,
@@ -9887,7 +11265,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.28,
+    "canto": "Liso",
+    "grosor3d": 1.28,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xc68c47c19-escudo.jpg",
+    "reverso": "privado:cara3d-O-xc68c47c19-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x0de94f948": {
    "tengo": false,
@@ -9923,7 +11314,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 25,
+    "grosor": 1.28,
+    "canto": "Liso",
+    "grosor3d": 1.28,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x0de94f948-escudo.jpg",
+    "reverso": "privado:cara3d-O-x0de94f948-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x9d354d99e": {
    "tengo": false,
@@ -9931,7 +11335,20 @@
    "costo": 30000,
    "valor": 50000,
    "km": "KM# 112",
-   "fo": "FO# 11438"
+   "fo": "FO# 11438",
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x9d354d99e-escudo.jpg",
+    "reverso": "privado:cara3d-O-x9d354d99e-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xcf793dd98": {
    "tengo": false,
@@ -9939,7 +11356,20 @@
    "costo": 30000,
    "valor": 50000,
    "km": "KM# 112",
-   "fo": "FO# 11438"
+   "fo": "FO# 11438",
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xcf793dd98-escudo.jpg",
+    "reverso": "privado:cara3d-O-xcf793dd98-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x94870324b": {
    "tengo": false,
@@ -9947,7 +11377,20 @@
    "costo": 30000,
    "valor": 50000,
    "km": "KM# 112",
-   "fo": "FO# 11438"
+   "fo": "FO# 11438",
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x94870324b-escudo.jpg",
+    "reverso": "privado:cara3d-O-x94870324b-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xa0cc7adc9": {
    "tengo": false,
@@ -9955,7 +11398,20 @@
    "costo": 30000,
    "valor": 50000,
    "km": "KM# 112",
-   "fo": "FO# 11438"
+   "fo": "FO# 11438",
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xa0cc7adc9-escudo.jpg",
+    "reverso": "privado:cara3d-O-xa0cc7adc9-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x973b98277": {
    "tengo": false,
@@ -9963,7 +11419,20 @@
    "costo": 30000,
    "valor": 50000,
    "km": "KM# 112",
-   "fo": "FO# 11438"
+   "fo": "FO# 11438",
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x973b98277-escudo.jpg",
+    "reverso": "privado:cara3d-O-x973b98277-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xd374888f5": {
    "tengo": false,
@@ -9988,7 +11457,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xd374888f5-escudo.jpg",
+    "reverso": "privado:cara3d-O-xd374888f5-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xb997f5c30": {
    "tengo": false,
@@ -10013,7 +11495,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xb997f5c30-escudo.jpg",
+    "reverso": "privado:cara3d-O-xb997f5c30-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x282e75903": {
    "tengo": false,
@@ -10026,7 +11521,20 @@
    "fotosCompra": [
     "privado:anio-O-x282e75903-0.jpg",
     "privado:anio-O-x282e75903-1.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x282e75903-escudo.jpg",
+    "reverso": "privado:cara3d-O-x282e75903-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xc3f0b1ece": {
    "tengo": false,
@@ -10038,7 +11546,20 @@
    "fo": "FO# 11449",
    "fotosCompra": [
     "privado:anio-O-xc3f0b1ece-0.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xc3f0b1ece-escudo.jpg",
+    "reverso": "privado:cara3d-O-xc3f0b1ece-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x45a09aff2": {
    "tengo": false,
@@ -10050,7 +11571,20 @@
    "fo": "FO# 11449",
    "fotosCompra": [
     "privado:anio-O-x45a09aff2-0.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x45a09aff2-escudo.jpg",
+    "reverso": "privado:cara3d-O-x45a09aff2-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-xa911d1b1d": {
    "tengo": false,
@@ -10062,7 +11596,20 @@
    "fo": "FO# 11449",
    "fotosCompra": [
     "privado:miguel-50-centavos-1890.jpg"
-   ]
+   ],
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xa911d1b1d-escudo.jpg",
+    "reverso": "privado:cara3d-O-xa911d1b1d-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x738184247": {
    "tengo": false,
@@ -10095,7 +11642,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x738184247-escudo.jpg",
+    "reverso": "privado:cara3d-O-x738184247-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x58dae5f57": {
    "tengo": false,
@@ -10128,7 +11688,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x58dae5f57-escudo.jpg",
+    "reverso": "privado:cara3d-O-x58dae5f57-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x64aafd8a4": {
    "tengo": false,
@@ -10161,7 +11734,20 @@
      "notas": "",
      "mismoAnio": true
     }
-   ]
+   ],
+   "medida3d": {
+    "diametro": 31,
+    "grosor": 1.66,
+    "canto": "Liso",
+    "grosor3d": 1.66,
+    "metal": "plata 0,750",
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+   },
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x64aafd8a4-escudo.jpg",
+    "reverso": "privado:cara3d-O-x64aafd8a4-reverso.jpg",
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+   }
   },
   "O-x885f202b7": {
    "tengo": true,
