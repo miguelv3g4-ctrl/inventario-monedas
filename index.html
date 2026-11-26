@@ -203,6 +203,35 @@
   .moneda3d.gira .m3brilloV { animation-name: m3luzV; }
   @keyframes m3luz { 0%, 8% { background-position: 0 100%; } 40%, 100% { background-position: 0 0; } }
   @keyframes m3luzV { 0%, 58% { background-position: 0 100%; } 90%, 100% { background-position: 0 0; } }
+  /* vitrina: la moneda en su acrilico o en su estuche (CSS 3D, una sola para toda la hoja) */
+  .vtBarra { position: absolute; z-index: 3; display: flex; flex-direction: column; gap: 4px; }
+  .vtBoton { font: inherit; font-size: 12px; color: var(--oro); background: rgba(0, 0, 0, .72); border: 1px solid var(--oro2); border-radius: 10px; padding: 2px 8px; cursor: pointer; white-space: nowrap; }
+  .vtBarra .vtBoton { font-size: 10px; padding: 1px 6px; }
+  .vtBoton:hover, .vtBoton.activo { background: var(--oro); color: #000; }
+  .vtVelo { z-index: 30; align-items: center; }
+  .vtVentana { background: radial-gradient(ellipse 70% 60% at 50% 45%, #2a2418, #0b0a08 75%); border: 1px solid var(--linea); border-radius: 10px; padding: 10px 14px 12px; width: min(560px, 100%); display: flex; flex-direction: column; gap: 8px; }
+  .vtTitulo { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .vtTitulo b { font-size: 16px; }
+  .vtCerrar { font-size: 18px; background: none; border: 0; color: var(--oro); cursor: pointer; }
+  .vtOpciones { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .vtSep { color: var(--gris); }
+  .vtEscena { --k: 1; position: relative; height: calc(470px * var(--k)); perspective: 1400px; cursor: grab; touch-action: none; user-select: none; overflow: hidden; }
+  .vtEscena.arrastra { cursor: grabbing; }
+  .vtGiro { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d; scale: var(--k); }
+  .vtVaiven, .vtCubo { position: absolute; left: 0; top: 0; width: 0; height: 0; transform-style: preserve-3d; }
+  .vtCara { position: absolute; left: 0; top: 0; box-sizing: border-box; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+  .vtMonedaCara { border-radius: 50%; display: block; background-size: 100% 100%; background-repeat: no-repeat; background-position: center; }
+  .vtEspejo { border-radius: 50%; pointer-events: none; background: linear-gradient(160deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, .45) 46%, rgba(255, 255, 255, 0) 60%) 0 0 / 100% 300% no-repeat; animation: vtBrillo 3.5s ease-in-out infinite alternate; }
+  @keyframes vtBrillo { from { background-position: 0 100%; } to { background-position: 0 0; } }
+  .vtAro { border-radius: 50%; border: 3px solid rgba(235, 245, 255, .55); box-shadow: 0 0 6px rgba(255, 255, 255, .25), inset 0 0 6px rgba(255, 255, 255, .2); -webkit-backface-visibility: visible; backface-visibility: visible; }
+  .vtAroIn { border-width: 2px; border-color: rgba(235, 245, 255, .4); }
+  .vtTapaCap { border-radius: 50%; background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, .28), rgba(255, 255, 255, .04) 40%, rgba(255, 255, 255, 0) 70%); border: 1px solid rgba(255, 255, 255, .25); pointer-events: none; }
+  .vtTornillo { border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff, #b8bcc2 45%, #6d7178 100%); box-shadow: 0 0 2px rgba(0, 0, 0, .6); }
+  .vtGrabado { display: flex; flex-direction: column; align-items: center; color: rgba(245, 248, 255, .82); text-align: center; line-height: 1.25; font-family: Calibri, "Segoe UI", Arial, sans-serif; pointer-events: none; }
+  .vtGrabado img { display: block; margin-bottom: .5em; opacity: .85; }
+  .vtGrabado b, .vtGrabado span { font-weight: 600; }
+  .vtGrabado .it { font-style: italic; font-weight: 400; }
+  .vtNota { color: var(--gris); font-size: 12px; text-align: center; }
   @media (prefers-reduced-motion: reduce) { .moneda3d.gira .m3giro, .moneda3d.gira .m3brillo { animation-duration: 9s; } }
   .ck { position: absolute; width: 13px; height: 13px; background: #fff; border: 1px solid #333; z-index: 4; }
   .puedeEditar .ck { cursor: pointer; }
@@ -1075,6 +1104,22 @@
     'image17.png': ['Provincia de San Jose', 'provincia-de-san-jose'], 'image20.png': ['Swing Criollo', 'swing-criollo'], 'image21.png': ['Boyero', 'boyero'],
     'calipso-proof.jpg': ['Calipso', 'calipso'], 'image23.png': ['Cimarrona', 'cimarrona'], 'image25.png': ['Toros Tope', 'toros-tope'], 'image24.png': ['Ceramica Chorotega', 'ceramica-chorotega']
   };
+  // canto de una moneda: tiras alrededor (estriado, liso o por tramos) con su sombreado; px = pixeles por mm
+  function tirasCanto(M, D, G, px) {
+    const N = 40, R = D / 2, ancho = Math.PI * D / N + 0.8, f = document.createDocumentFragment();
+    for (let i = 0; i < N; i++) {
+      const ang = i * 360 / N, s = el('div', 'm3canto');
+      const luz = 0.38 * (1 - Math.cos(ang * Math.PI / 180)) / 2; // sombreado suave alrededor del canto para que se vea metalico
+      const [r, g, b] = M.metal, base = `rgb(${r},${g},${b})`, osc = `rgb(${r * 0.62 | 0},${g * 0.62 | 0},${b * 0.62 | 0})`;
+      const estriado = M.canto === 'estriado' || (M.canto === 'tramos' && (ang % (360 / M.secc)) < 180 / M.secc);
+      const paso = PASO_ESTRIA * px;
+      s.style.cssText = `width:${ancho.toFixed(2)}px;height:${G.toFixed(2)}px;margin:${(-G / 2).toFixed(2)}px 0 0 ${(-ancho / 2).toFixed(2)}px;` +
+        `transform:rotateZ(${ang}deg) translateY(${R.toFixed(2)}px) rotateX(90deg);background:linear-gradient(rgba(0,0,0,${luz.toFixed(2)}),rgba(0,0,0,${luz.toFixed(2)})),` +
+        (estriado ? `repeating-linear-gradient(90deg,${base} 0,${base} ${(paso / 2).toFixed(2)}px,${osc} ${(paso / 2).toFixed(2)}px,${osc} ${paso.toFixed(2)}px)` : `linear-gradient(${base},${osc} 140%)`);
+      f.appendChild(s);
+    }
+    return f;
+  }
   function moneda3d([nombre, archivo], p) {
     const pz = H.piezas.find(x => x.moneda === nombre), den = pz && DENOM_COLECCION[pz.coleccion], M = MEDIDAS_MONEDA[den];
     if (!M) return null;
@@ -1086,7 +1131,7 @@
     // regla: solo va en 3D la moneda que tiene su cara real recortada en img/monedas3d/ (las que aun no salen al publico
     // solo tienen una foto); si no existe, vuelve la imagen plana de la hoja, sin giro. Al agregar la cara, el 3D sale solo.
     const foto = 'img/monedas3d/' + archivo + '.webp', prueba = new Image();
-    prueba.onerror = () => { if (m.isConnected) m.replaceWith(imagenPlana(p)); };
+    prueba.onerror = () => { if (m.isConnected) m.replaceWith(imagenPlana(p)); if (m._barra) m._barra.remove(); };
     prueba.src = foto;
     // relieve en capas APARTE encima de la foto intacta: sombra (mezcla multiply) y luz (mezcla screen), sacadas de las
     // formas grandes del dibujo; en letras y detalles finos casi no actuan. Si falta el mapa, se ve solo la foto.
@@ -1098,18 +1143,7 @@
     const armar = () => {
       if (armada) return; armada = true;
       const valor = el('img', 'm3cara m3valor'); valor.style.background = `rgb(${M.metal})`; ponerRef(valor, VALOR_CARA[den]); valor.alt = ''; valor.draggable = false;
-      const N = 40, R = D / 2, ancho = Math.PI * D / N + 0.8, f = document.createDocumentFragment();
-      for (let i = 0; i < N; i++) {
-        const ang = i * 360 / N, s = el('div', 'm3canto');
-        const luz = 0.38 * (1 - Math.cos(ang * Math.PI / 180)) / 2; // sombreado suave alrededor del canto para que se vea metalico
-        const [r, g, b] = M.metal, base = `rgb(${r},${g},${b})`, osc = `rgb(${r * 0.62 | 0},${g * 0.62 | 0},${b * 0.62 | 0})`;
-        const estriado = M.canto === 'estriado' || (M.canto === 'tramos' && (ang % (360 / M.secc)) < 180 / M.secc);
-        const paso = PASO_ESTRIA * PX_MM;
-        s.style.cssText = `width:${ancho.toFixed(2)}px;height:${G.toFixed(2)}px;margin:${(-G / 2).toFixed(2)}px 0 0 ${(-ancho / 2).toFixed(2)}px;` +
-          `transform:rotateZ(${ang}deg) translateY(${R.toFixed(2)}px) rotateX(90deg);background:linear-gradient(rgba(0,0,0,${luz.toFixed(2)}),rgba(0,0,0,${luz.toFixed(2)})),` +
-          (estriado ? `repeating-linear-gradient(90deg,${base} 0,${base} ${(paso / 2).toFixed(2)}px,${osc} ${(paso / 2).toFixed(2)}px,${osc} ${paso.toFixed(2)}px)` : `linear-gradient(${base},${osc} 140%)`);
-        f.appendChild(s);
-      }
+      const f = tirasCanto(M, D, G, PX_MM);
       // brillo metalico que barre cada cara mientras gira (sigue el mismo tiempo del giro: el relieve "se mueve" con la luz)
       const b1 = el('div', 'm3brillo'), b2 = el('div', 'm3brillo m3brilloV');
       giro.append(valor, f, b1, b2); m.classList.add('vivo');
@@ -1126,7 +1160,7 @@
   }
   for (const p of H.imagenes) {
     if (p.elipse) continue; // el circulo blanco de atras de Puntarenas ya no hace falta: la moneda 3D va sola
-    if (MONEDA_IMG[p.f]) { const m = moneda3d(MONEDA_IMG[p.f], p); if (m) { frag.appendChild(m); continue; } }
+    if (MONEDA_IMG[p.f]) { const m = moneda3d(MONEDA_IMG[p.f], p); if (m) { frag.appendChild(m); const b = barraVitrina(MONEDA_IMG[p.f], p); if (b) { m._barra = b; frag.appendChild(b); } continue; } }
     frag.appendChild(imagenPlana(p));
   }
   function imagenPlana(p) { // imagen de la hoja tal cual el Excel (recortada)
@@ -1135,6 +1169,159 @@
     const im = el('img'); im.src = 'img/' + p.f; im.alt = ''; im.draggable = false;
     im.style.cssText = `left:${-l * w}px;top:${-t * h}px;width:${w}px;height:${h}px` + (p.negroTransparente ? ';mix-blend-mode:lighten' : '');
     d.appendChild(im); return d;
+  }
+
+  // ---------- vitrina 3D: la moneda en su acrilico (proof color, proof sin color, MS) o en su estuche (cerrado / abierto)
+  // Todo en CSS 3D (sin WebGL), una sola vitrina para toda la hoja y solo mientras esta abierta.
+  // Medidas en mm sacadas de las fotos de Miguel con regla (aproximadas, a confirmar).
+  const ACRILICO = { ancho: 60, alto: 86, grueso: 22, capsula: 45, centroY: 29, tornillo: 6, margen: 6 };
+  const ESTUCHE = { ancho: 83, fondo: 80, alto: 46, tapa: 20, color: [77, 83, 94], terciopelo: [50, 59, 91] };
+  const PX_VIT = 4.5;
+  // texto grabado en el acrilico debajo de «Moneda conmemorativa», leido de las fotos de los acrilicos de Miguel
+  // (Conejo, Guanacaste, Heredia, Cartago y Alajuela: sin foto del acrilico; mismo formato, con lo escrito en la moneda y el nombre del BCCR)
+  const GRABADO = {
+    '200 años de Independencia': ['200 años de independencia nacional', '1821 - 2021'],
+    '175 años de Fundacion de la Republica': ['175 años de la Fundación de la', 'República de Costa Rica', '1848 - 2023'],
+    '75 años de Abolicion del Ejercito': ['75 años de la Abolición del Ejército', '1948 - 2023'],
+    '200 años de Anexion del Partido de Nicoya': ['200 años de la Anexión del', 'Partido de Nicoya a Costa Rica', '1824 - 2024'],
+    'Mariposa Amorfo': ['Mariposa morfo', 'Morpho helenor marinita', 'Bosque tropical nuboso'],
+    'Rana Calzonuda': ['Rana calzonuda', 'Agalychnis callidryas', 'Bosque tropical lluvioso'],
+    'Tortuga Carey': ['Tortuga carey', 'Eretmochelys imbricata', 'Arrecife coralino'],
+    'Lagartija o Anolis': ['Lagartija o anolis', 'Norops sericeus', 'Bosque tropical seco'],
+    'Cangrejo Marinera': ['Cangrejo marinera', 'Goniopsis pulchra', 'Manglar'],
+    'Conejo de Monte': ['Conejo de monte', 'Sylvilagus dicei', 'Páramo'],
+    'Provincia de Limon': ['Provincia de Limón', 'Playa Manzanillo'], 'Provincia de Puntarenas': ['Provincia de Puntarenas', 'El Faro'],
+    'Provincia de Guanacaste': ['Provincia de Guanacaste', 'Casona de Santa Rosa'], 'Provincia de Heredia': ['Provincia de Heredia', 'El Fortín'],
+    'Provincia de Cartago': ['Provincia de Cartago', 'Basílica de Nuestra Señora de los Ángeles'], 'Provincia de Alajuela': ['Provincia de Alajuela', 'Volcán Arenal'],
+    'Provincia de San Jose': ['Provincia de San José', 'Teatro Nacional de Costa Rica'],
+    'Swing Criollo': ['Patrimonio cultural inmaterial', 'Swing criollo'], 'Calipso': ['Patrimonio cultural inmaterial', 'Calipso limonense']
+  };
+  const ITALICA = /^(Morpho|Agalychnis|Eretmochelys|Norops|Goniopsis|Sylvilagus) /;
+  // cara del dibujo SIN color (para proof sin color y MS): la foto real de la moneda MS suelta, si la hay
+  function caraSinColor(nombre) {
+    const o = (datos.otras || []).find(o => o.seccion === 'ms-sueltas' && (o.nombre || '').startsWith(nombre + ' ·'));
+    const c = o && reg(o.id).caras3d; return c && /^fotos-3d\//.test(c.escudo || '') ? c.escudo : null;
+  }
+  function barraVitrina([nombre, archivo], p) {
+    const pz = H.piezas.find(x => x.moneda === nombre), den = pz && DENOM_COLECCION[pz.coleccion], M = MEDIDAS_MONEDA[den]; if (!M) return null;
+    const D = M.d * PX_MM, cx = p.x + p.w / 2, cy = p.y + p.h / 2, b = el('div', 'vtBarra');
+    b.style.cssText = `left:${(cx + D / 2 + 5).toFixed(1)}px;top:${(cy - 21).toFixed(1)}px`;
+    for (const [modo, txt, tit] of [['acrilico', 'Acrílico', 'Ver la moneda en su acrílico'], ['estuche', 'Estuche', 'Ver la moneda en su estuche']]) {
+      const x = el('button', 'vtBoton', txt); x.type = 'button'; x.title = tit; x.onclick = e => { e.stopPropagation(); abrirVitrina(nombre, archivo, den, modo); }; b.appendChild(x);
+    }
+    return b;
+  }
+  function cubo(w, h, d, caras) { // caja de 6 caras centrada; w, h, d en px; caras: estilos de f(rente), b(atras), l, r, t(arriba), u(abajo)
+    const c = el('div', 'vtCubo');
+    for (const [k, cw, ch, tr] of [['f', w, h, `translateZ(${d / 2}px)`], ['b', w, h, `rotateY(180deg) translateZ(${d / 2}px)`], ['l', d, h, `rotateY(-90deg) translateZ(${w / 2}px)`],
+      ['r', d, h, `rotateY(90deg) translateZ(${w / 2}px)`], ['t', w, d, `rotateX(90deg) translateZ(${h / 2}px)`], ['u', w, d, `rotateX(-90deg) translateZ(${h / 2}px)`]]) {
+      if (!caras[k]) continue; const s = el('div', 'vtCara'); s.style.cssText = `width:${cw}px;height:${ch}px;margin:${-ch / 2}px 0 0 ${-cw / 2}px;transform:${tr};${caras[k]}`; c.appendChild(s);
+    }
+    return c;
+  }
+  const disco = (cls, D, tr) => { const s = el('div', 'vtCara ' + cls); s.style.cssText = `width:${D}px;height:${D}px;margin:${-D / 2}px 0 0 ${-D / 2}px` + (tr ? `;transform:${tr}` : ''); return s; };
+  // moneda solida (las dos caras y el canto) a la escala de la vitrina; acabado: color, espejo (proof sin color) o mate (MS)
+  function monedaSolida(nombre, archivo, den, acabado) {
+    const M = MEDIDAS_MONEDA[den], D = M.d * PX_VIT, G = M.g * PX_VIT, m = el('div', 'vtCubo');
+    const fr = disco('vtMonedaCara', D, `translateZ(${G / 2}px)`), foto = acabado === 'color' ? 'img/monedas3d/' + archivo + '.webp' : caraSinColor(nombre);
+    const rel = 'img/monedas3d/relieve/' + archivo;
+    fr.style.backgroundColor = `rgb(${M.metal})`;
+    if (acabado === 'color') { fr.style.backgroundImage = `url("${rel}-luz.webp"),url("${rel}-sombra.webp"),url("${foto}")`; fr.style.backgroundBlendMode = 'screen,multiply,normal'; }
+    else { fr.style.backgroundImage = `url("${foto}")`; fr.style.filter = acabado === 'espejo' ? 'contrast(1.38) brightness(1.06) saturate(.85)' : 'contrast(.9) brightness(1.04) saturate(.8)'; }
+    const va = el('img', 'vtCara vtMonedaCara'); va.alt = ''; va.draggable = false; ponerRef(va, VALOR_CARA[den]);
+    va.style.cssText = `width:${D}px;height:${D}px;margin:${-D / 2}px 0 0 ${-D / 2}px;transform:rotateX(180deg) translateZ(${G / 2}px);background:rgb(${M.metal})` + (acabado === 'mate' ? ';filter:contrast(.9) saturate(.8)' : '');
+    m.append(fr, va, tirasCanto(M, D, G, PX_VIT));
+    if (acabado === 'espejo') m.appendChild(disco('vtEspejo', D, `translateZ(${G / 2 + 0.3}px)`));
+    return m;
+  }
+  let vitrina = null;
+  function giroVitrina() { vitrina.querySelector('.vtGiro').style.transform = `rotateX(${vitrina._rx}deg) rotateY(${vitrina._ry}deg)`; }
+  function abrirVitrina(nombre, archivo, den, modo, acabado) {
+    if (!vitrina) {
+      vitrina = el('div', 'velo vtVelo'); vitrina.id = 'vitrina';
+      vitrina.innerHTML = '<div class="vtVentana"><div class="vtTitulo"><b></b><button type="button" class="vtCerrar" aria-label="Cerrar">✕</button></div><div class="vtOpciones"></div>' +
+        '<div class="vtEscena"><div class="vtGiro"><div class="vtVaiven"></div></div></div><small class="vtNota"></small></div>';
+      document.body.appendChild(vitrina);
+      const cerrar = () => { vitrina.classList.remove('abierta'); vitrina.querySelector('.vtVaiven').textContent = ''; };
+      vitrina.querySelector('.vtCerrar').onclick = cerrar;
+      vitrina.addEventListener('mousedown', e => { if (e.target === vitrina) cerrar(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && vitrina.classList.contains('abierta')) cerrar(); });
+      // arrastrar para girar la pieza (mouse o dedo); doble clic la endereza
+      const esc = vitrina.querySelector('.vtEscena'); let arr = null;
+      esc.addEventListener('pointerdown', e => { arr = { x: e.clientX, y: e.clientY, rx: vitrina._rx, ry: vitrina._ry }; esc.setPointerCapture(e.pointerId); esc.classList.add('arrastra'); });
+      esc.addEventListener('pointermove', e => { if (!arr) return; vitrina._ry = arr.ry + (e.clientX - arr.x) * 0.5; vitrina._rx = Math.max(-80, Math.min(80, arr.rx - (e.clientY - arr.y) * 0.4)); giroVitrina(); });
+      const soltar = () => { arr = null; esc.classList.remove('arrastra'); }; esc.addEventListener('pointerup', soltar); esc.addEventListener('pointercancel', soltar);
+      esc.addEventListener('dblclick', () => { vitrina._rx = vitrina._rx0; vitrina._ry = vitrina._ry0; giroVitrina(); });
+    }
+    const sinColor = caraSinColor(nombre);
+    acabado = acabado || 'color';
+    if (acabado !== 'color' && !sinColor) acabado = 'color';
+    const enAcrilico = modo === 'acrilico';
+    vitrina.querySelector('.vtTitulo b').textContent = nombre + (enAcrilico ? ' · en su acrílico' : ' · en su estuche');
+    const op = vitrina.querySelector('.vtOpciones'); op.textContent = '';
+    const boton = (txt, activo, fn, tit) => { const b = el('button', 'vtBoton' + (activo ? ' activo' : ''), txt); b.type = 'button'; if (tit) b.title = tit; b.onclick = fn; op.appendChild(b); };
+    boton('Acrílico', enAcrilico, () => abrirVitrina(nombre, archivo, den, 'acrilico', acabado));
+    boton('Estuche cerrado', modo === 'estuche', () => abrirVitrina(nombre, archivo, den, 'estuche', acabado));
+    boton('Estuche abierto', modo === 'abierto', () => abrirVitrina(nombre, archivo, den, 'abierto', acabado));
+    op.appendChild(el('span', 'vtSep', '|'));
+    boton('Proof color', acabado === 'color', () => abrirVitrina(nombre, archivo, den, modo, 'color'), 'Proof con color');
+    if (sinColor) {
+      boton('Proof sin color', acabado === 'espejo', () => abrirVitrina(nombre, archivo, den, modo, 'espejo'), 'Proof sin color: campo espejo, brillante');
+      boton('MS', acabado === 'mate', () => abrirVitrina(nombre, archivo, den, modo, 'mate'), 'MS: acabado mate');
+    }
+    const caja = vitrina.querySelector('.vtVaiven'); caja.textContent = '';
+    const P = PX_VIT, moneda = monedaSolida(nombre, archivo, den, acabado), M = MEDIDAS_MONEDA[den], mm = n => String(n).replace('.', ',');
+    if (enAcrilico) {
+      const A = ACRILICO, w = A.ancho * P, h = A.alto * P, d = A.grueso * P;
+      const vidrio = 'background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.03) 45%,rgba(200,225,255,.08));border:1px solid rgba(235,245,255,.5);box-shadow:inset 0 0 10px rgba(255,255,255,.18)';
+      const canto = 'background:linear-gradient(90deg,rgba(190,225,240,.38),rgba(235,250,255,.2) 50%,rgba(190,225,240,.38));border:1px solid rgba(235,245,255,.55)';
+      const bloque = cubo(w, h, d, { f: vidrio, b: vidrio, l: canto, r: canto, t: canto, u: canto });
+      const cy = (A.centroY - A.alto / 2) * P;
+      moneda.style.transform = `translateY(${cy}px)`;
+      // capsula redonda con su aro (a media altura del bloque) y las dos tapas transparentes
+      const cap = el('div', 'vtCubo'); cap.style.transform = `translateY(${cy}px)`;
+      const CD = A.capsula * P, tz = (M.g / 2 + 1.5) * P;
+      cap.append(disco('vtAro', CD), disco('vtAro vtAroIn', (M.d + 3) * P), disco('vtTapaCap', CD - 6, `translateZ(${tz}px)`), disco('vtTapaCap', CD - 6, `rotateY(180deg) translateZ(${tz}px)`));
+      // tornillos de las esquinas (por delante y por detras)
+      const tor = el('div', 'vtCubo'), TD = A.tornillo * P, ox = w / 2 - (A.margen + A.tornillo / 2) * P, oy = h / 2 - (A.margen + A.tornillo / 2) * P;
+      for (const [sx, sy] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) for (const s of [1, -1]) tor.appendChild(disco('vtTornillo', TD, `translate3d(${sx * ox}px,${sy * oy}px,${s * (d / 2 + 0.6)}px)` + (s < 0 ? ' rotateY(180deg)' : '')));
+      // grabado: logo del BCCR (sacado de la tapa del estuche) y el texto
+      const gw = w - 14 * P, gr = el('div', 'vtCara vtGrabado');
+      gr.style.cssText = `width:${gw}px;margin-left:${-gw / 2}px;top:${(A.alto * 0.63 - A.alto / 2) * P}px;transform:translateZ(${d / 2 + 0.2}px);font-size:${2.1 * P}px`;
+      const lg = el('img'); lg.src = 'img/estuches/logo-bccr.webp'; lg.alt = 'Banco Central de Costa Rica'; lg.draggable = false; lg.style.width = (30 * P) + 'px';
+      gr.append(lg, el('b', '', 'Moneda conmemorativa'));
+      for (const l of GRABADO[nombre] || [nombre]) gr.appendChild(el('span', ITALICA.test(l) ? 'it' : '', l));
+      caja.append(bloque, cap, moneda, tor, gr);
+      vitrina._rx0 = -8; vitrina._ry0 = -22;
+      vitrina.querySelector('.vtNota').textContent = 'Acrílico ' + A.ancho + ' × ' + A.alto + ' × ' + A.grueso + ' mm (medido en sus fotos con regla, aproximado) · moneda ' + mm(M.d) + ' mm, a la misma escala · arrastre para girarlo; doble clic lo endereza';
+    } else {
+      const E = ESTUCHE, w = E.ancho * P, hd = E.fondo * P, H0 = E.alto * P, hb = (E.alto - E.tapa) * P, ht = E.tapa * P;
+      const col = `rgb(${E.color})`, osc = `rgb(${E.color.map(c => c * .78 | 0)})`;
+      const lado = `background:linear-gradient(${col},${osc});border:1px solid rgba(0,0,0,.35)`;
+      const yTope = H0 / 2 - hb; // altura (y) del borde de arriba de la base
+      const base = cubo(w, hb, hd, { f: lado, b: lado, l: lado, r: lado, u: `background:${osc}`,
+        t: `background:url("img/estuches/estuche-terciopelo.webp") 0 0/${18 * P}px repeat,rgb(${E.terciopelo});box-shadow:inset 0 0 ${6 * P}px rgba(0,0,0,.75),inset 0 0 0 ${3 * P}px ${col}` });
+      base.style.transform = `translateY(${H0 / 2 - hb / 2}px)`;
+      const tapa = cubo(w, ht, hd, { f: lado, b: lado, l: lado, r: lado, t: 'background:url("img/estuches/estuche-tapa.webp") center/100% 100%',
+        u: `background:url("img/estuches/estuche-tapa-dentro.webp") center/100% 100%,rgb(${E.terciopelo});box-shadow:inset 0 0 0 ${3 * P}px ${col}` });
+      // bisagra: en el borde de atras, arriba de la base; abierto = 100°
+      const bis = el('div', 'vtCubo vtBisagra'); bis.appendChild(tapa);
+      bis.style.transform = `translate3d(0,${yTope}px,${-hd / 2}px) rotateX(${modo === 'abierto' ? 100 : 0}deg)`;
+      tapa.style.transform = `translate3d(0,${-ht / 2}px,${hd / 2}px)`;
+      // la moneda acostada en el terciopelo, dentro de su capsula
+      const acostada = el('div', 'vtCubo'), CD = (M.d + 8) * P;
+      acostada.append(moneda, disco('vtAro', CD), disco('vtTapaCap', CD, `translateZ(${(M.g / 2 + 1.5) * P}px)`));
+      acostada.style.transform = `translateY(${yTope - (M.g / 2 + 0.5) * P}px) rotateX(90deg)`;
+      caja.append(base, bis, acostada);
+      vitrina._rx0 = -32; vitrina._ry0 = -18;
+      vitrina.querySelector('.vtNota').textContent = 'Estuche ' + E.ancho + ' × ' + E.fondo + ' × ' + E.alto + ' mm (medido en sus fotos con regla, aproximado) · moneda ' + mm(M.d) + ' mm, a la misma escala · arrastre para girarlo; doble clic lo endereza';
+    }
+    if (vitrina._modo !== (enAcrilico ? 'a' : 'e')) { vitrina._modo = enAcrilico ? 'a' : 'e'; vitrina._rx = vitrina._rx0; vitrina._ry = vitrina._ry0; }
+    giroVitrina();
+    // en pantallas chicas se achica todo junto (la escala entre piezas no cambia)
+    const libre = Math.min(window.innerWidth - 30, window.innerHeight - 190), k = Math.min(1, libre / (enAcrilico ? 430 : 480));
+    vitrina.querySelector('.vtEscena').style.setProperty('--k', k.toFixed(3));
+    vitrina.classList.add('abierta');
   }
   const zonas = {}, casillas = {};
   let relojCasillas = null;
