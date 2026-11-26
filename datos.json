@@ -7727,11 +7727,15 @@
   },
   "O-x54d0eadcb": {
    "tengo": true,
-   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.",
+   "notas": "Material: 0.750 Plata · Peso: 1.268 · Diámetro: 15mm\nPor confirmar si la tengo (la hoja de centavos no lo dice).\nFuente: Excel monedas costa rica, hoja \"centavos\".\nDiseño de arbolito (encina), 1864-1875. Valor de mercado entre ₡35 000 y ₡50 000 según la denominación.\nImágenes de las caras: Numista (la foto de muestra es de 1870, el mismo diseño).",
    "costo": 30000,
    "valor": 35000,
    "km": "KM# 110",
-   "fo": "FO# 11436"
+   "fo": "FO# 11436",
+   "fotosCompra": [
+    "privado:web-KM110-escudo.jpg",
+    "privado:web-KM110-valor.jpg"
+   ]
   },
   "O-x579d6fb16": {
    "tengo": false,
@@ -11001,7 +11005,8 @@
     "O-x21bc2c58c-especial-12.jpg",
     "O-x21bc2c58c-especial-13.jpg"
    ],
-   "notas": "Tarjeta creada con fotos propias (22/11/2026): dos piezas de 1918, una de fecha escasa y otra rara."
+   "notas": "Material: Latón · Peso: 2,00 g · Diámetro: 18,00 mm · Canto: Liso\nMedidas: Numista (10 centavos 1917-1919, KM 149).\nTarjeta creada con fotos propias (22/11/2026): dos piezas de 1918, una de fecha escasa y otra rara.",
+   "km": "KM# 149"
   },
   "O-xccf62f81e": {
    "tengo": true,
@@ -11010,7 +11015,7 @@
     "O-xccf62f81e-mia-15.jpg",
     "O-xccf62f81e-mia-16.jpg"
    ],
-   "notas": "Boleto de café de latón. Por un lado tiene el escudo antiguo de Costa Rica, con banderas, lanzas y cinco estrellas (tipo 1848-1906); por el otro, el número \"16\" dentro de una corona de laurel. No tiene fecha.\nQué son: en las fincas de café se le daba al cogedor un boleto de latón por cada cajuela de grano cosechado, y después lo cambiaba por dinero o mercadería. En Costa Rica se usaron como medio de pago de 1840 a 1943; después, solo para llevar la cuenta. No son moneda de curso legal. El número puede indicar la cantidad que valía o un código de la finca.\nFuentes: Revista Herencia (UCR), \"Boletos de café y fichas de empresas\"; Museos del Banco Central de Costa Rica."
+   "notas": "Material: Latón · Diámetro: unos 26 mm (aproximado, medido en la foto con el cartón de 5 cm) · Canto: Liso\nBoleto de café de latón. Por un lado tiene el escudo antiguo de Costa Rica, con banderas, lanzas y cinco estrellas (tipo 1848-1906); por el otro, el número \"16\" dentro de una corona de laurel. No tiene fecha.\nQué son: en las fincas de café se le daba al cogedor un boleto de latón por cada cajuela de grano cosechado, y después lo cambiaba por dinero o mercadería. En Costa Rica se usaron como medio de pago de 1840 a 1943; después, solo para llevar la cuenta. No son moneda de curso legal. El número puede indicar la cantidad que valía o un código de la finca.\nFuentes: Revista Herencia (UCR), \"Boletos de café y fichas de empresas\"; Museos del Banco Central de Costa Rica."
   },
   "O-4054b4c8": {
    "tengo": true,
