@@ -8180,8 +8180,10 @@
    },
    "caras3d": {
     "escudo": "fotos-3d/O-xa8ced4273-escudo.webp",
-    "reverso": "fotos-3d/O-xa8ced4273-reverso.webp",
-    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
+    "reverso": "fotos-3d/O-x19b5a2c7f-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda).",
+    "reversoAnterior": "fotos-3d/O-xa8ced4273-reverso.webp",
+    "fuenteReverso": "Cara del valor de la 25 colones 2014 (mismo tipo y metal, el valor no lleva año): la foto anterior tenía un pedazo del fondo dentro de la moneda."
    }
   },
   "O-x19b5a2c7f": {
@@ -9369,8 +9371,10 @@
    },
    "caras3d": {
     "escudo": "fotos-3d/O-x367dc9a8d-escudo.webp",
-    "reverso": "fotos-3d/O-x367dc9a8d-reverso.webp",
-    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda)."
+    "reverso": "fotos-3d/O-x23d1289ee-reverso.webp",
+    "montaje": "El reverso va girado 180° respecto al escudo (alineación de moneda).",
+    "reversoAnterior": "fotos-3d/O-x367dc9a8d-reverso.webp",
+    "fuenteReverso": "Cara del valor de la 500 colones 2005 (mismo tipo y metal, el valor no lleva año): la foto anterior tenía un pedazo del fondo dentro de la moneda."
    }
   },
   "O-x7a50c185a": {
@@ -10236,10 +10240,11 @@
     "metal": "plata 0,750",
     "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x122553906-escudo.jpg",
     "reverso": "privado:cara3d-O-x122553906-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo era la misma foto de la moneda de 1870 (fecha 1870). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x02fb29662": {
@@ -10260,10 +10265,11 @@
     "metal": "plata 0,750",
     "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x02fb29662-escudo.jpg",
     "reverso": "privado:cara3d-O-x02fb29662-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo era la misma foto de la moneda de 1870 (fecha 1870). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x5c359e4db": {
@@ -10329,10 +10335,11 @@
     "metal": "plata 0,750",
     "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x6e6c3cea2-escudo.jpg",
     "reverso": "privado:cara3d-O-x6e6c3cea2-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo era la misma foto de la moneda de 1870 (fecha 1870). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xaa5fb7b92": {
@@ -10374,10 +10381,11 @@
     "metal": "plata 0,750",
     "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xaa5fb7b92-escudo.jpg",
     "reverso": "privado:cara3d-O-xaa5fb7b92-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo era la misma foto de la moneda de 1870 (fecha 1870). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x886fea3dd": {
@@ -13236,11 +13244,13 @@
    "fo": "FO# 29291",
    "caras3d": {
     "escudo": "fotos-3d/O-msea88dec85-reverso.webp",
-    "reverso": "privado:cara3d-O-msea88dec85-escudo.jpg",
+    "reverso": "privado:cara3d-O-ms9537cf5bb-escudo.jpg",
     "nombres": [
      "Valor",
      "Diseño"
-    ]
+    ],
+    "reversoAnterior": "privado:cara3d-O-msea88dec85-escudo.jpg",
+    "fuenteReverso": "Cara del valor dorada (la de Puntarenas, mismo diseño): la anterior era de una moneda plateada y la de 25 colones 2023 es dorada (BCCR)."
    },
    "medida3d": {
     "diametro": 22.5,
@@ -13302,11 +13312,13 @@
    "fo": "FO# 29745",
    "caras3d": {
     "escudo": "fotos-3d/O-msc6fe145c6-reverso.webp",
-    "reverso": "privado:cara3d-O-msc6fe145c6-escudo.jpg",
+    "reverso": "privado:cara3d-O-ms9537cf5bb-escudo.jpg",
     "nombres": [
      "Valor",
      "Diseño"
-    ]
+    ],
+    "reversoAnterior": "privado:cara3d-O-msc6fe145c6-escudo.jpg",
+    "fuenteReverso": "Cara del valor dorada (la de Puntarenas, mismo diseño): la anterior era de una moneda plateada y la de 25 colones 2023 es dorada (BCCR)."
    },
    "medida3d": {
     "diametro": 22.5,
@@ -13400,11 +13412,13 @@
    "notas": "Moneda conmemorativa suelta, versión MS (mint state). Denominación: 25 colones. Año de emisión: 2026.\nPrecio revendedor",
    "caras3d": {
     "escudo": "fotos-3d/O-ms9e11d4fc2-reverso.webp",
-    "reverso": "privado:cara3d-O-ms9e11d4fc2-escudo.jpg",
+    "reverso": "privado:cara3d-O-ms9537cf5bb-escudo.jpg",
     "nombres": [
      "Valor",
      "Diseño"
-    ]
+    ],
+    "reversoAnterior": "privado:cara3d-O-ms9e11d4fc2-escudo.jpg",
+    "fuenteReverso": "Cara del valor dorada (la de Puntarenas, mismo diseño): la anterior era de una moneda plateada y la de 25 colones 2023 es dorada (BCCR)."
    },
    "medida3d": {
     "diametro": 22.5,
