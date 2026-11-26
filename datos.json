@@ -2099,10 +2099,11 @@
     "metal": "latón",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xe851380f9-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xe851380f9-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xbfc96e95d": {
@@ -2145,10 +2146,11 @@
     "metal": "latón",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xbfc96e95d-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xbfc96e95d-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x9bcc64a7b": {
@@ -2215,10 +2217,11 @@
     "metal": "latón",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xc48e91c0a-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xc48e91c0a-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x259014684": {
@@ -2367,10 +2370,11 @@
     "metal": "latón",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x9bc0d15da-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x9bc0d15da-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x585474041": {
@@ -2567,10 +2571,11 @@
     "metal": "latón",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x80946433b-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x80946433b-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x91db8b50f": {
@@ -2592,10 +2597,11 @@
     "metal": "latón",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x91db8b50f-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x91db8b50f-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x40c414f10": {
@@ -2763,10 +2769,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xe3d47d8e0-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xe3d47d8e0-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x5acb39897": {
@@ -2814,10 +2821,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x5acb39897-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x5acb39897-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x58dfa2f51": {
@@ -2865,10 +2873,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x58dfa2f51-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x58dfa2f51-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x15d4420cd": {
@@ -2980,10 +2989,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x5a5f0dfd0-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x5a5f0dfd0-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x15e385cd4": {
@@ -3008,10 +3018,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x15e385cd4-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x15e385cd4-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x1e8fa5618": {
@@ -3036,10 +3047,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x1e8fa5618-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x1e8fa5618-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xb543d373e": {
@@ -3092,10 +3104,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xc51d3a03e-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xc51d3a03e-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xc8e07e657": {
@@ -3120,10 +3133,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xc8e07e657-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xc8e07e657-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xdb6ad18f5": {
@@ -3225,10 +3239,11 @@
     "metal": "plata",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xcf60cf766-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xcf60cf766-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x3b6dc64b2": {
@@ -3510,10 +3525,11 @@
     "metal": "latón",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x22b6dee50-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x22b6dee50-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x05f454d6e": {
@@ -3563,10 +3579,11 @@
     "metal": "latón",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x423988bbf-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x423988bbf-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xfb8bde918": {
@@ -3645,10 +3662,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xc3d7fba09-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xc3d7fba09-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x22cea2e08": {
@@ -3696,10 +3714,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x22cea2e08-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x22cea2e08-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x929b5dfa3": {
@@ -3724,10 +3743,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x929b5dfa3-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x929b5dfa3-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x1606e6042": {
@@ -3752,10 +3772,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x1606e6042-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x1606e6042-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x305516372": {
@@ -3780,10 +3801,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x305516372-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x305516372-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x7bf3b5c37": {
@@ -4165,10 +4187,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x3b37ebb6e-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x3b37ebb6e-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x33b9ffe7b": {
@@ -4191,10 +4214,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x33b9ffe7b-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x33b9ffe7b-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x873813965": {
@@ -4217,10 +4241,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x873813965-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x873813965-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x87cb49299": {
@@ -4295,10 +4320,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x17a69bd37-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x17a69bd37-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xae37c1a00": {
@@ -4324,10 +4350,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xae37c1a00-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xae37c1a00-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x483025dee": {
@@ -4412,10 +4439,11 @@
     "metal": "aluminio",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x8d45ec313-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x8d45ec313-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x8211325fe": {
@@ -4469,10 +4497,11 @@
     "metal": "aluminio",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x66c01a2b8-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x66c01a2b8-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xea71ba3dd": {
@@ -4546,10 +4575,11 @@
     "metal": "plata",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x158225232-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x158225232-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xb580f96cc": {
@@ -4821,10 +4851,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x6ecf97344-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x6ecf97344-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x298f9978e": {
@@ -5095,10 +5126,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x72b788c96-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x72b788c96-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x1184f6c99": {
@@ -5122,10 +5154,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x1184f6c99-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x1184f6c99-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x19ce19ac9": {
@@ -5175,10 +5208,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x65ebe4a8c-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x65ebe4a8c-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xef3acce12": {
@@ -5202,10 +5236,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xef3acce12-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xef3acce12-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x915a849cd": {
@@ -5258,10 +5293,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xfbc18a8dd-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xfbc18a8dd-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xaf16fb498": {
@@ -5355,10 +5391,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x805ea6f62-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x805ea6f62-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x96359cf4e": {
@@ -5432,10 +5469,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x5f892cf31-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x5f892cf31-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x87a884449": {
@@ -5460,10 +5498,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x87a884449-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x87a884449-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x5f1dafc47": {
@@ -5485,10 +5524,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x5f1dafc47-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x5f1dafc47-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xd8c67776d": {
@@ -5536,10 +5576,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x0ee8c9203-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x0ee8c9203-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x86ea4d9ba": {
@@ -5564,10 +5605,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x86ea4d9ba-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x86ea4d9ba-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x0965286c9": {
@@ -5591,10 +5633,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x0965286c9-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x0965286c9-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x43d5cd4fa": {
@@ -5700,10 +5743,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x25f569fc3-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x25f569fc3-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x7276031e9": {
@@ -5757,10 +5801,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x7276031e9-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x7276031e9-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x36a873a9a": {
@@ -5808,10 +5853,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x36a873a9a-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x36a873a9a-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xc3cc41333": {
@@ -5834,10 +5880,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xc3cc41333-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xc3cc41333-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xed65f5cf9": {
@@ -5859,10 +5906,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xed65f5cf9-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xed65f5cf9-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xdab5e83ad": {
@@ -5890,10 +5938,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xdab5e83ad-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xdab5e83ad-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x693bae8aa": {
@@ -5916,10 +5965,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x693bae8aa-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x693bae8aa-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x0085cc125": {
@@ -6058,10 +6108,11 @@
     "metal": "oro (0,900)",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xad736ec69-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xad736ec69-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x0c52adf69": {
@@ -6124,10 +6175,11 @@
     "metal": "oro (0,900)",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x3094422ca-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x3094422ca-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xc393f4c32": {
@@ -6234,10 +6286,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x31944087c-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x31944087c-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xe773b84d3": {
@@ -6262,10 +6315,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xe773b84d3-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xe773b84d3-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x1df2927ed": {
@@ -6289,10 +6343,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x1df2927ed-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x1df2927ed-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x1b53c3b9e": {
@@ -6348,10 +6403,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x397d78ae6-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x397d78ae6-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xd472064ed": {
@@ -6460,10 +6516,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x778ff88f8-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x778ff88f8-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x33a303652": {
@@ -6517,10 +6574,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xce08bf122-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xce08bf122-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x69f348fad": {
@@ -7073,10 +7131,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xe6bbd7df4-escudo-f.jpg",
     "reverso": "privado:cara3d-O-xe6bbd7df4-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x68b5fe4d2": {
@@ -9632,10 +9691,11 @@
     "metal": "cobre niquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x903a1aa01-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x903a1aa01-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x2a2b56013": {
@@ -9682,10 +9742,11 @@
     "metal": "cobre niquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x9c1f9f746-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x9c1f9f746-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x972bb7612": {
@@ -9708,10 +9769,11 @@
     "metal": "cobre niquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x972bb7612-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x972bb7612-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xa5dfea8bb": {
@@ -9773,15 +9835,16 @@
    "medida3d": {
     "diametro": 15,
     "grosor": 0.72,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.72,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 110: reeded)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xed1002040-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xed1002040-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xd10a5095e": {
@@ -9794,15 +9857,16 @@
    "medida3d": {
     "diametro": 15,
     "grosor": 0.72,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.72,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 110: reeded)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xd10a5095e-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xd10a5095e-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xefa3a31e0": {
@@ -9815,10 +9879,10 @@
    "medida3d": {
     "diametro": 15,
     "grosor": 0.72,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.72,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 110: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xefa3a31e0-escudo.jpg",
@@ -9836,15 +9900,16 @@
    "medida3d": {
     "diametro": 15,
     "grosor": 0.72,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.72,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 110: reeded)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x0c0f6da94-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x0c0f6da94-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x981998a95": {
@@ -9874,15 +9939,16 @@
    "medida3d": {
     "diametro": 15,
     "grosor": 0.72,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.72,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 110: reeded)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x981998a95-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x981998a95-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xf29b3e962": {
@@ -9912,15 +9978,16 @@
    "medida3d": {
     "diametro": 15,
     "grosor": 0.72,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.72,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 110: reeded)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xf29b3e962-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xf29b3e962-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x54d0eadcb": {
@@ -9937,15 +10004,16 @@
    "medida3d": {
     "diametro": 15,
     "grosor": 0.72,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.72,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 110: reeded)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x54d0eadcb-escudo-f.jpg",
     "reverso": "privado:cara3d-O-x54d0eadcb-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x579d6fb16": {
@@ -10009,10 +10077,11 @@
     "metal": "plata 0,750",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x00a26e295-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x00a26e295-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xfbcf86b5f": {
@@ -10048,10 +10117,10 @@
    "medida3d": {
     "diametro": 15,
     "grosor": 0.68,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.68,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: coinvarieties (KM 128: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xfbcf86b5f-escudo.jpg",
@@ -10089,10 +10158,10 @@
    "medida3d": {
     "diametro": 15,
     "grosor": 0.68,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.68,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: coinvarieties (KM 128: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xb903ac08e-escudo.jpg",
@@ -10114,15 +10183,16 @@
    "medida3d": {
     "diametro": 15,
     "grosor": 0.68,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.68,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: coinvarieties (KM 128: reeded)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x9a3268c79-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x9a3268c79-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xfde480533": {
@@ -10136,15 +10206,16 @@
    "medida3d": {
     "diametro": 15,
     "grosor": 0.68,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.68,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: coinvarieties (KM 128: reeded)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xfde480533-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xfde480533-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x122553906": {
@@ -10160,10 +10231,10 @@
    "medida3d": {
     "diametro": 19,
     "grosor": 0.89,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.89,
     "metal": "plata 0,750",
-    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área)."
+    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x122553906-escudo.jpg",
@@ -10184,10 +10255,10 @@
    "medida3d": {
     "diametro": 19,
     "grosor": 0.89,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.89,
     "metal": "plata 0,750",
-    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área)."
+    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x02fb29662-escudo.jpg",
@@ -10208,10 +10279,10 @@
    "medida3d": {
     "diametro": 19,
     "grosor": 0.89,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.89,
     "metal": "plata 0,750",
-    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área)."
+    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x5c359e4db-escudo.jpg",
@@ -10253,10 +10324,10 @@
    "medida3d": {
     "diametro": 19,
     "grosor": 0.89,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.89,
     "metal": "plata 0,750",
-    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área)."
+    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x6e6c3cea2-escudo.jpg",
@@ -10298,10 +10369,10 @@
    "medida3d": {
     "diametro": 19,
     "grosor": 0.89,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.89,
     "metal": "plata 0,750",
-    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área)."
+    "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xaa5fb7b92-escudo.jpg",
@@ -10372,10 +10443,10 @@
    "medida3d": {
     "diametro": 18,
     "grosor": 0.98,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.98,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis/numisquare (KM 126: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x6d548f835-escudo.jpg",
@@ -10418,10 +10489,10 @@
    "medida3d": {
     "diametro": 18,
     "grosor": 0.98,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.98,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis/numisquare (KM 126: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x350c492e0-escudo.jpg",
@@ -10443,15 +10514,16 @@
    "medida3d": {
     "diametro": 18,
     "grosor": 0.98,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 0.98,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis/numisquare (KM 126: reeded)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xdfb74d609-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xdfb74d609-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x1338f502a": {
@@ -10626,10 +10698,10 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.27,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.27,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 106: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xa5f1883b5-escudo-r2.jpg",
@@ -10665,10 +10737,10 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.27,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.27,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 106: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xe4f26576a-escudo-r2.jpg",
@@ -10687,10 +10759,10 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.27,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.27,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 106: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x1a6760e2e-escudo.jpg",
@@ -10712,10 +10784,10 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.27,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.27,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 106: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x50c709336-escudo-r2.jpg",
@@ -11065,10 +11137,10 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.28,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.28,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: Numista (KM 130: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x363d6a360-escudo.jpg",
@@ -11111,10 +11183,10 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.28,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.28,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: Numista (KM 130: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xe42753b8d-escudo.jpg",
@@ -11157,10 +11229,10 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.28,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.28,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: Numista (KM 130: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xd824c07da-escudo.jpg",
@@ -11179,15 +11251,16 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.28,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.28,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: Numista (KM 130: reeded)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x85fa3bc88-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x85fa3bc88-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x1eac818a3": {
@@ -11201,10 +11274,10 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.28,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.28,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: Numista (KM 130: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x1eac818a3-escudo-r2.jpg",
@@ -11255,10 +11328,10 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.28,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.28,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: Numista (KM 130: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x32b16035a-escudo-r2.jpg",
@@ -11305,10 +11378,10 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.28,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.28,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: Numista (KM 130: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xc68c47c19-escudo-r2.jpg",
@@ -11355,10 +11428,10 @@
    "medida3d": {
     "diametro": 25,
     "grosor": 1.28,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.28,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: Numista (KM 130: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x0de94f948-escudo-r2.jpg",
@@ -11377,10 +11450,10 @@
    "medida3d": {
     "diametro": 31,
     "grosor": 1.66,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.66,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: catálogos (KM 112: reeded edge)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x9d354d99e-escudo.jpg",
@@ -11398,15 +11471,16 @@
    "medida3d": {
     "diametro": 31,
     "grosor": 1.66,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.66,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: catálogos (KM 112: reeded edge)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xcf793dd98-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xcf793dd98-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x94870324b": {
@@ -11419,15 +11493,16 @@
    "medida3d": {
     "diametro": 31,
     "grosor": 1.66,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.66,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: catálogos (KM 112: reeded edge)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x94870324b-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x94870324b-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xa0cc7adc9": {
@@ -11440,10 +11515,10 @@
    "medida3d": {
     "diametro": 31,
     "grosor": 1.66,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.66,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: catálogos (KM 112: reeded edge)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xa0cc7adc9-escudo-r2.jpg",
@@ -11462,15 +11537,16 @@
    "medida3d": {
     "diametro": 31,
     "grosor": 1.66,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.66,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: catálogos (KM 112: reeded edge)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x973b98277-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x973b98277-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-xd374888f5": {
@@ -11500,10 +11576,10 @@
    "medida3d": {
     "diametro": 31,
     "grosor": 1.66,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.66,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: catálogos (KM 112: reeded edge)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xd374888f5-escudo-r2.jpg",
@@ -11539,10 +11615,10 @@
    "medida3d": {
     "diametro": 31,
     "grosor": 1.66,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.66,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: catálogos (KM 112: reeded edge)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xb997f5c30-escudo-r2.jpg",
@@ -11566,10 +11642,10 @@
    "medida3d": {
     "diametro": 31,
     "grosor": 1.66,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.66,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: cnumis (KM 124: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x282e75903-escudo-r2.jpg",
@@ -11592,15 +11668,16 @@
    "medida3d": {
     "diametro": 31,
     "grosor": 1.66,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.66,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: cnumis (KM 124: reeded)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-xc3f0b1ece-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-xc3f0b1ece-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x45a09aff2": {
@@ -11617,10 +11694,10 @@
    "medida3d": {
     "diametro": 31,
     "grosor": 1.66,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.66,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: cnumis (KM 124: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-x45a09aff2-escudo-r2.jpg",
@@ -11643,10 +11720,10 @@
    "medida3d": {
     "diametro": 31,
     "grosor": 1.66,
-    "canto": "Liso",
+    "canto": "Estriado",
     "grosor3d": 1.66,
     "metal": "plata 0,750",
-    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
+    "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: cnumis (KM 124: reeded)."
    },
    "caras3d": {
     "escudo": "privado:cara3d-O-xa911d1b1d-escudo.jpg",
@@ -11694,10 +11771,11 @@
     "metal": "plata 0,750",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x738184247-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x738184247-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x58dae5f57": {
@@ -11740,10 +11818,11 @@
     "metal": "plata 0,750",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x58dae5f57-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x58dae5f57-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x64aafd8a4": {
@@ -11786,10 +11865,11 @@
     "metal": "plata 0,750",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3d": {
+   "caras3dPendiente": {
     "escudo": "privado:cara3d-O-x64aafd8a4-escudo-f2.jpg",
     "reverso": "privado:cara3d-O-x64aafd8a4-reverso.jpg",
-    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda)."
+    "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
+    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
    }
   },
   "O-x885f202b7": {
