@@ -196,7 +196,14 @@
   .moneda3d .m3canto { position: absolute; left: 50%; top: 50%; }
   .moneda3d.gira .m3giro { animation: m3gira 5s cubic-bezier(.45, 0, .3, 1) infinite; }
   @keyframes m3gira { 0%, 8% { transform: rotateX(0); } 40%, 58% { transform: rotateX(180deg); } 90%, 100% { transform: rotateX(360deg); } }
-  @media (prefers-reduced-motion: reduce) { .moneda3d.gira .m3giro { animation-duration: 9s; } }
+  .moneda3d .m3brillo { position: absolute; inset: 0; border-radius: 50%; pointer-events: none; -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: translateZ(calc(var(--mg) + .3px));
+    background: linear-gradient(180deg, rgba(255, 248, 230, 0) 38%, rgba(255, 248, 230, .38) 50%, rgba(255, 248, 230, 0) 62%) 0 0 / 100% 300% no-repeat; }
+  .moneda3d .m3brilloV { transform: rotateX(180deg) translateZ(calc(var(--mg) + .3px)); }
+  .moneda3d.gira .m3brillo { animation: m3luz 5s cubic-bezier(.45, 0, .3, 1) infinite; }
+  .moneda3d.gira .m3brilloV { animation-name: m3luzV; }
+  @keyframes m3luz { 0%, 8% { background-position: 0 100%; } 40%, 100% { background-position: 0 0; } }
+  @keyframes m3luzV { 0%, 58% { background-position: 0 100%; } 90%, 100% { background-position: 0 0; } }
+  @media (prefers-reduced-motion: reduce) { .moneda3d.gira .m3giro, .moneda3d.gira .m3brillo { animation-duration: 9s; } }
   .ck { position: absolute; width: 13px; height: 13px; background: #fff; border: 1px solid #333; z-index: 4; }
   .puedeEditar .ck { cursor: pointer; }
   .ck.on::after { content: ""; position: absolute; left: 3.5px; top: 0.5px; width: 3px; height: 7px; border: solid #000; border-width: 0 2px 2px 0; transform: rotate(45deg); }
@@ -1055,7 +1062,8 @@
   };
   const PX_MM = 4.3, PASO_ESTRIA = 0.6; // escala de la hoja (28 mm = 120 px) y separacion aproximada de las estrias (mm)
   // cara del valor (la misma en todas las de una denominacion): 500 = foto propia; 50 y 25 = las mismas de las MS sueltas (privadas); 100 = Banco Central (privada)
-  const VALOR_CARA = { 500: 'fotos-3d/O-ms88823228f-escudo.webp', 50: 'privado:cara3d-O-ms6183d92ac-escudo.jpg', 25: 'privado:cara3d-O-msea88dec85-escudo.jpg', 100: 'privado:cara3d-valor-100.jpg' };
+  // todas las caras (diseño y valor) llevan el relieve de acuñación horneado (luz, sombra de contacto y brillo sacados de la misma foto)
+  const VALOR_CARA = { 500: 'img/monedas3d/valor-500.webp', 50: 'privado:cara3d-valor-50-relieve.jpg', 25: 'privado:cara3d-valor-25-relieve.jpg', 100: 'privado:cara3d-valor-100-relieve.jpg' };
   const DENOM_COLECCION = { 'Hitos de la Historia': 500, 'Patrimonio Cultural Inmaterial': 100, 'Fauna de los Ecosistemas': 50, 'Lugares Emblematicos de las Provincias de Costa Rica': 25 };
   // imagen de la hoja -> [moneda, archivo de su cara en img/monedas3d/]
   const MONEDA_IMG = {
@@ -1098,7 +1106,9 @@
           (estriado ? `repeating-linear-gradient(90deg,${base} 0,${base} ${(paso / 2).toFixed(2)}px,${osc} ${(paso / 2).toFixed(2)}px,${osc} ${paso.toFixed(2)}px)` : `linear-gradient(${base},${osc} 140%)`);
         f.appendChild(s);
       }
-      giro.append(valor, f); m.classList.add('vivo');
+      // brillo metalico que barre cada cara mientras gira (sigue el mismo tiempo del giro: el relieve "se mueve" con la luz)
+      const b1 = el('div', 'm3brillo'), b2 = el('div', 'm3brillo m3brilloV');
+      giro.append(valor, f, b1, b2); m.classList.add('vivo');
     };
     const desarmar = () => { armada = false; m.classList.remove('vivo'); for (const x of [...giro.children]) if (x !== frente) x.remove(); };
     const iniciar = () => { activa = true; armar(); m.classList.add('gira'); };
