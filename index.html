@@ -431,7 +431,7 @@
       try {
         if (!R3) R3 = preparar(); R3.info = info; ajustar(); liberar();
         let t0, t1; try { [t0, t1] = await texturasDe(info); } catch (e) { throw new Error('Para ver ' + (billete ? 'este billete' : 'esta moneda') + ' en 3D hay que entrar con la clave (una de sus caras es privada).'); }
-        R3.moneda = armarPieza(info, t0, t1); R3.grupo.add(R3.moneda); R3.grupo.rotation.set(0, 0, 0);
+        if (R3.info !== info) return; /* mientras cargaba se abrio otra pieza */ for (const o of [...R3.grupo.children]) { o.traverse(x => { if (x.geometry) x.geometry.dispose(); if (x.material) x.material.dispose(); }); R3.grupo.remove(o); } R3.moneda = armarPieza(info, t0, t1); R3.grupo.add(R3.moneda); R3.grupo.rotation.set(0, 0, 0);
         R3.girando = true; bGiro.textContent = 'Pausar'; R3.vista = null; R3.camara.position.set(0, 0, R3.DIST); R3.ctl.target.set(0, 0, 0); aviso.hidden = true;
         let ult = performance.now();
         R3.renderer.setAnimationLoop(tt => { const dt = Math.min(.05, (tt - ult) / 1000); ult = tt; const gr = R3.grupo;
@@ -466,7 +466,7 @@
         F3.cont = cont; cont.prepend(F3.renderer.domElement); F3.w = 0; F3.info = info;
         if (F3.id !== info.clave) { if (F3.moneda) { F3.moneda.traverse(o => { if (o.geometry) o.geometry.dispose(); if (o.material) o.material.dispose(); }); F3.grupo.remove(F3.moneda); F3.moneda = null; }
           const k = F3.id = info.clave; const [t0, t1] = await texturasDe(info); if (F3.id !== k) return;
-          F3.moneda = armarPieza(info, t0, t1); F3.grupo.add(F3.moneda); F3.grupo.rotation.set(0, 0, 0); }
+          for (const o of [...F3.grupo.children]) { o.traverse(x => { if (x.geometry) x.geometry.dispose(); if (x.material) x.material.dispose(); }); F3.grupo.remove(o); } /* nunca dos piezas a la vez (si se pasa rapido el cursor por varias tarjetas) */ F3.moneda = armarPieza(info, t0, t1); F3.grupo.add(F3.moneda); F3.grupo.rotation.set(0, 0, 0); }
         if (et) et.textContent = info.billete ? '3D · toca para verlo en grande' : '3D · toca para verla grande';
       } catch (e) { if (et) et.textContent = e && e.message === 'privada' ? 'Para ver el 3D hay que entrar con la clave' : 'No se pudo armar el 3D'; }
     };
