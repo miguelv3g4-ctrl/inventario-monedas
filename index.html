@@ -222,6 +222,7 @@
   .vtVaiven { animation: vtVuelta 16s linear infinite; } /* la pieza da la vuelta completa sola */
   @keyframes vtVuelta { from { transform: rotateY(0); } to { transform: rotateY(360deg); } }
   .vtBisagra { transition: transform 1.1s ease-in-out; }
+  .vtDesliza { transition: transform 1.2s ease-in-out; }
   .vtCubo .m3canto { position: absolute; left: 0; top: 0; } /* canto de la moneda en la vitrina centrado en la moneda (sin esto las tiras quedaban apiladas hacia arriba como una espiral dorada) */
   .vtCara { position: absolute; left: 0; top: 0; box-sizing: border-box; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
   .vtMonedaCara { border-radius: 50%; display: block; background-size: 100% 100%; background-repeat: no-repeat; background-position: center; }
@@ -1179,7 +1180,10 @@
   // Todo en CSS 3D (sin WebGL), una sola vitrina para toda la hoja y solo mientras esta abierta.
   // Medidas en mm sacadas de las fotos de Miguel con regla (aproximadas, a confirmar).
   const ACRILICO = { ancho: 60, alto: 86, grueso: 22, capsula: 45, centroY: 29, tornillo: 6, margen: 6 };
-  const ESTUCHE = { ancho: 83, fondo: 80, alto: 46, tapa: 20, color: [77, 83, 94], terciopelo: [50, 59, 91] };
+  // estuche: medidas que confirmo Miguel (106 de largo, 83 de ancho, 46 de alto, tapa de 20); negro como una pantalla apagada
+  const ESTUCHE = { ancho: 83, largo: 106, alto: 46, tapa: 20, color: [16, 16, 18], terciopelo: [50, 59, 91] };
+  // color de la funda de carton de cada tematica (tomado de las fotos de las fundas)
+  const FUNDA_COLOR = { 'Hitos de la Historia': [30, 42, 78], 'Fauna de los Ecosistemas': [38, 52, 40], 'Lugares Emblematicos de las Provincias de Costa Rica': [196, 62, 52], 'Patrimonio Cultural Inmaterial': [72, 52, 150] };
   const PX_VIT = 4.5;
   // texto grabado en el acrilico debajo de «Moneda conmemorativa», leido de las fotos de los acrilicos de Miguel
   // (Conejo, Guanacaste, Heredia, Cartago y Alajuela: sin foto del acrilico; mismo formato, con lo escrito en la moneda y el nombre del BCCR)
@@ -1269,10 +1273,10 @@
     boton('Acrílico', enAcrilico, () => abrirVitrina(nombre, archivo, den, 'acrilico', acabado));
     boton('Estuche', !enAcrilico, () => abrirVitrina(nombre, archivo, den, 'estuche', acabado), 'Un clic sobre el estuche lo abre o lo cierra');
     op.appendChild(el('span', 'vtSep', '|'));
-    boton('Proof color', acabado === 'color', () => abrirVitrina(nombre, archivo, den, modo, 'color'), 'Proof con color');
+    boton('PROOF · color', acabado === 'color', () => abrirVitrina(nombre, archivo, den, modo, 'color'), 'Proof con color (las filas PROOF de la hoja)');
     if (sinColor) {
-      boton('Proof sin color', acabado === 'espejo', () => abrirVitrina(nombre, archivo, den, modo, 'espejo'), 'Proof sin color: campo espejo, brillante');
-      boton('MS', acabado === 'mate', () => abrirVitrina(nombre, archivo, den, modo, 'mate'), 'MS: acabado mate');
+      boton('BU · proof sin color', acabado === 'espejo', () => abrirVitrina(nombre, archivo, den, modo, 'espejo'), 'Fila BU de la hoja: proof sin color, campo espejo y brillante');
+      boton('MS · mate', acabado === 'mate', () => abrirVitrina(nombre, archivo, den, modo, 'mate'), 'Fila MS de la hoja: acabado mate');
     }
     const caja = vitrina.querySelector('.vtVaiven'); caja.textContent = '';
     const P = PX_VIT, moneda = monedaSolida(nombre, archivo, den, acabado), M = MEDIDAS_MONEDA[den], mm = n => String(n).replace('.', ',');
@@ -1300,33 +1304,49 @@
       vitrina._rx0 = -8; vitrina._ry0 = 0; vitrina._abrirCerrar = null;
       vitrina.querySelector('.vtNota').textContent = 'Acrílico ' + A.ancho + ' × ' + A.alto + ' × ' + A.grueso + ' mm (medido en sus fotos con regla, aproximado) · moneda ' + mm(M.d) + ' mm, a la misma escala · gira solo; arrástrelo para inclinarlo';
     } else {
-      const E = ESTUCHE, w = E.ancho * P, hd = E.fondo * P, H0 = E.alto * P, hb = (E.alto - E.tapa) * P, ht = E.tapa * P;
-      const col = `rgb(${E.color})`, osc = `rgb(${E.color.map(c => c * .78 | 0)})`;
-      const lado = `background:linear-gradient(${col},${osc});border:1px solid rgba(0,0,0,.35)`;
+      // la misma caja negra para todas (106 × 83 × 46 mm, tapa de 20), dentro de la funda de carton de su tematica
+      const E = ESTUCHE, w = E.ancho * P, hd = E.largo * P, H0 = E.alto * P, hb = (E.alto - E.tapa) * P, ht = E.tapa * P;
+      const brillo = 'linear-gradient(135deg,rgba(255,255,255,.13),rgba(255,255,255,0) 38%,rgba(255,255,255,.05) 70%,rgba(255,255,255,0))';
+      const negro = `rgb(${E.color})`, lado = `background:${brillo},${negro};border:1px solid rgba(255,255,255,.07)`;
       const yTope = H0 / 2 - hb; // altura (y) del borde de arriba de la base
-      const base = cubo(w, hb, hd, { f: lado, b: lado, l: lado, r: lado, u: `background:${osc}`,
-        t: `background:url("img/estuches/estuche-terciopelo.webp") 0 0/${18 * P}px repeat,rgb(${E.terciopelo});box-shadow:inset 0 0 ${6 * P}px rgba(0,0,0,.75),inset 0 0 0 ${3 * P}px ${col}` });
+      const base = cubo(w, hb, hd, { f: lado, b: lado, l: lado, r: lado, u: `background:${negro}`,
+        t: `background:url("img/estuches/estuche-terciopelo.webp") 0 0/${18 * P}px repeat,rgb(${E.terciopelo});box-shadow:inset 0 0 ${6 * P}px rgba(0,0,0,.75),inset 0 0 0 ${3 * P}px ${negro}` });
       base.style.transform = `translateY(${H0 / 2 - hb / 2}px)`;
-      const tapa = cubo(w, ht, hd, { f: lado, b: lado, l: lado, r: lado, t: 'background:url("img/estuches/estuche-tapa.webp") center/100% 100%',
-        u: `background:url("img/estuches/estuche-tapa-dentro.webp") center/100% 100%,rgb(${E.terciopelo});box-shadow:inset 0 0 0 ${3 * P}px ${col}` });
-      // bisagra: en el borde de atras, arriba de la base; abierto = 100°
+      const tapa = cubo(w, ht, hd, { f: lado, b: lado, l: lado, r: lado, t: `background:url("img/estuches/logo-bccr.webp") center/${40 * P}px auto no-repeat,${brillo},${negro}`,
+        u: `background:url("img/estuches/estuche-tapa-dentro.webp") center/100% 100%,rgb(${E.terciopelo});box-shadow:inset 0 0 0 ${3 * P}px ${negro}` });
+      // bisagra: en el borde de atras, arriba de la base
       const bis = el('div', 'vtCubo vtBisagra'); bis.appendChild(tapa);
-      // empieza cerrado; un clic lo abre (la tapa sube con la bisagra de atras) y otro lo cierra
-      let abierto = false; const ponerTapa = () => { bis.style.transform = `translate3d(0,${yTope}px,${-hd / 2}px) rotateX(${abierto ? 100 : 0}deg)`; };
-      ponerTapa(); vitrina._abrirCerrar = () => { abierto = !abierto; ponerTapa(); };
       tapa.style.transform = `translate3d(0,${-ht / 2}px,${hd / 2}px)`;
-      // la moneda acostada en el terciopelo, dentro de su capsula
+      // la moneda acostada en el terciopelo, centrada, dentro de su capsula
       const acostada = el('div', 'vtCubo'), CD = (M.d + 8) * P;
       acostada.append(moneda, disco('vtAro', CD), disco('vtTapaCap', CD, `translateZ(${(M.g / 2 + 1.5) * P}px)`));
       acostada.style.transform = `translateY(${yTope - (M.g / 2 + 0.5) * P}px) rotateX(90deg)`;
-      caja.append(base, bis, acostada);
+      const cajaG = el('div', 'vtCubo vtDesliza'); cajaG.append(base, bis, acostada);
+      // funda de carton (abierta por los dos extremos): el frente es la foto de la funda de esta moneda; los lados, el color de su tematica
+      const tema = FUNDA_COLOR[(H.piezas.find(x => x.moneda === nombre) || {}).coleccion] || [40, 40, 40], cf = `rgb(${tema})`, cfo = `rgb(${tema.map(c => c * .8 | 0)})`;
+      const fl = `background:linear-gradient(${cf},${cfo});border:1px solid rgba(0,0,0,.25)`;
+      const funda = cubo(w + 2 * P, H0 + 2 * P, hd - 2 * P, { l: fl, r: fl, u: `background:${cfo}`, t: `background:url("img/estuches/funda-${archivo}.webp") center/100% 100%,${cf}` });
+      funda.classList.add('vtDesliza');
+      // un clic saca la caja de la funda, otro abre la tapa, otro la cierra y la vuelve a meter
+      let paso = 0;
+      const poner = () => {
+        const fuera = paso > 0, abierto = paso === 2;
+        cajaG.style.transform = `translateZ(${fuera ? hd * 0.62 : 0}px)`; funda.style.transform = `translateZ(${fuera ? -hd * 0.62 : 0}px)`;
+        bis.style.transform = `translate3d(0,${yTope}px,${-hd / 2}px) rotateX(${abierto ? 100 : 0}deg)`;
+      };
+      poner();
+      vitrina._abrirCerrar = () => {
+        if (paso === 2) { paso = 1; poner(); setTimeout(() => { if (paso === 1) { paso = 0; poner(); } }, 1150); } // cierra y luego la mete
+        else { paso++; poner(); }
+      };
+      caja.append(funda, cajaG);
       vitrina._rx0 = -28; vitrina._ry0 = 0;
-      vitrina.querySelector('.vtNota').textContent = 'Estuche ' + E.ancho + ' × ' + E.fondo + ' × ' + E.alto + ' mm (medido en sus fotos con regla, aproximado) · moneda ' + mm(M.d) + ' mm, a la misma escala · gira solo · un clic lo abre o lo cierra; arrástrelo para inclinarlo';
+      vitrina.querySelector('.vtNota').textContent = 'Estuche ' + E.largo + ' × ' + E.ancho + ' × ' + E.alto + ' mm, en su funda · moneda ' + mm(M.d) + ' mm, a la misma escala · gira solo · clic: sacar de la funda → abrir → cerrar y guardar · arrástrelo para inclinarlo';
     }
     if (vitrina._modo !== (enAcrilico ? 'a' : 'e')) { vitrina._modo = enAcrilico ? 'a' : 'e'; vitrina._rx = vitrina._rx0; vitrina._ry = vitrina._ry0; }
     giroVitrina();
     // en pantallas chicas se achica todo junto (la escala entre piezas no cambia)
-    const libre = Math.min(window.innerWidth - 30, window.innerHeight - 190), k = Math.min(1, libre / (enAcrilico ? 430 : 480));
+    const libre = Math.min(window.innerWidth - 30, window.innerHeight - 190), k = Math.min(1, libre / (enAcrilico ? 430 : 720)); // el estuche fuera de su funda ocupa mas
     vitrina.querySelector('.vtEscena').style.setProperty('--k', k.toFixed(3));
     vitrina.classList.add('abierta');
   }
