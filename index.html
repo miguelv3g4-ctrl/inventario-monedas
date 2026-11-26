@@ -1082,11 +1082,16 @@
     const m = el('div', 'moneda3d'); m.style.cssText = `left:${(cx - D / 2).toFixed(1)}px;top:${(cy - D / 2).toFixed(1)}px;width:${D.toFixed(1)}px;height:${D.toFixed(1)}px;--mg:${(G / 2).toFixed(2)}px`;
     m.title = nombre + ' · ' + den + ' colones · ' + String(M.d).replace('.', ',') + ' mm';
     m.setAttribute('role', 'img'); m.setAttribute('aria-label', 'Moneda ' + nombre + ' en 3D');
-    const giro = el('div', 'm3giro'), frente = el('img', 'm3cara m3frente');
+    const giro = el('div', 'm3giro'), frente = el('div', 'm3cara m3frente');
     // regla: solo va en 3D la moneda que tiene su cara real recortada en img/monedas3d/ (las que aun no salen al publico
     // solo tienen una foto); si no existe, vuelve la imagen plana de la hoja, sin giro. Al agregar la cara, el 3D sale solo.
-    frente.onerror = () => { if (m.isConnected) m.replaceWith(imagenPlana(p)); };
-    frente.src = 'img/monedas3d/' + archivo + '.webp'; frente.alt = ''; frente.draggable = false;
+    const foto = 'img/monedas3d/' + archivo + '.webp', prueba = new Image();
+    prueba.onerror = () => { if (m.isConnected) m.replaceWith(imagenPlana(p)); };
+    prueba.src = foto;
+    // relieve en capas APARTE encima de la foto intacta: sombra (mezcla multiply) y luz (mezcla screen), sacadas de las
+    // formas grandes del dibujo; en letras y detalles finos casi no actuan. Si falta el mapa, se ve solo la foto.
+    const rel = 'img/monedas3d/relieve/' + archivo;
+    frente.style.cssText = `background:url("${rel}-luz.webp") center/100% 100% no-repeat,url("${rel}-sombra.webp") center/100% 100% no-repeat,url("${foto}") center/100% 100% no-repeat;background-blend-mode:screen,multiply,normal`;
     giro.appendChild(frente); m.appendChild(giro);
     let activa = false, armada = false, tipo = 'mouse';
     // el canto y la cara del valor se arman solo mientras gira (asi la hoja queda liviana)
