@@ -186,6 +186,17 @@
   .im { position: absolute; overflow: hidden; pointer-events: none; }
   .im img { position: absolute; display: block; }
   .elipse { position: absolute; background: #fff; border-radius: 50%; }
+  /* monedas 3D arriba de cada columna: a escala real entre ellas; gira de arriba hacia abajo (escudo y valor a 180°) */
+  .moneda3d { position: absolute; z-index: 2; cursor: pointer; perspective: 700px; border-radius: 50%; -webkit-tap-highlight-color: transparent; }
+  .moneda3d .m3giro { position: absolute; inset: 0; transform-style: preserve-3d; }
+  .moneda3d .m3cara { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 50%; display: block; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+  .moneda3d .m3frente { box-shadow: 0 3px 9px rgba(0, 0, 0, .55); }
+  .moneda3d.vivo .m3frente { box-shadow: none; transform: translateZ(var(--mg)); }
+  .moneda3d .m3valor { transform: rotateX(180deg) translateZ(var(--mg)); }
+  .moneda3d .m3canto { position: absolute; left: 50%; top: 50%; }
+  .moneda3d.gira .m3giro { animation: m3gira 5s cubic-bezier(.45, 0, .3, 1) infinite; }
+  @keyframes m3gira { 0%, 8% { transform: rotateX(0); } 40%, 58% { transform: rotateX(180deg); } 90%, 100% { transform: rotateX(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .moneda3d.gira .m3giro { animation-duration: 9s; } }
   .ck { position: absolute; width: 13px; height: 13px; background: #fff; border: 1px solid #333; z-index: 4; }
   .puedeEditar .ck { cursor: pointer; }
   .ck.on::after { content: ""; position: absolute; left: 3.5px; top: 0.5px; width: 3px; height: 7px; border: solid #000; border-width: 0 2px 2px 0; transform: rotate(45deg); }
@@ -1031,8 +1042,74 @@
     }
     frag.appendChild(d);
   }
+  // ---------- monedas 3D arriba de cada columna (una por moneda de la hoja)
+  // Medidas oficiales en mm (diametro d, grosor g) y canto; en un solo lugar para corregirlas si hace falta.
+  // Fuentes: diametro y canto, Banco Central de Costa Rica (paginas de cada moneda); grosor: 25 colones BCCR (1,50 mm),
+  // 500 colones Numista/prensa del BCCR (2,25 mm), 100 colones Numisquare (2,00 mm), 50 colones uCoin (1,75 mm).
+  // secc: cantidad de tramos estriados en un canto discontinuo (el resto liso). nucleo: aro dorado de la bimetalica.
+  const MEDIDAS_MONEDA = {
+    500: { d: 28, g: 2.25, canto: 'tramos', secc: 5, metal: [201, 164, 76] },   // bimetalica: el canto es del aro dorado
+    100: { d: 26.5, g: 2, canto: 'estriado', metal: [214, 186, 104] },
+    50: { d: 24.5, g: 1.75, canto: 'tramos', secc: 3, metal: [200, 200, 196] },
+    25: { d: 22.5, g: 1.5, canto: 'liso', metal: [205, 160, 70] }
+  };
+  const PX_MM = 4.3, PASO_ESTRIA = 0.6; // escala de la hoja (28 mm = 120 px) y separacion aproximada de las estrias (mm)
+  // cara del valor (la misma en todas las de una denominacion): 500 = foto propia; 50 y 25 = las mismas de las MS sueltas (privadas); 100 = Banco Central (privada)
+  const VALOR_CARA = { 500: 'fotos-3d/O-ms88823228f-escudo.webp', 50: 'privado:cara3d-O-ms6183d92ac-escudo.jpg', 25: 'privado:cara3d-O-msea88dec85-escudo.jpg', 100: 'privado:cara3d-valor-100.jpg' };
+  const DENOM_COLECCION = { 'Hitos de la Historia': 500, 'Patrimonio Cultural Inmaterial': 100, 'Fauna de los Ecosistemas': 50, 'Lugares Emblematicos de las Provincias de Costa Rica': 25 };
+  // imagen de la hoja -> [moneda, archivo de su cara en img/monedas3d/]
+  const MONEDA_IMG = {
+    'image2.png': ['200 años de Independencia', '200-anos-de-independencia'], 'image3.png': ['175 años de Fundacion de la Republica', '175-anos-de-fundacion-de-la-republica'],
+    'image4.png': ['75 años de Abolicion del Ejercito', '75-anos-de-abolicion-del-ejercito'], 'image5.png': ['200 años de Anexion del Partido de Nicoya', '200-anos-de-anexion-del-partido-de-nicoya'],
+    'image6.png': ['Mariposa Amorfo', 'mariposa-amorfo'], 'image7.png': ['Rana Calzonuda', 'rana-calzonuda'], 'image8.png': ['Tortuga Carey', 'tortuga-carey'],
+    'image9.png': ['Lagartija o Anolis', 'lagartija-o-anolis'], 'image10.png': ['Cangrejo Marinera', 'cangrejo-marinera'], 'image11.png': ['Conejo de Monte', 'conejo-de-monte'],
+    'image1.png': ['Provincia de Limon', 'provincia-de-limon'], 'image12.png': ['Provincia de Puntarenas', 'provincia-de-puntarenas'], 'image13.png': ['Provincia de Guanacaste', 'provincia-de-guanacaste'],
+    'image14.png': ['Provincia de Heredia', 'provincia-de-heredia'], 'image15.png': ['Provincia de Cartago', 'provincia-de-cartago'], 'image16.png': ['Provincia de Alajuela', 'provincia-de-alajuela'],
+    'image17.png': ['Provincia de San Jose', 'provincia-de-san-jose'], 'image20.png': ['Swing Criollo', 'swing-criollo'], 'image21.png': ['Boyero', 'boyero'],
+    'calipso-proof.jpg': ['Calipso', 'calipso'], 'image23.png': ['Cimarrona', 'cimarrona'], 'image25.png': ['Toros Tope', 'toros-tope'], 'image24.png': ['Ceramica Chorotega', 'ceramica-chorotega']
+  };
+  function moneda3d([nombre, archivo], p) {
+    const pz = H.piezas.find(x => x.moneda === nombre), den = pz && DENOM_COLECCION[pz.coleccion], M = MEDIDAS_MONEDA[den];
+    if (!M) return null;
+    const D = M.d * PX_MM, G = M.g * PX_MM, cx = p.x + p.w / 2, cy = p.y + p.h / 2;
+    const m = el('div', 'moneda3d'); m.style.cssText = `left:${(cx - D / 2).toFixed(1)}px;top:${(cy - D / 2).toFixed(1)}px;width:${D.toFixed(1)}px;height:${D.toFixed(1)}px;--mg:${(G / 2).toFixed(2)}px`;
+    m.title = nombre + ' · ' + den + ' colones · ' + String(M.d).replace('.', ',') + ' mm';
+    m.setAttribute('role', 'img'); m.setAttribute('aria-label', 'Moneda ' + nombre + ' en 3D');
+    const giro = el('div', 'm3giro'), frente = el('img', 'm3cara m3frente');
+    frente.src = 'img/monedas3d/' + archivo + '.webp'; frente.alt = ''; frente.draggable = false;
+    giro.appendChild(frente); m.appendChild(giro);
+    let activa = false, armada = false, tipo = 'mouse';
+    // el canto y la cara del valor se arman solo mientras gira (asi la hoja queda liviana)
+    const armar = () => {
+      if (armada) return; armada = true;
+      const valor = el('img', 'm3cara m3valor'); valor.style.background = `rgb(${M.metal})`; ponerRef(valor, VALOR_CARA[den]); valor.alt = ''; valor.draggable = false;
+      const N = 40, R = D / 2, ancho = Math.PI * D / N + 0.8, f = document.createDocumentFragment();
+      for (let i = 0; i < N; i++) {
+        const ang = i * 360 / N, s = el('div', 'm3canto');
+        const luz = 0.38 * (1 - Math.cos(ang * Math.PI / 180)) / 2; // sombreado suave alrededor del canto para que se vea metalico
+        const [r, g, b] = M.metal, base = `rgb(${r},${g},${b})`, osc = `rgb(${r * 0.62 | 0},${g * 0.62 | 0},${b * 0.62 | 0})`;
+        const estriado = M.canto === 'estriado' || (M.canto === 'tramos' && (ang % (360 / M.secc)) < 180 / M.secc);
+        const paso = PASO_ESTRIA * PX_MM;
+        s.style.cssText = `width:${ancho.toFixed(2)}px;height:${G.toFixed(2)}px;margin:${(-G / 2).toFixed(2)}px 0 0 ${(-ancho / 2).toFixed(2)}px;` +
+          `transform:rotateZ(${ang}deg) translateY(${R.toFixed(2)}px) rotateX(90deg);background:linear-gradient(rgba(0,0,0,${luz.toFixed(2)}),rgba(0,0,0,${luz.toFixed(2)})),` +
+          (estriado ? `repeating-linear-gradient(90deg,${base} 0,${base} ${(paso / 2).toFixed(2)}px,${osc} ${(paso / 2).toFixed(2)}px,${osc} ${paso.toFixed(2)}px)` : `linear-gradient(${base},${osc} 140%)`);
+        f.appendChild(s);
+      }
+      giro.append(valor, f); m.classList.add('vivo');
+    };
+    const desarmar = () => { armada = false; m.classList.remove('vivo'); for (const x of [...giro.children]) if (x !== frente) x.remove(); };
+    const iniciar = () => { activa = true; armar(); m.classList.add('gira'); };
+    const parar = () => { activa = false; }; // termina la vuelta que lleva y se queda con el escudo al frente
+    giro.addEventListener('animationiteration', () => { if (!activa) { m.classList.remove('gira'); desarmar(); } });
+    m.addEventListener('pointerdown', e => { tipo = e.pointerType; });
+    m.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') iniciar(); });
+    m.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') parar(); });
+    m.addEventListener('click', () => { if (tipo !== 'mouse') { if (activa) parar(); else iniciar(); } }); // en el celular: tocarla la hace girar o la detiene
+    return m;
+  }
   for (const p of H.imagenes) {
-    if (p.elipse) { const e = el('div', 'elipse'); e.style.cssText = `left:${p.x}px;top:${p.y}px;width:${p.w}px;height:${p.h}px`; frag.appendChild(e); continue; }
+    if (p.elipse) continue; // el circulo blanco de atras de Puntarenas ya no hace falta: la moneda 3D va sola
+    if (MONEDA_IMG[p.f]) { const m = moneda3d(MONEDA_IMG[p.f], p); if (m) { frag.appendChild(m); continue; } }
     const d = el('div', 'im'); d.style.cssText = `left:${p.x}px;top:${p.y}px;width:${p.w}px;height:${p.h}px`;
     const l = p.cl || 0, t = p.ct || 0, r = p.cr || 0, b = p.cb || 0, w = p.w / (1 - l - r), h = p.h / (1 - t - b);
     const im = el('img'); im.src = 'img/' + p.f; im.alt = ''; im.draggable = false;
