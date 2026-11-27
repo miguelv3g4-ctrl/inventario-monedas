@@ -1206,6 +1206,22 @@
   };
   const ITALICA = /^(Morpho|Agalychnis|Eretmochelys|Norops|Goniopsis|Sylvilagus) /;
   // cara del dibujo SIN color (para proof sin color y MS): la foto real de la moneda MS suelta, si la hay
+  // version de cada acrilico de la moneda segun la propia pieza: solo la proof de color lleva color; toda pieza brillante
+  // sin color es proof sin color (= BU); MS es mate. La primera PROOF de la hoja es la de color; otra PROOF es sin color,
+  // salvo que su foto en la app sea la misma foto a color de la primera. Devuelve { color: [casillas], espejo: [...], mate: [...] }
+  function versionesAcrilico(nombre) {
+    const letras = n => { let s = ''; while (n > 0) { const r = (n - 1) % 26; s = String.fromCharCode(65 + r) + s; n = Math.floor((n - 1) / 26); } return s; };
+    const etiqueta = ref => { const m = /^([A-Z]+)(\d+)$/.exec(ref), c = m && celdas[letras(colNum(m[1]) + 1) + m[2]]; return c ? String(c.c.v || '').trim().toUpperCase() : ''; };
+    const filas = H.piezas.filter(x => x.moneda === nombre && x.tipo === 'Acrílico'), res = {};
+    let primera = null;
+    for (const f of filas) {
+      const et = etiqueta(f.id), fotos = fotosDe(f.id, 'fotos');
+      let v = et === 'MS' ? 'mate' : et === 'BU' ? 'espejo' : et === 'PROOF' ? 'color' : null;
+      if (et === 'PROOF') { if (!primera) primera = f.id; else v = fotos.length && fotos.some(x => fotosDe(primera, 'fotos').includes(x)) ? 'color' : 'espejo'; }
+      if (v) (res[v] = res[v] || []).push(f.id);
+    }
+    return res;
+  }
   function caraSinColor(nombre) {
     const o = (datos.otras || []).find(o => o.seccion === 'ms-sueltas' && (o.nombre || '').startsWith(nombre + ' ·'));
     const c = o && reg(o.id).caras3d; return c && /^fotos-3d\//.test(c.escudo || '') ? c.escudo : null;
@@ -1273,10 +1289,12 @@
     boton('Acrílico', enAcrilico, () => abrirVitrina(nombre, archivo, den, 'acrilico', acabado));
     boton('Estuche', !enAcrilico, () => abrirVitrina(nombre, archivo, den, 'estuche', acabado), 'Un clic sobre el estuche lo abre o lo cierra');
     op.appendChild(el('span', 'vtSep', '|'));
-    boton('PROOF · color', acabado === 'color', () => abrirVitrina(nombre, archivo, den, modo, 'color'), 'Proof con color (las filas PROOF de la hoja)');
-    if (sinColor) {
-      boton('BU · proof sin color', acabado === 'espejo', () => abrirVitrina(nombre, archivo, den, modo, 'espejo'), 'Fila BU de la hoja: proof sin color, campo espejo y brillante');
-      boton('MS · mate', acabado === 'mate', () => abrirVitrina(nombre, archivo, den, modo, 'mate'), 'Fila MS de la hoja: acabado mate');
+    // un boton por version que de verdad tiene la moneda en la hoja, con sus casillas
+    const ver = versionesAcrilico(nombre), NOMBRE_VER = { color: 'Proof color', espejo: 'Proof sin color (BU)', mate: 'MS mate' },
+      AYUDA = { color: 'Proof con color', espejo: 'Proof sin color = BU: brillante, campo espejo, sin color', mate: 'MS: acabado mate' };
+    for (const v of ['color', 'espejo', 'mate']) {
+      if (!ver[v] || (v !== 'color' && !sinColor)) continue;
+      boton(NOMBRE_VER[v] + ' · ' + ver[v].join(', '), acabado === v, () => abrirVitrina(nombre, archivo, den, modo, v), AYUDA[v] + ' (casillas ' + ver[v].join(', ') + ' de la hoja)');
     }
     const caja = vitrina.querySelector('.vtVaiven'); caja.textContent = '';
     const P = PX_VIT, moneda = monedaSolida(nombre, archivo, den, acabado), M = MEDIDAS_MONEDA[den], mm = n => String(n).replace('.', ',');
