@@ -122,6 +122,7 @@
   #vMinis span.mini3d { display: inline-grid; place-items: center; color: var(--oro); font-weight: bold; font-size: 15px; background: #14110a; }
   .sello3d { aspect-ratio: 15 / 12.9; filter: none !important; } /* escudo 3D: escudo y letras girando */
   .sello3d canvas { display: block; width: 100%; height: 100%; }
+  .escudoHoja3d { position: absolute; top: 0; left: 50%; height: 100%; transform: translateX(-50%); }
   #menu h1 { font: 24px "Copperplate Gothic Bold", Copperplate, Georgia, serif; color: var(--oro); margin: 6px 0 14px; }
   #mBotones { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; text-align: left; }
   #mTotal { margin: -8px auto 12px; padding: 14px 18px 12px; max-width: 520px; border: 1px solid var(--oro2); border-radius: 10px; background: linear-gradient(180deg, #221b0c, #0b0a09); }
@@ -735,6 +736,9 @@
       // el escudo 3D toma el lugar de la imagen en la portada y en el menú (un solo dibujo que se muda al que esté a la vista)
       const lugares = [...document.querySelectorAll('.sello')].map(e => { const d = document.createElement('div'); d.className = 'sello sello3d'; d.setAttribute('role', 'img'); d.setAttribute('aria-label', 'Pertenece a Familia Vega Godínez'); e.replaceWith(d); return d; });
       window.ESCUDO3D_LISTO = true;
+      // otros lugares que se arman despues (el escudo de la hoja del inventario general): el 3D toma su lugar y la imagen plana se esconde
+      window.ponerEscudo3D = (d, img) => { d.classList.add('sello', 'sello3d'); d.setAttribute('role', 'img'); d.setAttribute('aria-label', 'Pertenece a Familia Vega Godínez'); if (img) img.style.visibility = 'hidden'; lugares.push(d); };
+      (window.ESCUDO3D_COLA || []).forEach(a => window.ponerEscudo3D(...a)); window.ESCUDO3D_COLA = [];
       let ult = 0, giro = 0, anW = 0, anH = 0;
       renderer.setAnimationLoop(tt => {
         if (tt - ult < 33 || document.hidden || window.VISOR3D_ABIERTO) return; // unas 30 imágenes por segundo; pausa si el visor de monedas está abierto
@@ -1255,6 +1259,7 @@
     const desarmar = () => { armada = false; m.classList.remove('vivo'); for (const x of [...giro.children]) if (x !== frente) x.remove(); };
     const iniciar = () => { activa = true; armar(); m.classList.add('gira'); };
     const parar = () => { activa = false; }; // termina la vuelta que lleva y se queda con el escudo al frente
+    m._sola = () => { if (activa || m.classList.contains('gira')) return; iniciar(); parar(); }; // una sola vuelta (la de demostracion)
     giro.addEventListener('animationiteration', () => { if (!activa) { m.classList.remove('gira'); desarmar(); } });
     m.addEventListener('pointerdown', e => { tipo = e.pointerType; });
     m.addEventListener('pointerenter', e => { if (e.pointerType === 'mouse') iniciar(); });
@@ -1265,7 +1270,12 @@
   for (const p of H.imagenes) {
     if (p.elipse) continue; // el circulo blanco de atras de Puntarenas ya no hace falta: la moneda 3D va sola
     if (MONEDA_IMG[p.f]) { const m = moneda3d(MONEDA_IMG[p.f], p); if (m) { frag.appendChild(m); const b = barraVitrina(MONEDA_IMG[p.f], p); if (b) { m._barra = b; frag.appendChild(b); } continue; } }
-    frag.appendChild(imagenPlana(p));
+    const ip = imagenPlana(p);
+    if (p.f === 'image19.png') { // el escudo «Pertenece a Familia Vega Godínez»: en 3D, girando como en la portada (si no hay WebGL queda la imagen)
+      const lugar = el('div', 'escudoHoja3d'), img = ip.querySelector('img'); ip.appendChild(lugar);
+      if (window.ponerEscudo3D) window.ponerEscudo3D(lugar, img); else (window.ESCUDO3D_COLA = window.ESCUDO3D_COLA || []).push([lugar, img]);
+    }
+    frag.appendChild(ip);
   }
   function imagenPlana(p) { // imagen de la hoja tal cual el Excel (recortada)
     const d = el('div', 'im'); d.style.cssText = `left:${p.x}px;top:${p.y}px;width:${p.w}px;height:${p.h}px`;
@@ -1714,6 +1724,15 @@
     casillas['suelta' + i] = k; frag.appendChild(k);
   });
   hoja.appendChild(frag);
+  // si no se esta revisando ninguna moneda (ninguna girando, ninguna ventana abierta), cada 6 s gira una vuelta una al azar
+  let ultimaSola = null;
+  setInterval(() => {
+    if (document.hidden || !hoja.offsetParent || window.VISOR3D_ABIERTO || document.querySelector('.velo.abierta')) return;
+    const ms = [...hoja.querySelectorAll('.moneda3d')];
+    if (!ms.length || ms.some(m => m.classList.contains('gira'))) return;
+    let m; do { m = ms[Math.random() * ms.length | 0]; } while (ms.length > 1 && m === ultimaSola);
+    ultimaSola = m; if (m._sola) m._sola();
+  }, 6000);
 
   // ---------- series especiales: la tabla se arma sola con las series de los estuches
   // area de la tabla vieja del Excel (columnas AH..BB, filas 39..51): se esconde y se pone la automatica
