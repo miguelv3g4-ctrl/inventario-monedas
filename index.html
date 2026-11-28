@@ -230,6 +230,10 @@
   @keyframes vtBrillo { from { background-position: 0 100%; } to { background-position: 0 0; } }
   .vtAro { border-radius: 50%; border: 3px solid rgba(235, 245, 255, .55); box-shadow: 0 0 6px rgba(255, 255, 255, .25), inset 0 0 6px rgba(255, 255, 255, .2); -webkit-backface-visibility: visible; backface-visibility: visible; }
   .vtAroIn { border-width: 2px; border-color: rgba(235, 245, 255, .4); }
+  .vtCapFondo { border-radius: 50%; background: rgba(255,255,255,.05); -webkit-backface-visibility: visible; backface-visibility: visible; }
+  .vtCapTapa { border-radius: 50%; -webkit-backface-visibility: visible; backface-visibility: visible; background: linear-gradient(135deg, rgba(255,255,255,.2), rgba(255,255,255,0) 42%, rgba(255,255,255,.06) 70%, rgba(255,255,255,0)), radial-gradient(circle, rgba(255,255,255,.05) 0 87%, rgba(255,255,255,.55) 88.5%, rgba(255,255,255,.07) 90.5%, rgba(255,255,255,.07) 96%, rgba(255,255,255,.65) 97.6%, rgba(255,255,255,.12) 100%); }
+  .vtCapPared { position: absolute; left: 0; top: 0; background: linear-gradient(rgba(255,255,255,.28), rgba(255,255,255,.08)); -webkit-backface-visibility: visible; backface-visibility: visible; }
+  .vtCapPesta { position: absolute; left: 0; top: 0; transform-origin: 0 50%; border-radius: 1px; background: rgba(225,235,250,.38); box-shadow: 0 0 2px rgba(255,255,255,.4); }
   .vtTapaCap { border-radius: 50%; background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, .28), rgba(255, 255, 255, .04) 40%, rgba(255, 255, 255, 0) 70%); border: 1px solid rgba(255, 255, 255, .25); pointer-events: none; }
   .vtTornillo { border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff, #b8bcc2 45%, #6d7178 100%); box-shadow: 0 0 2px rgba(0, 0, 0, .6); }
   .vtGrabado { display: flex; flex-direction: column; align-items: center; color: rgba(245, 248, 255, .82); text-align: center; line-height: 1.25; font-family: Calibri, "Segoe UI", Arial, sans-serif; pointer-events: none; }
@@ -1189,6 +1193,16 @@
     'image17.png': ['Provincia de San Jose', 'provincia-de-san-jose'], 'image20.png': ['Swing Criollo', 'swing-criollo'], 'image21.png': ['Boyero', 'boyero'],
     'calipso-proof.jpg': ['Calipso', 'calipso'], 'image23.png': ['Cimarrona', 'cimarrona'], 'image25.png': ['Toros Tope', 'toros-tope'], 'image24.png': ['Ceramica Chorotega', 'ceramica-chorotega']
   };
+  // capsula transparente del estuche, como la real: Ø 44 mm, 6 mm de alto, dos aros brillantes en la orilla y 6 pestanitas
+  // que sostienen la moneda al centro. Devuelve sus piezas (en el sistema de la moneda: z hacia arriba).
+  function capsulaEstuche(M, P, CAP) {
+    const D = CAP * P, alto = 6 * P, piezas = [disco('vtCapFondo', D, `translateZ(${-alto / 2}px)`), disco('vtCapTapa', D, `translateZ(${alto / 2}px)`)];
+    const N = 36, R = D / 2, ancho = Math.PI * D / N + 0.6;
+    for (let i = 0; i < N; i++) { const s = el('div', 'vtCapPared'); s.style.cssText = `width:${ancho.toFixed(2)}px;height:${alto}px;margin:${-alto / 2}px 0 0 ${-ancho / 2}px;transform:rotateZ(${i * 360 / N}deg) translateY(${R}px) rotateX(90deg)`; piezas.push(s); }
+    const rm = M.d / 2 * P, largo = 5 * P;
+    for (let i = 0; i < 6; i++) { const t = el('div', 'vtCapPesta'); t.style.cssText = `width:${largo}px;height:${1.4 * P}px;margin:${-0.7 * P}px 0 0 0;transform:rotateZ(${30 + i * 60}deg) translateX(${rm + 0.6 * P}px)`; piezas.push(t); }
+    return piezas;
+  }
   // canto de una moneda: tiras alrededor (estriado, liso o por tramos) con su sombreado; px = pixeles por mm
   function tirasCanto(M, D, G, px) {
     const N = 40, R = D / 2, ancho = Math.PI * D / N + 0.8, f = document.createDocumentFragment();
@@ -1263,7 +1277,7 @@
   // Medidas en mm sacadas de las fotos de Miguel con regla (aproximadas, a confirmar).
   const ACRILICO = { ancho: 60, alto: 86, grueso: 22, capsula: 45, centroY: 29, tornillo: 6, margen: 6 };
   // estuche: medidas que confirmo Miguel (106 de largo, 83 de ancho, 46 de alto, tapa de 20); negro como una pantalla apagada
-  const ESTUCHE = { ancho: 83, largo: 106, alto: 46, tapa: 20, color: [16, 16, 18], terciopelo: [50, 59, 91] };
+  const ESTUCHE = { ancho: 83, largo: 106, alto: 46, tapa: 20, color: [16, 16, 18], terciopelo: [46, 47, 51] }; // fondo gris carbon, como en las fotos de Miguel
   // color de la funda de carton de cada tematica (tomado de las fotos de las fundas)
   const FUNDA_COLOR = { 'Hitos de la Historia': [30, 42, 78], 'Fauna de los Ecosistemas': [38, 52, 40], 'Lugares Emblematicos de las Provincias de Costa Rica': [196, 62, 52], 'Patrimonio Cultural Inmaterial': [72, 52, 150] };
   const PX_VIT = 4.5;
@@ -1540,8 +1554,10 @@
       const brillo = 'linear-gradient(135deg,rgba(255,255,255,.13),rgba(255,255,255,0) 38%,rgba(255,255,255,.05) 70%,rgba(255,255,255,0))';
       const negro = `rgb(${E.color})`, lado = `background:${brillo},${negro};border:1px solid rgba(255,255,255,.07)`;
       const yTope = H0 / 2 - hb; // altura (y) del borde de arriba de la base
+      const CAP = 44, cR = CAP / 2 * P + 1.5, nX = (0.5 + 14.4 / E.ancho) * 100, nY = (0.5 - 16.6 / E.largo) * 100, nR = 9.3 * P;
+      const hueco = `radial-gradient(circle at 50% 50%,rgba(0,0,0,.55) 0 ${cR}px,rgba(0,0,0,.25) ${cR + 1.5}px,rgba(0,0,0,0) ${cR + 4}px),radial-gradient(circle at ${nX}% ${nY}%,rgb(22,22,25) 0 ${nR}px,rgba(0,0,0,.4) ${nR + 1}px,rgba(0,0,0,0) ${nR + 3}px)`;
       const base = cubo(w, hb, hd, { f: lado, b: lado, l: lado, r: lado, u: `background:${negro}`,
-        t: `background:url("img/estuches/estuche-terciopelo.webp") 0 0/${18 * P}px repeat,rgb(${E.terciopelo});box-shadow:inset 0 0 ${6 * P}px rgba(0,0,0,.75),inset 0 0 0 ${3 * P}px ${negro}` });
+        t: `background:${hueco},url("img/estuches/estuche-terciopelo.webp") 0 0/${18 * P}px repeat,rgb(${E.terciopelo});box-shadow:inset 0 0 ${6 * P}px rgba(0,0,0,.75),inset 0 0 0 ${3 * P}px ${negro}` });
       base.style.transform = `translateY(${H0 / 2 - hb / 2}px)`;
       const tapa = cubo(w, ht, hd, { f: lado, b: lado, l: lado, r: lado, t: `background:url("img/estuches/logo-bccr.webp") center/${40 * P}px auto no-repeat,${brillo},${negro}`,
         u: `background:url("img/estuches/estuche-tapa-dentro.webp") center/100% 100%,rgb(${E.terciopelo});box-shadow:inset 0 0 0 ${3 * P}px ${negro}` });
@@ -1558,9 +1574,9 @@
       const cg = certificado(nombre, archivo, serie, tiraje, 6, true); cg.classList.add('grande');
       const libro = fundaLibro(nombre, archivo, tiraje, den, tema0); grande.append(cg, libro);
       // la moneda acostada en el terciopelo, centrada, dentro de su capsula
-      const acostada = el('div', 'vtCubo'), CD = (M.d + 8) * P;
-      acostada.append(moneda, disco('vtAro', CD), disco('vtTapaCap', CD, `translateZ(${(M.g / 2 + 1.5) * P}px)`));
-      acostada.style.transform = `translateY(${yTope - (M.g / 2 + 0.5) * P}px) rotateX(90deg)`;
+      const acostada = el('div', 'vtCubo');
+      acostada.append(moneda, ...capsulaEstuche(M, P, CAP));
+      acostada.style.transform = `translateY(${yTope - 1.2 * P}px) rotateX(90deg)`; // capsula casi al ras del fondo
       const cajaG = el('div', 'vtCubo vtDesliza'); cajaG.append(base, bis, acostada);
       // funda de carton (abierta por los dos extremos): el frente es la foto de la funda de esta moneda; los lados, el color de su tematica
       const tema = FUNDA_COLOR[(H.piezas.find(x => x.moneda === nombre) || {}).coleccion] || [40, 40, 40], cf = `rgb(${tema})`, cfo = `rgb(${tema.map(c => c * .8 | 0)})`;
