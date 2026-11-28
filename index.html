@@ -236,6 +236,7 @@
   .vtCapPesta { position: absolute; left: 0; top: 0; transform-origin: 0 50%; border-radius: 1px; background: rgba(225,235,250,.16); box-shadow: 0 0 1px rgba(255,255,255,.2); }
   .vtHoyoPared { position: absolute; left: 0; top: 0; -webkit-backface-visibility: visible; backface-visibility: visible; }
   .vtTapaCap { border-radius: 50%; background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, .28), rgba(255, 255, 255, .04) 40%, rgba(255, 255, 255, 0) 70%); border: 1px solid rgba(255, 255, 255, .25); pointer-events: none; }
+  .vtImanLado { position: absolute; left: 0; top: 0; -webkit-backface-visibility: visible; backface-visibility: visible; }
   .vtTornillo { border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff, #b8bcc2 45%, #6d7178 100%); box-shadow: 0 0 2px rgba(0, 0, 0, .6); }
   .vtGrabado { display: flex; flex-direction: column; align-items: center; color: rgba(245, 248, 255, .82); text-align: center; line-height: 1.25; font-family: Calibri, "Segoe UI", Arial, sans-serif; pointer-events: none; }
   .vtGrabado img { display: block; margin-bottom: .5em; opacity: .85; }
@@ -1530,16 +1531,26 @@
       const A = ACRILICO, w = A.ancho * P, h = A.alto * P, d = A.grueso * P;
       const vidrio = 'background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.03) 45%,rgba(200,225,255,.08));border:1px solid rgba(235,245,255,.5);box-shadow:inset 0 0 10px rgba(255,255,255,.18);-webkit-backface-visibility:visible;backface-visibility:visible';
       const canto = 'background:linear-gradient(90deg,rgba(190,225,240,.38),rgba(235,250,255,.2) 50%,rgba(190,225,240,.38));border:1px solid rgba(235,245,255,.55);-webkit-backface-visibility:visible;backface-visibility:visible';
-      const bloque = cubo(w, h, d, { f: vidrio, b: vidrio, l: canto, r: canto, t: canto, u: canto });
+      // dos acrilicos (frente y fondo) que encierran la capsula: se ven las dos mitades con su union al centro del grueso
+      const junta = 0.5 * P, dm = (d - junta) / 2, interior = 'background:rgba(255,255,255,.04);border:1px solid rgba(235,245,255,.6);box-shadow:inset 0 0 6px rgba(255,255,255,.22);-webkit-backface-visibility:visible;backface-visibility:visible';
+      const mitadF = cubo(w, h, dm, { f: vidrio, b: interior, l: canto, r: canto, t: canto, u: canto }), mitadB = cubo(w, h, dm, { f: interior, b: vidrio, l: canto, r: canto, t: canto, u: canto });
+      mitadF.style.transform = `translateZ(${(d + junta) / 4}px)`; mitadB.style.transform = `translateZ(${-(d + junta) / 4}px)`;
+      const bloque = el('div', 'vtCubo'); bloque.append(mitadF, mitadB);
       const cy = (A.centroY - A.alto / 2) * P;
       moneda.style.transform = `translateY(${cy}px)`;
       // capsula redonda con su aro (a media altura del bloque) y las dos tapas transparentes
       const cap = el('div', 'vtCubo'); cap.style.transform = `translateY(${cy}px)`;
       const CD = A.capsula * P, tz = (M.g / 2 + 1.5) * P;
       cap.append(disco('vtAro', CD), disco('vtAro vtAroIn', (M.d + 3) * P), disco('vtTapaCap', CD - 6, `translateZ(${tz}px)`), disco('vtTapaCap', CD - 6, `rotateY(180deg) translateZ(${tz}px)`));
-      // tornillos de las esquinas (por delante y por detras)
+      // imanes de las esquinas: cilindros metalicos que atraviesan todo el acrilico (se ven por delante, por detras, en la union
+      // y a traves del acrilico por los lados); juntan las dos mitades
       const tor = el('div', 'vtCubo'), TD = A.tornillo * P, ox = w / 2 - (A.margen + A.tornillo / 2) * P, oy = h / 2 - (A.margen + A.tornillo / 2) * P;
-      for (const [sx, sy] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) for (const s of [1, -1]) tor.appendChild(disco('vtTornillo', TD, `translate3d(${sx * ox}px,${sy * oy}px,${s * (d / 2 + 0.6)}px)` + (s < 0 ? ' rotateY(180deg)' : '')));
+      for (const [sx, sy] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) {
+        const x = sx * ox, y = sy * oy;
+        for (const s of [1, -1]) tor.appendChild(disco('vtTornillo', TD, `translate3d(${x}px,${y}px,${s * (d / 2 + 0.3)}px)` + (s < 0 ? ' rotateY(180deg)' : '')));
+        const NI = 14, anchoI = Math.PI * TD / NI + 0.5;
+        for (let i = 0; i < NI; i++) { const a = i * 360 / NI, t = el('div', 'vtImanLado'); t.style.cssText = `width:${anchoI.toFixed(2)}px;height:${d}px;margin:${-d / 2}px 0 0 ${-anchoI / 2}px;background:linear-gradient(90deg,rgba(${150 + 70 * Math.cos(a * Math.PI / 180) | 0},${155 + 70 * Math.cos(a * Math.PI / 180) | 0},${162 + 65 * Math.cos(a * Math.PI / 180) | 0},.9),rgba(120,125,132,.9));transform:translate3d(${x}px,${y}px,0) rotateZ(${a}deg) translateY(${TD / 2}px) rotateX(90deg)`; tor.appendChild(t); }
+      }
       // grabado: logo del BCCR (sacado de la tapa del estuche) y el texto; por detras se ve al reves, a traves del acrilico
       const gw = w - 14 * P, gr = el('div', 'vtCara vtGrabado');
       gr.style.cssText = `width:${gw}px;margin-left:${-gw / 2}px;top:${(A.alto * 0.63 - A.alto / 2) * P}px;transform:translateZ(${d / 2 + 0.2}px);font-size:${2.1 * P}px;-webkit-backface-visibility:visible;backface-visibility:visible`;
