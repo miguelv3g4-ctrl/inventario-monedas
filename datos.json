@@ -10508,11 +10508,11 @@
     "metal": "plata 0,750",
     "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-xaa5fb7b92-escudo.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xaa5fb7b92-escudo-r.jpg",
     "reverso": "privado:cara3d-O-xaa5fb7b92-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo era la misma foto de la moneda de 1870 (fecha 1870). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Cara de la moneda normal de 1872 (no del ensayo en metal blanco): coinvarieties.com (1872-GW 10 centavos, foto de Heritage Auctions)"
    }
   },
   "O-x886fea3dd": {
