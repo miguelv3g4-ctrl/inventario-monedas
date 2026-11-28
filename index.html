@@ -248,7 +248,9 @@
   .vtPantalla .vtCont { width: 100%; height: 100vh; }
   .vtPantalla .vtEscena { height: calc(100vh - 34px); cursor: grab; }
   .vtCerrarGrande { position: fixed; top: 10px; right: 14px; z-index: 5; font-size: 26px; }
-  .vtPantalla .vtEnderezar { top: 14px; right: 60px; width: 32px; height: 32px; }
+  .vtPausa { position: fixed; top: 12px; right: 100px; z-index: 5; font-size: 20px; }
+  .vtCont.pausa .vtVaiven, .vtCont.pausa .vtEspejo { animation-play-state: paused !important; } /* pausado: queda quieto en su angulo actual */
+  .vtPantalla .vtEnderezar { position: fixed; top: 14px; right: 56px; width: 32px; height: 32px; }
   /* certificado blanco: cada cosa en la misma posicion que en la foto real (medido en % del ancho y alto de la tarjeta;
      referencia: el de Swing Criollo, el mas de frente; los de Hitos 500 llevan la moneda grande al centro y no tienen holograma) */
   .vtCertHecho { position: relative; box-sizing: border-box; background: #fbfbf8; color: #1d2b53; container-type: size; overflow: hidden; font-family: Montserrat, "Segoe UI", Arial, sans-serif; line-height: 1.18; }
@@ -1476,25 +1478,31 @@
     esc.addEventListener('click', e => e.stopPropagation());
     esc.addEventListener('dblclick', e => { e.stopPropagation(); clearTimeout(reloj); if (V.alDoble) V.alDoble(); });
     esc.addEventListener('wheel', e => { if (!completa) return; e.preventDefault(); V.zoom = Math.max(.5, Math.min(5, V.zoom * (e.deltaY < 0 ? 1.12 : 1 / 1.12))); V.aplicarK(); }, { passive: false });
-    V.alDoble = completa ? null : () => { if (V._params) pantallaCompleta(V._params); };
+    V.alDoble = completa ? null : () => { if (V._params) pantallaCompleta(V._params, V); };
     V.vaciar = () => { clearTimeout(reloj); V.querySelector('.vtVaiven').textContent = ''; V.querySelector('.vtCertGrande').classList.remove('ver'); V._abrirCerrar = null; };
     return V;
   }
   // el mismo 3D en pantalla completa, con imagenes de mejor resolucion; doble clic, Esc o la X lo cierran
   let pantalla = null;
-  function pantallaCompleta(params) {
+  function pantallaCompleta(params, origen) {
     if (!pantalla) {
       pantalla = el('div', 'velo vtVelo vtPantalla'); pantalla.id = 'vitrinaGrande';
       const x = el('button', 'vtCerrar vtCerrarGrande', '✕'); x.type = 'button'; x.setAttribute('aria-label', 'Cerrar');
       pantalla.appendChild(x); document.body.appendChild(pantalla);
-      pantalla.cerrar = () => { pantalla.classList.remove('abierta'); if (pantalla._V) { pantalla._V.vaciar(); pantalla._V.remove(); pantalla._V = null; } };
+      pantalla.cerrar = () => { pantalla.classList.remove('abierta'); if (pantalla._V) { pantalla._V.vaciar(); pantalla._V.remove(); pantalla._V = null; } if (pantalla._origen) { pantalla._origen.classList.remove('pausa'); pantalla._origen = null; } }; // el 3D de abajo vuelve a girar
+      // pausa / reanudar el giro (boton y barra espaciadora); pausada se sigue pudiendo arrastrar y acercar
+      const pa = el('button', 'vtCerrar vtPausa', '⏸'); pa.type = 'button'; pa.title = 'Pausar o reanudar el giro (barra espaciadora)'; pantalla.appendChild(pa);
+      pantalla.pausar = () => { if (!pantalla._V) return; const p = pantalla._V.classList.toggle('pausa'); pa.textContent = p ? '▶' : '⏸'; pa.title = (p ? 'Reanudar' : 'Pausar') + ' el giro (barra espaciadora)'; };
+      pa.onclick = e => { e.stopPropagation(); pantalla.pausar(); };
+      document.addEventListener('keydown', e => { if ((e.key === ' ' || e.code === 'Space') && pantalla.classList.contains('abierta')) { e.preventDefault(); e.stopImmediatePropagation(); pantalla.pausar(); } }, true);
       x.onclick = pantalla.cerrar;
       document.addEventListener('keydown', e => { if (e.key === 'Escape' && pantalla.classList.contains('abierta')) { e.stopImmediatePropagation(); pantalla.cerrar(); } }, true);
     }
     if (pantalla._V) pantalla.cerrar();
-    const V = nuevaEscena(true); V.alDoble = pantalla.cerrar; pantalla._V = V; pantalla.appendChild(V);
+    const V = nuevaEscena(true); V.alDoble = pantalla.cerrar; pantalla._V = V; pantalla.appendChild(V); pantalla.querySelector('.vtPausa').textContent = '⏸';
+    if (origen) { origen.classList.add('pausa'); pantalla._origen = origen; } // el 3D de la ficha o de la ventana se queda quieto mientras tanto
     llenarEscena(V, ...params);
-    V.querySelector('.vtNota').textContent += ' · rueda o pellizco: acercar y alejar · doble clic o Esc: cerrar';
+    V.querySelector('.vtNota').textContent += ' · rueda o pellizco: acercar y alejar · ⏸ o barra espaciadora: pausar · doble clic o Esc: cerrar';
     pantalla.classList.add('abierta');
     ajustarEscena(V, window.innerWidth - 40, window.innerHeight - 60, params[3] === 'acrilico', 1.9);
   }
