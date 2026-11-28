@@ -237,6 +237,12 @@
   .vtGrabado b, .vtGrabado span { font-weight: 600; }
   .vtGrabado .it { font-style: italic; font-weight: 400; }
   .vtNota { color: var(--gris); font-size: 12px; text-align: center; }
+  .vtTornillo, .vtTapaCap { -webkit-backface-visibility: visible; backface-visibility: visible; } /* se ven a traves del acrilico desde cualquier lado */
+  .vtCert { background-size: 100% 100%; box-shadow: 0 0 3px rgba(0,0,0,.6); }
+  .vtVentana { position: relative; }
+  .vtCertGrande { position: absolute; inset: 70px 14px 34px; display: none; align-items: center; justify-content: center; background: rgba(0, 0, 0, .55); cursor: pointer; z-index: 2; }
+  .vtCertGrande.ver { display: flex; }
+  .vtCertGrande img { max-width: 92%; max-height: 100%; border-radius: 3px; box-shadow: 0 6px 24px rgba(0, 0, 0, .7); }
   @media (prefers-reduced-motion: reduce) { .moneda3d.gira .m3giro, .moneda3d.gira .m3brillo { animation-duration: 9s; } }
   .ck { position: absolute; width: 13px; height: 13px; background: #fff; border: 1px solid #333; z-index: 4; }
   .puedeEditar .ck { cursor: pointer; }
@@ -1185,6 +1191,7 @@
   // color de la funda de carton de cada tematica (tomado de las fotos de las fundas)
   const FUNDA_COLOR = { 'Hitos de la Historia': [30, 42, 78], 'Fauna de los Ecosistemas': [38, 52, 40], 'Lugares Emblematicos de las Provincias de Costa Rica': [196, 62, 52], 'Patrimonio Cultural Inmaterial': [72, 52, 150] };
   const PX_VIT = 4.5;
+  const CERT = { ancho: 64, alto: 62 }; // certificado de autenticidad, medido en la foto con regla (aproximado)
   // texto grabado en el acrilico debajo de «Moneda conmemorativa», leido de las fotos de los acrilicos de Miguel
   // (Conejo, Guanacaste, Heredia, Cartago y Alajuela: sin foto del acrilico; mismo formato, con lo escrito en la moneda y el nombre del BCCR)
   const GRABADO = {
@@ -1264,10 +1271,11 @@
     if (!vitrina) {
       vitrina = el('div', 'velo vtVelo'); vitrina.id = 'vitrina';
       vitrina.innerHTML = '<div class="vtVentana"><div class="vtTitulo"><b></b><button type="button" class="vtCerrar" aria-label="Cerrar">✕</button></div><div class="vtOpciones"></div>' +
-        '<div class="vtEscena"><div class="vtGiro"><div class="vtVaiven"></div></div></div><small class="vtNota"></small></div>';
+        '<div class="vtEscena"><div class="vtGiro"><div class="vtVaiven"></div></div></div><div class="vtCertGrande" title="Clic para guardarlo"><img alt="Certificado de autenticidad"></div><small class="vtNota"></small></div>';
       document.body.appendChild(vitrina);
-      const cerrar = () => { vitrina.classList.remove('abierta'); vitrina.querySelector('.vtVaiven').textContent = ''; };
+      const cerrar = () => { vitrina.classList.remove('abierta'); vitrina.querySelector('.vtCertGrande').classList.remove('ver'); vitrina.querySelector('.vtVaiven').textContent = ''; };
       vitrina.querySelector('.vtCerrar').onclick = cerrar;
+      vitrina.querySelector('.vtCertGrande').onclick = () => { if (vitrina._abrirCerrar) vitrina._abrirCerrar(); };
       vitrina.addEventListener('mousedown', e => { if (e.target === vitrina) cerrar(); });
       document.addEventListener('keydown', e => { if (e.key === 'Escape' && vitrina.classList.contains('abierta')) cerrar(); });
       // la pieza gira sola 360° (vtVaiven); ademas se puede arrastrar para inclinarla o girarla; doble clic la endereza.
@@ -1296,12 +1304,12 @@
       if (!ver[v] || (v !== 'color' && !sinColor)) continue;
       boton(NOMBRE_VER[v] + ' · ' + ver[v].join(', '), acabado === v, () => abrirVitrina(nombre, archivo, den, modo, v), AYUDA[v] + ' (casillas ' + ver[v].join(', ') + ' de la hoja)');
     }
-    const caja = vitrina.querySelector('.vtVaiven'); caja.textContent = '';
+    const caja = vitrina.querySelector('.vtVaiven'); caja.textContent = ''; vitrina.querySelector('.vtCertGrande').classList.remove('ver');
     const P = PX_VIT, moneda = monedaSolida(nombre, archivo, den, acabado), M = MEDIDAS_MONEDA[den], mm = n => String(n).replace('.', ',');
     if (enAcrilico) {
       const A = ACRILICO, w = A.ancho * P, h = A.alto * P, d = A.grueso * P;
-      const vidrio = 'background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.03) 45%,rgba(200,225,255,.08));border:1px solid rgba(235,245,255,.5);box-shadow:inset 0 0 10px rgba(255,255,255,.18)';
-      const canto = 'background:linear-gradient(90deg,rgba(190,225,240,.38),rgba(235,250,255,.2) 50%,rgba(190,225,240,.38));border:1px solid rgba(235,245,255,.55)';
+      const vidrio = 'background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.03) 45%,rgba(200,225,255,.08));border:1px solid rgba(235,245,255,.5);box-shadow:inset 0 0 10px rgba(255,255,255,.18);-webkit-backface-visibility:visible;backface-visibility:visible';
+      const canto = 'background:linear-gradient(90deg,rgba(190,225,240,.38),rgba(235,250,255,.2) 50%,rgba(190,225,240,.38));border:1px solid rgba(235,245,255,.55);-webkit-backface-visibility:visible;backface-visibility:visible';
       const bloque = cubo(w, h, d, { f: vidrio, b: vidrio, l: canto, r: canto, t: canto, u: canto });
       const cy = (A.centroY - A.alto / 2) * P;
       moneda.style.transform = `translateY(${cy}px)`;
@@ -1314,7 +1322,7 @@
       for (const [sx, sy] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) for (const s of [1, -1]) tor.appendChild(disco('vtTornillo', TD, `translate3d(${sx * ox}px,${sy * oy}px,${s * (d / 2 + 0.6)}px)` + (s < 0 ? ' rotateY(180deg)' : '')));
       // grabado: logo del BCCR (sacado de la tapa del estuche) y el texto
       const gw = w - 14 * P, gr = el('div', 'vtCara vtGrabado');
-      gr.style.cssText = `width:${gw}px;margin-left:${-gw / 2}px;top:${(A.alto * 0.63 - A.alto / 2) * P}px;transform:translateZ(${d / 2 + 0.2}px);font-size:${2.1 * P}px`;
+      gr.style.cssText = `width:${gw}px;margin-left:${-gw / 2}px;top:${(A.alto * 0.63 - A.alto / 2) * P}px;transform:translateZ(${d / 2 + 0.2}px);font-size:${2.1 * P}px;-webkit-backface-visibility:visible;backface-visibility:visible`; // por detras se ve al reves, a traves del acrilico
       const lg = el('img'); lg.src = 'img/estuches/logo-bccr.webp'; lg.alt = 'Banco Central de Costa Rica'; lg.draggable = false; lg.style.width = (30 * P) + 'px';
       gr.append(lg, el('b', '', 'Moneda conmemorativa'));
       for (const l of GRABADO[nombre] || [nombre]) gr.appendChild(el('span', ITALICA.test(l) ? 'it' : '', l));
@@ -1335,6 +1343,10 @@
       // bisagra: en el borde de atras, arriba de la base
       const bis = el('div', 'vtCubo vtBisagra'); bis.appendChild(tapa);
       tapa.style.transform = `translate3d(0,${-ht / 2}px,${hd / 2}px)`;
+      // certificado de autenticidad de esta moneda (foto de Miguel), parado dentro de la tapa como en la caja real
+      const cw = CERT.ancho * P, ch = CERT.alto * P, cert = el('div', 'vtCara vtCert');
+      cert.style.cssText = `width:${cw}px;height:${ch}px;margin:${-ch / 2}px 0 0 ${-cw / 2}px;transform:rotateX(-90deg) translateZ(${ht / 2 + 0.8}px);background-image:url("img/estuches/cert-${archivo}.webp")`;
+      tapa.appendChild(cert);
       // la moneda acostada en el terciopelo, centrada, dentro de su capsula
       const acostada = el('div', 'vtCubo'), CD = (M.d + 8) * P;
       acostada.append(moneda, disco('vtAro', CD), disco('vtTapaCap', CD, `translateZ(${(M.g / 2 + 1.5) * P}px)`));
@@ -1348,18 +1360,20 @@
       // un clic saca la caja de la funda, otro abre la tapa, otro la cierra y la vuelve a meter
       let paso = 0;
       const poner = () => {
-        const fuera = paso > 0, abierto = paso === 2;
+        const fuera = paso > 0, abierto = paso >= 2;
+        vitrina.querySelector('.vtCertGrande').classList.toggle('ver', paso === 3);
         cajaG.style.transform = `translateZ(${fuera ? hd * 0.62 : 0}px)`; funda.style.transform = `translateZ(${fuera ? -hd * 0.62 : 0}px)`;
         bis.style.transform = `translate3d(0,${yTope}px,${-hd / 2}px) rotateX(${abierto ? 100 : 0}deg)`;
       };
+      vitrina.querySelector('.vtCertGrande img').src = 'img/estuches/cert-' + archivo + '.webp';
       poner();
       vitrina._abrirCerrar = () => {
-        if (paso === 2) { paso = 1; poner(); setTimeout(() => { if (paso === 1) { paso = 0; poner(); } }, 1150); } // cierra y luego la mete
+        if (paso === 3) { paso = 1; poner(); setTimeout(() => { if (paso === 1) { paso = 0; poner(); } }, 1150); } // guarda el certificado, cierra y la mete
         else { paso++; poner(); }
       };
       caja.append(funda, cajaG);
       vitrina._rx0 = -28; vitrina._ry0 = 0;
-      vitrina.querySelector('.vtNota').textContent = 'Estuche ' + E.largo + ' × ' + E.ancho + ' × ' + E.alto + ' mm, en su funda · moneda ' + mm(M.d) + ' mm, a la misma escala · gira solo · clic: sacar de la funda → abrir → cerrar y guardar · arrástrelo para inclinarlo';
+      vitrina.querySelector('.vtNota').textContent = 'Estuche ' + E.largo + ' × ' + E.ancho + ' × ' + E.alto + ' mm, en su funda · moneda ' + mm(M.d) + ' mm, a la misma escala · gira solo · clic: sacar de la funda → abrir → ver el certificado → cerrar y guardar · arrástrelo para inclinarlo';
     }
     if (vitrina._modo !== (enAcrilico ? 'a' : 'e')) { vitrina._modo = enAcrilico ? 'a' : 'e'; vitrina._rx = vitrina._rx0; vitrina._ry = vitrina._ry0; }
     giroVitrina();
