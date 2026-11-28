@@ -233,7 +233,8 @@
   .vtCapFondo { border-radius: 50%; background: rgba(255,255,255,.05); -webkit-backface-visibility: visible; backface-visibility: visible; }
   .vtCapTapa { border-radius: 50%; -webkit-backface-visibility: visible; backface-visibility: visible; background: linear-gradient(135deg, rgba(255,255,255,.2), rgba(255,255,255,0) 42%, rgba(255,255,255,.06) 70%, rgba(255,255,255,0)), radial-gradient(circle, rgba(255,255,255,.05) 0 87%, rgba(255,255,255,.55) 88.5%, rgba(255,255,255,.07) 90.5%, rgba(255,255,255,.07) 96%, rgba(255,255,255,.65) 97.6%, rgba(255,255,255,.12) 100%); }
   .vtCapPared { position: absolute; left: 0; top: 0; background: linear-gradient(rgba(255,255,255,.28), rgba(255,255,255,.08)); -webkit-backface-visibility: visible; backface-visibility: visible; }
-  .vtCapPesta { position: absolute; left: 0; top: 0; transform-origin: 0 50%; border-radius: 1px; background: rgba(225,235,250,.38); box-shadow: 0 0 2px rgba(255,255,255,.4); }
+  .vtCapPesta { position: absolute; left: 0; top: 0; transform-origin: 0 50%; border-radius: 1px; background: rgba(225,235,250,.16); box-shadow: 0 0 1px rgba(255,255,255,.2); }
+  .vtHoyoPared { position: absolute; left: 0; top: 0; -webkit-backface-visibility: visible; backface-visibility: visible; }
   .vtTapaCap { border-radius: 50%; background: radial-gradient(circle at 35% 30%, rgba(255, 255, 255, .28), rgba(255, 255, 255, .04) 40%, rgba(255, 255, 255, 0) 70%); border: 1px solid rgba(255, 255, 255, .25); pointer-events: none; }
   .vtTornillo { border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff, #b8bcc2 45%, #6d7178 100%); box-shadow: 0 0 2px rgba(0, 0, 0, .6); }
   .vtGrabado { display: flex; flex-direction: column; align-items: center; color: rgba(245, 248, 255, .82); text-align: center; line-height: 1.25; font-family: Calibri, "Segoe UI", Arial, sans-serif; pointer-events: none; }
@@ -1199,7 +1200,7 @@
     const D = CAP * P, alto = 6 * P, piezas = [disco('vtCapFondo', D, `translateZ(${-alto / 2}px)`), disco('vtCapTapa', D, `translateZ(${alto / 2}px)`)];
     const N = 36, R = D / 2, ancho = Math.PI * D / N + 0.6;
     for (let i = 0; i < N; i++) { const s = el('div', 'vtCapPared'); s.style.cssText = `width:${ancho.toFixed(2)}px;height:${alto}px;margin:${-alto / 2}px 0 0 ${-ancho / 2}px;transform:rotateZ(${i * 360 / N}deg) translateY(${R}px) rotateX(90deg)`; piezas.push(s); }
-    const rm = M.d / 2 * P, largo = 5 * P;
+    const rm = M.d / 2 * P, largo = 3 * P;
     for (let i = 0; i < 6; i++) { const t = el('div', 'vtCapPesta'); t.style.cssText = `width:${largo}px;height:${1.4 * P}px;margin:${-0.7 * P}px 0 0 0;transform:rotateZ(${30 + i * 60}deg) translateX(${rm + 0.6 * P}px)`; piezas.push(t); }
     return piezas;
   }
@@ -1554,13 +1555,19 @@
       const brillo = 'linear-gradient(135deg,rgba(255,255,255,.13),rgba(255,255,255,0) 38%,rgba(255,255,255,.05) 70%,rgba(255,255,255,0))';
       const negro = `rgb(${E.color})`, lado = `background:${brillo},${negro};border:1px solid rgba(255,255,255,.07)`;
       const yTope = H0 / 2 - hb; // altura (y) del borde de arriba de la base
-      const CAP = 44, cR = CAP / 2 * P + 1.5, nX = (0.5 + 14.4 / E.ancho) * 100, nY = (0.5 - 16.6 / E.largo) * 100, nR = 9.3 * P;
-      const hueco = `radial-gradient(circle at 50% 50%,rgba(0,0,0,.55) 0 ${cR}px,rgba(0,0,0,.25) ${cR + 1.5}px,rgba(0,0,0,0) ${cR + 4}px),radial-gradient(circle at ${nX}% ${nY}%,rgb(22,22,25) 0 ${nR}px,rgba(0,0,0,.4) ${nR + 1}px,rgba(0,0,0,0) ${nR + 3}px)`;
+      // fondo como en las fotos: provincias en fieltro gris con un hueco aparte (media luna) para sacar la capsula con el dedo;
+      // las demas (fauna, patrimonio, 500) en terciopelo negro, sin ese hueco. La capsula va metida en un hueco redondo de verdad.
+      const esProv = /Provincias/.test((H.piezas.find(x => x.moneda === nombre) || {}).coleccion || '');
+      const tela = esProv ? { img: 'fieltro-gris', rgb: [48, 49, 53], orilla: 'rgba(0,0,0,.45)' } : { img: 'terciopelo-negro', rgb: [14, 14, 16], orilla: 'rgba(120,120,128,.32)' };
+      const CAP = 44, cR = CAP / 2 * P + 0.6, nXmm = 14.4, nYmm = -16.6, nX = (0.5 + nXmm / E.ancho) * 100, nY = (0.5 + nYmm / E.largo) * 100, nR = 9.3 * P;
+      const hoyo = (x, y, r) => `radial-gradient(circle at ${x}% ${y}%,transparent ${r}px,#000 ${r + 0.8}px)`;
+      const mascara = hoyo(50, 50, cR) + (esProv ? ',' + hoyo(nX, nY, nR) : '');
+      const sombraHoyo = `radial-gradient(circle at 50% 50%,rgba(0,0,0,.65) ${cR}px,rgba(0,0,0,0) ${cR + 2.5 * P}px)` + (esProv ? `,radial-gradient(circle at ${nX}% ${nY}%,rgba(0,0,0,.6) ${nR}px,rgba(0,0,0,0) ${nR + 2 * P}px)` : '');
       const base = cubo(w, hb, hd, { f: lado, b: lado, l: lado, r: lado, u: `background:${negro}`,
-        t: `background:${hueco},url("img/estuches/estuche-terciopelo.webp") 0 0/${18 * P}px repeat,rgb(${E.terciopelo});box-shadow:inset 0 0 ${6 * P}px rgba(0,0,0,.75),inset 0 0 0 ${3 * P}px ${negro}` });
+        t: `background:${sombraHoyo},radial-gradient(ellipse at 50% 22%,rgba(255,255,255,.07),rgba(255,255,255,0) 62%),url("img/estuches/${tela.img}.webp") 0 0/${14 * P}px repeat,rgb(${tela.rgb});box-shadow:inset 0 0 ${2 * P}px ${tela.orilla},inset 0 0 ${6 * P}px rgba(0,0,0,.6),inset 0 0 0 ${3 * P}px ${negro};-webkit-mask-image:${mascara};mask-image:${mascara};-webkit-mask-composite:source-in;mask-composite:intersect` });
       base.style.transform = `translateY(${H0 / 2 - hb / 2}px)`;
       const tapa = cubo(w, ht, hd, { f: lado, b: lado, l: lado, r: lado, t: `background:url("img/estuches/logo-bccr.webp") center/${40 * P}px auto no-repeat,${brillo},${negro}`,
-        u: `background:url("img/estuches/estuche-tapa-dentro.webp") center/100% 100%,rgb(${E.terciopelo});box-shadow:inset 0 0 0 ${3 * P}px ${negro}` });
+        u: `background:radial-gradient(ellipse at 50% 30%,rgba(255,255,255,.06),rgba(255,255,255,0) 65%),url("img/estuches/${tela.img}.webp") 0 0/${14 * P}px repeat,rgb(${tela.rgb});box-shadow:inset 0 0 ${2 * P}px ${tela.orilla},inset 0 0 0 ${3 * P}px ${negro}` });
       // bisagra: en el borde de atras, arriba de la base
       const bis = el('div', 'vtCubo vtBisagra'); bis.appendChild(tapa);
       tapa.style.transform = `translate3d(0,${-ht / 2}px,${hd / 2}px)`;
@@ -1574,9 +1581,14 @@
       const cg = certificado(nombre, archivo, serie, tiraje, 6, true); cg.classList.add('grande');
       const libro = fundaLibro(nombre, archivo, tiraje, den, tema0); grande.append(cg, libro);
       // la moneda acostada en el terciopelo, centrada, dentro de su capsula
-      const acostada = el('div', 'vtCubo');
-      acostada.append(moneda, ...capsulaEstuche(M, P, CAP));
-      acostada.style.transform = `translateY(${yTope - 1.2 * P}px) rotateX(90deg)`; // capsula casi al ras del fondo
+      // la capsula metida en su hueco: la tapa queda 0,8 mm sobre la tela; debajo, el fondo y las paredes del hueco (z hacia arriba)
+      const acostada = el('div', 'vtCubo'), zs = 2.2 * P, prof = 5.6 * P, telaOsc = `rgb(${tela.rgb.map(c => c * .55 | 0)})`;
+      const piso = el('div', 'vtCara'), L = 70 * P;
+      piso.style.cssText = `width:${L}px;height:${L}px;margin:${-L / 2}px 0 0 ${-L / 2}px;transform:translateZ(${zs - prof}px);background:url("img/estuches/${tela.img}.webp") 0 0/${14 * P}px repeat,${telaOsc};-webkit-backface-visibility:visible;backface-visibility:visible`;
+      const paredes = [], NP = 48, anchoP = Math.PI * 2 * cR / NP + 0.6;
+      for (let i = 0; i < NP; i++) { const s = el('div', 'vtHoyoPared'); s.style.cssText = `width:${anchoP.toFixed(2)}px;height:${prof}px;margin:${-prof / 2}px 0 0 ${-anchoP / 2}px;background:linear-gradient(${telaOsc},rgb(${tela.rgb}));transform:translateZ(${zs - prof / 2}px) rotateZ(${i * 360 / NP}deg) translateY(${cR}px) rotateX(90deg)`; paredes.push(s); }
+      acostada.append(piso, ...paredes, moneda, ...capsulaEstuche(M, P, CAP));
+      acostada.style.transform = `translateY(${yTope + zs}px) rotateX(90deg)`;
       const cajaG = el('div', 'vtCubo vtDesliza'); cajaG.append(base, bis, acostada);
       // funda de carton (abierta por los dos extremos): el frente es la foto de la funda de esta moneda; los lados, el color de su tematica
       const tema = FUNDA_COLOR[(H.piezas.find(x => x.moneda === nombre) || {}).coleccion] || [40, 40, 40], cf = `rgb(${tema})`, cfo = `rgb(${tema.map(c => c * .8 | 0)})`;
