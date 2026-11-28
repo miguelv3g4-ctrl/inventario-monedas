@@ -265,6 +265,37 @@
   .vtVentana { position: relative; }
   .vtCertGrande { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; background: rgba(0, 0, 0, .55); cursor: pointer; z-index: 2; }
   .vtCertGrande.ver { display: flex; }
+  /* certificado que se abre como librito (cara blanca, por dentro a color, por detras a color) */
+  .vtCertGrande { perspective: 1800px; }
+  .vtCertGrande > .vtLibro { position: relative; height: min(78%, 430px); aspect-ratio: 64 / 62; transform-style: preserve-3d; transition: transform .8s ease; box-shadow: none; border-radius: 0; font-size: clamp(7px, 2.1vh, 13px); }
+  .vtLibro[data-estado="abierto"] { transform: translateX(50%); }
+  .vtLibro[data-estado="atras"] { transform: rotateY(180deg); }
+  .vtLibroTapa, .vtLibroHoja { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform .8s ease; }
+  .vtLibroTapa { transform-origin: left center; transform: translateZ(1px); }
+  .vtLibro[data-estado="abierto"] .vtLibroTapa { transform: translateZ(1px) rotateY(-180deg); }
+  .vtLibroCara { position: absolute; inset: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; box-shadow: 0 6px 24px rgba(0,0,0,.6); border-radius: 3px; overflow: hidden; box-sizing: border-box; }
+  .vtLibroCara.dentroIzq, .vtLibroCara.atras { transform: rotateY(180deg); }
+  .vtLibroCara { color: #fff; padding: 1.1em 1.3em; display: flex; flex-direction: column; gap: .5em; font-family: Calibri, "Segoe UI", Arial, sans-serif; line-height: 1.3; }
+  .vtLibroCara h4 { margin: 0; font-size: 1.15em; }
+  .vtLibroCara p { margin: 0; text-align: justify; flex: 1; }
+  .vtLibroLogo { width: 38%; align-self: center; }
+  .vtLibroFila { display: flex; align-items: center; gap: .6em; flex: 1; }
+  .vtLibroLista { display: flex; flex-direction: column; gap: .3em; flex: 1; }
+  .vtLibroValor { width: 36%; border-radius: 50%; }
+  .vtLibroCara.dentroDer { text-align: center; } .vtLibroCara.dentroDer small { align-self: flex-end; }
+  .vtLibroCara.atras { align-items: center; justify-content: center; text-align: center; }
+  .vtLibroValorG { width: 52%; border-radius: 50%; margin: .4em 0; }
+  .vtLibroCara.atras b { font-size: 1.2em; } .vtLibroCara.atras small { opacity: .8; }
+  .vtLibroCara.portada { align-items: center; text-align: center; justify-content: space-between; }
+  .vtLibroNombre { display: flex; flex-direction: column; font-size: 1.05em; } .vtLibroNombre b { font-size: 1.1em; }
+  /* cinta con los colores de la bandera en la esquina, como en la funda real */
+  .vtBandera { position: absolute; top: -12%; right: -12%; width: 34%; height: 34%; transform: rotate(45deg); background: linear-gradient(#002b7f 0 18%, #fff 18% 32%, #ce1126 32% 68%, #fff 68% 82%, #002b7f 82%); opacity: .95; }
+  .vtLibroCara.dentroIzq .vtBandera { right: auto; left: -12%; transform: rotate(-45deg); }
+  .vtCertGrande > .vtCertHecho { box-shadow: 0 6px 24px rgba(0,0,0,.7); }
+  .vtCertPie { display: flex; align-items: flex-end; justify-content: space-between; gap: .6em; }
+  .vtCertPie > div:first-child { display: flex; flex-direction: column; gap: .25em; }
+  .vtHolo { width: 22%; aspect-ratio: 1; border-radius: 2px; display: flex; align-items: center; justify-content: center; text-align: center; line-height: .95; font-size: 1.3em; color: rgba(255,255,255,.9); text-shadow: 0 0 3px rgba(0,0,0,.35);
+    background: linear-gradient(135deg, rgba(255,255,255,.55), rgba(255,255,255,0) 45%), conic-gradient(from 30deg, #b9c7d8, #e0b7e8, #a9e3d7, #f2e3a6, #b8c8f0, #e8b8c8, #b9c7d8); box-shadow: inset 0 0 0 1px rgba(0,0,0,.15); }
   .vtCertGrande > div { border-radius: 3px; box-shadow: 0 6px 24px rgba(0, 0, 0, .7); }
   @media (prefers-reduced-motion: reduce) { .moneda3d.gira .m3giro, .moneda3d.gira .m3brillo { animation-duration: 9s; } }
   .ck { position: absolute; width: 13px; height: 13px; background: #fff; border: 1px solid #333; z-index: 4; }
@@ -1305,18 +1336,82 @@
   // otros certificados que se ven en las mismas fotos (img/estuches/cert-<archivo>-<serie>.webp)
   const CERT_EXTRA = { 'mariposa-amorfo': ['0368'], 'rana-calzonuda': ['3710'], 'lagartija-o-anolis': ['3378'], 'conejo-de-monte': ['4045'], '200-anos-de-anexion-del-partido-de-nicoya': ['12221'], 'swing-criollo': ['1527'] };
   // certificado de una pieza: la foto si es la de su serie; si no, el mismo formato armado con los datos de la pieza (nombre, serie y tiraje)
+  // cara blanca del certificado, armada en limpio (cuadrada y nitida) con los datos de la pieza: logo, moneda, textos,
+  // «Certificado de autenticidad» con su numero y el holograma. (Las fotos torcidas de img/estuches/cert-*.webp ya no se usan.)
   function certificado(nombre, archivo, serie, tiraje, px, grande) {
-    const sinCeros = s => String(s || '').replace(/^0+/, '');
-    const otra = serie && (CERT_EXTRA[archivo] || []).find(s => sinCeros(s) === sinCeros(serie));
-    if ((serie && sinCeros(serie) === sinCeros(CERT_FOTO[archivo])) || otra) { const src = `img/estuches/cert-${archivo}${otra ? '-' + otra : ''}.webp`; if (grande) { const im = el('img', 'vtCertFoto'); im.src = src; im.alt = 'Certificado de autenticidad'; return im; } const c = el('div', 'vtCertFoto'); c.style.backgroundImage = `url("${src}")`; return c; }
-    const c = el('div', 'vtCertHecho'); c.style.fontSize = (2.1 * px) + 'px';
+    const c = el('div', 'vtCertHecho'); if (!grande) c.style.fontSize = (2.1 * px) + 'px';
     const lg = el('img', 'vtCertLogo'); lg.src = 'img/estuches/logo-bccr.webp'; lg.alt = 'Banco Central de Costa Rica';
-    const cuerpo = el('div', 'vtCertCuerpo'), mon = el('img', 'vtCertMoneda'); mon.src = 'img/monedas3d/' + archivo + '.webp'; mon.alt = '';
+    const cuerpo = el('div', 'vtCertCuerpo'), mon = el('img', 'vtCertMoneda'); mon.src = 'img/monedas3d/' + (grande ? 'hd/' : '') + archivo + '.webp'; mon.alt = '';
     const tx = el('div', 'vtCertTexto'); tx.appendChild(el('b', '', 'Moneda conmemorativa'));
     for (const l of GRABADO[nombre] || [nombre]) tx.appendChild(el('span', ITALICA.test(l) ? 'it' : '', l));
     cuerpo.append(mon, tx);
-    c.append(lg, cuerpo, el('small', '', 'Certificado de autenticidad'), el('span', 'vtCertNum', 'No. ' + (serie || '____') + (tiraje ? ' de ' + tiraje : '')), el('em', '', 'Armado con los datos de la app (no hay foto de este certificado)'));
+    const pie = el('div', 'vtCertPie'), izq = el('div');
+    izq.append(el('small', '', 'Certificado de autenticidad'), el('span', 'vtCertNum', 'No. ' + (serie || '____') + ' de ' + (tiraje || (CERT_INFO[archivo] || {}).tiraje || '____')));
+    const holo = el('div', 'vtHolo'); holo.innerHTML = '<b>BC<br>CR</b>';
+    pie.append(izq, holo);
+    c.append(lg, cuerpo, pie);
     return c;
+  }
+  // datos de la moneda para el interior del certificado (BCCR y Numista)
+  const CERT_DEN = {
+    500: ['500 colones', '28 mm', '2,25 mm', '10,5 gramos', [['Aleación del núcleo', 'cobre y níquel'], ['Aleación del anillo', 'cobre, zinc y níquel']]],
+    100: ['100 colones', '26,50 mm', '2,00 mm', '8,30 gramos', [['Aleación', 'cobre, níquel y zinc']]],
+    50: ['50 colones', '24,5 mm', '1,75 mm', '5,54 gramos', [['Aleación', 'cobre, zinc y níquel']]],
+    25: ['25 colones', '22,5 mm', '1,5 mm', '4,3 gramos', [['Aleación', 'cobre, zinc y níquel']]]
+  };
+  // por motivo: año, tiraje del estuche y una explicacion corta y sencilla del motivo (escrita para la app)
+  const CERT_INFO = {
+    '200-anos-de-independencia': { anio: 2021, tiraje: 5000, texto: 'El 15 de septiembre de 1821 Centroamérica se independizó de España, y la noticia llegó a Costa Rica en octubre de ese año. Esta moneda celebra los 200 años de vida independiente con el mapa del país, la antorcha de la libertad y las palabras libertad, paz y democracia.' },
+    '175-anos-de-fundacion-de-la-republica': { anio: 2023, tiraje: 4000, texto: 'El 31 de agosto de 1848 Costa Rica se declaró república libre, soberana e independiente. La moneda recuerda ese momento con el escudo de aquella época y el escudo actual, unidos por una cinta con los colores de la bandera.' },
+    '75-anos-de-abolicion-del-ejercito': { anio: 2023, tiraje: 5600, texto: 'El 1.° de diciembre de 1948, José Figueres Ferrer golpeó con un mazo una almena del Cuartel Bellavista para mostrar que Costa Rica abolía su ejército. Desde entonces el país invierte en educación, salud y paz en lugar de armas.' },
+    '200-anos-de-anexion-del-partido-de-nicoya': { anio: 2024, tiraje: 20000, texto: 'El 25 de julio de 1824 los pobladores del Partido de Nicoya decidieron unirse a Costa Rica «por nuestra voluntad». La moneda celebra los 200 años de la anexión con el mapa de la región, el árbol de guanacaste y una mujer con el traje típico.' },
+    'mariposa-amorfo': { anio: 2023, tiraje: 7000, texto: 'La mariposa morfo vive en el bosque tropical nuboso. Sus alas son de un azul brillante que cambia con la luz, y es una de las mariposas más conocidas de Costa Rica.' },
+    'rana-calzonuda': { anio: 2023, tiraje: 7000, texto: 'La rana calzonuda, de ojos rojos, vive en el bosque tropical lluvioso. De día duerme pegada debajo de las hojas y de noche sale a cazar insectos.' },
+    'tortuga-carey': { anio: 2023, tiraje: 7000, texto: 'La tortuga carey vive en los arrecifes de coral, donde se alimenta y ayuda a mantenerlos sanos. Está en peligro de extinción, por eso se protege.' },
+    'lagartija-o-anolis': { anio: 2023, tiraje: 7000, texto: 'La lagartija o anolis vive en el bosque tropical seco. Los machos abren un abanico de colores debajo de la garganta para comunicarse.' },
+    'cangrejo-marinera': { anio: 2023, tiraje: 7000, texto: 'El cangrejo marinera vive en el manglar, entre las raíces de los árboles que crecen en agua salada, y ayuda a mantener vivo ese ecosistema.' },
+    'conejo-de-monte': { anio: 2023, tiraje: 7000, texto: 'El conejo de monte vive en el páramo, en las partes más altas y frías de las montañas de Costa Rica, como el cerro Chirripó.' },
+    'provincia-de-limon': { anio: 2023, tiraje: 7000, texto: 'Playa Manzanillo, en el Caribe sur de Limón, es conocida por su arrecife, la selva que llega hasta el mar y la roca con árboles que aparece en la moneda.' },
+    'provincia-de-puntarenas': { anio: 2023, tiraje: 7000, texto: 'El Faro de Puntarenas, en la punta del puerto, es un símbolo de la ciudad y de su historia ligada al mar y al golfo de Nicoya.' },
+    'provincia-de-guanacaste': { anio: 2023, tiraje: 7000, texto: 'La Casona de Santa Rosa fue escenario de la Batalla de Santa Rosa, el 20 de marzo de 1856, cuando Costa Rica defendió su libertad. Hoy es un museo dentro del Parque Nacional Santa Rosa.' },
+    'provincia-de-heredia': { anio: 2023, tiraje: 7000, texto: 'El Fortín de Heredia, construido en 1876, es un torreón que se volvió el símbolo de la ciudad. Está declarado Monumento Nacional.' },
+    'provincia-de-cartago': { anio: 2023, tiraje: 7000, texto: 'La Basílica de Nuestra Señora de los Ángeles, en Cartago, guarda la imagen de la Virgen de los Ángeles, patrona de Costa Rica. Cada 2 de agosto miles de personas caminan hasta ella en la romería.' },
+    'provincia-de-alajuela': { anio: 2023, tiraje: 7000, texto: 'El Volcán Arenal, en el norte de Alajuela, es uno de los volcanes más conocidos del país por su forma de cono casi perfecta.' },
+    'provincia-de-san-jose': { anio: 2023, tiraje: 7000, texto: 'El Teatro Nacional, en el centro de San José, se inauguró en 1897 y es uno de los edificios más bellos e importantes de Costa Rica.' },
+    'swing-criollo': { anio: 2025, tiraje: 7000, texto: 'El swing criollo es un baile costarricense que nació en los salones de baile de San José. Es parte del patrimonio cultural inmaterial del país.' },
+    'calipso': { tiraje: 7000, texto: 'El calipso limonense es la música de la comunidad afrocaribeña de Limón, que cuenta con humor la vida diaria. Walter Ferguson es su gran figura.' }
+  };
+  // la funda de color (aparte de la tarjeta blanca del certificado) que se abre como un librito, igual en las cuatro familias
+  // (fotos de anuncios: 500, fauna, provincias y patrimonio): por fuera la moneda y su nombre; por dentro, a la izquierda las
+  // caracteristicas generales y a la derecha la historia; por detras el lado del valor. estado: 'frente' | 'abierto' | 'atras'
+  function fundaLibro(nombre, archivo, tiraje, den, color) {
+    const L = el('div', 'vtLibro'), info = CERT_INFO[archivo] || {}, D = CERT_DEN[den] || CERT_DEN[500], fondo = `rgb(${color})`;
+    const cara = (cls, ...hijos) => { const c = el('div', 'vtLibroCara ' + cls); c.append(...hijos); return c; };
+    const color_ = c => { c.style.background = `radial-gradient(circle at 30% 20%,rgba(255,255,255,.12),rgba(0,0,0,0) 60%),${fondo}`; return c; };
+    const logo = () => { const i = el('img', 'vtLibroLogo'); i.src = 'img/estuches/logo-bccr.webp'; i.alt = 'Banco Central de Costa Rica'; return i; };
+    const valor = cls => { const i = el('img', cls); i.alt = ''; ponerRef(i, VALOR_CARA[den]); return i; };
+    // por dentro, izquierda: caracteristicas generales
+    const lista = el('div', 'vtLibroLista');
+    for (const [k, v] of [['Denominación', D[0]], ['Diámetro', D[1]], ['Espesor', D[2]], ['Peso', D[3]], ['Calidad', 'Proof'], ...D[4], ['Cantidad de acuñación', (tiraje || info.tiraje || '—') + ' piezas']]) {
+      const f = el('span'); f.append(el('b', '', k + ': '), k === 'Calidad' ? el('i', '', v) : document.createTextNode(v)); lista.appendChild(f);
+    }
+    const bandera = () => el('div', 'vtBandera');
+    const izq = color_(cara('dentroIzq', bandera(), logo(), el('h4', '', 'Características generales'), el('div', 'vtLibroFila')));
+    izq.lastChild.append(lista, valor('vtLibroValor'));
+    // por dentro, derecha: el motivo y su historia
+    const titulo = el('h4'); titulo.append('Moneda conmemorativa'); for (const l of GRABADO[nombre] || [nombre]) { titulo.append(el('br')); titulo.append(el(ITALICA.test(l) ? 'i' : 'span', '', l)); }
+    const der = color_(cara('dentroDer', titulo, el('p', '', info.texto || ''), el('small', '', String(info.anio || ''))));
+    // por detras: el lado del valor
+    const atras = color_(cara('atras', bandera(), logo(), valor('vtLibroValorG'), el('b', '', 'Moneda de ' + D[0]), el('span', '', String(info.anio || '')), el('small', '', 'www.bccr.fi.cr')));
+    // por fuera: la moneda a color y su nombre
+    const mon = el('img', 'vtLibroValorG'); mon.src = 'img/monedas3d/hd/' + archivo + '.webp'; mon.alt = '';
+    const nom = el('div', 'vtLibroNombre'); nom.append(el('b', '', 'Moneda conmemorativa')); for (const l of GRABADO[nombre] || [nombre]) nom.append(el(ITALICA.test(l) ? 'i' : 'span', '', l));
+    const frente = color_(cara('portada', bandera(), logo(), mon, nom));
+    // tapa (por fuera / por dentro izquierda) sobre la hoja (por dentro derecha / atras)
+    const tapa = el('div', 'vtLibroTapa'), hoja = el('div', 'vtLibroHoja');
+    tapa.append(frente, izq); hoja.append(der, atras);
+    L.append(hoja, tapa); L.dataset.estado = 'frente';
+    return L;
   }
   // escena 3D reutilizable: la ventana que se abre desde la hoja y el primer cuadro de la ficha de cada estuche o acrilico
   function nuevaEscena(completa) {
@@ -1422,7 +1517,10 @@
       const cw = CERT.ancho * P, ch = CERT.alto * P, cert = el('div', 'vtCara vtCert');
       cert.style.cssText = `width:${cw}px;height:${ch}px;margin:${-ch / 2}px 0 0 ${-cw / 2}px;transform:rotateX(-90deg) translateZ(${ht / 2 + 0.8}px)`;
       cert.appendChild(certificado(nombre, archivo, serie, tiraje, P)); tapa.appendChild(cert);
-      const grande = V.querySelector('.vtCertGrande'); grande.textContent = ''; const cg = certificado(nombre, archivo, serie, tiraje, 6, true); cg.classList.add('grande'); grande.appendChild(cg);
+      const grande = V.querySelector('.vtCertGrande'); grande.textContent = '';
+      const tema0 = FUNDA_COLOR[(H.piezas.find(x => x.moneda === nombre) || {}).coleccion] || [30, 42, 78];
+      const cg = certificado(nombre, archivo, serie, tiraje, 6, true); cg.classList.add('grande');
+      const libro = fundaLibro(nombre, archivo, tiraje, den, tema0); grande.append(cg, libro);
       // la moneda acostada en el terciopelo, centrada, dentro de su capsula
       const acostada = el('div', 'vtCubo'), CD = (M.d + 8) * P;
       acostada.append(moneda, disco('vtAro', CD), disco('vtTapaCap', CD, `translateZ(${(M.g / 2 + 1.5) * P}px)`));
@@ -1433,22 +1531,25 @@
       const fl = `background:linear-gradient(${cf},${cfo});border:1px solid rgba(0,0,0,.25)`;
       const funda = cubo(w + 2 * P, H0 + 2 * P, hd - 2 * P, { l: fl, r: fl, u: `background:${cfo}`, t: `background:url("img/estuches/funda-${archivo}.webp") center/100% 100%,${cf}` });
       funda.classList.add('vtDesliza');
-      // clic: sacar de la funda → abrir la tapa → ver el certificado en grande → guardarlo, cerrar y meterla
+      // clic: sacar de la funda → abrir la tapa → ver el certificado en grande → ver la funda de color → abrirla (por dentro)
+      // → verla por detras → guardar todo, cerrar y meterla
       let paso = 0;
       const poner = () => {
         const fuera = paso > 0, abierto = paso >= 2;
-        grande.classList.toggle('ver', paso === 3);
+        grande.classList.toggle('ver', paso >= 3);
+        cg.style.display = paso === 3 ? '' : 'none'; libro.style.display = paso >= 4 ? '' : 'none';
+        libro.dataset.estado = paso === 5 ? 'abierto' : paso === 6 ? 'atras' : 'frente';
         cajaG.style.transform = `translateZ(${fuera ? hd * 0.62 : 0}px)`; funda.style.transform = `translateZ(${fuera ? -hd * 0.62 : 0}px)`;
         bis.style.transform = `translate3d(0,${yTope}px,${-hd / 2}px) rotateX(${abierto ? 100 : 0}deg)`;
       };
       poner();
       V._abrirCerrar = () => {
-        if (paso === 3) { paso = 1; poner(); setTimeout(() => { if (paso === 1) { paso = 0; poner(); } }, 1150); }
+        if (paso === 6) { paso = 1; poner(); setTimeout(() => { if (paso === 1) { paso = 0; poner(); } }, 1150); }
         else { paso++; poner(); }
       };
       caja.append(funda, cajaG);
       V._rx0 = -28; V._ry0 = 0;
-      V.querySelector('.vtNota').textContent = 'Estuche ' + E.largo + ' × ' + E.ancho + ' × ' + E.alto + ' mm, en su funda · moneda ' + mm(M.d) + ' mm, a la misma escala · gira solo · clic: sacar de la funda → abrir → ver el certificado → cerrar y guardar · arrástrelo para inclinarlo';
+      V.querySelector('.vtNota').textContent = 'Estuche ' + E.largo + ' × ' + E.ancho + ' × ' + E.alto + ' mm, en su funda · moneda ' + mm(M.d) + ' mm, a la misma escala · gira solo · clic: sacar de la funda → abrir → ver el certificado → ver la funda de color → abrirla → verla por detrás → cerrar y guardar · arrástrelo para inclinarlo';
     }
     if (V._modo !== (enAcrilico ? 'a' : 'e')) { V._modo = enAcrilico ? 'a' : 'e'; V._rx = V._rx0; V._ry = V._ry0; }
     V.giro();
