@@ -1226,7 +1226,7 @@
   },
   "AC25": {
    "tengo": true,
-   "producto": "Provincia Alajuela. Serie 0558/7000",
+   "producto": "Provincia Alajuela. Serie 0588/7000",
    "valor": 30000,
    "costo": 8500,
    "fotos": [
@@ -1237,9 +1237,10 @@
     "provincia-alajuela-serie-0558-7000.jpg",
     "provincia-alajuela-serie-0558-7000-2.jpg"
    ],
-   "notas": "Código: Provincias #6. Serie especial, serie baja\nMoneda conmemorativa, en estuche. Serie(s) 0558 de un tiraje de 7000. Producto: Provincia Alajuela. Serie 0558/7000. Categoría: Provincias estuche. Código: Provincias #6. Serie especial, serie baja. Precio de venta: ₡30 000. Disponibles: 1.\nCosto registrado antes del PDF: ₡30 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
+   "notas": "Código: Provincias #6. Serie especial, serie baja\nMoneda conmemorativa, en estuche. Serie(s) 0588 de un tiraje de 7000. Producto: Provincia Alajuela. Serie 0588/7000. Categoría: Provincias estuche. Código: Provincias #6. Serie especial, serie baja. Precio de venta: ₡30 000. Disponibles: 1.\nCosto registrado antes del PDF: ₡30 000.\nFecha y precio de emisión según \"Programa de salida de las monedas del nuevo cono monetario\" (guía de Reyner Alpízar Medina).",
    "fechaCompra": "2026-04-22",
-   "origen": "Banco Central de Costa Rica (emisión)"
+   "origen": "Banco Central de Costa Rica (emisión)",
+   "serie": "0588"
   },
   "X26": {
    "tengo": true,
