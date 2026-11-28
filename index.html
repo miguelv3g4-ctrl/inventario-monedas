@@ -241,7 +241,14 @@
   .vtCont .vtCertGrande { inset: 0; }
   .vtCert > div { width: 100%; height: 100%; }
   .vtCertFoto { background-size: 100% 100%; background-repeat: no-repeat; }
-  .vtCertGrande .grande { width: min(92%, 420px); height: auto; aspect-ratio: 64 / 62; }
+  .vtCertGrande img.grande { max-width: 94%; max-height: 94%; width: auto; height: auto; } /* nunca mas grande que la foto: se ve entero y nitido */
+  .vtCertGrande .vtCertHecho.grande { height: min(92%, 440px); width: auto; max-width: 94%; aspect-ratio: 64 / 62; font-size: clamp(7px, 2.2vh, 13px) !important; }
+  .vtEnderezar { position: absolute; top: 4px; right: 4px; z-index: 3; width: 26px; height: 26px; padding: 0; border-radius: 50%; border: 1px solid var(--oro2); background: rgba(0, 0, 0, .6); color: var(--oro); cursor: pointer; font-size: 15px; line-height: 24px; }
+  .vtPantalla { background: radial-gradient(ellipse 70% 60% at 50% 45%, #241f15, #050403 80%); padding: 0; align-items: stretch; }
+  .vtPantalla .vtCont { width: 100%; height: 100vh; }
+  .vtPantalla .vtEscena { height: calc(100vh - 34px); cursor: grab; }
+  .vtCerrarGrande { position: fixed; top: 10px; right: 14px; z-index: 5; font-size: 26px; }
+  .vtPantalla .vtEnderezar { top: 14px; right: 60px; width: 32px; height: 32px; }
   .vtCertHecho { box-sizing: border-box; background: #f7f7f4; color: #1b2a4a; display: flex; flex-direction: column; padding: .8em 1em; gap: .35em; font-family: Calibri, "Segoe UI", Arial, sans-serif; line-height: 1.2; overflow: hidden; }
   .vtCertHecho .vtCertLogo { width: 45%; filter: invert(1) brightness(.35) sepia(1) hue-rotate(185deg) saturate(3); align-self: center; }
   .vtCertCuerpo { display: flex; align-items: center; gap: .6em; flex: 1; }
@@ -1270,9 +1277,9 @@
   }
   const disco = (cls, D, tr) => { const s = el('div', 'vtCara ' + cls); s.style.cssText = `width:${D}px;height:${D}px;margin:${-D / 2}px 0 0 ${-D / 2}px` + (tr ? `;transform:${tr}` : ''); return s; };
   // moneda solida (las dos caras y el canto) a la escala de la vitrina; acabado: color, espejo (proof sin color) o mate (MS)
-  function monedaSolida(nombre, archivo, den, acabado) {
+  function monedaSolida(nombre, archivo, den, acabado, hd) {
     const M = MEDIDAS_MONEDA[den], D = M.d * PX_VIT, G = M.g * PX_VIT, m = el('div', 'vtCubo');
-    const fr = disco('vtMonedaCara', D, `translateZ(${G / 2}px)`), foto = acabado === 'color' ? 'img/monedas3d/' + archivo + '.webp' : caraSinColor(nombre);
+    const fr = disco('vtMonedaCara', D, `translateZ(${G / 2}px)`), foto = acabado === 'color' ? 'img/monedas3d/' + (hd ? 'hd/' : '') + archivo + '.webp' : caraSinColor(nombre);
     const rel = 'img/monedas3d/relieve/' + archivo;
     fr.style.backgroundColor = `rgb(${M.metal})`;
     if (acabado === 'color') { fr.style.backgroundImage = `url("${rel}-luz.webp"),url("${rel}-sombra.webp"),url("${foto}")`; fr.style.backgroundBlendMode = 'screen,multiply,normal'; }
@@ -1291,10 +1298,10 @@
   // otros certificados que se ven en las mismas fotos (img/estuches/cert-<archivo>-<serie>.webp)
   const CERT_EXTRA = { 'mariposa-amorfo': ['0368'], 'rana-calzonuda': ['3710'], 'lagartija-o-anolis': ['3378'], 'conejo-de-monte': ['4045'], '200-anos-de-anexion-del-partido-de-nicoya': ['12221'], 'swing-criollo': ['1527'] };
   // certificado de una pieza: la foto si es la de su serie; si no, el mismo formato armado con los datos de la pieza (nombre, serie y tiraje)
-  function certificado(nombre, archivo, serie, tiraje, px) {
+  function certificado(nombre, archivo, serie, tiraje, px, grande) {
     const sinCeros = s => String(s || '').replace(/^0+/, '');
     const otra = serie && (CERT_EXTRA[archivo] || []).find(s => sinCeros(s) === sinCeros(serie));
-    if ((serie && sinCeros(serie) === sinCeros(CERT_FOTO[archivo])) || otra) { const c = el('div', 'vtCertFoto'); c.style.backgroundImage = `url("img/estuches/cert-${archivo}${otra ? '-' + otra : ''}.webp")`; return c; }
+    if ((serie && sinCeros(serie) === sinCeros(CERT_FOTO[archivo])) || otra) { const src = `img/estuches/cert-${archivo}${otra ? '-' + otra : ''}.webp`; if (grande) { const im = el('img', 'vtCertFoto'); im.src = src; im.alt = 'Certificado de autenticidad'; return im; } const c = el('div', 'vtCertFoto'); c.style.backgroundImage = `url("${src}")`; return c; }
     const c = el('div', 'vtCertHecho'); c.style.fontSize = (2.1 * px) + 'px';
     const lg = el('img', 'vtCertLogo'); lg.src = 'img/estuches/logo-bccr.webp'; lg.alt = 'Banco Central de Costa Rica';
     const cuerpo = el('div', 'vtCertCuerpo'), mon = el('img', 'vtCertMoneda'); mon.src = 'img/monedas3d/' + archivo + '.webp'; mon.alt = '';
@@ -1305,27 +1312,67 @@
     return c;
   }
   // escena 3D reutilizable: la ventana que se abre desde la hoja y el primer cuadro de la ficha de cada estuche o acrilico
-  function nuevaEscena() {
-    const V = el('div', 'vtCont');
+  function nuevaEscena(completa) {
+    const V = el('div', 'vtCont' + (completa ? ' vtCompleta' : ''));
     V.innerHTML = '<div class="vtEscena"><div class="vtGiro"><div class="vtVaiven"></div></div></div><div class="vtCertGrande" title="Clic para guardarlo"></div><small class="vtNota"></small>';
+    V.hd = !!completa; V.zoom = 1; V.kBase = 1;
+    const esc = V.querySelector('.vtEscena');
+    V.aplicarK = () => esc.style.setProperty('--k', (V.kBase * V.zoom).toFixed(3));
     V.giro = () => { V.querySelector('.vtGiro').style.transform = `rotateX(${V._rx}deg) rotateY(${V._ry}deg)`; };
     V.querySelector('.vtCertGrande').onclick = e => { e.stopPropagation(); if (V._abrirCerrar) V._abrirCerrar(); };
-    // la pieza gira sola 360°; ademas se puede arrastrar para inclinarla o girarla; doble clic la endereza; en el estuche un clic (sin arrastrar) avanza
-    const esc = V.querySelector('.vtEscena'); let arr = null;
-    esc.addEventListener('pointerdown', e => { arr = { x: e.clientX, y: e.clientY, rx: V._rx, ry: V._ry, mov: 0 }; esc.setPointerCapture(e.pointerId); esc.classList.add('arrastra'); e.stopPropagation(); });
-    esc.addEventListener('pointermove', e => { if (!arr) return; arr.mov = Math.max(arr.mov, Math.abs(e.clientX - arr.x) + Math.abs(e.clientY - arr.y)); V._ry = arr.ry + (e.clientX - arr.x) * 0.5; V._rx = Math.max(-80, Math.min(80, arr.rx - (e.clientY - arr.y) * 0.4)); V.giro(); });
-    const soltar = e => { const clic = arr && arr.mov < 6 && e.type === 'pointerup'; arr = null; esc.classList.remove('arrastra'); if (clic && V._abrirCerrar) V._abrirCerrar(); };
+    // boton chico para enderezar la pieza
+    const end = el('button', 'vtEnderezar', '⟲'); end.type = 'button'; end.title = 'Enderezar la pieza';
+    end.onclick = e => { e.stopPropagation(); V._rx = V._rx0; V._ry = V._ry0; V.giro(); }; V.appendChild(end);
+    // la pieza gira sola 360°; se arrastra para inclinarla o girarla. UN clic hace la accion del estuche (espera 260 ms por si es doble);
+    // DOBLE clic la abre en pantalla completa (o la cierra, si ya esta en pantalla completa). Con la rueda o pellizcando se acerca y se aleja.
+    let arr = null, reloj = null; const dedos = new Map(); let pinza = null;
+    esc.addEventListener('pointerdown', e => {
+      e.stopPropagation(); dedos.set(e.pointerId, { x: e.clientX, y: e.clientY }); esc.setPointerCapture(e.pointerId);
+      if (dedos.size === 2) { const [a, b] = [...dedos.values()]; pinza = { d: Math.hypot(a.x - b.x, a.y - b.y) || 1, z: V.zoom }; if (arr) arr.mov = 99; return; }
+      arr = { x: e.clientX, y: e.clientY, rx: V._rx, ry: V._ry, mov: 0 }; esc.classList.add('arrastra');
+    });
+    esc.addEventListener('pointermove', e => {
+      if (dedos.has(e.pointerId)) dedos.set(e.pointerId, { x: e.clientX, y: e.clientY });
+      if (pinza && dedos.size === 2) { const [a, b] = [...dedos.values()]; V.zoom = Math.max(.5, Math.min(5, pinza.z * Math.hypot(a.x - b.x, a.y - b.y) / pinza.d)); V.aplicarK(); return; }
+      if (!arr) return; arr.mov = Math.max(arr.mov, Math.abs(e.clientX - arr.x) + Math.abs(e.clientY - arr.y));
+      V._ry = arr.ry + (e.clientX - arr.x) * 0.5; V._rx = Math.max(-80, Math.min(80, arr.rx - (e.clientY - arr.y) * 0.4)); V.giro();
+    });
+    const soltar = e => {
+      dedos.delete(e.pointerId); if (dedos.size < 2) pinza = null; if (dedos.size) return;
+      const clic = arr && arr.mov < 6 && e.type === 'pointerup'; arr = null; esc.classList.remove('arrastra');
+      if (clic && V._abrirCerrar) { clearTimeout(reloj); reloj = setTimeout(() => { if (V._abrirCerrar) V._abrirCerrar(); }, 260); }
+    };
     esc.addEventListener('pointerup', soltar); esc.addEventListener('pointercancel', soltar);
     esc.addEventListener('click', e => e.stopPropagation());
-    esc.addEventListener('dblclick', e => { e.stopPropagation(); V._rx = V._rx0; V._ry = V._ry0; V.giro(); });
-    V.vaciar = () => { V.querySelector('.vtVaiven').textContent = ''; V.querySelector('.vtCertGrande').classList.remove('ver'); V._abrirCerrar = null; };
+    esc.addEventListener('dblclick', e => { e.stopPropagation(); clearTimeout(reloj); if (V.alDoble) V.alDoble(); });
+    esc.addEventListener('wheel', e => { if (!completa) return; e.preventDefault(); V.zoom = Math.max(.5, Math.min(5, V.zoom * (e.deltaY < 0 ? 1.12 : 1 / 1.12))); V.aplicarK(); }, { passive: false });
+    V.alDoble = completa ? null : () => { if (V._params) pantallaCompleta(V._params); };
+    V.vaciar = () => { clearTimeout(reloj); V.querySelector('.vtVaiven').textContent = ''; V.querySelector('.vtCertGrande').classList.remove('ver'); V._abrirCerrar = null; };
     return V;
+  }
+  // el mismo 3D en pantalla completa, con imagenes de mejor resolucion; doble clic, Esc o la X lo cierran
+  let pantalla = null;
+  function pantallaCompleta(params) {
+    if (!pantalla) {
+      pantalla = el('div', 'velo vtVelo vtPantalla'); pantalla.id = 'vitrinaGrande';
+      const x = el('button', 'vtCerrar vtCerrarGrande', '✕'); x.type = 'button'; x.setAttribute('aria-label', 'Cerrar');
+      pantalla.appendChild(x); document.body.appendChild(pantalla);
+      pantalla.cerrar = () => { pantalla.classList.remove('abierta'); if (pantalla._V) { pantalla._V.vaciar(); pantalla._V.remove(); pantalla._V = null; } };
+      x.onclick = pantalla.cerrar;
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && pantalla.classList.contains('abierta')) { e.stopImmediatePropagation(); pantalla.cerrar(); } }, true);
+    }
+    if (pantalla._V) pantalla.cerrar();
+    const V = nuevaEscena(true); V.alDoble = pantalla.cerrar; pantalla._V = V; pantalla.appendChild(V);
+    llenarEscena(V, ...params);
+    V.querySelector('.vtNota').textContent += ' · rueda o pellizco: acercar y alejar · doble clic o Esc: cerrar';
+    pantalla.classList.add('abierta');
+    ajustarEscena(V, window.innerWidth - 40, window.innerHeight - 60, params[3] === 'acrilico', 1.9);
   }
   // arma en la escena V el acrilico (modo 'acrilico', con acabado color / espejo / mate) o el estuche (con el certificado de la pieza)
   function llenarEscena(V, nombre, archivo, den, modo, acabado, pieza) {
-    V.vaciar();
+    V.vaciar(); V._params = [nombre, archivo, den, modo, acabado, pieza];
     const enAcrilico = modo === 'acrilico', caja = V.querySelector('.vtVaiven');
-    const P = PX_VIT, moneda = monedaSolida(nombre, archivo, den, acabado), M = MEDIDAS_MONEDA[den], mm = n => String(n).replace('.', ',');
+    const P = PX_VIT, moneda = monedaSolida(nombre, archivo, den, acabado, V.hd), M = MEDIDAS_MONEDA[den], mm = n => String(n).replace('.', ',');
     if (enAcrilico) {
       const A = ACRILICO, w = A.ancho * P, h = A.alto * P, d = A.grueso * P;
       const vidrio = 'background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(255,255,255,.03) 45%,rgba(200,225,255,.08));border:1px solid rgba(235,245,255,.5);box-shadow:inset 0 0 10px rgba(255,255,255,.18);-webkit-backface-visibility:visible;backface-visibility:visible';
@@ -1368,7 +1415,7 @@
       const cw = CERT.ancho * P, ch = CERT.alto * P, cert = el('div', 'vtCara vtCert');
       cert.style.cssText = `width:${cw}px;height:${ch}px;margin:${-ch / 2}px 0 0 ${-cw / 2}px;transform:rotateX(-90deg) translateZ(${ht / 2 + 0.8}px)`;
       cert.appendChild(certificado(nombre, archivo, serie, tiraje, P)); tapa.appendChild(cert);
-      const grande = V.querySelector('.vtCertGrande'); grande.textContent = ''; const cg = certificado(nombre, archivo, serie, tiraje, 6); cg.classList.add('grande'); grande.appendChild(cg);
+      const grande = V.querySelector('.vtCertGrande'); grande.textContent = ''; const cg = certificado(nombre, archivo, serie, tiraje, 6, true); cg.classList.add('grande'); grande.appendChild(cg);
       // la moneda acostada en el terciopelo, centrada, dentro de su capsula
       const acostada = el('div', 'vtCubo'), CD = (M.d + 8) * P;
       acostada.append(moneda, disco('vtAro', CD), disco('vtTapaCap', CD, `translateZ(${(M.g / 2 + 1.5) * P}px)`));
@@ -1400,9 +1447,9 @@
     V.giro();
   }
   // tamaño: se achica todo junto para que quepa (la escala entre piezas no cambia)
-  function ajustarEscena(V, ancho, alto, enAcrilico) {
-    const k = Math.min(1, ancho / (enAcrilico ? 300 : 760), alto / (enAcrilico ? 430 : 470));
-    V.querySelector('.vtEscena').style.setProperty('--k', k.toFixed(3));
+  function ajustarEscena(V, ancho, alto, enAcrilico, maximo) {
+    const k = Math.min(maximo || 1, ancho / (enAcrilico ? 300 : 760), alto / (enAcrilico ? 430 : 470));
+    V.kBase = k; V.aplicarK();
   }
   let vitrina = null;
   function abrirVitrina(nombre, archivo, den, modo, acabado) {
