@@ -3049,11 +3049,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x15e385cd4-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x15e385cd4-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x15e385cd4-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: allnumis.com (5 Centimos 1969, KM 184.2)"
    }
   },
   "O-x1e8fa5618": {
@@ -5257,11 +5257,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x65ebe4a8c-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x65ebe4a8c-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x65ebe4a8c-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: allnumis.com (50 Centimos 1982)"
    }
   },
   "O-xef3acce12": {
@@ -5342,11 +5342,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-xfbc18a8dd-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xfbc18a8dd-escudo-r.jpg",
     "reverso": "privado:cara3d-O-xfbc18a8dd-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: allnumis.com (50 Centimos 1990)"
    }
   },
   "O-xaf16fb498": {
@@ -5440,11 +5440,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x805ea6f62-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x805ea6f62-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x805ea6f62-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: allnumis.com (1 Colon 1948)"
    }
   },
   "O-x96359cf4e": {
@@ -5518,11 +5518,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x5f892cf31-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x5f892cf31-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x5f892cf31-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: coinvarieties.com (1965 colon)"
    }
   },
   "O-x87a884449": {
@@ -5573,11 +5573,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x5f1dafc47-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x5f1dafc47-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x5f1dafc47-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: allnumis.com (1 Colon 1970)"
    }
   },
   "O-xd8c67776d": {
@@ -5682,11 +5682,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x0965286c9-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x0965286c9-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x0965286c9-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: allnumis.com (1 Colon 1976)"
    }
   },
   "O-x43d5cd4fa": {
@@ -5792,11 +5792,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x25f569fc3-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x25f569fc3-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x25f569fc3-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: allnumis.com (1 Colon 1983)"
    }
   },
   "O-x7276031e9": {
@@ -5955,11 +5955,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-xed65f5cf9-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-xed65f5cf9-escudo-r.jpg",
     "reverso": "privado:cara3d-O-xed65f5cf9-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: coinvarieties.com (1991 colon)"
    }
   },
   "O-xdab5e83ad": {
@@ -6014,11 +6014,11 @@
     "metal": "acero inoxidable",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x693bae8aa-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x693bae8aa-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x693bae8aa-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: allnumis.com (1 Colon 1994)"
    }
   },
   "O-x0085cc125": {
@@ -6404,11 +6404,11 @@
     "metal": "cobre-níquel",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x1df2927ed-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x1df2927ed-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x1df2927ed-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: coinvarieties.com (1972 2 colones)"
    }
   },
   "O-x1b53c3b9e": {
@@ -10122,11 +10122,11 @@
     "metal": "plata 0,750",
     "fuente": "Diámetro y peso de las notas; grosor3d = peso / (densidad del metal × área). Canto: allnumis (KM 110: reeded)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x54d0eadcb-escudo-f.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x54d0eadcb-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x54d0eadcb-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo tenía la fecha reconstruida (cifras copiadas de otro año). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: allnumis.com (5 Centavos 1875 GW, foto de Heritage Auctions)"
    }
   },
   "O-x579d6fb16": {
@@ -10367,11 +10367,11 @@
     "metal": "plata 0,750",
     "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x122553906-escudo.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x122553906-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x122553906-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo era la misma foto de la moneda de 1870 (fecha 1870). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: allnumis.com (10 Centavos 1865 GW)"
    }
   },
   "O-x02fb29662": {
@@ -10462,11 +10462,11 @@
     "metal": "plata 0,750",
     "fuente": "Numista (KM 111): 19 mm y 2,536 g; grosor3d = peso / (densidad × área). Canto: catálogo Krause citado en coinvarieties (KM 111: reeded edge)."
    },
-   "caras3dPendiente": {
-    "escudo": "privado:cara3d-O-x6e6c3cea2-escudo.jpg",
+   "caras3d": {
+    "escudo": "privado:cara3d-O-x6e6c3cea2-escudo-r.jpg",
     "reverso": "privado:cara3d-O-x6e6c3cea2-reverso.jpg",
     "montaje": "El escudo va girado 180° respecto al lado del valor (alineación de moneda).",
-    "motivo": "La cara del escudo era la misma foto de la moneda de 1870 (fecha 1870). Falta una foto real de su año; mientras tanto la pieza se ve con su foto plana."
+    "fuenteEscudo": "Foto real del mismo año de internet: coinvarieties.com (1872-GW 10 centavos, foto de Heritage Auctions)"
    }
   },
   "O-xaa5fb7b92": {
