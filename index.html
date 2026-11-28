@@ -1559,25 +1559,25 @@
       const fl = `background:linear-gradient(${cf},${cfo});border:1px solid rgba(0,0,0,.25)`;
       const funda = cubo(w + 2 * P, H0 + 2 * P, hd - 2 * P, { l: fl, r: fl, u: `background:${cfo}`, t: `background:url("img/estuches/funda-${archivo}.webp") center/100% 100%,${cf}` });
       funda.classList.add('vtDesliza');
-      // clic: sacar de la funda → abrir la tapa → ver el certificado en grande → ver la funda de color → abrirla (por dentro)
+      // clic: sacar de la funda → abrir la tapa → ver el certificado blanco en grande → la funda de color abierta (por dentro)
       // → verla por detras → guardar todo, cerrar y meterla
       let paso = 0;
       const poner = () => {
         const fuera = paso > 0, abierto = paso >= 2;
         grande.classList.toggle('ver', paso >= 3);
         cg.style.display = paso === 3 ? '' : 'none'; libro.style.display = paso >= 4 ? '' : 'none';
-        libro.dataset.estado = paso === 5 ? 'abierto' : paso === 6 ? 'atras' : 'frente';
+        libro.dataset.estado = paso === 4 ? 'abierto' : paso === 5 ? 'atras' : 'frente';
         cajaG.style.transform = `translateZ(${fuera ? hd * 0.62 : 0}px)`; funda.style.transform = `translateZ(${fuera ? -hd * 0.62 : 0}px)`;
         bis.style.transform = `translate3d(0,${yTope}px,${-hd / 2}px) rotateX(${abierto ? 100 : 0}deg)`;
       };
       poner();
       V._abrirCerrar = () => {
-        if (paso === 6) { paso = 1; poner(); setTimeout(() => { if (paso === 1) { paso = 0; poner(); } }, 1150); }
+        if (paso === 5) { paso = 1; poner(); setTimeout(() => { if (paso === 1) { paso = 0; poner(); } }, 1150); }
         else { paso++; poner(); }
       };
       caja.append(funda, cajaG);
       V._rx0 = -28; V._ry0 = 0;
-      V.querySelector('.vtNota').textContent = 'Estuche ' + E.largo + ' × ' + E.ancho + ' × ' + E.alto + ' mm, en su funda · moneda ' + mm(M.d) + ' mm, a la misma escala · gira solo · clic: sacar de la funda → abrir → ver el certificado → ver la funda de color → abrirla → verla por detrás → cerrar y guardar · arrástrelo para inclinarlo';
+      V.querySelector('.vtNota').textContent = 'Estuche ' + E.largo + ' × ' + E.ancho + ' × ' + E.alto + ' mm, en su funda · moneda ' + mm(M.d) + ' mm, a la misma escala · gira solo · clic: sacar de la funda → abrir → ver el certificado → abrir la funda de color → verla por detrás → cerrar y guardar · arrástrelo para inclinarlo';
     }
     if (V._modo !== (enAcrilico ? 'a' : 'e')) { V._modo = enAcrilico ? 'a' : 'e'; V._rx = V._rx0; V._ry = V._ry0; }
     V.giro();
