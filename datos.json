@@ -13431,7 +13431,9 @@
      "Diseño"
     ],
     "reversoAnterior": "privado:cara3d-O-msea88dec85-escudo.jpg",
-    "fuenteReverso": "Cara del valor dorada (la de Puntarenas, mismo diseño): la anterior era de una moneda plateada y la de 25 colones 2023 es dorada (BCCR)."
+    "fuenteReverso": "Cara del valor dorada (la de Puntarenas, mismo diseño): la anterior era de una moneda plateada y la de 25 colones 2023 es dorada (BCCR).",
+    "disenoWeb": "privado:ms-web-limon.jpg",
+    "fuenteDisenoWeb": "Foto de la moneda MS del sitio del BCCR (completa y más grande); se usa en el acrílico 3D."
    },
    "medida3d": {
     "diametro": 22.5,
@@ -13464,7 +13466,9 @@
     "nombres": [
      "Valor",
      "Diseño"
-    ]
+    ],
+    "disenoWeb": "privado:ms-web-puntarenas.jpg",
+    "fuenteDisenoWeb": "Foto de la moneda MS del sitio del BCCR (completa y más grande); se usa en el acrílico 3D."
    },
    "medida3d": {
     "diametro": 22.5,
@@ -13499,7 +13503,9 @@
      "Diseño"
     ],
     "reversoAnterior": "privado:cara3d-O-msc6fe145c6-escudo.jpg",
-    "fuenteReverso": "Cara del valor dorada (la de Puntarenas, mismo diseño): la anterior era de una moneda plateada y la de 25 colones 2023 es dorada (BCCR)."
+    "fuenteReverso": "Cara del valor dorada (la de Puntarenas, mismo diseño): la anterior era de una moneda plateada y la de 25 colones 2023 es dorada (BCCR).",
+    "disenoWeb": "privado:ms-web-guanacaste.jpg",
+    "fuenteDisenoWeb": "Foto de la moneda MS del sitio del BCCR (completa y más grande); se usa en el acrílico 3D."
    },
    "medida3d": {
     "diametro": 22.5,
@@ -13532,7 +13538,9 @@
     "nombres": [
      "Valor",
      "Diseño"
-    ]
+    ],
+    "disenoWeb": "privado:ms-web-heredia.jpg",
+    "fuenteDisenoWeb": "Foto de la moneda MS del sitio del BCCR (completa y más grande); se usa en el acrílico 3D."
    },
    "medida3d": {
     "diametro": 22.5,
@@ -13565,7 +13573,9 @@
     "nombres": [
      "Valor",
      "Diseño"
-    ]
+    ],
+    "disenoWeb": "privado:ms-web-cartago.jpg",
+    "fuenteDisenoWeb": "Foto de la moneda MS del sitio del BCCR (completa y más grande); se usa en el acrílico 3D."
    },
    "medida3d": {
     "diametro": 22.5,
@@ -13599,7 +13609,9 @@
      "Diseño"
     ],
     "reversoAnterior": "privado:cara3d-O-ms9e11d4fc2-escudo.jpg",
-    "fuenteReverso": "Cara del valor dorada (la de Puntarenas, mismo diseño): la anterior era de una moneda plateada y la de 25 colones 2023 es dorada (BCCR)."
+    "fuenteReverso": "Cara del valor dorada (la de Puntarenas, mismo diseño): la anterior era de una moneda plateada y la de 25 colones 2023 es dorada (BCCR).",
+    "disenoWeb": "privado:ms-web-alajuela.jpg",
+    "fuenteDisenoWeb": "Foto de la moneda MS del sitio del BCCR (completa y más grande); se usa en el acrílico 3D."
    },
    "medida3d": {
     "diametro": 22.5,
@@ -13632,7 +13644,9 @@
     "nombres": [
      "Valor",
      "Diseño"
-    ]
+    ],
+    "disenoWeb": "privado:ms-web-san-jose.jpg",
+    "fuenteDisenoWeb": "Foto de la moneda MS del sitio del BCCR (completa y más grande); se usa en el acrílico 3D."
    },
    "medida3d": {
     "diametro": 22.5,

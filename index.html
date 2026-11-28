@@ -1258,6 +1258,11 @@
     const o = (datos.otras || []).find(o => o.seccion === 'ms-sueltas' && (o.nombre || '').startsWith(nombre + ' ·'));
     const c = o && reg(o.id).caras3d; return c && /^fotos-3d\//.test(c.escudo || '') ? c.escudo : null;
   }
+  // foto grande y completa del diseño sin color (privada, de la web del BCCR): si se puede cargar, reemplaza a la de caraSinColor
+  function caraSinColorWeb(nombre) {
+    const o = (datos.otras || []).find(o => o.seccion === 'ms-sueltas' && (o.nombre || '').startsWith(nombre + ' ·'));
+    const c = o && reg(o.id).caras3d; return (c && c.disenoWeb) || null;
+  }
   function barraVitrina([nombre, archivo], p) {
     const pz = H.piezas.find(x => x.moneda === nombre), den = pz && DENOM_COLECCION[pz.coleccion], M = MEDIDAS_MONEDA[den]; if (!M) return null;
     const D = M.d * PX_MM, cx = p.x + p.w / 2, cy = p.y + p.h / 2, b = el('div', 'vtBarra');
@@ -1283,7 +1288,9 @@
     const rel = 'img/monedas3d/relieve/' + archivo;
     fr.style.backgroundColor = `rgb(${M.metal})`;
     if (acabado === 'color') { fr.style.backgroundImage = `url("${rel}-luz.webp"),url("${rel}-sombra.webp"),url("${foto}")`; fr.style.backgroundBlendMode = 'screen,multiply,normal'; }
-    else { fr.style.backgroundImage = `url("${foto}")`; fr.style.filter = acabado === 'espejo' ? 'contrast(1.38) brightness(1.06) saturate(.85)' : 'contrast(.9) brightness(1.04) saturate(.8)'; }
+    else { fr.style.backgroundImage = `url("${foto}")`;
+      const web = caraSinColorWeb(nombre); if (web) { const im = new Image(); im.onload = () => { fr.style.backgroundImage = `url("${im.src}")`; }; ponerRef(im, web); }
+      fr.style.filter = acabado === 'espejo' ? 'contrast(1.38) brightness(1.06) saturate(.85)' : 'contrast(.9) brightness(1.04) saturate(.8)'; }
     const va = el('img', 'vtCara vtMonedaCara'); va.alt = ''; va.draggable = false; ponerRef(va, VALOR_CARA[den]);
     va.style.cssText = `width:${D}px;height:${D}px;margin:${-D / 2}px 0 0 ${-D / 2}px;transform:rotateX(180deg) translateZ(${G / 2}px);background:rgb(${M.metal})` + (acabado === 'mate' ? ';filter:contrast(.9) saturate(.8)' : '');
     m.append(fr, va, tirasCanto(M, D, G, PX_VIT));
